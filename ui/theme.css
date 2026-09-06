@@ -1,0 +1,2158 @@
+/*
+ * Vyākaraṇa Toolkit — Bhakta Bandhu Design System (web)
+ *
+ * Token source: Prasadam's app/globals.css (BB DESIGN_SYSTEM.md +
+ * assets/theme/tailwind.config.js). Every hex value below is copied verbatim
+ * from that file so this app is pixel-identical to Prasadam in both themes.
+ *
+ * Prasadam is Tailwind v4 (@theme -> utility classes). This project has no
+ * build step, so the same tokens are declared as plain custom properties and
+ * the handful of Tailwind utilities Prasadam actually uses are hand-written
+ * below with their exact computed values (spacing scale = 0.25rem steps,
+ * sm: = 40rem, lg: = 64rem, xl: = 80rem).
+ *
+ * Dark mode strategy: class-based (`<html class="dark">`), same as Prasadam.
+ */
+
+/* ==================================================================== */
+/* Tokens                                                               */
+/* ==================================================================== */
+:root {
+  /* Surface + background — Warm White, not pure white. */
+  --color-cream: #fefcf8;
+  --color-background: #fefcf8;
+  --color-surface: #ffffff;
+  --color-surface-variant: #f7f3ed;
+
+  /* Amber scale — primary (Golden Amber) */
+  --color-amber-50: #fff8f0;
+  --color-amber-100: #f5dcc0;
+  --color-amber-200: #e8c08a;
+  --color-amber-300: #e0a85c;
+  --color-amber-400: #d4883a; /* PRIMARY */
+  --color-amber-500: #c07828;
+  --color-amber-600: #a66520;
+  --color-amber-700: #8b5e1e;
+  --color-amber-800: #6b4818;
+  --color-amber-900: #4a3010;
+
+  /* Teal scale — secondary (Deep Teal) */
+  --color-teal-50: #f0faf8;
+  --color-teal-100: #b8ddd6;
+  --color-teal-200: #88c4b9;
+  --color-teal-300: #5aac9e;
+  --color-teal-400: #3a9485;
+  --color-teal-500: #2a7b6f; /* SECONDARY */
+  --color-teal-600: #226860;
+  --color-teal-700: #1a534b;
+  --color-teal-800: #123e38;
+  --color-teal-900: #0d2b26;
+
+  /* Brown scale — tertiary (Warm Brown) */
+  --color-brown-50: #efebe9;
+  --color-brown-100: #d7ccc8;
+  --color-brown-200: #bcaaa4;
+  --color-brown-300: #a1887f;
+  --color-brown-400: #8d6e63;
+  --color-brown-500: #6b4a2f; /* TERTIARY */
+  --color-brown-600: #6d4c41;
+  --color-brown-700: #5d4037;
+  --color-brown-800: #4e342e;
+  --color-brown-900: #3e2723;
+
+  /* Material 3 role aliases (light) */
+  --color-primary: #d4883a;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #f5dcc0;
+  --color-on-primary-container: #2c1810;
+
+  --color-secondary: #2a7b6f;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #b8ddd6;
+  --color-on-secondary-container: #0d2b26;
+
+  --color-tertiary: #6b4a2f;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #d7c4b0;
+  --color-on-tertiary-container: #2c1810;
+
+  --color-foreground: #2c1810; /* Dark Espresso */
+  --color-on-background: #2c1810;
+  --color-on-surface: #2c1810;
+  --color-on-surface-variant: #49454f;
+
+  --color-outline: #8b7355;
+  --color-outline-variant: #c9b99a;
+
+  /* Semantic state */
+  --color-success: #22c55e;
+  --color-warning: #eab308;
+  --color-error: #ef4444;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffcdd2;
+  --color-on-error-container: #ef4444;
+
+  /* Tailwind palette values Prasadam's Pill/Banner/Stat tones resolve to */
+  --color-green-50: #f0fdf4;
+  --color-green-100: #dcfce7;
+  --color-green-300: #86efac;
+  --color-green-700: #15803d;
+  --color-green-900: #14532d;
+  --color-red-50: #fef2f2;
+  --color-red-100: #fee2e2;
+  --color-red-300: #fca5a5;
+  --color-red-600: #dc2626;
+  --color-red-900: #7f1d1d;
+
+  /* Typography */
+  --font-sans:
+    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-devanagari: "Noto Sans Devanagari", "Noto Sans", sans-serif;
+  --font-devanagari-serif: "Noto Serif Devanagari", serif;
+
+  /* M3 shape tokens */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 28px;
+
+  /* M3 elevation */
+  --shadow-elevation-1: 0px 1px 2px rgba(0, 0, 0, 0.06), 0px 1px 3px 1px rgba(0, 0, 0, 0.04);
+  --shadow-elevation-2: 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 6px 2px rgba(0, 0, 0, 0.06);
+  --shadow-elevation-3: 0px 4px 8px 3px rgba(0, 0, 0, 0.06), 0px 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* Dark mode overrides — class strategy, verbatim from Prasadam. */
+.dark {
+  --color-background: #1a1412;
+  --color-foreground: #e8dfd4;
+  --color-surface: #241c16;
+  --color-surface-variant: #3a2e24;
+
+  --color-primary: #e8a04c;
+  --color-on-primary: #2c1810;
+  --color-primary-container: #8b5e1e;
+  --color-on-primary-container: #f5dcc0;
+
+  --color-secondary: #6dc4b8;
+  --color-on-secondary: #0d2b26;
+  --color-secondary-container: #2a7b6f;
+  --color-on-secondary-container: #b8ddd6;
+
+  --color-tertiary: #c9a882;
+  --color-on-tertiary: #2c1810;
+  --color-tertiary-container: #6b4a2f;
+  --color-on-tertiary-container: #d7c4b0;
+
+  --color-on-background: #e8dfd4;
+  --color-on-surface: #e8dfd4;
+  --color-on-surface-variant: #c9b99a;
+
+  --color-outline: #8b7355;
+  --color-outline-variant: #49454f;
+
+  --color-error: #ef9a9a;
+  --color-on-error: #2c1810;
+  --color-error-container: #ef4444;
+  --color-on-error-container: #ffcdd2;
+}
+
+/* ==================================================================== */
+/* Reset (Tailwind preflight, trimmed to what this app renders)         */
+/* ==================================================================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  border: 0 solid var(--color-outline-variant);
+  margin: 0;
+  padding: 0;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+body {
+  min-height: 100dvh;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "cv11", "ss01";
+  padding-bottom: env(safe-area-inset-bottom);
+}
+h1,
+h2,
+h3,
+h4 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+  background: transparent;
+}
+button {
+  cursor: pointer;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+table {
+  border-collapse: collapse;
+}
+summary {
+  cursor: pointer;
+}
+[hidden] {
+  display: none !important;
+}
+
+/* Devanagari runs need extra leading for matras above/below the shirorekha. */
+.font-devanagari,
+.font-devanagari-serif {
+  line-height: 1.6;
+}
+.font-devanagari {
+  font-family: var(--font-devanagari);
+}
+.font-devanagari-serif {
+  font-family: var(--font-devanagari-serif);
+}
+
+/* Global focus-visible — keyboard users must see where they are. */
+:where(button, a, [role="button"], input, select, textarea, [tabindex]):focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Reader preferences — the vedabase one-knob pattern: root font-size steps
+   scale every rem-based size on the page. */
+html[data-reading-size="lg"] {
+  font-size: 17.5px;
+}
+html[data-reading-size="xl"] {
+  font-size: 19.5px;
+}
+
+/* ==================================================================== */
+/* Header — SuiteHeader                                                 */
+/* ==================================================================== */
+/* Static on phones (the control set wraps to two rows); sticky from sm: up.
+   Opaque surface: content ghosting through a translucent sticky header reads
+   as a rendering bug on every scroll. */
+.site-header {
+  position: static;
+  border-bottom: 1px solid var(--color-outline-variant);
+  background-color: var(--color-surface);
+  padding-top: env(safe-area-inset-top);
+}
+.site-header__inner {
+  margin-inline: auto;
+  display: flex;
+  max-width: 72rem;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 0.75rem;
+  row-gap: 0.25rem;
+  padding-left: max(0.75rem, env(safe-area-inset-left));
+  padding-right: max(0.75rem, env(safe-area-inset-right));
+  padding-block: 0.5rem;
+}
+.brand {
+  flex-shrink: 0;
+  border-radius: var(--radius-sm);
+  padding-block: 0.125rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  color: var(--color-on-surface);
+}
+.brand__latin {
+  margin-left: 0.5rem;
+  display: none;
+  border-left: 1px solid var(--color-outline-variant);
+  padding-left: 0.5rem;
+  color: var(--color-on-surface-variant);
+}
+.site-nav {
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem;
+}
+.site-nav__link {
+  border-radius: var(--radius-xs);
+  padding: 0.375rem 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: var(--color-on-surface);
+  transition: background-color 200ms;
+}
+.site-nav__link[aria-current="page"] {
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary-container);
+  font-weight: 500;
+}
+@media (hover: hover) {
+  .site-nav__link:hover {
+    background-color: var(--color-surface-variant);
+  }
+}
+
+/* Segmented toggle groups (theme + reading size) */
+.toggle-group {
+  display: inline-flex;
+  flex-shrink: 0;
+  border: 1px solid var(--color-outline-variant);
+  border-radius: var(--radius-md);
+}
+.toggle-group button {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  padding-inline: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--color-on-surface-variant);
+}
+.toggle-group button:first-child {
+  border-top-left-radius: var(--radius-md);
+  border-bottom-left-radius: var(--radius-md);
+}
+.toggle-group button:last-child {
+  border-top-right-radius: var(--radius-md);
+  border-bottom-right-radius: var(--radius-md);
+}
+.toggle-group button[aria-pressed="true"] {
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary-container);
+}
+.toggle-group button:active {
+  background-color: var(--color-surface-variant);
+}
+.reading-size button:nth-child(1) {
+  font-size: 0.75rem;
+}
+.reading-size button:nth-child(2) {
+  font-size: 0.875rem;
+}
+.reading-size button:nth-child(3) {
+  font-size: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+  }
+  .site-header__inner {
+    padding-block: 0.625rem;
+  }
+  .brand__latin {
+    display: inline;
+  }
+  .site-nav {
+    gap: 0.5rem;
+  }
+  .toggle-group button {
+    min-height: 2.25rem;
+  }
+}
+
+/* ==================================================================== */
+/* PageShell                                                            */
+/* ==================================================================== */
+/* Scripture-reading measure: the mobile measure of `detail`, growing with
+   the viewport so wide tables and grids may use a big screen. */
+.page-shell {
+  margin-inline: auto;
+  max-width: 42rem;
+  padding-inline: 1.5rem;
+  padding-block: 2rem;
+}
+@media (min-width: 40rem) {
+  .page-shell {
+    padding-block: 3rem;
+  }
+}
+@media (min-width: 64rem) {
+  .page-shell {
+    max-width: 56rem;
+  }
+}
+@media (min-width: 80rem) {
+  .page-shell {
+    max-width: 72rem;
+  }
+}
+
+/* ==================================================================== */
+/* Card                                                                 */
+/* ==================================================================== */
+.card {
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-outline-variant);
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+  min-width: 0;
+}
+.card--elevated {
+  box-shadow: var(--shadow-elevation-1);
+}
+.card--pad {
+  padding: 1rem;
+}
+@media (min-width: 40rem) {
+  .card--pad {
+    padding: 1.25rem;
+  }
+}
+
+/* ==================================================================== */
+/* Button                                                               */
+/* ==================================================================== */
+/* Every variant carries an active: (pressed) state — on touch, hover is
+   gated off and the tap-highlight is removed, so without it controls give
+   zero feedback on tap. Tap targets are >=44px on phones, tightening to
+   32-40px from sm: up. */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  transition: background-color 200ms;
+  height: 3rem;
+  padding-inline: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.btn:disabled {
+  cursor: not-allowed;
+}
+.btn--sm {
+  height: 2.75rem;
+  padding-inline: 0.75rem;
+  font-size: 0.875rem;
+}
+.btn--lg {
+  height: 3rem;
+  padding-inline: 1.5rem;
+  font-size: 1rem;
+}
+@media (min-width: 40rem) {
+  .btn {
+    height: 2.5rem;
+  }
+  .btn--sm {
+    height: 2.25rem;
+  }
+  .btn--lg {
+    height: 3rem;
+  }
+}
+
+.btn--primary {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+}
+.btn--primary:active {
+  background-color: var(--color-amber-600);
+}
+.btn--primary:disabled {
+  background-color: var(--color-amber-200);
+  color: color-mix(in srgb, var(--color-on-primary) 70%, transparent);
+}
+.btn--secondary {
+  border: 1px solid var(--color-outline-variant);
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+}
+.btn--secondary:active {
+  background-color: color-mix(in srgb, var(--color-surface-variant) 80%, transparent);
+}
+.btn--ghost {
+  color: var(--color-on-surface);
+}
+.btn--ghost:active {
+  background-color: color-mix(in srgb, var(--color-surface-variant) 80%, transparent);
+}
+.btn--danger {
+  background-color: var(--color-error);
+  color: var(--color-on-error);
+}
+.btn:disabled:not(.btn--primary) {
+  opacity: 0.6;
+}
+@media (hover: hover) {
+  .btn--primary:hover:not(:disabled) {
+    background-color: var(--color-amber-500);
+  }
+  .btn--secondary:hover:not(:disabled),
+  .btn--ghost:hover:not(:disabled) {
+    background-color: var(--color-surface-variant);
+  }
+  .btn--danger:hover:not(:disabled) {
+    background-color: var(--color-red-600);
+  }
+}
+
+/* ==================================================================== */
+/* Pill                                                                 */
+/* ==================================================================== */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-outline-variant);
+  padding: 0.125rem 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 500;
+  background-color: var(--color-surface-variant);
+  color: var(--color-on-surface-variant);
+}
+.pill--primary {
+  border-color: var(--color-amber-400);
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary-container);
+}
+.pill--success {
+  border-color: var(--color-green-300);
+  background-color: var(--color-green-100);
+  color: var(--color-green-900);
+}
+.pill--warn {
+  border-color: var(--color-amber-300);
+  background-color: var(--color-amber-100);
+  color: var(--color-amber-900);
+}
+.pill--error {
+  border-color: var(--color-red-300);
+  background-color: var(--color-red-100);
+  color: var(--color-red-900);
+}
+.pill--info {
+  border-color: var(--color-teal-300);
+  background-color: var(--color-teal-100);
+  color: var(--color-teal-900);
+}
+
+/* ==================================================================== */
+/* Banner                                                               */
+/* ==================================================================== */
+.banner {
+  border-radius: var(--radius-md);
+  border: 1px solid;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.banner--info {
+  border-color: var(--color-teal-300);
+  background-color: var(--color-teal-50);
+  color: var(--color-teal-900);
+}
+.banner--warn {
+  border-color: var(--color-amber-300);
+  background-color: var(--color-amber-50);
+  color: var(--color-amber-900);
+}
+.banner--success {
+  border-color: var(--color-green-300);
+  background-color: var(--color-green-50);
+  color: var(--color-green-900);
+}
+.banner--error {
+  border-color: var(--color-red-300);
+  background-color: var(--color-red-50);
+  color: var(--color-red-900);
+}
+.dark .banner--info {
+  border-color: var(--color-teal-700);
+  background-color: color-mix(in srgb, var(--color-teal-900) 40%, transparent);
+  color: var(--color-teal-100);
+}
+.dark .banner--warn {
+  border-color: var(--color-amber-700);
+  background-color: color-mix(in srgb, var(--color-amber-900) 40%, transparent);
+  color: var(--color-amber-100);
+}
+.dark .banner--success {
+  border-color: var(--color-green-700);
+  background-color: color-mix(in srgb, var(--color-green-900) 40%, transparent);
+  color: var(--color-green-100);
+}
+.dark .banner--error {
+  border-color: #b91c1c;
+  background-color: color-mix(in srgb, var(--color-red-900) 40%, transparent);
+  color: #fee2e2;
+}
+
+/* ==================================================================== */
+/* Stat                                                                 */
+/* ==================================================================== */
+.stat {
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-outline-variant);
+  background-color: var(--color-surface);
+  padding: 0.75rem 1rem;
+}
+.stat--primary {
+  border-color: var(--color-amber-300);
+  background-color: color-mix(in srgb, var(--color-primary-container) 50%, transparent);
+}
+.stat--success {
+  border-color: var(--color-green-300);
+  background-color: var(--color-green-50);
+}
+.stat--warn {
+  border-color: var(--color-amber-300);
+  background-color: var(--color-amber-50);
+}
+.dark .stat--success {
+  background-color: color-mix(in srgb, var(--color-green-900) 30%, transparent);
+}
+.dark .stat--warn {
+  background-color: color-mix(in srgb, var(--color-amber-900) 30%, transparent);
+}
+.stat__label {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: var(--color-on-surface-variant);
+}
+.stat__value {
+  margin-top: 0.25rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.stat__sub {
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: var(--color-on-surface-variant);
+}
+
+/* ==================================================================== */
+/* EmptyState                                                           */
+/* ==================================================================== */
+.empty-state {
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-outline-variant);
+  background-color: var(--color-surface-variant);
+  padding: 1.5rem 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: var(--color-on-surface-variant);
+}
+.empty-state__hint {
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  opacity: 0.8;
+}
+
+/* ==================================================================== */
+/* Form controls                                                        */
+/* ==================================================================== */
+.field {
+  display: block;
+  min-width: 0;
+}
+.field__label,
+.label {
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  color: var(--color-on-surface);
+}
+.input {
+  margin-top: 0.25rem;
+  width: 100%;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-outline-variant);
+  background-color: var(--color-surface);
+  padding: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--color-on-surface);
+}
+.input::placeholder {
+  color: var(--color-on-surface-variant);
+}
+.input:focus {
+  border-color: var(--color-primary);
+}
+select.input {
+  min-height: 3rem;
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, currentColor 50%),
+    linear-gradient(135deg, currentColor 50%, transparent 50%);
+  background-position:
+    calc(100% - 1.05rem) 1.35rem,
+    calc(100% - 0.7rem) 1.35rem;
+  background-size: 0.35rem 0.35rem;
+  background-repeat: no-repeat;
+  padding-right: 2.25rem;
+}
+textarea.input {
+  resize: vertical;
+}
+@media (min-width: 40rem) {
+  select.input {
+    min-height: 2.5rem;
+  }
+}
+.help-text {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: var(--color-on-surface-variant);
+}
+.char-count {
+  margin-top: 0.25rem;
+  display: block;
+  text-align: right;
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-on-surface-variant);
+}
+
+/* ==================================================================== */
+/* Page heading block                                                   */
+/* ==================================================================== */
+.page-title-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+.page-title {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  color: var(--color-on-background);
+}
+.page-intro {
+  margin-top: 0.75rem;
+  max-width: 48rem;
+  font-size: 0.875rem;
+  line-height: 1.625;
+  color: var(--color-on-surface);
+}
+.disclosure {
+  margin-top: 0.5rem;
+  max-width: 48rem;
+  font-size: 0.75rem;
+  line-height: 1.625;
+  color: var(--color-on-surface-variant);
+}
+.disclosure > summary {
+  font-weight: 500;
+  color: var(--color-on-surface-variant);
+}
+.disclosure > p {
+  margin-top: 0.5rem;
+}
+.note-box {
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-outline-variant);
+  background-color: color-mix(in srgb, var(--color-surface-variant) 35%, transparent);
+  padding: 0.5rem 0.75rem;
+  font-size: 0.75rem;
+  line-height: 1.625;
+  color: var(--color-on-surface-variant);
+}
+.note-box > summary {
+  font-weight: 500;
+  color: var(--color-on-surface);
+}
+.note-box > p {
+  margin-top: 0.25rem;
+}
+
+.section-heading {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  color: var(--color-on-surface);
+}
+.section-subheading {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: var(--color-on-surface-variant);
+}
+
+/* ==================================================================== */
+/* Table                                                                */
+/* ==================================================================== */
+.table-scroll {
+  margin-inline: -1rem;
+  overflow-x: auto;
+  padding-inline: 1rem;
+}
+.data-table {
+  width: 100%;
+  min-width: 40rem;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.data-table thead tr {
+  border-bottom: 1px solid var(--color-outline-variant);
+  text-align: left;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  color: var(--color-on-surface-variant);
+}
+.data-table th {
+  padding-block: 0.5rem;
+  padding-right: 1rem;
+  font-weight: 500;
+}
+.data-table tbody tr {
+  border-bottom: 1px solid var(--color-outline-variant);
+}
+.data-table td {
+  padding-block: 0.5rem;
+  padding-right: 1rem;
+  vertical-align: top;
+}
+@media (hover: hover) {
+  .data-table tbody tr:hover {
+    background-color: var(--color-surface-variant);
+  }
+}
+
+/* ==================================================================== */
+/* Layout helpers (the handful of Tailwind utilities the markup uses)   */
+/* ==================================================================== */
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 0;
+}
+.stack-sm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 0;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+.grid-2 {
+  display: grid;
+  gap: 1rem;
+}
+.grid-3 {
+  display: grid;
+  gap: 0.75rem;
+}
+.grid-auto {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+}
+@media (min-width: 40rem) {
+  .grid-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .grid-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+.mt-2 {
+  margin-top: 0.5rem;
+}
+.mt-3 {
+  margin-top: 0.75rem;
+}
+.mt-4 {
+  margin-top: 1rem;
+}
+.mt-6 {
+  margin-top: 1.5rem;
+}
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+.muted {
+  color: var(--color-on-surface-variant);
+}
+.strong {
+  font-weight: 600;
+}
+.medium {
+  font-weight: 500;
+}
+.leading-relaxed {
+  line-height: 1.625;
+}
+.italic {
+  font-style: italic;
+}
+
+/* ==================================================================== */
+/* App-specific compositions                                            */
+/* ==================================================================== */
+
+/* Preset example chips — Button variant="secondary" size="sm", wrapped. */
+.example-row {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.example-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+@media (min-width: 40rem) {
+  .example-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+/* The big Devanagari headline on a result card. */
+.result-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+.result-headline {
+  font-family: var(--font-devanagari-serif);
+  font-size: 1.875rem;
+  line-height: 1.4;
+  font-weight: 400;
+  color: var(--color-on-surface);
+}
+.result-headline-latin {
+  margin-top: 0.125rem;
+  font-size: 0.875rem;
+  color: var(--color-on-surface-variant);
+}
+
+/* Definition rows — label above value, used for sūtra/kāraka detail. */
+.def-list {
+  display: grid;
+  gap: 0.75rem;
+}
+@media (min-width: 40rem) {
+  .def-list--2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.def__label {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: var(--color-on-surface-variant);
+}
+.def__value {
+  margin-top: 0.125rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--color-on-surface);
+}
+
+/* Derivation timeline — numbered steps down a left rule. */
+.timeline {
+  list-style: none;
+  margin-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  border-left: 2px solid var(--color-outline-variant);
+  padding-left: 1rem;
+}
+.timeline__step {
+  position: relative;
+}
+.timeline__step::before {
+  content: "";
+  position: absolute;
+  left: -1.3125rem;
+  top: 0.4rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 9999px;
+  background-color: var(--color-primary);
+}
+.timeline__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+.timeline__form {
+  font-family: var(--font-devanagari-serif);
+  font-size: 1.125rem;
+  color: var(--color-on-surface);
+}
+.timeline__sutra {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: var(--color-on-surface-variant);
+}
+.timeline__desc {
+  margin-top: 0.125rem;
+  font-size: 0.8125rem;
+  line-height: 1.55;
+  color: var(--color-on-surface-variant);
+}
+
+/* Paradigm cell — a tappable form inside the 8x3 śabdarūpa grid. */
+.cell-btn {
+  display: block;
+  width: 100%;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  padding: 0.375rem 0.5rem;
+  text-align: left;
+  transition: background-color 200ms;
+}
+.cell-btn:active {
+  background-color: var(--color-surface-variant);
+}
+@media (hover: hover) {
+  .cell-btn:hover {
+    background-color: var(--color-surface-variant);
+    border-color: var(--color-outline-variant);
+  }
+}
+.cell-btn__deva {
+  font-family: var(--font-devanagari);
+  font-size: 1rem;
+  color: var(--color-on-surface);
+}
+.cell-btn__iast {
+  font-size: 0.75rem;
+  color: var(--color-on-surface-variant);
+}
+
+/* Verse word tiles. */
+.token-grid {
+  margin-top: 0.75rem;
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+}
+.token-card {
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-outline-variant);
+  background-color: color-mix(in srgb, var(--color-surface-variant) 35%, transparent);
+  padding: 0.75rem;
+}
+.token-card__deva {
+  font-family: var(--font-devanagari-serif);
+  font-size: 1.25rem;
+  color: var(--color-on-surface);
+}
+
+/* Layered verse apparatus rows (anvaya, padaccheda, …). */
+.layer-row {
+  border-top: 1px solid var(--color-outline-variant);
+  padding-block: 0.625rem;
+}
+.layer-row:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+.layer-row__label {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: var(--color-on-surface-variant);
+}
+.layer-row__value {
+  margin-top: 0.25rem;
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: var(--color-on-surface);
+}
+
+/* Modal — a Card raised over a scrim. */
+.scrim {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  overflow-y: auto;
+  background-color: rgba(44, 24, 16, 0.55);
+  padding: 1.5rem 1rem;
+}
+.modal {
+  width: 100%;
+  max-width: 48rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-outline-variant);
+  background-color: var(--color-surface);
+  box-shadow: var(--shadow-elevation-3);
+  padding: 1rem;
+}
+@media (min-width: 40rem) {
+  .modal {
+    padding: 1.25rem;
+  }
+}
+.modal__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  border-bottom: 1px solid var(--color-outline-variant);
+  padding-bottom: 0.75rem;
+}
+.icon-btn {
+  display: inline-flex;
+  height: 2.75rem;
+  width: 2.75rem;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  font-size: 1.25rem;
+  color: var(--color-on-surface-variant);
+}
+@media (hover: hover) {
+  .icon-btn:hover {
+    background-color: var(--color-surface-variant);
+  }
+}
+
+/* Four-commentary concordance column. */
+.concordance-step {
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-outline-variant);
+  padding: 0.75rem;
+}
+.concordance-grid {
+  margin-top: 0.5rem;
+  display: grid;
+  gap: 0.5rem;
+}
+@media (min-width: 40rem) {
+  .concordance-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.concordance-lens {
+  border-left: 2px solid var(--color-outline-variant);
+  padding-left: 0.625rem;
+}
+.concordance-lens--p1 {
+  border-left-color: var(--color-amber-400);
+}
+.concordance-lens--p2 {
+  border-left-color: var(--color-teal-500);
+}
+.concordance-lens--p3 {
+  border-left-color: var(--color-brown-500);
+}
+.concordance-lens--p4 {
+  border-left-color: var(--color-outline);
+}
+
+/* Dependency diagram host — the engine ships an SVG. */
+.graph-host {
+  margin-top: 0.75rem;
+  overflow-x: auto;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-outline-variant);
+  background-color: color-mix(in srgb, var(--color-surface-variant) 35%, transparent);
+  padding: 0.75rem;
+}
+.graph-host svg {
+  max-width: none;
+}
+
+/* ==================================================================== */
+/* Chant grid — one column per metrical beat, pādas aligned              */
+/* ==================================================================== */
+.chant-pada {
+  border-top: 1px solid var(--color-outline-variant);
+  padding-block: 0.75rem;
+}
+.chant-pada:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+.chant-pada__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.chant-pada__label {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: var(--color-on-surface-variant);
+}
+.chant-pada__pattern {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: var(--color-on-surface-variant);
+}
+.chant-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+/* One syllable chip. Weight is carried by the glyph and the border, never by
+   colour alone — the ◡ / — marks stay legible to a colour-blind reader and in
+   a black-and-white print. */
+.aksara {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.125rem;
+  min-width: 2.75rem;
+  border: 1px solid var(--color-outline-variant);
+  border-radius: var(--radius-sm);
+  padding: 0.3rem 0.4rem;
+  background-color: var(--color-surface);
+  cursor: help;
+  transition: background-color 200ms;
+}
+.aksara--guru {
+  border-color: var(--color-amber-400);
+  background-color: color-mix(in srgb, var(--color-primary-container) 45%, transparent);
+}
+.aksara--anceps {
+  border-style: dashed;
+}
+@media (hover: hover) {
+  .aksara:hover {
+    background-color: var(--color-surface-variant);
+  }
+}
+.aksara__text {
+  font-family: var(--font-devanagari-serif);
+  font-size: 1.0625rem;
+  line-height: 1.35;
+  color: var(--color-on-surface);
+}
+.aksara__mark {
+  font-size: 0.8125rem;
+  line-height: 1;
+  color: var(--color-on-surface-variant);
+}
+.aksara__matras {
+  font-size: 0.625rem;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-on-surface-variant);
+}
+
+/* ==================================================================== */
+/* Aligned syllable grid — every pāda shares one column per metrical     */
+/* beat, so beat N lines up vertically and the yati is a real gap.       */
+/* ==================================================================== */
+.agrid-scroll {
+  margin-top: 0.75rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+.agrid {
+  display: grid;
+  width: max-content;
+  min-width: 100%;
+  align-items: stretch;
+  column-gap: 0.2rem;
+  row-gap: 0.55rem;
+}
+.agrid__num {
+  align-self: end;
+  padding-bottom: 0.15rem;
+  text-align: center;
+  font-size: 0.6rem;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-on-surface-variant);
+}
+.agrid__label {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  align-self: center;
+  background-color: var(--color-surface);
+  padding-right: 0.6rem;
+  font-size: 0.75rem;
+  line-height: 1.3;
+  font-weight: 500;
+  color: var(--color-on-surface-variant);
+  white-space: nowrap;
+}
+.agrid__label small {
+  display: block;
+  font-weight: 400;
+  font-size: 0.625rem;
+  font-variant-numeric: tabular-nums;
+  opacity: 0.85;
+}
+
+/* The yati: a caesura the tradition prescribes. Rendered as its own narrow
+   track so it is a real gap in the rhythm, not a decoration on a chip. */
+.agrid__yati-mark {
+  align-self: end;
+  padding-bottom: 0.15rem;
+  text-align: center;
+  font-size: 0.7rem;
+  line-height: 1;
+  color: var(--color-primary);
+}
+.agrid__yati-rule {
+  position: relative;
+  z-index: 2;
+  margin-inline: auto;
+  height: 100%;
+  border-left: 1px dashed var(--color-primary);
+  opacity: 0.75;
+}
+
+/* A written word: the syllables inside it are boxed together, so a syllable
+   welded across a word boundary by sandhi is visible as such. */
+/* One written word. Drawn as a backdrop spanning its columns, BEHIND the
+   syllables, so the cells stay placed on the shared tracks and stay aligned
+   down the grid. Its horizontal margin is what opens the gap between one word
+   and the next — syllables inside a word keep the tight column gap, so the
+   eye groups them without any extra cue. */
+.agrid__word {
+  z-index: 0;
+  margin-inline: 0.24rem;
+  border: 2px solid var(--color-on-surface-variant);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-surface);
+}
+
+/* A syllable welded across a space by sandhi belongs to the words on both
+   sides, so it sits between their boxes with dashed edges reaching toward
+   each — never inside one box, which would claim an owner it does not have. */
+.gcell--weld {
+  border: 2px dashed var(--color-on-surface-variant);
+  border-block-color: transparent;
+  border-radius: var(--radius-xs);
+}
+
+.gcell {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+  min-width: 2.4rem;
+  padding: 0.3rem 0.3rem 0.25rem;
+  border-radius: var(--radius-xs);
+}
+.gcell--guru {
+  background-color: color-mix(in srgb, var(--color-primary-container) 45%, transparent);
+}
+/* A weight that disagrees with the matched rule. Marked by a solid error
+   border AND the expected glyph underneath — never by colour alone. */
+.gcell--mismatch {
+  outline: 2px solid var(--color-error);
+  outline-offset: -2px;
+}
+/* Devanāgarī needs real headroom: vowel signs sit ABOVE the shirorekha
+   (ी ै ो ौ, and the hoods of आ ऐ औ), and with a tight line-height they clip
+   against the word box. 1.75 reserves that space; the matching padding keeps
+   the tallest signs clear of the border. */
+.gcell__deva {
+  font-family: var(--font-devanagari-serif);
+  font-size: 1rem;
+  line-height: 1.75;
+  padding-top: 0.12rem;
+  color: var(--color-on-surface);
+  white-space: nowrap;
+}
+.gcell__iast {
+  font-size: 0.625rem;
+  line-height: 1.15;
+  color: var(--color-on-surface-variant);
+  white-space: nowrap;
+}
+
+/* Script choice. Both spans are always in the DOM so switching is instant;
+   whichever is shown alone is promoted to the reading size. */
+.agrid[data-script="deva"] .gcell__iast {
+  display: none;
+}
+.agrid[data-script="iast"] .gcell__deva {
+  display: none;
+}
+.agrid[data-script="iast"] .gcell__iast {
+  font-size: 0.9375rem;
+  line-height: 1.35;
+  color: var(--color-on-surface);
+}
+
+/* The toggle sits in the card header, so keep it from stretching. */
+.grid-script {
+  align-self: flex-start;
+}
+.grid-script button {
+  min-height: 2rem;
+  font-size: 0.75rem;
+}
+.gcell__w {
+  margin-top: 0.1rem;
+  font-size: 0.75rem;
+  line-height: 1;
+  font-weight: 500;
+  color: var(--color-on-surface-variant);
+}
+.gcell__exp {
+  font-size: 0.6rem;
+  line-height: 1;
+  color: var(--color-error);
+}
+
+.grid-legend {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1.6;
+  color: var(--color-on-surface-variant);
+}
+
+/* The metre template line, rendered in the same glyph vocabulary. */
+.template-line {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.875rem;
+  letter-spacing: 0.06em;
+  color: var(--color-on-surface);
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 0.25rem;
+}
+
+/* Rule legend */
+.rule-legend {
+  display: grid;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+@media (min-width: 40rem) {
+  .rule-legend {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.rule-legend__item {
+  border-left: 2px solid var(--color-outline-variant);
+  padding-left: 0.625rem;
+}
+.rule-legend__name {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-on-surface);
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid var(--color-outline-variant);
+  margin-top: 3rem;
+}
+.site-footer__inner {
+  margin-inline: auto;
+  max-width: 72rem;
+  padding: 1.5rem;
+  font-size: 0.75rem;
+  line-height: 1.625;
+  color: var(--color-on-surface-variant);
+}
+
+/* ===========================================================================
+   Aṣṭādhyāyī — the codification browser, playground and dependency graph
+   =========================================================================== */
+
+.ash-progress {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.ash-progress__bar {
+  flex: 1 1 12rem;
+  height: 0.5rem;
+  min-width: 8rem;
+  border-radius: 999px;
+  background: var(--color-surface-variant);
+  overflow: hidden;
+}
+
+.ash-progress__fill {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  background: var(--color-primary);
+}
+
+.ash-layout {
+  display: grid;
+  grid-template-columns: minmax(14rem, 19rem) minmax(0, 1fr);
+  gap: 1.25rem;
+  align-items: start;
+}
+
+@media (max-width: 60rem) {
+  .ash-layout { grid-template-columns: minmax(0, 1fr); }
+  .ash-list { max-height: 18rem; }
+}
+
+/* --- the list of codified sūtras ---------------------------------------- */
+
+.ash-list {
+  max-height: min(70vh, 44rem);
+  overflow-y: auto;
+  border: 1px solid var(--color-outline-variant);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+}
+
+.ash-list__search {
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--color-outline-variant);
+}
+
+.ash-list__group {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-on-surface-variant);
+  background: var(--color-surface-variant);
+  border-block: 1px solid var(--color-outline-variant);
+}
+
+.ash-list__item {
+  display: grid;
+  grid-template-columns: 3.6rem minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 0;
+  border-bottom: 1px solid var(--color-outline-variant);
+  background: transparent;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+}
+
+.ash-list__item:hover { background: var(--color-surface-variant); }
+
+.ash-list__item[aria-current="true"] {
+  background: var(--color-primary-container);
+  color: var(--color-on-primary-container);
+}
+
+.ash-list__id {
+  font-variant-numeric: tabular-nums;
+  font-size: 0.8rem;
+  color: var(--color-on-surface-variant);
+}
+
+.ash-list__item[aria-current="true"] .ash-list__id { color: inherit; }
+
+.ash-list__text {
+  font-family: "Noto Serif Devanagari", serif;
+  line-height: 1.7;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ash-list__flag {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 999px;
+  background: var(--color-primary);
+  align-self: center;
+}
+
+.ash-list__flag--scope { background: var(--color-outline); }
+
+/* --- the sūtra itself ---------------------------------------------------- */
+
+.ash-sutra {
+  font-family: "Noto Serif Devanagari", serif;
+  font-size: 1.7rem;
+  line-height: 2;
+  padding-top: 0.2rem;
+}
+
+.ash-sutra__iast {
+  font-style: italic;
+  color: var(--color-on-surface-variant);
+  margin-top: 0.15rem;
+}
+
+.ash-pada {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid var(--color-outline-variant);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+}
+
+.ash-pada__word {
+  font-family: "Noto Serif Devanagari", serif;
+  line-height: 1.7;
+}
+
+.ash-pada__case {
+  font-size: 0.72rem;
+  color: var(--color-on-surface-variant);
+}
+
+.ash-pada--sasthi { border-color: var(--color-primary); border-width: 2px; }
+.ash-pada--saptami { border-color: var(--color-secondary); border-width: 2px; }
+.ash-pada--pancami { border-color: var(--color-error); border-width: 2px; }
+
+/* --- the playground ------------------------------------------------------ */
+
+.ash-play {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  gap: 0.75rem;
+  align-items: end;
+}
+
+.ash-play__group {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 0.6rem;
+  padding: 0.6rem 0.7rem;
+  border: 1px dashed var(--color-outline-variant);
+  border-radius: var(--radius-sm);
+}
+
+.ash-play__group-label {
+  grid-column: 1 / -1;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-on-surface-variant);
+}
+
+.ash-play__check {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding-bottom: 0.4rem;
+}
+
+.ash-call {
+  font-family: ui-monospace, "SFMono-Regular", Menlo, monospace;
+  font-size: 0.8rem;
+  padding: 0.45rem 0.6rem;
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-variant);
+  color: var(--color-on-surface-variant);
+  overflow-x: auto;
+  white-space: pre;
+}
+
+.ash-result {
+  margin-top: 0.6rem;
+  padding: 0.7rem 0.8rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-outline-variant);
+  background: var(--color-surface);
+}
+
+.ash-result--true { border-color: var(--color-primary); border-width: 2px; }
+.ash-result--empty { border-style: dashed; color: var(--color-on-surface-variant); }
+.ash-result--error { border-color: var(--color-error); color: var(--color-error); }
+
+.ash-kv {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.2rem 0.75rem;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.ash-kv dt { color: var(--color-on-surface-variant); }
+.ash-kv dd { margin: 0; overflow-wrap: anywhere; }
+
+/* --- the dependency graph ------------------------------------------------ */
+
+.ash-graph {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--color-outline-variant);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+}
+
+.ash-graph svg { display: block; }
+
+.ash-graph__edge { fill: none; stroke-width: 1.5; }
+.ash-graph__edge--anuvrtti { stroke: var(--color-primary); }
+.ash-graph__edge--adhikara { stroke: var(--color-secondary); stroke-dasharray: 5 3; }
+.ash-graph__edge--related { stroke: var(--color-outline); stroke-dasharray: 2 3; }
+
+.ash-graph__label {
+  font-family: "Noto Serif Devanagari", serif;
+  font-size: 11px;
+  fill: var(--color-on-surface-variant);
+}
+
+.ash-graph__node rect {
+  fill: var(--color-surface-variant);
+  stroke: var(--color-outline-variant);
+  stroke-width: 1;
+}
+
+.ash-graph__node--codified rect {
+  fill: var(--color-primary-container);
+  stroke: var(--color-primary);
+}
+
+.ash-graph__node--root rect {
+  fill: var(--color-primary);
+  stroke: var(--color-primary);
+  stroke-width: 2;
+}
+
+.ash-graph__node text {
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  fill: var(--color-on-surface-variant);
+  text-anchor: middle;
+}
+
+.ash-graph__node--codified text { fill: var(--color-on-primary-container); }
+.ash-graph__node--root text { fill: var(--color-on-primary); font-weight: 600; }
+.ash-graph__node--codified { cursor: pointer; }
+
+.ash-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 0.6rem;
+  font-size: 0.78rem;
+  color: var(--color-on-surface-variant);
+}
+
+.ash-legend__swatch {
+  display: inline-block;
+  width: 1.4rem;
+  height: 0;
+  border-top-width: 2px;
+  border-top-style: solid;
+  margin-right: 0.3rem;
+  vertical-align: middle;
+}
+
+/* --- findings and sources ------------------------------------------------ */
+
+.ash-finding {
+  display: grid;
+  grid-template-columns: 5.6rem minmax(0, 1fr);
+  gap: 0.6rem;
+  padding: 0.5rem 0;
+  border-top: 1px solid var(--color-outline-variant);
+}
+
+.ash-finding:first-child { border-top: 0; }
+
+.ash-finding__marker {
+  font-size: 0.68rem;
+  letter-spacing: 0.07em;
+  align-self: start;
+  padding: 0.12rem 0.4rem;
+  border-radius: var(--radius-xs);
+  text-align: center;
+  background: var(--color-surface-variant);
+  color: var(--color-on-surface-variant);
+}
+
+.ash-finding__marker--OPEN {
+  background: var(--color-error-container);
+  color: var(--color-on-error-container);
+}
+
+.ash-finding__marker--SCOPE {
+  background: var(--color-secondary-container);
+  color: var(--color-on-secondary-container);
+}
+
+.ash-finding__marker--SETTLED {
+  background: var(--color-primary-container);
+  color: var(--color-on-primary-container);
+}
+
+.ash-sources { display: grid; gap: 0.3rem; }
+
+.ash-source {
+  display: grid;
+  grid-template-columns: 9.5rem 6rem minmax(0, 1fr);
+  gap: 0.6rem;
+  align-items: baseline;
+  padding: 0.3rem 0;
+  border-top: 1px solid var(--color-outline-variant);
+  font-size: 0.85rem;
+}
+
+.ash-source:first-child { border-top: 0; }
+.ash-source__name { color: var(--color-on-surface-variant); }
+
+.ash-source__quote {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ash-status {
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  padding: 0.1rem 0.4rem;
+  border-radius: var(--radius-xs);
+  text-align: center;
+  background: var(--color-surface-variant);
+  color: var(--color-on-surface-variant);
+}
+
+.ash-status--verified {
+  background: var(--color-primary-container);
+  color: var(--color-on-primary-container);
+}
+
+.ash-status--unreadable,
+.ash-status--pending {
+  background: var(--color-error-container);
+  color: var(--color-on-error-container);
+}
+
+/* --- the plain-English gist, under the heading -------------------------- */
+
+.ash-gist {
+  margin-top: 0.9rem;
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-md);
+  border-left: 3px solid var(--color-primary);
+  background: var(--color-primary-container);
+  color: var(--color-on-primary-container);
+}
+
+.ash-gist__plain { line-height: 1.65; }
+
+.ash-gist__example {
+  display: inline-block;
+  margin-top: 0.6rem;
+  padding: 0.4rem 0.7rem;
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  color: var(--color-on-surface);
+  font-family: "Noto Serif Devanagari", serif;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.ash-gist__source {
+  margin-top: 0.7rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--color-outline-variant);
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+.ash-gist__source-name {
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.15rem;
+}
+
+/* The dot beside a sūtra in the list means the record still has something
+   outstanding. Two states, and a legend above the list saying which is which —
+   a bare dot with only a tooltip was not enough, as the first reader proved. */
+
+.ash-key {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.15rem 0.85rem;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--color-outline-variant);
+  font-size: 0.72rem;
+  color: var(--color-on-surface-variant);
+}
+
+.ash-key span { display: inline-flex; align-items: center; gap: 0.3rem; }
+
+.ash-key__none {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 999px;
+  border: 1px solid var(--color-outline-variant);
+}
+
+/* --- the eye: what is outstanding, without leaving the list -------------- */
+
+.ash-list__row {
+  display: flex;
+  align-items: stretch;
+  border-bottom: 1px solid var(--color-outline-variant);
+}
+
+.ash-list__row .ash-list__item { border-bottom: 0; flex: 1 1 auto; min-width: 0; }
+
+.ash-list__eye {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.28rem;
+  padding: 0 0.6rem 0 0.35rem;
+  border: 0;
+  background: transparent;
+  color: var(--color-on-surface-variant);
+  cursor: help;
+  font: inherit;
+  line-height: 1;
+}
+
+.ash-list__eye:hover,
+.ash-list__eye:focus-visible,
+.ash-list__eye[aria-expanded="true"] {
+  background: var(--color-surface-variant);
+  color: var(--color-on-surface);
+}
+
+.ash-list__eye svg { width: 0.95rem; height: 0.95rem; display: block; }
+
+/* The popover is fixed, not absolute: the list scrolls, and an absolutely
+   positioned panel would be clipped by its overflow. */
+.ash-peek {
+  position: fixed;
+  z-index: 50;
+  max-width: min(30rem, calc(100vw - 2rem));
+  padding: 0.8rem 0.9rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-outline);
+  background: var(--color-surface);
+  color: var(--color-on-surface);
+  box-shadow: var(--shadow-elevation-3);
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+
+.ash-peek[hidden] { display: none; }
+
+.ash-peek__head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--color-outline-variant);
+}
+
+.ash-peek__id {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+
+.ash-peek__sutra { font-family: "Noto Serif Devanagari", serif; line-height: 1.7; }
+
+.ash-peek__item + .ash-peek__item {
+  margin-top: 0.6rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--color-outline-variant);
+}
+
+.ash-peek__hint {
+  margin-top: 0.6rem;
+  font-size: 0.75rem;
+  color: var(--color-on-surface-variant);
+}
+
+/* A reader who thinks in Devanāgarī should not have to transliterate by hand
+   before asking a question, and should be told so without being shouted at. */
+.ash-play__scripts {
+  margin: 0.7rem 0 0;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+/* --- what kind of rule this is ------------------------------------------
+   Collapsed by default: the label is for everyone, the paragraph is for a
+   reader meeting this kind of rule for the first time. */
+.ash-kind {
+  margin: 0.9rem 0 0.2rem;
+  border-left: 2px solid var(--rule, #cbc5b4);
+  padding-left: 0.75rem;
+}
+
+.ash-kind__label {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  cursor: pointer;
+  list-style: none;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted, #6b6559);
+}
+
+.ash-kind__label::-webkit-details-marker { display: none; }
+
+.ash-kind__more {
+  font-size: 0.74rem;
+  text-transform: none;
+  letter-spacing: 0;
+  opacity: 0.7;
+  text-decoration: underline dotted;
+}
+
+.ash-kind[open] .ash-kind__more { visibility: hidden; }
+
+.ash-kind__plain {
+  margin: 0.5rem 0 0;
+  font-size: 0.92rem;
+  line-height: 1.62;
+  max-width: 62ch;
+  color: var(--muted, #6b6559);
+}
+
+.ash-kind__label:focus-visible {
+  outline: 2px solid var(--rubric, #a63a2b);
+  outline-offset: 3px;
+}
+
+
+/* --- the graph's one control --------------------------------------------
+   It replaced a Depth 1/2/3 selector that did nothing for 220 of 379
+   sūtras, because the corpus already gives the whole chain in one step. */
+.ash-graph__toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0.1rem 0 0.4rem;
+  font-size: 0.85rem;
+  color: var(--muted, #6b6559);
+  cursor: pointer;
+}
+
+.ash-graph__toggle em {
+  font-style: normal;
+  opacity: 0.75;
+  font-variant-numeric: tabular-nums;
+}
+
+.ash-graph__toggle input {
+  accent-color: var(--rubric, #a63a2b);
+  cursor: pointer;
+}
+
+/* --- what a form field is asking for -------------------------------------
+   The label is a plain question; the hint under it names the Sanskrit term,
+   so one line serves the reader who needs the question and the reader who
+   only needs the term. */
+.field__hint {
+  display: block;
+  margin-top: 0.15rem;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--muted, #6b6559);
+  max-width: 58ch;
+}
+
+.ash-play__check .field__hint { margin-left: 0; }

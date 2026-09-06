@@ -1,0 +1,99 @@
+Full Padacheda & Grammatical Breakdown
+अत्र (atra):
+
+Classification: Avyaya (Indeclinable).
+
+Meaning: "Here" (referring to the Pandava army).
+
+शूरा (śūrā):
+
+Padacheda: शूराः (śūrāḥ)
+
+Visarga Lopa (Dropping): The original word is śūrāḥ. Because it ends in 'āḥ' (आः) and is followed by the voiced consonant 'm' (म) in maheṣvāsā, the visarga completely drops out.
+
+Grammar: Prathamā (1st Case), Bahuvacana (Plural). Meaning: "Heroes."
+
+महेष्वासा (maheṣvāsā):
+
+Padacheda: महा + इष्वासाः (mahā + iṣvāsāḥ)
+
+Guṇa Sandhi: mahā + i = mahe.
+
+Visarga Lopa: Again, it ends in 'āḥ' and is followed by the voiced consonant 'bh' (भ). The visarga drops.
+
+Samas: This is a beautiful Bahuvrihi Samas (Exocentric compound).
+
+iṣu (arrow) + ās (to throw) = iṣvāsa (bow).
+
+mahāntaḥ iṣvāsāḥ yeṣām te (Those whose bows are great).
+
+Grammar: Prathamā Bahuvacana. Meaning: "Mighty bowmen."
+
+भीमार्जुनसमा (bhīmārjunasamā):
+
+Padacheda: भीम + अर्जुन + समाः (bhīma + arjuna + samāḥ)
+
+Dīrgha Sandhi: bhīma + a = bhīmā.
+
+Visarga Lopa: A third time! Ends in 'āḥ', followed by 'y' (य). The visarga drops.
+
+Samas: This contains two compounds:
+
+Bhīmaśca arjunaśca = Bhīmārjunau (Itaretara Dvandva - Bhima and Arjuna).
+
+Tābhyām samāḥ = Tṛtīyā Tatpurusha (Equal to them).
+
+Grammar: Prathamā Bahuvacana. Meaning: "Equal to Bhima and Arjuna."
+
+युधि (yudhi):
+
+Root: yudh (battle).
+
+Grammar: Saptamī (7th Case / Locative), Ekavacana.
+
+Meaning: "In battle."
+
+युयुधानो (yuyudhāno):
+
+Padacheda: युयुधानः (yuyudhānaḥ)
+
+Visarga Sandhi (Utva): When a word ends in 'aḥ' (अः) and is followed by a voiced consonant like 'v' (व), the 'aḥ' turns into an 'o' (ओ). Therefore, yuyudhānaḥ becomes yuyudhāno.
+
+Grammar: Prathamā Ekavacana (Singular). This is the proper name of the warrior Satyaki.
+
+विराटश्च (virāṭaśca):
+
+Padacheda: विराटः + च (virāṭaḥ + ca)
+
+Visarga Sandhi (Ścatva): When a visarga is followed by 'c' (च), it turns into the palatal 'ś' (श).
+
+Grammar: Virāṭaḥ (Prathamā Ekavacana) - King Virata. Ca (Avyaya) - And.
+
+द्रुपदश्च (drupadaśca):
+
+Padacheda: द्रुपदः + च (drupadaḥ + ca)
+
+Visarga Sandhi: Exactly the same as above. 'ḥ' + 'c' = 'ś'.
+
+Grammar: Drupadaḥ (Prathamā Ekavacana) - King Drupada. Ca - And.
+
+महारथः (mahārathaḥ):
+
+Samas: Another classic Bahuvrihi Samas.
+
+Mahān rathaḥ yasya saḥ (He whose chariot is great).
+
+Military Context: In ancient Indian military ranks, a Maharatha wasn't just a guy with a big chariot. It was a specific rank for a commander capable of fighting 10,000 archers simultaneously!
+
+Grammar: Prathamā Ekavacana. Meaning: "Great chariot-warrior."
+
+The Visarga Sandhi Symphony
+Notice how Panini's phonetic rules play out like music in this single verse:
+
+Drop it (Lopa): śūrāḥ, maheṣvāsāḥ, and samāḥ all drop their visargas because the 'ā' (आ) sound is long and followed by a soft sound.
+
+Morph it to 'O' (Utva): yuyudhānaḥ turns into yuyudhāno because the 'a' (अ) is short and followed by a soft sound.
+
+Morph it to 'Ś' (Ścatva): virāṭaḥ and drupadaḥ turn into ś (श्) because they hit the hard, palatal sound 'c' (च).
+
+Three totally different rules for the exact same symbol (ः), all happening in one line of poetry!

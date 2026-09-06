@@ -1,0 +1,715 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#FEFCF8" />
+    <title>Vyākaraṇa Toolkit — Pāṇinian morphology, śabdarūpa, and prakriyā</title>
+    <meta
+      name="description"
+      content="Classify Sanskrit words and verses, generate 8×3 śabdarūpa paradigms, reverse-analyse padas, conjugate tiṅanta, and derive kṛdanta and taddhita forms — every step cited to its Aṣṭādhyāyī sūtra."
+    />
+
+    <!-- Fonts: Inter for Latin, Noto Sans/Serif Devanagari for Sanskrit. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&family=Noto+Serif+Devanagari:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Inline mark: no extra request, and no 404 for /favicon.ico. -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23d4883a'/%3E%3Ctext x='16' y='23' font-size='21' text-anchor='middle' fill='%23fff' font-family='serif'%3E%E0%A4%B5%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="theme.css" />
+
+    <!-- Applies the stored theme + reading size before first paint (no flash
+         of the wrong theme). Same storage keys as Prasadam. -->
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme") || "system";
+          var d =
+            t === "dark" ||
+            (t === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+          var e = document.documentElement;
+          e.classList.toggle("dark", d);
+          e.style.colorScheme = d ? "dark" : "light";
+          var c = d ? "#1A1412" : "#FEFCF8";
+          document.querySelectorAll('meta[name="theme-color"]').forEach(function (m) {
+            m.setAttribute("content", c);
+          });
+          var s = localStorage.getItem("reading-size");
+          if (s === "lg" || s === "xl") e.dataset.readingSize = s;
+        } catch (_) {}
+      })();
+    </script>
+  </head>
+
+  <body>
+    <!-- ================================================================ -->
+    <!-- Header                                                           -->
+    <!-- ================================================================ -->
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="#classifier">
+          <span lang="sa" class="font-devanagari">व्याकरणम्</span>
+          <span class="brand__latin">Vyākaraṇa Toolkit</span>
+        </a>
+
+        <nav aria-label="Sections" class="site-nav">
+          <a class="site-nav__link" href="#classifier" data-route="classifier">Classifier</a>
+          <a class="site-nav__link" href="#subanta" data-route="subanta">Śabdarūpa</a>
+          <a class="site-nav__link" href="#reverse" data-route="reverse">Pada analysis</a>
+          <a class="site-nav__link" href="#tinanta" data-route="tinanta">Tiṅanta</a>
+          <a class="site-nav__link" href="#krdanta" data-route="krdanta">Kṛt &amp; Taddhita</a>
+          <a class="site-nav__link" href="#chandas" data-route="chandas">Chandas</a>
+          <a class="site-nav__link" href="#astadhyayi" data-route="astadhyayi">Aṣṭādhyāyī</a>
+
+          <div class="toggle-group reading-size" role="group" aria-label="Text size">
+            <button type="button" data-size="default" aria-label="Default text" title="Default text">
+              <span aria-hidden="true">A</span>
+            </button>
+            <button type="button" data-size="lg" aria-label="Large text" title="Large text">
+              <span aria-hidden="true">A</span>
+            </button>
+            <button type="button" data-size="xl" aria-label="Largest text" title="Largest text">
+              <span aria-hidden="true">A</span>
+            </button>
+          </div>
+
+          <div class="toggle-group theme-toggle" role="group" aria-label="Theme">
+            <button type="button" data-theme="light" aria-label="Light theme" title="Light theme">
+              <span aria-hidden="true">☀️</span>
+            </button>
+            <button type="button" data-theme="dark" aria-label="Dark theme" title="Dark theme">
+              <span aria-hidden="true">🌙</span>
+            </button>
+            <button type="button" data-theme="system" aria-label="System theme" title="System theme">
+              <span aria-hidden="true">🖥️</span>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <p class="sr-only" aria-live="polite" id="live-region"></p>
+
+    <!-- ================================================================ -->
+    <!-- 1. Classifier & verse analysis                                   -->
+    <!-- ================================================================ -->
+    <main class="page-shell" id="page-classifier" data-page="classifier">
+      <div class="page-title-row">
+        <h1 class="page-title">Sanskrit sandhi, samāsa &amp; verse analysis</h1>
+        <span class="pill pill--info">Beta</span>
+      </div>
+      <p class="page-intro">
+        Enter a single word or a full verse in Devanāgarī or IAST. The engine decides between
+        sandhi, samāsa, both, or neither, and shows the padaccheda, the vigraha, and the
+        Aṣṭādhyāyī sūtra each decision rests on.
+      </p>
+      <details class="disclosure">
+        <summary>How it decides — and what it will not claim</summary>
+        <p>
+          A split is reported only when the reconstructed members and the rule conditions are both
+          supported. Existing spaces are source anchors, not grammatical viccheda. A verse is routed
+          to the verse pipeline, which additionally reports the metre, the anvaya, the
+          viśeṣya–viśeṣaṇa map, and a kāraka dependency diagram; individual words fall through to
+          the single-pada classifier with its ML confidence.
+        </p>
+      </details>
+
+      <div class="stack mt-6">
+        <div class="card card--pad">
+          <form id="classify-form" novalidate>
+            <label class="field">
+              <span class="field__label">Sanskrit word, phrase, or verse</span>
+              <textarea
+                id="classify-input"
+                class="input"
+                rows="5"
+                maxlength="4000"
+                spellcheck="false"
+                autocorrect="off"
+                autocapitalize="off"
+                autocomplete="off"
+                placeholder="Paste Sanskrit here…"
+              ></textarea>
+            </label>
+            <span class="char-count" id="classify-count">0 / 4,000</span>
+            <p class="help-text">
+              Proper IAST and Devanāgarī are both accepted. Keep the text in one script; daṇḍas,
+              avagraha, and hyphens stay anchored to their source positions.
+            </p>
+
+            <div class="example-row">
+              <button type="submit" class="btn btn--primary" id="classify-submit">
+                Analyse text
+              </button>
+              <div class="example-chips" id="classify-examples">
+                <button type="button" class="btn btn--secondary btn--sm" data-example="वागर्थाविव सम्पृक्तौ वागर्थप्रतिपत्तये । जगतः पितरौ वन्दे पार्वतीपरमेश्वरौ ॥">
+                  Raghuvaṃśa 1.1
+                </button>
+                <button type="button" class="btn btn--secondary btn--sm" data-example="पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम् । व्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता ॥">
+                  Bhagavad Gītā 1.3
+                </button>
+                <button type="button" class="btn btn--secondary btn--sm" data-example="नीलोत्पलम्">
+                  नीलोत्पलम्
+                </button>
+                <button type="button" class="btn btn--secondary btn--sm" data-example="वृक्षपतितं">
+                  वृक्षपतितं
+                </button>
+                <button type="button" class="btn btn--secondary btn--sm" data-example="rāmo’sti">
+                  rāmo’sti
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <details class="note-box">
+          <summary>Current coverage (beta)</summary>
+          <p>
+            The rule engine covers the sandhi and samāsa families exercised by the test suite, plus
+            an ML tie-breaker trained on the bundled dataset. Words outside that coverage are
+            reported as unanalysed rather than guessed. Analysis runs on this machine — the text is
+            posted to the local server only, never to a third party.
+          </p>
+        </details>
+
+        <div id="classify-output" class="stack"></div>
+      </div>
+    </main>
+
+    <!-- ================================================================ -->
+    <!-- 2. Śabdarūpa (subanta) generator                                 -->
+    <!-- ================================================================ -->
+    <main class="page-shell" id="page-subanta" data-page="subanta" hidden>
+      <div class="page-title-row">
+        <h1 class="page-title">Śabdarūpa — the 8 × 3 subanta paradigm</h1>
+        <span class="pill pill--info">Beta</span>
+      </div>
+      <p class="page-intro">
+        Give a prātipadika and its gender to generate all twenty-four inflected padas. Every cell is
+        tappable: opening one replays the full prakriyā step by step, with the sup affix, its
+        anubandhas, the kāraka jurisdiction, and a four-commentary concordance.
+      </p>
+      <details class="disclosure">
+        <summary>What a cell contains</summary>
+        <p>
+          Each form carries the raw sup affix as taught in 4.1.2, the it-elision rule that strips its
+          anubandhas, the aṅga grade (sarvanāmasthāna / bha / pada) the affix imposes, and the kāraka
+          role the vibhakti expresses. The concordance places the Aṣṭādhyāyī step beside the
+          Mahābhāṣya's jurisprudence, the Harināmāmṛta's devotional reading, and the Bāla-toṣaṇī
+          exegesis for that same step.
+        </p>
+      </details>
+
+      <div class="stack mt-6">
+        <div class="card card--pad">
+          <form id="subanta-form" novalidate>
+            <div class="grid-2">
+              <label class="field">
+                <span class="field__label">Prātipadika (stem)</span>
+                <input
+                  type="text"
+                  id="subanta-stem"
+                  class="input"
+                  placeholder="rāma, latā, phala, hari, nadī, guru, pitṛ…"
+                  autocomplete="off"
+                  spellcheck="false"
+                  required
+                />
+              </label>
+              <label class="field">
+                <span class="field__label">Liṅga (gender)</span>
+                <select id="subanta-gender" class="input">
+                  <option value="">Detect automatically</option>
+                  <option value="masculine">Puṃliṅga — masculine</option>
+                  <option value="feminine">Strīliṅga — feminine</option>
+                  <option value="neuter">Napuṃsakaliṅga — neuter</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="example-row">
+              <button type="submit" class="btn btn--primary">Generate paradigm</button>
+              <div class="example-chips" id="subanta-examples">
+                <button type="button" class="btn btn--secondary btn--sm" data-stem="rāma" data-gender="masculine">राम — m. a-kārānta</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-stem="latā" data-gender="feminine">लता — f. ā-kārānta</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-stem="phala" data-gender="neuter">फल — n. a-kārānta</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-stem="hari" data-gender="masculine">हरि — m. i-kārānta</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-stem="nadī" data-gender="feminine">नदी — f. ī-kārānta</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-stem="guru" data-gender="masculine">गुरु — m. u-kārānta</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-stem="pitṛ" data-gender="masculine">पितृ — m. ṛ-kārānta</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-stem="sakhi" data-gender="masculine">सखि — irregular</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-stem="go" data-gender="masculine">गो — diphthong</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-stem="tad" data-gender="masculine">तद् — pronoun</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div id="subanta-output" class="stack"></div>
+      </div>
+    </main>
+
+    <!-- ================================================================ -->
+    <!-- 3. Reverse pada analysis                                         -->
+    <!-- ================================================================ -->
+    <main class="page-shell" id="page-reverse" data-page="reverse" hidden>
+      <div class="page-title-row">
+        <h1 class="page-title">Pada analysis &amp; grammatical brief</h1>
+        <span class="pill pill--info">Beta</span>
+      </div>
+      <p class="page-intro">
+        Work backwards from an inflected pada to every stem, gender, vibhakti, and vacana that could
+        have produced it. Each reading is argued as a brief: the claim, the statutes it rests on, the
+        Mahābhāṣya dialectic, and the verdict.
+      </p>
+      <details class="disclosure">
+        <summary>Why more than one reading</summary>
+        <p>
+          Sanskrit surface forms are systematically ambiguous — रामे is both saptamī ekavacana of राम
+          and, for other stems, a different slot entirely. Every reading whose derivation replays
+          cleanly is listed rather than one being silently picked, and each is exportable as a
+          standalone brief in Markdown or printable HTML.
+        </p>
+      </details>
+
+      <div class="stack mt-6">
+        <div class="card card--pad">
+          <form id="reverse-form" novalidate>
+            <label class="field">
+              <span class="field__label">Inflected pada</span>
+              <input
+                type="text"
+                id="reverse-input"
+                class="input"
+                placeholder="rāmeṇa, rāmāya, nadīṣu, guruṇā, phalāni, sakhyā…"
+                autocomplete="off"
+                spellcheck="false"
+                required
+              />
+            </label>
+
+            <div class="example-row">
+              <button type="submit" class="btn btn--primary">Analyse pada</button>
+              <div class="example-chips" id="reverse-examples">
+                <button type="button" class="btn btn--secondary btn--sm" data-pada="rāmeṇa">rāmeṇa</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-pada="rāmāya">rāmāya</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-pada="nadīṣu">nadīṣu</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-pada="guruṇā">guruṇā</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-pada="phalāni">phalāni</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-pada="sakhyā">sakhyā</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-pada="gavā">gavā</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-pada="panthānam">panthānam</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-pada="pitṝn">pitṝn</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-pada="rāmebhyaḥ">rāmebhyaḥ</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div id="reverse-output" class="stack"></div>
+      </div>
+    </main>
+
+    <!-- ================================================================ -->
+    <!-- 4. Tiṅanta conjugator                                            -->
+    <!-- ================================================================ -->
+    <main class="page-shell" id="page-tinanta" data-page="tinanta" hidden>
+      <div class="page-title-row">
+        <h1 class="page-title">Tiṅanta — verbal conjugation</h1>
+        <span class="pill pill--info">Beta</span>
+      </div>
+      <p class="page-intro">
+        Conjugate a dhātu across the three puruṣas and three vacanas in any of the supported lakāras,
+        in either pada. Every cell names the sūtra that fixes its vikaraṇa and its ending.
+      </p>
+      <details class="disclosure">
+        <summary>Coverage</summary>
+        <p>
+          The bundled dhātupāṭha slice covers the common roots of the first, second, fourth, sixth,
+          and eighth gaṇas in laṭ, laṅ, lṛṭ, loṭ, and vidhiliṅ. A root outside that slice is reported
+          as unsupported rather than conjugated by analogy.
+        </p>
+      </details>
+
+      <div class="stack mt-6">
+        <div class="card card--pad">
+          <form id="tinanta-form" novalidate>
+            <div class="grid-3">
+              <label class="field">
+                <span class="field__label">Dhātu (root)</span>
+                <input
+                  type="text"
+                  id="tinanta-root"
+                  class="input"
+                  placeholder="bhū, gam, kṛ, as, dṛś, sthā, paṭh…"
+                  autocomplete="off"
+                  spellcheck="false"
+                  required
+                />
+              </label>
+              <label class="field">
+                <span class="field__label">Lakāra (tense / mood)</span>
+                <select id="tinanta-lakara" class="input">
+                  <option value="lat">Laṭ — present</option>
+                  <option value="lan">Laṅ — imperfect past</option>
+                  <option value="lrt">Lṛṭ — simple future</option>
+                  <option value="lot">Loṭ — imperative</option>
+                  <option value="vidhiling">Vidhiliṅ — optative</option>
+                </select>
+              </label>
+              <label class="field">
+                <span class="field__label">Pada</span>
+                <select id="tinanta-pada" class="input">
+                  <option value="parasmaipada">Parasmaipada</option>
+                  <option value="atmanepada">Ātmanepada</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="example-row">
+              <button type="submit" class="btn btn--primary">Conjugate</button>
+              <div class="example-chips" id="tinanta-examples">
+                <button type="button" class="btn btn--secondary btn--sm" data-root="bhū" data-lakara="lat">भू — laṭ</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-root="gam" data-lakara="lat">गम् — laṭ</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-root="kṛ" data-lakara="lat">कृ — laṭ</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-root="as" data-lakara="lat">अस् — laṭ</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-root="dṛś" data-lakara="lat">दृश् — laṭ</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-root="bhū" data-lakara="lrt">भू — lṛṭ</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-root="bhū" data-lakara="lan">भू — laṅ</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-root="bhū" data-lakara="lot">भू — loṭ</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div id="tinanta-output" class="stack"></div>
+      </div>
+    </main>
+
+    <!-- ================================================================ -->
+    <!-- 5. Kṛdanta & Taddhita                                            -->
+    <!-- ================================================================ -->
+    <main class="page-shell" id="page-krdanta" data-page="krdanta" hidden>
+      <div class="page-title-row">
+        <h1 class="page-title">Kṛdanta &amp; taddhitānta derivation</h1>
+        <span class="pill pill--info">Beta</span>
+      </div>
+      <p class="page-intro">
+        Two derivational lanes: primary affixes attaching to a dhātu, and secondary affixes attaching
+        to a finished nominal stem. Both replay the same morphophonemic timeline and cite the
+        Harināmāmṛta parallel beside the Pāṇinian sūtra.
+      </p>
+
+      <div class="stack mt-6">
+        <div class="card card--pad">
+          <h2 class="section-heading">Primary verbal derivatives — kṛdanta (कृदन्त)</h2>
+          <form id="krdanta-form" class="mt-4" novalidate>
+            <div class="grid-3">
+              <label class="field">
+                <span class="field__label">Dhātu (root)</span>
+                <input
+                  type="text"
+                  id="krdanta-root"
+                  class="input"
+                  placeholder="kṛ, gam, dṛś, bhū, sthā…"
+                  autocomplete="off"
+                  spellcheck="false"
+                  required
+                />
+              </label>
+              <label class="field">
+                <span class="field__label">Kṛt affix</span>
+                <select id="krdanta-affix" class="input">
+                  <option value="ktva">Ktvā — having done (3.4.21)</option>
+                  <option value="lyap">Lyap — prefixed gerund (7.1.37)</option>
+                  <option value="tumun">Tumun — infinitive (3.3.158)</option>
+                  <option value="kta">Kta — past passive participle (3.2.102)</option>
+                  <option value="ktavatu">Ktavatu — past active participle (3.2.102)</option>
+                  <option value="satr">Śatṛ — present active (3.2.124)</option>
+                  <option value="sanac">Śānac — present middle (3.2.124)</option>
+                  <option value="tavya">Tavya — obligation (3.1.96)</option>
+                  <option value="aniya">Anīya — worthy of (3.1.96)</option>
+                </select>
+              </label>
+              <label class="field">
+                <span class="field__label">Upasarga (optional)</span>
+                <input
+                  type="text"
+                  id="krdanta-upasarga"
+                  class="input"
+                  placeholder="sam, pra, vi, anu, nir…"
+                  autocomplete="off"
+                  spellcheck="false"
+                />
+              </label>
+            </div>
+
+            <div class="example-row">
+              <button type="submit" class="btn btn--primary">Derive kṛdanta</button>
+              <div class="example-chips" id="krdanta-examples">
+                <button type="button" class="btn btn--secondary btn--sm" data-root="kṛ" data-affix="ktva">कृ + क्त्वा</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-root="gam" data-affix="lyap" data-upasarga="sam">सम् + गम् + ल्यप्</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-root="gam" data-affix="tumun">गम् + तुमुन्</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-root="kṛ" data-affix="kta">कृ + क्त</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-root="dṛś" data-affix="satr">दृश् + शतृ</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-root="kṛ" data-affix="tavya">कृ + तव्य</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="card card--pad">
+          <h2 class="section-heading">Secondary nominal derivatives — taddhitānta (तद्धितान्त)</h2>
+          <form id="taddhita-form" class="mt-4" novalidate>
+            <div class="grid-2">
+              <label class="field">
+                <span class="field__label">Prātipadika (base stem)</span>
+                <input
+                  type="text"
+                  id="taddhita-stem"
+                  class="input"
+                  placeholder="dharma, vasudeva, kṛṣṇa, dhī, guṇa, veda…"
+                  autocomplete="off"
+                  spellcheck="false"
+                  required
+                />
+              </label>
+              <label class="field">
+                <span class="field__label">Taddhita affix</span>
+                <select id="taddhita-affix" class="input">
+                  <option value="thak">Ṭhak → इक — relational (4.4.2)</option>
+                  <option value="an">Aṇ → ādivṛddhi — lineage (4.1.92)</option>
+                  <option value="matup">Matup → मत्/वत् — possessive (5.2.94)</option>
+                  <option value="inith">Ini → इन् — possessor (5.2.115)</option>
+                  <option value="tva">Tva → त्वम् — abstract neuter (5.1.119)</option>
+                  <option value="tal">Tal → ता — abstract feminine (5.1.119)</option>
+                  <option value="mayat">Mayaṭ → मय — composed of (5.4.21)</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="example-row">
+              <button type="submit" class="btn btn--primary">Derive taddhitānta</button>
+              <div class="example-chips" id="taddhita-examples">
+                <button type="button" class="btn btn--secondary btn--sm" data-stem="dharma" data-affix="thak">धर्म + ठक्</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-stem="vasudeva" data-affix="an">वसुदेव + अण्</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-stem="dhī" data-affix="matup">धी + मतुप्</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-stem="guṇa" data-affix="inith">गुण + इनि</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-stem="kṛṣṇa" data-affix="tva">कृष्ण + त्व</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-stem="ānanda" data-affix="mayat">आनन्द + मयट्</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div id="derivative-output" class="stack"></div>
+      </div>
+    </main>
+
+    <!-- ================================================================ -->
+    <!-- 6. Chandas — syllable weights and metre                          -->
+    <!-- ================================================================ -->
+    <main class="page-shell" id="page-chandas" data-page="chandas" hidden>
+      <div class="page-title-row">
+        <h1 class="page-title">Chandas — syllables and metre</h1>
+        <span class="pill pill--info">Beta</span>
+      </div>
+      <p class="page-intro">
+        Paste one Sanskrit verse and this separates its metrical akṣaras, aligns the pādas by beat,
+        then shows whether each syllable is <em>laghu</em> (light) or <em>guru</em> (heavy) — with
+        the rule and the source behind every decision, and the metre matched against a
+        128-entry classical catalog.
+      </p>
+      <p class="disclosure" style="margin-top: 0.5rem">
+        It reads the text as recited, so spaces and hyphens do not stop a syllable. Devanāgarī and
+        IAST are both supported; Vedic accents and word-by-word unsandhied text need separate
+        handling.
+      </p>
+      <details class="disclosure">
+        <summary>How a verdict is graded</summary>
+        <p>
+          A pattern match alone is never called an identification. A metre is reported as
+          <strong>identified</strong> only when the pattern matches exactly across a complete verse
+          <em>and</em> its defining rule is keyed to both a root text and a commentary in two
+          independent traditions. An exact match without that paired witness is
+          <strong>provisional</strong>; equally-evidenced rivals are <strong>ambiguous</strong>; a
+          single compatible pāda is <strong>fragment only</strong>. Near misses are shown as
+          diagnostics and can never become a verdict. Both the syllable scan and the metre verdict
+          are recomputed by an independent checker before display; a disagreement suppresses the
+          verdict rather than showing it.
+        </p>
+      </details>
+
+      <div class="stack mt-6">
+        <div class="card card--pad">
+          <form id="chandas-form" novalidate>
+            <label class="field">
+              <span class="field__label">Sanskrit verse</span>
+              <textarea
+                id="chandas-input"
+                class="input"
+                rows="6"
+                maxlength="4000"
+                spellcheck="false"
+                autocorrect="off"
+                autocapitalize="off"
+                autocomplete="off"
+                placeholder="One verse — one pāda per line, or daṇḍa-separated…"
+              ></textarea>
+            </label>
+            <p class="help-text">
+              Line breaks are read as pāda boundaries; with none, daṇḍas are used, and failing that
+              the whole text is scanned as one unit and the pādas are inferred from the metre.
+            </p>
+
+            <div class="grid-3 mt-4">
+              <label class="field">
+                <span class="field__label">Input script</span>
+                <select id="chandas-script" class="input">
+                  <option value="auto">Detect automatically</option>
+                  <option value="devanagari">Devanāgarī</option>
+                  <option value="iast">IAST</option>
+                </select>
+              </label>
+              <label class="field">
+                <span class="field__label">Pāda boundaries</span>
+                <select id="chandas-boundary" class="input">
+                  <option value="auto">Detect automatically</option>
+                  <option value="lines">One pāda per line</option>
+                  <option value="dandas">Split at daṇḍas</option>
+                  <option value="single">Scan as one unit</option>
+                </select>
+              </label>
+              <label class="field">
+                <span class="field__label">Tradition</span>
+                <select id="chandas-tradition" class="input">
+                  <option value="auto">Classical, then Vedic</option>
+                  <option value="classical">Classical only</option>
+                  <option value="vedic">Vedic count classes</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="example-row">
+              <button type="submit" class="btn btn--primary" id="chandas-submit">
+                Scan the verse
+              </button>
+              <div class="example-chips" id="chandas-examples">
+                <button type="button" class="btn btn--secondary btn--sm" data-example="धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः ।&#10;मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय ॥">
+                  Anuṣṭubh
+                </button>
+                <button type="button" class="btn btn--secondary btn--sm" data-example="sarvasya cāhaṁ hṛdi sanniviṣṭo&#10;mattaḥ smṛtir jñānam apohanaṁ ca&#10;vedaiś ca sarvair aham eva vedyo&#10;vedāntakṛd vedavid eva cāham">
+                  Indravajrā
+                </button>
+                <button type="button" class="btn btn--secondary btn--sm" data-example="janmādy asya yato ’nvayād itarataś cārtheṣv abhijñaḥ svarāṭ&#10;tene brahma hṛdā ya ādikavaye muhyanti yat sūrayaḥ&#10;tejo-vāri-mṛdāṁ yathā vinimayo yatra tri-sargo ’mṛṣā&#10;dhāmnā svena sadā nirasta-kuhakaṁ satyaṁ paraṁ dhīmahi">
+                  Śārdūlavikrīḍita
+                </button>
+                <button type="button" class="btn btn--secondary btn--sm" data-example="kaścit kāntāvirahaguruṇā svādhikārapramattaḥ śāpenāstaṃgamitamahimā varṣabhogyeṇa bhartuḥ&#10;yakṣaś cakre janakatanayāsnānapuṇyodakeṣu snigdhacchāyātaruṣu vasatiṃ rāmagiryāśrameṣu">
+                  Mandākrāntā
+                </button>
+                <button type="button" class="btn btn--secondary btn--sm" data-example="duḥkhatrayābhighātāj jijñāsā tadapaghātake hetau&#10;dṛṣṭe sāpārthā cen naikāntātyantato ’bhāvāt">
+                  Āryā
+                </button>
+                <button type="button" class="btn btn--secondary btn--sm" data-example="tat savitur vareṇyaṃ&#10;bhargo devasya dhīmahi&#10;dhiyo yo naḥ pracodayāt">
+                  Gāyatrī
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div id="chandas-output" class="stack"></div>
+      </div>
+    </main>
+
+    <main class="page-shell" id="page-astadhyayi" data-page="astadhyayi" hidden>
+      <div class="page-title-row">
+        <h1 class="page-title">Aṣṭādhyāyī — the codification</h1>
+        <span class="pill pill--info" id="ash-count">loading…</span>
+      </div>
+      <p class="page-intro">
+        Pāṇini's grammar, rule by rule. Each sūtra here has been read against the mūla and every
+        commentary on disk, its findings written down, and the rule itself written as a function
+        you can run below. Nothing is claimed without a citation you can check, and where a
+        question is still open the record says so.
+      </p>
+      <p class="disclosure" style="margin-top: 0.5rem">
+        A sūtra is never a self-contained statement. It is read with words carried down from
+        earlier sūtras, under a heading that may be pages back, and against the rules it overrides
+        or feeds. The dependency graph shows all three, and they are drawn differently because
+        they are different things.
+      </p>
+
+      <div class="ash-progress mt-6">
+        <span class="ash-progress__bar"><span class="ash-progress__fill" id="ash-bar" style="width:0%"></span></span>
+        <span class="text-sm" id="ash-progress-text"></span>
+      </div>
+
+      <div class="ash-layout">
+        <aside class="ash-list" id="ash-list" aria-label="Codified sūtras">
+          <div class="ash-list__search">
+            <label class="field">
+              <span class="sr-only">Search sūtras</span>
+              <input
+                id="ash-search"
+                class="input"
+                type="search"
+                placeholder="Search — 1.1.9, savarṇa, सवर्ण"
+                spellcheck="false"
+                autocomplete="off"
+              />
+            </label>
+          </div>
+          <div class="ash-key">
+            <span><span class="ash-list__flag"></span>an open question</span>
+            <span><span class="ash-list__flag ash-list__flag--scope"></span>something out of scope</span>
+            <span><span class="ash-key__none"></span>all settled</span>
+          </div>
+          <p class="ash-key" style="border-bottom:0;padding-top:0">
+            Hover the eye beside a marked sūtra to read what is outstanding.
+          </p>
+          <div id="ash-list-body"></div>
+        </aside>
+
+        <div class="stack" id="ash-detail"></div>
+      </div>
+    </main>
+
+    <div class="ash-peek" id="ash-peek" role="tooltip" hidden></div>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        Pāṇinian rule engine with an ML tie-breaker. Every claim on this page carries the sūtra it
+        rests on; where the engine has no supported derivation it says so rather than guessing.
+      </div>
+    </footer>
+
+    <!-- Prakriyā detail modal -->
+    <div class="scrim" id="modal-scrim" hidden>
+      <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" id="modal">
+        <div class="modal__head">
+          <div>
+            <span class="pill pill--primary" id="modal-slot">Tṛtīyā ekavacana</span>
+            <h2 class="result-headline font-devanagari-serif mt-2" id="modal-title">—</h2>
+            <p class="result-headline-latin" id="modal-title-latin">—</p>
+          </div>
+          <div class="row">
+            <button type="button" class="btn btn--secondary btn--sm" id="modal-export">
+              Export brief
+            </button>
+            <button type="button" class="icon-btn" id="modal-close" aria-label="Close">×</button>
+          </div>
+        </div>
+        <div id="modal-body" class="stack mt-4"></div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

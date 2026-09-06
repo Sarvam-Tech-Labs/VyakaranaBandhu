@@ -1,0 +1,550 @@
+{
+  "benchmark_metadata": {
+    "name": "Exhaustive SOTA Sanskrit Subanta (Nominal Declension) Gold Benchmark",
+    "description": "Standardized canonical paradigm test suite modeled on Sanskrit Heritage Engine, Digital Corpus of Sanskrit (DCS), and Siddhanta Kaumudi.",
+    "version": "3.0",
+    "total_paradigms": 30
+  },
+  "paradigms": [
+    {
+      "stem": "rāma",
+      "stem_devanagari": "राम",
+      "gender": "masculine",
+      "category": "ajanta_a_masculine",
+      "description": "Akārānta Puṃliṅga (with Ṇatva: 8.4.1)",
+      "table": [
+        ["rāmaḥ", "rāmau", "rāmāḥ"],
+        ["rāmam", "rāmau", "rāmān"],
+        ["rāmeṇa", "rāmābhyām", "rāmaiḥ"],
+        ["rāmāya", "rāmābhyām", "rāmebhyaḥ"],
+        ["rāmāt", "rāmābhyām", "rāmebhyaḥ"],
+        ["rāmasya", "rāmayoḥ", "rāmāṇām"],
+        ["rāme", "rāmayoḥ", "rāmeṣu"],
+        ["he rāma", "he rāmau", "he rāmāḥ"]
+      ]
+    },
+    {
+      "stem": "deva",
+      "stem_devanagari": "देव",
+      "gender": "masculine",
+      "category": "ajanta_a_masculine",
+      "description": "Akārānta Puṃliṅga (Standard)",
+      "table": [
+        ["devaḥ", "devau", "devāḥ"],
+        ["devam", "devau", "devān"],
+        ["devena", "devābhyām", "devaiḥ"],
+        ["devāya", "devābhyām", "devebhyaḥ"],
+        ["devāt", "devābhyām", "devebhyaḥ"],
+        ["devasya", "devayoḥ", "devānām"],
+        ["deve", "devayoḥ", "deveṣu"],
+        ["he deva", "he devau", "he devāḥ"]
+      ]
+    },
+    {
+      "stem": "bāla",
+      "stem_devanagari": "बाल",
+      "gender": "masculine",
+      "category": "ajanta_a_masculine",
+      "description": "Akārānta Puṃliṅga (bāla)",
+      "table": [
+        ["bālaḥ", "bālau", "bālāḥ"],
+        ["bālam", "bālau", "bālān"],
+        ["bālena", "bālābhyām", "bālaiḥ"],
+        ["bālāya", "bālābhyām", "bālebhyaḥ"],
+        ["bālāt", "bālābhyām", "bālebhyaḥ"],
+        ["bālasya", "bālayoḥ", "bālānām"],
+        ["bāle", "bālayoḥ", "bāleṣu"],
+        ["he bāla", "he bālau", "he bālāḥ"]
+      ]
+    },
+    {
+      "stem": "phala",
+      "stem_devanagari": "फल",
+      "gender": "neuter",
+      "category": "ajanta_a_neuter",
+      "description": "Akārānta Napuṃsakaliṅga",
+      "table": [
+        ["phalam", "phale", "phalāni"],
+        ["phalam", "phale", "phalāni"],
+        ["phalena", "phalābhyām", "phalaiḥ"],
+        ["phalāya", "phalābhyām", "phalebhyaḥ"],
+        ["phalāt", "phalābhyām", "phalebhyaḥ"],
+        ["phalasya", "phalayoḥ", "phalānām"],
+        ["phale", "phalayoḥ", "phaleṣu"],
+        ["he phalam/he phala", "he phale", "he phalāni"]
+      ]
+    },
+    {
+      "stem": "vana",
+      "stem_devanagari": "वन",
+      "gender": "neuter",
+      "category": "ajanta_a_neuter",
+      "description": "Akārānta Napuṃsakaliṅga",
+      "table": [
+        ["vanam", "vane", "vanāni"],
+        ["vanam", "vane", "vanāni"],
+        ["vanena", "vanābhyām", "vanaiḥ"],
+        ["vanāya", "vanābhyām", "vanebhyaḥ"],
+        ["vanāt", "vanābhyām", "vanebhyaḥ"],
+        ["vanasya", "vanayoḥ", "vanānām"],
+        ["vane", "vanayoḥ", "vaneṣu"],
+        ["he vanam/he vana", "he vane", "he vanāni"]
+      ]
+    },
+    {
+      "stem": "latā",
+      "stem_devanagari": "लता",
+      "gender": "feminine",
+      "category": "ajanta_aa_feminine",
+      "description": "Ākārānta Strīliṅga",
+      "table": [
+        ["latā", "late", "latāḥ"],
+        ["latām", "late", "latāḥ"],
+        ["latayā", "latābhyām", "latābhiḥ"],
+        ["latāyai", "latābhyām", "latābhyaḥ"],
+        ["latāyāḥ", "latābhyām", "latābhyaḥ"],
+        ["latāyāḥ", "latayoḥ", "latānām"],
+        ["latāyām", "latayoḥ", "latāsu"],
+        ["he late", "he late", "he latāḥ"]
+      ]
+    },
+    {
+      "stem": "vidyā",
+      "stem_devanagari": "विद्या",
+      "gender": "feminine",
+      "category": "ajanta_aa_feminine",
+      "description": "Ākārānta Strīliṅga (vidyā)",
+      "table": [
+        ["vidyā", "vidye", "vidyāḥ"],
+        ["vidyām", "vidye", "vidyāḥ"],
+        ["vidyayā", "vidyābhyām", "vidyābhiḥ"],
+        ["vidyāyai", "vidyābhyām", "vidyābhyaḥ"],
+        ["vidyāyāḥ", "vidyābhyām", "vidyābhyaḥ"],
+        ["vidyāyāḥ", "vidyayoḥ", "vidyānām"],
+        ["vidyāyām", "vidyayoḥ", "vidyāsu"],
+        ["he vidye", "he vidye", "he vidyāḥ"]
+      ]
+    },
+    {
+      "stem": "hari",
+      "stem_devanagari": "हरि",
+      "gender": "masculine",
+      "category": "ajanta_i_masculine",
+      "description": "Ikārānta Puṃliṅga (with Ṇatva: 8.4.1)",
+      "table": [
+        ["hariḥ", "harī", "harayaḥ"],
+        ["harim", "harī", "harīn"],
+        ["hariṇā", "haribhyām", "haribhiḥ"],
+        ["haraye", "haribhyām", "haribhyaḥ"],
+        ["hareḥ", "haribhyām", "haribhyaḥ"],
+        ["hareḥ", "haryoḥ", "harīṇām"],
+        ["harau", "haryoḥ", "hariṣu"],
+        ["he hare", "he harī", "he harayaḥ"]
+      ]
+    },
+    {
+      "stem": "kavi",
+      "stem_devanagari": "कवि",
+      "gender": "masculine",
+      "category": "ajanta_i_masculine",
+      "description": "Ikārānta Puṃliṅga (Standard)",
+      "table": [
+        ["kaviḥ", "kavī", "kavayaḥ"],
+        ["kavim", "kavī", "kavīn"],
+        ["kavinā", "kavibhyām", "kavibhiḥ"],
+        ["kavaye", "kavibhyām", "kavibhyaḥ"],
+        ["kaveḥ", "kavibhyām", "kavibhyaḥ"],
+        ["kaveḥ", "kavyoḥ", "kavīnām"],
+        ["kavau", "kavyoḥ", "kaviṣu"],
+        ["he kave", "he kavī", "he kavayaḥ"]
+      ]
+    },
+    {
+      "stem": "mati",
+      "stem_devanagari": "मति",
+      "gender": "feminine",
+      "category": "ajanta_i_feminine",
+      "description": "Ikārānta Strīliṅga (with dual vibhāṣā: 1.4.6)",
+      "table": [
+        ["matiḥ", "matī", "matayaḥ"],
+        ["matim", "matī", "matīḥ"],
+        ["matyā", "matibhyām", "matibhiḥ"],
+        ["mataye / matyai", "matibhyām", "matibhyaḥ"],
+        ["mateḥ / matyāḥ", "matibhyām", "matibhyaḥ"],
+        ["mateḥ / matyāḥ", "matyoḥ", "matīnām"],
+        ["matau / matyām", "matyoḥ", "matiṣu"],
+        ["he mate", "he matī", "he matayaḥ"]
+      ]
+    },
+    {
+      "stem": "vāri",
+      "stem_devanagari": "वारि",
+      "gender": "neuter",
+      "category": "ajanta_i_neuter",
+      "description": "Ikārānta Napuṃsakaliṅga (num-āgama: 7.1.73)",
+      "table": [
+        ["vāri", "vāriṇī", "vārīṇi"],
+        ["vāri", "vāriṇī", "vārīṇi"],
+        ["vāriṇā", "vāribhyām", "vāribhiḥ"],
+        ["vāriṇe", "vāribhyām", "vāribhyaḥ"],
+        ["vāriṇaḥ", "vāribhyām", "vāribhyaḥ"],
+        ["vāriṇaḥ", "vāriṇoḥ", "vārīṇām"],
+        ["vāriṇi", "vāriṇoḥ", "vāriṣu"],
+        ["he vāri / he vāre", "he vāriṇī", "he vārīṇi"]
+      ]
+    },
+    {
+      "stem": "nadī",
+      "stem_devanagari": "नदी",
+      "gender": "feminine",
+      "category": "ajanta_ii_feminine",
+      "description": "Īkārānta Strīliṅga",
+      "table": [
+        ["nadī", "nadyau", "nadyaḥ"],
+        ["nadīm", "nadyau", "nadīḥ"],
+        ["nadyā", "nadībhyām", "nadībhiḥ"],
+        ["nadyai", "nadībhyām", "nadībhyaḥ"],
+        ["nadyāḥ", "nadībhyām", "nadībhyaḥ"],
+        ["nadyāḥ", "nadyoḥ", "nadīnām"],
+        ["nadyām", "nadyoḥ", "nadīṣu"],
+        ["he nadi", "he nadyau", "he nadyaḥ"]
+      ]
+    },
+    {
+      "stem": "guru",
+      "stem_devanagari": "गुरु",
+      "gender": "masculine",
+      "category": "ajanta_u_masculine",
+      "description": "Ukārānta Puṃliṅga",
+      "table": [
+        ["guruḥ", "gurū", "guravaḥ"],
+        ["gurum", "gurū", "gurūn"],
+        ["guruṇā", "gurubhyām", "gurubhiḥ"],
+        ["gurave", "gurubhyām", "gurubhyaḥ"],
+        ["guroḥ", "gurubhyām", "gurubhyaḥ"],
+        ["guroḥ", "gurvoḥ", "gurūṇām"],
+        ["gurau", "gurvoḥ", "guruṣu"],
+        ["he guro", "he gurū", "he guravaḥ"]
+      ]
+    },
+    {
+      "stem": "madhu",
+      "stem_devanagari": "मधु",
+      "gender": "neuter",
+      "category": "ajanta_u_neuter",
+      "description": "Ukārānta Napuṃsakaliṅga (num-āgama: 7.1.73)",
+      "table": [
+        ["madhu", "madhunī", "madhūni"],
+        ["madhu", "madhunī", "madhūni"],
+        ["madhunā", "madhubhyām", "madhubhiḥ"],
+        ["madhune", "madhubhyām", "madhubhyaḥ"],
+        ["madhunaḥ", "madhubhyām", "madhubhyaḥ"],
+        ["madhunaḥ", "madhunoḥ", "madhūnām"],
+        ["madhuni", "madhunoḥ", "madhuṣu"],
+        ["he madhu / he madho", "he madhunī", "he madhūni"]
+      ]
+    },
+    {
+      "stem": "vadhū",
+      "stem_devanagari": "वधू",
+      "gender": "feminine",
+      "category": "ajanta_uu_feminine",
+      "description": "Ūkārānta Strīliṅga (vadhū)",
+      "table": [
+        ["vadhūḥ", "vadhvau", "vadhvaḥ"],
+        ["vadhūm", "vadhvau", "vadhūḥ"],
+        ["vadhvā", "vadhūbhyām", "vadhūbhiḥ"],
+        ["vadhvai", "vadhūbhyām", "vadhūbhyaḥ"],
+        ["vadhvāḥ", "vadhūbhyām", "vadhūbhyaḥ"],
+        ["vadhvāḥ", "vadhvoḥ", "vadhūnām"],
+        ["vadhvām", "vadhvoḥ", "vadhūṣu"],
+        ["he vadhu", "he vadhvau", "he vadhvaḥ"]
+      ]
+    },
+    {
+      "stem": "pitṛ",
+      "stem_devanagari": "पितृ",
+      "gender": "masculine",
+      "category": "ajanta_ri_masculine_kinship",
+      "description": "Ṛkārānta Puṃliṅga (Kinship: Regular Guṇa)",
+      "table": [
+        ["pitā", "pitarau", "pitaraḥ"],
+        ["pitaram", "pitarau", "pitṝn"],
+        ["pitrā", "pitṛbhyām", "pitṛbhiḥ"],
+        ["pitre", "pitṛbhyām", "pitṛbhyaḥ"],
+        ["pituḥ", "pitṛbhyām", "pitṛbhyaḥ"],
+        ["pituḥ", "pitroḥ", "pitṝṇām"],
+        ["pitari", "pitroḥ", "pitṛṣu"],
+        ["he pitar", "he pitarau", "he pitaraḥ"]
+      ]
+    },
+    {
+      "stem": "bhrātṛ",
+      "stem_devanagari": "भ्रातृ",
+      "gender": "masculine",
+      "category": "ajanta_ri_masculine_kinship",
+      "description": "Ṛkārānta Puṃliṅga (Kinship)",
+      "table": [
+        ["bhrātā", "bhrātarau", "bhrātaraḥ"],
+        ["bhrātaram", "bhrātarau", "bhrātṝn"],
+        ["bhrātrā", "bhrātṛbhyām", "bhrātṛbhiḥ"],
+        ["bhrātre", "bhrātṛbhyām", "bhrātṛbhyaḥ"],
+        ["bhrātuḥ", "bhrātṛbhyām", "bhrātṛbhyaḥ"],
+        ["bhrātuḥ", "bhrātroḥ", "bhrātṝṇām"],
+        ["bhrātari", "bhrātroḥ", "bhrātṛṣu"],
+        ["he bhrātar", "he bhrātarau", "he bhrātaraḥ"]
+      ]
+    },
+    {
+      "stem": "go",
+      "stem_devanagari": "गो",
+      "gender": "masculine",
+      "category": "diphthong_go",
+      "description": "Diphthong o-stem (go: 6.1.93)",
+      "table": [
+        ["gauḥ", "gāvau", "gāvaḥ"],
+        ["gām", "gāvau", "gāḥ"],
+        ["gavā", "gobhyām", "gobhiḥ"],
+        ["gave", "gobhyām", "gobhyaḥ"],
+        ["goḥ", "gobhyām", "gobhyaḥ"],
+        ["goḥ", "gavoḥ", "gavām"],
+        ["gavi", "gavoḥ", "goṣu"],
+        ["he gauḥ", "he gāvau", "he gāvaḥ"]
+      ]
+    },
+    {
+      "stem": "sakhi",
+      "stem_devanagari": "सखि",
+      "gender": "masculine",
+      "category": "irregular_sakhi",
+      "description": "Irregular i-stem (sakhi: 7.1.92)",
+      "table": [
+        ["sakhā", "sakhāyau", "sakhāyaḥ"],
+        ["sakhāyam", "sakhāyau", "sakhīn"],
+        ["sakhyā", "sakhibhyām", "sakhibhiḥ"],
+        ["sakhye", "sakhibhyām", "sakhibhyaḥ"],
+        ["sakhyuḥ", "sakhibhyām", "sakhibhyaḥ"],
+        ["sakhyuḥ", "sakhyoḥ", "sakhīnām"],
+        ["sakhyau", "sakhyoḥ", "sakhiṣu"],
+        ["he sakhe", "he sakhāyau", "he sakhāyaḥ"]
+      ]
+    },
+    {
+      "stem": "tad",
+      "stem_devanagari": "तद्",
+      "gender": "masculine",
+      "category": "sarvanama_tad_masculine",
+      "description": "Pronoun 'tad' (Masculine)",
+      "table": [
+        ["saḥ", "tau", "te"],
+        ["tam", "tau", "tān"],
+        ["tena", "tābhyām", "taiḥ"],
+        ["tasmai", "tābhyām", "tebhyaḥ"],
+        ["tasmāt", "tābhyām", "tebhyaḥ"],
+        ["tasya", "tayoḥ", "teṣām"],
+        ["tasmin", "tayoḥ", "teṣu"],
+        ["-", "-", "-"]
+      ]
+    },
+    {
+      "stem": "tad",
+      "stem_devanagari": "तद्",
+      "gender": "feminine",
+      "category": "sarvanama_tad_feminine",
+      "description": "Pronoun 'tad' (Feminine)",
+      "table": [
+        ["sā", "te", "tāḥ"],
+        ["tām", "te", "tāḥ"],
+        ["tayā", "tābhyām", "tābhiḥ"],
+        ["tasyai", "tābhyām", "tābhyaḥ"],
+        ["tasyāḥ", "tābhyām", "tābhyaḥ"],
+        ["tasyāḥ", "tayoḥ", "tāsām"],
+        ["tasyām", "tayoḥ", "tāsu"],
+        ["-", "-", "-"]
+      ]
+    },
+    {
+      "stem": "sarva",
+      "stem_devanagari": "सर्व",
+      "gender": "masculine",
+      "category": "sarvanama_sarva_masculine",
+      "description": "Pronominal Adjective 'sarva' (Masculine)",
+      "table": [
+        ["sarvaḥ", "sarvau", "sarve"],
+        ["sarvam", "sarvau", "sarvān"],
+        ["sarveṇa", "sarvābhyām", "sarvaiḥ"],
+        ["sarvasmai", "sarvābhyām", "sarvebhyaḥ"],
+        ["sarvasmāt", "sarvābhyām", "sarvebhyaḥ"],
+        ["sarvasya", "sarvayoḥ", "sarveṣām"],
+        ["sarvasmin", "sarvayoḥ", "sarveṣu"],
+        ["he sarva", "he sarvau", "he sarve"]
+      ]
+    },
+    {
+      "stem": "idam",
+      "stem_devanagari": "इदम्",
+      "gender": "masculine",
+      "category": "sarvanama_idam_masculine",
+      "description": "Pronoun 'idam' (Masculine: ayam, imau, ime)",
+      "table": [
+        ["ayam", "imau", "ime"],
+        ["imam", "imau", "imān"],
+        ["anena", "ābhyām", "ebhiḥ"],
+        ["asmai", "ābhyām", "ebhyaḥ"],
+        ["asmāt", "ābhyām", "ebhyaḥ"],
+        ["asya", "anayoḥ", "eṣām"],
+        ["asmin", "anayoḥ", "eṣu"],
+        ["-", "-", "-"]
+      ]
+    },
+    {
+      "stem": "manas",
+      "stem_devanagari": "मनस्",
+      "gender": "neuter",
+      "category": "halanta_as_neuter",
+      "description": "As-anta Halanta Napuṃsakaliṅga",
+      "table": [
+        ["manaḥ", "manasī", "manāṃsi"],
+        ["manaḥ", "manasī", "manāṃsi"],
+        ["manasā", "manobhyām", "manobhiḥ"],
+        ["manase", "manobhyām", "manobhyaḥ"],
+        ["manasaḥ", "manobhyām", "manobhyaḥ"],
+        ["manasaḥ", "manasoḥ", "manasām"],
+        ["manasi", "manasoḥ", "manaḥsu"],
+        ["he manaḥ", "he manasī", "he manāṃsi"]
+      ]
+    },
+    {
+      "stem": "guṇin",
+      "stem_devanagari": "गुणिन्",
+      "gender": "masculine",
+      "category": "halanta_in_masculine",
+      "description": "In-anta Halanta Puṃliṅga",
+      "table": [
+        ["guṇī", "guṇinau", "guṇinaḥ"],
+        ["guṇinam", "guṇinau", "guṇinaḥ"],
+        ["guṇinā", "guṇibhyām", "guṇibhiḥ"],
+        ["guṇine", "guṇibhyām", "guṇibhyaḥ"],
+        ["guṇinaḥ", "guṇibhyām", "guṇibhyaḥ"],
+        ["guṇinaḥ", "guṇinoḥ", "guṇinām"],
+        ["guṇini", "guṇinoḥ", "guṇiṣu"],
+        ["he guṇin", "he guṇinau", "he guṇinaḥ"]
+      ]
+    },
+    {
+      "stem": "bhagavat",
+      "stem_devanagari": "भगवत्",
+      "gender": "masculine",
+      "category": "halanta_at_masculine",
+      "description": "Vatup/Matup Halanta Puṃliṅga",
+      "table": [
+        ["bhagavān", "bhagavantau", "bhagavantaḥ"],
+        ["bhagavantam", "bhagavantau", "bhagavataḥ"],
+        ["bhagavatā", "bhagavadbhyām", "bhagavadbhiḥ"],
+        ["bhagavate", "bhagavadbhyām", "bhagavadbhyaḥ"],
+        ["bhagavataḥ", "bhagavadbhyām", "bhagavadbhyaḥ"],
+        ["bhagavataḥ", "bhagavatoḥ", "bhagavatām"],
+        ["bhagavati", "bhagavatoḥ", "bhagavatsu"],
+        ["he bhagavan", "he bhagavantau", "he bhagavantaḥ"]
+      ]
+    },
+    {
+      "stem": "dhīmat",
+      "stem_devanagari": "धीमत्",
+      "gender": "masculine",
+      "category": "halanta_at_masculine",
+      "description": "Matup Halanta Puṃliṅga",
+      "table": [
+        ["dhīmān", "dhīmantau", "dhīmantaḥ"],
+        ["dhīmantam", "dhīmantau", "dhīmataḥ"],
+        ["dhīmatā", "dhīmadbhyām", "dhīmadbhiḥ"],
+        ["dhīmate", "dhīmadbhyām", "dhīmadbhyaḥ"],
+        ["dhīmataḥ", "dhīmadbhyām", "dhīmadbhyaḥ"],
+        ["dhīmataḥ", "dhīmatoḥ", "dhīmatām"],
+        ["dhīmati", "dhīmatoḥ", "dhīmatsu"],
+        ["he dhīman", "he dhīmantau", "he dhīmantaḥ"]
+      ]
+    },
+    {
+      "stem": "marut",
+      "stem_devanagari": "मरुत्",
+      "gender": "masculine",
+      "category": "halanta_marut_masculine",
+      "description": "Root Consonant t-stem Puṃliṅga",
+      "table": [
+        ["marut", "marutau", "marutaḥ"],
+        ["marutam", "marutau", "marutaḥ"],
+        ["marutā", "marudbhyām", "marudbhiḥ"],
+        ["marute", "marudbhyām", "marudbhyaḥ"],
+        ["marutaḥ", "marudbhyām", "marudbhyaḥ"],
+        ["marutaḥ", "marutoḥ", "marutām"],
+        ["maruti", "marutoḥ", "marutsu"],
+        ["he marut", "he marutau", "he marutaḥ"]
+      ]
+    },
+    {
+      "stem": "vāc",
+      "stem_devanagari": "वाच्",
+      "gender": "feminine",
+      "category": "halanta_vac_feminine",
+      "description": "Root Consonant c-stem Strīliṅga (vāk)",
+      "table": [
+        ["vāk", "vācau", "vācaḥ"],
+        ["vācam", "vācau", "vācaḥ"],
+        ["vācā", "vāgbhyām", "vāgbhiḥ"],
+        ["vāce", "vāgbhyām", "vāgbhyaḥ"],
+        ["vācaḥ", "vāgbhyām", "vāgbhyaḥ"],
+        ["vācaḥ", "vācoḥ", "vācām"],
+        ["vāci", "vācoḥ", "vākṣu"],
+        ["he vāk", "he vācau", "he vācaḥ"]
+      ]
+    },
+    {
+      "stem": "diś",
+      "stem_devanagari": "दिश्",
+      "gender": "feminine",
+      "category": "halanta_dis_feminine",
+      "description": "Root Consonant ś-stem Strīliṅga (dik)",
+      "table": [
+        ["dik", "diśau", "diśaḥ"],
+        ["diśam", "diśau", "diśaḥ"],
+        ["diśā", "digbhyām", "digbhiḥ"],
+        ["diśe", "digbhyām", "digbhyaḥ"],
+        ["diśaḥ", "digbhyām", "digbhyaḥ"],
+        ["diśaḥ", "diśoḥ", "diśām"],
+        ["diśi", "diśoḥ", "dikṣu"],
+        ["he dik", "he diśau", "he diśaḥ"]
+      ]
+    }
+  ],
+  "reverse_test_cases": [
+    {"pada": "rāmāya", "expected_stem": "rāma", "expected_case": "Caturthī", "expected_number": "Ekavacana"},
+    {"pada": "rāmeṣu", "expected_stem": "rāma", "expected_case": "Saptamī", "expected_number": "Bahuvacana"},
+    {"pada": "rāmāṇām", "expected_stem": "rāma", "expected_case": "Ṣaṣṭhī", "expected_number": "Bahuvacana"},
+    {"pada": "phalāni", "expected_stem": "phala", "expected_case": "Prathamā", "expected_number": "Bahuvacana"},
+    {"pada": "latāyai", "expected_stem": "latā", "expected_case": "Caturthī", "expected_number": "Ekavacana"},
+    {"pada": "latāsu", "expected_stem": "latā", "expected_case": "Saptamī", "expected_number": "Bahuvacana"},
+    {"pada": "nadīm", "expected_stem": "nadī", "expected_case": "Dvitīyā", "expected_number": "Ekavacana"},
+    {"pada": "nadīṣu", "expected_stem": "nadī", "expected_case": "Saptamī", "expected_number": "Bahuvacana"},
+    {"pada": "guruṇā", "expected_stem": "guru", "expected_case": "Tṛtīyā", "expected_number": "Ekavacana"},
+    {"pada": "gurave", "expected_stem": "guru", "expected_case": "Caturthī", "expected_number": "Ekavacana"},
+    {"pada": "pitrā", "expected_stem": "pitṛ", "expected_case": "Tṛtīyā", "expected_number": "Ekavacana"},
+    {"pada": "pitṝn", "expected_stem": "pitṛ", "expected_case": "Dvitīyā", "expected_number": "Bahuvacana"},
+    {"pada": "tasmai", "expected_stem": "tad", "expected_case": "Caturthī", "expected_number": "Ekavacana"},
+    {"pada": "teṣām", "expected_stem": "tad", "expected_case": "Ṣaṣṭhī", "expected_number": "Bahuvacana"},
+    {"pada": "tava", "expected_stem": "yuṣmad", "expected_case": "Ṣaṣṭhī", "expected_number": "Ekavacana"},
+    {"pada": "mahyam", "expected_stem": "asmad", "expected_case": "Caturthī", "expected_number": "Ekavacana"},
+    {"pada": "guṇinā", "expected_stem": "guṇin", "expected_case": "Tṛtīyā", "expected_number": "Ekavacana"},
+    {"pada": "guṇiṣu", "expected_stem": "guṇin", "expected_case": "Saptamī", "expected_number": "Bahuvacana"},
+    {"pada": "bhagavate", "expected_stem": "bhagavat", "expected_case": "Caturthī", "expected_number": "Ekavacana"},
+    {"pada": "dhīmatā", "expected_stem": "dhīmat", "expected_case": "Tṛtīyā", "expected_number": "Ekavacana"},
+    {"pada": "marutsu", "expected_stem": "marut", "expected_case": "Saptamī", "expected_number": "Bahuvacana"},
+    {"pada": "vācā", "expected_stem": "vāc", "expected_case": "Tṛtīyā", "expected_number": "Ekavacana"},
+    {"pada": "vārīṇi", "expected_stem": "vāri", "expected_case": "Prathamā", "expected_number": "Bahuvacana"},
+    {"pada": "madhunā", "expected_stem": "madhu", "expected_case": "Tṛtīyā", "expected_number": "Ekavacana"},
+    {"pada": "vadhūḥ", "expected_stem": "vadhū", "expected_case": "Prathamā", "expected_number": "Ekavacana"},
+    {"pada": "gavām", "expected_stem": "go", "expected_case": "Ṣaṣṭhī", "expected_number": "Bahuvacana"},
+    {"pada": "sakhāyam", "expected_stem": "sakhi", "expected_case": "Dvitīyā", "expected_number": "Ekavacana"},
+    {"pada": "ayam", "expected_stem": "idam", "expected_case": "Prathamā", "expected_number": "Ekavacana"}
+  ]
+}
