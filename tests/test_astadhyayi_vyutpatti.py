@@ -292,7 +292,12 @@ class TheRootIsFoundByMakingNotByUnmaking(unittest.TestCase):
         self.assertIn("3.1.68", [s.sutra for s in one.prakriya.steps])
         trace = one.trace()
         self.assertIn("कर्तरि शप्", trace)
-        self.assertIn("jeati → jayati", trace)
+        # Every surface form in the trace is bilingual, IAST paired with
+        # Devanāgarī — "no where should there be IAST alone" — so the
+        # 6.1.78 step reads जेअति (jeati) → जयति (jayati), not the bare
+        # IAST arrow.
+        self.assertIn("jeati) → जयति (jayati)", trace)
+        self.assertIn("जेअति (jeati)", trace)
         self.assertTrue(trace.rstrip().endswith("[no rule applies]"))
 
     def test_and_it_says_which_of_the_nine_endings_it_is(self):

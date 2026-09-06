@@ -46,6 +46,7 @@ from typing import (
 from src.astadhyayi.asiddha import blocks_vipratisedha, visible
 from src.astadhyayi.vipratisedha import Rule as Candidate
 from src.astadhyayi.vipratisedha import Settled, Strength, vipratisedha
+from src.normalizer import iast_to_devanagari
 
 
 # ---------------------------------------------------------------------------
@@ -197,6 +198,22 @@ class Operational:
 # ---------------------------------------------------------------------------
 
 
+def _both(text: str) -> str:
+    """
+    A form in both scripts — देवनागरी (IAST) — never IAST alone.
+
+    Every surface form in a trace is what this codification's own
+    convention requires paired: the reader who cannot parse अयादि-सन्धि
+    from `jeati → jayati` alone can still see जेअति → जयति and place it.
+    `text` is empty only for a start state with no terms, which does not
+    occur in practice; guarded anyway rather than handed to the
+    converter blind.
+    """
+    if not text:
+        return text
+    return f"{iast_to_devanagari(text)} ({text})"
+
+
 @dataclass(frozen=True)
 class Step:
     """One rule applied, and why it was that rule."""
@@ -210,9 +227,9 @@ class Step:
     why: str = ""
 
     def __str__(self) -> str:
-        arrow = f"{self.before} → {self.after}" if self.before != self.after \
-            else self.before
-        return f"{self.sutra:9} {arrow:28} {self.what}"
+        arrow = (f"{_both(self.before)} → {_both(self.after)}"
+                 if self.before != self.after else _both(self.before))
+        return f"{self.sutra:9} {arrow:46} {self.what}"
 
 
 @dataclass(frozen=True)
@@ -230,9 +247,9 @@ class Prakriya:
         return self.final.surface
 
     def trace(self) -> str:
-        lines = [f"{'':9} {self.start.surface}"]
+        lines = [f"{'':9} {_both(self.start.surface)}"]
         lines.extend(str(step) for step in self.steps)
-        lines.append(f"{'':9} {self.final.surface}   [{self.stopped}]")
+        lines.append(f"{'':9} {_both(self.final.surface)}   [{self.stopped}]")
         return "\n".join(lines)
 
 
