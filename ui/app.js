@@ -1028,24 +1028,39 @@ function initReverse() {
 /* 4. Tiṅanta conjugator                                                */
 /* ==================================================================== */
 
-function renderConjugation(data) {
+/** A derivation payload from prakriya_payload() → the shared timeline()'s shape. */
+function derivationSteps(derivation) {
+  const start = {
+    form: `${derivation.start_devanagari} (${derivation.start_iast})`,
+    sutra: "",
+    desc: "The root as the dhātupāṭha enunciates it — upadeśa, it-letters and all.",
+  };
+  const steps = derivation.steps.map((step) => ({
+    form: `${step.after_devanagari} (${step.after_iast})`,
+    sutra: step.sutra,
+    desc: step.what,
+  }));
+  return [start, ...steps];
+}
+
+/** One dhātupāṭha entry, conjugated — its own card with a 3×3 table. */
+function renderTinantaEntry(entry) {
   return `<div class="card card--pad">
     <div class="result-head">
       <div>
-        <p class="result-headline font-devanagari-serif">${esc(data.root_devanagari)}</p>
-        <p class="result-headline-latin">${esc(data.root_iast)} — ${esc(data.root_meaning)}</p>
+        <p class="result-headline font-devanagari-serif">${esc(entry.root_devanagari)}</p>
+        <p class="result-headline-latin">${esc(entry.root_iast)} — ${esc(entry.artha)}</p>
       </div>
       <div class="row">
-        ${pill(data.root_gana, "primary")}
-        ${pill(data.lakara_name, "info")}
-        ${pill(data.pada_type)}
+        ${pill(entry.code, "primary")}
+        ${pill(entry.gana_name, "info")}
+        ${pill(entry.pada_type)}
       </div>
     </div>
 
     <div class="def-list def-list--2 mt-4">
-      ${def("Lakāra sense", data.lakara_meaning)}
-      ${def("Pāṇinian sūtra", data.sutra_panini)}
-      ${def("Harināmāmṛta parallel", data.sutra_hnv)}
+      ${def("Enunciated (upadeśa)", `${entry.upadesa_devanagari} (${entry.upadesa_iast})`)}
+      ${def("Lakāra", "Laṭ — present")}
     </div>
 
     <div class="table-scroll mt-4">
@@ -1059,17 +1074,22 @@ function renderConjugation(data) {
           </tr>
         </thead>
         <tbody>
-          ${data.table
+          ${entry.table
             .map(
               (row) => `<tr>
                 <td><p class="medium">${esc(row.purusha)}</p></td>
                 ${row.forms
-                  .map(
-                    (cell) => `<td>
-                      <p class="cell-btn__deva font-devanagari">${esc(cell.devanagari)}</p>
-                      <p class="cell-btn__iast">${esc(cell.iast)}</p>
-                      <p class="timeline__sutra">${esc(cell.sutra)}</p>
-                    </td>`
+                  .map((cell) =>
+                    cell.withheld
+                      ? `<td><p class="timeline__sutra">withheld — a further sūtra is not yet wired</p></td>`
+                      : `<td>
+                          <p class="cell-btn__deva font-devanagari">${esc(cell.devanagari)}</p>
+                          <p class="cell-btn__iast">${esc(cell.iast)}</p>
+                          <details class="note-box mt-2">
+                            <summary>Derivation (${cell.derivation.steps.length} sūtras)</summary>
+                            <div class="mt-2">${timeline(derivationSteps(cell.derivation))}</div>
+                          </details>
+                        </td>`
                   )
                   .join("")}
               </tr>`
@@ -1081,11 +1101,36 @@ function renderConjugation(data) {
   </div>`;
 }
 
+/** One root the reverse search traced a word back to. */
+function renderTinantaMatch(match) {
+  return `<div class="card card--pad">
+    <div class="result-head">
+      <div>
+        <p class="result-headline font-devanagari-serif">${esc(match.root_devanagari)}</p>
+        <p class="result-headline-latin">${esc(match.root_iast)} — ${esc(match.artha)}</p>
+      </div>
+      <div class="row">
+        ${pill(match.code, "primary")}
+        ${pill(match.gana_name, "info")}
+        ${pill(match.pada_type)}
+      </div>
+    </div>
+
+    <div class="def-list def-list--2 mt-4">
+      ${def("Enunciated (upadeśa)", `${match.upadesa_devanagari} (${match.upadesa_iast})`)}
+      ${def("Slot", `${match.purusha}, ${match.vacana}`)}
+    </div>
+
+    <details class="note-box mt-4" open>
+      <summary>Derivation (${match.derivation.steps.length} sūtras)</summary>
+      <div class="mt-2">${timeline(derivationSteps(match.derivation))}</div>
+    </details>
+  </div>`;
+}
+
 function initTinanta() {
   const form = $("#tinanta-form");
   const rootInput = $("#tinanta-root");
-  const lakaraSelect = $("#tinanta-lakara");
-  const padaSelect = $("#tinanta-pada");
   const output = $("#tinanta-output");
 
   async function conjugate() {
@@ -1097,22 +1142,18 @@ function initTinanta() {
     const submit = $("button[type=submit]", form);
     await withPending(submit, "Conjugating…", async () => {
       try {
-        const data = await api("/api/tinanta/generate", {
-          root,
-          lakara: lakaraSelect.value,
-          pada: padaSelect.value,
-        });
-        if (data.error || !data.table) {
+        const data = await api("/api/tinanta/generate", { root });
+        if (data.error || !has(data.entries)) {
           output.innerHTML = `<div class="empty-state">
-            <strong>${esc(root)}</strong> is not in the bundled dhātupāṭha slice.
+            <strong>${esc(root)}</strong> is not in reach.
             <p class="empty-state__hint">
-              ${esc(data.error || "The root is reported as unsupported rather than conjugated by analogy.")}
+              ${esc(data.error || "It is not a root the dhātupāṭha has, or its gaṇa is not yet wired into the engine.")}
             </p>
           </div>`;
           return;
         }
-        output.innerHTML = renderConjugation(data);
-        announce(`${data.root_iast} conjugated in ${data.lakara_name}.`);
+        output.innerHTML = data.entries.map(renderTinantaEntry).join("");
+        announce(`${root} — ${data.entries.length} dhātupāṭha ${data.entries.length === 1 ? "entry" : "entries"} conjugated in laṭ.`);
       } catch (error) {
         output.innerHTML = errorBanner(error.message);
       }
@@ -1128,8 +1169,50 @@ function initTinanta() {
     const button = event.target.closest("[data-root]");
     if (!button) return;
     rootInput.value = button.dataset.root;
-    lakaraSelect.value = button.dataset.lakara || "lat";
     conjugate();
+  });
+
+  const reverseForm = $("#tinanta-reverse-form");
+  const reverseInput = $("#tinanta-reverse-input");
+  const reverseOutput = $("#tinanta-reverse-output");
+
+  async function traceToRoot() {
+    const word = reverseInput.value.trim();
+    if (!word) {
+      reverseOutput.innerHTML = `<div class="banner banner--warn">Enter a verb form first.</div>`;
+      return;
+    }
+    const submit = $("button[type=submit]", reverseForm);
+    await withPending(submit, "Tracing…", async () => {
+      try {
+        const data = await api("/api/tinanta/reverse", { word });
+        if (data.error || !has(data.matches)) {
+          reverseOutput.innerHTML = `<div class="empty-state">
+            No root in reach makes <strong>${esc(word)}</strong>.
+            <p class="empty-state__hint">
+              ${esc(data.error || "Either it is not a laṭ parasmaipada/ātmanepada form, or a rule it needs is not yet wired.")}
+            </p>
+          </div>`;
+          return;
+        }
+        reverseOutput.innerHTML = data.matches.map(renderTinantaMatch).join("");
+        announce(`${word} traced to ${data.matches.length} root ${data.matches.length === 1 ? "reading" : "readings"}.`);
+      } catch (error) {
+        reverseOutput.innerHTML = errorBanner(error.message);
+      }
+    });
+  }
+
+  reverseForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    traceToRoot();
+  });
+
+  $("#tinanta-reverse-examples").addEventListener("click", (event) => {
+    const button = event.target.closest("[data-word]");
+    if (!button) return;
+    reverseInput.value = button.dataset.word;
+    traceToRoot();
   });
 }
 

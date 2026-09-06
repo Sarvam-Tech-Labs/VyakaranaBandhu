@@ -24,6 +24,7 @@ from __future__ import annotations
 
 import contextlib
 import io
+import json
 import re
 import unittest
 
@@ -40,6 +41,7 @@ from src.astadhyayi.vyutpatti import (
     SLOTS,
     VOWEL_BUCKET,
     candidates,
+    entries_of_name,
     forms_of,
     iast,
     in_reach,
@@ -47,9 +49,11 @@ from src.astadhyayi.vyutpatti import (
     opening,
     owed_for,
     paradigm,
+    prakriya_payload,
     root_opening,
     roots_of,
     searchable,
+    step_payload,
     unreachable,
 )
 from src.normalizer import iast_to_devanagari
@@ -643,6 +647,92 @@ class WhatIsNotCodifiedYet(unittest.TestCase):
         self.assertTrue(REGISTRY.has("3.2.123"))
         self.assertEqual(roots_of("ajayat"), ())      # लङ् (laṅ)
         self.assertEqual(roots_of("jeṣyati"), ())     # लृट् (lṛṭ)
+
+
+class ByNameNotByUpadesa(unittest.TestCase):
+    """
+    `entries_of_name` — the forward counterpart of `roots_of`.
+
+    `forms_of` and `paradigm` are keyed by the exact upadeśa, and a
+    caller building a UI has an ordinary name instead: कृ (kṛ), not
+    डुकृञ् (ḍukṛñ). This is what a "type a root, get its conjugation"
+    form has to ask.
+    """
+
+    def test_a_name_answering_to_one_entry_gives_one(self):
+        found = entries_of_name("hu")
+        self.assertEqual([e.code for e in found], ["03.0001"])
+        self.assertEqual(found[0].upadesa, "hu")
+        self.assertEqual(found[0].dhatu, "hu")
+        self.assertEqual(found[0].gana, 3)
+
+    def test_a_name_answering_to_several_entries_gives_all_of_them(self):
+        # जि (ji) is read in three gaṇas now that all ten are in reach —
+        # 1.1.68 स्वं रूपम् is why a name is not one entry.
+        found = entries_of_name("ji")
+        self.assertEqual({e.code for e in found},
+                         {JI, JI_AGAIN, "10.0324"})
+        self.assertEqual({e.upadesa for e in found}, {"ji"})
+
+    def test_and_the_gana_that_makes_the_two_words_different_is_named(self):
+        found = {e.code: e for e in entries_of_name("ji")}
+        self.assertEqual(found[JI].gana, 1)
+        self.assertEqual(found["10.0324"].gana, 10)
+        first = forms_of("ji", "01")[(0, 0)]
+        tenth = forms_of("ji", "10")[(0, 0)]
+        self.assertEqual(first, "jayati")
+        self.assertNotEqual(tenth, "jayati")
+
+    def test_and_either_script_asks_the_same_question(self):
+        self.assertEqual(
+            [e.code for e in entries_of_name("कृ")],
+            [e.code for e in entries_of_name("kṛ")])
+
+    def test_and_a_name_answers_only_from_the_classes_in_reach(self):
+        # Every class is in reach today, so this can only be checked
+        # against the mechanism and not against a live counter-example:
+        # entries_of_name must never return a gaṇa `in_reach` refuses.
+        for entry in entries_of_name("kṛ") + entries_of_name("ji"):
+            self.assertTrue(in_reach(str(entry.gana).zfill(2)), entry.code)
+
+    def test_and_a_name_the_dhatupatha_does_not_have_gives_nothing(self):
+        self.assertEqual(entries_of_name("xyz"), ())
+
+
+class SerialisedForAForm(unittest.TestCase):
+    """`step_payload` and `prakriya_payload` — the derivation, JSON-ready."""
+
+    def setUp(self) -> None:
+        self.done = derive(verb("ji", person=0, number=0), all_rules())
+
+    def test_every_step_carries_both_scripts_for_before_and_after(self):
+        for step in self.done.steps:
+            payload = step_payload(step)
+            self.assertEqual(payload["before_iast"], step.before)
+            self.assertEqual(payload["after_iast"], step.after)
+            self.assertEqual(payload["before_devanagari"],
+                             iast_to_devanagari(step.before))
+            self.assertEqual(payload["after_devanagari"],
+                             iast_to_devanagari(step.after))
+            self.assertEqual(payload["sutra"], step.sutra)
+            self.assertEqual(payload["what"], step.what)
+
+    def test_the_whole_derivation_carries_start_and_final_too(self):
+        payload = prakriya_payload(self.done)
+        self.assertEqual(payload["start_iast"], "jitip")
+        self.assertEqual(payload["start_devanagari"], "जितिप्")
+        self.assertEqual(payload["final_iast"], "jayati")
+        self.assertEqual(payload["final_devanagari"], "जयति")
+        self.assertEqual(payload["stopped"], "no rule applies")
+        self.assertEqual(len(payload["steps"]), len(self.done.steps))
+
+    def test_and_it_is_actually_json_serialisable(self):
+        # Not a formality: a dataclass or a Prakriya object handed to
+        # json.dumps raises, and that is exactly the bug this exists to
+        # prevent before it reaches a server response.
+        dumped = json.dumps(prakriya_payload(self.done), ensure_ascii=False)
+        self.assertIn("jayati", dumped)
+        self.assertIn("जयति", dumped)
 
 
 class BothDirectionsFromOneCommand(unittest.TestCase):

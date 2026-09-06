@@ -14,14 +14,16 @@ from src.classifier import SanskritClassifier
 from src.subanta_engine import SubantaEngine
 from src.quad_concordance import QuadConcordanceEngine
 from src.krdanta_taddhita import KrdantaTaddhitaEngine
-from src.tinanta_engine import TinantaEngine
 from src.verse_dependency import VerseDependencyEngine
 from src.dossier_exporter import DossierExporter
 from src.chandas import chandas_report
 
 # The Aṣṭādhyāyī codification. Imported lazily inside the handlers rather
 # than here: loading it reads the corpus off disk, and a server started to
-# classify one word should not pay for that.
+# classify one word should not pay for that. `/api/tinanta/*` below is one
+# of these: it is the sūtra-driven engine (src/astadhyayi/vyutpatti.py),
+# not the hand-written src/tinanta_engine.py — see _tinanta_generate_payload
+# and _tinanta_reverse_payload for why the old one was retired from the UI.
 
 # Static UI root: ui/ holds the Bhakta Bandhu design-system front end.
 WEB_DIR = os.path.join(os.path.dirname(__file__), "ui")
@@ -32,9 +34,158 @@ classifier = SanskritClassifier()
 subanta_engine = SubantaEngine()
 quad_engine = QuadConcordanceEngine(subanta_engine)
 krdanta_engine = KrdantaTaddhitaEngine()
-tinanta_engine = TinantaEngine()
 verse_dependency_engine = VerseDependencyEngine(classifier)
 dossier_exporter = DossierExporter(subanta_engine, quad_engine)
+
+
+#: प्रथम/मध्यम/उत्तम — display labels for the three puruṣas, matched to
+#: the row order `src.astadhyayi.vibhakti.PERSONS` already fixes by
+#: 1.4.101 तिङस्त्रीणि त्रीणि. Kept here rather than in the engine because
+#: this is a UI label, not a grammatical fact.
+_PURUSHA_LABELS = [
+    ("Prathama Puruṣa (प्रथम पुरुषः / 3rd Person)", "3rd"),
+    ("Madhyama Puruṣa (मध्यम पुरुषः / 2nd Person)", "2nd"),
+    ("Uttama Puruṣa (उत्तम पुरुषः / 1st Person)", "1st"),
+]
+_VACANA_LABELS = [
+    ("Ekavacana (एकवचनम् / Singular)", "sg"),
+    ("Dvivacana (द्विवचनम् / Dual)", "du"),
+    ("Bahuvacana (बहुवचनम् / Plural)", "pl"),
+]
+_GANA_NAMES = {
+    1: "भ्वादि", 2: "अदादि", 3: "जुहोत्यादि", 4: "दिवादि", 5: "स्वादि",
+    6: "तुदादि", 7: "रुधादि", 8: "तनादि", 9: "क्र्यादि", 10: "चुरादि",
+}
+
+
+def _tinanta_entry_payload(entry) -> dict:
+    """
+    One dhātupāṭha entry, conjugated in लट् (laṭ) with its full trace.
+
+    Every cell either carries a form and the sūtras that made it, or is
+    marked `withheld` — a slot the engine cannot yet finish (7.2.81 आतो
+    ङितः, say) is reported as missing, never guessed at. That is the
+    same honesty `vyutpatti.owed_for` gives the CLI, carried into JSON.
+    """
+    from src.astadhyayi.vyutpatti import paradigm, prakriya_payload
+    from src.normalizer import iast_to_devanagari as dev
+
+    gana_code = str(entry.gana).zfill(2)
+    made = {(m.person, m.number): m for m in paradigm(entry.upadesa,
+                                                      gana_code)}
+    pada = next(iter(made.values())).pada if made else "parasmaipada"
+
+    table = []
+    for p_idx, (p_label, p_short) in enumerate(_PURUSHA_LABELS):
+        row = []
+        for v_idx, (v_label, v_short) in enumerate(_VACANA_LABELS):
+            slot = made.get((p_idx, v_idx))
+            if slot is None:
+                row.append({
+                    "purusha_short": p_short, "vacana_short": v_short,
+                    "withheld": True,
+                })
+                continue
+            row.append({
+                "purusha_short": p_short, "vacana_short": v_short,
+                "withheld": False,
+                "devanagari": dev(slot.surface),
+                "iast": slot.surface,
+                "sutra": (slot.prakriya.steps[-1].sutra
+                          if slot.prakriya.steps else ""),
+                "derivation": prakriya_payload(slot.prakriya),
+            })
+        table.append({"purusha": p_label, "purusha_short": p_short,
+                      "forms": row})
+
+    return {
+        "code": entry.code,
+        "upadesa_iast": entry.upadesa,
+        "upadesa_devanagari": dev(entry.upadesa),
+        "root_iast": entry.dhatu,
+        "root_devanagari": dev(entry.dhatu),
+        "artha": entry.artha,
+        "gana": entry.gana,
+        "gana_name": _GANA_NAMES.get(entry.gana, ""),
+        "pada_type": pada.capitalize(),
+        "table": table,
+    }
+
+
+def _tinanta_generate_payload(root: str) -> dict:
+    """
+    `root` conjugated in लट् (laṭ) — every dhātupāṭha entry the name
+    reaches, each with a full sūtra-by-sūtra trace per cell.
+
+    Replaces the old hand-written `TinantaEngine`, which covered five
+    hardcoded roots per lakāra and invented a generic ending for every
+    other root regardless of its actual gaṇa — a confident wrong answer
+    for anything outside its short list. This derives every form from
+    the codified rules against the real ~2,229-root dhātupāṭha, and is
+    silent (an empty `entries` list) rather than wrong where the root is
+    not there or its gaṇa is not yet wired — see `vyutpatti.unreachable`.
+    """
+    from src.astadhyayi.vyutpatti import entries_of_name
+
+    root = (root or "").strip()
+    if not root:
+        return {"error": "Enter a dhātu first."}
+    entries = entries_of_name(root)
+    if not entries:
+        return {
+            "error": (
+                f"'{root}' is not a root the dhātupāṭha has, or its gaṇa "
+                f"is not yet wired into the engine."
+            ),
+            "entries": [],
+        }
+    return {"root_query": root,
+            "entries": [_tinanta_entry_payload(e) for e in entries]}
+
+
+def _tinanta_reverse_payload(word: str) -> dict:
+    """
+    Every root the grammar could have made `word` from, in लट् (laṭ).
+
+    The reverse direction: no rule of the Aṣṭādhyāyī runs backwards, so
+    this makes every verb the engine can make from the ~2,229-root
+    dhātupāṭha and matches. Two answers for one word is not an error —
+    जयति (jayati) genuinely comes from two entries of जि (ji), one sense
+    apiece — and the response says so rather than picking one.
+    """
+    from src.astadhyayi.vyutpatti import roots_of, prakriya_payload
+    from src.normalizer import iast_to_devanagari as dev
+
+    word = (word or "").strip()
+    if not word:
+        return {"error": "Enter a word first."}
+    found = roots_of(word)
+    if not found:
+        return {
+            "error": (
+                f"No root in reach makes '{word}' — either it is not a "
+                f"लट् (laṭ) parasmaipada/ātmanepada form, or a rule it "
+                f"needs is codified but not yet wired into the engine."
+            ),
+            "matches": [],
+        }
+    matches = []
+    for one in found:
+        matches.append({
+            "code": one.code,
+            "upadesa_iast": one.upadesa,
+            "upadesa_devanagari": dev(one.upadesa),
+            "root_iast": one.dhatu,
+            "root_devanagari": dev(one.dhatu),
+            "artha": one.artha,
+            "gana": one.gana,
+            "gana_name": _GANA_NAMES.get(one.gana, ""),
+            "pada_type": one.pada.capitalize(),
+            "purusha": _PURUSHA_LABELS[one.person][0],
+            "vacana": _VACANA_LABELS[one.number][0],
+            "derivation": prakriya_payload(one.prakriya),
+        })
+    return {"word_query": word, "matches": matches}
 
 
 class SanskritAPIHandler(SimpleHTTPRequestHandler):
@@ -88,13 +239,18 @@ class SanskritAPIHandler(SimpleHTTPRequestHandler):
                 self._send_json(result)
                 return
 
-            # 6. /api/tinanta/generate?root=...&lakara=...&pada=...
+            # 6. /api/tinanta/generate?root=...
+            # लट् (laṭ) only, and the pada is derived, not chosen — see
+            # _tinanta_generate_payload.
             if parsed.path == "/api/tinanta/generate":
                 root = params.get("root", ["bhū"])[0]
-                lakara = params.get("lakara", ["lat"])[0]
-                pada = params.get("pada", ["parasmaipada"])[0]
-                result = tinanta_engine.generate_conjugation(root, lakara, pada)
-                self._send_json(result)
+                self._send_json(_tinanta_generate_payload(root))
+                return
+
+            # 6b. /api/tinanta/reverse?word=...
+            if parsed.path == "/api/tinanta/reverse":
+                word = params.get("word", [""])[0]
+                self._send_json(_tinanta_reverse_payload(word))
                 return
 
             # 7. /api/krdanta/generate?root=...&affix=...&upasarga=...
@@ -259,24 +415,51 @@ class SanskritAPIHandler(SimpleHTTPRequestHandler):
                 self._send_json(result)
                 return
 
-            # 8. /api/tinanta/generate
+            # 8. /api/tinanta/generate — {root}. लट् only; see
+            # _tinanta_generate_payload for why lakāra and pada are no
+            # longer inputs.
             if parsed.path == "/api/tinanta/generate":
                 root = data.get("root", "bhū")
-                lakara = data.get("lakara", "lat")
-                pada = data.get("pada", "parasmaipada")
-                result = tinanta_engine.generate_conjugation(root, lakara, pada)
-                self._send_json(result)
+                self._send_json(_tinanta_generate_payload(root))
                 return
 
-            # 9. /api/tinanta/prakriya
+            # 8b. /api/tinanta/reverse — {word}. जयति → जि, and every
+            # other root the दhātupāṭha's ~2,229 entries could make it
+            # from.
+            if parsed.path == "/api/tinanta/reverse":
+                word = data.get("word", "")
+                self._send_json(_tinanta_reverse_payload(word))
+                return
+
+            # 9. /api/tinanta/prakriya — {root, code?, purusha_idx,
+            # vacana_idx}. One cell's full derivation on its own, for a
+            # caller who already has the entry's dhātupāṭha `code` from
+            # /api/tinanta/generate and does not want the whole table
+            # again. `code` picks which entry where a name is ambiguous;
+            # omitted, the first entry `entries_of_name` returns is used.
             if parsed.path == "/api/tinanta/prakriya":
                 root = data.get("root", "bhū")
-                lakara = data.get("lakara", "lat")
-                pada = data.get("pada", "parasmaipada")
-                p_idx = int(data.get("purusha_idx", 0))
-                v_idx = int(data.get("vacana_idx", 0))
-                result = tinanta_engine.derive_prakriya(root, lakara, pada, p_idx, v_idx)
-                self._send_json(result)
+                code = data.get("code", "")
+                p_idx = max(0, min(2, int(data.get("purusha_idx", 0))))
+                v_idx = max(0, min(2, int(data.get("vacana_idx", 0))))
+                result = _tinanta_generate_payload(root)
+                entry = next(
+                    (e for e in result.get("entries", [])
+                     if not code or e["code"] == code), None)
+                if entry is None:
+                    self._send_json({"error": result.get(
+                        "error", f"'{root}' is not a root the "
+                        f"dhātupāṭha has.")})
+                    return
+                cell = entry["table"][p_idx]["forms"][v_idx]
+                if cell.get("withheld"):
+                    self._send_json({
+                        "error": f"This slot is withheld — the engine "
+                                 f"has no rule yet for it.",
+                        "code": entry["code"],
+                    })
+                    return
+                self._send_json({"code": entry["code"], **cell["derivation"]})
                 return
 
             # 10. /api/krdanta/generate

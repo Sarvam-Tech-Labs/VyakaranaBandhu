@@ -433,13 +433,105 @@ def forms_of(upadesa: str, gana: str = "") -> Dict[Tuple[int, int], str]:
             for made in paradigm(upadesa, gana)}
 
 
+# ---------------------------------------------------------------------------
+# From an ordinary name, not the upadeśa — the forward counterpart of
+# roots_of, for a caller who has a name and not a dhātupāṭha spelling
+# ---------------------------------------------------------------------------
+
+
+@dataclass(frozen=True)
+class NamedEntry:
+    """
+    One dhātupāṭha entry an ordinary root NAME reaches.
+
+    `forms_of` and `paradigm` are keyed by the exact upadeśa — डुपचँष्
+    (ḍupacaṣ), not पच् (pac) — because that is what the it-rules and
+    2.4.72 need to be asked with. A caller rarely has that spelling
+    memorised; they have a name, कृ (kṛ) or जि (ji), and 1.1.68 स्वं रूपम्
+    is why a name can reach more than one entry at once.
+    """
+
+    code: str
+    upadesa: str
+    dhatu: str
+    gana: int
+    artha: str
+
+
+def entries_of_name(root: str) -> Tuple[NamedEntry, ...]:
+    """
+    Every dhātupāṭha entry this ordinary name reaches, kept to what is in
+    reach.
+
+        entries_of_name("ji")  → 01.0642 जि जये, 01.1096 जि अभिभवे,
+                                  10.0324 जि भाषायाम्
+        entries_of_name("kṛ")  → 05.0007 कृञ् हिंसायाम्,
+                                  08.0010 डुकृञ् करणे
+
+    `pada.entries_for` is asked rather than a second name-matcher written
+    here — it already reads 1.1.68 correctly, disambiguating by accent
+    where 1.3.12 needs it. This only adds the one filter that matters to
+    a caller who is about to conjugate: keep only what `in_reach` can
+    build, the same honesty `roots_of` gives the reverse direction.
+
+    Either script asks the same question — जि (jī) and ji are one query.
+    """
+    from src.astadhyayi.pada import entries_for
+
+    found: List[NamedEntry] = []
+    for entry in entries_for(iast(root)):
+        gana = entry.code.split(".")[0]
+        if not in_reach(gana):
+            continue
+        found.append(NamedEntry(
+            code=entry.code, upadesa=entry.upadesa,
+            dhatu=analyze(entry.upadesa, DHATU).stem,
+            gana=int(gana), artha=entry.artha,
+        ))
+    return tuple(found)
+
+
+# ---------------------------------------------------------------------------
+# JSON-ready payloads — one place that knows both scripts belong together,
+# so a caller putting this behind a form does not reinvent the pairing
+# ---------------------------------------------------------------------------
+
+
+def step_payload(step) -> Dict[str, object]:
+    """One `Step`, ready to serialise — every surface form in both scripts."""
+    from src.normalizer import iast_to_devanagari as dev
+
+    return {
+        "sutra": step.sutra,
+        "what": step.what,
+        "before_iast": step.before,
+        "before_devanagari": dev(step.before),
+        "after_iast": step.after,
+        "after_devanagari": dev(step.after),
+    }
+
+
+def prakriya_payload(prakriya: Prakriya) -> Dict[str, object]:
+    """One `Prakriya`, ready to serialise — the whole trace, both scripts."""
+    from src.normalizer import iast_to_devanagari as dev
+
+    return {
+        "start_iast": prakriya.start.surface,
+        "start_devanagari": dev(prakriya.start.surface),
+        "steps": [step_payload(step) for step in prakriya.steps],
+        "final_iast": prakriya.surface,
+        "final_devanagari": dev(prakriya.surface),
+        "stopped": prakriya.stopped,
+    }
+
+
 __all__ = [
     "IN_REACH", "NOT_A_ROOT", "NUMBERS", "PERSONS", "SLOTS",
-    "FROM_A_VOWEL", "VOWEL_BUCKET", "Made", "Vyutpatti",
-    "candidates", "forms_of",
+    "FROM_A_VOWEL", "VOWEL_BUCKET", "Made", "NamedEntry", "Vyutpatti",
+    "candidates", "entries_of_name", "forms_of",
     "iast", "in_reach", "opening", "owed_for", "paradigm",
-    "root_opening",
-    "roots_of", "searchable", "unreachable",
+    "prakriya_payload", "root_opening",
+    "roots_of", "searchable", "step_payload", "unreachable",
 ]
 
 
