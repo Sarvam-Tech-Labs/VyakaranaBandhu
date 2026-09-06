@@ -290,7 +290,76 @@ than assume, and लोलुवः exists only because the answer is yes. And t
 exactly what admits a stem the grammar built to a list of thirty-six: the
 fact was in the corpus and needed reading, not deciding.
 
-**Standing: 3,983 codified (100%), 5,358 tests, 141 declared reuse edges over 111 sūtras. Every sūtra of the Aṣṭādhyāyī is codified, from 1.1.1 वृद्धिरादैच् to 8.4.68 अ अ इति. What is left is not coverage but depth.**
+**Standing: 3,983 codified (100%), 5,374 tests, 141 declared reuse edges over 111 sūtras. Every sūtra of the Aṣṭādhyāyī is codified, from 1.1.1 वृद्धिरादैच् to 8.4.68 अ अ इति. What is left is not coverage but depth.**
+
+**AND THEN ALL TEN CLASSES OF THE DHĀTUPĀṬHA.** The reverse lookup could
+answer for two gaṇas because those were the two whose **विकरण** the engine
+could add. Eight sūtras said which marker the other eight take and no rule put
+one into a form; all eight are now wired, and the search space went from 1,232
+roots to **2,229 — every root the dhātupāṭha has**. The engine's operational
+rules went from twenty to **fifty-three**.
+
+Each class is held to the vṛtti's own worked form and not to what the engine
+happens to produce: भवति, अत्ति, **जुहोति**, दीव्यति, सुनोति, तुदति,
+**रुणद्धि**, तनोति, **क्रीणाति**, चोरयति — ten words, each quoted in the
+commentary on the sūtra that gives its class the marker.
+
+Three of them needed more than an affix inserted after the root:
+
+* **3.1.78 रुधादिभ्यः श्नम् goes INSIDE.** मकारो देशविध्यर्थः — the म् is
+  there to say where, and 1.1.47 मिदचोऽन्त्यात्परः puts it after the root's
+  last vowel: रुध् becomes रु-न-ध्. The ण् of रुणद्धि is then 8.4.2's, from
+  the र् two sounds back, and the द्ध् is 8.2.40 झषस्तथोर्धोऽधः followed by
+  8.4.53 झलां जश् झशि.
+* **2.4.75 जुहोत्यादिभ्यः श्लुः names श्लु where लुक् would have done**, and
+  the vṛtti says why: **लुकि प्रकृते श्लुविधानं द्विर्वचनार्थम्** — for the
+  sake of the doubling. 6.1.10 श्लौ then doubles the root, 6.1.4 names the
+  first half the अभ्यास, and five rules shape it: 7.4.60 हलादिः शेषः, 7.4.59
+  ह्रस्वः, 7.4.66 उरत्, 7.4.76 भृञामित्, 7.4.62 कुहोश्चुः and 8.4.54 अभ्यासे
+  चर् च. हु → हुहु → झुहु → **जुहोति**.
+* **3.1.25's णिच् is not a विकरण at all.** 3.1.32 सनाद्यन्ता धातवः makes
+  चोरि a *root*, and शप् then comes after that — चोरयति has both. Which is
+  why 3.1.25 does not contend with 3.1.68 at its site while the other eight
+  do, all of them अपवाद settled by 1.4.2.
+
+**THE HALF OF THE NORTH STAR THAT WAS NAMED AND NEVER WIRED.** `prakriya.py`'s
+own docstring promised two consultations before each step — 1.4.2 for which
+rule wins, and **8.2.1 पूर्वत्रासिद्धम्** for what the previous step is even
+visible to. Only the first was ever called: `can_see` was exported and nothing
+used it. `_asiddha_settles` now asks `blocks_vipratisedha`, and the Kāśikā's
+reason is the one the code cites — येन पूर्वेण लक्षणेन सह स्पर्धते परं
+लक्षणम्, तत् प्रति तस्यासिद्धत्वाद् न प्रवर्तते. Without it 8.4.55 खरि च
+reached रुणध् + ति first and gave रुणत्ति.
+
+**AND FOUR MORE BUGS THE VṚTTIS' OWN FORMS CAUGHT.**
+
+* **7.3.84 was reaching an aṅga that does not END in an इक्.** The scan took
+  the last इक् anywhere, so निन्द् came out नेन्दति and जीव् जेवति. The rule
+  says इगन्त; a light penult is **7.3.86 पुगन्तलघूपधस्य च**, which is now a
+  rule of its own — and 1.1.65's उपधा settles both counter-examples without a
+  test for either, निन्द्'s penult being a consonant and जीव्'s a long vowel.
+* **1.1.5 क्ङिति च could not see what 1.2.4 had done.** The guṇa rules read
+  the affix's own it-letters and stopped there; श (śa) carries neither क् nor
+  ङ् and is ङिद्वत् only by **1.2.4 सार्वधातुकमपित्**, which is the whole
+  reason तुदति has no guṇa. And the marks had to be read off the affix AS
+  ENUNCIATED — शप् and not the अ 1.3.9 leaves it, or every affix looked अपित्
+  and जयति lost its अय्.
+* **1.1.57 अचः परस्मिन् पूर्वविधौ, for the tenth class.** कथ (katha) loses
+  its अ by 6.4.48 अतो लोपः — done though 7.2.115 stands later, the Kāśikā
+  saying so in as many words: **वृद्धिदीर्घाभ्यामतो लोपः पूर्वविप्रतिषेधेन**
+  — and the elided अ is then स्थानिवत्, so the थ् has not become the penult
+  and 7.2.116 finds no अ to lengthen. **कथयति, गणयति, रचयति**, not काथयति.
+* **6.1.78 and the एकादेश pair stopped at a term लुक् had emptied**, and 7.1.3
+  झोऽन्तः read the झ् of a *root* as though it were an affix's, making
+  अन्तॄणाति of झॄ. Both were found by sweeping all 18,993 forms in reach.
+
+**WHAT IS STILL OWED, BY NAME.** 7.2.81 आतो ङितः with 6.1.66 and 6.1.87 —
+पचेते, and the two आ-initial ātmanepada duals are **withheld** rather than
+answered wrongly. 7.3.77 इषुगमियमां छः — गच्छति, where the engine has गमति.
+7.1.6 शीङो रुट् — शेरते. 8.3.59 आदेशप्रत्यययोः — एषि. 7.3.36's पुक् —
+जापयति. And 8.4.65 झरो झरि सवर्णे, which is optional and would simplify
+रुन्द्धः to रुन्धः. Each is registered, none is an operation, and each is a
+test naming the word it would make.
 
 **THE FIRST DEPTH WORK: व्युत्पत्ति, AND WHAT ASKING FOR IT COST.** `vyutpatti.py`
 answers the reverse question — given जयति, which root — and the only way the

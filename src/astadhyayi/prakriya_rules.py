@@ -107,7 +107,17 @@ def _jha_still_open(state: State) -> bool:
     So the question is held open for all four together, which is what the
     grammar does by not applying its rules in a sequence at all.
     """
-    if not any("vikaraṇa" in term.samjnas for term in state.terms):
+    marker = next((term for term in state.terms
+                   if "vikaraṇa" in term.samjnas), None)
+    if marker is None:
+        return True
+    # And not merely present: 7.1.5's अनत इति किम्? asks how the aṅga
+    # ENDS, and शप् ends in प् until 1.3.9 has taken its it-letters away
+    # and left the अ. Asked too early, पच (paca) looked as though it did
+    # not end in अ and पचन्ते came out पचते.
+    if marker.marked and not marker.stripped:
+        return True
+    if marker.text and not marker.stripped:
         return True
     # The third class's aṅga is not finished when its विकरण arrives: 2.4.75
     # takes शप् away again by श्लु and 6.1.10 doubles the root, and only
@@ -660,7 +670,7 @@ def _i_haly_aghoh() -> Operational:
         return state.replace_term(index, term.altered(term.text[:-1] + "ī"))
 
     return Operational(
-        sutra="6.4.113", operation="ādeśa",
+        sutra="6.4.113",
         what="ई हल्यघोः — the आ becomes ई before a consonant: क्रीणीतः",
         matches=matches, perform=perform,
         site=lambda _s: ("snabhyasta",))
@@ -1292,6 +1302,12 @@ def _jho_antah() -> Operational:
             return None
         for index, term in enumerate(state.terms):
             if term.stripped or not term.upadesa:
+                continue
+            # झोऽन्तः — of the AFFIX. The rule stands in the प्रत्ययस्य
+            # section and 7.1.1's युवोरनाकौ is about affixes throughout;
+            # read of any term it reached the root झॄ (jhṝ) and made
+            # अन्तॄणाति of झृणाति.
+            if "pratyaya" not in term.samjnas:
                 continue
             found = jho_antah(term.text)
             if found.result is not None:

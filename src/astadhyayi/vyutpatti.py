@@ -26,43 +26,48 @@ abhibhave — "to overcome"), two entries the dhātupāṭha spells identically
 and separates only by sense. The grammar does not choose between them, and
 neither does this. Only the sentence can.
 
-**Two things make the search cheap enough to run.**
+**The class must be in reach, and all ten now are.** A root of the sixth
+class takes श (śa) by 3.1.77 तुदादिभ्यः शः and not शप् (śap); deriving
+तुद् (tud) with शप् would give तोदति (todati), which is not a word, and a
+search matching against invented forms answers with invented roots. So a
+class whose विकरण (vikaraṇa) the engine cannot apply is left out — and the
+list of those is not written here. It is read off the engine's own rules,
+which is why `unreachable()` is empty today and was eight entries long
+before 3.1.69, 3.1.73, 3.1.77, 3.1.78, 3.1.79, 3.1.81, 3.1.25 and 2.4.75
+were wired. See `IN_REACH`.
 
-*The class must be in reach.* A root of the sixth class takes श (śa) by
-3.1.77 तुदादिभ्यः शः, not शप् (śap), and the engine has no rule for श yet.
-Deriving तुद् (tud) with शप् would produce तोदति (todati), which is not a
-word, and a search that matched against invented forms would answer with
-invented roots. So the classes whose marker the engine cannot apply are
-left out — and the list of them is not written here. It is read off the
-engine's own rules, so the day 3.1.77 is wired in, the sixth class enters
-the search by itself. See `IN_REACH`.
+**The opening sound survives, with two exceptions the filter knows about.**
+In लट् (laṭ) with no preverb there is no augment, so the first sound of the
+word is the first sound of the root — after 6.1.64/65 धात्वादेः
+(dhātvādeḥ) have turned an initial ष् (ṣ) into स् (s) and an initial ण्
+(ṇ) into न् (n), which is why नयति (nayati) has to be looked for under न्
+(n) though its root is written णीञ् (ṇīñ). The two exceptions:
 
-*The opening sound survives.* In लट् (laṭ) with no preverb there is no
-augment and no reduplication, so the first sound of the word is the first
-sound of the root — after 6.1.64/65 धात्वादेः (dhātvādeḥ) have turned an
-initial ष् (ṣ) into स् (s) and an initial ण् (ṇ) into न् (n), which is why
-नयति (nayati) has to be looked for under न् (n) though its root is written
-णीञ् (ṇīñ). A root beginning with a vowel is the one case where the sound
-can change — गुण (guṇa) and 6.1.78 एचोऽयवायावः (eco'yavāyāvaḥ) both act
-there — so all vowel-initial roots are searched together. That claim is
-not assumed: `tests/test_astadhyayi_vyutpatti.py` derives every form in
-reach and checks that not one of them falls outside the bucket its own
-root was filed under.
+  * a root of the **third class** is heard through its copy — 6.1.10's
+    doubling and then 7.4.62 कुहोश्चुः and 8.4.54 अभ्यासे चर् च, so हु
+    (hu) is जुहोति (juhoti) and belongs under ज् (j);
+  * a root beginning with a **vowel** can surface on a semivowel — 6.1.77
+    इको यणचि gives इण् (iṇ) both एति (eti) and यन्ति (yanti) — so a query
+    beginning with य् व् र् or ल् searches the vowels as well.
+
+None of that is assumed. `tests/test_astadhyayi_vyutpatti.py` derives every
+form in reach and checks that the root that made it is among the candidates
+the filter would have tried.
 
 **What the answer means, exactly.** "जयति (jayati) is derivable from जि
 (ji) **by the rules the engine has**, and here is the derivation." Not "and
 by no other", and not "and every Sanskrit verb is answered". The forward
-engine applies about twenty operational rules, so the failure mode is a
-word it cannot build and therefore cannot recognise: गच्छति (gacchati) gets
-no answer, because 7.3.77 इषुगमियमां छः is codified but not wired, and the
-engine makes गमति (gamati) from गम् (gam) instead. Every such gap is a
+engine applies fifty-three operational rules out of 3,983 codified, so the
+failure mode is a word it cannot build and therefore cannot recognise:
+गच्छति (gacchati) gets no answer, because 7.3.77 इषुगमियमां छः is codified
+but not wired, and the engine makes गमति (gamati) from गम् (gam) instead. Every such gap is a
 **silence**, never a wrong root — and the derivation comes back with the
 answer so that a reader can see precisely which rules were used.
 
 **What this is not.** It is not a morphological analyser for running text.
-It answers for finite verbs of लट् (laṭ), with no preverb, from the classes
-the engine can build. `unreachable()` states the classes it cannot, and
-`owed_for` the slots.
+It answers for finite verbs of लट् (laṭ), with no preverb, from every class
+of the dhātupāṭha. `unreachable()` states any class the engine cannot build
+— none, today — and `owed_for` the slots it still withholds.
 """
 
 from __future__ import annotations
@@ -265,15 +270,30 @@ def _by_opening(bucket: str) -> Tuple[Dhatu, ...]:
                                  entry.code.split(".")[0]) == bucket)
 
 
+#: 6.1.77 इको यणचि turns इ into य्, उ into व्, ऋ into र् and ऌ into ल्,
+#: and 6.1.78 एचोऽयवायावः gives य् and व् too. So a root that opens on a
+#: vowel can surface opening on one of these four — इण् (iṇ) gives एति
+#: (eti) in the singular and **यन्ति** (yanti) in the plural — and a word
+#: that begins with one has to be looked for in the vowel bucket as well
+#: as its own. Nothing runs the other way: no rule here takes a root's
+#: opening consonant off, so a word beginning with a vowel never comes
+#: from a root that does not.
+FROM_A_VOWEL: Tuple[str, ...] = ("y", "v", "r", "l")
+
+
 def candidates(word: str) -> Tuple[Dhatu, ...]:
     """
     The roots worth trying for this word — those that open on its sound.
 
     A filter and not an answer: every root here is *tried*, and most fail.
     What matters is that no root outside it could have succeeded, which is
-    the claim the tests check exhaustively.
+    the claim the tests check exhaustively, over every form in reach.
     """
-    return _by_opening(opening(iast(word)))
+    key = opening(iast(word))
+    found = _by_opening(key)
+    if key in FROM_A_VOWEL:
+        found = found + _by_opening(VOWEL_BUCKET)
+    return found
 
 
 # ---------------------------------------------------------------------------
@@ -415,7 +435,8 @@ def forms_of(upadesa: str, gana: str = "") -> Dict[Tuple[int, int], str]:
 
 __all__ = [
     "IN_REACH", "NOT_A_ROOT", "NUMBERS", "PERSONS", "SLOTS",
-    "VOWEL_BUCKET", "Made", "Vyutpatti", "candidates", "forms_of",
+    "FROM_A_VOWEL", "VOWEL_BUCKET", "Made", "Vyutpatti",
+    "candidates", "forms_of",
     "iast", "in_reach", "opening", "owed_for", "paradigm",
     "root_opening",
     "roots_of", "searchable", "unreachable",
