@@ -39,6 +39,14 @@ class Comparison(unittest.TestCase):
         row = case(["vā", "amutra"], ["vā'mitra"])
         self.assertFalse(H.run_case(row, ignore_avagraha=True).ok)
 
+    def test_norm_nasal_normalizes_anunasika_spelling(self):
+        # Vidyut writes m̐ (bhavām̐ścinoti) for candrabindu on the vowel (bhavā̐ścinoti)
+        self.assertEqual(H.joined("bhavām̐ścinoti", norm_nasal=True), "bhavā̐ścinoti")
+        self.assertEqual(H.joined("pum̐sputraḥ", norm_nasal=True), "pu̐sputraḥ")
+        row = case(["pum", "putraḥ"], ["pum̐sputraḥ"])
+        self.assertFalse(H.run_case(row).ok)
+        self.assertTrue(H.run_case(row, norm_nasal=True).ok)
+
     def test_a_right_answer_matches(self):
         r = H.run_case(case(["dadhi", "atra"], ["dadhyatra"]))
         self.assertTrue(r.ok, r)

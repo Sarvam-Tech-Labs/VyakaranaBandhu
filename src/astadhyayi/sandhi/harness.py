@@ -50,7 +50,8 @@ from src.astadhyayi.varna import VISARGA
 MAX_VARIANT_WORDS = 3
 
 
-def joined(text: str, *, ignore_avagraha: bool = False) -> str:
+def joined(text: str, *, ignore_avagraha: bool = False,
+           norm_nasal: bool = False) -> str:
     """
     A form as it is compared: NFC, no spaces or hyphens, avagraha as '.
 
@@ -58,8 +59,12 @@ def joined(text: str, *, ignore_avagraha: bool = False) -> str:
     for an elided अ (`vā'mutra`) where the engine, given the separate words,
     derives `vāmutra` (6.1.101). It is a statement about the dataset's spelling,
     so it is opt-in and off by default.
+    `norm_nasal` normalizes alternative representations of anunāsika (such as
+    a following 'm̐' vs candrabindu on the preceding vowel).
     """
     text = unicodedata.normalize("NFC", text).replace("’", "'")
+    if norm_nasal:
+        text = text.replace("m̐", "̐")
     drop = " -·'" if ignore_avagraha else " -·"
     return "".join(c for c in text if c not in drop)
 
@@ -126,19 +131,22 @@ def _junction(case: Dict[str, Any]) -> Tuple[str, str]:
 
 
 def expected_forms(case: Dict[str, Any], *,
-                   ignore_avagraha: bool = False) -> Tuple[str, ...]:
+                   ignore_avagraha: bool = False,
+                   norm_nasal: bool = False) -> Tuple[str, ...]:
     """The forms a case accepts, joined, from either schema."""
     if "outputs" in case:
         forms = case["outputs"]
     else:
         forms = [case["output"]]
-    return tuple(dict.fromkeys(joined(f, ignore_avagraha=ignore_avagraha)
+    return tuple(dict.fromkeys(joined(f, ignore_avagraha=ignore_avagraha,
+                                      norm_nasal=norm_nasal)
                                for f in forms if f))
 
 
 def run_case(case: Dict[str, Any], *, rules=None,
              default_boundary: str = PADA,
-             ignore_avagraha: bool = False) -> CaseResult:
+             ignore_avagraha: bool = False,
+             norm_nasal: bool = False) -> CaseResult:
     """
     One case against the engine.
 
@@ -147,10 +155,11 @@ def run_case(case: Dict[str, Any], *, rules=None,
     SandhiKosh *internal* corpus — is `anga`; one of separate words is `pada`.
     """
     cid = str(case.get("id", "?"))
-    expected = expected_forms(case, ignore_avagraha=ignore_avagraha)
+    expected = expected_forms(case, ignore_avagraha=ignore_avagraha,
+                              norm_nasal=norm_nasal)
 
     def j(text: str) -> str:
-        return joined(text, ignore_avagraha=ignore_avagraha)
+        return joined(text, ignore_avagraha=ignore_avagraha, norm_nasal=norm_nasal)
     words = tuple(case.get("input") or ())
     junction = _junction(case)
     if not words or not expected:
@@ -308,14 +317,16 @@ class Summary:
 
 def evaluate(cases: Iterable[Dict[str, Any]], *, limit: Optional[int] = None,
              rules=None, default_boundary: str = PADA,
-             ignore_avagraha: bool = False) -> Summary:
+             ignore_avagraha: bool = False,
+             norm_nasal: bool = False) -> Summary:
     summary = Summary()
     for count, case in enumerate(cases):
         if limit is not None and count >= limit:
             break
         summary.add(run_case(case, rules=rules,
                              default_boundary=default_boundary,
-                             ignore_avagraha=ignore_avagraha))
+                             ignore_avagraha=ignore_avagraha,
+                             norm_nasal=norm_nasal))
     return summary
 
 

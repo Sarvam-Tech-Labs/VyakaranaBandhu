@@ -51,6 +51,8 @@ def main(argv=None) -> int:
                         help="compare with the avagraha dropped from both sides, "
                              "for datasets that write it for an elided a "
                              "(off by default)")
+    parser.add_argument("--norm-nasal", action="store_true",
+                        help="normalize alternative anunāsika spellings (e.g. 'm̐' to '̐')")
     parser.add_argument("--json", metavar="OUT",
                         help="write every kept miss to this file")
     args = parser.parse_args(argv)
@@ -63,7 +65,8 @@ def main(argv=None) -> int:
             cases = random.Random(args.seed).sample(cases, args.sample)
         summary = harness.evaluate(cases, limit=args.limit,
                                    default_boundary=args.boundary,
-                                   ignore_avagraha=args.ignore_avagraha)
+                                   ignore_avagraha=args.ignore_avagraha,
+                                   norm_nasal=args.norm_nasal)
         print(f"== {path}")
         print(summary.report(show=args.show))
         print()
