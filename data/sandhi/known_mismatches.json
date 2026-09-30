@@ -7,6 +7,18 @@
   "kind": "engine-gap",
   "reason": "The gold has kṣīrapeṇa where the engine leaves n or s: the only difference is the missing ṇatva (8.4.1–39), which the natva/satva families (unmerged drafts) are to supply."
  },
+ "ac_ekadesa-018": {
+  "kind": "scope",
+  "reason": "The dropping of nominative singular affix s after feminine āp by 6.1.68 (halṅyābbhyo dīrghāt) belongs to subanta morphology rather than vowel sandhi."
+ },
+ "ac_ekadesa-023": {
+  "kind": "scope",
+  "reason": "The tuk augment in kṛt affix lyap (6.1.71 hrasvasya piti kṛti tuk) occurs during affixation/derivation of the participle, which is outside the scope of junction sandhi."
+ },
+ "ac_ekadesa-024": {
+  "kind": "scope",
+  "reason": "The tuk augment in kṛt affix lyap (6.1.71 hrasvasya piti kṛti tuk) is an affixal augment outside the scope of inter-word junction sandhi."
+ },
  "ac_ekadesa-025": {
   "kind": "engine-gap",
   "reason": "The gold has brahmahūṣu where the engine leaves n or s: the only difference is the missing ṣatva (8.3.55–119), which the natva/satva families (unmerged drafts) are to supply."
@@ -19,6 +31,22 @@
   "kind": "engine-gap",
   "reason": "The gold has akṣauhiṇī where the engine leaves n or s: the only difference is the missing ṇatva (8.4.1–39), which the natva/satva families (unmerged drafts) are to supply."
  },
+ "ac_ekadesa-060": {
+  "kind": "gold-error",
+  "reason": "The vārttika 'ṛte ca tṛtīyāsamāse' under 6.1.89 applies to compound stems where case endings are elided (sukha + ṛtaḥ); providing an inflected form with case ending sukhena is a gold error."
+ },
+ "ac_ekadesa-061": {
+  "kind": "gold-error",
+  "reason": "The vārttika 'ṛte ca tṛtīyāsamāse' applies to compound stems where the case ending is elided (duḥkha + ṛtaḥ); inputting the inflected form duḥkhena is a gold error."
+ },
+ "ac_ekadesa-062": {
+  "kind": "gold-error",
+  "reason": "Counter-example row provided with an inflected form with case ending -ena rather than the compound stem (sukha + itaḥ); retaining the case affix prevents compound sandhi."
+ },
+ "ac_ekadesa-111": {
+  "kind": "gold-error",
+  "reason": "The input word sīman ends in consonant n; the expected savarṇadīrgha requires n-lopa or prātipadika stem form, so the consonant-final input correctly triggers namuḍāgama (8.3.32) in sandhi."
+ },
  "ac_ekadesa-137": {
   "kind": "underspecified",
   "reason": "The gold lists one form and the engine also offers cakkruḥ: each differs from a listed form only in gemination (optional doubling, 8.4.46–47); the row does not say whether the doubled forms are allowed."
@@ -27,9 +55,105 @@
   "kind": "underspecified",
   "reason": "The gold lists one form and the engine also offers daddhyatra, daddhyyatra, dadhyyatra: each differs from a listed form only in gemination (optional doubling, 8.4.46–47); the row does not say whether the doubled forms are allowed."
  },
+ "ac_ekadesa-173": {
+  "kind": "underspecified",
+  "reason": "6.1.102 prathamayoḥ pūrvasavarṇaḥ applies to case endings of the first two cases (sup), but the row lacks the flag 'sup:au' to identify au as a case ending, so 6.1.77 yaṇ applies."
+ },
+ "ac_ekadesa-174": {
+  "kind": "gold-error",
+  "reason": "The input specifies the un-it-elided affix 'śas' with initial consonant ś rather than 'as', preventing the vowel-combination rule 6.1.102 from applying to the vowel junction."
+ },
+ "ac_ekadesa-178": {
+  "kind": "underspecified",
+  "reason": "6.1.103 tasmāc chaso naḥ puṃsi converts the final s to n specifically for masculine stems, but the gold row omits the required gender flag 'pum'."
+ },
+ "ac_ekadesa-179": {
+  "kind": "underspecified",
+  "reason": "6.1.103 tasmāc chaso naḥ puṃsi converts final s to n for masculine stems, but the gold row omits the required gender flag 'pum'."
+ },
+ "ac_ekadesa-198": {
+  "kind": "underspecified",
+  "reason": "The Vedic option of 6.1.106 licensing pūrvasavarṇadīrgha (vārāhī) over 6.1.105's refusal requires veda mode or case flag 'sup:au' which the row omits."
+ },
+ "ac_ekadesa-199": {
+  "kind": "engine-gap",
+  "reason": "The Vedic option carrying 6.1.106's vā into 6.1.107 (śamīm vs śamyam) is noted in ac_ekadesa COVERAGE as not modelled; also lacks 'sup:am' flag."
+ },
+ "ac_ekadesa-201": {
+  "kind": "underspecified",
+  "reason": "6.1.107 ami pūrvaḥ requires the case affix am (flag 'sup:am'); without this grammatical flag, 6.1.77 yaṇ applies to the vowel junction."
+ },
+ "ac_ekadesa-202": {
+  "kind": "underspecified",
+  "reason": "6.1.107 ami pūrvaḥ requires the case affix am (flag 'sup:am'); without this grammatical flag, 6.1.77 yaṇ applies to the vowel junction."
+ },
+ "ac_ekadesa-204": {
+  "kind": "underspecified",
+  "reason": "6.1.107 ami pūrvaḥ requires the case affix am (flag 'sup:am'); without this grammatical flag, 6.1.77 yaṇ applies to the vowel junction."
+ },
+ "ac_ekadesa-205": {
+  "kind": "scope",
+  "reason": "Derivation of the kṛdanta form involves samprasāraṇa (6.1.15) and affix-conditioning (8.2.30, 8.4.41), which belong to verbal morphology and affixal phonology, not sandhi."
+ },
+ "ac_ekadesa-206": {
+  "kind": "scope",
+  "reason": "Derivation of the participle uptam involves root samprasāraṇa (6.1.15) on the verbal base, which belongs to verbal morphology rather than junction sandhi."
+ },
  "ac_ekadesa-212": {
   "kind": "underspecified",
   "reason": "The gold lists one form and the engine also offers maddhvatra, maddhvvatra, madhvvatra: each differs from a listed form only in gemination (optional doubling, 8.4.46–47); the row does not say whether the doubled forms are allowed."
+ },
+ "ac_ekadesa-215": {
+  "kind": "underspecified",
+  "reason": "Strict counter-example row: 6.1.78 produces av, and 8.3.19 (lopaḥ śākalyasya) optionally drops y before vowels; the gold only lists the un-elided form."
+ },
+ "ac_ekadesa-216": {
+  "kind": "underspecified",
+  "reason": "Counter-example row: the engine offers vāyoiti (1.1.16 pragṛhya), vāyaviti (6.1.78 av), and vāyaiti (8.3.19 y-lopa); the gold row does not permit the y-lopa variant."
+ },
+ "ac_ekadesa-221": {
+  "kind": "scope",
+  "reason": "6.1.112 khyatyāt parasya transforms the a of the genitive/ablative affix ṅas into u after sakhy/paty; this subanta inflection rule is outside the sandhi engine's scope."
+ },
+ "ac_ekadesa-222": {
+  "kind": "scope",
+  "reason": "6.1.112 khyatyāt parasya transforms the a of the genitive/ablative affix ṅas into u after sakhy/paty; this subanta inflection rule is outside the sandhi engine's scope."
+ },
+ "ac_ekadesa-225": {
+  "kind": "scope",
+  "reason": "6.3.25 mātāpitarāv udīcām replaces the ṛ of mātṛ with ānaṅ in dvandva compounds; this is a compound-internal nominal substitute (uttarapada/aluk context), not general sandhi."
+ },
+ "ac_ekadesa-226": {
+  "kind": "scope",
+  "reason": "7.2.83 īd āsaḥ substitutes ī for the initial sound of the kṛt affix śānac (āna) after root ās; this belongs to kṛt affixal derivation, not junction sandhi."
+ },
+ "ac_ekadesa-227": {
+  "kind": "scope",
+  "reason": "7.1.13 ṅer yaḥ and 7.3.102 supi ca replace dative singular ṅe with ya and lengthen the base vowel; this is nominal declension (aṅga-kārya), outside junction sandhi."
+ },
+ "ac_yan_ayadi-033": {
+  "kind": "gold-error",
+  "reason": "The gold input gives bābho + yaḥ omitting the consonant r of babhru; the derived form bābhravyaḥ requires the root consonants to be preserved."
+ },
+ "ac_yan_ayadi-047": {
+  "kind": "underspecified",
+  "reason": "6.1.79 vānto yi pratyaye requires the following affix to be a pratyaya; the row omits the flag 'pratyaya' on yam, so 6.1.79 does not apply."
+ },
+ "ac_yan_ayadi-048": {
+  "kind": "underspecified",
+  "reason": "6.1.79 vānto yi pratyaye requires the following affix to be a pratyaya; the row omits the flag 'pratyaya' on yam, so 6.1.79 does not apply."
+ },
+ "ac_yan_ayadi-049": {
+  "kind": "underspecified",
+  "reason": "6.1.79 vānto yi pratyaye requires the following affix to be a pratyaya; the row omits the flag 'pratyaya' on yam, so 6.1.79 does not apply."
+ },
+ "ac_yan_ayadi-051": {
+  "kind": "scope",
+  "reason": "Counter-example testing taddhita vṛddhi (7.2.117) and 6.4.148 yasyeti ca (elision of final a before iñ); taddhita derivation with stem vowel elision is outside sandhi scope."
+ },
+ "ac_yan_ayadi-059": {
+  "kind": "engine-gap",
+  "reason": "The Vedic feminine nipātana rule 6.1.83 (pravayyā striyām) is not implemented in the engine."
  },
  "ac_yan_ayadi-064": {
   "kind": "scope",
@@ -55,9 +179,29 @@
   "kind": "scope",
   "reason": "The gold lists valmmīka, which differs from what the engine derives only in gemination; the row is a single word and the engine acts at junctions, not inside a finished word (optional doubling, 8.4.46–47)."
  },
+ "ac_yan_ayadi-078": {
+  "kind": "scope",
+  "reason": "The gold lists stthālī/sththālī differing only in optional gemination (8.4.47); the row is a single word and the engine acts at junctions, not inside a finished word."
+ },
+ "ac_yan_ayadi-079": {
+  "kind": "scope",
+  "reason": "The gold lists stthātā/sththātā differing only in optional gemination (8.4.47); the row is a single word and the engine acts at junctions, not inside a finished word."
+ },
+ "ac_yan_ayadi-080": {
+  "kind": "scope",
+  "reason": "The gold lists vatssaḥ/vathsaḥ differing in gemination (8.4.47) and Pauṣkarasādi variant (8.4.48); the row is a single word and the engine acts at junctions."
+ },
  "ac_yan_ayadi-081": {
   "kind": "scope",
   "reason": "The gold lists ikṣṣuḥ, which differs from what the engine derives only in gemination; the row is a single word and the engine acts at junctions, not inside a finished word (optional doubling, 8.4.46–47)."
+ },
+ "ac_yan_ayadi-082": {
+  "kind": "scope",
+  "reason": "The gold lists kṣṣīram/khṣīram differing in gemination (8.4.47) and Pauṣkarasādi variant (8.4.48); the row is a single word and the engine acts at junctions."
+ },
+ "ac_yan_ayadi-083": {
+  "kind": "scope",
+  "reason": "The gold lists apssarāḥ/aphsarāḥ differing in gemination (8.4.47) and Pauṣkarasādi variant (8.4.48); the row is a single word and the engine acts at junctions."
  },
  "ac_yan_ayadi-084": {
   "kind": "scope",
@@ -86,6 +230,18 @@
  "ac_yan_ayadi-095": {
   "kind": "engine-gap",
   "reason": "The gold lists puttrajagdhī, which differs from what the engine produces only in gemination: the engine does not offer this variant of the optional doubling (8.4.46–47) at this junction."
+ },
+ "ac_yan_ayadi-096": {
+  "kind": "scope",
+  "reason": "The gold lists vathsaḥ (vārttika 'cayo dvitīyāḥ śari pauṣkarasādeḥ' under 8.4.48); the row is a single word and the engine acts at junctions, not inside finished words."
+ },
+ "ac_yan_ayadi-097": {
+  "kind": "scope",
+  "reason": "The gold lists khṣīram (Pauṣkarasādi's aspiration under 8.4.48); the row is a single word and the engine acts at junctions, not inside finished words."
+ },
+ "ac_yan_ayadi-098": {
+  "kind": "scope",
+  "reason": "The gold lists aphsarāḥ (Pauṣkarasādi's aspiration under 8.4.48); the row is a single word and the engine acts at junctions, not inside finished words."
  },
  "ac_yan_ayadi-103": {
   "kind": "scope",
@@ -139,6 +295,22 @@
   "kind": "scope",
   "reason": "The gold lists sūttram, which differs from what the engine derives only in gemination; the row is a single word and the engine acts at junctions, not inside a finished word (optional doubling, 8.4.46–47)."
  },
+ "ac_yan_ayadi-119": {
+  "kind": "underspecified",
+  "reason": "8.2.32 dāder dhātor ghaḥ applies to d-initial roots like duh; without a flag identifying the root as a dāder dhātu, root-h undergoes general h-to-ḍ (8.2.31 ho ḍhaḥ)."
+ },
+ "ac_yan_ayadi-120": {
+  "kind": "underspecified",
+  "reason": "8.2.32 dāder dhātor ghaḥ applies to d-initial roots like duh; without a flag identifying the root as a dāder dhātu, root-h undergoes general h-to-ḍ (8.2.31 ho ḍhaḥ)."
+ },
+ "ac_yan_ayadi-121": {
+  "kind": "underspecified",
+  "reason": "8.2.32 dāder dhātor ghaḥ applies to d-initial roots like duh; without a flag identifying the root as a dāder dhātu, root-h undergoes general h-to-ḍ (8.2.31 ho ḍhaḥ)."
+ },
+ "ac_yan_ayadi-128": {
+  "kind": "scope",
+  "reason": "Root-internal conjunct resolution and palatalization in bhṛsj before vowel endings (6.4.47, 8.4.40) belongs to verbal base morphology outside sandhi scope."
+ },
  "ac_yan_ayadi-144": {
   "kind": "engine-gap",
   "reason": "The gold lists śayyyā, which differs from what the engine produces only in gemination: the engine does not offer this variant of the optional doubling (8.4.46–47) at this junction."
@@ -146,6 +318,10 @@
  "ac_yan_ayadi-145": {
   "kind": "engine-gap",
   "reason": "The gold lists ādityaḥ, ādityyyaḥ, which differs from what the engine produces only in gemination: the engine does not offer this variant of the optional doubling (8.4.46–47) at this junction."
+ },
+ "ac_yan_ayadi-146": {
+  "kind": "scope",
+  "reason": "Taddhita affix ṇya (4.1.85) eliding stem-final vowel (6.4.148 yasyeti ca); affixal morphology outside sandhi scope."
  },
  "ac_yan_ayadi-147": {
   "kind": "engine-gap",
@@ -158,6 +334,106 @@
  "ac_yan_ayadi-149": {
   "kind": "engine-gap",
   "reason": "The gold lists kurmmaḥ, which differs from what the engine produces only in gemination: the engine does not offer this variant of the optional doubling (8.4.46–47) at this junction."
+ },
+ "ac_yan_ayadi-158": {
+  "kind": "scope",
+  "reason": "Subanta inflection of as-ending stem in nominative singular (7.1.70 num, 6.1.68 halṅyābbhyo lopa, 6.4.8 dīrgha); nominal inflection outside sandhi scope."
+ },
+ "ac_yan_ayadi-159": {
+  "kind": "scope",
+  "reason": "Subanta inflection of as-ending stem in nominative singular (7.1.70, 6.1.68, 6.4.8); nominal inflection outside sandhi scope."
+ },
+ "ac_yan_ayadi-163": {
+  "kind": "scope",
+  "reason": "Participle affixation with 8.2.29 skoḥ saṃyogādyor ante ca and 8.2.45 oditaś ca n-atva; verbal participle morphology outside sandhi scope."
+ },
+ "ac_yan_ayadi-176": {
+  "kind": "scope",
+  "reason": "Root-final conjunct simplification (6.4.47, 8.2.36 vraśca-bhrasja... ṣatva) in kvip derivation; single-word verbal morphology outside sandhi scope."
+ },
+ "ac_yan_ayadi-177": {
+  "kind": "scope",
+  "reason": "Padānta consonant cluster simplification of root bhṛsj before bhyām (6.4.47, 8.2.36 ṣatva); verbal base morphology outside sandhi scope."
+ },
+ "ac_yan_ayadi-181": {
+  "kind": "scope",
+  "reason": "Gunation of verbal root tṛp before tṛc (7.3.84 sārvadhātukārdhadhātukayoḥ); verbal affixal morphology outside sandhi scope."
+ },
+ "ac_yan_ayadi-189": {
+  "kind": "scope",
+  "reason": "Gunation of verbal root ci before tṛc (7.3.84 sārvadhātukārdhadhātukayoḥ); verbal affixal morphology outside sandhi scope."
+ },
+ "ac_yan_ayadi-190": {
+  "kind": "scope",
+  "reason": "Gunation of verbal root stu before tṛc (7.3.84 sārvadhātukārdhadhātukayoḥ); verbal affixal morphology outside sandhi scope."
+ },
+ "ac_yan_ayadi-191": {
+  "kind": "scope",
+  "reason": "Ghañ affixation with root vṛddhi (7.2.116) and kutva (7.3.52 cokoḥ kuḥ); kṛt derivation outside sandhi scope."
+ },
+ "ac_yan_ayadi-192": {
+  "kind": "scope",
+  "reason": "Ghañ affixation with root vṛddhi (7.2.116) and kutva (7.3.52 cokoḥ kuḥ); kṛt derivation outside sandhi scope."
+ },
+ "ac_yan_ayadi-193": {
+  "kind": "scope",
+  "reason": "Pronoun inflection of adas with 8.2.80 adaso 'ser dād u do maḥ and ṣatva; pronominal declension outside sandhi scope."
+ },
+ "ac_yan_ayadi-194": {
+  "kind": "scope",
+  "reason": "Pronoun inflection of adas with 8.2.80 adaso 'ser dād u do maḥ; pronominal declension outside sandhi scope."
+ },
+ "ac_yan_ayadi-195": {
+  "kind": "scope",
+  "reason": "Gunation and ra-paratva (1.1.51 uraṇ raparaḥ, 7.3.84) on verbal root kṛ; verbal morphology outside sandhi scope."
+ },
+ "ac_yan_ayadi-196": {
+  "kind": "scope",
+  "reason": "Gunation and ra-paratva (1.1.51 uraṇ raparaḥ, 7.3.84) on verbal root hṛ; verbal morphology outside sandhi scope."
+ },
+ "ac_yan_ayadi-197": {
+  "kind": "scope",
+  "reason": "Root ṝ-to-ir substitution (7.1.100 ṝta id dhātoḥ, 1.1.51) in tiṅanta conjugation; verbal conjugation outside sandhi scope."
+ },
+ "ac_yan_ayadi-198": {
+  "kind": "scope",
+  "reason": "Root ṝ-to-ir substitution (7.1.100 ṝta id dhātoḥ, 1.1.51) in tiṅanta conjugation; verbal conjugation outside sandhi scope."
+ },
+ "ac_yan_ayadi-201": {
+  "kind": "scope",
+  "reason": "Compound-internal shortening (1.2.50 id goṇyāḥ) in dvigu compound; compound nominal morphology outside sandhi scope."
+ },
+ "ac_yan_ayadi-202": {
+  "kind": "scope",
+  "reason": "Compound-internal shortening (1.2.50 id goṇyāḥ) in dvigu compound; compound nominal morphology outside sandhi scope."
+ },
+ "ac_yan_ayadi-203": {
+  "kind": "scope",
+  "reason": "7.1.9 ato bhisa ais: nominal case ending substitution (bhis -> ais) in subanta declension; nominal morphology outside sandhi scope."
+ },
+ "ac_yan_ayadi-204": {
+  "kind": "scope",
+  "reason": "7.1.9 ato bhisa ais: nominal case ending substitution (bhis -> ais) in subanta declension; nominal morphology outside sandhi scope."
+ },
+ "ac_yan_ayadi-207": {
+  "kind": "engine-gap",
+  "reason": "The vārttika 'yavalapare yavalā veti vaktavyam' (under 8.3.26): the engine produces the nasalized semivowel and anusvāra, but does not offer the non-nasalized variant kiyhyaḥ."
+ },
+ "ac_yan_ayadi-208": {
+  "kind": "engine-gap",
+  "reason": "The vārttika under 8.3.26: the engine produces nasalized kiv̐hvalayati and anusvāra kiṃhvalayati, but does not offer the non-nasalized variant kivhvalayati."
+ },
+ "ac_yan_ayadi-209": {
+  "kind": "engine-gap",
+  "reason": "The vārttika under 8.3.26: the engine produces nasalized kil̐hlādayati and anusvāra kiṃhlādayati, but does not offer the non-nasalized variant kilhlādayati."
+ },
+ "prakrtibhava-011": {
+  "kind": "underspecified",
+  "reason": "6.1.127 (iko 'savarṇe śākalyasya hrasvaś ca) requires the flag 'sakalya' to follow Śākalya's optional shortening/hiatus; the row omits the flag."
+ },
+ "prakrtibhava-012": {
+  "kind": "underspecified",
+  "reason": "6.1.127 (iko 'savarṇe śākalyasya hrasvaś ca) requires the flag 'sakalya' to follow Śākalya's optional shortening/hiatus; the row omits the flag."
  },
  "prakrtibhava-013": {
   "kind": "underspecified",
@@ -179,6 +455,18 @@
   "kind": "underspecified",
   "reason": "The gold lists one form and the engine also offers dāḍimmyatra, dāḍimmyyatra, dāḍimyyatra: each differs from a listed form only in gemination (optional doubling, 8.4.46–47); the row does not say whether the doubled forms are allowed."
  },
+ "prakrtibhava-028": {
+  "kind": "underspecified",
+  "reason": "1.1.13 śe pragṛhyam requires the flag 'she' to identify the ending as the Vedic śe-substitute; the row provides 'arsa' instead."
+ },
+ "prakrtibhava-029": {
+  "kind": "underspecified",
+  "reason": "1.1.13 śe pragṛhyam requires the flag 'she' to identify the ending as the Vedic śe-substitute; the row provides 'arsa' instead."
+ },
+ "prakrtibhava-030": {
+  "kind": "underspecified",
+  "reason": "1.1.13 śe pragṛhyam requires the flag 'she' to identify the ending as the Vedic śe-substitute; the row provides 'arsa' instead."
+ },
  "prakrtibhava-039": {
   "kind": "underspecified",
   "reason": "The gold lists one form and the engine also offers odakāntād, which differs from a listed form only in the last letter voiced or voiceless (pausal, 8.2.39 / 8.4.56); the row does not say whether that variant is allowed."
@@ -190,6 +478,18 @@
  "prakrtibhava-047": {
   "kind": "underspecified",
   "reason": "The gold lists one form and the engine also offers ado'bhavad, which differs from a listed form only in the last letter voiced or voiceless (pausal, 8.2.39 / 8.4.56); the row does not say whether that variant is allowed."
+ },
+ "prakrtibhava-051": {
+  "kind": "underspecified",
+  "reason": "Strict counter-example row: the engine also offers the standard sandhi form gaveti (6.1.87 ādguṇaḥ on the av-stem); the gold lists only gaviti and gaiti."
+ },
+ "prakrtibhava-053": {
+  "kind": "underspecified",
+  "reason": "Strict counter-example row: the engine produces additional variants differing only in pausal voicing of final t/d (8.2.39 / 8.4.56) and optional doubling (8.4.46–47)."
+ },
+ "prakrtibhava-054": {
+  "kind": "underspecified",
+  "reason": "Candrabindu orthography: the gold writes nasalized u as 'ūm̐' (U+016B + m + U+0310) whereas the engine renders candrabindu on the vowel 'ū̐' (U+016B + U+0310)."
  },
  "prakrtibhava-058": {
   "kind": "underspecified",
@@ -219,13 +519,117 @@
   "kind": "engine-gap",
   "reason": "The gold has abhiṣiktam where the engine leaves n or s: the only difference is the missing ṣatva (8.3.55–119), which the natva/satva families (unmerged drafts) are to supply."
  },
+ "prakrtibhava-066": {
+  "kind": "scope",
+  "reason": "Dual declension with iyaṅ-ādeśa (6.4.77) blocked from yaṇ by vārttika 'gatikāraketarapūrvapadasya yaṇ neṣyate' (1.4.60); internal nominal declension outside sandhi scope."
+ },
+ "prakrtibhava-067": {
+  "kind": "engine-gap",
+  "reason": "8.2.19 neras te yadāvayaḥ (lattva of upasarga nir before root ay) is not implemented in the engine."
+ },
+ "prakrtibhava-069": {
+  "kind": "underspecified",
+  "reason": "6.1.115 prakṛtyāntaḥpādam avyapare requires the junction to be inside an Ṛk pāda (flag 'antahpada'); without this domain flag, classical 6.1.109 pūrvarūpa applies."
+ },
+ "prakrtibhava-070": {
+  "kind": "underspecified",
+  "reason": "6.1.115 prakṛtyāntaḥpādam avyapare requires the junction to be inside an Ṛk pāda (flag 'antahpada'); without this domain flag, classical 6.1.109 pūrvarūpa applies."
+ },
  "prakrtibhava-073": {
   "kind": "underspecified",
   "reason": "The gold lists one form and the engine also offers annvagniḥ, annvvagniḥ, anvvagniḥ: each differs from a listed form only in gemination (optional doubling, 8.4.46–47); the row does not say whether the doubled forms are allowed."
  },
+ "prakrtibhava-075": {
+  "kind": "underspecified",
+  "reason": "6.1.116 avyadavadyāt... requires the junction to be inside an Ṛk pāda (flag 'antahpada'); without this domain flag, classical 6.1.109 pūrvarūpa applies."
+ },
+ "prakrtibhava-077": {
+  "kind": "underspecified",
+  "reason": "6.1.116 avyadavadyāt... requires the junction to be inside an Ṛk pāda (flag 'antahpada'); without this domain flag, classical 6.1.109 pūrvarūpa applies."
+ },
+ "prakrtibhava-079": {
+  "kind": "underspecified",
+  "reason": "6.1.116 avyadavadyāt... requires the junction to be inside an Ṛk pāda (flag 'antahpada'); without this domain flag, classical 6.1.109 pūrvarūpa applies."
+ },
+ "prakrtibhava-080": {
+  "kind": "underspecified",
+  "reason": "6.1.117 yajuṣy uraḥ requires the domain flag 'yajus'; without this flag, classical 6.1.109 pūrvarūpa applies."
+ },
+ "prakrtibhava-081": {
+  "kind": "underspecified",
+  "reason": "6.1.118 vākyāt... requires the domain flag 'yajus'; without this flag, classical 6.1.109 pūrvarūpa applies."
+ },
+ "prakrtibhava-082": {
+  "kind": "underspecified",
+  "reason": "6.1.118 vākyāt... requires the domain flag 'yajus'; without this flag, classical 6.1.109 pūrvarūpa applies."
+ },
+ "prakrtibhava-083": {
+  "kind": "underspecified",
+  "reason": "6.1.118 vākyāt... requires the domain flag 'yajus'; without this flag, classical 6.1.109 pūrvarūpa applies."
+ },
+ "prakrtibhava-084": {
+  "kind": "underspecified",
+  "reason": "6.1.118 vākyāt... requires the domain flag 'yajus'; without this flag, classical 6.1.109 pūrvarūpa applies."
+ },
+ "prakrtibhava-085": {
+  "kind": "underspecified",
+  "reason": "6.1.118 vākyāt... requires the domain flag 'yajus'; without this flag, classical 6.1.109 pūrvarūpa applies."
+ },
+ "prakrtibhava-086": {
+  "kind": "underspecified",
+  "reason": "6.1.119 aṅga ity ādau ca requires the domain flag 'yajus'; without this flag, classical 6.1.109 pūrvarūpa applies."
+ },
+ "prakrtibhava-087": {
+  "kind": "underspecified",
+  "reason": "6.1.119 aṅga ity ādau ca requires the domain flag 'yajus'; without this flag, classical 6.1.109 pūrvarūpa applies."
+ },
+ "prakrtibhava-088": {
+  "kind": "underspecified",
+  "reason": "6.1.120 anudātte ca requires accent data (flag 'anudatta') for the initial vowel of the second word; the row omits the flag."
+ },
+ "prakrtibhava-089": {
+  "kind": "underspecified",
+  "reason": "6.1.120 anudātte ca requires accent data (flag 'anudatta') for the initial vowel of the second word; the row omits the flag."
+ },
+ "prakrtibhava-090": {
+  "kind": "underspecified",
+  "reason": "Counter-example row for 6.1.120 testing anudātte condition; requires accent data to distinguish anudātta from udātta."
+ },
+ "prakrtibhava-092": {
+  "kind": "underspecified",
+  "reason": "6.1.121 na te 'vapathe requires accent data (flag 'anudatta'); the row omits the required accent flag."
+ },
  "prakrtibhava-100": {
   "kind": "underspecified",
   "reason": "The gold lists one form and the engine also offers citraggvagram, citraggvvagram, citragvvagram: each differs from a listed form only in gemination (optional doubling, 8.4.46–47); the row does not say whether the doubled forms are allowed."
+ },
+ "prakrtibhava-102": {
+  "kind": "underspecified",
+  "reason": "6.1.110 ṅasiṅasoś ca requires the genitive/ablative singular case ending (flag 'sup:ṅas' or 'sup:ṅasi'); without this flag, general 6.1.78 ayādi applies."
+ },
+ "prakrtibhava-108": {
+  "kind": "engine-gap",
+  "reason": "The engine offers the 8.3.33 v-form jānvasyarujati, but omits the un-elided pragṛhya variant jānūasyarujati (6.1.101/6.1.125)."
+ },
+ "prakrtibhava-109": {
+  "kind": "engine-gap",
+  "reason": "Vedic preverb āṅ nasalized to ām̐ (6.1.126) which is pragṛhya; the engine merges abhra + ā by 6.1.101 savarṇadīrgha."
+ },
+ "prakrtibhava-110": {
+  "kind": "engine-gap",
+  "reason": "Vedic preverb āṅ nasalized to ām̐ (6.1.126) before u; the engine applies 6.1.87 guṇa to gabhīra + ā."
+ },
+ "prakrtibhava-112": {
+  "kind": "underspecified",
+  "reason": "6.1.127 (iko 'savarṇe śākalyasya hrasvaś ca) requires the flag 'sakalya' to follow Śākalya's optional shortening/hiatus; the row omits the flag."
+ },
+ "prakrtibhava-113": {
+  "kind": "underspecified",
+  "reason": "6.1.127 (iko 'savarṇe śākalyasya hrasvaś ca) requires the flag 'sakalya' to follow Śākalya's optional shortening/hiatus; the row omits the flag."
+ },
+ "prakrtibhava-114": {
+  "kind": "underspecified",
+  "reason": "6.1.127 (iko 'savarṇe śākalyasya hrasvaś ca) requires the flag 'sakalya' to follow Śākalya's optional shortening/hiatus; the row omits the flag."
  },
  "prakrtibhava-117": {
   "kind": "underspecified",
@@ -238,5 +642,65 @@
  "prakrtibhava-121": {
   "kind": "underspecified",
   "reason": "The gold lists one form and the engine also offers kumāryyartham: each differs from a listed form only in gemination (optional doubling, 8.4.46–47); the row does not say whether the doubled forms are allowed."
+ },
+ "prakrtibhava-122": {
+  "kind": "engine-gap",
+  "reason": "The Vedic vārttika 'īṣāakṣādīnāṃ chandasi prakṛtibhāvo vaktavyaḥ' (under 6.1.127) is not implemented in the engine."
+ },
+ "prakrtibhava-123": {
+  "kind": "engine-gap",
+  "reason": "The Vedic vārttika 'īṣāakṣādīnāṃ chandasi prakṛtibhāvo vaktavyaḥ' (under 6.1.127) is not implemented in the engine."
+ },
+ "prakrtibhava-124": {
+  "kind": "engine-gap",
+  "reason": "The Vedic vārttika 'īṣāakṣādīnāṃ chandasi prakṛtibhāvo vaktavyaḥ' (under 6.1.127) is not implemented in the engine."
+ },
+ "prakrtibhava-125": {
+  "kind": "engine-gap",
+  "reason": "The Vedic vārttika 'īṣāakṣādīnāṃ chandasi prakṛtibhāvo vaktavyaḥ' (under 6.1.127) is not implemented in the engine."
+ },
+ "prakrtibhava-126": {
+  "kind": "underspecified",
+  "reason": "6.1.128 ṛty akaḥ optional shortening and hiatus requires the flag 'sakalya'; without this flag, 6.1.87 guṇa applies."
+ },
+ "prakrtibhava-127": {
+  "kind": "underspecified",
+  "reason": "6.1.128 ṛty akaḥ optional shortening and hiatus requires the flag 'sakalya'; without this flag, 6.1.87 guṇa applies."
+ },
+ "prakrtibhava-128": {
+  "kind": "underspecified",
+  "reason": "6.1.128 ṛty akaḥ optional shortening and hiatus requires the flag 'sakalya'; without this flag, 6.1.87 guṇa applies."
+ },
+ "prakrtibhava-129": {
+  "kind": "engine-gap",
+  "reason": "Spelling of double ṛ: the engine produces hotṛśyaḥ (single ṛ) and savarṇadīrgha hotṝśyaḥ; the gold expects hotṛṛśyaḥ."
+ },
+ "prakrtibhava-131": {
+  "kind": "underspecified",
+  "reason": "6.1.90 āṭaś ca vṛddhi on verbal augment āṭ; the input lacks the flag 'aat' or 'upasarga', so 6.1.87 guṇa applies."
+ },
+ "prakrtibhava-132": {
+  "kind": "underspecified",
+  "reason": "6.1.128 ṛty akaḥ inside compounds requires the flag 'sakalya'; without this flag, 6.1.87 guṇa applies."
+ },
+ "prakrtibhava-139": {
+  "kind": "engine-gap",
+  "reason": "6.1.130 īcākravarmaṇasya optional non-pluta behavior: the engine retains the pluta form vaśāiyam but does not offer the non-pluta merged form vaśeyam."
+ },
+ "prakrtibhava-142": {
+  "kind": "scope",
+  "reason": "6.4.19 cchvoḥ śuḍ anunāsike ca or div stem substitution (dyūbhyām); stem-formation rule of nominal base outside sandhi scope."
+ },
+ "prakrtibhava-148": {
+  "kind": "underspecified",
+  "reason": "8.4.57 anoc ca optional pausal nasalization of utterance-final aṇ (dadhim̐) requires the flag 'anunasika' in the engine."
+ },
+ "prakrtibhava-149": {
+  "kind": "underspecified",
+  "reason": "8.4.57 anoc ca optional pausal nasalization of utterance-final aṇ (madhum̐) requires the flag 'anunasika' in the engine."
+ },
+ "prakrtibhava-150": {
+  "kind": "underspecified",
+  "reason": "8.4.57 anoc ca optional pausal nasalization of utterance-final aṇ (kumārīm̐) requires the flag 'anunasika' in the engine."
  }
 }

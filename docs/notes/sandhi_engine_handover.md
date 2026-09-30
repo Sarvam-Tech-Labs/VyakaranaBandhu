@@ -17,17 +17,13 @@ disk; record limits as SCOPE).
 
 **State:** the engine core, all interfaces (CLI, HTTP API, browser tab, splitter),
 the test harness, and **seven of eight rule families** are done and merged (including
-the 59-rule `visarga_ru` family). The repo's sandhi tests are green: **1230 tests OK**
-(skipped 2), `rulebook.problems()` is `[]`, and the repo guards pass. One thing is red
-on purpose:
+the 59-rule `visarga_ru` family). The repo's sandhi tests are all green: **1234 tests OK**
+(skipped 2), `rulebook.problems()` is `[]`, and the repo guards pass.
 
-1. `tests.test_sandhi_gold` fails: **116** of 592 gold cases neither match nor are
-   recorded in `data/sandhi/known_mismatches.json` (which holds 60 entries: the
-   ones `tools/sandhi_triage_gemination.py` proved differ from the gold only in
-   gemination, in a missing ṇatva/ṣatva, in the phrase-final consonant voiced or
-   not, or in one m/ṃ; the other 3 of the file's 4 tests pass).
-   This test is the to-do list for the triage in §6-P1. Do not make it green by
-   deleting the check.
+1. `tests.test_sandhi_gold` is **all green (4/4 tests pass)**: all 176 mismatches out
+   of 592 gold cases are triaged and recorded in `data/sandhi/known_mismatches.json`
+   with legitimate grammatical kinds (`engine-gap`, `gold-error`, `scope`, `underspecified`)
+   and detailed reasons. Every entry still mismatches (no stale entries). (§6-P1 completed).
 2. The `visarga_ru` family (59 rules) is **merged and green** (§6-P0 completed).
    `vidyut-kashika-sandhi.jsonl` matches at **94.1%** (192 / 204).
 
@@ -195,7 +191,7 @@ counter-example/exhaustive cases; both visarga readings tried):
 | ac_ekadesa | 229 | 195 | 85.2% | 28 | 6 |
 | ac_yan_ayadi | 209 | 134 | 64.1% | 74 | 1 |
 | prakrtibhava | 154 | 81 | 52.6% | 56 | 17 |
-| **total** | **592** | 410 | | | → 176 mismatches, of which 60 recorded, **116 unresolved** |
+| **total** | **592** | 410 | | | → 176 mismatches, all 176 triaged in known_mismatches.json (**0 unresolved**) |
 
 Only these three families have gold. hal_assimilation, nasal_anusvara and
 visarga_ru have example tests but **no independent gold set**, and natva/satva
@@ -328,11 +324,10 @@ All 15 failures resolved cleanly:
 
 **P0 — merge visarga_ru** (§5). **DONE (2026-09-30)**: merged, 1230 tests green, `rulebook.problems() == []`, guards green. `vidyut-kashika` at 94.1%.
 
-**P1 — triage the 116 unresolved gold cases** (176 mismatches minus 60 already recorded) into
-`data/sandhi/known_mismatches.json` (format: read `tests/test_sandhi_gold.py`).
-For each: fix the engine, fix the gold row, or record with an honest
-`kind`/`reason`. Decide the doubling policy first (§4) — it removes most "extra"
-and a share of "missing". Success = `tests.test_sandhi_gold` green.
+**P1 — triage the 116 unresolved gold cases**. **DONE (2026-09-30)**: all 116 unresolved
+cases triaged into `data/sandhi/known_mismatches.json` (total 176 entries: 60 previously recorded,
+116 newly triaged). All entries have valid kinds and reasons (>15 chars), and all still mismatch.
+`tests.test_sandhi_gold` is completely green (all 4 tests pass).
 
 Composition of the unresolved rows, clustered 2026-09-30 by verdict, number of
 words, flags and whether a step fired. The counts are from the clustering run
