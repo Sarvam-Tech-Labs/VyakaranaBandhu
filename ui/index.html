@@ -64,6 +64,7 @@
           <a class="site-nav__link" href="#reverse" data-route="reverse">Pada analysis</a>
           <a class="site-nav__link" href="#tinanta" data-route="tinanta">Tiṅanta</a>
           <a class="site-nav__link" href="#krdanta" data-route="krdanta">Kṛt &amp; Taddhita</a>
+          <a class="site-nav__link" href="#sandhi" data-route="sandhi">Sandhi</a>
           <a class="site-nav__link" href="#chandas" data-route="chandas">Chandas</a>
           <a class="site-nav__link" href="#astadhyayi" data-route="astadhyayi">Aṣṭādhyāyī</a>
 
@@ -539,6 +540,148 @@
         </div>
 
         <div id="derivative-output" class="stack"></div>
+      </div>
+    </main>
+
+    <!-- ================================================================ -->
+    <!-- 5b. Sandhi                                                       -->
+    <!-- ================================================================ -->
+    <main class="page-shell" id="page-sandhi" data-page="sandhi" hidden>
+      <div class="page-title-row">
+        <h1 class="page-title">Sandhi — junctions derived sūtra by sūtra</h1>
+        <span class="pill pill--info">Beta</span>
+      </div>
+      <p class="page-intro">
+        Give two words, or several, and see what happens where they meet — one sūtra at a time.
+        Nothing is looked up. Every step names the sūtra of Pāṇini it applies, quotes the sūtra's
+        own words from the corpus, says what was replaced by what and why, and lists the other
+        sūtras that made the change land where it did. Where the grammar allows more than one
+        result you get each one, with its own derivation.
+      </p>
+      <details class="disclosure">
+        <summary>How to write the input</summary>
+        <p>
+          Words are separated by a space or <code>+</code> — two padas in unbroken speech. Anything
+          else says what <em>kind</em> of junction it is, because the rules ask:
+          <code>deva-indra</code> is a compound (the first member is a pada),
+          <code>pra|ejate</code> a preverb and its dhātu, and <code>ne~a</code> two pieces of one
+          pada (stem and affix — the left piece is <em>not</em> pada-final). Devanāgarī works as
+          well as IAST.
+        </p>
+        <p>
+          A word may carry what its letters cannot say, in braces:
+          <code>harī{dvivacana} etau</code>. Whether an ī is a dual ending decides 1.1.11 and no
+          reading of the letters settles it, so it is something you tell the engine, not something
+          it guesses. A final visarga does not say what it came from either — <em>rāmaḥ</em> is
+          <em>rāmas</em>, <em>punaḥ</em> is <em>punar</em> — so it is read as coming from स्, and the
+          derivation says so; write <code>punaḥ{final:r}</code> or <code>punar</code> where it comes
+          from र्.
+        </p>
+        <p>
+          The engine acts at the junctions and leaves the inside of each word alone: the words are
+          finished words. What it does not decide it says, rather than answering anyway.
+        </p>
+      </details>
+
+      <div class="stack mt-6">
+        <div class="card card--pad">
+          <form id="sandhi-form" novalidate>
+            <label class="field">
+              <span class="field__label">Words</span>
+              <input
+                type="text"
+                id="sandhi-text"
+                class="input"
+                placeholder="iti ādi · rāmaḥ atra · tad śiva · deva-indra · इति आदि"
+                autocomplete="off"
+                spellcheck="false"
+                required
+              />
+            </label>
+
+            <div class="row mt-4" style="flex-wrap: wrap; gap: 1rem; align-items: center">
+              <label class="field" style="min-width: 12rem">
+                <span class="field__label">Default junction</span>
+                <select id="sandhi-boundary" class="input">
+                  <option value="pada">two padas (saṃhitā)</option>
+                  <option value="samasa">compound (samāsa)</option>
+                  <option value="upasarga">preverb + dhātu</option>
+                  <option value="anga">stem + affix (aṅga)</option>
+                </select>
+              </label>
+              <label class="row" style="gap: 0.5rem; align-items: center">
+                <input type="checkbox" id="sandhi-pause" checked />
+                <span>a pause follows the last word (avasāna, 1.4.110)</span>
+              </label>
+              <label class="row" style="gap: 0.5rem; align-items: center">
+                <input type="checkbox" id="sandhi-veda" />
+                <span>Vedic rules (chandasi)</span>
+              </label>
+            </div>
+
+            <div class="example-row">
+              <button type="submit" class="btn btn--primary" id="sandhi-submit">Join</button>
+              <div class="example-chips" id="sandhi-examples">
+                <button type="button" class="btn btn--secondary btn--sm" data-text="iti ādi">इति आदि</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-text="deva indra">देव इन्द्र</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-text="sudhī upāsya">सुधी उपास्य</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-text="rāmaḥ atra">रामः अत्र</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-text="rāmaḥ ca">रामः च</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-text="manas ratha">मनस् रथ</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-text="punar ramate">पुनर् रमते</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-text="vāc pati">वाच् पति</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-text="tad śiva">तद् शिव</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-text="haras iha">हरस् इह</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-text="hare ava">हरे अव</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-text="mahā ṛṣi">महा ऋषि</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div id="sandhi-output" class="stack"></div>
+
+        <div class="card card--pad">
+          <h2 class="section-heading">Split a joined form</h2>
+          <p class="timeline__desc">
+            No sūtra runs backwards — nothing in the Aṣṭādhyāyī takes a sandhi off a form. So this
+            works the only way the grammar allows: it proposes a split, <strong>derives the joined
+            form from it</strong> with the engine above, and keeps the split only if that gives back
+            exactly what you wrote. Every split shown therefore comes with the derivation that
+            proves it. What it cannot tell you is which words are <em>words</em> — a cut where
+            nothing changed is always possible — so without a word list every split the grammar
+            allows is listed, marked unvalidated.
+          </p>
+          <form id="sandhi-split-form" class="mt-4" novalidate>
+            <label class="field">
+              <span class="field__label">Joined form</span>
+              <input
+                type="text"
+                id="sandhi-split-text"
+                class="input"
+                placeholder="ityādi · rāmo'tra · tacchivaḥ · मनोरथ"
+                autocomplete="off"
+                spellcheck="false"
+                required
+              />
+            </label>
+            <div class="example-row">
+              <button type="submit" class="btn btn--primary" id="sandhi-split-submit">Split</button>
+              <div class="example-chips" id="sandhi-split-examples">
+                <button type="button" class="btn btn--secondary btn--sm" data-text="ityādi">इत्यादि</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-text="rāmo'tra">रामोऽत्र</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-text="manoratha">मनोरथ</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-text="punāramate">पुनारमते</button>
+                <button type="button" class="btn btn--secondary btn--sm" data-text="vākpati">वाक्पति</button>
+              </div>
+            </div>
+          </form>
+          <label class="row mt-4" style="gap: 0.5rem; align-items: center">
+            <input type="checkbox" id="sandhi-split-changed" checked />
+            <span>only splits where a sandhi actually happened</span>
+          </label>
+          <div id="sandhi-split-output" class="stack mt-4"></div>
+        </div>
       </div>
     </main>
 

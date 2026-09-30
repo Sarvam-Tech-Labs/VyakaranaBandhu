@@ -2156,3 +2156,72 @@ textarea.input {
 }
 
 .ash-play__check .field__hint { margin-left: 0; }
+
+
+/* ------------------------------------------------------------------ */
+/* Sandhi — derivations that name their sūtras                        */
+/* ------------------------------------------------------------------ */
+.sandhi-forms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  margin: 0.5rem 0;
+}
+.sandhi-form {
+  font-family: var(--font-devanagari-serif);
+  font-size: 1.5rem;
+  color: var(--color-on-surface);
+}
+.sandhi-sutra {
+  font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
+  font-size: 0.8125rem;
+  padding: 0.0625rem 0.5rem;
+  border-radius: 9999px;
+  border: 1px solid var(--color-outline-variant);
+  background: transparent;
+  color: var(--color-primary);
+  cursor: pointer;
+}
+.sandhi-sutra:hover,
+.sandhi-sutra:focus-visible {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary, #fff);
+}
+.sandhi-sutra--plain {
+  cursor: default;
+  color: var(--color-on-surface-variant);
+}
+.sandhi-sutra--plain:hover {
+  background: transparent;
+  color: var(--color-on-surface-variant);
+}
+.sandhi-arrow {
+  margin: 0 0.35rem;
+  color: var(--color-on-surface-variant);
+}
+.sandhi-step__change {
+  margin-top: 0.25rem;
+  font-size: 1.0625rem;
+}
+.sandhi-step--declined .sandhi-step__change {
+  color: var(--color-on-surface-variant);
+}
+.sandhi-via {
+  margin-top: 0.25rem;
+  font-size: 0.8125rem;
+}
+.sandhi-via > summary {
+  cursor: pointer;
+  color: var(--color-on-surface-variant);
+}
+.sandhi-list {
+  list-style: none;
+  margin: 0.25rem 0 0;
+  padding-left: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.sandhi-list--lost li {
+  opacity: 0.85;
+}

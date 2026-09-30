@@ -1,0 +1,4348 @@
+[
+ {
+  "id": "prakrtibhava-001",
+  "family": "prakrtibhava",
+  "input": [
+   "harī",
+   "etau"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "dvivacana"
+   ]
+  },
+  "outputs": [
+   "harī etau"
+  ],
+  "sutras": [
+   "1.1.11",
+   "6.1.125"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": null,
+   "locator": "Laghu GRETIL text line 151, vlk_51",
+   "quote": "harī etau"
+  },
+  "confidence": "certain",
+  "notes": "Laghu vlk_51 example. harī is the dual of hari; the dual ending ī is pragrhya (1.1.11) and 6.1.125 keeps it before the vowel e of etau, so yaṇ (6.1.77) does not apply: 'harī etau', not *haryetau. The words are quoted with a space in the source (hiatus), so the output keeps the space. Balamanorama: 'atra īkārasya parādivattvāśrayaṇāddvivacanatvam' (the ī is the ekādeśa of i+au and counts as dual). 6.1.125 nityam also stops 6.1.127 (hrasva) here, see the 6.1.125 entry."
+ },
+ {
+  "id": "prakrtibhava-002",
+  "family": "prakrtibhava",
+  "input": [
+   "viṣṇū",
+   "imau"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "dvivacana"
+   ]
+  },
+  "outputs": [
+   "viṣṇū imau"
+  ],
+  "sutras": [
+   "1.1.11",
+   "6.1.125"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": null,
+   "locator": "Laghu GRETIL text line 151, vlk_51",
+   "quote": "viṣṇū imau"
+  },
+  "confidence": "certain",
+  "notes": "Laghu vlk_51 example (also Kaumudi). Dual in ū: pragrhya, no yaṇ."
+ },
+ {
+  "id": "prakrtibhava-003",
+  "family": "prakrtibhava",
+  "input": [
+   "gaṅge",
+   "amū"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "dvivacana"
+   ],
+   "1": [
+    "adas"
+   ]
+  },
+  "outputs": [
+   "gaṅge amū"
+  ],
+  "sutras": [
+   "1.1.11",
+   "6.1.125"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": null,
+   "locator": "Laghu GRETIL text line 151, vlk_51",
+   "quote": "gaṅge amū"
+  },
+  "confidence": "certain",
+  "notes": "Laghu vlk_51 example. Dual in e (gaṅge = gaṅgā+au -> e, feminine dual): pragrhya, so the ayādi rule (6.1.78 e -> ay) does not apply: 'gaṅge amū', not *gaṅgayamū. Balamanorama: 'gaṅge amū ityatra tvayādeśo na bhavati'. amū is a form of adas (flag) but nothing follows it here."
+ },
+ {
+  "id": "prakrtibhava-004",
+  "family": "prakrtibhava",
+  "input": [
+   "pacete",
+   "imau"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "dvivacana"
+   ]
+  },
+  "outputs": [
+   "pacete imau"
+  ],
+  "sutras": [
+   "1.1.11",
+   "6.1.125"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "1.1.11",
+   "locator": "Siddhāntakaumudī on 1.1.11",
+   "quote": "पचेते इमौ"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi/Balamanorama: verbal dual in e (pacete, from pac + ātām/ite -> ete). Balamanorama explains that the sutra is read with tadantavidhi ('īdūdedantam') precisely so that pacete counts: 'pacete ityatra ete iti dvivacanasya edrūpatvābhāvāt pragṛhyatvaṃ na syāt' otherwise."
+ },
+ {
+  "id": "prakrtibhava-005",
+  "family": "prakrtibhava",
+  "input": [
+   "pacethe",
+   "iti"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "dvivacana"
+   ]
+  },
+  "outputs": [
+   "pacethe iti"
+  ],
+  "sutras": [
+   "1.1.11",
+   "6.1.125"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.11",
+   "locator": "Kāśikā on 1.1.11",
+   "quote": "पचेथे इति"
+  },
+  "confidence": "certain",
+  "notes": "Kasika lists 'pacete iti, pacethe iti' as examples of e-ending duals (2nd-person dual atmanepada). 'iti' here is the pada-patha iti, which is what the Kasika uses to show the pragrhya word; the sandhi that would otherwise take place is ayādi (pacethay iti)."
+ },
+ {
+  "id": "prakrtibhava-006",
+  "family": "prakrtibhava",
+  "input": [
+   "agnī",
+   "iti"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "dvivacana"
+   ]
+  },
+  "outputs": [
+   "agnī iti"
+  ],
+  "sutras": [
+   "1.1.11",
+   "6.1.125"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.11",
+   "locator": "Kāśikā on 1.1.11",
+   "quote": "अग्नी इति"
+  },
+  "confidence": "certain",
+  "notes": "Kasika. Dual of agni. The example is quoted with 'iti' (as in the padapatha). Without pragrhya-status i+i would have given agnīti / agnyiti. Also cited again by Kasika on 6.1.125 and 8.4.57 (agnī, vāyū as pragrhya)."
+ },
+ {
+  "id": "prakrtibhava-007",
+  "family": "prakrtibhava",
+  "input": [
+   "vāyū",
+   "iti"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "dvivacana"
+   ]
+  },
+  "outputs": [
+   "vāyū iti"
+  ],
+  "sutras": [
+   "1.1.11",
+   "6.1.125"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.11",
+   "locator": "Kāśikā on 1.1.11",
+   "quote": "वायू इति"
+  },
+  "confidence": "certain",
+  "notes": "Kasika. Dual of vāyu."
+ },
+ {
+  "id": "prakrtibhava-008",
+  "family": "prakrtibhava",
+  "input": [
+   "māle",
+   "iti"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "dvivacana"
+   ]
+  },
+  "outputs": [
+   "māle iti"
+  ],
+  "sutras": [
+   "1.1.11",
+   "6.1.125"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.11",
+   "locator": "Kāśikā on 1.1.11",
+   "quote": "माले इति"
+  },
+  "confidence": "certain",
+  "notes": "Kasika. māle = dual of mālā (e-ending feminine dual). Without pragrhya: mālay iti (6.1.78)."
+ },
+ {
+  "id": "prakrtibhava-009",
+  "family": "prakrtibhava",
+  "input": [
+   "vṛkṣau",
+   "atra"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "dvivacana"
+   ]
+  },
+  "outputs": [
+   "vṛkṣāvatra",
+   "vṛkṣā atra"
+  ],
+  "sutras": [
+   "6.1.78",
+   "8.3.19"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.11",
+   "locator": "Kāśikā on 1.1.11",
+   "quote": "वृक्षावत्र"
+  },
+  "confidence": "certain",
+  "notes": "'īdūdediti kim? vṛkṣāvatra': a dual in au is not pragrhya, so ordinary sandhi (au + a -> āv a, 6.1.78) applies. The Kasika prints only vṛkṣāvatra; the optional deletion of the v by 8.3.19 (lopaḥ śākalyasya, Laghu vlk_30/31 'hara iha, harayiha') gives the second form 'vṛkṣā atra' for the same input."
+ },
+ {
+  "id": "prakrtibhava-010",
+  "family": "prakrtibhava",
+  "input": [
+   "plakṣau",
+   "atra"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "dvivacana"
+   ]
+  },
+  "outputs": [
+   "plakṣāvatra",
+   "plakṣā atra"
+  ],
+  "sutras": [
+   "6.1.78",
+   "8.3.19"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.11",
+   "locator": "Kāśikā on 1.1.11",
+   "quote": "प्लक्षावत्र"
+  },
+  "confidence": "certain",
+  "notes": "Second counter-example of 'īdūdediti kim?' (second output: optional 8.3.19, as for vṛkṣau atra)."
+ },
+ {
+  "id": "prakrtibhava-011",
+  "family": "prakrtibhava",
+  "input": [
+   "kumārī",
+   "atra"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "kumāri atra",
+   "kumāryatra"
+  ],
+  "sutras": [
+   "6.1.77",
+   "6.1.127"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.11",
+   "locator": "Kāśikā on 1.1.11",
+   "quote": "कुमार्यत्र"
+  },
+  "confidence": "certain",
+  "notes": "'dvivacanamiti kim? kumāryatra': kumārī here is a singular (no dvivacana flag), so it is not pragrhya by 1.1.11 and plain yaṇ applies. The Kasika prints only kumāryatra here, but the same words are also the Kasika's positive example of Śākalya's option on 6.1.127 ('kumāri atra, kumāryatra'), so the full output set is the two forms. The engine must not make this ī pragrhya (no 'dvivacana' flag), only optionally hrasva-unchanged by 6.1.127."
+ },
+ {
+  "id": "prakrtibhava-012",
+  "family": "prakrtibhava",
+  "input": [
+   "kiśorī",
+   "atra"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "kiśori atra",
+   "kiśoryatra"
+  ],
+  "sutras": [
+   "6.1.77",
+   "6.1.127"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.11",
+   "locator": "Kāśikā on 1.1.11",
+   "quote": "किशोर्यत्र"
+  },
+  "confidence": "probable",
+  "notes": "Second counter-example of 'dvivacanamiti kim?' (see kumārī atra: the 6.1.127 option gives kiśori atra as well). Input split by me (kiśorī + atra)."
+ },
+ {
+  "id": "prakrtibhava-013",
+  "family": "prakrtibhava",
+  "input": [
+   "akurvahi",
+   "atra"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "akurvahyatra"
+  ],
+  "sutras": [
+   "6.1.77"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "bhashya",
+   "sutra": "1.1.11",
+   "locator": "Mahābhāṣya on 1.1.11",
+   "quote": "अकुर्वहि अत्र, अकुर्वह्यत्रेति"
+  },
+  "confidence": "certain",
+  "notes": "Mahabhasya: why the sutra must name LONG ī/ū (tapara, 1.1.70): if short vowels were pragrhya, the first-person atmanepada 'akurvahi' (short i) would stay unchanged before atra. It does not: akurvahyatra."
+ },
+ {
+  "id": "prakrtibhava-014",
+  "family": "prakrtibhava",
+  "input": [
+   "kumārī",
+   "agāram"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "kumāryagāram"
+  ],
+  "sutras": [
+   "6.1.77"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "tattvabodhini",
+   "sutra": "1.1.11",
+   "locator": "Tattvabodhinī on 1.1.11",
+   "quote": "कुमार्योर्वध्वोश्चागारं कुमार्यगारं वध्वगारमिति"
+  },
+  "confidence": "probable",
+  "notes": "Compound of kumāryoḥ + agāram: the dual ending os is elided, leaving kumārī. Because 'saṃjñāvidhau pratyayagrahaṇe tadantagrahaṇaṃ nāsti' (Tattvabodhini) and 'na pragṛhyasaṃjñāyāṃ pratyayalakṣaṇaṃ bhavati' (Mahabhasya on 1.1.19, jñāpaka), the elided dual ending does NOT make kumārī pragrhya, so yaṇ applies. Input split by me; the flag 'dvivacana' is deliberately absent (the word is no longer a dual)."
+ },
+ {
+  "id": "prakrtibhava-015",
+  "family": "prakrtibhava",
+  "input": [
+   "vadhū",
+   "agāram"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "vadhvagāram"
+  ],
+  "sutras": [
+   "6.1.77"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "tattvabodhini",
+   "sutra": "1.1.11",
+   "locator": "Tattvabodhinī on 1.1.11",
+   "quote": "कुमार्योर्वध्वोश्चागारं कुमार्यगारं वध्वगारमिति"
+  },
+  "confidence": "probable",
+  "notes": "Same as kumāryagāram: vadhvoḥ + agāram -> vadhvagāram (yaṇ, not pragrhya)."
+ },
+ {
+  "id": "prakrtibhava-016",
+  "family": "prakrtibhava",
+  "input": [
+   "maṇī",
+   "iva",
+   "uṣṭrasya"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "dvivacana"
+   ]
+  },
+  "outputs": [
+   "maṇīvoṣṭrasya"
+  ],
+  "sutras": [
+   "6.1.101",
+   "6.1.87"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.11",
+   "locator": "Kāśikā on 1.1.11",
+   "quote": "ईदादीनां प्रगृह्यत्वे मणीवादीनां प्रतिषेधो वक्तव्यः। मणीवोष्ट्रस्य"
+  },
+  "confidence": "uncertain",
+  "notes": "Kasika adds (as a 'vārttika' it does not attribute to Katyayana): 'īdādīnāṃ pragṛhyatve maṇīvādīnāṃ pratiṣedho vaktavyaḥ', i.e. maṇī + iva, rodasī + iva, dampatī + iva, jampatī + iva do NOT keep the dual ī pragrhya (sandhi savarṇadīrgha gives maṇīva). Kasika's own example: 'maṇīvoṣṭrasya lambete priyau vatsatarau mama' (Mahabharata 12.177.12). The Tattvabodhini and Prauḍhamanoramā say Kaiyata/Haradatta reject this 'vartika' as not stated by any of the three munis ('muni­trayānuktatvādapramāṇam'), and Kaumudi/Bala explain maṇīvoṣṭrasya differently: the word is maṇī + va (va = iva, Medini/Amara) + uṣṭrasya, so no vowel follows the pragrhya ī. Either way the surface form is maṇīvoṣṭrasya (va+uṣṭrasya -> voṣṭrasya by 6.1.87). I split the joined form myself (iva + uṣṭrasya)."
+ },
+ {
+  "id": "prakrtibhava-017",
+  "family": "prakrtibhava",
+  "input": [
+   "dampatī",
+   "iva"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "dvivacana"
+   ]
+  },
+  "veda": true,
+  "outputs": [
+   "dampatīva"
+  ],
+  "sutras": [
+   "6.1.101"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.11",
+   "locator": "Kāśikā on 1.1.11",
+   "quote": "जम्पतीव। रोदसीव"
+  },
+  "confidence": "uncertain",
+  "notes": "Kasika's list of 'maṇīvādi' words (dampatīva Rg 2.39.2, jampatīva, rodasīva). Same disputed vartika as maṇīvoṣṭrasya. The quote covers jampatīva and rodasīva (the Kasika print of dampatīva carries accent marks, so I quote the clean neighbours); I give dampatī iva as the representative input."
+ },
+ {
+  "id": "prakrtibhava-018",
+  "family": "prakrtibhava",
+  "input": [
+   "rodasī",
+   "iva"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "dvivacana"
+   ]
+  },
+  "veda": true,
+  "outputs": [
+   "rodasīva"
+  ],
+  "sutras": [
+   "6.1.101"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.11",
+   "locator": "Kāśikā on 1.1.11",
+   "quote": "जम्पतीव। रोदसीव"
+  },
+  "confidence": "uncertain",
+  "notes": "See dampatīva. Disputed 'maṇīvādīnām pratiṣedha': the dual ī of rodasī would be pragrhya (rodasī iva) but the Kasika's vartika says it merges: rodasīva."
+ },
+ {
+  "id": "prakrtibhava-019",
+  "family": "prakrtibhava",
+  "input": [
+   "amī",
+   "īśāḥ"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "adas"
+   ]
+  },
+  "outputs": [
+   "amī īśāḥ"
+  ],
+  "sutras": [
+   "1.1.12",
+   "6.1.125"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": null,
+   "locator": "Laghu GRETIL text line 153, vlk_52",
+   "quote": "amī īśāḥ"
+  },
+  "confidence": "certain",
+  "notes": "Laghu vlk_52 / Kaumudi. amī is the nominative plural of adas (adas + jas -> ade -> amī by 8.2.80 and 8.2.81). It is not a dual, so 1.1.11 cannot make it pragrhya; 1.1.12 does (ī after the m of adas). Balamanorama: 'ata īkārasya dvivacanatvābhāvāt pūrvasūtreṇa pragṛhyasaṃjñā na prāptetyanena sā vidhīyate'. The tripadi rules 8.2.80-81 that produce m and ī are asiddha for other rules but not for this one ('ārambhasāmarthyāt'), see ordering_notes of 1.1.12."
+ },
+ {
+  "id": "prakrtibhava-020",
+  "family": "prakrtibhava",
+  "input": [
+   "amī",
+   "atra"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "adas"
+   ]
+  },
+  "outputs": [
+   "amī atra"
+  ],
+  "sutras": [
+   "1.1.12",
+   "6.1.125"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.12",
+   "locator": "Kāśikā on 1.1.12",
+   "quote": "अमी अत्र"
+  },
+  "confidence": "certain",
+  "notes": "Kasika example."
+ },
+ {
+  "id": "prakrtibhava-021",
+  "family": "prakrtibhava",
+  "input": [
+   "amī",
+   "āsate"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "adas"
+   ]
+  },
+  "outputs": [
+   "amī āsate"
+  ],
+  "sutras": [
+   "1.1.12",
+   "6.1.125"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.12",
+   "locator": "Kāśikā on 1.1.12",
+   "quote": "अमी आसते"
+  },
+  "confidence": "certain",
+  "notes": "Kasika example."
+ },
+ {
+  "id": "prakrtibhava-022",
+  "family": "prakrtibhava",
+  "input": [
+   "amū",
+   "atra"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "adas",
+    "dvivacana"
+   ]
+  },
+  "outputs": [
+   "amū atra"
+  ],
+  "sutras": [
+   "1.1.12",
+   "6.1.125"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.12",
+   "locator": "Kāśikā on 1.1.12",
+   "quote": "अमू अत्र"
+  },
+  "confidence": "certain",
+  "notes": "Kasika example. amū is the masculine dual of adas (adau -> amū); 1.1.11 cannot see it as ū because the ū is produced by the asiddha rule 8.2.80; hence 1.1.12. (Feminine/neuter dual amū would be pragrhya already by 1.1.11 because it derives from a real e-ending dual; Balamanorama says therefore the example must be masculine: 'rāmakṛṣṇāvamū'.)"
+ },
+ {
+  "id": "prakrtibhava-023",
+  "family": "prakrtibhava",
+  "input": [
+   "amū",
+   "āsāte"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "adas",
+    "dvivacana"
+   ]
+  },
+  "outputs": [
+   "amū āsāte"
+  ],
+  "sutras": [
+   "1.1.12",
+   "6.1.125"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.12",
+   "locator": "Kāśikā on 1.1.12",
+   "quote": "अमू आसाते"
+  },
+  "confidence": "certain",
+  "notes": "Kasika example."
+ },
+ {
+  "id": "prakrtibhava-024",
+  "family": "prakrtibhava",
+  "input": [
+   "rāmakṛṣṇau",
+   "amū",
+   "āsāte"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "1": [
+    "adas",
+    "dvivacana"
+   ]
+  },
+  "outputs": [
+   "rāmakṛṣṇāvamū āsāte",
+   "rāmakṛṣṇā amū āsāte"
+  ],
+  "sutras": [
+   "6.1.78",
+   "8.3.19",
+   "1.1.12",
+   "6.1.125"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": null,
+   "locator": "Laghu GRETIL text line 153, vlk_52",
+   "quote": "rāmakṛṣṇāvamū āsāte"
+  },
+  "confidence": "probable",
+  "notes": "Laghu vlk_52 / Kaumudi / Balamanorama: masculine dual amū (Balamanorama: 'puṃsi pūrveṇa na sidhyati, aukārāntatvāt'). Two junctions: rāmakṛṣṇau + amū -> rāmakṛṣṇāvamū (au + a -> āv a, 6.1.78), then amū + āsāte stays apart (1.1.12). I split the joined phrase into three words myself. The second output is the optional 8.3.19 deletion of the v (my addition, not printed by the source)."
+ },
+ {
+  "id": "prakrtibhava-025",
+  "family": "prakrtibhava",
+  "input": [
+   "śamī",
+   "atra"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "śamyatra"
+  ],
+  "sutras": [
+   "6.1.77"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.12",
+   "locator": "Kāśikā on 1.1.12",
+   "quote": "शम्यत्र"
+  },
+  "confidence": "probable",
+  "notes": "'adasa iti kim? śamyatra': śamī (a tree) is not adas, so the singular ī is not pragrhya and yaṇ applies. Input split by me."
+ },
+ {
+  "id": "prakrtibhava-026",
+  "family": "prakrtibhava",
+  "input": [
+   "dāḍimī",
+   "atra"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "dāḍimyatra"
+  ],
+  "sutras": [
+   "6.1.77"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.12",
+   "locator": "Kāśikā on 1.1.12",
+   "quote": "दाडिम्यत्र"
+  },
+  "confidence": "probable",
+  "notes": "Second counter-example of 'adasa iti kim?'. Input split by me."
+ },
+ {
+  "id": "prakrtibhava-027",
+  "family": "prakrtibhava",
+  "input": [
+   "amuke",
+   "atra"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "adas"
+   ]
+  },
+  "outputs": [
+   "amuke'tra"
+  ],
+  "sutras": [
+   "6.1.109"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": null,
+   "locator": "Laghu GRETIL text line 153, vlk_52",
+   "quote": "amuke 'tra"
+  },
+  "confidence": "certain",
+  "notes": "'mātkim? amuke 'tra'. amuke is from adas + akac (adakaḥ; Balamanorama cites 5.3.71 avyayasarvanāmnāmakac prāk ṭeḥ): its e is not after the m of adas in the sutra's sense (it is after the ka), so 1.1.12 does not apply and 6.1.109 (eṅaḥ padāntādati, pūrvarūpa) yields amuke 'tra. Kaumudi/Bala: without the word 'māt' the anuvṛtti of 'eṭ' would make this e pragrhya. Laghu writes the avagraha with a space in front of it (amuke 'tra); the project spells it without the space."
+ },
+ {
+  "id": "prakrtibhava-028",
+  "family": "prakrtibhava",
+  "input": [
+   "asme",
+   "indrābṛhaspatī"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "stem:asmad",
+    "arsa"
+   ]
+  },
+  "veda": true,
+  "outputs": [
+   "asme indrābṛhaspatī"
+  ],
+  "sutras": [
+   "1.1.13",
+   "6.1.125"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "1.1.13",
+   "locator": "Siddhāntakaumudī on 1.1.13",
+   "quote": "अस्मे इन्द्राबृहस्पती"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi/Kasika (Rg 4.49.4). asme = asmabhyam with the chandas substitute śe (7.1.39 supāṃ sulukpūrvasavarṇā...) for bhyas. The flag vocabulary has no marker for 'e that is the śe-ādeśa', so I use the closest: the stem and 'arsa'. The engine needs this information from the derivation of the word, not from the letters. Without the sutra e + i would become asmay i (6.1.78)."
+ },
+ {
+  "id": "prakrtibhava-029",
+  "family": "prakrtibhava",
+  "input": [
+   "yuṣme",
+   "iti"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "stem:yuṣmad",
+    "arsa"
+   ]
+  },
+  "veda": true,
+  "outputs": [
+   "yuṣme iti"
+  ],
+  "sutras": [
+   "1.1.13",
+   "6.1.125"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.13",
+   "locator": "Kāśikā on 1.1.13",
+   "quote": "युष्मे इति"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: padapatha 'yuṣme iti' (Rg 8.68.19). Kasika adds that only 'asme indrābṛhaspatī' is a true Vedic example; the others (yuṣme iti, asme iti, tve iti, me iti) are lauka anukaraṇa (quotations in the pada text)."
+ },
+ {
+  "id": "prakrtibhava-030",
+  "family": "prakrtibhava",
+  "input": [
+   "tve",
+   "iti"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "stem:tvad",
+    "arsa"
+   ]
+  },
+  "veda": true,
+  "outputs": [
+   "tve iti"
+  ],
+  "sutras": [
+   "1.1.13",
+   "6.1.125"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.13",
+   "locator": "Kāśikā on 1.1.13",
+   "quote": "त्वे इति"
+  },
+  "confidence": "probable",
+  "notes": "Kasika: 'tve rāyaḥ' (Taittiriya Samhita) / padapatha 'tve iti'. Same as yuṣme iti. Praudhamanorama: the sutra may also serve 'anukaraṇa' in lauka usage (tve, me)."
+ },
+ {
+  "id": "prakrtibhava-031",
+  "family": "prakrtibhava",
+  "input": [
+   "i",
+   "indraḥ"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "nipata"
+   ]
+  },
+  "outputs": [
+   "i indraḥ"
+  ],
+  "sutras": [
+   "1.4.57",
+   "1.1.14",
+   "6.1.125"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": null,
+   "locator": "Laghu GRETIL text line 159, vlk_55",
+   "quote": "i indraḥ"
+  },
+  "confidence": "certain",
+  "notes": "Laghu vlk_55 / Kaumudi ('i vismaye'). i is a nipata consisting of a single vowel (in the cadi list, 1.4.57), so pragrhya by 1.1.14 and unchanged (6.1.125); otherwise i + i -> ī (6.1.101)."
+ },
+ {
+  "id": "prakrtibhava-032",
+  "family": "prakrtibhava",
+  "input": [
+   "u",
+   "umeśaḥ"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "nipata"
+   ]
+  },
+  "outputs": [
+   "u umeśaḥ"
+  ],
+  "sutras": [
+   "1.4.57",
+   "1.1.14",
+   "6.1.125"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": null,
+   "locator": "Laghu GRETIL text line 159, vlk_55",
+   "quote": "u umeśaḥ"
+  },
+  "confidence": "certain",
+  "notes": "Laghu vlk_55 / Kaumudi ('u vitarke'). Plain nipata u (not the uñ of 1.1.17): nitya pragrhya, otherwise u+u -> ū. Bhashya on 1.1.17 distinguishes the anubandha-less u (this one, nitya pragrhya) from uñ (optional, 1.1.17)."
+ },
+ {
+  "id": "prakrtibhava-033",
+  "family": "prakrtibhava",
+  "input": [
+   "a",
+   "apehi"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "nipata"
+   ]
+  },
+  "outputs": [
+   "a apehi"
+  ],
+  "sutras": [
+   "1.4.57",
+   "1.1.14",
+   "6.1.125"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.14",
+   "locator": "Kāśikā on 1.1.14",
+   "quote": "अ अपेहि"
+  },
+  "confidence": "certain",
+  "notes": "Kasika. a as a nipata (cadi list contains 'a'); otherwise a + a -> ā."
+ },
+ {
+  "id": "prakrtibhava-034",
+  "family": "prakrtibhava",
+  "input": [
+   "u",
+   "uttiṣṭha"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "nipata"
+   ]
+  },
+  "outputs": [
+   "u uttiṣṭha"
+  ],
+  "sutras": [
+   "1.4.57",
+   "1.1.14",
+   "6.1.125"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.14",
+   "locator": "Kāśikā on 1.1.14",
+   "quote": "उ उत्तिष्ठ"
+  },
+  "confidence": "certain",
+  "notes": "Kasika."
+ },
+ {
+  "id": "prakrtibhava-035",
+  "family": "prakrtibhava",
+  "input": [
+   "i",
+   "indram",
+   "paśya"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "nipata"
+   ]
+  },
+  "outputs": [
+   "i indraṃ paśya"
+  ],
+  "sutras": [
+   "1.4.57",
+   "1.1.14",
+   "6.1.125"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.14",
+   "locator": "Kāśikā on 1.1.14",
+   "quote": "इ इन्द्रं पश्य"
+  },
+  "confidence": "probable",
+  "notes": "Kasika. The input word indram is written with final m; the anusvara before p is a separate rule (8.3.23 mo'nusvāraḥ + 8.4.59) not named by the source."
+ },
+ {
+  "id": "prakrtibhava-036",
+  "family": "prakrtibhava",
+  "input": [
+   "ā",
+   "evam",
+   "nu",
+   "manyase"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "nipata"
+   ]
+  },
+  "outputs": [
+   "ā evaṃ nu manyase"
+  ],
+  "sutras": [
+   "1.1.14",
+   "6.1.125"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": null,
+   "locator": "Laghu GRETIL text line 159, vlk_55",
+   "quote": "ā evaṃ nu manyase"
+  },
+  "confidence": "certain",
+  "notes": "Laghu vlk_55 / Kasika / Mahabhasya: ā in the sense of 'remembering/changing one's mind' is an aṅit ā (no ṅ marker): 'vākyasmaraṇayoraṅit'. It is a single-vowel nipata and NOT excluded by 'anāṅ' (the sutra excludes only ṅit āṅ), so it is pragrhya. 'evam' is written evaṃ in the source (m -> anusvara before n, not named by the source)."
+ },
+ {
+  "id": "prakrtibhava-037",
+  "family": "prakrtibhava",
+  "input": [
+   "ā",
+   "evam",
+   "kila",
+   "tat"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "nipata"
+   ]
+  },
+  "outputs": [
+   "ā evaṃ kila tat"
+  ],
+  "sutras": [
+   "1.1.14",
+   "6.1.125"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": null,
+   "locator": "Laghu GRETIL text line 159, vlk_55",
+   "quote": "ā evaṃ kila tat"
+  },
+  "confidence": "certain",
+  "notes": "Laghu vlk_55: aṅit ā (smaraṇa). Kaumudi: 'anāṅityukteḥ aṅidākāraḥ pragṛhya eva'."
+ },
+ {
+  "id": "prakrtibhava-038",
+  "family": "prakrtibhava",
+  "input": [
+   "ā",
+   "uṣṇam"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "nipata",
+    "ang"
+   ]
+  },
+  "outputs": [
+   "oṣṇam"
+  ],
+  "sutras": [
+   "6.1.87"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": null,
+   "locator": "Laghu GRETIL text line 159, vlk_55",
+   "quote": "ā īṣaduṣṇam oṣṇam"
+  },
+  "confidence": "certain",
+  "notes": "'anyatra ṅit': the ā that means 'slightly' (īṣadarthe), 'up to' (maryādā) or 'inclusively' (abhividhi), i.e. the preverb āṅ, is ṅit and is NOT pragrhya, so ā + u -> o (ādguṇaḥ 6.1.87): oṣṇam = īṣaduṣṇam. The Mahabhasya kārikā (quoted by Kasika/Kaumudi): 'īṣadarthe kriyāyoge maryādābhividhau ca yaḥ | etamātaṃ ṅitaṃ vidyādvākyasmaraṇayoraṅit'. The Laghu text writes 'ā īṣaduṣṇam oṣṇam' (ā = 'slightly')."
+ },
+ {
+  "id": "prakrtibhava-039",
+  "family": "prakrtibhava",
+  "input": [
+   "ā",
+   "udakāntāt"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "nipata",
+    "ang"
+   ]
+  },
+  "outputs": [
+   "odakāntāt"
+  ],
+  "sutras": [
+   "6.1.87"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.14",
+   "locator": "Kāśikā on 1.1.14",
+   "quote": "आ उदकान्तात् ओदकान्तात्"
+  },
+  "confidence": "certain",
+  "notes": "'anāṅiti kim?': ā in the sense of maryādā ('up to the water's edge') is āṅ, not pragrhya -> guṇa."
+ },
+ {
+  "id": "prakrtibhava-040",
+  "family": "prakrtibhava",
+  "input": [
+   "cakāra",
+   "atra"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "cakārātra"
+  ],
+  "sutras": [
+   "6.1.101"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.14",
+   "locator": "Kāśikā on 1.1.14",
+   "quote": "चकारात्र"
+  },
+  "confidence": "probable",
+  "notes": "'nipāta iti kim? cakārātra': cakāra (the letter ca / verb form) is not a nipata, so ā + a -> ā by savarṇadīrgha. Input split by me (cakāra + atra)."
+ },
+ {
+  "id": "prakrtibhava-041",
+  "family": "prakrtibhava",
+  "input": [
+   "jahāra",
+   "atra"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "jahārātra"
+  ],
+  "sutras": [
+   "6.1.101"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.14",
+   "locator": "Kāśikā on 1.1.14",
+   "quote": "जहारात्र"
+  },
+  "confidence": "probable",
+  "notes": "Second counter-example of 'nipāta iti kim?'. Input split by me."
+ },
+ {
+  "id": "prakrtibhava-042",
+  "family": "prakrtibhava",
+  "input": [
+   "pra",
+   "agnaye"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "nipata",
+    "upasarga"
+   ]
+  },
+  "veda": true,
+  "outputs": [
+   "prāgnaye"
+  ],
+  "sutras": [
+   "6.1.101"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.14",
+   "locator": "Kāśikā on 1.1.14",
+   "quote": "प्राग्नये"
+  },
+  "confidence": "certain",
+  "notes": "'ekāciti kim? prāgnaye vācamīraya' (Rg 10.187.1): pra is a nipata but not a single vowel (p-r-a), so not pragrhya. NB the Mahabhasya explains that 'ekāc' is a karmadhāraya (eka + ac = 'the single ac itself') and not a bahuvrīhi: with bahuvrīhi 'pra' would qualify."
+ },
+ {
+  "id": "prakrtibhava-043",
+  "family": "prakrtibhava",
+  "input": [
+   "pra",
+   "idam",
+   "brahma"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "nipata",
+    "upasarga"
+   ]
+  },
+  "outputs": [
+   "predaṃ brahma"
+  ],
+  "sutras": [
+   "6.1.87"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "bhashya",
+   "sutra": "1.1.14",
+   "locator": "Mahābhāṣya on 1.1.14",
+   "quote": "प्रेदं ब्रह्म"
+  },
+  "confidence": "probable",
+  "notes": "Mahabhasya's own 'ekāciti kim?' example: pra + idam -> predam (a+i -> e); pra is not ekāc. Output written with anusvara as in the source (idam + brahma)."
+ },
+ {
+  "id": "prakrtibhava-044",
+  "family": "prakrtibhava",
+  "input": [
+   "aho",
+   "īśāḥ"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "nipata"
+   ]
+  },
+  "outputs": [
+   "aho īśāḥ"
+  ],
+  "sutras": [
+   "1.4.57",
+   "1.1.15",
+   "6.1.125"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": null,
+   "locator": "Laghu GRETIL text line 161, vlk_56",
+   "quote": "aho īśāḥ"
+  },
+  "confidence": "certain",
+  "notes": "Laghu vlk_56 / Kaumudi. aho (in the cadi list) ends in o: nipata + ot -> pragrhya; otherwise o + ī -> av ī (6.1.78, aho īśāḥ -> ahav īśāḥ / aha īśāḥ)."
+ },
+ {
+  "id": "prakrtibhava-045",
+  "family": "prakrtibhava",
+  "input": [
+   "āho",
+   "iti"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "nipata"
+   ]
+  },
+  "outputs": [
+   "āho iti"
+  ],
+  "sutras": [
+   "1.4.57",
+   "1.1.15",
+   "6.1.125"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.15",
+   "locator": "Kāśikā on 1.1.15",
+   "quote": "आहो इति"
+  },
+  "confidence": "certain",
+  "notes": "Kasika. The Mahabhasya on 1.1.15 objects that these examples do not justify the sutra ('naitadasti prayojanam. nipātasamāhāro 'yam. āha u āho ... tatra nipāta ekājanāṅ ityeva siddham'): āho = āha + u would be pragrhya already by 1.1.14."
+ },
+ {
+  "id": "prakrtibhava-046",
+  "family": "prakrtibhava",
+  "input": [
+   "utāho",
+   "iti"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "nipata"
+   ]
+  },
+  "outputs": [
+   "utāho iti"
+  ],
+  "sutras": [
+   "1.4.57",
+   "1.1.15",
+   "6.1.125"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.15",
+   "locator": "Kāśikā on 1.1.15",
+   "quote": "उताहो इति"
+  },
+  "confidence": "certain",
+  "notes": "Kasika."
+ },
+ {
+  "id": "prakrtibhava-047",
+  "family": "prakrtibhava",
+  "input": [
+   "ado",
+   "abhavat"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "ado'bhavat"
+  ],
+  "sutras": [
+   "6.1.109"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "bhashya",
+   "sutra": "1.1.15",
+   "locator": "Mahābhāṣya on 1.1.15",
+   "quote": "अदः अभवत् अदोऽभवत्"
+  },
+  "confidence": "probable",
+  "notes": "Mahabhasya on 1.1.15, vartika 'otaś cvi pratiṣedhaḥ': the o-final form produced by the cvi affix (anadaḥ adaḥ abhavat 'it became adas') is not a nipata and is not pragrhya: ado 'bhavat (6.1.109). The Mahabhasya then argues that the restriction is unnecessary ('lakṣaṇapratipadoktayoḥ pratipadoktasyaiva grahaṇam'), so the result stands either way. Input split by me."
+ },
+ {
+  "id": "prakrtibhava-048",
+  "family": "prakrtibhava",
+  "input": [
+   "viṣṇo",
+   "iti"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "sambuddhi"
+   ]
+  },
+  "outputs": [
+   "viṣṇo iti",
+   "viṣṇa iti",
+   "viṣṇaviti"
+  ],
+  "sutras": [
+   "1.1.16",
+   "6.1.125",
+   "6.1.78",
+   "8.3.19"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": null,
+   "locator": "Laghu GRETIL text line 163, vlk_57",
+   "quote": "viṣṇo iti, viṣṇa iti, viṣṇaviti"
+  },
+  "confidence": "certain",
+  "notes": "Laghu vlk_57 gives all three forms. viṣṇo iti = pragrhya (1.1.16 optional, Śākalya) kept by 6.1.125; the other two are the non-pragrhya path: o + iti -> av + iti (6.1.78), then optionally the v is dropped (8.3.19 lopaḥ śākalyasya) -> viṣṇa iti, or kept -> viṣṇaviti. Balamanorama: 'viṣṇaviti pragṛhyatvābhāve rūpam'. The vocative o comes from guṇa of the final u (6.4.? hrasvasya guṇaḥ, 7.3.108) - the input already shows the vocative form; the flag 'sambuddhi' is what 1.1.16 needs."
+ },
+ {
+  "id": "prakrtibhava-049",
+  "family": "prakrtibhava",
+  "input": [
+   "vāyo",
+   "iti"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "sambuddhi"
+   ]
+  },
+  "veda": true,
+  "outputs": [
+   "vāyo iti",
+   "vāya iti",
+   "vāyaviti"
+  ],
+  "sutras": [
+   "1.1.16",
+   "6.1.125",
+   "6.1.78",
+   "8.3.19"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.16",
+   "locator": "Kāśikā on 1.1.16",
+   "quote": "वायो इति, वायविति"
+  },
+  "confidence": "probable",
+  "notes": "Kasika prints 'vāyo iti, vāyaviti' (Rg 4.46.1 padapatha 'vāyav iti'); it prints only two forms. By the same route as viṣṇo iti the third form 'vāya iti' (8.3.19) is also grammatical, so I list it; hence confidence 'probable'."
+ },
+ {
+  "id": "prakrtibhava-050",
+  "family": "prakrtibhava",
+  "input": [
+   "bhāno",
+   "iti"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "sambuddhi"
+   ]
+  },
+  "outputs": [
+   "bhāno iti",
+   "bhāna iti",
+   "bhānaviti"
+  ],
+  "sutras": [
+   "1.1.16",
+   "6.1.125",
+   "6.1.78",
+   "8.3.19"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.16",
+   "locator": "Kāśikā on 1.1.16",
+   "quote": "भानो इति, भानविति"
+  },
+  "confidence": "probable",
+  "notes": "Kasika prints 'bhāno iti, bhānaviti'. Third form as for vāyo iti."
+ },
+ {
+  "id": "prakrtibhava-051",
+  "family": "prakrtibhava",
+  "input": [
+   "go",
+   "iti"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "gaviti",
+   "ga iti"
+  ],
+  "sutras": [
+   "6.1.78",
+   "8.3.19"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.16",
+   "locator": "Kāśikā on 1.1.16",
+   "quote": "गवित्ययमाह"
+  },
+  "confidence": "probable",
+  "notes": "'sambuddhau iti kim? gavityayamāha': here go is a quoted word (anukaraṇa), not a vocative, so 1.1.16 does not apply (the Kasika remarks that anukārya/anukaraṇa difference is not intended, so no case-ending). Ordinary o + iti -> gav iti (6.1.78); 8.3.19 may also drop the v (ga iti); the Kasika prints only 'gavityayamāha'. Input reduced to go + iti."
+ },
+ {
+  "id": "prakrtibhava-052",
+  "family": "prakrtibhava",
+  "input": [
+   "vāyo",
+   "atra"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "sambuddhi"
+   ]
+  },
+  "outputs": [
+   "vāyo'tra"
+  ],
+  "sutras": [
+   "6.1.109"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.16",
+   "locator": "Kāśikā on 1.1.16",
+   "quote": "वायोऽत्र"
+  },
+  "confidence": "certain",
+  "notes": "'itāviti kim? vāyo 'tra': the optional pragrhya-ness holds only before iti; before atra the vocative o + a -> o 'tra (6.1.109)."
+ },
+ {
+  "id": "prakrtibhava-053",
+  "family": "prakrtibhava",
+  "input": [
+   "brahmabandho",
+   "iti",
+   "abravīt"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "1": [
+    "arsa"
+   ]
+  },
+  "veda": true,
+  "outputs": [
+   "brahmabandha ityabravīt",
+   "brahmabandhavityabravīt"
+  ],
+  "sutras": [
+   "6.1.78",
+   "8.3.19",
+   "6.1.77"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.16",
+   "locator": "Kāśikā on 1.1.16",
+   "quote": "ब्रह्मबन्ध इत्यब्रवीत्"
+  },
+  "confidence": "probable",
+  "notes": "'anārṣa iti kim? etā gā brahmabandha ityabravīt' (Kathaka Samhita 10.6): the iti that belongs to the Vedic text itself is 'ārṣa'; before it the vocative o is not pragrhya. Kasika prints brahmabandha ity abravīt (v dropped, 8.3.19); Kaumudi prints brahmabandhavityabravīt (v kept). Input reconstructed by me."
+ },
+ {
+  "id": "prakrtibhava-054",
+  "family": "prakrtibhava",
+  "input": [
+   "u",
+   "iti"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "nipata",
+    "stem:uñ"
+   ]
+  },
+  "outputs": [
+   "u iti",
+   "viti",
+   "ūm̐ iti"
+  ],
+  "sutras": [
+   "1.1.17",
+   "1.1.18",
+   "6.1.125",
+   "6.1.77"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.18",
+   "locator": "Kāśikā on 1.1.18",
+   "quote": "उ इति। विति। ऊँ इति"
+  },
+  "confidence": "certain",
+  "notes": "Kasika on 1.1.18 (and on 1.1.17 'u iti, viti'): the particle uñ before iti gives THREE forms by Śākalya's optional rules: (1) u iti = pragrhya by 1.1.17; (2) viti = not pragrhya, yaṇ (6.1.77); (3) ūm̐ iti = 1.1.18 replaces uñ by the long nasal ūm̐, which is itself pragrhya. Balamanorama: 'tadevamuñ ūm̐ ityekameva sūtraṃ vibhajya vyākhyātam'. The plain nipata u (1.1.14) is nitya pragrhya and gives only 'u iti'; the flag 'stem:uñ' marks the ñ-marked particle (Mahabhasya 1.1.17: 'dvāvukārāvimau. eko 'nanubandhakaḥ, aparaḥ sānubandhakaḥ'). 'iti' must be the non-Vedic (anārṣa) iti. The output uses the sutra's own spelling ūm̐ (ū + m + U+0310)."
+ },
+ {
+  "id": "prakrtibhava-055",
+  "family": "prakrtibhava",
+  "input": [
+   "gaurī",
+   "adhi"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "saptamyartha"
+   ]
+  },
+  "veda": true,
+  "outputs": [
+   "gaurī adhi"
+  ],
+  "sutras": [
+   "1.1.19",
+   "6.1.125"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "1.1.19",
+   "locator": "Siddhāntakaumudī on 1.1.19",
+   "quote": "सोमो गौरी अधिश्रितः"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi/Kasika (Rg 9.12.3 'somo gaurī adhi śritaḥ'): gaurī stands for the locative gauryām (sup-luk, 7.1.39); an ī/ū that has the sense of the 7th case is pragrhya. Kaumudi: 'supāṃ sulug ityādinā saptamyā luk'. The quote has adhi written together with śritaḥ in the Kaumudi (adhiśritaḥ); I split at the word boundary."
+ },
+ {
+  "id": "prakrtibhava-056",
+  "family": "prakrtibhava",
+  "input": [
+   "māmakī",
+   "iti"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "saptamyartha"
+   ]
+  },
+  "veda": true,
+  "outputs": [
+   "māmakī iti"
+  ],
+  "sutras": [
+   "1.1.19",
+   "6.1.125"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.19",
+   "locator": "Kāśikā on 1.1.19",
+   "quote": "मामकी इति"
+  },
+  "confidence": "certain",
+  "notes": "Kasika (Paippalada Samhita 1.6.8 'adhyasyāṃ māmakī tanū'): māmakī = māmakyām. Balamanorama: 'pragṛhyebhyaḥ paraḥ itiśabdaprayogasya padakāraiḥ niyamitatvāt padapāṭhe māmakī iti tanū iti ityatra pragṛhyatvaphalaṃ bodhyam'."
+ },
+ {
+  "id": "prakrtibhava-057",
+  "family": "prakrtibhava",
+  "input": [
+   "tanū",
+   "iti"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "saptamyartha"
+   ]
+  },
+  "veda": true,
+  "outputs": [
+   "tanū iti"
+  ],
+  "sutras": [
+   "1.1.19",
+   "6.1.125"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.19",
+   "locator": "Kāśikā on 1.1.19",
+   "quote": "तनू इति"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: tanū = tanvām (loc. sg.)."
+ },
+ {
+  "id": "prakrtibhava-058",
+  "family": "prakrtibhava",
+  "input": [
+   "vāpī",
+   "aśvaḥ"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "vāpyaśvaḥ"
+  ],
+  "sutras": [
+   "6.1.77"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.19",
+   "locator": "Kāśikā on 1.1.19",
+   "quote": "वाप्यश्वः"
+  },
+  "confidence": "certain",
+  "notes": "'arthagrahaṇaṃ kim? vāpyaśvaḥ' (vāpyām aśvaḥ, a compound): in the compound the ī has passed to the meaning of the whole ('arthāntaropasaṅkrānte'), no longer stands only for the locative, so it is not pragrhya and yaṇ applies. Balamanorama: 'samāsavṛttau luptasaptamīke īdūdantapūrvapade saptamyarthamatilaṅghya uttarapadārthe pravṛtte sati pragṛhyasaṃjñā na bhavati'."
+ },
+ {
+  "id": "prakrtibhava-059",
+  "family": "prakrtibhava",
+  "input": [
+   "nadī",
+   "ātiḥ"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "nadyātiḥ"
+  ],
+  "sutras": [
+   "6.1.77"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.19",
+   "locator": "Kāśikā on 1.1.19",
+   "quote": "नद्यातिः"
+  },
+  "confidence": "probable",
+  "notes": "Second counter-example of 'arthagrahaṇaṃ kim?' (nadyām ātiḥ, a bird). Input split by me."
+ },
+ {
+  "id": "prakrtibhava-060",
+  "family": "prakrtibhava",
+  "input": [
+   "pra",
+   "nayati"
+  ],
+  "boundary": "upasarga",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "dhatu:nī"
+   ]
+  },
+  "outputs": [
+   "praṇayati"
+  ],
+  "sutras": [
+   "1.4.59",
+   "8.4.14"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.4.59",
+   "locator": "Kāśikā on 1.4.59",
+   "quote": "प्रणयति। परिणयति"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: pra, pari are upasargas when joined to the action (kriyāyoga). The sutra itself does no sandhi; the consequence shown is ṇatva by 8.4.14 (upasargādasamāse 'pi ṇopadeśasya), which the Kasika on 1.4.60 names as depending on this samjna."
+ },
+ {
+  "id": "prakrtibhava-061",
+  "family": "prakrtibhava",
+  "input": [
+   "pari",
+   "nayati"
+  ],
+  "boundary": "upasarga",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "dhatu:nī"
+   ]
+  },
+  "outputs": [
+   "pariṇayati"
+  ],
+  "sutras": [
+   "1.4.59",
+   "8.4.14"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.4.59",
+   "locator": "Kāśikā on 1.4.59",
+   "quote": "प्रणयति। परिणयति"
+  },
+  "confidence": "certain",
+  "notes": "Kasika, second example of upasarga + nī."
+ },
+ {
+  "id": "prakrtibhava-062",
+  "family": "prakrtibhava",
+  "input": [
+   "pra",
+   "nāyakaḥ"
+  ],
+  "boundary": "upasarga",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "dhatu:nī"
+   ]
+  },
+  "outputs": [
+   "praṇāyakaḥ"
+  ],
+  "sutras": [
+   "1.4.59",
+   "8.4.14"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.4.59",
+   "locator": "Kāśikā on 1.4.59",
+   "quote": "प्रणायकः। परिणायकः"
+  },
+  "confidence": "probable",
+  "notes": "Kasika: also with a kṛdanta (nāyaka from nī + ṇvul): kriyāyoga persists. Flag 'dhatu:nī' on nāyakaḥ means the word is built on that root."
+ },
+ {
+  "id": "prakrtibhava-063",
+  "family": "prakrtibhava",
+  "input": [
+   "pra",
+   "nāyakaḥ"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "pranāyakaḥ"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.4.59",
+   "locator": "Kāśikā on 1.4.59",
+   "quote": "प्रगतो नायकोऽस्माद्देशात् प्रनायको देशः"
+  },
+  "confidence": "certain",
+  "notes": "'kriyāyoga iti kim? pragato nāyako 'smāddeśāt pranāyako deśaḥ': the bahuvrīhi 'the country from which the leader has gone away': pra is not connected with an action, so it is not an upasarga and 8.4.14 does not turn the n into ṇ. Same input letters as praṇāyakaḥ above, different outcome: the flag 'upasarga' is the only difference."
+ },
+ {
+  "id": "prakrtibhava-064",
+  "family": "prakrtibhava",
+  "input": [
+   "pra",
+   "nītam"
+  ],
+  "boundary": "upasarga",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "dhatu:nī"
+   ]
+  },
+  "outputs": [
+   "praṇītam"
+  ],
+  "sutras": [
+   "1.4.60",
+   "1.4.59",
+   "8.4.14"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.4.60",
+   "locator": "Kāśikā on 1.4.60",
+   "quote": "प्रणी॑तम्। अ॒भिषि॑क्तम्"
+  },
+  "confidence": "certain",
+  "notes": "Kasika on 1.4.60: 'ca' in gatiśca lets the gati samjna COEXIST with the upasarga samjna: 'praṇītam, abhiṣiktam' get the upasarga effects (ṇatva 8.4.14, ṣatva 8.3.65) together with the gati effects (gatiranantaraḥ 6.2.49 accent). The quote carries the Kasika's accent marks."
+ },
+ {
+  "id": "prakrtibhava-065",
+  "family": "prakrtibhava",
+  "input": [
+   "abhi",
+   "siktam"
+  ],
+  "boundary": "upasarga",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "dhatu:sic"
+   ]
+  },
+  "outputs": [
+   "abhiṣiktam"
+  ],
+  "sutras": [
+   "1.4.60",
+   "1.4.59",
+   "8.3.65"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.4.60",
+   "locator": "Kāśikā on 1.4.60",
+   "quote": "प्रणी॑तम्। अ॒भिषि॑क्तम्"
+  },
+  "confidence": "certain",
+  "notes": "Kasika on 1.4.60 (same sentence as praṇītam): abhi + sikta -> abhiṣikta by 8.3.65 (upasargāt sunoti... sic...), which needs the upasarga samjna."
+ },
+ {
+  "id": "prakrtibhava-066",
+  "family": "prakrtibhava",
+  "input": [
+   "śuddhadhī",
+   "au"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "0": [
+    "stem:śuddhadhī"
+   ]
+  },
+  "outputs": [
+   "śuddhadhiyau"
+  ],
+  "sutras": [
+   "6.4.77"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": null,
+   "locator": "Laghu GRETIL text line 461, vlk_202",
+   "quote": "śuddhadhiyau"
+  },
+  "confidence": "probable",
+  "notes": "Laghu vlk_202 (gatiśca) carries the vartika '(gatikāraketarapūrvapadasya yaṇ neṣyate)' and the example śuddhadhiyau: after a compound whose first member is NOT a gati or kāraka (śuddha + dhī) the yaṇ of 6.4.82 (eranekāco 'saṃyogapūrvasya) is not wanted, so the dual is śuddhadhiyau (iyaṅ, 6.4.77), not *śuddhadhyau. (With a gati or kāraka first member, e.g. pradhī: pradhyau by 6.4.82.) The engine should treat this as an internal (declension) fact; 1.4.60 is only relevant for defining 'gati'. Sutra 6.4.77 is my own attribution (Laghu's preceding item vlk_200, aci śnudhātubhruvāṃ yvor iyaṅuvaṅau)."
+ },
+ {
+  "id": "prakrtibhava-067",
+  "family": "prakrtibhava",
+  "input": [
+   "nir",
+   "ayate"
+  ],
+  "boundary": "upasarga",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "dhatu:ay"
+   ]
+  },
+  "outputs": [
+   "nilayate"
+  ],
+  "sutras": [
+   "8.2.19"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "balamanorama",
+   "sutra": "1.4.60",
+   "locator": "Bālamanoramā on 1.4.60",
+   "quote": "निलयते दुलयते"
+  },
+  "confidence": "probable",
+  "notes": "Balamanorama on 1.4.60 (list of prādi): 'ayadātau upasargasyāyatau iti nirduroḥ lattvam — nilayate dulayate'. This is why the list gives nis/nir and dus/dur separately."
+ },
+ {
+  "id": "prakrtibhava-068",
+  "family": "prakrtibhava",
+  "input": [
+   "nis",
+   "ayate"
+  ],
+  "boundary": "upasarga",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "dhatu:ay"
+   ]
+  },
+  "outputs": [
+   "nirayate"
+  ],
+  "sutras": [
+   "8.2.66"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "balamanorama",
+   "sutra": "1.4.60",
+   "locator": "Bālamanoramā on 1.4.60",
+   "quote": "निरयते दुरयते"
+  },
+  "confidence": "probable",
+  "notes": "Same passage: for nis/dus 'ruttvasyāsiddhatvāl lattvābhāvaḥ' (Tattvabodhini): the s is turned to ru (8.2.66) only in the tripadi, so 8.2.19 (r -> l for the upasarga) cannot see an r; result nirayate. Counter-example to 8.2.19 applying."
+ },
+ {
+  "id": "prakrtibhava-069",
+  "family": "prakrtibhava",
+  "input": [
+   "upaprayanto",
+   "adhvaram"
+  ],
+  "boundary": "pada",
+  "veda": true,
+  "outputs": [
+   "upaprayanto adhvaram"
+  ],
+  "sutras": [
+   "6.1.115"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.115",
+   "locator": "Siddhāntakaumudī on 6.1.115",
+   "quote": "उपप्रयन्तो अध्वरम्"
+  },
+  "confidence": "probable",
+  "notes": "Kaumudi (Rg 1.74.1). o (or e) inside an Rk-pāda, before short a not followed by v/y, stays: no pūrvarūpa (6.1.109 would give upaprayanto 'dhvaram). The final o here comes from ...aḥ (s -> ru -> u, guṇa) by 6.1.113/6.1.87; I give the surface form as the source does. The rule needs the position 'inside a pāda' (antaḥpādam), which the letters cannot show; an engine has to be told (accent marks and pāda boundaries are Vedic-text data)."
+ },
+ {
+  "id": "prakrtibhava-070",
+  "family": "prakrtibhava",
+  "input": [
+   "sujāte",
+   "aśvasūnṛte"
+  ],
+  "boundary": "pada",
+  "veda": true,
+  "outputs": [
+   "sujāte aśvasūnṛte"
+  ],
+  "sutras": [
+   "6.1.115"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.115",
+   "locator": "Siddhāntakaumudī on 6.1.115",
+   "quote": "सुजाते अश्वसूनृते"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi (Rg 5.79.1). Vocative dual/feminine sujāte before aśva-: a is followed by ś, not by v/y, so 6.1.115 applies."
+ },
+ {
+  "id": "prakrtibhava-071",
+  "family": "prakrtibhava",
+  "input": [
+   "ete",
+   "arcanti"
+  ],
+  "boundary": "pada",
+  "veda": true,
+  "outputs": [
+   "ete'rcanti"
+  ],
+  "sutras": [
+   "6.1.109"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.115",
+   "locator": "Siddhāntakaumudī on 6.1.115",
+   "quote": "एतास एतेऽर्चन्ति"
+  },
+  "confidence": "certain",
+  "notes": "'antaḥpādaṃ kim? etāsa ete 'rcanti' (Rg 1.165.1): here the e is at the end of a pāda and the a begins the next pāda, so no prakṛtibhāva, the ordinary pūrvarūpa (6.1.109) applies. The pāda boundary is not visible in the letters. Input reduced to ete + arcanti."
+ },
+ {
+  "id": "prakrtibhava-072",
+  "family": "prakrtibhava",
+  "input": [
+   "te",
+   "avadan"
+  ],
+  "boundary": "pada",
+  "veda": true,
+  "outputs": [
+   "te'vadan"
+  ],
+  "sutras": [
+   "6.1.109"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.115",
+   "locator": "Siddhāntakaumudī on 6.1.115",
+   "quote": "तेऽवदन्"
+  },
+  "confidence": "certain",
+  "notes": "'avyapare kim? te 'vadan': the a is followed by v (avadan), so 6.1.115 is blocked and pūrvarūpa applies. (6.1.116 re-admits specific words with v/y.)"
+ },
+ {
+  "id": "prakrtibhava-073",
+  "family": "prakrtibhava",
+  "input": [
+   "anu",
+   "agniḥ"
+  ],
+  "boundary": "pada",
+  "veda": true,
+  "outputs": [
+   "anvagniḥ"
+  ],
+  "sutras": [
+   "6.1.77"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.115",
+   "locator": "Kāśikā on 6.1.115",
+   "quote": "अन्व॒ग्निरु॒षसा॒मग्॑॑रमख्य"
+  },
+  "confidence": "probable",
+  "notes": "'eṅiti kim? anvagnir uṣasām agram akhyat' (Atharvaveda 7.82.4): the u of anu is not eṅ (e/o), so the rule does not apply and ordinary yaṇ gives anvagniḥ. The quote is cut from the Kasika with its accent marks. Input reconstructed by me (anu + agniḥ; visarga = r in the text)."
+ },
+ {
+  "id": "prakrtibhava-074",
+  "family": "prakrtibhava",
+  "input": [
+   "no",
+   "avyāt"
+  ],
+  "boundary": "pada",
+  "veda": true,
+  "outputs": [
+   "no avyāt"
+  ],
+  "sutras": [
+   "6.1.116"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.116",
+   "locator": "Siddhāntakaumudī on 6.1.116",
+   "quote": "वसुभिर्नो अव्यात्"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi (Taittiriya Samhita 2.1.11.2 'vasubhir no avyāt'): before avyāt the o stays although a is followed by v/y (6.1.116 lifts the 'avyapare' exclusion of 6.1.115 for these words)."
+ },
+ {
+  "id": "prakrtibhava-075",
+  "family": "prakrtibhava",
+  "input": [
+   "śivāso",
+   "avakramuḥ"
+  ],
+  "boundary": "pada",
+  "veda": true,
+  "outputs": [
+   "śivāso avakramuḥ"
+  ],
+  "sutras": [
+   "6.1.116"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.116",
+   "locator": "Siddhāntakaumudī on 6.1.116",
+   "quote": "मा शिवासो अवक्रमुः"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi (Rg 7.32.27)."
+ },
+ {
+  "id": "prakrtibhava-076",
+  "family": "prakrtibhava",
+  "input": [
+   "no",
+   "avrata"
+  ],
+  "boundary": "pada",
+  "veda": true,
+  "outputs": [
+   "no avrata"
+  ],
+  "sutras": [
+   "6.1.116"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.116",
+   "locator": "Siddhāntakaumudī on 6.1.116",
+   "quote": "ते नो अव्रत"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: 'te no avrata'."
+ },
+ {
+  "id": "prakrtibhava-077",
+  "family": "prakrtibhava",
+  "input": [
+   "śatadhāro",
+   "ayam"
+  ],
+  "boundary": "pada",
+  "veda": true,
+  "outputs": [
+   "śatadhāro ayam"
+  ],
+  "sutras": [
+   "6.1.116"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.116",
+   "locator": "Siddhāntakaumudī on 6.1.116",
+   "quote": "शतधारो अयं मणिः"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi (Atharvaveda 19.36.5): ayam begins with a+y."
+ },
+ {
+  "id": "prakrtibhava-078",
+  "family": "prakrtibhava",
+  "input": [
+   "no",
+   "avantu"
+  ],
+  "boundary": "pada",
+  "veda": true,
+  "outputs": [
+   "no avantu"
+  ],
+  "sutras": [
+   "6.1.116"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.116",
+   "locator": "Siddhāntakaumudī on 6.1.116",
+   "quote": "ते नो अवन्तु"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi (Rg 10.15.1). The Kaumudi remarks that the Bahvrcas do not apply prakṛtibhāva in 'te no 'vantu', which it explains by bāhulaka."
+ },
+ {
+  "id": "prakrtibhava-079",
+  "family": "prakrtibhava",
+  "input": [
+   "kuśikāso",
+   "avasyavaḥ"
+  ],
+  "boundary": "pada",
+  "veda": true,
+  "outputs": [
+   "kuśikāso avasyavaḥ"
+  ],
+  "sutras": [
+   "6.1.116"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.116",
+   "locator": "Siddhāntakaumudī on 6.1.116",
+   "quote": "कुशिकासो अवस्यवः"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi (Rg 3.42.9)."
+ },
+ {
+  "id": "prakrtibhava-080",
+  "family": "prakrtibhava",
+  "input": [
+   "uro",
+   "antarikṣam"
+  ],
+  "boundary": "pada",
+  "veda": true,
+  "outputs": [
+   "uro antarikṣam"
+  ],
+  "sutras": [
+   "6.1.117"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.117",
+   "locator": "Siddhāntakaumudī on 6.1.117",
+   "quote": "उरो अन्तरिक्षम्"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi/Kasika: the word uro (uraḥ) before a stays in the Yajus because the Yajus has no pādas, so 'antaḥpāda' of 6.1.115 could not apply ('yajuṣi pādābhāvādanantaḥpādārtham vacanam'). Kasika records a variant sutra 'yajuṣyuro' reading vocative uro of uru."
+ },
+ {
+  "id": "prakrtibhava-081",
+  "family": "prakrtibhava",
+  "input": [
+   "āpo",
+   "asmān"
+  ],
+  "boundary": "pada",
+  "veda": true,
+  "outputs": [
+   "āpo asmān"
+  ],
+  "sutras": [
+   "6.1.118"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.118",
+   "locator": "Siddhāntakaumudī on 6.1.118",
+   "quote": "आपो अस्मान्मातरः"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi/Kasika (Vajasaneyi Samhita 4.2). The Kaumudi phrase continues with mātaraḥ; only the junction āpo + asmān is at issue."
+ },
+ {
+  "id": "prakrtibhava-082",
+  "family": "prakrtibhava",
+  "input": [
+   "vṛṣṇo",
+   "aṃśubhyām"
+  ],
+  "boundary": "pada",
+  "veda": true,
+  "outputs": [
+   "vṛṣṇo aṃśubhyām"
+  ],
+  "sutras": [
+   "6.1.118"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.118",
+   "locator": "Siddhāntakaumudī on 6.1.118",
+   "quote": "वृष्णो अंशुभ्याम्"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi/Kasika (Vajasaneyi Samhita 7.1)."
+ },
+ {
+  "id": "prakrtibhava-083",
+  "family": "prakrtibhava",
+  "input": [
+   "varṣiṣṭhe",
+   "adhi"
+  ],
+  "boundary": "pada",
+  "veda": true,
+  "outputs": [
+   "varṣiṣṭhe adhi"
+  ],
+  "sutras": [
+   "6.1.118"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.118",
+   "locator": "Siddhāntakaumudī on 6.1.118",
+   "quote": "वर्षिष्ठे अधि नाके"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi (Taittiriya Samhita 1.1.8.2)."
+ },
+ {
+  "id": "prakrtibhava-084",
+  "family": "prakrtibhava",
+  "input": [
+   "ambe",
+   "ambāle"
+  ],
+  "boundary": "pada",
+  "veda": true,
+  "outputs": [
+   "ambe ambāle"
+  ],
+  "sutras": [
+   "6.1.118"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.118",
+   "locator": "Siddhāntakaumudī on 6.1.118",
+   "quote": "अम्बे अम्बाले अम्बिके"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: the vocatives ambe, ambāle, ambike of the Yajus (the sutra lists ambe and ambāle occurring before ambikā). Kasika: from this very reading (nipātana) the shortening of 7.3.107 (ambārthanadyor hrasvaḥ) does not apply to ambe."
+ },
+ {
+  "id": "prakrtibhava-085",
+  "family": "prakrtibhava",
+  "input": [
+   "ambāle",
+   "ambike"
+  ],
+  "boundary": "pada",
+  "veda": true,
+  "outputs": [
+   "ambāle ambike"
+  ],
+  "sutras": [
+   "6.1.118"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.118",
+   "locator": "Siddhāntakaumudī on 6.1.118",
+   "quote": "अम्बे अम्बाले अम्बिके"
+  },
+  "confidence": "certain",
+  "notes": "Second junction of the same Yajus phrase."
+ },
+ {
+  "id": "prakrtibhava-086",
+  "family": "prakrtibhava",
+  "input": [
+   "prāṇo",
+   "aṅge"
+  ],
+  "boundary": "pada",
+  "veda": true,
+  "outputs": [
+   "prāṇo aṅge"
+  ],
+  "sutras": [
+   "6.1.119"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.119",
+   "locator": "Siddhāntakaumudī on 6.1.119",
+   "quote": "प्राणो अङ्गे अङ्गे अदीध्यत्"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi/Kasika (Vajasaneyi Samhita 6.20 'aindraḥ prāṇo aṅge aṅge adīdhyat'): the eṅ before the a that begins the word aṅga stays (6.1.119 'aṅga ityādau ca')."
+ },
+ {
+  "id": "prakrtibhava-087",
+  "family": "prakrtibhava",
+  "input": [
+   "aṅge",
+   "adīdhyat"
+  ],
+  "boundary": "pada",
+  "veda": true,
+  "outputs": [
+   "aṅge adīdhyat"
+  ],
+  "sutras": [
+   "6.1.119"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.119",
+   "locator": "Siddhāntakaumudī on 6.1.119",
+   "quote": "प्राणो अङ्गे अङ्गे अदीध्यत्"
+  },
+  "confidence": "certain",
+  "notes": "Same phrase: the e that belongs to the word aṅge (aṅga + ṅi) also stays before a ('aṅgaśabde ya eṅ' - Kasika)."
+ },
+ {
+  "id": "prakrtibhava-088",
+  "family": "prakrtibhava",
+  "input": [
+   "so",
+   "adhvaraḥ"
+  ],
+  "boundary": "pada",
+  "veda": true,
+  "outputs": [
+   "so adhvaraḥ"
+  ],
+  "sutras": [
+   "6.1.120"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.120",
+   "locator": "Kāśikā on 6.1.120",
+   "quote": "अयं सो अध्वरः"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: so before a with a kavarga/dha following (adhvara: a+dh) and the a being anudātta."
+ },
+ {
+  "id": "prakrtibhava-089",
+  "family": "prakrtibhava",
+  "input": [
+   "so",
+   "agniḥ"
+  ],
+  "boundary": "pada",
+  "veda": true,
+  "outputs": [
+   "so agniḥ"
+  ],
+  "sutras": [
+   "6.1.120"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.120",
+   "locator": "Siddhāntakaumudī on 6.1.120",
+   "quote": "अयं सो अग्निः"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: before the anudatta a with a kavarga letter (g of agni) following. The anudātta condition needs accent data (the engine cannot verify it from letters)."
+ },
+ {
+  "id": "prakrtibhava-090",
+  "family": "prakrtibhava",
+  "input": [
+   "atho",
+   "agre"
+  ],
+  "boundary": "pada",
+  "veda": true,
+  "outputs": [
+   "atho'gre"
+  ],
+  "sutras": [
+   "6.1.109"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.120",
+   "locator": "Siddhāntakaumudī on 6.1.120",
+   "quote": "अथोऽग्रे रुद्रे"
+  },
+  "confidence": "certain",
+  "notes": "'anudātte kim? atho 'gre rudre': the a of agra is not anudātta (agra is ādyudātta by nipātana), so prakṛtibhāva is blocked and pūrvarūpa applies. (The Kasika reads 'adho 'gre'.)"
+ },
+ {
+  "id": "prakrtibhava-091",
+  "family": "prakrtibhava",
+  "input": [
+   "so",
+   "ayam"
+  ],
+  "boundary": "pada",
+  "veda": true,
+  "outputs": [
+   "so'yam"
+  ],
+  "sutras": [
+   "6.1.109"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.120",
+   "locator": "Siddhāntakaumudī on 6.1.120",
+   "quote": "सोऽयमग्निमतः"
+  },
+  "confidence": "probable",
+  "notes": "'kudhapare kim? so 'yamagnimataḥ': the a is followed by y (not by a kavarga letter or dh), so 6.1.120 does not apply; ordinary pūrvarūpa. Input split by me."
+ },
+ {
+  "id": "prakrtibhava-092",
+  "family": "prakrtibhava",
+  "input": [
+   "rudrebhyo",
+   "avapathāḥ"
+  ],
+  "boundary": "pada",
+  "veda": true,
+  "outputs": [
+   "rudrebhyo avapathāḥ"
+  ],
+  "sutras": [
+   "6.1.121"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.121",
+   "locator": "Kāśikā on 6.1.121",
+   "quote": "त्री रुद्रेभ्यो अवपथाः"
+  },
+  "confidence": "certain",
+  "notes": "Kasika (Kathaka Samhita 30.6.32 'trī rudrebhyo avapathāḥ'): before the word avapathāḥ (2nd sg. lan of vap) with an anudātta a. avapathāḥ is anudātta by 8.1.28 (tiṅ atiṅaḥ). Accent data required."
+ },
+ {
+  "id": "prakrtibhava-093",
+  "family": "prakrtibhava",
+  "input": [
+   "yad",
+   "rudrebhyo",
+   "avapathāḥ"
+  ],
+  "boundary": "pada",
+  "veda": true,
+  "outputs": [
+   "yadrudrebhyo'vapathāḥ"
+  ],
+  "sutras": [
+   "6.1.109"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.121",
+   "locator": "Kāśikā on 6.1.121",
+   "quote": "यद्रुद्रेभ्योऽवपथाः"
+  },
+  "confidence": "certain",
+  "notes": "'anudātta ityeva — yadrudrebhyo 'vapathāḥ': after yad the accent of avapathāḥ is not lowered (nighāta blocked by 8.1.30), so its a is not anudātta and 6.1.121 does not apply: pūrvarūpa. The two examples differ in the accent, and in the preceding yad that causes it; an engine can only tell them apart with accent data or by keying on yad. Input: yad + rudrebhyo (surface form, as printed) + avapathāḥ."
+ },
+ {
+  "id": "prakrtibhava-094",
+  "family": "prakrtibhava",
+  "input": [
+   "go",
+   "agram"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "go agram",
+   "go'gram",
+   "gavāgram"
+  ],
+  "sutras": [
+   "6.1.122",
+   "6.1.109",
+   "6.1.123"
+  ],
+  "derivation": [
+   {
+    "sutra": "6.1.123",
+    "after": "gava agram",
+    "note": "Balamanorama on 6.1.123: 'go-agramiti sthite gakārādokārasyāvaṅ' (optional, Sphoṭāyana)"
+   },
+   {
+    "sutra": "6.1.101",
+    "after": "gavāgram",
+    "note": "Balamanorama on 6.1.123: 'gava-agramiti sthite savarṇadīrghaḥ'"
+   }
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": null,
+   "locator": "Laghu GRETIL text line 139, vlk_44",
+   "quote": "goagram, go 'gram"
+  },
+  "confidence": "certain",
+  "notes": "Laghu vlk_44 gives 'goagram, go 'gram' (6.1.122: the go's o is optionally pragrhya before a, in the language and in the Veda; otherwise pūrvarūpa 6.1.109). Laghu vlk_47 (GRETIL tag wrongly p_6,1.133; the sutra is 6.1.123) adds 'gavāgram, go 'gram': the optional substitution avaṅ (Sphoṭāyana), followed by a+a -> ā. All three forms are grammatical for the same input, so the output set is the union. The Laghu prints the first as 'goagram' joined; the project writes hiatus with a space (go agram). Without an apavada the ayādi rule 6.1.78 would give gav agram; 6.1.122/6.1.123 are what keep the go-forms."
+ },
+ {
+  "id": "prakrtibhava-095",
+  "family": "prakrtibhava",
+  "input": [
+   "go",
+   "ajinam"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "go ajinam",
+   "go'jinam",
+   "gavājinam"
+  ],
+  "sutras": [
+   "6.1.122",
+   "6.1.109",
+   "6.1.123"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.123",
+   "locator": "Kāśikā on 6.1.123",
+   "quote": "गवाजिनम्, गोऽजिनम्"
+  },
+  "confidence": "probable",
+  "notes": "Kasika prints 'gavājinam, go 'jinam'; the third form 'go ajinam' is the prakṛtibhāva of 6.1.122, which also applies to this a-initial word. Compound go + ajina."
+ },
+ {
+  "id": "prakrtibhava-096",
+  "family": "prakrtibhava",
+  "input": [
+   "go",
+   "odanam"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "gavaudanam",
+   "gavodanam",
+   "ga odanam"
+  ],
+  "sutras": [
+   "6.1.123",
+   "6.1.88",
+   "6.1.78",
+   "8.3.19"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.123",
+   "locator": "Kāśikā on 6.1.123",
+   "quote": "गवौदनम्, गवोदनम्"
+  },
+  "confidence": "probable",
+  "notes": "Kasika: go + odana: with the optional avaṅ (6.1.123) gava + odana -> gavaudanam (vṛddhi, 6.1.88 vṛddhireci); without it the ordinary ayādi (6.1.78) gives gavodanam. 6.1.122 and 6.1.109 need short a and do not apply. Note the Kasika/Balamanorama say the anuvṛtti of 'ati' stops here: 'atīti nivṛttam, acītyetattvanuvartata eva' (else gaveśaḥ, gavoddhaḥ could not arise). The derivations are my reading (the Kasika prints only the results); the third output 'ga odanam' is the optional 8.3.19 deletion of the v of gav (my addition)."
+ },
+ {
+  "id": "prakrtibhava-097",
+  "family": "prakrtibhava",
+  "input": [
+   "go",
+   "uṣṭram"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "gavoṣṭram",
+   "gavuṣṭram",
+   "ga uṣṭram"
+  ],
+  "sutras": [
+   "6.1.123",
+   "6.1.87",
+   "6.1.78",
+   "8.3.19"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.123",
+   "locator": "Kāśikā on 6.1.123",
+   "quote": "गवोष्ट्रम्, गवुष्ट्रम्"
+  },
+  "confidence": "probable",
+  "notes": "Kasika: go + uṣṭra: avaṅ then guṇa (ādguṇaḥ 6.1.87) gives gavoṣṭram; without avaṅ ayādi (6.1.78) gives gavuṣṭram. The Kasika prints the words in the order gavoṣṭram, gavuṣṭram; the third output 'ga uṣṭram' is the optional 8.3.19 deletion (my addition)."
+ },
+ {
+  "id": "prakrtibhava-098",
+  "family": "prakrtibhava",
+  "input": [
+   "go",
+   "akṣaḥ"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "gavākṣaḥ"
+  ],
+  "sutras": [
+   "6.1.123",
+   "6.1.101"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.123",
+   "locator": "Siddhāntakaumudī on 6.1.123",
+   "quote": "व्यवस्थितविभाषया गवाक्षः"
+  },
+  "confidence": "probable",
+  "notes": "Kasika/Kaumudi/Balamanorama: 'vyavasthitavibhāṣeyam, tena gavākṣa ityatra nityamavaṅ bhavati' - in the word gavākṣa (window; gavām akṣīva, samāsānta ac, 5.4.76 akṣṇo 'darśanāt) the substitution is obligatory (only gavākṣaḥ, never go 'kṣaḥ / go akṣaḥ). The Mahabhasya verse quoted by Balamanorama: 'mithaste na vibhāṣyante gavākṣaḥ saṃśitavrataḥ'. Input split by me (go + akṣa)."
+ },
+ {
+  "id": "prakrtibhava-099",
+  "family": "prakrtibhava",
+  "input": [
+   "go",
+   "indraḥ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "gavendraḥ"
+  ],
+  "sutras": [
+   "6.1.124",
+   "6.1.87"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": null,
+   "locator": "Laghu GRETIL text line 147, vlk_48",
+   "quote": "gavendraḥ"
+  },
+  "confidence": "certain",
+  "notes": "Laghu vlk_48 / Kasika / Kaumudi: before indra the avaṅ is obligatory ('nityam', 'ārambhasāmarthyāt' - Tattvabodhini): gava + indra -> gavendraḥ (ādguṇaḥ 6.1.87; Balamanorama 'āddguṇaḥ'). Neither pūrvarūpa (go 'ndra is impossible anyway, i follows) nor the ayādi form *gavindraḥ occurs."
+ },
+ {
+  "id": "prakrtibhava-100",
+  "family": "prakrtibhava",
+  "input": [
+   "citragu",
+   "agram"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "citragvagram"
+  ],
+  "sutras": [
+   "6.1.77"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": null,
+   "locator": "Laghu GRETIL text line 139, vlk_44",
+   "quote": "citragvagram"
+  },
+  "confidence": "certain",
+  "notes": "'eṅantasya kim? citragvagram' (Laghu vlk_44): citragu ends in u, not in the o of go, so 6.1.122 does not apply and yaṇ gives citragvagram."
+ },
+ {
+  "id": "prakrtibhava-101",
+  "family": "prakrtibhava",
+  "input": [
+   "citrago",
+   "agram"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "sambuddhi"
+   ]
+  },
+  "outputs": [
+   "citrago'gram"
+  ],
+  "sutras": [
+   "6.1.109"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "balamanorama",
+   "sutra": "6.1.122",
+   "locator": "Bālamanoramā on 6.1.122",
+   "quote": "हे चित्रगोऽग्रमित्यत्रापि न प्रकृतिभावः"
+  },
+  "confidence": "probable",
+  "notes": "Balamanorama: 'he citragoʼgramityatrāpi na prakṛtibhāvaḥ, pratipadoktasyaiva eṅo grahaṇāt' - the o of the vocative citrago comes from guṇa (lākṣaṇika), not from a stem-final eṅ, so 6.1.122 does not apply; the ordinary pūrvarūpa results. Input reconstructed (citrago + agram)."
+ },
+ {
+  "id": "prakrtibhava-102",
+  "family": "prakrtibhava",
+  "input": [
+   "go",
+   "as"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "goḥ"
+  ],
+  "sutras": [
+   "6.1.110"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": null,
+   "locator": "Laghu GRETIL text line 139, vlk_44",
+   "quote": "padānte kim? goḥ"
+  },
+  "confidence": "probable",
+  "notes": "'padānte kim? goḥ' (Laghu vlk_44): in go + as (genitive/ablative singular) the o is not word-final, so 6.1.122 does not apply; Balamanorama: 'go asiti sthite go ityokārasya padāntatvābhāvānna prakṛtibhāvaḥ ... aṅasiṅasośceti tatra pūrvarūpārambhāt' - 6.1.110 (ṅasiṅasośca) gives the pūrvarūpa: goḥ. Sutra attribution 6.1.110 from Balamanorama's phrase."
+ },
+ {
+  "id": "prakrtibhava-103",
+  "family": "prakrtibhava",
+  "input": [
+   "go",
+   "i"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "gavi"
+  ],
+  "sutras": [
+   "6.1.78"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": null,
+   "locator": "Laghu GRETIL text line 145, vlk_47",
+   "quote": "padānte kim ? gavi"
+  },
+  "confidence": "probable",
+  "notes": "'padānte kim? gavi' (Laghu vlk_47 on avaṅ): in go + i (locative singular) the o is not padānta, so avaṅ does not apply; ordinary ayādi 6.1.78 (go -> gav) gives gavi. Balamanorama: 'go i iti sthite okārasya padāntatvavirahānnāvaṅ; nāpi pūrvasūtrābhyāṃ prakṛtibhāvapararūpe kintvavādeśaḥ'."
+ },
+ {
+  "id": "prakrtibhava-104",
+  "family": "prakrtibhava",
+  "input": [
+   "kṛṣṇa",
+   "atra"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "pluta"
+   ]
+  },
+  "outputs": [
+   "kṛṣṇa atra"
+  ],
+  "sutras": [
+   "8.2.84",
+   "6.1.125"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": null,
+   "locator": "Laghu GRETIL text line 150, vlk_50",
+   "quote": "āgaccha kṛṣṇa 3 atra gauścarati"
+  },
+  "confidence": "probable",
+  "notes": "Laghu vlk_50: 'āgaccha kṛṣṇa 3 atra gauścarati' - a call from afar: the last vowel of the vākya 'āgaccha kṛṣṇa' is made pluta by 8.2.84 (dūrāddhūte ca); the pluta is not changed before the vowel a of atra (prakṛtibhāva, 6.1.125). Without it: kṛṣṇā atra (a + a -> ā, 6.1.101). The project alphabet has no pluta mark; the flag 'pluta' on the word carries the information and the output keeps the plain vowel. I reduced the sentence to the junction kṛṣṇa(3) + atra."
+ },
+ {
+  "id": "prakrtibhava-105",
+  "family": "prakrtibhava",
+  "input": [
+   "devadatta",
+   "atra"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "pluta"
+   ]
+  },
+  "outputs": [
+   "devadatta atra"
+  ],
+  "sutras": [
+   "8.2.84",
+   "6.1.125"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.125",
+   "locator": "Kāśikā on 6.1.125",
+   "quote": "देवदत्त३ अत्र"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: 'devadatta3 atra nvasi' (the pluta arises by 8.2.84 dūrāddhūte ca; 'āśrayādatra plutaḥ siddhaḥ')."
+ },
+ {
+  "id": "prakrtibhava-106",
+  "family": "prakrtibhava",
+  "input": [
+   "yajñadatta",
+   "idam",
+   "ānaya"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "pluta"
+   ]
+  },
+  "outputs": [
+   "yajñadatta idamānaya"
+  ],
+  "sutras": [
+   "8.2.84",
+   "6.1.125"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.125",
+   "locator": "Kāśikā on 6.1.125",
+   "quote": "यज्ञदत्त३ इदमानय"
+  },
+  "confidence": "probable",
+  "notes": "Kasika: 'yajñadatta3 idamānaya'. Input split by me (idam + ānaya join without change: m before a vowel)."
+ },
+ {
+  "id": "prakrtibhava-107",
+  "family": "prakrtibhava",
+  "input": [
+   "khaṭve",
+   "iti"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "dvivacana"
+   ]
+  },
+  "outputs": [
+   "khaṭve iti"
+  ],
+  "sutras": [
+   "1.1.11",
+   "6.1.125"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.125",
+   "locator": "Kāśikā on 6.1.125",
+   "quote": "खट्वे इति"
+  },
+  "confidence": "certain",
+  "notes": "Kasika on 6.1.125: agnī iti, vāyū iti, khaṭve iti, māle iti (the pragrhyas). khaṭve = dual of khaṭvā."
+ },
+ {
+  "id": "prakrtibhava-108",
+  "family": "prakrtibhava",
+  "input": [
+   "jānu",
+   "u",
+   "asya",
+   "rujati"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "1": [
+    "nipata",
+    "stem:uñ"
+   ]
+  },
+  "outputs": [
+   "jānū asya rujati",
+   "jānvasya rujati"
+  ],
+  "sutras": [
+   "6.1.101",
+   "6.1.125",
+   "8.3.33"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.125",
+   "locator": "Kāśikā on 6.1.125",
+   "quote": "जानु उ अस्य रुजति, जान्वस्य रुजति"
+  },
+  "confidence": "probable",
+  "notes": "'aci' is repeated in 6.1.125 to mean 'the ac that is the NIMITTA of the substitution' ('ādeśanimittasyācaḥ parigrahārtham', Kasika). So a pragrhya vowel is unchanged only when the FOLLOWING vowel is not the one that triggers a change; the pragrhya u after jānu still triggers savarṇadīrgha with the jānu's final u: jānu + u -> jānū (6.1.101), 'pragṛhyādukārāt parasyākārasya savarṇadīrghatvaṃ pratyanimittatvādatra prakṛtibhāvo na bhavati'. The resulting ū counts as the (ekādeśa of) uñ, so before asya it is pragrhya: jānū asya (Tattvabodhini prints this form), or with 8.3.33 (the ū after the may-letter n turns to v): jānvasya. Mahabhasya 1.1.17 gives the same pair. The Kasika prints only 'jānvasya rujati'; the first form is from Tattvabodhini; hence 'probable'."
+ },
+ {
+  "id": "prakrtibhava-109",
+  "family": "prakrtibhava",
+  "input": [
+   "abhra",
+   "ā",
+   "apaḥ"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "1": [
+    "nipata",
+    "ang"
+   ]
+  },
+  "veda": true,
+  "outputs": [
+   "abhra ām̐ apaḥ"
+  ],
+  "sutras": [
+   "6.1.126",
+   "6.1.125"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.126",
+   "locator": "Siddhāntakaumudī on 6.1.126",
+   "quote": "अभ्र आँ अपः"
+  },
+  "confidence": "probable",
+  "notes": "Kaumudi/Kasika (Rg 5.48.1 'abhra ām̐ apaḥ'): the Vedic preverb āṅ before a vowel is replaced by the nasalised ā (ām̐) which is pragrhya, so the vowel that follows does not merge. The spelling of the output 'ām̐' is ā + m + U+0310, as the project spells ūm̐. The first word is printed as in the source; the commentaries do not discuss the junction of the a-final first word with ām̐ (one would expect a + ā -> ā by 6.1.101), so the case is only about the anunāsika substitution of āṅ and the vowel that follows it. Treat with care."
+ },
+ {
+  "id": "prakrtibhava-110",
+  "family": "prakrtibhava",
+  "input": [
+   "gabhīra",
+   "ā",
+   "ugraputre"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "1": [
+    "nipata",
+    "ang"
+   ]
+  },
+  "veda": true,
+  "outputs": [
+   "gabhīra ām̐ ugraputre"
+  ],
+  "sutras": [
+   "6.1.126",
+   "6.1.125"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.126",
+   "locator": "Siddhāntakaumudī on 6.1.126",
+   "quote": "गभीर आँ उग्रपुत्रे"
+  },
+  "confidence": "probable",
+  "notes": "Kaumudi/Kasika (Rg 8.67.11): same substitution as abhra ām̐ apaḥ, before the vowel u of ugra-."
+ },
+ {
+  "id": "prakrtibhava-111",
+  "family": "prakrtibhava",
+  "input": [
+   "ā",
+   "atarat"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "nipata",
+    "ang"
+   ]
+  },
+  "veda": true,
+  "outputs": [
+   "ātarat"
+  ],
+  "sutras": [
+   "6.1.101"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.126",
+   "locator": "Kāśikā on 6.1.126",
+   "quote": "इन्द्रो बाहुभ्यामातरत्। आ अतरत्"
+  },
+  "confidence": "uncertain",
+  "notes": "Kasika mentions a variant reading of the sutra ('āṅo 'nunāsikaś chandasi bahulam', 'bahulam' added) under which the substitution is not universal: 'iha na bhavati — indro bāhubhyāmātaratra ā atarat'. Then ā + atarat merges to ā (savarṇadīrghaḥ 6.1.101). Only relevant if the engine adopts the variant; the Vidyut sutra text has no 'bahulam'."
+ },
+ {
+  "id": "prakrtibhava-112",
+  "family": "prakrtibhava",
+  "input": [
+   "dadhi",
+   "atra"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "dadhi atra",
+   "dadhyatra"
+  ],
+  "sutras": [
+   "6.1.127",
+   "6.1.77"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.127",
+   "locator": "Kāśikā on 6.1.127",
+   "quote": "दधि अत्र, दध्यत्र"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: at the end of a pada an ik (i u ṛ ḷ ...) before a vowel that is NOT its savarṇa is, by Śākalya's opinion, optionally shortened and left unchanged (dadhi atra), else yaṇ (dadhyatra). The Kasika: 'ārambhasāmarthyādeva hi yaṇādeśena saha vikalpaḥ siddhaḥ'. The shortening changes nothing for an already-short vowel."
+ },
+ {
+  "id": "prakrtibhava-113",
+  "family": "prakrtibhava",
+  "input": [
+   "madhu",
+   "atra"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "madhu atra",
+   "madhvatra"
+  ],
+  "sutras": [
+   "6.1.127",
+   "6.1.77"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.127",
+   "locator": "Kāśikā on 6.1.127",
+   "quote": "मधु अत्र, मध्वत्र"
+  },
+  "confidence": "certain",
+  "notes": "Kasika."
+ },
+ {
+  "id": "prakrtibhava-114",
+  "family": "prakrtibhava",
+  "input": [
+   "cakri",
+   "atra"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "cakri atra",
+   "cakryatra"
+  ],
+  "sutras": [
+   "6.1.127",
+   "6.1.77"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.127",
+   "locator": "Siddhāntakaumudī on 6.1.127",
+   "quote": "चक्रि अत्र । चक्र्यत्र"
+  },
+  "confidence": "certain",
+  "notes": "Laghu vlk_59 / Kaumudi. The Laghu text (GRETIL) misprints the second form as 'cakraytra'. Laghu: 'hrasvavidhisāmarthyānna svarasandhiḥ' (because the sutra prescribes a short vowel, i + a is not subjected to savarṇadīrgha... here a+i differ so yaṇ is the alternative). Prauḍhamanoramā/Balamanorama: in cakryatra the k is NOT deleted by 8.2.29 (skoḥ saṃyogādyoḥ) because the yaṇ counts as a vowel by sthānivadbhāva (1.1.57 achaḥ parasmin pūrvavidhau) and 'pūrvatrāsiddhe na sthānivat' does not block it."
+ },
+ {
+  "id": "prakrtibhava-115",
+  "family": "prakrtibhava",
+  "input": [
+   "khaṭvā",
+   "indraḥ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "khaṭvendraḥ"
+  ],
+  "sutras": [
+   "6.1.87"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.127",
+   "locator": "Kāśikā on 6.1.127",
+   "quote": "खट्वेन्द्रः"
+  },
+  "confidence": "probable",
+  "notes": "'ika iti kim? khaṭvendraḥ': ā is not an ik, so 6.1.127 does not apply: guṇa. (Kasika prints it under 6.1.127 and again under 6.1.128.) Input split by me."
+ },
+ {
+  "id": "prakrtibhava-116",
+  "family": "prakrtibhava",
+  "input": [
+   "kumārī",
+   "indraḥ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "kumārīndraḥ"
+  ],
+  "sutras": [
+   "6.1.101"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.127",
+   "locator": "Kāśikā on 6.1.127",
+   "quote": "कुमारीन्द्रः"
+  },
+  "confidence": "probable",
+  "notes": "'asavarṇa iti kim? kumārīndraḥ': i is savarṇa with ī, so savarṇadīrgha; 6.1.127 does not apply. Input split by me."
+ },
+ {
+  "id": "prakrtibhava-117",
+  "family": "prakrtibhava",
+  "input": [
+   "gaurī",
+   "au"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "gauryau"
+  ],
+  "sutras": [
+   "6.1.77"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.127",
+   "locator": "Siddhāntakaumudī on 6.1.127",
+   "quote": "पदान्ताः इति किम् । गौर्यौ"
+  },
+  "confidence": "probable",
+  "notes": "'padāntā iti kim? gauryau': the ī of gaurī + au is internal (not padānta), so shortening/prakṛtibhāva does not apply; yaṇ (the Laghu prints gauryau, with the doubling of y by 8.4.46 as optional 'gauryyau'). Input reconstructed by me; the Laghu text has the marker 'gauryau -'."
+ },
+ {
+  "id": "prakrtibhava-118",
+  "family": "prakrtibhava",
+  "input": [
+   "vāpī",
+   "aśvaḥ"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "vāpyaśvaḥ"
+  ],
+  "sutras": [
+   "6.1.77"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.127",
+   "locator": "Siddhāntakaumudī on 6.1.127",
+   "quote": "वाप्यश्वः"
+  },
+  "confidence": "certain",
+  "notes": "Vartika 'na samāse' (attached to 6.1.127 in Kaumudi/Bala; the Vidyut vartika list has 'न समासे ।'): the Śākalya option does not apply inside a compound: vāpyaśvaḥ. Same case as the counter-example of 1.1.19; the two rules agree on the outcome."
+ },
+ {
+  "id": "prakrtibhava-119",
+  "family": "prakrtibhava",
+  "input": [
+   "pārśu",
+   "a"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "pārśva"
+  ],
+  "sutras": [
+   "6.1.77"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.127",
+   "locator": "Siddhāntakaumudī on 6.1.127",
+   "quote": "पार्श्वम्"
+  },
+  "confidence": "probable",
+  "notes": "Vartika 'siti ca' (Vidyut vartika list 'सिति च ।'): before an affix with the marker s (here the affix ṇas, which makes parśu-derived pārśva 'a group of ribs') the Śākalya option does not apply. Balamanorama: 'pārśu-a iti sthite uktaḥ śākalo vidhirna bhavati'; the initial vowel gets vṛddhi (ādivṛddhi) and yaṇ: pārśvam. The Kaumudi prints pārśvam (with the nominative ending m); I give the stem form pārśva. Input taken from Balamanorama's 'pārśu-a iti sthite' (the ādivṛddhi has already been applied: pārśu)."
+ },
+ {
+  "id": "prakrtibhava-120",
+  "family": "prakrtibhava",
+  "input": [
+   "vi",
+   "ākaraṇam"
+  ],
+  "boundary": "upasarga",
+  "flags": {
+   "0": [
+    "upasarga"
+   ]
+  },
+  "outputs": [
+   "vyākaraṇam"
+  ],
+  "sutras": [
+   "6.1.77"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.127",
+   "locator": "Kāśikā on 6.1.127",
+   "quote": "व्याकरणम्"
+  },
+  "confidence": "probable",
+  "notes": "Kasika under the vartika 'sinnityasamāsayoḥ śākalapratiṣedho vaktavyaḥ': 'nityasamāse — vyākaraṇam' (vi + ākaraṇa, a nitya compound): no Śākalya option, yaṇ only. Input split by me."
+ },
+ {
+  "id": "prakrtibhava-121",
+  "family": "prakrtibhava",
+  "input": [
+   "kumārī",
+   "artham"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "kumāryartham"
+  ],
+  "sutras": [
+   "6.1.77"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.127",
+   "locator": "Kāśikā on 6.1.127",
+   "quote": "कुमार्यर्थम्"
+  },
+  "confidence": "probable",
+  "notes": "Same vartika, 'nityasamāse — kumāryartham' (kumārī + artham). Input split by me."
+ },
+ {
+  "id": "prakrtibhava-122",
+  "family": "prakrtibhava",
+  "input": [
+   "īṣā",
+   "akṣo"
+  ],
+  "boundary": "pada",
+  "veda": true,
+  "outputs": [
+   "īṣā akṣo"
+  ],
+  "sutras": [
+   "6.1.127"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.126",
+   "locator": "Siddhāntakaumudī on 6.1.126",
+   "quote": "ईषाअक्षो हिरण्यः"
+  },
+  "confidence": "probable",
+  "notes": "Vartika 'īṣāakṣādīnāṃ chandasi prakṛtibhāvo vaktavyaḥ' - in the Kaumudi it stands under 6.1.126, in the Kasika and the Mahabhasya under 6.1.127 (vartika 2: 'īṣā akṣādiṣu ca chandasi prakṛtibhāvamātraṃ draṣṭavyam'). In the Veda ā + a of these words stays unchanged (Rg 8.5.29 'īṣā akṣo hiraṇyayaḥ'), instead of merging to ā. The Kaumudi prints the phrase joined ('īṣāakṣo'); the output keeps hiatus with a space. The second word is given in its surface form akṣo (aḥ + h -> o)."
+ },
+ {
+  "id": "prakrtibhava-123",
+  "family": "prakrtibhava",
+  "input": [
+   "jyā",
+   "iyam"
+  ],
+  "boundary": "pada",
+  "veda": true,
+  "outputs": [
+   "jyā iyam"
+  ],
+  "sutras": [
+   "6.1.127"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.126",
+   "locator": "Siddhāntakaumudī on 6.1.126",
+   "quote": "ज्या इयम्"
+  },
+  "confidence": "probable",
+  "notes": "Same vartika (īṣāakṣādi). Without it ā + i -> e (guṇa): jyeyam. See the previous case for the placement dispute."
+ },
+ {
+  "id": "prakrtibhava-124",
+  "family": "prakrtibhava",
+  "input": [
+   "pūṣā",
+   "aviṣṭu"
+  ],
+  "boundary": "pada",
+  "veda": true,
+  "outputs": [
+   "pūṣā aviṣṭu"
+  ],
+  "sutras": [
+   "6.1.127"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.126",
+   "locator": "Siddhāntakaumudī on 6.1.126",
+   "quote": "पूषा अविष्टु"
+  },
+  "confidence": "probable",
+  "notes": "Same vartika (īṣāakṣādi)."
+ },
+ {
+  "id": "prakrtibhava-125",
+  "family": "prakrtibhava",
+  "input": [
+   "pathā",
+   "agaman"
+  ],
+  "boundary": "pada",
+  "veda": true,
+  "outputs": [
+   "pathā agaman"
+  ],
+  "sutras": [
+   "6.1.127"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.127",
+   "locator": "Kāśikā on 6.1.127",
+   "quote": "पथा अगमन्"
+  },
+  "confidence": "probable",
+  "notes": "Kasika under the same vartika ('iṣā akṣādiṣu chandasi prakṛtibhāvamātraṃ vaktavyam')."
+ },
+ {
+  "id": "prakrtibhava-126",
+  "family": "prakrtibhava",
+  "input": [
+   "brahmā",
+   "ṛṣiḥ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "brahma ṛṣiḥ",
+   "brahmarṣiḥ"
+  ],
+  "sutras": [
+   "6.1.128",
+   "6.1.87"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": null,
+   "locator": "Laghu GRETIL text line 171, vlk_61",
+   "quote": "brahma ṛṣiḥ, brahmarṣiḥ"
+  },
+  "confidence": "probable",
+  "notes": "Laghu vlk_61: at the end of a pada an ak (a ā i ī u ū ṛ ṝ ḷ) before ṛ is optionally shortened and left unchanged (brahma ṛṣiḥ), else the ordinary guṇa (ādguṇaḥ 6.1.87, with raparatva 1.1.51): brahmarṣiḥ. Balamanorama: 'brahmā-ṛṣiriti sthite ākārasya hrasvaḥ prakṛtibhāvaśca'. The Laghu prints the short spelling 'brahma'; the input brahmā is what the derivation starts from."
+ },
+ {
+  "id": "prakrtibhava-127",
+  "family": "prakrtibhava",
+  "input": [
+   "khaṭvā",
+   "ṛśyaḥ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "khaṭva ṛśyaḥ",
+   "khaṭvarśyaḥ"
+  ],
+  "sutras": [
+   "6.1.128",
+   "6.1.87"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.128",
+   "locator": "Kāśikā on 6.1.128",
+   "quote": "खट्व ऋश्यः"
+  },
+  "confidence": "probable",
+  "notes": "Kasika: khaṭva ṛśyaḥ (hrasva + prakṛtibhāva). The alternative khaṭvarśyaḥ is the ordinary guṇa (the Laghu's brahmarṣiḥ pattern); the Kasika does not print it, so 'probable'. Bhashya vartika: 'ṛtyakaḥ savarṇārthaḥ, anigantārthaṃ ca' - the sutra is needed for ṛ (so savarṇa) and for non-ik ak (ā, khaṭvā)."
+ },
+ {
+  "id": "prakrtibhava-128",
+  "family": "prakrtibhava",
+  "input": [
+   "mālā",
+   "ṛśyaḥ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "māla ṛśyaḥ",
+   "mālarśyaḥ"
+  ],
+  "sutras": [
+   "6.1.128",
+   "6.1.87"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.128",
+   "locator": "Kāśikā on 6.1.128",
+   "quote": "माल ऋश्यः"
+  },
+  "confidence": "probable",
+  "notes": "Kasika. Second output as for khaṭvā ṛśyaḥ."
+ },
+ {
+  "id": "prakrtibhava-129",
+  "family": "prakrtibhava",
+  "input": [
+   "hotṛ",
+   "ṛśyaḥ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "hotṛ ṛśyaḥ",
+   "hotṝśyaḥ"
+  ],
+  "sutras": [
+   "6.1.128",
+   "6.1.101"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.128",
+   "locator": "Kāśikā on 6.1.128",
+   "quote": "होतृ ऋश्यः"
+  },
+  "confidence": "probable",
+  "notes": "Kasika: hotṛ ṛśyaḥ (prakṛtibhāva). The alternative is savarṇadīrgha (6.1.101): hotṝśyaḥ. Tattvabodhini: the sutra ṛtyakaḥ cannot be shortened to 'ṛtyasya' precisely because of 'hotṛ-ṛkāraḥ' (the ak-grahaṇa is needed for this)."
+ },
+ {
+  "id": "prakrtibhava-130",
+  "family": "prakrtibhava",
+  "input": [
+   "vṛkṣau",
+   "ṛśyaḥ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "vṛkṣāvṛśyaḥ",
+   "vṛkṣā ṛśyaḥ"
+  ],
+  "sutras": [
+   "6.1.78",
+   "8.3.19"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.128",
+   "locator": "Kāśikā on 6.1.128",
+   "quote": "वृक्षावृश्यः"
+  },
+  "confidence": "probable",
+  "notes": "'aka iti kim? vṛkṣāvṛśyaḥ': au is not an ak (a-varṇa, i, u, ṛ, ḷ), so 6.1.128 does not apply: au + ṛ -> āv ṛ (6.1.78). Input split by me. Second output = optional 8.3.19 (not printed by the Kasika)."
+ },
+ {
+  "id": "prakrtibhava-131",
+  "family": "prakrtibhava",
+  "input": [
+   "ā",
+   "ṛcchat"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "ārcchat"
+  ],
+  "sutras": [
+   "6.1.90"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": null,
+   "locator": "Laghu GRETIL text line 171, vlk_61",
+   "quote": "padāntāḥ kim ? ārchat"
+  },
+  "confidence": "probable",
+  "notes": "'padāntāḥ kim? ārchat' (Laghu vlk_61; the GRETIL text misprints ārcchat as 'ārchat'): the ā of the augment āṭ (Balamanorama: 'ā ṛcchad'; ṛ gatau, lan, ṛcchādeśa) is not padānta, so 6.1.128 does not apply: āṭaś ca (6.1.90) vṛddhi."
+ },
+ {
+  "id": "prakrtibhava-132",
+  "family": "prakrtibhava",
+  "input": [
+   "sapta",
+   "ṛṣīṇām"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "saptaṛṣīṇām",
+   "saptarṣīṇām"
+  ],
+  "sutras": [
+   "6.1.128",
+   "6.1.87"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.128",
+   "locator": "Siddhāntakaumudī on 6.1.128",
+   "quote": "सप्तऋषीणाम् - सप्तर्षीणाम्"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi/Balamanorama: 'samāse 'pyayaṃ prakṛtibhāvaḥ' - unlike 6.1.127 (vartika 'na samāse'), ṛtyakaḥ applies inside compounds too: saptaṛṣīṇām (hiatus, no space in the source) or saptarṣīṇām (guṇa). Tattvabodhini: the vartika 'na samāse' belongs to 6.1.127 only."
+ },
+ {
+  "id": "prakrtibhava-133",
+  "family": "prakrtibhava",
+  "input": [
+   "suśloka",
+   "iti"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "pluta"
+   ]
+  },
+  "outputs": [
+   "suśloketi"
+  ],
+  "sutras": [
+   "6.1.129",
+   "6.1.87"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.129",
+   "locator": "Kāśikā on 6.1.129",
+   "quote": "सुश्लोक३ इति सुश्लोकेति"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: a pluta vowel before the non-Vedic quotation particle iti (upasthita = 'anārṣa itikaraṇaḥ') behaves as if not pluta: suśloka3 iti -> suśloketi (a + i -> e, 6.1.87). Balamanorama: in the padapatha the iti after 'suśloka3' is added by the padakāra, so it is not Vedic. The source writes the input with the pluta digit 3, which this alphabet cannot; the flag 'pluta' carries it."
+ },
+ {
+  "id": "prakrtibhava-134",
+  "family": "prakrtibhava",
+  "input": [
+   "sumaṅgala",
+   "iti"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "pluta"
+   ]
+  },
+  "outputs": [
+   "sumaṅgaleti"
+  ],
+  "sutras": [
+   "6.1.129",
+   "6.1.87"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.129",
+   "locator": "Kāśikā on 6.1.129",
+   "quote": "सुमङ्गल३ इति सुमङ्गलेति"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: second example of 6.1.129 (sumaṅgala3 iti -> sumaṅgaleti)."
+ },
+ {
+  "id": "prakrtibhava-135",
+  "family": "prakrtibhava",
+  "input": [
+   "agnī",
+   "iti"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "pluta",
+    "dvivacana"
+   ]
+  },
+  "outputs": [
+   "agnī iti"
+  ],
+  "sutras": [
+   "1.1.11",
+   "6.1.125"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.129",
+   "locator": "Kāśikā on 6.1.129",
+   "quote": "अग्नी३ इति"
+  },
+  "confidence": "certain",
+  "notes": "'vatkaraṇaṃ kim?' Kasika: only the plutakārya prakṛtibhāva (6.1.125's 'pluta' half) is suppressed by 6.1.129, not the pluta itself and not the pragrhya-based prakṛtibhāva: agnī3 iti stays. Without 'vat' (i.e. 'aplute upasthite') the pluta would be replaced by a short vowel and 'agnī3 iti' could not be heard. (Same case as the 1.1.11 example 'agnī iti', now with a pluta.)"
+ },
+ {
+  "id": "prakrtibhava-136",
+  "family": "prakrtibhava",
+  "input": [
+   "vāyū",
+   "iti"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "pluta",
+    "dvivacana"
+   ]
+  },
+  "outputs": [
+   "vāyū iti"
+  ],
+  "sutras": [
+   "1.1.11",
+   "6.1.125"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.129",
+   "locator": "Kāśikā on 6.1.129",
+   "quote": "वायू३ इति"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: second example of a pluta pragrhya before iti."
+ },
+ {
+  "id": "prakrtibhava-137",
+  "family": "prakrtibhava",
+  "input": [
+   "hi",
+   "iti",
+   "abrūtām"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "pluta"
+   ]
+  },
+  "outputs": [
+   "hītyabrūtām",
+   "hi ityabrūtām"
+  ],
+  "sutras": [
+   "6.1.130",
+   "6.1.125",
+   "6.1.101",
+   "6.1.77"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.130",
+   "locator": "Kāśikā on 6.1.130",
+   "quote": "हीत्यब्रूताम्"
+  },
+  "confidence": "probable",
+  "notes": "Kasika: 'astu hītyabrūtām / asti hi3 ityabrūtām'. By the option of Cakravarmana a pluta ī (hi3, the particle hi in an answer: pluta by 8.2.93 per Balamanorama on 6.1.130, by 8.2.105 per Tattvabodhini) before a vowel behaves as if not pluta: hi + iti -> hī (savarṇadīrgha) then iti + a -> ity a (yaṇ); or, without the option, pluta hi3 stays (6.1.125) and only iti + abrūtām joins: hi3 ityabrūtām. The Kasika prints 'astu' in one and 'asti' in the other example, evidently a misprint; I use neither verb."
+ },
+ {
+  "id": "prakrtibhava-138",
+  "family": "prakrtibhava",
+  "input": [
+   "cinu",
+   "hi",
+   "idam"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "1": [
+    "pluta"
+   ]
+  },
+  "outputs": [
+   "cinu hīdam",
+   "cinu hi idam"
+  ],
+  "sutras": [
+   "6.1.130",
+   "6.1.125",
+   "6.1.101"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.130",
+   "locator": "Kāśikā on 6.1.130",
+   "quote": "चिनु हीदम्। चिनु हि३ इदम्"
+  },
+  "confidence": "certain",
+  "notes": "Kasika (also Kaumudi 'cinu hī3 idam / cinu hīdam'): with pluta hī3 before idam -> optionally as if not pluta: hī + idam -> hīdam (6.1.101); or hi3 idam stays (6.1.125). 'ubhayatra vibhāṣeyam': the option holds both before iti (where 6.1.129 makes it obligatory-ish) and elsewhere."
+ },
+ {
+  "id": "prakrtibhava-139",
+  "family": "prakrtibhava",
+  "input": [
+   "vaśā",
+   "iyam"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "pluta"
+   ]
+  },
+  "outputs": [
+   "vaśā iyam",
+   "vaśeyam"
+  ],
+  "sutras": [
+   "6.1.130",
+   "6.1.125",
+   "6.1.87"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.130",
+   "locator": "Kāśikā on 6.1.130",
+   "quote": "वशा३ इयं वशेयम्"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: 'īkārādanyatrāpyayamaplutavadbhāva iṣyate' - the Cakravarmana option extends to plutas other than ī: vaśā3 iyam / vaśeyam (a + i -> e, 6.1.87)."
+ },
+ {
+  "id": "prakrtibhava-140",
+  "family": "prakrtibhava",
+  "input": [
+   "sudiv",
+   "bhyām"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "sudyubhyām"
+  ],
+  "sutras": [
+   "6.1.131",
+   "6.1.77"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.131",
+   "locator": "Siddhāntakaumudī on 6.1.131",
+   "quote": "सुद्युभ्याम्"
+  },
+  "confidence": "probable",
+  "notes": "Kaumudi/Laghu vlk_266 (GRETIL tag p_6,1.131 is right): the pada-final v of the prātipadika div becomes u; then i+u -> yu (yaṇ, 6.1.77, not named by the Kaumudi; padatva of sudiv before bhyām by 1.4.17). Balamanorama on 6.1.131 has the wrong commentary in the corpus (it is the commentary of 6.1.135 suṭ kāt pūrvaḥ)."
+ },
+ {
+  "id": "prakrtibhava-141",
+  "family": "prakrtibhava",
+  "input": [
+   "sudiv",
+   "bhis"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "sudyubhiḥ"
+  ],
+  "sutras": [
+   "6.1.131",
+   "6.1.77"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.131",
+   "locator": "Siddhāntakaumudī on 6.1.131",
+   "quote": "सुद्युभिः"
+  },
+  "confidence": "probable",
+  "notes": "Same as sudyubhyām with bhis (final s -> visarga)."
+ },
+ {
+  "id": "prakrtibhava-142",
+  "family": "prakrtibhava",
+  "input": [
+   "akṣadiv",
+   "bhyām"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "0": [
+    "dhatu:div"
+   ]
+  },
+  "outputs": [
+   "akṣadyūbhyām"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.131",
+   "locator": "Kāśikā on 6.1.131",
+   "quote": "अक्षद्यूभ्याम्, अक्षद्यूभिरिति"
+  },
+  "confidence": "probable",
+  "notes": "'nirdanubandhakagrahaṇāt (paribhāṣā 81) iha na bhavati — akṣadyūbhyām': the sutra's 'diva' means the prātipadika div without anubandha (sky), not the sānubandha root divu (dīvyati), whose kvip-form -dyū takes ū. The ū comes from a different rule that the Kasika does not name. The flag 'dhatu:div' marks that the word is built on the root (it ends with it here, not begins). Sutras left empty because the Kasika names none for the ū."
+ },
+ {
+  "id": "prakrtibhava-143",
+  "family": "prakrtibhava",
+  "input": [
+   "div",
+   "au"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "divau"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.131",
+   "locator": "Kāśikā on 6.1.131",
+   "quote": "दिवौ, दिवः"
+  },
+  "confidence": "certain",
+  "notes": "'padasyeti kim? divau, divaḥ': the substitution applies only to a PADA-final div; before the vowel endings au/as the stem is not a pada, so no ut. Output as printed (div + au, div + as -> divaḥ)."
+ },
+ {
+  "id": "prakrtibhava-144",
+  "family": "prakrtibhava",
+  "input": [
+   "kim",
+   "u",
+   "uktam"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "1": [
+    "nipata",
+    "stem:uñ"
+   ]
+  },
+  "outputs": [
+   "kimvuktam",
+   "kimu uktam"
+  ],
+  "sutras": [
+   "8.3.33",
+   "1.1.14",
+   "6.1.125"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": null,
+   "locator": "Laghu GRETIL text line 165, vlk_58",
+   "quote": "kimvuktam, kimu uktam"
+  },
+  "confidence": "certain",
+  "notes": "Laghu vlk_58 / Kaumudi: after a may-letter (here m of kim) the particle uñ before a vowel is optionally replaced by v; otherwise it stays as pragrhya (nitya, 1.1.14/1.1.17 style) - 'kimu uktam'. Kaumudi: 'vatvasyāsiddhatvānnānusvāraḥ': the v is produced in the tripadi, so 8.3.23 (mo 'nusvāraḥ, before a hal) does not turn the m of kim into anusvara (kiṃvuktam is wrong). Balamanorama: 'prakṛtibhāve prāpte vatvavacanam'. With a following iti (Praudhamanorama) the count of possible forms rises to 28 (anunāsika v, ūm̐, doubling ...); not modelled here."
+ },
+ {
+  "id": "prakrtibhava-145",
+  "family": "prakrtibhava",
+  "input": [
+   "tad",
+   "u",
+   "asya"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "1": [
+    "nipata",
+    "stem:uñ"
+   ]
+  },
+  "veda": true,
+  "outputs": [
+   "tadvasya",
+   "tadu asya"
+  ],
+  "sutras": [
+   "8.3.33",
+   "6.1.125"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.3.33",
+   "locator": "Kāśikā on 8.3.33",
+   "quote": "तद्वस्य परेतः, तदु अस्य परेतः"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: 'tadvasya paretaḥ, tadu asya paretaḥ'. The m-letter here is d of tad (d is in 'may'). Kasika: 'pragṛhyatvādupaḥ prakṛtibhāve prāpte vakāro vidhīyate'."
+ },
+ {
+  "id": "prakrtibhava-146",
+  "family": "prakrtibhava",
+  "input": [
+   "śam",
+   "u",
+   "astu"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "1": [
+    "nipata",
+    "stem:uñ"
+   ]
+  },
+  "veda": true,
+  "outputs": [
+   "śamvastu",
+   "śamu astu"
+  ],
+  "sutras": [
+   "8.3.33",
+   "6.1.125"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.3.33",
+   "locator": "Kāśikā on 8.3.33",
+   "quote": "शमु अस्तु वेदिः"
+  },
+  "confidence": "probable",
+  "notes": "Kasika: 'śamvastu vediḥ, śamu astu vediḥ' (Vajasaneyi Samhita 23.44). The printed first form carries accent marks, so the quote is the clean second form; the first form 'śamvastu' is from the same sentence. Note the m is NOT turned into an anusvara before the v: the Kasika says v is asiddha for 8.3.23."
+ },
+ {
+  "id": "prakrtibhava-147",
+  "family": "prakrtibhava",
+  "input": [
+   "kim",
+   "u",
+   "āvapanam"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "1": [
+    "nipata",
+    "stem:uñ"
+   ]
+  },
+  "veda": true,
+  "outputs": [
+   "kimvāvapanam",
+   "kimu āvapanam"
+  ],
+  "sutras": [
+   "8.3.33",
+   "6.1.125"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.3.33",
+   "locator": "Kāśikā on 8.3.33",
+   "quote": "किमु आवपनम्"
+  },
+  "confidence": "probable",
+  "notes": "Kasika: 'kimvāvapanam, kimu āvapanam' (Vajasaneyi Samhita 23.9). First form printed with accents (not quoted)."
+ },
+ {
+  "id": "prakrtibhava-148",
+  "family": "prakrtibhava",
+  "input": [
+   "dadhi"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "dadhim̐",
+   "dadhi"
+  ],
+  "sutras": [
+   "8.4.57"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.57",
+   "locator": "Kāśikā on 8.4.57",
+   "quote": "दधिँ, दधि"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: at the end of the utterance (avasāna) an aṇ that is not pragrhya may be nasalised: dadhim̐ or dadhi. The nasal form is written with m + U+0310 (as in the sutra text ūm̐). 'aṇ' is the pratyāhāra a i u (with all their savarṇas) - Balamanorama: 'atra aṇ pūrveṇaiva ṇakāreṇa, vyākhyānāt' (the first ṇ of the Śivasūtras, not the later one)."
+ },
+ {
+  "id": "prakrtibhava-149",
+  "family": "prakrtibhava",
+  "input": [
+   "madhu"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "madhum̐",
+   "madhu"
+  ],
+  "sutras": [
+   "8.4.57"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.57",
+   "locator": "Kāśikā on 8.4.57",
+   "quote": "मधुँ, मधु"
+  },
+  "confidence": "certain",
+  "notes": "Kasika."
+ },
+ {
+  "id": "prakrtibhava-150",
+  "family": "prakrtibhava",
+  "input": [
+   "kumārī"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "kumārīm̐",
+   "kumārī"
+  ],
+  "sutras": [
+   "8.4.57"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.57",
+   "locator": "Kāśikā on 8.4.57",
+   "quote": "कुमारीँ, कुमारी"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: the ī is a savarṇa of i (tulyāsya..., 1.1.9) so it is covered by aṇ (a-i-u with all savarṇas)."
+ },
+ {
+  "id": "prakrtibhava-151",
+  "family": "prakrtibhava",
+  "input": [
+   "kartṛ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "kartṛ"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.57",
+   "locator": "Kāśikā on 8.4.57",
+   "quote": "अण इति किम्? कर्तृ"
+  },
+  "confidence": "certain",
+  "notes": "'aṇa iti kim? kartṛ, hartṛ': ṛ is not in the aṇ pratyahara (a i u), so there is no optional nasalisation."
+ },
+ {
+  "id": "prakrtibhava-152",
+  "family": "prakrtibhava",
+  "input": [
+   "hartṛ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "hartṛ"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.57",
+   "locator": "Kāśikā on 8.4.57",
+   "quote": "हर्तृ"
+  },
+  "confidence": "certain",
+  "notes": "Second counter-example of 'aṇa iti kim?'."
+ },
+ {
+  "id": "prakrtibhava-153",
+  "family": "prakrtibhava",
+  "input": [
+   "agnī"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "dvivacana"
+   ]
+  },
+  "outputs": [
+   "agnī"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.57",
+   "locator": "Kāśikā on 8.4.57",
+   "quote": "अप्रगृह्यस्येति किम्? अग्नी"
+  },
+  "confidence": "certain",
+  "notes": "'apragṛhyasyeti kim? agnī, vāyū': a pragrhya vowel is not nasalised at the end of the utterance."
+ },
+ {
+  "id": "prakrtibhava-154",
+  "family": "prakrtibhava",
+  "input": [
+   "vāyū"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "dvivacana"
+   ]
+  },
+  "outputs": [
+   "vāyū"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.57",
+   "locator": "Kāśikā on 8.4.57",
+   "quote": "वायू"
+  },
+  "confidence": "certain",
+  "notes": "Second counter-example of 'apragṛhyasyeti kim?'."
+ }
+]

@@ -653,6 +653,35 @@ def main():
     parser.add_argument("--boundary-mode", type=str, default="auto", help="Pāda boundaries for --chandas (auto, lines, dandas, single)")
     parser.add_argument("--tradition", type=str, default="auto", help="Metre tradition for --chandas (auto, classical, vedic)")
     parser.add_argument(
+        "--sandhi",
+        type=str,
+        metavar="WORDS",
+        help=(
+            "Join words by sandhi, citing the sūtra of Pāṇini for every step. "
+            "Words are separated by a space or +; '-' marks a compound "
+            "(deva-indra), '|' a preverb and its dhātu (pra|ejate), '~' two "
+            "pieces of one pada (ne~a). Devanāgarī is accepted. A word may "
+            "carry facts its letters cannot say, in braces: harī{dvivacana} etau."
+        ),
+    )
+    parser.add_argument(
+        "--sandhi-split",
+        type=str,
+        metavar="JOINED",
+        help=(
+            "Split a joined form back into words (sandhi-viccheda). Each "
+            "split is PROVED by deriving the joined form from it with the "
+            "sandhi engine, so it comes with the sūtra-by-sūtra derivation. "
+            "Give --lexicon FILE (one pausal IAST word per line) to keep only "
+            "splits whose words are words; without one every split the "
+            "grammar allows is listed, unvalidated."
+        ),
+    )
+    parser.add_argument("--lexicon", type=str, default=None, help="With --sandhi-split: a word list, one pausal IAST word per line")
+    parser.add_argument("--limit", type=int, default=12, help="With --sandhi-split: how many splits to print")
+    parser.add_argument("--sandhi-json", action="store_true", help="With --sandhi or --sandhi-split: print the result as JSON")
+    parser.add_argument("--veda", action="store_true", help="With --sandhi: also apply the Vedic (chandasi) rules")
+    parser.add_argument(
         "--astadhyayi",
         nargs="?",
         const="summary",
@@ -664,6 +693,54 @@ def main():
         ),
     )
     args = parser.parse_args()
+
+    if args.sandhi_split:
+        import json as _json
+        from src.astadhyayi.sandhi import SandhiInputError
+        from src.astadhyayi.sandhi import split as _split
+
+        lexicon = (_split.Lexicon.from_file(args.lexicon) if args.lexicon
+                   else _split.default_lexicon())
+        print("  (reading the junction index — built once from the grammar, "
+              "about a minute the first time)", file=sys.stderr)
+        try:
+            found = _split.split(args.sandhi_split, lexicon=lexicon)
+        except SandhiInputError as exc:
+            print(f"  cannot read that: {exc}", file=sys.stderr)
+            sys.exit(1)
+        if lexicon is None:
+            print("  (no lexicon: every split the grammar allows, none "
+                  "validated — give --lexicon FILE)", file=sys.stderr)
+        if args.sandhi_json:
+            print(_json.dumps([f.to_dict() for f in found[:args.limit]],
+                              ensure_ascii=False, indent=2))
+        elif not found:
+            print("  no split of that is both derivable and made of known words")
+        else:
+            for item in found[:args.limit]:
+                print(item.trace())
+                print()
+            if len(found) > args.limit:
+                print(f"  … and {len(found) - args.limit} more "
+                      f"(--limit to see them)")
+        return
+
+    if args.sandhi:
+        # Lazy, like --astadhyayi: the engine reads the corpus and the rule
+        # modules, which no other subcommand needs.
+        import json as _json
+        from src.astadhyayi.sandhi import SandhiInputError, sandhi
+
+        try:
+            result = sandhi(args.sandhi, veda=args.veda)
+        except SandhiInputError as exc:
+            print(f"  cannot read that: {exc}", file=sys.stderr)
+            sys.exit(1)
+        if args.sandhi_json:
+            print(_json.dumps(result.to_dict(), ensure_ascii=False, indent=2))
+        else:
+            print(result.trace())
+        return
 
     if args.astadhyayi:
         # Imported here, not at module level: loading the registry reads

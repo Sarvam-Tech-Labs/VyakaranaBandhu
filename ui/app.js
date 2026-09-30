@@ -150,7 +150,7 @@ function initReadingSizeToggle() {
 /* Routing — the header nav switches sections                           */
 /* ==================================================================== */
 
-const ROUTES = ["classifier", "subanta", "reverse", "tinanta", "krdanta", "chandas", "astadhyayi"];
+const ROUTES = ["classifier", "subanta", "reverse", "tinanta", "krdanta", "sandhi", "chandas", "astadhyayi"];
 
 function showRoute(route) {
   const target = ROUTES.includes(route) ? route : ROUTES[0];
@@ -1358,6 +1358,269 @@ function initDerivatives() {
     deriveTaddhita();
   });
 }
+
+/* ==================================================================== */
+/* 5b. Sandhi                                                           */
+/* ==================================================================== */
+
+/** A sūtra, cited: its number as a link into the Aṣṭādhyāyī tab, and its own
+ *  words — taken from the corpus by the engine, never composed here. */
+function sandhiSutra(id, deva, iast) {
+  return `<button type="button" class="sandhi-sutra" data-open-sutra="${esc(id)}"
+      title="Open ${esc(id)} in the Aṣṭādhyāyī browser">${esc(id)}</button>
+    <span class="font-devanagari-serif">${esc(deva)}</span>
+    <span class="timeline__sutra">${esc(iast)}</span>`;
+}
+
+function sandhiForm(deva, iast) {
+  return `<span class="font-devanagari-serif">${esc(deva)}</span>
+    <span class="timeline__sutra">(${esc(iast)})</span>`;
+}
+
+function renderSandhiStep(step) {
+  const kindTone = { "pratiṣedha": "warn", "prakṛtibhāva": "info" }[step.kind] || "primary";
+  const via = (step.via || [])
+    .map(
+      (v) => `<li>${sandhiSutra(v.sutra, v.text_deva, v.text_iast)}
+        <span class="timeline__desc"> — ${esc(v.role)}</span></li>`
+    )
+    .join("");
+  const lost = (step.against || [])
+    .map(
+      (a) => `<li><span class="sandhi-sutra sandhi-sutra--plain">${esc(a.sutra)}</span>
+        <span class="timeline__desc"> did not apply here — ${esc(a.why)}</span></li>`
+    )
+    .join("");
+  const change =
+    step.before === step.after
+      ? sandhiForm(step.before_deva, step.before)
+      : `${sandhiForm(step.before_deva, step.before)}
+         <span class="sandhi-arrow" aria-hidden="true">→</span>
+         ${sandhiForm(step.after_deva, step.after)}`;
+  const replaced = has(step.adesa)
+    ? `${sandhiForm(step.sthanin_deva, step.sthanin)} <span class="sandhi-arrow">→</span> ${sandhiForm(step.adesa_deva, step.adesa)}`
+    : has(step.sthanin)
+      ? `${sandhiForm(step.sthanin_deva, step.sthanin)} ${step.kind === "lopa" ? "is lost" : "is left as it is"}`
+      : "";
+  return `<li class="timeline__step sandhi-step${step.declined ? " sandhi-step--declined" : ""}">
+    <div class="timeline__meta">${sandhiSutra(step.sutra, step.sutra_deva, step.sutra_iast)}
+      ${pill(step.kind, kindTone)}
+      ${step.authority && step.authority !== "sūtra" ? pill(step.authority, "warn") : ""}
+      ${has(step.option) ? pill(step.declined ? "option declined" : "option taken", "info") : ""}
+    </div>
+    <p class="sandhi-step__change">${
+      step.declined
+        ? `optional (${esc(step.option)}) — <strong>not</strong> applied in this course: ${sandhiForm(step.before_deva, step.before)}`
+        : change
+    }</p>
+    ${replaced ? `<p class="timeline__desc"><strong>sthānin → ādeśa</strong> · ${replaced}</p>` : ""}
+    ${has(step.because) ? `<p class="timeline__desc">${esc(step.because)}</p>` : ""}
+    ${via ? `<details class="sandhi-via"><summary>${(step.via || []).length} other sūtra${(step.via || []).length === 1 ? "" : "s"} this step leans on</summary><ul class="sandhi-list">${via}</ul></details>` : ""}
+    ${lost ? `<ul class="sandhi-list sandhi-list--lost">${lost}</ul>` : ""}
+  </li>`;
+}
+
+function renderSandhiOutcome(outcome, index, total) {
+  const taken = (outcome.choices || [])
+    .map((c) => `${c.sutra} ${c.taken ? "taken" : "declined"}`)
+    .join(" · ");
+  return `<div class="card card--pad">
+    <div class="result-head">
+      <div>
+        ${total > 1 ? `<span class="pill pill--info">Derivation ${index + 1} of ${total}</span>` : ""}
+        <h2 class="result-headline font-devanagari-serif mt-2">${esc(outcome.surface_deva)}</h2>
+        <p class="result-headline-latin">${esc(outcome.surface)}</p>
+      </div>
+    </div>
+    ${has(taken) ? `<p class="timeline__desc">Options on this course: ${esc(taken)}</p>` : ""}
+    ${
+      (outcome.assumptions || []).length
+        ? `<div class="banner banner--info" role="note"><strong>Assumed.</strong>
+            <ul class="sandhi-list">${outcome.assumptions.map((a) => `<li>${esc(a)}</li>`).join("")}</ul></div>`
+        : ""
+    }
+    <p class="timeline__desc mt-4">Begins with ${sandhiForm(outcome.text_start_deva || "", outcome.text_start || "")}</p>
+    ${
+      (outcome.steps || []).length
+        ? `<ol class="timeline">${outcome.steps.map(renderSandhiStep).join("")}</ol>`
+        : `<p class="timeline__desc mt-4"><strong>No rule applies</strong> — the words stand as they are.</p>`
+    }
+    ${outcome.stopped && outcome.stopped !== "no rule applies" ? `<div class="banner banner--warn">${esc(outcome.stopped)}</div>` : ""}
+  </div>`;
+}
+
+function renderSandhi(data) {
+  const forms = (data.surfaces || [])
+    .map(
+      (surface, i) =>
+        `<span class="sandhi-form">${esc((data.surfaces_deva || [])[i])}
+          <span class="timeline__sutra">${esc(surface)}</span></span>`
+    )
+    .join("");
+  const total = (data.outcomes || []).length;
+  // Each outcome knows its own start; carry it in so the card can print it.
+  const outcomes = (data.outcomes || []).map((o) =>
+    Object.assign({ text_start: data.input, text_start_deva: data.input_deva }, o)
+  );
+  return `<div class="card card--pad">
+      <p class="def__label">${(data.surfaces || []).length > 1 ? "Forms the grammar allows" : "Result"}</p>
+      <div class="sandhi-forms">${forms}</div>
+      <p class="timeline__desc">from ${sandhiForm(data.input_deva, data.input)}</p>
+    </div>
+    ${outcomes.map((o, i) => renderSandhiOutcome(o, i, total)).join("")}`;
+}
+
+/** Open a cited sūtra in the Aṣṭādhyāyī browser, waiting for it to load. */
+function sandhiOpenSutra(id) {
+  location.hash = "#astadhyayi";
+  let tries = 0;
+  const attempt = () => {
+    if (typeof ashSelect === "function" && ASH && ASH.catalogue && ASH.catalogue.length) {
+      ashSelect(id);
+    } else if (tries++ < 40) {
+      setTimeout(attempt, 150);
+    }
+  };
+  attempt();
+}
+
+function initSandhi() {
+  const form = $("#sandhi-form");
+  if (!form) return;
+  const text = $("#sandhi-text");
+  const output = $("#sandhi-output");
+
+  async function join() {
+    const value = text.value.trim();
+    if (!value) {
+      output.innerHTML = `<div class="banner banner--warn">Give at least one word first.</div>`;
+      return;
+    }
+    const submit = $("#sandhi-submit");
+    await withPending(submit, "Deriving…", async () => {
+      try {
+        const data = await api("/api/sandhi", {
+          text: value,
+          boundary: $("#sandhi-boundary").value,
+          pause: $("#sandhi-pause").checked,
+          veda: $("#sandhi-veda").checked,
+        });
+        if (data.error) {
+          output.innerHTML = `<div class="empty-state">
+            That could not be read.
+            <p class="empty-state__hint">${esc(data.error)}</p>
+          </div>`;
+          return;
+        }
+        output.innerHTML = renderSandhi(data);
+        const n = (data.surfaces || []).length;
+        announce(`${value} joins to ${data.surfaces.join(" or ")} — ${n} ${n === 1 ? "form" : "forms"}.`);
+      } catch (error) {
+        output.innerHTML = errorBanner(error.message);
+      }
+    });
+  }
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    join();
+  });
+
+  $("#sandhi-examples").addEventListener("click", (event) => {
+    const button = event.target.closest("[data-text]");
+    if (!button) return;
+    text.value = button.dataset.text;
+    join();
+  });
+
+  output.addEventListener("click", (event) => {
+    const link = event.target.closest("[data-open-sutra]");
+    if (link) sandhiOpenSutra(link.dataset.openSutra);
+  });
+}
+
+function renderSandhiSplit(data) {
+  if (!has(data.splits)) {
+    return `<div class="empty-state">
+      No split of <strong>${esc(data.input)}</strong> is both derivable and made of known words.
+      <p class="empty-state__hint">${esc(data.note || "Try turning off “only splits where a sandhi happened”, or check the spelling.")}</p>
+    </div>`;
+  }
+  const note = data.note ? `<div class="banner banner--info" role="note">${esc(data.note)}</div>` : "";
+  const cards = data.splits
+    .map((item) => {
+      const words = item.words.map((w, i) => `<span class="font-devanagari-serif">${esc((item.words_deva || [])[i] || w)}</span> <span class="timeline__sutra">${esc(w)}</span>`).join(' <span class="sandhi-arrow">+</span> ');
+      const derivation = Object.assign({ text_start: item.underlying.join(" "), text_start_deva: "" }, item.derivation);
+      const alts = (item.alternatives || [])
+        .map(
+          (alt) => `<details class="sandhi-via"><summary>or, from ${esc(alt.underlying.join(" + "))}</summary>
+            ${renderSandhiOutcome(Object.assign({ text_start: alt.underlying.join(" "), text_start_deva: "" }, alt.derivation), 0, 1)}</details>`
+        )
+        .join("");
+      return `<div class="card card--pad">
+        <div class="result-head"><div>
+          ${pill(item.validated ? "words known" : "unvalidated", item.validated ? "success" : "warn")}
+          ${item.changed ? "" : pill("nothing changed at the junction")}
+          <h3 class="result-headline font-devanagari-serif mt-2">${words}</h3>
+          ${item.underlying.join("") !== item.words.join("") ? `<p class="timeline__desc">derived from the underlying forms ${esc(item.underlying.join(" + "))}</p>` : ""}
+        </div></div>
+        ${renderSandhiOutcome(derivation, 0, 1)}
+        ${alts}
+      </div>`;
+    })
+    .join("");
+  const more = data.total > data.splits.length ? `<p class="timeline__desc">Showing ${data.splits.length} of ${data.total}.</p>` : "";
+  return `${note}${cards}${more}`;
+}
+
+function initSandhiSplit() {
+  const form = $("#sandhi-split-form");
+  if (!form) return;
+  const text = $("#sandhi-split-text");
+  const output = $("#sandhi-split-output");
+
+  async function run() {
+    const value = text.value.trim();
+    if (!value) {
+      output.innerHTML = `<div class="banner banner--warn">Give a joined form first.</div>`;
+      return;
+    }
+    await withPending($("#sandhi-split-submit"), "Splitting…", async () => {
+      try {
+        const data = await api("/api/sandhi/split", {
+          text: value,
+          require_change: $("#sandhi-split-changed").checked,
+          limit: 12,
+        });
+        if (data.error) {
+          output.innerHTML = `<div class="empty-state">That could not be read.
+            <p class="empty-state__hint">${esc(data.error)}</p></div>`;
+          return;
+        }
+        output.innerHTML = renderSandhiSplit(data);
+        announce(`${value} — ${data.total} possible ${data.total === 1 ? "split" : "splits"}.`);
+      } catch (error) {
+        output.innerHTML = errorBanner(error.message);
+      }
+    });
+  }
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    run();
+  });
+  $("#sandhi-split-examples").addEventListener("click", (event) => {
+    const button = event.target.closest("[data-text]");
+    if (!button) return;
+    text.value = button.dataset.text;
+    run();
+  });
+  output.addEventListener("click", (event) => {
+    const link = event.target.closest("[data-open-sutra]");
+    if (link) sandhiOpenSutra(link.dataset.openSutra);
+  });
+}
+
 
 /* ==================================================================== */
 /* 6. Chandas — syllable weights and metre                              */
@@ -2760,6 +3023,8 @@ document.addEventListener("DOMContentLoaded", () => {
   initReverse();
   initTinanta();
   initDerivatives();
+  initSandhi();
+  initSandhiSplit();
   initChandas();
   initAstadhyayi();
 });

@@ -40,7 +40,22 @@ Trace an inflected word backward to its root with full sūtra derivation steps:
 python -m src.astadhyayi.vyutpatti jayati
 ```
 
-### 3. CLI Sūtra Explorer
+### 3. Sandhi — every junction derived, every step cited
+
+Join words and see, step by step, which sūtra of Pāṇini does what:
+```bash
+python cli.py --sandhi "iti ādi"          # → ityādi   (6.1.77 iko yaṇaci)
+python cli.py --sandhi "rāmaḥ ca"         # → rāmaśca  (8.2.66, 8.3.15, 8.3.34, 8.4.40)
+python cli.py --sandhi "deva-indra"       # a compound;  "pra|ejate" a preverb;  "ne~a" stem|affix
+python cli.py --sandhi "इति आदि" --sandhi-json
+```
+Each step quotes the sūtra's own words from the corpus, says what was replaced by
+what and why, lists the other sūtras it leans on, and names the rules it displaced
+(1.4.2, 8.2.1). Where the grammar allows more than one result, every one is
+derived. The same engine is the **Sandhi** tab of the web app and `/api/sandhi`.
+How it works, and how to write a rule: [`src/astadhyayi/sandhi/README.md`](src/astadhyayi/sandhi/README.md).
+
+### 4. CLI Sūtra Explorer
 
 Inspect the codification status or examine a single sūtra:
 ```bash
@@ -54,13 +69,14 @@ python cli.py --astadhyayi 1.1.9
 python cli.py --astadhyayi open
 ```
 
-### 4. Web Browser Interface
+### 5. Web Browser Interface
 
 Launch the interactive local web app:
 ```bash
 python server.py
 ```
 Then navigate to:
+- **Sandhi**: [http://localhost:8000/#sandhi](http://localhost:8000/#sandhi)
 - **Aṣṭādhyāyī browser**: [http://localhost:8000/#astadhyayi](http://localhost:8000/#astadhyayi)
 - **Classifier & Analysis**: [http://localhost:8000](http://localhost:8000)
 
@@ -74,6 +90,7 @@ Then navigate to:
 ├── server.py              # Local HTTP application server
 ├── src/
 │   ├── astadhyayi/        # Core Pāṇinian rules, prakriyā, and vyutpatti engine
+│   │   └── sandhi/        # The sandhi engine: junctions derived sūtra by sūtra
 │   ├── chandas/           # Metric and phonemic scanning tools
 │   ├── subanta_engine.py  # Nominal declension generator & analyzer
 │   └── tinanta_engine.py  # Verbal conjugation engine

@@ -1,0 +1,1379 @@
+[
+ {
+  "id": "1.1.9",
+  "text_iast": "tulyāsyaprayatnaṃ savarṇam",
+  "family": "ac_yan_ayadi",
+  "tier": "support",
+  "kind": "samjna",
+  "effect": "Two sounds with the same place of articulation (sthāna) and the same internal effort (ābhyantara-prayatna) are savarṇa (homogeneous) to each other.",
+  "sthanin": "-",
+  "adesa": "samjña savarṇa",
+  "nimitta": "tulyāsyaprayatna: equal āsya (= sthāna) and prayatna",
+  "conditions": [
+   "'तुल्य आस्ये प्रयत्नो यस्य वर्णस्य येन वर्णेन सह, स समानजातीयं प्रति सवर्णसंज्ञो भवति'.",
+   "Both parts are needed: 'आस्यग्रहणं किम्? कचटतपानां भिन्नस्थानानां तुल्यप्रयत्नानां मा भूत्' and 'प्रयत्नग्रहणं किम् ? इचुयशानां तुल्यस्थानानां भिन्नजातीयानां मा भूत्'.",
+   "Short, long, pluta, nasal and accent varieties of a vowel are all savarṇa: 'ह्रस्वदीर्घप्लुतभेदादष्टादशधा'.",
+   "Vārttika: ṛ and ḷ are savarṇa (Kāśikā 'ऋकारऌकारयोः सवर्णसंज्ञा वक्तव्या')."
+  ],
+  "exceptions_and_blockers": [
+   {
+    "id": "1.1.10",
+    "note": "nājjhalau: an ac and a hal are never savarṇa."
+   }
+  ],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "Definition (saṃjñā); used by 6.1.101 (akaḥ savarṇe dīrghaḥ), 8.4.65 and by 1.1.69 aṇudit.",
+  "varttikas": [
+   {
+    "text": "ऋऌवर्णयोर्मिथः सावर्ण्यं वाच्यम् ।",
+    "source": "corpus.varttikas_on('1.1.9'); Laghu text '(ṛḷvarṇayormithaḥ sāvarṇyaṃ vācyam)'"
+   }
+  ],
+  "optional": null,
+  "vedic_only": false,
+  "laghu_ref": "vlk_10",
+  "notes": "GRETIL TAG ERROR: vlk_10 'tulyāsyaprayatnaṃ savarṇam' is tagged p_1,1.8; the real sūtra is 1.1.9 (1.1.8 is mukhanāsikāvacano 'nunāsikaḥ, which the same file tags vlk_9 = p_1,2.8 - the tags run one step off here).",
+  "examples": [
+   "ac_yan_ayadi-178",
+   "ac_yan_ayadi-179",
+   "ac_yan_ayadi-180",
+   "ac_yan_ayadi-181",
+   "ac_yan_ayadi-182",
+   "ac_yan_ayadi-183"
+  ]
+ },
+ {
+  "id": "1.1.10",
+  "text_iast": "nājjhalau",
+  "family": "ac_yan_ayadi",
+  "tier": "support",
+  "kind": "nisedha",
+  "effect": "An ac (vowel) and a hal (consonant) are never savarṇa to each other, even when place and effort match (a/h, i/ś).",
+  "sthanin": "-",
+  "adesa": "negation of the savarṇa-samjñā",
+  "nimitta": "one member is an ac, the other a hal",
+  "conditions": [
+   "'तुल्यास्यप्रयत्नावपि अज्झलौ परस्परं सवर्णसंज्ञौ न भवतः। अवर्णहकारौ — दण्डहस्तः। इवर्णशकारौ — दधिशीतम्, सवर्णदीर्घत्वं न भवति'.",
+   "SK: without it 'हकारादीनामपि ग्रहणकशास्त्रबलादच्त्वं स्यात्': 'अन्यथा दीर्घादीनामिव हकारादीनामपि ग्रहणकशास्त्रबलादच्त्वं स्यात्'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "1.1.9",
+    "note": "niṣedha of the saṃjñā."
+   }
+  ],
+  "overridden_by": [],
+  "ordering_notes": "Applies to the outcome of 1.1.9; without it 6.1.77 could apply before h/ś/ṣ/s (SK on 1.1.10).",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "laghu_ref": null,
+  "notes": "Not in the Laghu text (Varadarāja's savarṇa passage jumps from tulyāsya to aṇudit). SK reads 'aj' here as 'āc' so that ā and h are not savarṇa either: 'आकारसहितोऽच् आच् स च हल् चेत्येतौ मिथः सवर्णौ न स्तः'.",
+  "examples": [
+   "ac_yan_ayadi-184",
+   "ac_yan_ayadi-185",
+   "ac_yan_ayadi-186",
+   "ac_yan_ayadi-187"
+  ]
+ },
+ {
+  "id": "1.1.50",
+  "text_iast": "sthāne’ntaratamaḥ",
+  "family": "ac_yan_ayadi",
+  "tier": "support",
+  "kind": "paribhasa",
+  "effect": "Where a sthānin has several possible substitutes, the one closest (antaratama) in sthāna, artha, guṇa or pramāṇa is chosen; sthāna wins in a conflict.",
+  "sthanin": "any sthānin with several possible ādeśas",
+  "adesa": "the nearest one",
+  "nimitta": "prasaṅga (several ādeśas are prāpta)",
+  "conditions": [
+   "'स्थाने प्राप्यमाणानामन्तरतम आदेशो भवति सदृशतमः। कुतश्च शब्दस्यान्तर्यम्? स्थानार्थगुणप्रमाणतः'.",
+   "Priority: 'यत्रानेकमान्तर्यं संभवति तत्र स्थानत एवान्तर्यं बलीयो यथा स्यात्। चेता। स्तोता'.",
+   "tamap: 'तमब्ग्रहणं किम्? वाग्घसति। त्रिष्टुब्भसति'.",
+   "Laghu: 'prasaṅge sati sadṛśatama ādeśaḥ syāt'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "Operates inside the operation of the ādeśa rules (6.1.77: which of y v r l for i u ṛ ḷ; 8.4.53/54: which jaś/car). Bālamanoramā on 6.1.78: 'यथासंख्यसूत्रभाष्यरीत्या त्वन्तरतमपरिभाषयैवात्र व्यवस्था ज्ञेया'.",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "laghu_ref": "vlk_17",
+  "notes": "The four āntarya kinds - sthāna (dadhyatra), artha (Kāśikā vātaṇḍyayuvatiḥ; Bālamanoramā kroṣṭu -> kroṣṭṛ), guṇa (pākaḥ, vāgghariḥ), pramāṇa (amuṣmai, amūbhyām). Kāśikā's list: 'स्थानतः — ... दण्डाग्रम्। यूपाग्रम्'; 'गुणतः — पाकः। त्यागः। रागः'; 'प्रमाणतः — अमुष्मै। अमूभ्याम्'.",
+  "examples": [
+   "ac_yan_ayadi-001",
+   "ac_yan_ayadi-005",
+   "ac_yan_ayadi-088",
+   "ac_yan_ayadi-089",
+   "ac_yan_ayadi-178",
+   "ac_yan_ayadi-188",
+   "ac_yan_ayadi-189",
+   "ac_yan_ayadi-190",
+   "ac_yan_ayadi-191",
+   "ac_yan_ayadi-192",
+   "ac_yan_ayadi-193",
+   "ac_yan_ayadi-194"
+  ]
+ },
+ {
+  "id": "1.1.51",
+  "text_iast": "uraṇ raparaḥ",
+  "family": "ac_yan_ayadi",
+  "tier": "support",
+  "kind": "paribhasa",
+  "effect": "A substitute a/i/u that replaces ṛ (or ḷ) is followed by r (l): guṇa/vṛddhi/other aṇ-substitutes of ṛ come out as ar, ir, ur (al for ḷ).",
+  "sthanin": "ṛ (ṝ, ḷ) with an aṇ substitute",
+  "adesa": "the aṇ + r / l (raparaḥ, laparaḥ)",
+  "nimitta": "ṛ/ḷ stands as sthānin and an aṇ is prāpta",
+  "conditions": [
+   "'उः स्थानेऽण् प्रसज्यमान एव रपरो वेदितव्यः। कर्ता। हर्ता। किरति। गिरति'.",
+   "'उरिति किम्? खेयम्। गेयम्'; 'अण्ग्रहणं किम्? सुधातुरकङ् च — सौधातकिः'.",
+   "Laghu: 'tatsthāne yo 'ṇ sa raparaḥ sanneva pravartate / kṛṣṇarddhiḥ / tavalkāraḥ'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "Combined with 6.1.87 for kṛṣṇa + ṛddhiḥ; SK adds that the dh after the resulting r may then be doubled by 8.4.46 (pakṣe dvitvam).",
+  "varttikas": [
+   {
+    "text": "लपर इति वक्तव्यम् ।",
+    "source": "corpus.varttikas_on('1.1.51')"
+   }
+  ],
+  "optional": null,
+  "vedic_only": false,
+  "laghu_ref": "vlk_29",
+  "notes": "Not a junction rule proper: it tells what the guṇa a of ṛ looks like (ar). It is in scope because the Laghu teaches it inside the ac-sandhi chapter (line 108).",
+  "examples": [
+   "ac_yan_ayadi-195",
+   "ac_yan_ayadi-196",
+   "ac_yan_ayadi-197",
+   "ac_yan_ayadi-198",
+   "ac_yan_ayadi-199",
+   "ac_yan_ayadi-200"
+  ]
+ },
+ {
+  "id": "1.1.52",
+  "text_iast": "alo’ntyasya",
+  "family": "ac_yan_ayadi",
+  "tier": "support",
+  "kind": "paribhasa",
+  "effect": "A substitute taught with a genitive (ṣaṣṭhī) replaces only the LAST sound of the sthānin.",
+  "sthanin": "the sthānin named in the genitive",
+  "adesa": "only its final letter (antya al)",
+  "nimitta": "ṣaṣṭhī-nirdiṣṭa sthānin",
+  "conditions": [
+   "'षष्ठीनिर्दिष्टस्य य उच्यत आदेशः, सोऽन्त्यस्यालः स्थाने वेदितव्यः। इद् गोण्याः [[१.२.५०]] — पञ्चगोणिः। दशगोणिः'.",
+   "Bālamanoramā: 'आदेश इति किम् , 'आर्धधातुकस्येट्' तृच ऋकारात् पूर्वो मा भूत्'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "Used by 8.2.23 (only the last sound of a saṃyogānta pada goes): Laghu text vlk_20-21 'saṃyogāntaṃ yatpadaṃ tadantasya lopaḥ syāt ... ṣaṣṭhīnirdiṣṭā'ntyasyāla ādeśaḥ syāt / iti yalope prāpte'.",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "laghu_ref": "vlk_21",
+  "notes": "In the Laghu it is invoked to explain WHICH sound 8.2.23 would delete in suddhy upāsya (the final y) - and therefore what the vārttika 'yaṇaḥ pratiṣedho' blocks.",
+  "examples": [
+   "ac_yan_ayadi-088",
+   "ac_yan_ayadi-201",
+   "ac_yan_ayadi-202"
+  ]
+ },
+ {
+  "id": "1.1.66",
+  "text_iast": "tasminniti nirdiṣṭe pūrvasya",
+  "family": "ac_yan_ayadi",
+  "tier": "support",
+  "kind": "paribhasa",
+  "effect": "A rule stated with a locative (saptamī) affects only the sound IMMEDIATELY BEFORE the named element, not the one after it.",
+  "sthanin": "the sound before the saptamī-nirdiṣṭa element",
+  "adesa": "-",
+  "nimitta": "saptamīnirdeśa (e.g. aci in 6.1.77) with adjacency",
+  "conditions": [
+   "'तस्मिन्निति सप्तम्यर्थनिर्देशे पूर्वस्यैव कार्यं भवति, नोत्तरस्य। ... दध्युदकम्। मध्विदम्। पचत्योदनम्'.",
+   "'निर्दिष्टग्रहणमानन्तर्यार्थम्। अग्निचिदत्रेति व्यवहितस्य मा भूत्'.",
+   "Adjacency means adjacent in LETTERS, not in time: Bālamanoramā 'व्यवधानं चात्र वर्णकृतमेव निषिध्यते, नतु कालकृतम्'; Tattvabodhinī: 'संहिताधिकाराज्ज्ञापकात्' (the saṃhitā adhikāra guards the time condition)."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "Cited by Varadarāja in the sudhī upāsya derivation right after 6.1.77 (Laghu vlk_16).",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "laghu_ref": "vlk_16",
+  "notes": "Bālamanoramā: on the Bhāṣya view the word nirdiṣṭa and the saṃhitā adhikāra are both redundant ('वस्तुतस्तु भाष्यानुसारेणाऽत्र सूत्रे निर्दिष्टग्रहणं संहिताधिकारसूत्रं च विफलमेवेति').",
+  "examples": [
+   "ac_yan_ayadi-001",
+   "ac_yan_ayadi-013",
+   "ac_yan_ayadi-014",
+   "ac_yan_ayadi-015",
+   "ac_yan_ayadi-016",
+   "ac_yan_ayadi-088"
+  ]
+ },
+ {
+  "id": "1.1.67",
+  "text_iast": "tasmādityuttarasya",
+  "family": "ac_yan_ayadi",
+  "tier": "support",
+  "kind": "paribhasa",
+  "effect": "A rule stated with an ablative (pañcamī) affects only the sound IMMEDIATELY AFTER the named element.",
+  "sthanin": "the sound after the pañcamī-nirdiṣṭa element",
+  "adesa": "-",
+  "nimitta": "pañcamī-nirdeśa with adjacency",
+  "conditions": [
+   "'निर्दिष्टग्रहणमनुवर्तते। तस्मादिति पञ्चम्यर्थनिर्देश उत्तरस्यैव कार्यं भवति, न पूर्वस्य'.",
+   "'अव्यवहिते किम्, उत्प्रस्थानम् । उदःस्थास्तम्भोरिति पूर्वसवर्णो न भवति' (Bālamanoramā)."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "The counterpart of 1.1.66; Varadarāja lists it in the hal-sandhi chapter (vlk_71).",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "laghu_ref": "vlk_71",
+  "notes": "Included as the mirror of 1.1.66 (8.4.61 udaḥ sthāstambhoḥ pūrvasya is the standard user).",
+  "examples": [
+   "ac_yan_ayadi-017"
+  ]
+ },
+ {
+  "id": "1.1.69",
+  "text_iast": "aṇudit savarṇasya cāpratyayaḥ",
+  "family": "ac_yan_ayadi",
+  "tier": "support",
+  "kind": "samjna",
+  "effect": "A non-suffix aṇ letter (here aṇ is read up to the ṇ of laṇ: a i u ṛ ḷ e o ai au ha ya va ra la) and a letter with a following udit anubandha (ku cu ṭu tu pu) denote all their savarṇas and themselves.",
+  "sthanin": "-",
+  "adesa": "samjña for savarṇas",
+  "nimitta": "aṇ (read with the following ṇ of the Māheśvarasūtra) or an udit; not a pratyaya",
+  "conditions": [
+   "'परेण णकारेण प्रत्याहारग्रहणम्। अण् गृह्यमाण उदिच्च सवर्णानां ग्राहको भवति, स्वस्य च रूपस्य, प्रत्ययं वर्जयित्वा'.",
+   "'स्वरानुनासिक्यकालभिन्नस्य ग्रहणं भवति'; 'अप्रत्यय इति किम्? सनाशंसभिक्ष उः'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [
+   {
+    "id": "1.1.70",
+    "note": "tapara aṇ is limited to the same-time savarṇas."
+   }
+  ],
+  "ordering_notes": "Presupposes 1.1.9/1.1.10 (savarṇa); Laghu vlk_11.",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "laghu_ref": "vlk_11",
+  "notes": "Laghu: 'ananunāsikā yavalā dvayor dvayoḥ saṃjñā' (the non-nasal y/v/l stand for two varieties each). In the engine this is the machinery behind 'ik' meaning ī, ū, ṝ ... in 6.1.77.",
+  "examples": []
+ },
+ {
+  "id": "1.1.70",
+  "text_iast": "taparastatkālasya",
+  "family": "ac_yan_ayadi",
+  "tier": "support",
+  "kind": "niyama",
+  "effect": "An aṇ with t before or after it (a-t, t-a ...) denotes only its savarṇas of the SAME duration as itself.",
+  "sthanin": "-",
+  "adesa": "restriction of 1.1.69's grahaṇa",
+  "nimitta": "the letter is tapara (t before/after)",
+  "conditions": [
+   "'तपरो वर्णस्तत्कालस्यात्मना तुल्यकालस्य गुणान्तरयुक्तस्य सवर्णस्य ग्राहको भवति, स्वस्य च रूपस्य। विध्यर्थमिदम्'.",
+   "'अतो भिस ऐस्' — 'वृक्षैः। प्लक्षैः'; 'तत्कालस्येति किम्? खट्वाभिः। मालाभिः'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "1.1.69",
+    "note": "restricts the grahaṇa to equal duration."
+   }
+  ],
+  "overridden_by": [],
+  "ordering_notes": "Laghu vlk_26 introduces it for 6.1.87 ādguṇaḥ (upendraḥ, gaṅgodakam).",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "laghu_ref": "vlk_26",
+  "notes": "Kāśikā calls the sūtra vidhy-artha (it creates the tapara-grahaṇa), the Bālamanoramā calls it niyamārtha ('siddhe satyārambho niyamārthaḥ'): 'सिद्धे सत्यारम्भो नियमार्थः'.",
+  "examples": [
+   "ac_yan_ayadi-203",
+   "ac_yan_ayadi-204",
+   "ac_yan_ayadi-205",
+   "ac_yan_ayadi-206"
+  ]
+ },
+ {
+  "id": "1.3.10",
+  "text_iast": "yathāsaṃkhyamanudeśaḥ samānām",
+  "family": "ac_yan_ayadi",
+  "tier": "support",
+  "kind": "paribhasa",
+  "effect": "Where the sthānins/ādeśas of a rule and the items they are stated for are equal in number, they are matched one to one in order (yathāsaṃkhya).",
+  "sthanin": "-",
+  "adesa": "in order",
+  "nimitta": "equal-numbered lists (samānām)",
+  "conditions": [
+   "'यथासंख्यं यथाक्रममनुदेशो भवति ... समानां समसंख्यानां समं परिपठितानाम्'.",
+   "Laghu: 'samasaṃbandhī vidhiryathāsaṃkhyaṃ syāt / haraye / viṣṇave / nāyakaḥ / pāvakaḥ'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "Cited for 6.1.78 (e->ay, o->av, ai->āy, au->āv) and 8.4.64 (y before y, m before m).",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "laghu_ref": "vlk_23",
+  "notes": "Bālamanoramā (6.1.77/6.1.78): the Bhāṣya shows 1.1.50 can do the same job for iko yaṇaci and eco 'yavāyāvaḥ (jātipakṣa), so 1.3.10 is not strictly needed there. SK's own 1.3.10 examples are the m-before-h-plus-y/v/l cases kiy̐hyaḥ / kiv̐hvalayati / kil̐hlādayati (operative rule: the vārttika 'यवलपरे यवला वेति वक्तव्यम्' attached to he mapare vā, 8.3.26 - see corpus.varttikas_on('8.3.26')).",
+  "examples": [
+   "ac_yan_ayadi-025",
+   "ac_yan_ayadi-026",
+   "ac_yan_ayadi-027",
+   "ac_yan_ayadi-028",
+   "ac_yan_ayadi-153",
+   "ac_yan_ayadi-207",
+   "ac_yan_ayadi-208",
+   "ac_yan_ayadi-209"
+  ]
+ },
+ {
+  "id": "6.1.77",
+  "text_iast": "iko yaṇaci",
+  "family": "ac_yan_ayadi",
+  "tier": "core",
+  "kind": "vidhi",
+  "effect": "An ik vowel (i, u, ṛ, ḷ, short or long) is replaced by the matching semivowel (y, v, r, l) when a vowel follows it in saṃhitā: dadhi + atra -> dadhyatra.",
+  "sthanin": "ik = i ī u ū ṛ ṝ ḷ (all 66 varieties, Tattvabodhinī: 'इक्शब्देन षट्षष्टिर्गृह्यन्ते')",
+  "adesa": "yaṇ = y v r l (nirananunāsika); the pairing i/ī->y, u/ū->v, ṛ/ṝ->r, ḷ->l is fixed by 1.1.50 (Bālamanoramā: 'तालुस्थानकत्वसाम्यादीकारस्य स्थाने स्थानेऽन्तरतम इति यकार एव भवति')",
+  "nimitta": "a vowel (ac) immediately after the ik, in saṃhitā (adhikāra 6.1.72); the vowel must not be savarṇa to the ik",
+  "conditions": [
+   "aci: a vowel must follow (Kāśikā 'अचि परत इको यणादेशो भवति'; Nyāsa's counter-example 'अचीति किम्? दधि करोति').",
+   "ik: the sthānin must be an ik vowel, not a consonant (Nyāsa 'इक इति किम्? वागत्रेत्यत्र कुत्वादेव सिद्धत्वाद्यणादेशो मा भूदिति'); Mahābhāṣya adds 'इग्ग्रहणं किमर्थम् ? इह मा भूत् - अग्निचिदत्र, सोमसुदत्र'.",
+   "saṃhitā (6.1.72 adhikāra): no break longer than half a mora between the two sounds (Bālamanoramā 'ततश्चार्धमात्राधिककालव्यवधानाऽभावो लभ्यते'). The Bālamanoramā quotes the Mahābhāṣya on 6.1.72, which calls the adhikāra dispensable ('अयं योगः शक्योऽवक्तुम्').",
+   "adjacency and side (1.1.66): only the ik immediately before the vowel is replaced, never the vowel that follows (Kāśikā on 1.1.66 'दध्युदकम्। मध्विदम्। पचत्योदनम्').",
+   "The following vowel must be asavarṇa to the ik (Nyāsa: 'असवर्णेऽचि यणादेशो विज्ञायत इति'; Vasu: the sūtra is too wide and is cut down by 6.1.101); ṛ and ḷ count as mutually savarṇa by the vārttika on 1.1.9, so ṛ + ḷ gives long ṝ (Kāśikā on 1.1.9 'ऋकारऌकारयोः सवर्णसंज्ञा वक्तव्या').",
+   "The vowel following must be a real vowel: h is not savarṇa to a although the place and effort agree (1.1.10; SK on 1.1.10 'दधीत्यस्य हरति शीतलं षष्ठं सान्द्रमित्येतेषु परेषु यणादिकं न').",
+   "The adhikāra 'aci' continues to 6.1.108 (Kāśikā 'अचीति चायमधिकारः संप्रसारणाच्च इति यावत्')."
+  ],
+  "exceptions_and_blockers": [
+   {
+    "id": "6.1.101",
+    "note": "Savarṇa vowel follows: akaḥ savarṇe dīrghaḥ takes the place (Padamañjarī: 'दधीन्द्रादौ सवर्ण दीर्घत्वम्'). 6.1.77 therefore only meets asavarṇa vowels."
+   },
+   {
+    "id": "6.1.125",
+    "note": "Pluta and pragṛhya vowels stay unchanged before a vowel (Laghu text vlk_50: 'ete 'ci prakṛtyā syuḥ'). Pragṛhya ī/ū/e-duals are the standard case: 'harī etau / viṣṇū imau / gaṅge amū' (Laghu text, on 1.1.11)."
+   },
+   {
+    "id": "1.1.11",
+    "note": "Dual ī/ū/e endings are pragṛhya, so dual harī + etau gives no yaṇ (Laghu text vlk_51)."
+   },
+   {
+    "id": "6.1.127",
+    "note": "Śākalya's optional alternative for a PADA-FINAL ik before an asavarṇa vowel (short vowel with prakṛtibhāva): Laghu text vlk_59 'padāntā iko hrasvā vā syurasavarṇe 'ci / hrasvavidhisāmarthyānna svarasandhiḥ / cakri atra, cakraytra'. Handled in the prakṛtibhāva family; so dadhi atra has the extra option 'dadhi atra'."
+   },
+   {
+    "id": "1.1.10",
+    "note": "hakāra etc. are not savarṇa to vowels, so a following h does not count as an ac and no yaṇ takes place (SK on 1.1.10)."
+   }
+  ],
+  "overrides": [
+   {
+    "id": "6.1.101",
+    "note": "Only by the vārttika 'yaṇādeśaḥ plutapūrvasya ca': an ik that FOLLOWS a pluta vowel takes yaṇ although savarṇa-dīrgha would apply (Kāśikā 'इकः प्लुतपूर्वस्य सवर्णदीर्घबाधनार्थं यणादेशो वक्तव्यः': bho3 i indram -> bho3 yindram)."
+   },
+   {
+    "id": "6.1.125",
+    "note": "By the same vārttika the prakṛtibhāva of the pragṛhya particle i after a pluta is displaced by yaṇ (Padamañjarī: 'तस्य प्रकृतिभावे प्राप्ते यण्विधीयते')."
+   }
+  ],
+  "overridden_by": [
+   {
+    "id": "6.1.101",
+    "note": "for a savarṇa following vowel (dadhi + iha -> dadhīha); apavāda in sense of niyata-viṣaya, Vasu: 'restricted by 6.1.101'."
+   },
+   {
+    "id": "6.1.125",
+    "note": "prakṛtibhāva of pluta/pragṛhya vowels (harī etau)."
+   }
+  ],
+  "ordering_notes": "Sapādasaptādhyāyī rule, therefore siddha for every tripādī rule (8.2.1; Laghu vlk_31 'sapādasaptādhyāyīṃ prati tripādyasiddhā'). Its output is the INPUT of the tripādī rules 8.4.47 (doubling of the consonant before the new y/v: dadhy atra -> dadhdhy atra), 8.4.46 (doubling after r) and 8.4.53 (dhdh -> ddh). Conversely 8.2.23 saṃyogāntasya lopaḥ and 8.2.29 do NOT see the new final y/v as a saṃyoga-end because yaṇ is bahiraṅga (depends on two words) and therefore asiddha for those antaraṅga rules (Kāśikā on 8.2.23 'दध्यत्र, मध्वत्रेत्यत्र तु यणादेशस्य बहिरङ्गलक्षणस्यासिद्धत्वात् संयोगान्तलोपो न भवति'; Nyāsa 'बहिरङ्गत्वं तु यणादेशस्य द्विपदाश्रयत्वात्'). The vārttika 'yaṇaḥ pratiṣedho vācyaḥ' (Laghu vlk_21) is the vācanika way of the same result.",
+  "varttikas": [
+   {
+    "text": "यणादेशः प्लुतपूर्वस्य च",
+    "source": "bhashya on 6.1.77 (vārttika 1: 'यणादेशः प्लुतपूर्वस्य चेति वक्तव्यम्')"
+   },
+   {
+    "text": "इकः प्लुतपूर्वस्य सवर्णदीर्घबाधनार्थं यणादेशो वक्तव्यः",
+    "source": "kashika on 6.1.77"
+   }
+  ],
+  "optional": null,
+  "vedic_only": false,
+  "laghu_ref": "vlk_15",
+  "notes": "(1) The pairing y/v/r/l can be had from 1.1.50 or from 1.3.10 yathāsaṃkhya (the Mahābhāṣya on 1.3.10, as reported in the Bālamanoramā on 6.1.77, says 'sthāne 'ntaratamenāpyetat siddham'). For ḷ + ā the substitute is l (not v): Bālamanoramā on 8.2.23 argues that both l and v are prāpta and the l-vidhi wins by paraviprati-ṣedha/apavāda. (2) 'ik' names 66 varieties and 'yaṇ' four (Tattvabodhinī: bhāvyamāna aṇ does not take savarṇas), so the pratyāhāra works by lakṣaṇā on its vācya-vācya. (3) pada-final ik + asavarṇa vowel has a second, optional analysis by Śākalya (6.1.127); a full engine has to offer both. (4) The GRETIL Laghu text tags this sūtra correctly (vlk_15). (5) Kāśikā on 1.1.66 uses 6.1.77 for dadhyudakam, madhvidam, pacatyodanam.",
+  "examples": [
+   "ac_yan_ayadi-001",
+   "ac_yan_ayadi-002",
+   "ac_yan_ayadi-003",
+   "ac_yan_ayadi-004",
+   "ac_yan_ayadi-005",
+   "ac_yan_ayadi-006",
+   "ac_yan_ayadi-007",
+   "ac_yan_ayadi-008",
+   "ac_yan_ayadi-009",
+   "ac_yan_ayadi-010",
+   "ac_yan_ayadi-011",
+   "ac_yan_ayadi-012",
+   "ac_yan_ayadi-013",
+   "ac_yan_ayadi-014",
+   "ac_yan_ayadi-015",
+   "ac_yan_ayadi-016",
+   "ac_yan_ayadi-070",
+   "ac_yan_ayadi-071",
+   "ac_yan_ayadi-072",
+   "ac_yan_ayadi-073",
+   "ac_yan_ayadi-088",
+   "ac_yan_ayadi-089",
+   "ac_yan_ayadi-090",
+   "ac_yan_ayadi-168",
+   "ac_yan_ayadi-169"
+  ]
+ },
+ {
+  "id": "6.1.78",
+  "text_iast": "eco’yavāyāvaḥ",
+  "family": "ac_yan_ayadi",
+  "tier": "core",
+  "kind": "vidhi",
+  "effect": "e, o, ai, au are replaced by ay, av, āy, āv respectively when a vowel follows in saṃhitā: hare + e -> haraye, viṣṇo + e -> viṣṇave.",
+  "sthanin": "ec = e o ai au",
+  "adesa": "ay av āy āv (in this order)",
+  "nimitta": "a following vowel (ac; anuvṛtti from 6.1.77), saṃhitā",
+  "conditions": [
+   "'एचः स्थानेऽचि परतोऽय् अव् आय् आव् इत्येत आदेशा यथासंख्यं भवन्ति' (Kāśikā).",
+   "The word aci comes by anuvṛtti from 6.1.77 (Bālamanoramā 'इको यणचीत्यतोऽचीत्यनुवर्तते'); saṃhitāyām from 6.1.72.",
+   "Correspondence e->ay, o->av, ai->āy, au->āv: by 1.3.10 (Bālamanoramā 'यथासंख्यपरिभाषया एकारस्य अय्, ओकारस्य-अव्, ऐकारस्य-आय्, औकारस्य-आविति लभ्यते') or by 1.1.50 (same passage: 'यथासंख्यसूत्रभाष्यरीत्या त्वन्तरतमपरिभाषयैवात्र व्यवस्था ज्ञेया').",
+   "Applies word-internally too, at the junction of a root/stem ending in a diphthong and a vowel-initial affix: cayanam, lavanam, cāyakaḥ, lāvakaḥ, kayete, yayete (Kāśikā).",
+   "Not before a consonant or y: that is 6.1.79-83."
+  ],
+  "exceptions_and_blockers": [
+   {
+    "id": "6.1.125",
+    "note": "Pragṛhya e (dual e-endings: 1.1.11; the ot/ekāc nipātas 1.1.14-15) does not change before a vowel: Laghu text 'gaṅge amū', 'aho īśāḥ'."
+   },
+   {
+    "id": "6.1.109",
+    "note": "Pada-final e/o before a SHORT a gives pūrvarūpa instead (avagraha): Laghu text vlk_43 'padāntādeṅo'ti pare pūrvarūpamekādeśaḥ syāt / hare'va / viṣṇo 'va'; so ayādi is not used before short a in samhitā of separate words."
+   },
+   {
+    "id": "6.1.122",
+    "note": "Special rules for go + vowel: optional prakṛtibhāva (Laghu text vlk_44 'goagram, go 'gram'), avaṅ in Sphoṭāyana's view (6.1.123, Laghu vlk_47 'padānte eṅantasya goravaṅ vāci': gavāgram) and before indra (6.1.124: gavendraḥ). These belong to the prakṛtibhāva/ekādeśa families; the plain ayādi is not the whole story for go."
+   }
+  ],
+  "overrides": [],
+  "overridden_by": [
+   {
+    "id": "6.1.109",
+    "note": "pada-final e/o + a: pūrvarūpa (para-viśeṣa apavāda) - Laghu vlk_43."
+   },
+   {
+    "id": "6.1.125",
+    "note": "pluta and pragṛhya: prakṛtibhāva is nitya."
+   }
+  ],
+  "ordering_notes": "Sapādasaptādhyāyī rule. The pada-final ay/av it produces is then eligible for 8.3.19 lopaḥ śākalyasya (tripādī): Laghu on 8.2.1: 'hara iha, harayiha / viṣṇa iha, viṣṇaviha' - 6.1.78 first, then the optional deletion, which sees 6.1.78's output only because tripādī rules follow the sapādasaptādhyāyī (8.2.1).",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "laghu_ref": "vlk_22",
+  "notes": "(1) Bālamanoramā and Nāgeśa both observe that the sūtra would be better worded 'ico 'ci yaṇayavāyāvaḥ'. (2) The Padamañjarī shows why 6.1.79 says 'vānta': otherwise ceyam/jeyam (ce/je + ya) would get ay. (3) ke/ye in kayete/yayete are nominative PLURAL forms (no dual pragṛhya). (4) The Nyāsa gives the Kāśikā's split: 'के+एते, ये+एत', 'वायौ+अवरुणद्धीति'.",
+  "examples": [
+   "ac_yan_ayadi-018",
+   "ac_yan_ayadi-019",
+   "ac_yan_ayadi-020",
+   "ac_yan_ayadi-021",
+   "ac_yan_ayadi-022",
+   "ac_yan_ayadi-023",
+   "ac_yan_ayadi-024",
+   "ac_yan_ayadi-025",
+   "ac_yan_ayadi-026",
+   "ac_yan_ayadi-027",
+   "ac_yan_ayadi-028",
+   "ac_yan_ayadi-029",
+   "ac_yan_ayadi-030"
+  ]
+ },
+ {
+  "id": "6.1.79",
+  "text_iast": "vānto yi pratyaye",
+  "family": "ac_yan_ayadi",
+  "tier": "core",
+  "kind": "vidhi",
+  "effect": "The va-ending substitutes av (for o) and āv (for au) are also made before an affix beginning with y, where no vowel follows: go + ya -> gavya, nau + ya -> nāvya.",
+  "sthanin": "o and au (the sthānins of av/āv in 6.1.78; Bālamanoramā 'पूर्वसूत्रे तयोरेव तदुभयस्थानित्वेन कॢप्तत्वात्')",
+  "adesa": "av, āv (the 'vānta' substitutes of 6.1.78)",
+  "nimitta": "a following pratyaya whose first letter is y (1.1.72's vārttika 'yasmin vidhis tadādāvalgrahaṇe')",
+  "conditions": [
+   "'योऽयमेचः स्थाने वान्तादेश ओकारस्य अव्, औकारस्याव्, स यकारादौ प्रत्यये परतो भवति' (Kāśikā).",
+   "vānta: only o/au, not e/ai: 'वान्त इति किम् ? रायमिच्छति रैयति'.",
+   "yi: the affix must begin with y: 'यीति किम् ? गोभ्याम्। नौभ्याम्'.",
+   "pratyaya: y-initial word is not enough: 'प्रत्यय इति किम् ? गोयानम्। नौयानम्'.",
+   "'yi' means 'y-initial' by the vārttika (Bālamanoramā 'यस्मिन्विधिस्तदादावल्ग्रहणे'), an apavāda of 1.1.72.",
+   "For roots the effect is limited by 6.1.80 (only the o/au made by the y-affix itself)."
+  ],
+  "exceptions_and_blockers": [
+   {
+    "id": "6.1.80",
+    "note": "Niyama for dhātus: the o/au must have been produced by the y-affix itself (lavyam yes, upoyate no)."
+   },
+   {
+    "id": "8.3.19",
+    "note": "The new v is not deleted by lopaḥ śākalyasya / hali sarveṣām (8.3.22) because the stem is a bha and has no padatva before the taddhita: Bālamanoramā 'गव्यं नाव्यमित्यत्र लोपः शाकल्यस्येति हलि सर्वेषामिति च वकारस्य लोपो न भवति'."
+   }
+  ],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "Sapādasaptādhyāyī. It creates av/āv where 6.1.78 could not apply (no vowel follows: Bālamanoramā 'ओकारस्याऽच्परकत्वाऽभावादेचोऽयवायाव इत्यप्राप्तेऽवादेशोऽत्र विधीयते'), so it is an aprāpta-vidhi, not an apavāda.",
+  "varttikas": [
+   {
+    "text": "गोर्यूतौ च्छन्दस्युपसंख्यानम् ।",
+    "source": "corpus.varttikas_on('6.1.79'); Kāśikā/Mahābhāṣya on 6.1.79"
+   },
+   {
+    "text": "अध्वपरिमाणे च ।",
+    "source": "corpus.varttikas_on('6.1.79'); Kāśikā/Mahābhāṣya on 6.1.79"
+   }
+  ],
+  "optional": null,
+  "vedic_only": false,
+  "laghu_ref": "vlk_24",
+  "notes": "(1) Vārttika 1 (Vedic): go before yūti -> gavyūti; vārttika 2 extends it to the ordinary language when a road-measure is meant (gavyūtiḥ = krośayuga). yūti is not a pratyaya, so the sūtra alone does not reach it. The distinction Vedic/measure vs other is SEMANTIC (goyūtiḥ elsewhere). (2) The Siddhāntakaumudī proposes to read the v of 'vānto' (or the ch of 'chandasi') back as praśleṣa to keep the v from being deleted by lopo vyor vali in gavyūtiḥ; the Bālamanoramā finds this unnecessary ('वस्तुतस्तु वकार प्रश्लेषोऽनुपपन्नः') and Nāgeśa reports several views. Implementation: just never delete this v. (3) Padamañjarī: rai is chāndasa, 'raiyati' is only a counter-example. (4) The GRETIL Laghu text has TWO tags 'p_6,1.79' that do not belong to this sūtra: vlk_102 'padāntādvā' is really 6.1.76, and vlk_676 'tanādikṛñbhya uḥ' is really 3.1.79. vlk_24 is correct.",
+  "examples": [
+   "ac_yan_ayadi-031",
+   "ac_yan_ayadi-032",
+   "ac_yan_ayadi-033",
+   "ac_yan_ayadi-034",
+   "ac_yan_ayadi-035",
+   "ac_yan_ayadi-036",
+   "ac_yan_ayadi-037",
+   "ac_yan_ayadi-038",
+   "ac_yan_ayadi-039",
+   "ac_yan_ayadi-040",
+   "ac_yan_ayadi-041",
+   "ac_yan_ayadi-042",
+   "ac_yan_ayadi-043",
+   "ac_yan_ayadi-044",
+   "ac_yan_ayadi-045",
+   "ac_yan_ayadi-046",
+   "ac_yan_ayadi-047",
+   "ac_yan_ayadi-048",
+   "ac_yan_ayadi-049"
+  ]
+ },
+ {
+  "id": "6.1.80",
+  "text_iast": "dhātostannimittasyaiva",
+  "family": "ac_yan_ayadi",
+  "tier": "extended",
+  "kind": "niyama",
+  "effect": "Restricts 6.1.79 for roots: av/āv before a y-initial affix happens only to an o/au of the root that was itself produced by that affix (lū + ya -> lo + ya -> lavya), not to one that was there before (upa + ūyate -> upoyate).",
+  "sthanin": "o / au that end a dhātu and were made by a y-initial pratyaya (guṇa/vṛddhi caused by it)",
+  "adesa": "av / āv (from 6.1.79)",
+  "nimitta": "a following y-initial pratyaya; the diphthong must be tannimitta (produced by that pratyaya)",
+  "conditions": [
+   "Anuvṛtti: 'एच इति वर्तते, वान्तो यि प्रत्यय इति च' (Kāśikā).",
+   "'धातोर्य एच् तन्निमित्तो ... तस्य यकारादौ प्रत्यये परतो वान्तादेशो भवति। लव्यम्। पव्यम्। अवश्यलाव्यम्। अवश्यपाव्यम्'.",
+   "dhātoḥ: nouns are not restricted (bābhravyaḥ, gavyam, nāvyam): 'प्रातिपदिकस्य नियमो मा भूत्' ... 'बाभ्रव्य इत्यत्रैव स्यात्, इह न स्याद् — गव्यं नाव्यमिति'.",
+   "tannimitta: 'अतन्निमित्तस्य मा भूत्। उपोयते। औयत। लौयमानिः। पौयमानिः'.",
+   "eva: 'धात्ववधारणं यथा स्यात्, तन्निमित्तावधारणं मा भूदिति। तन्निमित्तस्य हि धातोश्चाधातोश्च भवति। बाभ्रव्यः। अवश्यलाव्यम्। लव्यम्' - the eva fixes the niyama on the root side only."
+  ],
+  "exceptions_and_blockers": [
+   {
+    "id": "6.1.79",
+    "note": "Cuts down 6.1.79 for roots: an o/au of a root that is not tannimitta gets no av/āv (upoyate, oyate, lauyamāniḥ)."
+   }
+  ],
+  "overrides": [
+   {
+    "id": "6.1.79",
+    "note": "niyama: 'siddhe satyārambho niyamārthaḥ' (Nyāsa 'पूर्वेणैव सिद्धे नियमार्थं वचनम्')."
+   }
+  ],
+  "overridden_by": [],
+  "ordering_notes": "Runs after the guṇa/vṛddhi that creates the o/au (7.3.84, 7.2.115) because tannimitta is judged on the result. Bālamanoramā (on 6.1.80) raises the objection that the guṇa of upoyate (ād guṇaḥ 6.1.87, depends on two words) is bahiraṅga and hence asiddha for the antaraṅga vānta-ādeśa, so that av would not arise anyway ('नन्वत्र न धातुलोपसूत्रस्थभाष्यरीत्या आद्गुण इति गुणस्य ओकारस्य पदद्वयापेक्षत्वेन बहिरङ्गतया वान्तादेशे कर्तव्ये असिद्धत्वादोकाराऽभावान्न वान्तादेशप्रसक्तिरत्यस्वरसादाह'), and prefers the tannimitta explanation (the au of auyata cannot be explained that way); the Nyāsa says the paribhāṣā asiddhaṃ bahiraṅgam antaraṅge does not operate here. The gold cases do not depend on this.",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "laghu_ref": null,
+  "notes": "(1) Not in Varadarāja's Laghu; in Bhaṭṭoji's SK. (2) The Mahābhāṣya asks why 'eva' and answers 'iṣṭato 'vadhāraṇārthaḥ': it prevents the reverse niyama 'dhātoreva tannimittasya', which would exclude bābhravya (stem, not a root). (3) Padamañjarī gives a further reading: 'anauṣṭhasya' etc.; not needed. (4) The engine needs a 'dhatu' and 'caused-by-this-affix' flag: it cannot be read from the letters. Input convention in the gold: root + affix BEFORE guṇa (lū + yam), so the engine can track the cause.",
+  "examples": [
+   "ac_yan_ayadi-033",
+   "ac_yan_ayadi-047",
+   "ac_yan_ayadi-048",
+   "ac_yan_ayadi-049",
+   "ac_yan_ayadi-050",
+   "ac_yan_ayadi-051"
+  ]
+ },
+ {
+  "id": "6.1.81",
+  "text_iast": "kṣayyajayyau śakyārthe",
+  "family": "ac_yan_ayadi",
+  "tier": "extended",
+  "kind": "nipatana",
+  "effect": "Nipātana: the roots kṣi and ji before yat in the sense 'able to be' give kṣayya and jayya (ay for the guṇa e).",
+  "sthanin": "e (guṇa of i) of kṣi / ji before the y of yat",
+  "adesa": "ay (nipātita)",
+  "nimitta": "yat (kṛtya) + the sense śakya ('able to be destroyed / conquered')",
+  "conditions": [
+   "'क्षि जि इत्येतयोर्धात्वोर्यति प्रत्यये परतः शक्यार्थे गम्यमान एकारस्यायादेशो निपात्यते। शक्यः क्षेतुं क्षय्यः। शक्यो जेतुं जय्यः'.",
+   "śakyārthe: 'शक्यार्थ इति किम् ? क्षेयं पापम्। जेयो वृषलः' (SK: 'क्षेतुं योग्यं क्षेयं पापम् । जेतुं योग्यं जेयं मनः').",
+   "SK: 'यान्तादेशनिपातनार्थमिदम्' - the sūtra teaches a nipātana of the y-ending substitute, i.e. ay before ya."
+  ],
+  "exceptions_and_blockers": [
+   {
+    "id": "3.3.169",
+    "note": "arhe kṛtyatṛcaś ca: the yat in the sense 'fit to be' gives kṣeyam / jeyam without ay (Prauḍhamanoramā: 'अर्हे कृत्यतृचश्च इति यत्')."
+   }
+  ],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "After guṇa (7.3.84) gives e; 6.1.78 could not reach it (no vowel follows), hence a nipātana; runs in the sapādasaptādhyāyī.",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "laghu_ref": null,
+  "notes": "(1) SEMANTIC condition: kṣayya vs kṣeya differ only in the meaning of the affix (3.3.172 śaki liṅ ca gives the śakya-yat; 3.3.169 the arha-yat). Not decidable from letters. (2) Nāgeśa: only the roots kṣi (kṣaye) and ji (jaye) are meant, not kṣīṣ or kṣai/jai. (3) Nyāsa: the word artha in 'śakyārthe' makes the nipātana cover the karman use as well as the bhāva use ('अर्थग्रहणं कर्मण्यपबि यता स्यात्' in the printed text).",
+  "examples": [
+   "ac_yan_ayadi-052",
+   "ac_yan_ayadi-053",
+   "ac_yan_ayadi-054",
+   "ac_yan_ayadi-055"
+  ]
+ },
+ {
+  "id": "6.1.82",
+  "text_iast": "krayyastadarthe",
+  "family": "ac_yan_ayadi",
+  "tier": "extended",
+  "kind": "nipatana",
+  "effect": "Nipātana: krī + yat gives krayya when the thing is put out for sale ('for that purpose', tadartha).",
+  "sthanin": "e (guṇa of ī) of krī before the y of yat",
+  "adesa": "ay (nipātita)",
+  "nimitta": "yat + the sense 'exposed for purchase' (krayārtha)",
+  "conditions": [
+   "'क्रीणातेर्धातोस्तदर्थे क्रयार्थं यत् तस्मिन्नभिधेये यति प्रत्यये परतोऽयादेशो निपात्यते। क्रय्यो गौः। क्रय्यः कम्बलः। क्रयार्थं यः प्रसारितः, स उच्यते'.",
+   "tadarthe: 'तदर्थ इति किम् ? क्रेयं नो धान्यम्, न चास्ति क्रय्यम्' - grain we intend to buy is kreya, grain put out for sale is krayya.",
+   "SK: 'क्रेतारः क्रीणीयुरिति बुद्ध्या आपणे प्रसारितं क्रय्यम् । क्रेयमन्यत् । क्रयणार्हमित्यर्थः'."
+  ],
+  "exceptions_and_blockers": [
+   {
+    "id": "6.1.81",
+    "note": "Same pattern; distinct nipātana."
+   }
+  ],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "Sapādasaptādhyāyī, after guṇa (7.3.84); like 6.1.81 a nipātana of ay before ya.",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "laghu_ref": null,
+  "notes": "SEMANTIC condition (tadartha): Padamañjarī records the rival view that krayya is the thing offered for SALE; Nāgeśa discusses who gives the grain (kreya / krayya swap). The engine should treat krayya as lexical.",
+  "examples": [
+   "ac_yan_ayadi-056",
+   "ac_yan_ayadi-057"
+  ]
+ },
+ {
+  "id": "6.1.83",
+  "text_iast": "bhayyapravayye ca cchandasi",
+  "family": "ac_yan_ayadi",
+  "tier": "vedic",
+  "kind": "nipatana",
+  "effect": "Vedic nipātana: bhayya (bhī + yat, ablative sense) and pravayyā (pra + vī + yat, feminine only) with ay for the guṇa e.",
+  "sthanin": "e (guṇa of ī) before the y of yat in bhī / pra-vī",
+  "adesa": "ay (nipātita)",
+  "nimitta": "Vedic (chandasi) usage; yat added by 3.3.113 in the apādāna sense for bhayya; feminine for pravayyā",
+  "conditions": [
+   "'बिभेतेर्धातोः प्रपूर्वस्य च वी इत्येतस्य यति प्रत्यये परतश्छन्दसि विषयेऽयादेशो निपात्यते। भय्यं किलासीत् ... वत्सतरी प्रवय्या'.",
+   "'प्रवय्या इति स्त्रियामेव निपातनम्। अन्यत्र प्रवेयमित्येव भवति'.",
+   "chandasi: 'छन्दसीति किम् ? भेयम्। प्रवेयम्'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "Sapādasaptādhyāyī; after guṇa.",
+  "varttikas": [
+   {
+    "text": "हृदय्या उपसंख्यानम् ।",
+    "source": "corpus.varttikas_on('6.1.83'); Kāśikā 'ह्रदय्या आप उपसंख्यानम्', SK, Mahābhāṣya"
+   },
+   {
+    "text": "शरस्य च अवादेशो भवतीति वक्तव्यम् ।",
+    "source": "corpus.varttikas_on('6.1.83'); Mahābhāṣya 'अव् शरस्य च - अवादेशो भवतीति वक्तव्यम्'"
+   }
+  ],
+  "optional": null,
+  "vedic_only": true,
+  "laghu_ref": null,
+  "notes": "(1) Vārttika 1: hṛdayyā (Kāśikā prints ह्रदय्या, SK/Mahābhāṣya हृदय्या) 'waters in the heart/lake'; vārttika 2: av (not ay) for śara and hṛda: hṛdavyā āpaḥ, śaravyā vai tejanam (Mahābhāṣya). (2) DATA WARNING: the Padamañjarī text stored in the corpus under 6.1.83 has only its first lines on 6.1.83 (vī ..., hṛdayyā) and then runs on into the whole commentary on 6.1.84 (ekaḥ pūrvaparayoḥ); do not use the rest for 6.1.83.",
+  "examples": [
+   "ac_yan_ayadi-058",
+   "ac_yan_ayadi-059",
+   "ac_yan_ayadi-060",
+   "ac_yan_ayadi-061",
+   "ac_yan_ayadi-062",
+   "ac_yan_ayadi-063"
+  ]
+ },
+ {
+  "id": "8.2.23",
+  "text_iast": "saṃyogāntasya lopaḥ",
+  "family": "ac_yan_ayadi",
+  "tier": "core",
+  "kind": "vidhi",
+  "effect": "The last sound of a pada that ends in a saṃyoga (conjunct) is deleted: gomānt -> gomān.",
+  "sthanin": "the final consonant of a saṃyoga at the end of a pada (by 1.1.52 alo 'ntyasya only the last sound)",
+  "adesa": "lopa",
+  "nimitta": "a pada (8.1.16 adhikāra) that ends in a saṃyoga",
+  "conditions": [
+   "'संयोगान्तस्य पदस्य लोपो भवति। गोमान्। यवमान्। कृतवान्। हतवान्'.",
+   "padasya: 'पदस्येति किम्? गोमन्तौ, गोमन्तः' (Nyāsa).",
+   "Laghu: 'saṃyogāntaṃ yatpadaṃ tadantasya lopaḥ syāt' and 1.1.52: 'ṣaṣṭhīnirdiṣṭā'ntyasyāla ādeśaḥ syāt'.",
+   "antagrahaṇa is only clarificatory (Nyāsa/Padamañjarī: 'अन्तग्रहणं शक्यमकर्तुम्')."
+  ],
+  "exceptions_and_blockers": [
+   {
+    "id": "6.1.77",
+    "note": "The final y/v/r left by yaṇ is NOT deleted: yaṇ is bahiraṅga (depends on two words) and asiddha for this antaraṅga rule: Kāśikā 'दध्यत्र, मध्वत्रेत्यत्र तु यणादेशस्य बहिरङ्गलक्षणस्यासिद्धत्वात् संयोगान्तलोपो न भवति'. Vācanika form: vārttika 'yaṇaḥ pratiṣedho vācyaḥ' (Laghu text vlk_21)."
+   },
+   {
+    "id": "8.2.66",
+    "note": "Does not pre-empt this rule though later (śreyān, bhūyān): ruttva is asiddha (Kāśikā 'इह श्रेयान्, भूयानिति रुत्वं परमप्यसिद्धत्वात् संयोगान्तस्य लोपं न बाधते')."
+   }
+  ],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "Tripādī, and sees the pada AFTER all sapādasaptādhyāyī work (nuṃ, dīrgha 6.4.14, hal-ṅyābbhyo 6.1.68). ruttva (8.2.66) is later and therefore asiddha for it; jaśtva (8.2.39) covers all of ruttva's scope, so ruttva is its apavāda by 'yena nāprāpte' but not an apavāda of saṃyoga-lopa, which has scope where ru has none (Nyāsa/Padamañjarī: 'संयोगान्तलोपे हि प्राप्ते चाप्राप्ते च रुत्वमारभ्यते... जश्त्वे तु सर्वत्र प्राप्त एव तदारभ्यते'). Vasu spells: śreyas+s -> śreyans+s [7.1.70] -> śreyans [6.1.68] -> śreyanr [8.2.66] -> śreyan [8.2.23] -> śreyān [6.4.8].",
+  "varttikas": [
+   {
+    "text": "यणः प्रतिषेधो वाच्यः ।",
+    "source": "corpus.varttikas_on('8.2.23'); Laghu '(yaṇaḥ pratiṣedho vācyaḥ)'"
+   },
+   {
+    "text": "संयोगादिलोपे च यणः प्रतिषेधो वक्तव्यः",
+    "source": "bhashya on 8.2.23 (for vāsyartham, kākyartham, i.e. 8.2.29)"
+   },
+   {
+    "text": "न वा झलो लोपात्",
+    "source": "bhashya on 8.2.23 (the vārttika-pratyākhyāna)"
+   },
+   {
+    "text": "बहिरङ्गलक्षणत्वाद्वा",
+    "source": "bhashya on 8.2.23"
+   },
+   {
+    "text": "संयोगान्तलोपः सस्य चेति वक्तव्यम्",
+    "source": "bhashya on 8.2.23 (for śreyān, bhūyān, jyāyān)"
+   }
+  ],
+  "optional": null,
+  "vedic_only": false,
+  "laghu_ref": "vlk_20",
+  "notes": "(1) The Laghu's derivation of sudhī upāsya uses this rule only to say what is BLOCKED ('iti yalope prāpte'). (2) Bālamanoramā/Tattvabodhinī on the number of forms (four vs more) and on whether the vārttika is vācanika or can be argued from asiddhatva. (3) GRETIL Laghu text corruptions in this passage: 'maddhariḥ' for maddhvariḥ, 'dhātraśaḥ' for dhātraṃśaḥ (SK). (4) Nyāsa's cross-reference for alo 'ntyasya is printed as [[1.1.51]] (real: 1.1.52).",
+  "examples": [
+   "ac_yan_ayadi-001",
+   "ac_yan_ayadi-002",
+   "ac_yan_ayadi-005",
+   "ac_yan_ayadi-088",
+   "ac_yan_ayadi-089",
+   "ac_yan_ayadi-090",
+   "ac_yan_ayadi-154",
+   "ac_yan_ayadi-155",
+   "ac_yan_ayadi-156",
+   "ac_yan_ayadi-157",
+   "ac_yan_ayadi-158",
+   "ac_yan_ayadi-159",
+   "ac_yan_ayadi-160",
+   "ac_yan_ayadi-161",
+   "ac_yan_ayadi-162",
+   "ac_yan_ayadi-168",
+   "ac_yan_ayadi-169"
+  ]
+ },
+ {
+  "id": "8.2.29",
+  "text_iast": "skoḥ saṃyogādyorante ca",
+  "family": "ac_yan_ayadi",
+  "tier": "extended",
+  "kind": "vidhi",
+  "effect": "The first sound, if s or k, of a saṃyoga that stands at the end of a pada or before a jhal is deleted: lasj + ta -> lagna (via s-deletion), takṣ -> taṭ.",
+  "sthanin": "s or k that begins a conjunct which is either pada-final or followed by a jhal",
+  "adesa": "lopa",
+  "nimitta": "pada-final saṃyoga, or a saṃyoga followed by a jhal (anuvṛtti of 'jhali' from 8.2.26)",
+  "conditions": [
+   "'पदस्यान्ते यः संयोगः, झलि परतो वा यः संयोगः, तदाद्योः सकारककारयोर्लोपो भवति'.",
+   "skoḥ: 'स्कोरिति किम्? नर्नर्त्ति। वर्वर्त्ति'; saṃyogādyoḥ: 'संयोगाद्योरिति किम्? पयः। शक्'; ante ca: 'अन्ते चेति किम्? तक्षिता। तक्षकः'.",
+   "Vārttika 'झलि सङीति वक्तव्यम्' (jhal narrowed to the pratyāhāra saṅ) - rejected by the Bhāṣya: 'काष्ठशगेव नास्ति कुतोऽयं काष्ठशकि तिष्ठेत्'."
+  ],
+  "exceptions_and_blockers": [
+   {
+    "id": "6.1.77",
+    "note": "yaṇ is asiddha for it: vāsyartham, kākyartham keep the s/k (Kāśikā 'वास्यर्थम्, काक्यर्थम् इत्यत्रापि बहिरङ्गलक्षणस्य यणादेशस्यासिद्धत्वात् संयोगादिलोपो न भवति')."
+   }
+  ],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "Tripādī; kutva (8.2.30) and nattva (8.2.45) apply after/around it: Nyāsa on lagnaḥ 'सकारस्य लोपः, ओदितश्च इति नत्वम्... चोः कुः इति कुत्वम् -गकारः'; Padamañjarī 'तस्यासिद्धत्वात् कुत्वम्'. Nyāsa on 8.2.29 asks why vāc + sthātā is not affected: 'इह कस्मान्न भवति -वाक्स्थातेति? संयोगादिलोपे कुत्वम्यासिद्धत्वात्' (kutva is later and asiddha for 8.2.29, so the c has not yet become k).",
+  "varttikas": [
+   {
+    "text": "झलि सङीति वक्तव्यम्",
+    "source": "kashika on 8.2.29 (Nyāsa cites it as vārttika 917); rejected in the Mahābhāṣya"
+   }
+  ],
+  "optional": null,
+  "vedic_only": false,
+  "laghu_ref": "vlk_311",
+  "notes": "(1) In the Laghu it sits in the subanta chapter (bhṛṭ, bhṛjjau, bhṛḍbhyām), not in the sandhi chapters. (2) GRETIL Laghu text has 'sasya ścutvena saḥ' where the sense demands śaḥ. (3) The Laghu passage 'bhṛṭ / sasya ścutvena saḥ / jhalāṃ jaś jhaśi iti śasya jaḥ / bhṛjjau' (sic: saḥ) is a good end-to-end example of 8.4.40 + 8.4.53 with 8.2.29 NOT applying before a vowel.",
+  "examples": [
+   "ac_yan_ayadi-128",
+   "ac_yan_ayadi-163",
+   "ac_yan_ayadi-164",
+   "ac_yan_ayadi-165",
+   "ac_yan_ayadi-166",
+   "ac_yan_ayadi-167",
+   "ac_yan_ayadi-168",
+   "ac_yan_ayadi-169",
+   "ac_yan_ayadi-170",
+   "ac_yan_ayadi-171",
+   "ac_yan_ayadi-172",
+   "ac_yan_ayadi-173",
+   "ac_yan_ayadi-174",
+   "ac_yan_ayadi-175",
+   "ac_yan_ayadi-176",
+   "ac_yan_ayadi-177"
+  ]
+ },
+ {
+  "id": "8.4.46",
+  "text_iast": "aco rahābhyāṃ dve",
+  "family": "ac_yan_ayadi",
+  "tier": "core",
+  "kind": "vidhi",
+  "effect": "A yar (any consonant except h) that follows a r or h which itself follows a vowel may be doubled: arka -> arkka, brahmā -> brahmmā, apahnute -> apahnnute.",
+  "sthanin": "a yar standing after r or h after an ac",
+  "adesa": "dve: the letter is doubled (dvirvacana)",
+  "nimitta": "the yar is preceded by r/h which is preceded by a vowel; what follows is irrelevant (a vowel is allowed)",
+  "conditions": [
+   "'अच उत्तरौ यौ रेफहकारौ ताभ्यामुत्तरस्य यरो द्वे भवतः' (Kāśikā).",
+   "aca iti kim: the r/h must follow a vowel: 'किन् ह्नुते। किम् ह्मलयति'.",
+   "Optional: 'vā' runs on from 8.4.45 (Prauḍhamanoramā on 8.4.47: 'यरोऽनुनासिक इति सूत्राद् वाग्रहणमनुवर्तते'; Vasu: 'according to others the vā is also understood').",
+   "The doubled letter is the yar, not the r/h: Bālamanoramā on this sūtra 'अत्राऽनचि चेति रेफहकारयोर्द्वित्वं न भवति'.",
+   "Vārttika 'na samāse' (Laghu: 'न समासे (वार्त्तिकम्) । वाप्यश्वः'): no doubling in a compound; the on-disk sources do not say which doubling it stops (see notes)."
+  ],
+  "exceptions_and_blockers": [
+   {
+    "id": "8.4.49",
+    "note": "A śar before a vowel is not doubled (karṣati, varṣati): Kāśikā 'अचो रहाभ्याम्० इति प्राप्तिः प्रतिषिध्यते'."
+   },
+   {
+    "id": "8.4.51",
+    "note": "Śākalya: never doubled: arkaḥ, markaḥ, brahmā, apahnute (Kāśikā on 8.4.51: exactly the examples of 8.4.46 undoubled)."
+   },
+   {
+    "id": "8.4.50",
+    "note": "Śākaṭāyana: not doubled in a cluster of three or more consonants."
+   },
+   {
+    "id": "8.4.52",
+    "note": "The ācāryas: not doubled after a long vowel (dātram)."
+   }
+  ],
+  "overrides": [],
+  "overridden_by": [
+   {
+    "id": "8.4.49",
+    "note": "niṣedha for śar + vowel"
+   },
+   {
+    "id": "8.4.51",
+    "note": "Śākalya's blanket refusal (optional alternative)"
+   }
+  ],
+  "ordering_notes": "Tripādī; sees the results of 6.1.77 (Bālamanoramā on 8.4.46 'हरि-अनुभव इति स्थिते रेफादिकारस्य यण् । तस्य द्वित्वम्'; 8.2.1). Its output is the input of 8.4.53 (a doubled aspirate becomes unaspirate + aspirate). 8.4.64 later optionally deletes a doubled yam (kurmaḥ / kurmmaḥ).",
+  "varttikas": [
+   {
+    "text": "न समासे",
+    "source": "laghukaumudi on 8.4.46 (and GRETIL Laghu text: '(na samāse) / vāpyaśvaḥ')"
+   }
+  ],
+  "optional": "vibhāṣā (vā from 8.4.45): doubled or not; Śākalya (8.4.51) says never.",
+  "vedic_only": false,
+  "laghu_ref": "vlk_60",
+  "notes": "(1) Varadarāja's example is gauryyau (gaurī + au: yaṇ then doubling); SK's are haryyanubhavaḥ and nahyyasti. (2) The Kāśikā's counter-examples 'kin hnute', 'kim hmalayati' show the m/n before a h that does not follow a vowel; the m before h changes by napare naḥ (8.3.27, optional: kin hnute / kiṃ hnute) and he mapare vā (8.3.26); the Kāśikā on those two sūtras has the same words. (3) 'na samāse': in vāpyaśvaḥ the candidate y follows p, not r/h, so the vārttika can only be about the doubling from 'yaṇo mayo dve' (8.4.47) - the on-disk sources do not say so. (4) The GRETIL Laghu file prints this sūtra twice (vlk_60 and vlk_269) with correct tags.",
+  "examples": [
+   "ac_yan_ayadi-064",
+   "ac_yan_ayadi-065",
+   "ac_yan_ayadi-066",
+   "ac_yan_ayadi-067",
+   "ac_yan_ayadi-068",
+   "ac_yan_ayadi-069",
+   "ac_yan_ayadi-070",
+   "ac_yan_ayadi-071",
+   "ac_yan_ayadi-072",
+   "ac_yan_ayadi-073",
+   "ac_yan_ayadi-110",
+   "ac_yan_ayadi-111",
+   "ac_yan_ayadi-148",
+   "ac_yan_ayadi-149",
+   "ac_yan_ayadi-199"
+  ]
+ },
+ {
+  "id": "8.4.47",
+  "text_iast": "anaci ca",
+  "family": "ac_yan_ayadi",
+  "tier": "core",
+  "kind": "vidhi",
+  "effect": "A yar standing after a vowel is optionally doubled when no vowel follows it (a consonant or the pause follows): dadhy atra -> dadhdhy atra (-> daddhy atra by 8.4.53).",
+  "sthanin": "a yar (any consonant but h) after an ac",
+  "adesa": "dve (doubled)",
+  "nimitta": "not followed by an ac (Kāśikā 'अनच्परस्य अच उत्तरस्य यरो द्वे भवतः'; the pause counts as 'not an ac')",
+  "conditions": [
+   "'अच इति वर्तते, यर इति च । अनच्परस्य अच उत्तरस्य यरो द्वे भवतः'.",
+   "aca ity eva: 'अच इत्येव — स्मितम्। ध्मातम्'.",
+   "Is 'anaci' a prasajya ('not before a vowel') or a paryudāsa ('before something other than a vowel')? Mahābhāṣya: 'नायं प्रसज्यप्रतिषेधः-अचि नेति॥ किं तर्हि?॥ पर्युदासोऽयं यदन्यदचेति'; Nyāsa/Padamañjarī take paryudāsa and therefore need the vārttika 'avasāne ca' for the pause; Tattvabodhinī takes prasajya ('तस्मात्प्रसज्यप्रतिषेध इत्याह-न त्वचीति । एवं चाबसानेऽपि द्वित्वं भवति-वाक्क् वाक्'); Laghu/SK: 'acaḥ parasya yaro dve vā sto na tvaci'. In every view the doubling at the pause (vākk / vāk) is accepted.",
+   "Optional (vā from 8.4.45): 'द्वे वेति ... यरोऽनुनासिक इति सूत्राद् वाग्रहणमनुवर्तते'.",
+   "Vārttika 'yaṇo mayo dve' extends it (two readings): Kāśikā 'केचिदत्र यण इति पञ्चमी मय इति षष्ठीति व्याचक्षते। तेषामुल्क्का, वल्म्मीक इत्युदाहरणम्। अपरे तु यण इति षष्ठी मय इति पञ्चमीति। तेषां दध्य्यत्र, मध्व्वत्रेत्युदाहरणम्'.",
+   "Vārttika 'śaraḥ khayo dve': stthālī (khay after śar) or vatssaḥ, ikṣṣuḥ, kṣṣīram, apssarāḥ (śar after khay).",
+   "Vārttika 'avasāne ca yaro dve': vākk, tvakk, ṣaṭṭ, tatt."
+  ],
+  "exceptions_and_blockers": [
+   {
+    "id": "8.4.48",
+    "note": "putra before ādinī in abuse: Kāśikā 'अनचि च [[८.४.४७]] इति प्राप्तिः प्रतिषिध्यते'."
+   },
+   {
+    "id": "8.4.50",
+    "note": "Śākaṭāyana: no doubling in clusters of three or more (Nyāsa on 8.4.50 names anaci ca as the prāpti for indraḥ etc.)."
+   },
+   {
+    "id": "8.4.51",
+    "note": "Śākalya: no doubling anywhere."
+   },
+   {
+    "id": "8.4.52",
+    "note": "The ācāryas: no doubling after a long vowel (Padamañjarī 'दात्रमित्यादौ ठनचि चऽ इति प्राप्तिः')."
+   }
+  ],
+  "overrides": [],
+  "overridden_by": [
+   {
+    "id": "8.4.48",
+    "note": "niṣedha (putrādinī)"
+   },
+   {
+    "id": "8.4.50",
+    "note": "matāntara"
+   },
+   {
+    "id": "8.4.51",
+    "note": "matāntara"
+   },
+   {
+    "id": "8.4.52",
+    "note": "matāntara"
+   }
+  ],
+  "ordering_notes": "Tripādī. Input = output of 6.1.77 (dadhy atra). Output feeds 8.4.53 (Laghu 'iti dhakārasya dvitvena sudhdhy upāsya iti jāte' then 'iti pūrvadhakārasya dakāraḥ'). Whether the new d (from jaśtva) can be doubled again is disputed: SK on 8.2.23 allows FOUR forms for sudhy upāsya (dh and y each doubled or not); Tattvabodhinī on 8.2.23 records the view that the d can be doubled again (vyakti-bheda, 'pūrvatrāsiddhīyam advitve'); Prauḍhamanoramā on 8.2.23 rejects re-doubling: 'एकस्यां व्यक्तौ एकं लक्षणं सकृदेव प्रवर्तते'.",
+  "varttikas": [
+   {
+    "text": "यणो मयो द्वे वाच्ये ।",
+    "source": "corpus.varttikas_on('8.4.47'); Kāśikā 'यणो मयो द्वे भवत इति वक्तव्यम्'; Mahābhāṣya on 8.4.47"
+   },
+   {
+    "text": "शरः खयो द्वे भवत इति वक्तव्यम्",
+    "source": "kashika on 8.4.47; Mahābhāṣya 'शरःखयः'"
+   },
+   {
+    "text": "अवसाने च यरो द्वे भवत इति वक्तव्यम्",
+    "source": "kashika on 8.4.47; Mahābhāṣya 'अवसाने च'"
+   }
+  ],
+  "optional": "vibhāṣā (vā from 8.4.45)",
+  "vedic_only": false,
+  "laghu_ref": "vlk_18",
+  "notes": "(1) DATA WARNING: the Bālamanoramā stored under 8.4.47 in the corpus is the commentary on 8.4.55 (khari ca); there is no Bālamanoramā on anaci ca in the corpus. (2) The four-form claim for dadhy atra rests on the vārttika 'yaṇo mayo dve'; without the vārttika only dadhyatra and daddhyatra. (3) The doubled aspirate is written differently by the sources (Kāśikā 'stthālī', Mahābhāṣya 'sththālī'). (4) Padamañjarī: the paryudāsa reading is chosen for laghava (anacaḥ = 'other than ac'). (5) Laghu tag vlk_18 is correct.",
+  "examples": [
+   "ac_yan_ayadi-001",
+   "ac_yan_ayadi-002",
+   "ac_yan_ayadi-074",
+   "ac_yan_ayadi-075",
+   "ac_yan_ayadi-076",
+   "ac_yan_ayadi-077",
+   "ac_yan_ayadi-078",
+   "ac_yan_ayadi-079",
+   "ac_yan_ayadi-080",
+   "ac_yan_ayadi-081",
+   "ac_yan_ayadi-082",
+   "ac_yan_ayadi-083",
+   "ac_yan_ayadi-084",
+   "ac_yan_ayadi-085",
+   "ac_yan_ayadi-086",
+   "ac_yan_ayadi-087",
+   "ac_yan_ayadi-088",
+   "ac_yan_ayadi-089",
+   "ac_yan_ayadi-090",
+   "ac_yan_ayadi-096",
+   "ac_yan_ayadi-097",
+   "ac_yan_ayadi-098",
+   "ac_yan_ayadi-144"
+  ]
+ },
+ {
+  "id": "8.4.48",
+  "text_iast": "nādinyākrośe putrasya",
+  "family": "ac_yan_ayadi",
+  "tier": "extended",
+  "kind": "nisedha",
+  "effect": "The yar of the word putra is not doubled when ādinī follows and abuse (ākrośa) is meant: putrādinī tvam asi pāpe.",
+  "sthanin": "the yar (t) of putra that 8.4.47 would double",
+  "adesa": "no doubling (pratiṣedha)",
+  "nimitta": "ādinī follows (loc. as parasaptamī); sense of ākrośa",
+  "conditions": [
+   "'आदिनी परत आक्रोशे गम्यमाने पुत्रशब्दस्य न द्वे भवतः'.",
+   "ākrośe: 'आक्रोश इति किम्? तत्त्वक थने द्विर्वचनं भवत्येव। पुत्रानत्तीति पुत्त्रादिनी शिशुमारी व्याघ्री' (a plain statement of fact keeps the doubling).",
+   "ādinī is the feminine ङ्यन्त form (Bālamanoramā 'ईदृशाक्रोशस्य प्रायेण स्त्रीष्वेव सम्भवात् सूत्रे आदिनीति ङ्यन्तमेव विवक्षितमिति हरदत्तः').",
+   "Vārttika 'tatpare ca': a putra before a putra that is before ādinī is also undoubled (putraputrādinī).",
+   "Vārttika 'vā hatajagdhayoḥ': before hata / jagdha the doubling is optional (puttrahatī / putrahatī)."
+  ],
+  "exceptions_and_blockers": [
+   {
+    "id": "8.4.47",
+    "note": "This is the pratiṣedha of 8.4.47's doubling."
+   }
+  ],
+  "overrides": [
+   {
+    "id": "8.4.47",
+    "note": "Kāśikā 'अनचि च [[८.४.४७]] इति प्राप्तिः प्रतिषिध्यते' - niṣedha of a prāpta doubling."
+   }
+  ],
+  "overridden_by": [],
+  "ordering_notes": "Tripādī. Applies to the same candidate as 8.4.47 and preempts it; the compound putra + ādinī (a + ā -> ā by 6.1.101) is formed before the tripādī.",
+  "varttikas": [
+   {
+    "text": "तत्परे च ।",
+    "source": "corpus.varttikas_on('8.4.48'); Mahābhāṣya, Kāśikā"
+   },
+   {
+    "text": "वा हतजग्धयोः ।",
+    "source": "corpus.varttikas_on('8.4.48'); Kāśikā 'वा हतजग्धपर इति वक्तव्यम्'"
+   },
+   {
+    "text": "चयो द्वितीयाः शरि पौष्करसादेरिति वाच्यम् ।",
+    "source": "corpus.varttikas_on('8.4.48'); Kāśikā 'चयो द्वितीयाः शरि पौष्करसादेः'"
+   }
+  ],
+  "optional": null,
+  "vedic_only": false,
+  "laghu_ref": null,
+  "notes": "(1) SEMANTIC condition (ākrośa). (2) Bālamanoramā/Nāgeśa: the vārttika 'vā hatajagdhayoḥ' can be read as a niyama ('only for hata/jagdha, only in abuse'); Tattvabodhinī records both views. (3) The Pauṣkarasādi vārttika on this sūtra is unrelated to putra: a car before a śar becomes the aspirate of its class (vathsaḥ, khṣīram, aphsarāḥ): matāntara, not part of the mainstream derivation. (4) Padamañjarī gives putrapautrādinī as the tatpare-example; the Kāśikā has putraputrādinī.",
+  "examples": [
+   "ac_yan_ayadi-080",
+   "ac_yan_ayadi-082",
+   "ac_yan_ayadi-083",
+   "ac_yan_ayadi-091",
+   "ac_yan_ayadi-092",
+   "ac_yan_ayadi-093",
+   "ac_yan_ayadi-094",
+   "ac_yan_ayadi-095",
+   "ac_yan_ayadi-096",
+   "ac_yan_ayadi-097",
+   "ac_yan_ayadi-098"
+  ]
+ },
+ {
+  "id": "8.4.49",
+  "text_iast": "śaro’ci",
+  "family": "ac_yan_ayadi",
+  "tier": "extended",
+  "kind": "nisedha",
+  "effect": "A śar (ś ṣ s) is not doubled before a vowel: karṣati, varṣati, ādarśaḥ, caturṣu.",
+  "sthanin": "a śar that 8.4.46 would double after r",
+  "adesa": "no doubling",
+  "nimitta": "a vowel follows the śar",
+  "conditions": [
+   "'शरोऽचि परतो न द्वे भवतः। अचो रहाभ्याम्० इति प्राप्तिः प्रतिषिध्यते। कर्षति। वर्षति। आदर्शः। अक्षदर्शः'.",
+   "aci: before a consonant the doubling (optional) stays: 'अचीति किम्? दर्श्श्यते'.",
+   "Why not leave it to 8.4.65 (deletion of the doubled śar): Tattvabodhinī 'नन्वस्तु द्वित्वमेकस्य ... इति लोपे सिद्धमिष्टम्, मैवम्, लोपस्य वैकल्पिकत्वेन पक्षे द्वयोः श्रवणप्रसङ्गात्'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "8.4.46",
+    "note": "Kāśikā: 8.4.46's prāpti is pratiṣiddha for śar before a vowel."
+   }
+  ],
+  "overridden_by": [],
+  "ordering_notes": "Tripādī; same environment as 8.4.46 (r + śar + vowel). In Laghu's caturṣu the ṣ is produced by ṣatva after the visarga/ru step and the doubling is then 'prāpta' but blocked: Laghu text vlk_270-271 'ṣatvam / ṣasya dvitve prāpte // ... aci pare śaro na dve staḥ / caturṣu'.",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "laghu_ref": "vlk_271",
+  "notes": "(1) Varadarāja places this sūtra in the subanta chapter (caturṣu), not in ac-sandhi, hence tier extended. (2) The example dṛśyate/darśyate is glossed differently in the Nyāsa/Padamañjarī (darśaḥ = 'no moon is seen') than in the Kāśikā (darśśyate).",
+  "examples": [
+   "ac_yan_ayadi-099",
+   "ac_yan_ayadi-100",
+   "ac_yan_ayadi-101",
+   "ac_yan_ayadi-102",
+   "ac_yan_ayadi-103",
+   "ac_yan_ayadi-104"
+  ]
+ },
+ {
+  "id": "8.4.50",
+  "text_iast": "triprabhṛtiṣu śākaṭāyanasya",
+  "family": "ac_yan_ayadi",
+  "tier": "extended",
+  "kind": "nisedha",
+  "effect": "In the view of Śākaṭāyana a yar is not doubled when it belongs to a cluster of three or more consonants: indraḥ, candraḥ, mandraḥ, rāṣṭram, bhrāṣṭram.",
+  "sthanin": "a yar (n, ṣ ...) after a vowel inside a conjunct of three or more consonants",
+  "adesa": "no doubling",
+  "nimitta": "a saṃyoga of three or more letters (tri-prabhṛti)",
+  "conditions": [
+   "'त्रिप्रभृतिषु वर्णेषु संयुक्तेषु शाकटायनस्याचार्यस्य मतेन द्वित्वं न भवति'.",
+   "SK reads it as an optional prohibition: 'त्र्यादिषु वर्णेषु संयुक्तेषु वा द्वित्वम् । इन्न्द्रः । इन्द्रः । राष्ष्ट्रम् । राष्ट्रम्'; Nāgeśa: 'त्रिप्रभृतिसंयुक्तवर्णमध्येऽचः परस्य यरो द्वे वा न स्त इत्यर्थः'. Nyāsa reads it as nitya for that ācārya ('शाकटायनग्रहणं पूजार्थम्। नित्य एवायं विधिः')."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "8.4.47",
+    "note": "matāntara-pratiṣedha: indra, rāṣṭra ..."
+   }
+  ],
+  "overridden_by": [],
+  "ordering_notes": "Tripādī; a matāntara (view) of a named ācārya. Nāgeśa: 'इदं सूत्रद्वयं विकल्पस्य मतभेदप्राप्तव्यवस्थाबोधनार्थमिति बोध्यम्' (8.4.50-51 only clarify the scope of the vā).",
+  "varttikas": [],
+  "optional": "vikalpa-pratiṣedha: the doubling of a three-consonant cluster is optional (SK) / refused by Śākaṭāyana (Kāśikā).",
+  "vedic_only": false,
+  "laghu_ref": null,
+  "notes": "(1) Tattvabodhinī on 8.4.47: since 'vā' runs on from 8.4.45, 8.4.50-52 are strictly unnecessary ('सूत्रत्रयं नारम्भणायमिति भावः' (sic)); they name views. (2) Padamañjarī on 8.4.50: bhrāṣṭram: 8.4.52 is asiddha here so only this refusal acts. (3) Engine: treat as 'doubling is optional' with no additional forced result; use as a doc pointer.",
+  "examples": [
+   "ac_yan_ayadi-105",
+   "ac_yan_ayadi-106",
+   "ac_yan_ayadi-107",
+   "ac_yan_ayadi-108",
+   "ac_yan_ayadi-109"
+  ]
+ },
+ {
+  "id": "8.4.51",
+  "text_iast": "sarvatra śākalyasya",
+  "family": "ac_yan_ayadi",
+  "tier": "extended",
+  "kind": "nisedha",
+  "effect": "In Śākalya's view a yar is never doubled: arkaḥ, markaḥ, brahmā, apahnute.",
+  "sthanin": "any doubling of 8.4.46/47",
+  "adesa": "no doubling",
+  "nimitta": "always (sarvatra), by Śākalya's opinion",
+  "conditions": [
+   "'शाकल्यस्याचार्यस्य मतेन सर्वत्र द्विर्वचनं न भवति। अर्कः। मर्कः। बह्मा। अपह्नुते' (the Kāśikā's printed 'बह्मा' is a typo for ब्रह्मा; SK 'द्वित्वं न । अर्कः । ब्रह्मा').",
+   "Nyāsa: 'अत्रिप्रभृत्यर्थोऽयमारम्भः ... शाकल्यग्रहणं पूजार्थम्, न विकल्पार्थम्' - the optionality comes from the fact that vidhi and pratiṣedha are both stated ('विधिरपि योगद्वयेनोच्यते, प्रतिषेधोऽपि')."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "8.4.46",
+    "note": "Śākalya's blanket refusal of the doubling that 8.4.46 (and 8.4.47) teach."
+   }
+  ],
+  "overridden_by": [],
+  "ordering_notes": "Tripādī; a matāntara. Its examples are the four examples of 8.4.46 given back undoubled.",
+  "varttikas": [],
+  "optional": "matāntara (Śākalya): never doubled; other schools allow the doubling.",
+  "vedic_only": false,
+  "laghu_ref": null,
+  "notes": "Nyāsa: the word sarvatra is there so that the refusal covers 8.4.46 as well as the nearer 8.4.47 (otherwise pratyāsatti would limit it to 8.4.47). Prauḍhamanoramā cites the Prātiśākhya-bhāṣya for the same optionality.",
+  "examples": [
+   "ac_yan_ayadi-110",
+   "ac_yan_ayadi-111"
+  ]
+ },
+ {
+  "id": "8.4.52",
+  "text_iast": "dīrghādācāryāṇām",
+  "family": "ac_yan_ayadi",
+  "tier": "extended",
+  "kind": "nisedha",
+  "effect": "In the view of the (other) ācāryas a yar is not doubled after a long vowel: dātram, pātram, mūtram, sūtram.",
+  "sthanin": "a yar after a long vowel that 8.4.47 would double",
+  "adesa": "no doubling",
+  "nimitta": "the preceding vowel is long (dīrgha)",
+  "conditions": [
+   "'दीर्घादुत्तरस्याचार्याणां मतेन न द्वित्वं भवति। दात्रम्। पात्रम्। मूत्रम्। सूत्रम्'.",
+   "Nyāsa: 'नित्यार्थोऽयमारम्भः। अत्रारम्भसामर्थ्यादेव सिद्ध आचार्यग्रहणं पूजार्थ'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "8.4.47",
+    "note": "matāntara-pratiṣedha for a yar after a long vowel."
+   }
+  ],
+  "overridden_by": [],
+  "ordering_notes": "Tripādī; Padamañjarī on 8.4.50: 'दीर्घादाचार्याणाम्' is asiddha for the earlier 8.4.50 (later rule in the tripādī), so in bhrāṣṭram only 8.4.50 is relevant.",
+  "varttikas": [],
+  "optional": "matāntara: the option 'doubled' remains for those who do not follow this view.",
+  "vedic_only": false,
+  "laghu_ref": null,
+  "notes": "Nyāsa takes ācārya-grahaṇa as honorific only (pūjārtha) and the refusal as nitya; Prauḍhamanoramā (on 8.4.47) objects to reading the ācārya-words of 8.4.50-52 as mere reverence: 'तन्मुधैव; पूजार्थतायाः प्रामाणिकैरनुक्तेः', the Bhāṣya's optional vākk shows they name real alternative views.",
+  "examples": [
+   "ac_yan_ayadi-112",
+   "ac_yan_ayadi-113",
+   "ac_yan_ayadi-114",
+   "ac_yan_ayadi-115"
+  ]
+ },
+ {
+  "id": "8.4.53",
+  "text_iast": "jhalāṃ jaś jhaśi",
+  "family": "ac_yan_ayadi",
+  "tier": "core",
+  "kind": "vidhi",
+  "effect": "A jhal is replaced by the jaś of its own class before a jhaś: labh + dha -> labdha, sudhdhy -> suddhy.",
+  "sthanin": "jhal (stops, aspirates, sibilants, h)",
+  "adesa": "jaś = j b g ḍ d, the one of the same varga (sthānata āntaryāt; Bālamanoramā 'स्थानत आन्तर्यादिति भावः')",
+  "nimitta": "a following jhaś (voiced stop or aspirate)",
+  "conditions": [
+   "'झलां स्थाने जशादेशो भवति झशि परतः'.",
+   "jhaśi: 'झशीति किम्? दत्तः। दत्थः। दध्मः'.",
+   "Laghu: 'iti pūrvadhakārasya dakāraḥ' (the first of the two dh's).",
+   "Bālamanoramā: 'इति धकारस्येति । प्रथमधकारस्येत्यर्थः'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "Tripādī. Takes the output of 8.4.47 (dhdh -> ddh). Tattvabodhinī on 8.2.23 says the jaś made by this sūtra is not asiddha for a further 8.4.47 doubling (a disputed point, see 8.4.47). The mirror rule 8.4.55 khari ca (car before khar) and 8.2.39 (pada-final jaśtva) act on the same jhal in other environments. 8.4.54 draws 'jhalām' from here.",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "laghu_ref": "vlk_19",
+  "notes": "(1) Kāśikā's examples are all labdhā/dogdhā/boddhā-type forms; in each the affix t first becomes dh by 8.2.40 (jhaṣas tathor dho 'dhaḥ) and then the root-final jhal becomes jaś. (2) Nyāsa's derivation of dogdhā goes through 8.2.32 (dāder dhātor ghaḥ). (3) Note: in the Laghu the derivation of 'sudhī upāsya' uses this sūtra on the FIRST dh (Laghu 'spaṣṭam / iti pūrvadhakārasya dakāraḥ').",
+  "examples": [
+   "ac_yan_ayadi-001",
+   "ac_yan_ayadi-002",
+   "ac_yan_ayadi-088",
+   "ac_yan_ayadi-089",
+   "ac_yan_ayadi-116",
+   "ac_yan_ayadi-117",
+   "ac_yan_ayadi-118",
+   "ac_yan_ayadi-119",
+   "ac_yan_ayadi-120",
+   "ac_yan_ayadi-121",
+   "ac_yan_ayadi-122",
+   "ac_yan_ayadi-123",
+   "ac_yan_ayadi-124",
+   "ac_yan_ayadi-125",
+   "ac_yan_ayadi-126",
+   "ac_yan_ayadi-127",
+   "ac_yan_ayadi-128"
+  ]
+ },
+ {
+  "id": "8.4.54",
+  "text_iast": "abhyāse carca",
+  "family": "ac_yan_ayadi",
+  "tier": "internal",
+  "kind": "vidhi",
+  "effect": "In an abhyāsa (reduplicative syllable) a jhal becomes a car, and also (by the ca) a jaś: khay -> the car of its class, jhaś -> the jaś of its class (bubhūṣati, cikhaniṣati).",
+  "sthanin": "a jhal standing in the abhyāsa",
+  "adesa": "car (c ṭ t k p) or jaś (j ḍ d g b), sorted by class and by effort (Laghu 'झशां जशः खयां चर')",
+  "nimitta": "the letter is inside the reduplicated syllable (abhyāse)",
+  "conditions": [
+   "'अभ्यासे वर्तमानानां झलां चरादेशो भवति, चकाराद् जश् च'.",
+   "Laghu: 'अभ्यासे झलां चरः स्युर्जशश्च। झशां जशः खयां चर इति विवेकः'; SK: 'तत्रापि प्रकृतिजशां प्रकृतिजशः प्रकृतिचरां प्रकृतिचर इति विवेक आन्तरतम्यात्'.",
+   "Bālamanoramā counts the sthānins: 'झलश्चतुर्विंशतिः । तत्र शषसाः — शरः । तेषामभ्यासे लोपो वक्ष्यते — 'शर्पूर्वाः खय' इति । हकारस्य त्वभ्यासे 'कुहोश्चु' रिति चुत्वं वक्ष्यते'.",
+   "'प्रकृतिचरां प्रकृतिचरो भवन्ति — चिचीषति... प्रकृतिजशां प्रकृतिजशो भवन्ति — जिजनिषते। बुबुधे। ददौ' (Kāśikā): an already car/jaś stays."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "Tripādī; runs after the abhyāsa has been built and reduced (6.1.8 dvirvacana, 7.4.60 halādiḥ śeṣaḥ, 7.4.61 śarpūrvāḥ khayaḥ, 7.4.62 kuhoś cuḥ, 7.4.79 vowel change): Nyāsa 'द्विर्वचनम्, हलरादिशेषः, कुहोश्चुः इति चुत्वम् -छकारः, तस्थानेन चकारः'. The choice between car and jaś is by 1.1.50 (Bālamanoramā 'आन्तरतम्यात्').",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "laghu_ref": "vlk_401",
+  "notes": "INTERNAL: applies only inside reduplication (liṭ, san, yaṅ, ṇic-caṅ ...), never at a word junction, so it plays no role in a two-word sandhi engine; kept for the derivation of reduplicated stems. The gold cases use input [abhyāsa, rest]; the letters do not mark the abhyāsa and the flag vocabulary has no flag for it. The sūtra name in the corpus is 'abhyāse carca' (carca = car ca).",
+  "examples": [
+   "ac_yan_ayadi-129",
+   "ac_yan_ayadi-130",
+   "ac_yan_ayadi-131",
+   "ac_yan_ayadi-132",
+   "ac_yan_ayadi-133",
+   "ac_yan_ayadi-134",
+   "ac_yan_ayadi-135",
+   "ac_yan_ayadi-136",
+   "ac_yan_ayadi-137",
+   "ac_yan_ayadi-138",
+   "ac_yan_ayadi-139",
+   "ac_yan_ayadi-140",
+   "ac_yan_ayadi-141",
+   "ac_yan_ayadi-142",
+   "ac_yan_ayadi-143"
+  ]
+ },
+ {
+  "id": "8.4.64",
+  "text_iast": "halo yamāṃ yami lopaḥ",
+  "family": "ac_yan_ayadi",
+  "tier": "extended",
+  "kind": "vidhi",
+  "effect": "A yam (y v r l ñ m ṅ ṇ n) standing after a consonant is optionally deleted when a (same) yam follows it: the doubled-y strings of śayyā, ādityaḥ, kurmaḥ are reduced.",
+  "sthanin": "a yam after a hal",
+  "adesa": "lopa (deletion)",
+  "nimitta": "a following yam; read yathāsaṃkhya (1.3.10): y before y, m before m ... (SK)",
+  "conditions": [
+   "'हल उत्तरेषां यमां यमि परतो लोपो भवत्यन्यतरस्याम्' (Kāśikā).",
+   "hala iti kim: 'अन्नम्'; yamām iti kim: 'अर्घ्यम्'; yamīti kim: 'शार्ङ्गम्'.",
+   "SK: 'यमां यमीति यथासङ्ख्यविज्ञानान्नेह । माहात्म्यम्' - the m of māhātmya is not deleted before y.",
+   "Kāśikā on śayyā: 'शय्या इत्यत्र द्वौ यकारौ, क्रमजस्तृतीयः, तत्र मध्यमस्य वा लोपो भवति। शय्या, शय्य्या'."
+  ],
+  "exceptions_and_blockers": [
+   {
+    "id": "1.3.10",
+    "note": "yathāsaṃkhya restricts the deletion to like yam's (SK 'यमां यमीति यथासङ्ख्यविज्ञानान्नेह । माहात्म्यम्')."
+   }
+  ],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "Tripādī; works on the STRING produced by 6.1.77 + 8.4.46/47 doubling. SK: 'लोपारम्भफलं तु, आदित्यो देवताऽस्येत्यादित्यं हविरित्यादौ' - the point of the sūtra is the ādityam form (no other rule yields one y there: 6.4.151 needs an apatya sense, Bālamanoramā).",
+  "varttikas": [],
+  "optional": "vibhāṣā: anyatarasyām (from 8.4.62).",
+  "vedic_only": false,
+  "laghu_ref": "vlk_1003",
+  "notes": "(1) GRETIL TAG ERROR: the Laghu text tags 'halo yamāṃ yami lopaḥ' vlk_1003 as p_4,1.85; the real sūtra is 8.4.64 (4.1.85 is dityadityādityapatyuttarapadāṇṇyaḥ, which is vlk_1002 with the wrong tag 7.2.117). (2) In the Laghu file the sūtra sits in the taddhita chapter (ādityaḥ, prājāpatyaḥ) with vārttikas that really belong to other sūtras (devādyañañau, bahiṣaṣṭilopo yañca, īkak ca). (3) Tattvabodhinī's list of applications: sudhyupāsyaḥ, madhvariḥ (y/v doubling then deletion), durlabhaḥ, kurmaḥ, and nasal groups (pratyaṅṅātmā, sugaṇṇīśaḥ, sannacyutaḥ). (4) Kāśikā counts the middle y or middle two y's in ādityyya / śayyyā.",
+  "examples": [
+   "ac_yan_ayadi-144",
+   "ac_yan_ayadi-145",
+   "ac_yan_ayadi-146",
+   "ac_yan_ayadi-147",
+   "ac_yan_ayadi-148",
+   "ac_yan_ayadi-149",
+   "ac_yan_ayadi-150",
+   "ac_yan_ayadi-151",
+   "ac_yan_ayadi-152",
+   "ac_yan_ayadi-153"
+  ]
+ }
+]

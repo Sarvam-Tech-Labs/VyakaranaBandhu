@@ -27,3 +27,6 @@ Thumbs.db
 # In-copyright reference materials (prevent accidental check-in of protected scans)
 reference/in-copyright/*
 !reference/in-copyright/README.md
+
+# Derived, rebuilt from the rules whenever they change (sandhi.split)
+data/sandhi/.cache/

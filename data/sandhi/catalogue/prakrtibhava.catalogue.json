@@ -1,0 +1,2120 @@
+[
+ {
+  "id": "1.1.11",
+  "text_iast": "īdūdeddvivacanaṃ pragṛhyam",
+  "family": "prakrtibhava",
+  "tier": "core",
+  "kind": "samjna",
+  "effect": "A dual word-form ending in ī, ū or e is named pragṛhya, so that 6.1.125 keeps it unchanged before a vowel.",
+  "sthanin": "no sound is replaced; a samjna is given to a dual (dvivacana) word-form whose last sound is ī, ū or e (harī, viṣṇū, gaṅge, pacete, pacethe)",
+  "adesa": "the name pragṛhya",
+  "nimitta": "the word is a dual (case dual of an i/u/ā-stem, or a verbal dual ending in e) and ends in a LONG ī, ū or e",
+  "conditions": [
+   "Sutra text 'īdūdeddvivacanaṃ pragṛhyam' with tadantavidhi: Kasika 'ईत् ऊत् एत् इत्येवमन्तं द्विवचनं शब्दरूपं प्रगृह्यसंज्ञं भवति'; Balamanorama: 'ईदूदेदिति द्विवचनविशेषणत्वात्तदन्तविधिः' (needed so that pacete counts: 'तदन्तविध्यभावे ... पचेते इत्यत्र ... एद्रूपत्वाभावात्प्रगृह्यत्वं न स्यात्').",
+   "'dvivacanam' is the word-form's number, and is NOT extended to endings that were elided (pratyayalakṣaṇa, 1.1.62): Tattvabodhini 'संज्ञाविधौ प्रत्ययग्रहणे तदन्तग्रहणं नास्ति' (inferred from 'सुप्तिङन्तम्' 1.4.14); Mahabhasya on 1.1.19 'न प्रगृह्यसञ्ज्ञायां प्रत्ययलक्षणं भवति'. Hence kumāryoḥ agāram -> kumāryagāram, vadhvagāram (yaṇ).",
+   "Kasika 'ईदूदेदिति किम्? वृक्षावत्र। प्लक्षावत्र' - a dual in au/other endings is not pragṛhya. 'द्विवचनमिति किम्? कुमार्यत्र। किशोर्यत्र' - a singular in ī is not pragṛhya.",
+   "The vowels are given with the tapara marker ('तपरकरणमसंदेहार्थम्', Kasika; Mahabhasya: 'तपरस्तत्कालस्येति तत्कालानां सवर्णानां ग्रहणं यथा स्यात्' - so udātta/anudātta/svarita long vowels are all included) and are LONG: Mahabhasya shows short i is excluded ('अकुर्वहि अत्र, अकुर्वह्यत्रेति').",
+   "Pluta ī/ū/e are included by a jñāpaka in 6.1.125 (Mahabhasya on 1.1.11: 'सिद्धः प्लुतः स्वरसन्धिषु' because 6.1.125 says 'प्लुतः प्रकृत्या'), and by the samjna being 'kāryakāla' (Mahabhasya: 'कार्यकालं सञ्ज्ञापरिभाषम्। यत्र कार्यं तत्रोपस्थितं द्रष्टव्यम्').",
+   "The ī/ū of a dual counts as a dual even when it is the ekādeśa of i/u + au (harī = hari + au): Balamanorama on 1.1.12 'ईकारस्य परादिवत्त्वाश्रयणाद्द्विवचनत्वम्' (para-ādivat, 6.1.85)."
+  ],
+  "exceptions_and_blockers": [
+   {
+    "id": "1.1.62",
+    "note": "pratyayalakṣaṇa does not operate for pragṛhya-samjna: Mahabhasya on 1.1.19 'न प्रगृह्यसञ्ज्ञायां प्रत्ययलक्षणं भवति' (jñāpaka from 1.4.14 sup-tiṅ-antam)."
+   },
+   {
+    "id": "1.1.70",
+    "note": "tapara: long vowels of the same duration only (Mahabhasya on this sutra: taparas tatkālasya gives savarṇa of the same length; short ī/ū are not pragṛhya)."
+   },
+   {
+    "id": "1.1.12",
+    "note": "the ī/ū after m of adas is covered separately, because masculine amū and plural amī are not duals of the kind this sutra sees (Balamanorama on 1.1.12)."
+   }
+  ],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "Mahabhasya: the samjna is 'kāryakāla' - it is looked up at the moment the pragṛhya-dependent rule (6.1.125, 8.4.57 ...) operates ('यत्र कार्यं तत्रोपस्थितं द्रष्टव्यम्'), not at the moment the word is formed. The ī/ū/e must be present in the word AS IT STANDS at that moment; 8.2.1 makes tripādī products invisible, which is why 1.1.12 exists for amī/amū (see there).",
+  "varttikas": [
+   {
+    "text": "ईदादीनां प्रगृह्यत्वे मणीवादीनां प्रतिषेधो वक्तव्यः",
+    "source": "Kasika on 1.1.11 (given by the Kasika as a vartika; NOT in the corpus vartika file; the Tattvabodhini/Praudhamanorama say Kaiyata and Haradatta reject it as not stated by the three munis)"
+   }
+  ],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [
+   "prakrtibhava-001",
+   "prakrtibhava-002",
+   "prakrtibhava-003",
+   "prakrtibhava-004",
+   "prakrtibhava-005",
+   "prakrtibhava-006",
+   "prakrtibhava-007",
+   "prakrtibhava-008",
+   "prakrtibhava-009",
+   "prakrtibhava-010",
+   "prakrtibhava-011",
+   "prakrtibhava-012",
+   "prakrtibhava-013",
+   "prakrtibhava-014",
+   "prakrtibhava-015",
+   "prakrtibhava-016",
+   "prakrtibhava-017",
+   "prakrtibhava-018",
+   "prakrtibhava-107",
+   "prakrtibhava-135",
+   "prakrtibhava-136"
+  ],
+  "laghu_ref": "vlk_51",
+  "notes": "ENGINE: the sutra needs a 'dual' fact about the word that the letters do not carry (flag dvivacana). The Kasika/Mahabhasya exception for maṇī iva / dampatī iva / rodasī iva / jampatī iva is a disputed vartika (Tattvabodhini/Praudhamanorama: 'तच्च मुनित्रयानुक्तत्वादप्रमाणमिति कैयटादयः'); Kaumudi/Bala instead read 'maṇīvoṣṭrasya' as maṇī + va (iva-artha) + uṣṭrasya. Prauḍhamanoramā calls the reading 'dvivacanānta pragṛhya' of the older (prāñcaḥ) commentators an error: the sutra means 'the dual ending in ī/ū/e', not 'a dual-ending word'. Tattvabodhini adds that after the ekādeśa in 'harī etāu' the shortened prakṛtibhāva is not applied because of 'nityam' in 6.1.125. GRETIL Laghu line 150 carries vlk_50 (6.1.125) and vlk_51 (1.1.11) on one physical line; the tag p_1,1.11 on vlk_51 is correct."
+ },
+ {
+  "id": "1.1.12",
+  "text_iast": "adaso māt",
+  "family": "prakrtibhava",
+  "tier": "core",
+  "kind": "samjna",
+  "effect": "The ī and ū that stand after the m of adas (amī, amū) are named pragṛhya, although amī is a plural and masculine amū owes its ū to an asiddha rule.",
+  "sthanin": "no sound is replaced; samjna for ī/ū following the m (substitute of d, 8.2.80) of adas",
+  "adesa": "the name pragṛhya",
+  "nimitta": "the sound is ī or ū and immediately follows the m that is part of the word adas: amī (nom. pl. masc.), amū (nom. dual masc.)",
+  "conditions": [
+   "Kasika 'अदसः सम्बन्धी यो मकारस्तस्मात् पर ईदूदेतः प्रगृह्यसंज्ञा भवन्ति ... एकारस्य नास्त्युदाहरणम्'. Balamanorama: 'अदस' is an avayava-ṣaṣṭhī ('अदश्शब्दावयवान्मकारात्'), 'māt' is a pañcamī of direction (so 'after m'); 'ईदूत्' continue but 'eṭ' and 'dvivacanam' do NOT ('एदिति नानुवर्तते, अदश्शब्दे मकारात्परस्यैकारस्याऽसंभवात्'; 'द्विवचनमित्यपि नानुवर्तते ... अमी इति बहुवचनत्वात्').",
+   "'adaso iti kim? śamyatra, dāḍimyatra' (Kasika): only the ī/ū of adas. 'mād iti kim? amuke \\'tra' (Kasika/Laghu): the e of amuke (adas + akac) is not right after the m, and without the word 'māt' the anuvṛtti of 'eṭ' would make it pragṛhya (Kaumudi 'असति माद्ग्रहणे एकारोऽप्यनुवर्तेत'; Balamanorama gives the mechanism of the anuvṛtti).",
+   "For feminine/neuter amū the earlier sutra 1.1.11 already works (their ū is the e-substitute of a real dual); masculine amū (adau -> amū) needs this sutra: Balamanorama 'रामकृष्णावमू' chosen because 'पुंसि पूर्वेण न सिध्यति, औकारान्तत्वात्' (Tattvabodhini)."
+  ],
+  "exceptions_and_blockers": [
+   {
+    "id": "8.2.1",
+    "note": "8.2.80 (adaso 'ser dād u do maḥ) and 8.2.81 (eta īd bahuvacane) are tripādī rules and produce the m, ī, ū; they are asiddha for sapādasaptādhyāyī rules, but not for this samjna: Balamanorama 'अदसो मादिति सूत्रं प्रति तु उत्वमत्वे नासिद्धे, आरम्भसामर्थ्यात्'."
+   }
+  ],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "Mahabhasya on this sutra: 'मात्प्रगृह्यसञ्ज्ञायां तस्यासिद्धत्वादयावेकादेशप्रतिषेधः' (the objection that the ayādi/ekādeśa might apply first because ī/ū/m are asiddha), answered by 'आश्रयात् सिद्धत्वं च यथा रोरुत्वे' and by the later yoga-vibhāga ('अदसः / मात्') so that the samjna is looked up after the tripādī substitutions have been made ('न चात्रेत्वोत्वे स्तः। नापि मकारः। उभयमप्यसिद्धम्' is the problem, and the solution is that these rules are siddha by āśraya for this purpose). Tattvabodhini: 'अदसो मादिति सूत्रं प्रति मूत्वमीत्वं च नाऽसिद्धम्, आरम्भसामर्थ्यात्'. Result: the engine must feed the tripādī output (amī, amū) into 1.1.12.",
+  "varttikas": [
+   {
+    "text": "मात्प्रगृह्यसञ्ज्ञायां तस्यासिद्धत्वादयावेकादेशप्रतिषेधः",
+    "source": "Mahabhasya on 1.1.12 (vartika, the objection that the Mahabhasya then answers)"
+   }
+  ],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [
+   "prakrtibhava-019",
+   "prakrtibhava-020",
+   "prakrtibhava-021",
+   "prakrtibhava-022",
+   "prakrtibhava-023",
+   "prakrtibhava-024",
+   "prakrtibhava-025",
+   "prakrtibhava-026"
+  ],
+  "laghu_ref": "vlk_52",
+  "notes": "Prauḍhamanoramā asks why the two sutras were not written as one ('ईदूत्सप्तम्यर्थे प्रगृह्यम्, अदसः, एच्च द्विवचनम्'). The flag 'adas' marks the word as a form of adas; the engine needs to know the ī/ū follows the m of adas, so 'amuke' (adas + ka) must NOT get the flag on its e (it follows the ka). See gold case 'amuke atra'."
+ },
+ {
+  "id": "1.1.13",
+  "text_iast": "śe",
+  "family": "prakrtibhava",
+  "tier": "vedic",
+  "kind": "samjna",
+  "effect": "The Vedic substitute śe (the e that replaces a case ending, as in asme, yuṣme, tve, me) is pragṛhya.",
+  "sthanin": "no sound is replaced; samjna for the e-substitute (śe) of a sup ending",
+  "adesa": "the name pragṛhya",
+  "nimitta": "the word-final e is the śe-ādeśa of the case ending (7.1.39 supāṃ sulukpūrvasavarṇā''ccheyāḍāḍyāyājālaḥ) - asme (= asmabhyam), yuṣme, tve, me",
+  "conditions": [
+   "Kasika: 'शे इत्येतत् प्रगृह्यसंज्ञं भवति। किमिदं शे इति? सुपामादेशश्छन्दसि [७.१.३९]'. Tattvabodhini: 'सुपां सुलुगिति भ्यसः शेआदेशः। शेषे लोपः'.",
+   "Kasika: 'छान्दसमेतदेवैकमुदाहरणम् अस्मे इन्द्राबृहस्पती (ऋ० ४.४९.४) इति ... इतरत्तु लौकिकमनुकरणम्' (yuṣme iti, asme iti, tve iti, me iti are lauka quotations of pada-forms). Tattvabodhini: 'छान्दसमपीदं सन्दर्भशुद्ध्यर्थमुक्तम्'.",
+   "Only the e that IS the śe-ādeśa: an ordinary e is unaffected."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "6.1.78",
+    "note": "as a pragṛhya (through 6.1.125) the e is not turned into ay before a vowel (asme indrābṛhaspatī, not *asmay indrābṛhaspatī)."
+   }
+  ],
+  "overridden_by": [],
+  "ordering_notes": "Applies on the finished word; the śe-substitution (7.1.39) is sapādasaptādhyāyī, so it is siddha for 6.1.125.",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": true,
+  "examples": [
+   "prakrtibhava-028",
+   "prakrtibhava-029",
+   "prakrtibhava-030"
+  ],
+  "laghu_ref": null,
+  "notes": "ENGINE: the flag vocabulary has no marker for 'e that is the śe-ādeśa'; gold cases use stem:asmad / stem:yuṣmad / stem:tvad plus 'arsa' as the nearest indicators. Only the derivation of the word (7.1.39) can tell the engine that the e is śe. The sutra is not in Laghu."
+ },
+ {
+  "id": "1.1.14",
+  "text_iast": "nipāta ekājanāṅ",
+  "family": "prakrtibhava",
+  "tier": "core",
+  "kind": "samjna",
+  "effect": "A nipāta that is a single vowel (a, i, u, ṛ, ḷ, e, ai, o, au) is pragṛhya, except the ṅit particle ā (āṅ).",
+  "sthanin": "no sound is replaced; samjna for a nipāta consisting of exactly one vowel-letter",
+  "adesa": "the name pragṛhya",
+  "nimitta": "the word is a nipāta (1.4.56-58 cādi/prādi lists) that consists of ONE vowel and nothing else, and is not the ṅit ā",
+  "conditions": [
+   "Kasika: 'निपातो य एकाच् आङ्वर्जितः स प्रगृह्यसंज्ञो भवति'. 'ekāc' is a karmadhāraya (eka + ac, 'the one vowel itself'), not a bahuvrīhi: Balamanorama 'एकोऽच् यस्येति बहुव्रीहिस्तु नाश्रितः, तथा सति प्रेदमित्यादावतिप्रसङ्गात्'; Mahabhasya on this sutra 'एकाजिति नायं बहुव्रीहिः'.",
+   "'nipāta iti kim? cakārātra, jahārātra'; 'ekāj iti kim? prāgnaye vācamīraya'; 'anāṅ iti kim? ā udakāntāt odakāntāt' (Kasika).",
+   "The particle ā is pragṛhya when it is aṅit (ṅ-less): 'वाक्यस्मरणयोरङित्' - ā evaṃ nu manyase, ā evaṃ kila tat. It is NOT when it is ṅit (īṣadarthe, maryādā, abhividhi): Kasika/Kaumudi/Laghu quoting the Mahabhasya kārikā 'ईषदर्थे क्रियायोगे मर्यादाभिविधौ च यः। एतमातं ङितं विद्याद्वाक्यस्मरणयोरङित्'.",
+   "Balamanorama on the meaning of the examples: 'इ विस्मये' (i = surprise), 'उ वितर्के' (u = doubt); ā in 'ā evaṃ nu manyase' signals a change of mind, in 'ā evaṃ kila tat' a recollection.",
+   "Members of the cādi list (Vidyut ganapatha, corpus.ganas_for('1.4.57'), 155 items, open_ended) that are a single vowel: a, i, u, ṛ, ḷ, u, e, ai, o, au (u occurs twice). The prādi list (1.4.58) contains 'āṅ', the one prādi that would be ekāc; it is excluded by 'anāṅ' when it is the ṅit ā."
+  ],
+  "exceptions_and_blockers": [
+   {
+    "id": "1.4.58",
+    "note": "āṅ (the ṅit ā of the prādi list) is excluded by 'anāṅ'; Kasika/Laghu: ā īṣaduṣṇam -> oṣṇam (guṇa) because ṅit ā is not pragṛhya."
+   },
+   {
+    "id": "1.1.17",
+    "note": "the particle uñ (u with the marker ñ) is a separate item with an OPTIONAL pragṛhya status (Śākalya) before iti (Mahabhasya on 1.1.17 'द्वावुकाराविमौ। एकोऽननुबन्धकः। अपरः सानुबन्धकः'); the plain nipāta u is nitya pragṛhya by this sutra."
+   },
+   {
+    "id": "8.3.33",
+    "note": "the pragṛhya uñ after a may-letter can be replaced by v (a tripādī rule): Balamanorama 'प्रकृतिभावे प्राप्ते वत्ववचनम्'."
+   }
+  ],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "Requires the nipāta samjna (1.4.57/1.4.58) to have been given first; the pragṛhya status is then used by 6.1.125.",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [
+   "prakrtibhava-031",
+   "prakrtibhava-032",
+   "prakrtibhava-033",
+   "prakrtibhava-034",
+   "prakrtibhava-035",
+   "prakrtibhava-036",
+   "prakrtibhava-037",
+   "prakrtibhava-039",
+   "prakrtibhava-040",
+   "prakrtibhava-041",
+   "prakrtibhava-042",
+   "prakrtibhava-043",
+   "prakrtibhava-144"
+  ],
+  "laghu_ref": "vlk_55",
+  "notes": "From the gana (computed, not from a commentary): the o-ending members are handled by 1.1.15; the e-ending members other than the lone 'e' (re, hahe, manye, śaṅke, he, aye, are) are NOT pragṛhya under any sutra I found (they are not ekāc and 1.1.15 only names o). I found no commentary example for e-ending non-lone nipātas; treat as unconfirmed. Kasika and Vidyut lists differ in detail (Vidyut has no, nau, hehai, hahe, vadhā, vadhvā ...; the Kasika print I read has different spellings); the engine should use the Vidyut gana."
+ },
+ {
+  "id": "1.1.15",
+  "text_iast": "ot",
+  "family": "prakrtibhava",
+  "tier": "core",
+  "kind": "samjna",
+  "effect": "A nipāta ending in o is pragṛhya.",
+  "sthanin": "no sound is replaced; samjna for a nipāta whose last sound is o",
+  "adesa": "the name pragṛhya",
+  "nimitta": "the word is a nipāta (cādi/prādi) and ends in o: aho, āho, utāho, ho, atho, no, and the lone o",
+  "conditions": [
+   "Kasika: 'निपात इति वर्तते। तस्यौकारेण तदन्तविधिः। ओदन्तो यो निपातः स प्रगृह्यसंज्ञो भवति। आहो इति। उताहो इति'.",
+   "o-ending members of the cādi list (computed from the Vidyut gana): o, āho, utāho, ho, aho, no, atho.",
+   "Mahabhasya: the examples āho, utāho are unnecessary (āha u = āho are already covered as a 'nipātasamāhāra' by 1.1.14); the sutra is justified as a prohibition-type rule; it proposes 'ओ षु यातं मरुतः' (o ṣu yātaṃ marutaḥ) as Vedic instances.",
+   "Vartika (Mahabhasya) 'ओतश्च्वि प्रतिषेधः': the o-final form made by the cvi affix (adaḥ abhavat -> ado 'bhavat) is excluded; the Mahabhasya then argues this is unnecessary because 'लक्षणप्रतिपदोक्तयोः प्रतिपदोक्तस्य' and 'गौणमुख्ययोर्मुख्ये कार्यसम्प्रत्ययः' (the o must be a real nipāta)."
+  ],
+  "exceptions_and_blockers": [
+   {
+    "id": "1.4.57",
+    "note": "the item must first be a nipāta; cvi-formed o-forms and case forms like 'go' are not (Mahabhasya 'अनदः अदः अभवत् अदोऽभवत्')."
+   }
+  ],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [
+   {
+    "text": "ओतश्च्वि प्रतिषेधः",
+    "source": "Mahabhasya on 1.1.15 (vartika)"
+   }
+  ],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [
+   "prakrtibhava-044",
+   "prakrtibhava-045",
+   "prakrtibhava-046",
+   "prakrtibhava-047"
+  ],
+  "laghu_ref": "vlk_56",
+  "notes": "Asymmetry to remember: o-ending nipātas are pragṛhya (this sutra) but the e-ending ones (he, are, aye, manye ...) are not (see 1.1.14 notes); aho/aha etc. before a vowel: pragṛhya blocks 6.1.78 (aho īśāḥ)."
+ },
+ {
+  "id": "1.1.16",
+  "text_iast": "sambuddhau śākalyasyetāvanārṣe",
+  "family": "prakrtibhava",
+  "tier": "core",
+  "kind": "samjna",
+  "effect": "According to Śākalya, the o that comes from the vocative (viṣṇo, vāyo, bhāno) is optionally pragṛhya before the non-Vedic quotation particle iti.",
+  "sthanin": "no sound is replaced; optional samjna for the vocative o",
+  "adesa": "the name pragṛhya (optional)",
+  "nimitta": "the o arises from the vocative singular (sambuddhi: guṇa of the stem-final u) and the next word is the non-Vedic (anārṣa) iti",
+  "conditions": [
+   "Kasika: 'संबुद्धिनिमित्तो य ओकारः स शाकल्यस्याचार्यस्य मतेन प्रगृह्यसंज्ञो भवति, इति शब्देऽनार्षेऽवैदिके परतः'; 'शाकल्यग्रहणं विभाषार्थम्'.",
+   "Counter-examples: 'सम्बुद्धाविति किम्? गवित्ययमाह' (go quoted, not a vocative); 'इताविति किम्? वायोऽत्र'; 'अनार्ष इति किम्? एता गा ब्रह्मबन्ध इत्यब्रवीत्' (the iti of the Vedic text itself).",
+   "Balamanorama: 'अत्र ओदन्तत्वेऽपि निपातत्वाऽभावादप्राप्ते विभाषेयम्' (this o is not a nipāta, so 1.1.15 could not give pragṛhya; hence the sutra); 'विष्णविति प्रगृह्यत्वाऽभावे रूपम्'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "6.1.78",
+    "note": "when the samjna is taken, 6.1.125 keeps the o (viṣṇo iti); when not taken the ayādi goes ahead (viṣṇaviti / viṣṇa iti)."
+   }
+  ],
+  "overridden_by": [],
+  "ordering_notes": "The three-form result mixes a sapādasaptādhyāyī rule (6.1.78) with the tripādī optional 8.3.19 (lopaḥ śākalyasya), which acts last.",
+  "varttikas": [],
+  "optional": "vibhasa (Śākalya, 'śākalyagrahaṇaṃ vibhāṣārtham'): the vocative o + iti has THREE outputs: viṣṇo iti (pragṛhya kept by 6.1.125), or non-pragṛhya: viṣṇav iti by 6.1.78 and then either viṣṇa iti (8.3.19 optional deletion of v) or viṣṇaviti.",
+  "vedic_only": false,
+  "examples": [
+   "prakrtibhava-048",
+   "prakrtibhava-049",
+   "prakrtibhava-050",
+   "prakrtibhava-051",
+   "prakrtibhava-052",
+   "prakrtibhava-053"
+  ],
+  "laghu_ref": "vlk_57",
+  "notes": "ENGINE: needs the flag sambuddhi (vocative) on the word and needs to know that 'iti' is the anārṣa one (flag 'arsa' on the iti marks the Vedic-text iti, which BLOCKS this sutra). Kasika prints only two forms for vāyo iti / bhāno iti ('वायो इति, वायविति'); the 8.3.19 form 'vāya iti' is grammatical by the same route as viṣṇa iti (Laghu prints all three for viṣṇo)."
+ },
+ {
+  "id": "1.1.17",
+  "text_iast": "uñaḥ",
+  "family": "prakrtibhava",
+  "tier": "extended",
+  "kind": "samjna",
+  "effect": "According to Śākalya the particle uñ is optionally pragṛhya before the non-Vedic iti.",
+  "sthanin": "no sound is replaced; optional samjna for the particle uñ (u with the marker ñ)",
+  "adesa": "the name pragṛhya (optional)",
+  "nimitta": "the word is the particle uñ and the next word is the non-Vedic iti",
+  "conditions": [
+   "Kasika: 'उञः प्रगृह्यसंज्ञा भवति इतौ शाकल्यस्याचार्यस्य मतेन। शाकल्यस्येति विभाषार्थम्'. The condition 'iti' and 'anārṣe' continue from 1.1.16 ('शाकल्यस्येतावनार्ष इति वर्तते').",
+   "Kasika/Kaumudi results: 'उ इति। विति' (pragṛhya, or not pragṛhya and yaṇ).",
+   "Mahabhasya on this sutra: the nipāta u (no anubandha) is already nitya pragṛhya by 1.1.14; the sutra names uñ, the u with anubandha ñ ('द्वावुकाराविमौ। एकोऽननुबन्धकः। अपरः सानुबन्धकः')."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "Balamanorama: the sutra pair 'उञः / ऊँ' is one sutra 'उञ ऊँ' in the Kasika, split by the Mahabhasya so that the 'viti' form (no samjna, no ādeśa) is obtainable ('अतो विभज्य व्याख्यातम्').",
+  "varttikas": [],
+  "optional": "vibhasa (Śākalya): uñ + iti -> u iti (pragṛhya) or viti (yaṇ 6.1.77); together with 1.1.18 three forms.",
+  "vedic_only": false,
+  "examples": [
+   "prakrtibhava-054"
+  ],
+  "laghu_ref": null,
+  "notes": "ENGINE: the flag 'stem:uñ' marks the ñ-marked particle; a plain nipāta u is nitya pragṛhya (1.1.14). Not in Laghu (Laghu goes from 1.1.16 to 8.3.33)."
+ },
+ {
+  "id": "1.1.18",
+  "text_iast": "ūm̐",
+  "family": "prakrtibhava",
+  "tier": "extended",
+  "kind": "vidhi",
+  "effect": "According to Śākalya the particle uñ before non-Vedic iti is optionally replaced by ūm̐ (long, nasal, itself pragṛhya).",
+  "sthanin": "the particle uñ (u)",
+  "adesa": "ūm̐ (long ū with candrabindu), which is pragṛhya",
+  "nimitta": "the next word is the non-Vedic iti; Śākalya's opinion",
+  "conditions": [
+   "Kasika: 'उञ इतावनार्षे ऊँ इत्ययमादेशो भवति दीर्घोऽनुनासिकश्च शाकल्यस्य मतेन प्रगृह्यसंज्ञकश्च ... तेन त्रीणि रूपाणि भवन्ति। उ इति। विति। ऊँ इति'.",
+   "Balamanorama: 'एतदादेशाऽभावपक्षे पूर्वसूत्रेण प्रगृह्यत्वे सति उ इति रूपम्। प्रगृह्यत्वस्याप्यभावे सति यणादेशे विति'.",
+   "Tattvabodhini/Praudhamanorama on the wording: 'अनुनासिक इति। तेनास्मिन् परे यरोऽनुनासिके इति विकल्पः' - the anunāsika ūm̐ is mentioned so that 8.4.45 (yaro 'nunāsike 'nunāsiko vā) can act on a preceding yar (yad etad ūm̐ iti paṭhasi)."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "Applies before 6.1.125 looks at the word (the substitute is itself pragṛhya).",
+  "varttikas": [],
+  "optional": "vibhasa (Śākalya): uñ -> ūm̐ or unchanged; overall three forms: ūm̐ iti, u iti, viti.",
+  "vedic_only": false,
+  "examples": [
+   "prakrtibhava-054"
+  ],
+  "laghu_ref": null,
+  "notes": "The sutra text itself is 'ūm̐' = ū + m + combining candrabindu U+0310 in the Vidyut file; gold outputs use the same character sequence. Praudhamanorama on 8.3.33 shows that combined with 8.3.33 (v), 8.4.57 and 8.4.47 there are dozens of forms (28) of 'kim u iti'; those are not modelled."
+ },
+ {
+  "id": "1.1.19",
+  "text_iast": "īdūtau ca saptamyarthe",
+  "family": "prakrtibhava",
+  "tier": "vedic",
+  "kind": "samjna",
+  "effect": "An ī or ū (word-final) that stands for the meaning of the locative case is pragṛhya.",
+  "sthanin": "no sound is replaced; samjna for an ī/ū-ending word whose case ending was elided (sup-luk) but which still expresses the locative",
+  "adesa": "the name pragṛhya",
+  "nimitta": "the word ends in ī or ū and stands for a locative (gaurī = gauryām, māmakī = māmakyām, tanū = tanvām); the locative ending is elided (7.1.39 supāṃ sulug ...)",
+  "conditions": [
+   "Kasika: 'ईदन्तमूदन्तं च शब्दरूपं सप्तम्यर्थे वर्तमानं प्रगृह्यसंज्ञं भवति'; examples 'अध्यस्यां मामकी तनू', 'सोमो गौरी अधि श्रितः'. The condition 'anārṣe/Śākalya' of 1.1.16 does NOT continue ('शाकल्यस्येतावनार्षे इति निवृत्तम्').",
+   "'ईदूताविति किम्?' (Rg 5.37.5 'priyaḥ sūrye priyo agnā bhavāti', the e/ā locatives are not covered); 'सप्तमीग्रहणं किम्? धीती, मती, सुष्टुती' (Vedic instrumentals in ī: not covered); 'अर्थग्रहणं किम्? वाप्यश्वः। नद्यातिः' (a compound has passed to another meaning).",
+   "Balamanorama: 'अर्थग्रहणाद्यत्र सप्तम्या लुकियः शिष्यते स लुप्यमानार्थाभिधायी इति न्यायेन प्रकृतेरेव सप्तम्यर्थे पर्यवसानम्' - the sutra applies only where the case ending has been elided and the STEM itself carries the locative sense; real locatives in ī/ū with an ending (e.g. vātapramī) are not examples.",
+   "Mahabhasya: without 'artha' the compound member could also count (vāpyaśvaḥ); with it the word must remain 'jahatsvārtha' or stay within the sense of the seventh case; the Mahabhasya's verse: 'ईदूतौ सप्तमीत्येव लुप्तेऽर्थग्रहणाद् भवेत्। पूर्वस्य चेत्सवर्णोऽसावाडाम्भावः प्रसज्यते'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "The elision of the locative ending (7.1.39) must already have taken place; 1.1.62 pratyayalakṣaṇa would otherwise undo it (Mahabhasya: 'न प्रगृह्यसञ्ज्ञायां प्रत्ययलक्षणं भवति' is the jñāpaka drawn from the wording of this sutra).",
+  "varttikas": [
+   {
+    "text": "ईदूतौ सप्तमीत्येव लुप्तेऽर्थग्रहणाद् भवेत् । पूर्वस्य चेत्सवर्णोऽसावाडाम्भावः प्रसज्यते",
+    "source": "Kasika on 1.1.19 (kārikā of the Mahabhasya, verse 1)"
+   }
+  ],
+  "optional": null,
+  "vedic_only": true,
+  "examples": [
+   "prakrtibhava-055",
+   "prakrtibhava-056",
+   "prakrtibhava-057",
+   "prakrtibhava-058",
+   "prakrtibhava-059"
+  ],
+  "laghu_ref": null,
+  "notes": "ENGINE: flag saptamyartha (i/u standing for a locative). All attested examples are Vedic (Rg 9.12.3, Paippalada Samhita 1.6.8) although the sutra has no 'chandasi'; tier 'vedic'. Not in Laghu."
+ },
+ {
+  "id": "1.4.56",
+  "text_iast": "prāgrīśvarānnipātāḥ",
+  "family": "prakrtibhava",
+  "tier": "support",
+  "kind": "adhikara",
+  "effect": "Heading: everything from here up to (but excluding) the ī of 'adhirīśvare' (1.4.97) is called nipāta.",
+  "sthanin": "no substitution",
+  "adesa": "the adhikāra 'nipātāḥ'",
+  "nimitta": "the range of sutras 1.4.57-1.4.96",
+  "conditions": [
+   "Kasika: 'प्रागेतस्मादवधेर्यानित ऊर्ध्वमनुक्रमिष्यामः निपातसंज्ञास्ते वेदितव्याः ... प्राग्वचनं संज्ञासमावेशार्थम्'; the 'r' of 'rīśvara' stops the limit from being 'īśvare tosunkasunau' (3.4.13): 'रेफोच्चारणम् ईश्वरे तोसुन्कसुनौ इत्ययमवधिर्मा विज्ञायीति'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "The nipāta samjna may coexist with gati, upasarga and karmapravacanīya samjñā ('गत्युपसर्गकर्मप्रवचनीयसंज्ञाभिस्सह निपातसंज्ञा समाविशति').",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [],
+  "laghu_ref": null,
+  "notes": "Balamanorama calls it an 'anantaka' sutra ('अनन्तकमिदं सूत्रम्'). Not in Laghu. Pure vocabulary rule; no sandhi effect. Kasika verse: 'रीश्वराद्वीस्वरान्मा भूत् कृन्मेजन्तः परोऽपि सः। समासेष्वव्ययीभावो लौकिकं चातिवर्तते' (Mahabhasya 1.4.56 vartikas 1-4)."
+ },
+ {
+  "id": "1.4.57",
+  "text_iast": "cādayo’sattve",
+  "family": "prakrtibhava",
+  "tier": "core",
+  "kind": "samjna",
+  "effect": "The cādi words (ca, vā, ha, aha, eva, ... a, i, u, ṛ, ḷ, e, ai, o, au ... iti, iva ...) are called nipāta, provided they do not denote a substance.",
+  "sthanin": "no substitution; samjna to the members of the cādi list",
+  "adesa": "the name nipāta",
+  "nimitta": "the word is in the ganapatha 'cādi' and denotes an action/relation (asattva) rather than a thing (dravya)",
+  "conditions": [
+   "Kasika: 'चादयो निपातसंज्ञा भवन्ति, न चेत्सत्त्वे वर्तन्ते। प्रसज्यप्रतिषेधोऽयम्, सत्त्वमिति द्रव्यमुच्यते'; 'असत्वे इति किम्? पशुर्वै पुरुषः। पशुः पुरोडाशः' (paśu as an animal is a dravya).",
+   "Balamanorama: 'लिङ्गसङ्ख्याकारकान्वितं द्रव्यम्'; 'इह तु स्यादेव - पुष्टं पशु मन्यते' (paśu in the sense of 'well').",
+   "Kasika adds the vowels a i u ṛ ḷ e ai o au and the class 'उपसर्गविभक्तिस्वरप्रतिरूपकाश्च निपाताः' as members; prādi (1.4.58) too. The list is an ākṛtigaṇa (open ended): corpus.ganas_for('1.4.57') marks open_ended=True.",
+   "Vidyut ganapatha cādi list: 155 items; single vowels among them: a, i, u, ṛ, ḷ, u, e, ai, o, au; o-ending: o, āho, utāho, ho, aho, no, atho."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "Comes first in the derivation of a pragṛhya nipāta: cādi membership -> nipāta (1.4.57) -> 1.1.14/1.1.15 -> pragṛhya -> 6.1.125.",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [
+   "prakrtibhava-031",
+   "prakrtibhava-032",
+   "prakrtibhava-033",
+   "prakrtibhava-034",
+   "prakrtibhava-035",
+   "prakrtibhava-044",
+   "prakrtibhava-045",
+   "prakrtibhava-046"
+  ],
+  "laghu_ref": "vlk_53",
+  "notes": "GRETIL prints the sutra as \"cādayo 'satve\" (vlk_53 = p_1,4.57): the text has a typo (asatve for asattve) but the tag is right. Nipāta samjña also feeds 1.1.37 (svarādinipātamavyayam) etc. The Kasika list and the Vidyut list differ in spelling and order; use the Vidyut gana in the engine."
+ },
+ {
+  "id": "1.4.58",
+  "text_iast": "prādayaḥ",
+  "family": "prakrtibhava",
+  "tier": "core",
+  "kind": "samjna",
+  "effect": "The prādi words (pra, parā, apa, sam, anu, ava, nis, nir, dus, dur, vi, āṅ, ni, adhi, api, ati, su, ud, abhi, prati, pari, upa) are also called nipāta (when not denoting a substance).",
+  "sthanin": "no substitution; samjna to the members of the prādi list",
+  "adesa": "the name nipāta",
+  "nimitta": "the word is in the prādi list and does not denote a substance",
+  "conditions": [
+   "Kasika: 'प्रादयोऽसत्त्वे निपातसंज्ञा भवन्ति ... पृथग्योगकरणमुत्तरसंज्ञाविशेषणार्थम्। उपसर्गाः क्रियायोगे इति चादीनामुपसर्गसंज्ञा मा भूत्' (the separate sutra makes sure the cādi words do not become upasargas); 'असत्त्व इत्येव - परा जयन्ति सेनाः' (parā as a verb-form, not a prādi).",
+   "Vidyut prādi list (corpus.ganas_for('1.4.58'), closed): pra, parā, apa, sam, anu, ava, nis, nir, dus, dur, vi, āṅ, ni, adhi, api, ati, su, ud, abhi, prati, pari, upa.",
+   "Laghu: 'एतेऽपि तथा'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [
+   {
+    "text": "मरुच्छब्दस्योपसंख्यानम् ।",
+    "source": "vartika commentary data, corpus.varttikas_on('1.4.58')"
+   },
+   {
+    "text": "श्रच्छब्दस्योपसंख्यानम् ।",
+    "source": "vartika commentary data, corpus.varttikas_on('1.4.58')"
+   }
+  ],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [],
+  "laghu_ref": "vlk_54",
+  "notes": "Relevance for pragṛhya: the single-vowel prādi is only 'āṅ' (ā), which is excluded when ṅit (1.1.14). The corpus attaches the two vartikas ('marut', 'śra') to this sutra; the Kasika/Mahabhasya place them under 1.4.59. Balamanorama's entry for 1.4.58 in the corpus is an empty heading."
+ },
+ {
+  "id": "1.4.59",
+  "text_iast": "upasargāḥ kriyāyoge",
+  "family": "prakrtibhava",
+  "tier": "core",
+  "kind": "samjna",
+  "effect": "When joined with an action (kriyāyoga), the prādi words are called upasarga.",
+  "sthanin": "no substitution; samjna to prādi words joined to a verb (or verbal noun)",
+  "adesa": "the name upasarga",
+  "nimitta": "a prādi word that is connected with a verbal action (kriyāyoga)",
+  "conditions": [
+   "Kasika: 'प्रादयः क्रियायोगे उपसर्गसंज्ञा भवन्ति। प्रणयति। परिणयति। प्रणायकः। परिणायकः'; 'क्रियायोग इति किम्? प्रगतो नायकोऽस्माद्देशात् प्रनायको देशः'.",
+   "The upasarga samjna is what enables ṇatva 8.4.14, ṣatva 8.3.65, vṛddhi 6.1.91, ekādeśa 6.1.94 etc. (Kasika: 'उपसर्गप्रदेशाः - उपसर्गे घोः किः इत्येवमादयः').",
+   "Laghu lists the members: pra parā apa sam anu ava nis nir dus dur vi āṅ ni adhi api ati su ut abhi prati pari upa (22, the prādi list)."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [
+   {
+    "text": "मरुच्छब्दस्य चोपसंख्यानं कर्तव्यम्",
+    "source": "Kasika on 1.4.59 (Mahabhasya 1.4.59 vartika 2): marut counts as upasarga: maruttaḥ (marudbhir dattaḥ)"
+   },
+   {
+    "text": "श्रच्छब्दस्योपसंख्यानम्",
+    "source": "Kasika on 1.4.59 (Mahabhasya vartika 3): śrat counts: śraddhā (ātaś copasarge 3.3.106)"
+   }
+  ],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [
+   "prakrtibhava-060",
+   "prakrtibhava-061",
+   "prakrtibhava-062",
+   "prakrtibhava-063",
+   "prakrtibhava-064",
+   "prakrtibhava-065"
+  ],
+  "laghu_ref": "vlk_35",
+  "notes": "For the sandhi engine the upasarga samjna is boundary information (boundary 'upasarga', flag 'upasarga' in gold). Balamanorama has no entry for this sutra in the corpus; its 1.4.60 entry treats both sutras together. Praudhamanoramā's entry on 1.4.59 is only a note on nis/dus versus nir/dur (Vamana, Haradatta) that closes the samjñāprakaraṇa."
+ },
+ {
+  "id": "1.4.60",
+  "text_iast": "gatiśca",
+  "family": "prakrtibhava",
+  "tier": "support",
+  "kind": "samjna",
+  "effect": "The same prādi words, when joined with an action, are ALSO called gati (in addition to upasarga).",
+  "sthanin": "no substitution; samjna 'gati' to prādi words joined to an action",
+  "adesa": "the name gati",
+  "nimitta": "the prādi word is connected with a verbal action",
+  "conditions": [
+   "Kasika: 'गतिसंज्ञकाश्च प्रादयो भवन्ति क्रियायोगे'; the 'ca' brings about coexistence with the upasarga samjna ('चकारः संज्ञासमावेशार्थः'): praṇītam, abhiṣiktam get both the gati accent rules (6.2.49 gatiranantaraḥ) and the upasarga rules ṇatva 8.4.14 and ṣatva 8.3.65.",
+   "'योगविभाग उत्तरार्थः' - the separate sutra ensures only gati (not upasarga) for later items, e.g. 'ūrīsyāt' and 8.3.87 (upasargapradurbhyām astir yacparaḥ) would otherwise apply.",
+   "Laghu (in the declension of dhī): the vartika '(gatikāraketarapūrvapadasya yaṇ neṣyate)' -> śuddhadhiyau: for a compound whose first member is neither gati nor kāraka the yaṇ of 6.4.82 is not wanted (the dual is śuddhadhiyau)."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [
+   {
+    "text": "कारिकाशब्दस्योपसंख्यानम् ।",
+    "source": "vartika commentary data, corpus.varttikas_on('1.4.60')"
+   },
+   {
+    "text": "पुनश्च नसौ छन्दसि ।",
+    "source": "vartika commentary data, corpus.varttikas_on('1.4.60')"
+   },
+   {
+    "text": "दुरः षत्वणत्वयोरुपसर्गत्वप्रतिषेधो वक्तव्यः ।",
+    "source": "vartika commentary data, corpus.varttikas_on('1.4.60')"
+   },
+   {
+    "text": "गतिकारकेतरपूर्वपदस्य यण् नेष्यते",
+    "source": "Laghusiddhāntakaumudī on 1.4.60 (vlk_202)"
+   }
+  ],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [
+   "prakrtibhava-064",
+   "prakrtibhava-065",
+   "prakrtibhava-067",
+   "prakrtibhava-068"
+  ],
+  "laghu_ref": "vlk_202",
+  "notes": "Laghu vlk_202 (line 460 of the GRETIL text) sits in the dhī/bhrū declension, not in the sandhi chapters: hence tier 'support'. GRETIL tag p_1,4.60 is right. Kasika vartikas: 'kārikāśabdasyopasaṅkhyānam', 'punaś canasau chandasi', 'duraḥ ṣatvaṇatvayor upasargatvapratiṣedho vaktavyaḥ'. The dur-vartika means duṣ-kṛtam etc. do not get upasarga-ṇatva/ṣatva from 'dur' (Kasika 'निस्सान्तौ दुस्सान्तौ')."
+ },
+ {
+  "id": "6.1.115",
+  "text_iast": "prakṛtyā’ntaḥpādamavyapare",
+  "family": "prakrtibhava",
+  "tier": "vedic",
+  "kind": "nisedha",
+  "effect": "Inside an Rk-pāda, an eṅ (e or o) word-final stays unchanged before a short a that is not followed by v or y.",
+  "sthanin": "the pūrvarūpa that 6.1.109 would produce; the e/o itself stays",
+  "adesa": "prakṛtibhāva: e/o remain, the following a is pronounced separately",
+  "nimitta": "e or o at the end of a pada, standing INSIDE an Rk-pāda (antaḥpāda), and the following short a is not followed by v or y",
+  "conditions": [
+   "Kasika: 'एङ इति यत् पञ्चम्यन्तमनुवर्तते, तदर्थादिह प्रथमान्तं भवति ... पादशब्देन च ऋक्पादस्यैव ग्रहणमिष्यते, न तु श्लोकपादस्य। अवकारयकारपरेऽति परत एङ् प्रकृत्या भवति'.",
+   "'अन्तः पादमिति किम्? कया मती कुत एतास एतेऽर्चन्ति' (across a pāda boundary: pūrvarūpa); 'अव्यपर इति किम्? तेऽवदन्। तेजोऽयस्मयम्'; 'एङिति किम्? अन्वग्निरुषसामग्रमख्यत्'.",
+   "Kaumudi: 'ऋक्पादमध्यस्थ एङ् प्रकृत्या स्यादति परे न तु वकारयकारपरेऽति'.",
+   "Kasika records a rival reading 'नान्तःपादमव्यपरे' whose sense is a general prohibition of everything 'संहितायामिह यदुच्यते तस्य सर्वस्य प्रतिषेधम्'; Mahabhasya reads 'नान्तः पादमव्यपरे' and discusses the over-application (vartika 1: 'नान्तःपादमिति सर्वप्रतिषेधश्चेदतिप्रसङ्गः' - anvagniruṣasām would be affected)."
+  ],
+  "exceptions_and_blockers": [
+   {
+    "id": "6.1.116",
+    "note": "the 'avyapare' exclusion is lifted for the listed words (avyāt, avadyāt, avakramuḥ, avrata, ayam, avantu, avasyu)."
+   }
+  ],
+  "overrides": [
+   {
+    "id": "6.1.109",
+    "note": "instead of eṅaḥ padāntād ati (pūrvarūpa) the e/o stays: Kasika 'स्वभावेनावतिष्ठते ... न विकारमापद्यते'."
+   }
+  ],
+  "overridden_by": [],
+  "ordering_notes": "The condition 'antaḥpāda' and the a-not-before-v/y check look at the word after 8.2.x has not yet acted (6.1.113 ato roraplutād aplute makes the o from ru first; the o then meets this sutra).",
+  "varttikas": [
+   {
+    "text": "नान्तः पादमिति सर्वप्रतिषेधश्चेदतिप्रसङ्गः",
+    "source": "Mahabhasya on 6.1.115 (vartika 1, on the reading 'nāntaḥ pādam')"
+   },
+   {
+    "text": "अकाराश्रयमिति चेदुत्ववचनम्",
+    "source": "Mahabhasya on 6.1.115 (vartika 2)"
+   },
+   {
+    "text": "एङ्प्रकरणात्सिद्धमिति चेदुत्वप्रतिषेधः",
+    "source": "Mahabhasya on 6.1.115 (vartika 4)"
+   }
+  ],
+  "optional": null,
+  "vedic_only": true,
+  "examples": [
+   "prakrtibhava-069",
+   "prakrtibhava-070",
+   "prakrtibhava-071",
+   "prakrtibhava-072",
+   "prakrtibhava-073"
+  ],
+  "laghu_ref": null,
+  "notes": "ENGINE: needs the Vedic pāda structure and the Kasika's ‘a not followed by v/y’ test; letters alone cannot say whether the o is inside a pāda. Reading disagreement: Vidyut/Kasika 'prakṛtyā''ntaḥpādam avyapare' vs Mahabhasya 'nāntaḥ pādam avyapare' (Tattvabodhini/Praudhamanorama on 6.1.122 note that the Mahabhasya reading is 'नान्तः पादम्' and that with it 6.1.122 'सर्वत्र विभाषा गोः' would optionalise the pūrvarūpa instead of the prakṛtibhāva). Not in Laghu."
+ },
+ {
+  "id": "6.1.116",
+  "text_iast": "avyādavadyādavakramuravratāyamavantvavasyuṣu ca",
+  "family": "prakrtibhava",
+  "tier": "vedic",
+  "kind": "apavada",
+  "effect": "In the seven listed words (avyāt, avadyāt, avakramuḥ, avrata, ayam, avantu, avasyu) the eṅ stays even though the a is followed by v or y.",
+  "sthanin": "the pūrvarūpa of 6.1.109 (and the 'avyapare' exception of 6.1.115)",
+  "adesa": "prakṛtibhāva of the e/o before these words",
+  "nimitta": "e/o at the end of a pada inside an Rk-pāda, before a-initial avyāt, avadyāt, avakramuḥ, avrata, ayam, avantu, avasyu",
+  "conditions": [
+   "Kasika: 'अव्यात् अवद्यात् अवक्रमुः अव्रत अयम् अवन्तु अवस्यु इत्येतेषु वकारयकारपरेऽप्यति परतोऽन्तः पादमेङ् प्रकृत्या भवति'.",
+   "Kaumudi: 'यद्यपि बह्वृचैस्तेनोऽवन्तु, रथतूः, सोऽयमगात्, तेऽरुणेभिरित्यादौ प्रकृतिभावो न क्रियते तथापि बाहुलकात्समाधेयम्। प्रातिशाख्ये तु वाचनिक एवायमर्थः'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "6.1.115",
+    "note": "lifts its 'avyapare' restriction for these words."
+   },
+   {
+    "id": "6.1.109",
+    "note": "same as 6.1.115: prakṛtibhāva instead of pūrvarūpa."
+   }
+  ],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": true,
+  "examples": [
+   "prakrtibhava-074",
+   "prakrtibhava-075",
+   "prakrtibhava-076",
+   "prakrtibhava-077",
+   "prakrtibhava-078",
+   "prakrtibhava-079"
+  ],
+  "laghu_ref": null,
+  "notes": "Kaumudi lists the Rk/Yajus examples 'vasubhir no avyāt', 'mitramaho avadyāt' (the Kaumudi print reads 'मिमहो'), 'mā śivāso avakramuḥ', 'te no avrata', 'śatadhāro ayam maṇiḥ', 'te no 'vantu', 'kuśikāso avasyavaḥ'; the Bahvrca reading of 'te no 'vantu' etc. does not show prakṛtibhāva (Kaumudi 'बाहुलकात्')."
+ },
+ {
+  "id": "6.1.117",
+  "text_iast": "yajuṣyuraḥ",
+  "family": "prakrtibhava",
+  "tier": "vedic",
+  "kind": "nisedha",
+  "effect": "In the Yajus the word uro (uraḥ) stays unchanged before a, without the antaḥpāda condition.",
+  "sthanin": "the pūrvarūpa of 6.1.109",
+  "adesa": "prakṛtibhāva of the eṅ-final uro before short a",
+  "nimitta": "Yajurveda usage; the word uraḥ (eṅ-final uro) before a",
+  "conditions": [
+   "Kasika: 'उरःशब्द एङन्तो यजुषि विषयेऽति प्रकृत्या भवति। उरो अन्तरिक्षम्'; 'यजुषि पादानामभावादनन्तःपादार्थं वचनम्'.",
+   "Kasika records a variant sutra 'यजुष्युरो' with the vocative of uru: 'उरो अन्तरिक्षे सजूः'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "6.1.109",
+    "note": "prakṛtibhāva instead of pūrvarūpa."
+   }
+  ],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": true,
+  "examples": [
+   "prakrtibhava-080"
+  ],
+  "laghu_ref": null,
+  "notes": "Vedic and accent-dependent (Yajus); not in Laghu."
+ },
+ {
+  "id": "6.1.118",
+  "text_iast": "āpojuṣāṇovṛṣṇovarṣiṣṭhe’mbe’mbāle’mbikepūrve",
+  "family": "prakrtibhava",
+  "tier": "vedic",
+  "kind": "nisedha",
+  "effect": "In the Yajus the words āpo, juṣāṇo, vṛṣṇo, varṣiṣṭhe, and ambe, ambāle (the ones before ambikā) stay unchanged before a.",
+  "sthanin": "the pūrvarūpa of 6.1.109",
+  "adesa": "prakṛtibhāva of these eṅ-final words before short a",
+  "nimitta": "Yajus; the listed words āpaḥ, juṣāṇaḥ, vṛṣṇaḥ, varṣiṣṭhe, ambe, ambāle (ambike being the third)",
+  "conditions": [
+   "Kasika: 'आपो जुषाणो वृष्णो वर्षिष्ठे इत्येते शब्दा अम्बे अम्बाले इत्येतौ च यावम्बिकेशब्दात् पूर्वौ यजुषि पठितौ तेऽति परतः प्रकृत्या भवन्ति'.",
+   "Kasika: 'अस्मादेव निपातनाद् अम्बार्थनद्योर्ह्रस्वः इति ह्रस्वत्वं न भवति' (7.3.107 is not applied to ambe)."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "6.1.109",
+    "note": "prakṛtibhāva instead of pūrvarūpa."
+   }
+  ],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": true,
+  "examples": [
+   "prakrtibhava-081",
+   "prakrtibhava-082",
+   "prakrtibhava-083",
+   "prakrtibhava-084",
+   "prakrtibhava-085"
+  ],
+  "laghu_ref": null,
+  "notes": "Yajus only; the words are given in their pausal/vocative forms (āpo = āpaḥ + a)."
+ },
+ {
+  "id": "6.1.119",
+  "text_iast": "aṅga ityādau ca",
+  "family": "prakrtibhava",
+  "tier": "vedic",
+  "kind": "nisedha",
+  "effect": "In the Yajus the eṅ inside the word aṅga (aṅge) and the eṅ before the a that begins 'aṅga' stay unchanged before a.",
+  "sthanin": "the pūrvarūpa of 6.1.109",
+  "adesa": "prakṛtibhāva",
+  "nimitta": "Yajus; the e/o is the eṅ of aṅga (aṅge) followed by a, or precedes the initial a of the word aṅga",
+  "conditions": [
+   "Kasika: 'अङ्गशब्दे य एङ् तदादौ चाकारे यः पूर्वः स यजुषि विषयेऽति प्रकृत्या भवति। ऐन्द्रः प्राणो अङ्गेअङ्गे अदीध्यत्'.",
+   "Kaumudi: 'प्राणो अङ्गे अङ्गे अदीध्यत्'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "6.1.109",
+    "note": "prakṛtibhāva instead of pūrvarūpa."
+   }
+  ],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": true,
+  "examples": [
+   "prakrtibhava-086",
+   "prakrtibhava-087"
+  ],
+  "laghu_ref": null,
+  "notes": "Yajus only."
+ },
+ {
+  "id": "6.1.120",
+  "text_iast": "anudātte ca kudhapare",
+  "family": "prakrtibhava",
+  "tier": "vedic",
+  "kind": "nisedha",
+  "effect": "In the Yajus an eṅ stays before an anudātta a that is followed by a kavarga letter or dh.",
+  "sthanin": "the pūrvarūpa of 6.1.109",
+  "adesa": "prakṛtibhāva",
+  "nimitta": "Yajus; e/o before an anudātta short a which is itself followed by k kh g gh ṅ or dh",
+  "conditions": [
+   "Kasika: 'अनुदात्ते चाति कवर्गधकारपरे परतो यजुषि विषय एङ् प्रकृत्या भवति। अयं नो अग्निः। अयं सो अध्वरः'.",
+   "'अनुदात्त इति किम्? अधोऽग्रे। अग्रशब्द आद्युदात्तो निपात्यते'; 'कुधपर इति किम्? सोऽयमग्निः सहस्रियः' (Kasika); Kaumudi: 'अथोऽग्रे रुद्रे', 'सोऽयमग्निमतः'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "6.1.109",
+    "note": "prakṛtibhāva instead of pūrvarūpa."
+   }
+  ],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": true,
+  "examples": [
+   "prakrtibhava-088",
+   "prakrtibhava-089",
+   "prakrtibhava-090",
+   "prakrtibhava-091"
+  ],
+  "laghu_ref": null,
+  "notes": "Accent-dependent (the a must be anudātta): the engine cannot test this from letters alone."
+ },
+ {
+  "id": "6.1.121",
+  "text_iast": "avapathāsi ca",
+  "family": "prakrtibhava",
+  "tier": "vedic",
+  "kind": "nisedha",
+  "effect": "In the Yajus an eṅ stays before the anudātta a of the word avapathāḥ.",
+  "sthanin": "the pūrvarūpa of 6.1.109",
+  "adesa": "prakṛtibhāva",
+  "nimitta": "Yajus; before the word avapathāḥ (2nd sg. imperfect of vap) with anudātta a",
+  "conditions": [
+   "Kasika: 'अनुदात्त इति चशब्देनानुकृष्यते। अवपथाःशब्देऽनुदात्तेऽकारादौ परतो यजुषि विषय एङ् प्रकृत्या भवति। त्री रुद्रेभ्यो अवपथाः। वपेर्लङि थासि तिङ्ङतिङः इति निघातेनानुदात्तत्वम्'.",
+   "'अनुदात्त इत्येव - यद्रुद्रेभ्योऽवपथाः। निपातैर्यद्यदिहन्त इति निघातः प्रतिषिध्यते' (after yad the nighāta is blocked, so no prakṛtibhāva)."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "6.1.109",
+    "note": "prakṛtibhāva instead of pūrvarūpa."
+   }
+  ],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": true,
+  "examples": [
+   "prakrtibhava-092",
+   "prakrtibhava-093"
+  ],
+  "laghu_ref": null,
+  "notes": "The letters of the two gold cases are the same; only the yad and the accent decide."
+ },
+ {
+  "id": "6.1.122",
+  "text_iast": "sarvatra vibhāṣā goḥ",
+  "family": "prakrtibhava",
+  "tier": "core",
+  "kind": "vidhi",
+  "effect": "The o of the word go, at the end of a pada, optionally stays unchanged before a short a (in the language and in the Veda).",
+  "sthanin": "the pūrvarūpa of 6.1.109 (optional)",
+  "adesa": "prakṛtibhāva of go before short a",
+  "nimitta": "the word go (an eṅ-final that is a real stem-final o), pada-final, followed by short a",
+  "conditions": [
+   "Laghu: 'लोके वेदे चैङन्तस्य गोरति वा प्रकृतिभावः पदान्ते। गोअग्रम्, गोऽग्रम्। एङन्तस्य किम्? चित्रग्वग्रम्। पदान्ते किम्? गोः'.",
+   "Balamanorama/Tattvabodhini: 'सर्वत्र' cancels 'yajuṣi/chandasi', so the rule is for the language too; 'eṅ' is read in (so go must end in the eṅ o, not in u: citragvagram; and the vocative he citrago 'gram is not covered since the o is lākṣaṇika: 'प्रतिपदोक्तस्यैवैङो ग्रहणात्').",
+   "'padānte kim? goḥ': in go + as the o is not word-final (6.1.110 ṅasiṅasośca gives pūrvarūpa there, Balamanorama).",
+   "Kasika (Veda): 'अपशवो वा अन्ये गोअश्वेभ्यः पशवो गोअश्वान्' (Taittiriya Samhita 5.2.9.4)."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "6.1.109",
+    "note": "optional prakṛtibhāva instead of pūrvarūpa."
+   }
+  ],
+  "overridden_by": [
+   {
+    "id": "6.1.123",
+    "note": "the optional substitution avaṅ (Sphoṭāyana) is the apavāda of pūrvarūpa/prakṛtibhāva: Tattvabodhini 'पूर्वरूपापवादत्वस्यापि अवङ्सूत्रस्य सुवचत्वात्' - both survive as alternatives because 6.1.123 is itself optional."
+   }
+  ],
+  "ordering_notes": "Balamanorama: 'प्रकृत्यान्तःपादम् इत्यतः प्रकृत्येत्यनुवर्तते'; Prauḍhamanoramā/Tattvabodhini: on the Mahabhasya reading 'नान्तःपादमव्यपरे' the sutra would optionalise the pūrvarūpa itself ('सर्वत्र इति सूत्रेण पूर्वरूपमेव विकल्प्येत'), giving the same result set.",
+  "varttikas": [],
+  "optional": "vibhasa: go + a -> go a (prakṛtibhāva) or go'... (pūrvarūpa 6.1.109); with 6.1.123 also gavā...",
+  "vedic_only": false,
+  "examples": [
+   "prakrtibhava-094",
+   "prakrtibhava-095",
+   "prakrtibhava-101"
+  ],
+  "laghu_ref": "vlk_44",
+  "notes": "GRETIL prints the sutra as 'sarvatra vibhāṣāḥ goḥ' (visarga typo; the Vidyut text is 'sarvatra vibhāṣā goḥ'); tag p_6,1.122 is right. The go-family results are a union of three sutras for one input: 'go agram' (6.1.122), \"go'gram\" (6.1.109), 'gavāgram' (6.1.123)."
+ },
+ {
+  "id": "6.1.123",
+  "text_iast": "avaṅ sphoṭāyanasya",
+  "family": "prakrtibhava",
+  "tier": "core",
+  "kind": "vidhi",
+  "effect": "In the opinion of Sphoṭāyana the pada-final o of go is optionally replaced by avaṅ before a vowel.",
+  "sthanin": "the final o of go (pada-final eṅ)",
+  "adesa": "avaṅ (ṅit: replaces only the last sound o, 1.1.53: gav + a)",
+  "nimitta": "go at the end of a pada, before any vowel (ac); Sphoṭāyana's opinion (a vibhāṣā)",
+  "conditions": [
+   "Kasika: 'अतीति निवृत्तम्। अचीत्येतत्त्वनुवर्तत एव। अचि परतो गोः स्फोटायनस्याचार्यस्य मतेनावङादेशो भवति। गवाग्रम्, गोऽग्रम्। गवाजिनम्, गोऽजिनम्। गवौदनम्, गवोदनम्। गवोष्ट्रम्, गवुष्ट्रम्'; 'स्फोटायनग्रहणं पूजार्थम्, विभाषेत्येव हि वर्तते'.",
+   "'atīti nivṛttam' means the anuvṛtti is now 'aci' (else gaveśaḥ, gavoddhaḥ would not arise: Tattvabodhini); go must be pada-final ('पदान्ते किम्? गवि'); avaṅ is ṅit, so it replaces only the o (Balamanorama 'ङिच्चेत्यन्तादेशः'), and the following a then meets a (gava + agram -> gavāgram by 6.1.101), or o/u by 6.1.88/6.1.87.",
+   "Vyavasthita-vibhāṣā: 'व्यवस्थितविभाषेयम्, तेन गवाक्ष इत्यत्र नित्यमवङ् भवति' (Kasika); Balamanorama cites the Mahabhasya verse 'देवत्रातो गलो ग्राह इतयोगे च सद्विधिः। मिथस्ते न विभाष्यन्ते गवाक्षः संशितव्रतः'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "6.1.122",
+    "note": "as apavāda-type alternative to the go-prakṛtibhāva/pūrvarūpa (Tattvabodhini: 'प्रकृतिभावापवादत्वेन उत्सर्गापवादरूपत्वात्')."
+   },
+   {
+    "id": "6.1.78",
+    "note": "avaṅ replaces the ayādi (av) of go before vowels other than short a where it applies: gavaudanam vs gavodanam."
+   }
+  ],
+  "overridden_by": [
+   {
+    "id": "6.1.124",
+    "note": "before indra the substitution is obligatory (nityam)."
+   }
+  ],
+  "ordering_notes": "",
+  "varttikas": [
+   {
+    "text": "गोरग्वचनं गवाग्रे स्वरसिद्ध्यर्थम्",
+    "source": "Mahabhasya on 6.1.123 (vartika 1)"
+   },
+   {
+    "text": "अवङादेशे हि स्वरे दोषः",
+    "source": "Mahabhasya on 6.1.123 (vartika 2)"
+   }
+  ],
+  "optional": "vibhasa (Sphoṭāyana); vyavasthitavibhāṣā: obligatory in gavākṣa (window), optional elsewhere.",
+  "vedic_only": false,
+  "examples": [
+   "prakrtibhava-094",
+   "prakrtibhava-095",
+   "prakrtibhava-096",
+   "prakrtibhava-097",
+   "prakrtibhava-098"
+  ],
+  "laghu_ref": "vlk_47",
+  "notes": "GRETIL Laghu tags this item 'vlk_47 = p_6,1.133'; the words 'avaṅ sphoṭāyanasya' are 6.1.123 (Vidyut 6.1.133 is 'syaś chandasi bahulam'). The Kasika says the substitute is 'ādyudātta' by nipātana (avaṅ in a bahuvrīhi: gavāgra). 'go' + i -> gavi shows the padānta condition. The corpus text of Balamanorama on 6.1.124 ends with a stray '*****समाप्तम्*****अथ अदादिप्रकरणम्': a splice artifact of the corpus, not part of the commentary on this sutra."
+ },
+ {
+  "id": "6.1.124",
+  "text_iast": "indre ca",
+  "family": "prakrtibhava",
+  "tier": "core",
+  "kind": "apavada",
+  "effect": "Before the word indra (an a-vowel-less ac, i) the o of go is obligatorily replaced by avaṅ.",
+  "sthanin": "the final o of go",
+  "adesa": "avaṅ (gav)",
+  "nimitta": "go followed by a word that begins with the vowel of indra: indra",
+  "conditions": [
+   "Kasika: 'इन्द्रशब्दस्थेऽचि परतो गोर्नित्यमवङादेशो भवति। गवेन्द्रः'. Balamanorama: 'गोः, अवङ्, अचि इत्यनुवर्तते ... विकल्पनिवृत्त्यर्थः'.",
+   "Tattvabodhini: 'आरम्भसामर्थ्यान्नित्यमिदम्। इदं च सूत्रं त्यक्तुं शक्यम्। अन्यार्थं स्वीकृतेन व्यवस्थितविभाषाश्रयणेनैवेष्टसिद्धेः'; Prauḍhamanoramā: 'इन्द्रे च नित्यम्' as a reading is rejected as not supported by the Mahabhasya."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "6.1.123",
+    "note": "makes the option obligatory for indra."
+   },
+   {
+    "id": "6.1.78",
+    "note": "the ayādi (would give *gavindraḥ) is not what happens: the result gavendraḥ needs avaṅ followed by ādguṇaḥ."
+   }
+  ],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [
+   "prakrtibhava-099"
+  ],
+  "laghu_ref": "vlk_48",
+  "notes": "After avaṅ: gava + indra -> gavendraḥ by ādguṇaḥ 6.1.87 (Balamanorama 'आद्गुणः'). Tattvabodhini also discusses a wrong reading 'अथ प्रकृतिभावः' in the manuscripts."
+ },
+ {
+  "id": "6.1.125",
+  "text_iast": "plutapragṛhyā aci nityam",
+  "family": "prakrtibhava",
+  "tier": "core",
+  "kind": "nisedha",
+  "effect": "A pluta vowel and a pragṛhya vowel stay unchanged before a vowel (prakṛtibhāva), always.",
+  "sthanin": "the substitution that would otherwise apply (yaṇ 6.1.77, ayādi 6.1.78, ekādeśa 6.1.87/88/101/94, pūrvarūpa 6.1.109 ...)",
+  "adesa": "prakṛtibhāva: the pluta/pragṛhya vowel is left as it is and the next vowel is pronounced separately (hiatus)",
+  "nimitta": "the sound is pluta or belongs to a word named pragṛhya (1.1.11-19), and a vowel that would be the trigger of the change follows",
+  "conditions": [
+   "Kasika: 'प्लुताश्च प्रगृह्याश्चाचि प्रकृत्या भवन्ति। देवदत्त३ अत्र न्वसि। यज्ञदत्त३ इदमानय। प्रगृह्याः - अग्नी इति। वायू इति। खट्वे इति। माले इति'.",
+   "The second 'aci' (repeated although 'aci' continues) means 'the ac that is the nimitta of the ādeśa': Kasika 'अचीत्यनुवर्तमाने पुनरज्ग्रहणमादेशनिमित्तस्याचः परिग्रहार्थम्। तेनेह न भवति - जानु उ अस्य रुजति, जान्वस्य रुजति। प्रगृह्यादुकारात् परस्याकारस्य सवर्णदीर्घत्वं प्रत्यनिमित्तत्वादत्र प्रकृतिभावो न भवति'; Mahabhasya vartika 2 'तत्तु तस्मिन् प्रकृतिभावार्थम्'.",
+   "'nityam': Kaumudi 'नित्यम् इति किम्। हरी एतावित्यादावयमेव प्रकृतिभावो यथा स्यात् इकोऽसवर्णे इति ह्रस्वसमुच्चितो माभूत्'; Balamanorama: without 'nityam' the later, para rule 6.1.127 (Śākalya with shortening) would take over in harī etau.",
+   "Pluta: the pluta is included through the jñāpaka 'प्लुतः प्रकृत्या' (Mahabhasya: 'प्लुतप्रकृतिभाववचनं तु ज्ञापकमेकादेशात् प्लुतो विप्रतिषेधेनेति') - the pluta is siddha for svara-sandhi although created in the tripādī (8.2.82ff); objection 'शालेन्द्रे' answered by 'न वा बहिरङ्गलक्षणत्वात्। बहिरङ्गः प्लुतः, अन्तरङ्ग एकादेशः। असिद्धं बहिरङ्गमन्तरङ्गे'.",
+   "Prakṛtibhāva means 'स्वभावेनावस्थानम्' (Balamanorama): neither yaṇ, ayādi, guṇa, vṛddhi, savarṇadīrgha nor pūrvarūpa; the vowels stay in hiatus."
+  ],
+  "exceptions_and_blockers": [
+   {
+    "id": "6.1.129",
+    "note": "see overridden_by."
+   },
+   {
+    "id": "6.1.130",
+    "note": "see overridden_by."
+   },
+   {
+    "id": "8.3.33",
+    "note": "see overridden_by."
+   }
+  ],
+  "overrides": [
+   {
+    "id": "6.1.77",
+    "note": "yaṇ: harī etau, not *haryetau."
+   },
+   {
+    "id": "6.1.78",
+    "note": "ayādi: gaṅge amū / māle iti, not *gaṅgayamū."
+   },
+   {
+    "id": "6.1.101",
+    "note": "savarṇadīrgha: i indraḥ (not *īndraḥ)."
+   },
+   {
+    "id": "6.1.109",
+    "note": "pūrvarūpa."
+   },
+   {
+    "id": "6.1.127",
+    "note": "para rule; overruled by 'nityam' (Kaumudi/Bala/Tattvabodhini); 6.1.128 likewise by the same reasoning (inference)."
+   }
+  ],
+  "overridden_by": [
+   {
+    "id": "6.1.129",
+    "note": "aplutavat: before the non-Vedic iti a pluta acts as non-pluta for the pluta-based prakṛtibhāva only ('प्लुतकार्यं प्रकृतिभावं न करोति'); pragṛhya-based prakṛtibhāva still applies."
+   },
+   {
+    "id": "6.1.130",
+    "note": "Cakravarmana's option: pluta ī (and other plutas) as if not pluta, optional."
+   },
+   {
+    "id": "8.3.33",
+    "note": "uñ after a may-letter is optionally replaced by v ('प्रगृह्यत्वादुञः प्रकृतिभावे प्राप्ते वकारो विधीयते')."
+   }
+  ],
+  "ordering_notes": "Kasika/Mahabhasya: the pluta is 'siddha' for svarasandhi even though the pluta rules are in the tripādī (8.2.82-107) - see the Mahabhasya on 6.1.125 quoted above. For 'jānu u asya' the prakṛtibhāva protects only the pragṛhya from what FOLLOWS it; the ekādeśa with what precedes still happens. 6.1.125 is the trigger for every pragṛhya effect: without it the samjna (1.1.11-19) has no visible consequence in sandhi.",
+  "varttikas": [
+   {
+    "text": "प्लुतप्रगृह्येष्वज्ग्रहणमनर्थकमधिकारात्सिद्धम्",
+    "source": "Mahabhasya on 6.1.125 (vartika 1)"
+   },
+   {
+    "text": "तत्तु तस्मिन् प्रकृतिभावार्थम्",
+    "source": "Mahabhasya on 6.1.125 (vartika 2)"
+   },
+   {
+    "text": "प्लुतप्रकृति भाववचनं तु ज्ञापकमेकादेशात् प्लुतो विप्रतिषेधेनेति",
+    "source": "Mahabhasya on 6.1.125 (vartika 3)"
+   },
+   {
+    "text": "न वा बहिरङ्गलक्षणत्वात्",
+    "source": "Mahabhasya on 6.1.125 (vartika 5)"
+   }
+  ],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [
+   "prakrtibhava-001",
+   "prakrtibhava-002",
+   "prakrtibhava-003",
+   "prakrtibhava-004",
+   "prakrtibhava-005",
+   "prakrtibhava-006",
+   "prakrtibhava-007",
+   "prakrtibhava-008",
+   "prakrtibhava-019",
+   "prakrtibhava-020",
+   "prakrtibhava-021",
+   "prakrtibhava-022",
+   "prakrtibhava-023",
+   "prakrtibhava-024",
+   "prakrtibhava-028",
+   "prakrtibhava-029",
+   "prakrtibhava-030",
+   "prakrtibhava-031",
+   "prakrtibhava-032",
+   "prakrtibhava-033",
+   "prakrtibhava-034",
+   "prakrtibhava-035",
+   "prakrtibhava-036",
+   "prakrtibhava-037",
+   "prakrtibhava-044",
+   "prakrtibhava-045",
+   "prakrtibhava-046",
+   "prakrtibhava-048",
+   "prakrtibhava-049",
+   "prakrtibhava-050",
+   "prakrtibhava-054",
+   "prakrtibhava-055",
+   "prakrtibhava-056",
+   "prakrtibhava-057",
+   "prakrtibhava-104",
+   "prakrtibhava-105",
+   "prakrtibhava-106",
+   "prakrtibhava-107",
+   "prakrtibhava-108",
+   "prakrtibhava-109",
+   "prakrtibhava-110",
+   "prakrtibhava-135",
+   "prakrtibhava-136",
+   "prakrtibhava-137",
+   "prakrtibhava-138",
+   "prakrtibhava-139",
+   "prakrtibhava-144",
+   "prakrtibhava-145",
+   "prakrtibhava-146",
+   "prakrtibhava-147"
+  ],
+  "laghu_ref": "vlk_50",
+  "notes": "Laghu: 'ete 'ci prakṛtyā syuḥ. āgaccha kṛṣṇa 3 atra gauścarati' and the sutra is placed BEFORE 1.1.11 (Laghu vlk_50 then vlk_51...). Bala: 'sandhayo na bhavantīti yāvat'. The engine keeps plutas and pragṛhyas apart in hiatus; the output writes them with a space in the gold files. Tattvabodhini/Praudhamanorama reject the older (prāc) example 'kṛṣṇā3 ehi' (pluta on the first word): 'तदसत्। वाक्यस्य टेः इत्यधिकाराद्' - the pluta stands on the last vowel of the vākya, hence 'ehi kṛṣṇa3 atra'."
+ },
+ {
+  "id": "6.1.126",
+  "text_iast": "āṅo’nunāsikaśchandasi",
+  "family": "prakrtibhava",
+  "tier": "vedic",
+  "kind": "vidhi",
+  "effect": "In the Veda the ṅit ā (āṅ) before a vowel is replaced by a nasal ā (ām̐) which is pragṛhya.",
+  "sthanin": "the āṅ (ā) before a vowel",
+  "adesa": "ām̐ (nasalised ā), left unchanged (prakṛtibhāva)",
+  "nimitta": "Vedic; āṅ (the preverb/particle ā) followed by a vowel",
+  "conditions": [
+   "Kasika: 'आङोऽचि परतः संहितायां छन्दसि विषयेऽनुनासिकादेशो भवति, स च प्रकृत्या भवति। अभ्र आँ अपः। गभीर आँ उग्रपुत्रे जिघांसतः'.",
+   "Kasika variant: 'केचिदाङोऽनुनासिकश्छन्दसि बहुलमित्यधीयते। तेनेह न भवति - इन्द्रो बाहुभ्यामातरत्। आ अतरत्'.",
+   "Kaumudi puts here the vartika 'ईषाअक्षादीनां छन्दसि प्रकृतिभावो वक्तव्यः' (īṣā akṣo hiraṇyaḥ, jyā iyam, pūṣā aviṣṭu) - see 6.1.127."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "6.1.101",
+    "note": "no savarṇadīrgha with the following a: the ām̐ stays apart."
+   }
+  ],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [
+   {
+    "text": "ईषाअक्षादीनां छन्दसि प्रकृतिभावो वक्तव्यः",
+    "source": "Kaumudi on 6.1.126 (the same vartika the Kasika and Mahabhasya attach to 6.1.127)"
+   }
+  ],
+  "optional": null,
+  "vedic_only": true,
+  "examples": [
+   "prakrtibhava-109",
+   "prakrtibhava-110",
+   "prakrtibhava-111",
+   "prakrtibhava-122",
+   "prakrtibhava-123",
+   "prakrtibhava-124"
+  ],
+  "laghu_ref": null,
+  "notes": "Not in Laghu. The sutra is about āṅ; the commentaries do not discuss how the a-final word before ām̐ avoids merging in 'abhra ām̐ apaḥ' (see gold notes)."
+ },
+ {
+  "id": "6.1.127",
+  "text_iast": "iko’savarṇe śākalyasya hrasvaśca",
+  "family": "prakrtibhava",
+  "tier": "core",
+  "kind": "vidhi",
+  "effect": "In Śākalya's opinion a pada-final ik (i, u, ṛ, ḷ, ī, ū ...) before a non-savarṇa vowel may become short and stay unchanged (prakṛtibhāva), instead of taking yaṇ.",
+  "sthanin": "a pada-final ik (i ī u ū ṛ ṝ ḷ) before a vowel that is not its savarṇa",
+  "adesa": "its short counterpart (hrasva) plus prakṛtibhāva; the alternative is yaṇ (6.1.77)",
+  "nimitta": "the ik is pada-final, the next sound is an ac that is not savarṇa with it, not in a compound (vartika 'na samāse'), not before a sit affix (vartika 'siti ca')",
+  "conditions": [
+   "Laghu: 'पदान्ता इको ह्रस्वा वा स्युरसवर्णेऽचि। ह्रस्वविधिसामर्थ्यान्न स्वरसन्धिः। चक्रि अत्र, चक्र्यत्र। पदान्ता इति किम्? गौर्यौ'.",
+   "Kasika: 'इक इति किम्? खट्वेन्द्रः। असवर्ण इति किम्? कुमारीन्द्रः। शाकल्यस्य ग्रहणं पूजार्थम्। आरम्भसामर्थ्यादेव हि यणादेशेन सह विकल्पः सिद्धः'.",
+   "Kasika vartika: 'सिन्नित्यसमासयोः शाकलप्रतिषेधो वक्तव्यः' (sit: pārśvam; nityasamāsa: vyākaraṇam, kumāryartham); in the corpus the vartika file splits it as 'न समासे' and 'सिति च'. Kaumudi: 'न समासे: वाप्यश्वः'; 'सिति च: पार्श्वम्'.",
+   "Kasika/Mahabhasya vartika: 'ईषाअक्षादिषु छन्दसि प्रकृतिभावमात्रं वक्तव्यम्' (īṣā akṣo hiraṇyayaḥ, kā īm are piśaṅgilā, pathā agaman): in the Veda simple prakṛtibhāva without shortening, for a-varṇa endings.",
+   "Kaumudi/Balamanorama (from the Mahabhasya): the 'ca' that draws 'prakṛtyā' is unnecessary: 'अत्र ह्रस्वविधिसामर्थ्यादेव प्रकृतिभावे सिद्धे तदनुकर्षणार्थश्चकारो न कर्तव्यः'. Mahabhasya: the only real use of the 'ca' is to draw 'plutapragṛhyāḥ', but 'nityam' in 6.1.125 does that job too, so one of the two could be dropped ('नित्यग्रहणस्याण्येतत् प्रयोजनमुक्तम्। अन्यतरच्छक्यमवक्तुम्').",
+   "After the yaṇ alternative a k is not deleted: Balamanorama/Praudhamanorama 'चक्र्यत्र' - 8.2.29 (skoḥ saṃyogādyoḥ) does not act since the yaṇ is treated as a vowel (sthānivat, 1.1.57) and 'pūrvatrāsiddhe na sthānivat' does not apply ('तस्य दोषः संयोगादिलोपलत्वणत्वेषु')."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "6.1.77",
+    "note": "optional alternative to yaṇ (both survive)."
+   }
+  ],
+  "overridden_by": [
+   {
+    "id": "6.1.125",
+    "note": "'nityam' (para rule blocked): for pluta/pragṛhya ik the plain prakṛtibhāva of 6.1.125 wins and no shortening happens (harī etau)."
+   }
+  ],
+  "ordering_notes": "",
+  "varttikas": [
+   {
+    "text": "न समासे ।",
+    "source": "vartika commentary data, corpus.varttikas_on('6.1.127')"
+   },
+   {
+    "text": "सिति च ।",
+    "source": "vartika commentary data, corpus.varttikas_on('6.1.127')"
+   },
+   {
+    "text": "सिन्नित्यसमासयोः शाकलप्रतिषेधो वक्त व्यः",
+    "source": "Kasika on 6.1.127 (Mahabhasya vartika 1; note the Kasika print has a space in 'वक्त व्यः')"
+   },
+   {
+    "text": "ईषाअक्षादिषु छन्दसि प्रकृतिभावमात्रं वक्त व्यर्म्",
+    "source": "Kasika on 6.1.127 (Mahabhasya vartika 2)"
+   }
+  ],
+  "optional": "vibhasa (Śākalya): either shortened+prakṛtibhāva or yaṇ; the result set for cakri atra is {cakri atra, cakryatra}.",
+  "vedic_only": false,
+  "examples": [
+   "prakrtibhava-011",
+   "prakrtibhava-012",
+   "prakrtibhava-112",
+   "prakrtibhava-113",
+   "prakrtibhava-114",
+   "prakrtibhava-115",
+   "prakrtibhava-116",
+   "prakrtibhava-117",
+   "prakrtibhava-118",
+   "prakrtibhava-119",
+   "prakrtibhava-120",
+   "prakrtibhava-121",
+   "prakrtibhava-122",
+   "prakrtibhava-123",
+   "prakrtibhava-124",
+   "prakrtibhava-125"
+  ],
+  "laghu_ref": "vlk_59",
+  "notes": "ENGINE: the shortened vowel must NOT undergo 6.1.77 again in the prakṛtibhāva branch. Laghu's GRETIL text misprints cakryatra as 'cakraytra'. Kaumudi vs Kasika: the Kasika has the two vartikas fused ('sin-nitya-samāsayoḥ'); the Kaumudi/Bala split them and apply 'na samāse' only to 6.1.127 (not to 6.1.128: 'sapta ṛṣīṇām'). Praudhamanoramā/Tattvabodhini also read 'na samāse' as belonging here only."
+ },
+ {
+  "id": "6.1.128",
+  "text_iast": "ṛtyakaḥ",
+  "family": "prakrtibhava",
+  "tier": "core",
+  "kind": "vidhi",
+  "effect": "In Śākalya's opinion a pada-final ak (a ā i ī u ū ṛ ṝ ḷ) before ṛ may become short and stay unchanged, instead of the usual guṇa/savarṇadīrgha.",
+  "sthanin": "a pada-final ak before the vowel ṛ",
+  "adesa": "its short counterpart plus prakṛtibhāva (optional)",
+  "nimitta": "the ak is pada-final and the next sound is ṛ (any ṛ, also in a compound)",
+  "conditions": [
+   "Laghu: 'ऋति परे पदान्ता अकः प्राग्वद्वा। ब्रह्म ऋषिः, ब्रह्मर्षिः। पदान्ताः किम्? आर्च्छत्'.",
+   "Kasika: 'ऋकारे परतः शाकल्यस्याचार्यस्य मतेनाकः प्रकृत्या भवन्ति, ह्रस्वश्च तस्याकः स्थाने भवति। खट्व ऋश्यः। माल ऋश्यः। कुमारि ऋश्यः। होतृ ऋश्यः। ऋतीति किम्? खट्वेन्द्रः। अक इति किम्? वृक्षावृश्यः। सवर्णार्थमनिगर्थं च वचनम्'.",
+   "Balamanorama: 'असवर्णे' does not continue; 'पदान्तादित्यनुवर्तते ... चकारात्प्रकृत्येत्यनुकृष्यते'; the sutra is not 'ṛtyasya' because of 'hotṛ-ṛkāraḥ' (Tattvabodhini 'होतृ-ऋकार इत्यत्र प्रकृतिभावार्थमग्ग्रहणस्यावश्यकत्वात्').",
+   "The vartika 'na samāse' of 6.1.127 does NOT hold here: 'समासेऽप्ययं प्रकृतिभावः। सप्तऋषीणाम् - सप्तर्षीणाम्' (Kaumudi); 'न समासे इति निषेधवार्तिकं हि इकोऽसवर्णे इति सूत्र एव, न तु ऋत्यकः' (Tattvabodhini).",
+   "Mahabhasya vartika 3: 'ऋति ह्रस्वादुपसर्गाद्वृद्धिर्विप्रतिषेधेन' (prārdhnoti, upārdhnoti: 6.1.91 wins over this sutra), then withdrawn because the dhātu-grahaṇa in 6.1.91 already gives vṛddhi ('उपसर्गादृति धातौ वृद्धिरेव यथा स्यात्')."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "6.1.87",
+    "note": "optional alternative to guṇa (ādguṇaḥ): khaṭva ṛśyaḥ / khaṭvarśyaḥ."
+   },
+   {
+    "id": "6.1.101",
+    "note": "optional alternative to savarṇadīrgha for ṛ + ṛ."
+   }
+  ],
+  "overridden_by": [
+   {
+    "id": "6.1.91",
+    "note": "Mahabhasya vartika 3 (later withdrawn): upasarga ending in short a before ṛ of a root takes vṛddhi (prārdhnoti)."
+   }
+  ],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": "vibhasa (Śākalya): brahma ṛṣiḥ or brahmarṣiḥ; hotṛ ṛśyaḥ or hotṝśyaḥ.",
+  "vedic_only": false,
+  "examples": [
+   "prakrtibhava-126",
+   "prakrtibhava-127",
+   "prakrtibhava-128",
+   "prakrtibhava-129",
+   "prakrtibhava-130",
+   "prakrtibhava-132"
+  ],
+  "laghu_ref": "vlk_61",
+  "notes": "GRETIL Laghu misprints ārcchat as 'ārchat'. ENGINE: 'ṛ' of a root after āṭ (ā + ṛcchat) is NOT padānta -> vṛddhi ār (6.1.90). Kasika's khaṭva ṛśyaḥ / kumāri ṛśyaḥ prints only the prakṛtibhāva forms; the guṇa alternatives (khaṭvarśyaḥ, mālarśyaḥ) come from the Laghu's brahmarṣiḥ pattern."
+ },
+ {
+  "id": "6.1.129",
+  "text_iast": "aplutavadupasthite",
+  "family": "prakrtibhava",
+  "tier": "extended",
+  "kind": "atidesa",
+  "effect": "A pluta vowel before the non-Vedic quotation particle iti is treated as if it were not pluta (as regards the pluta-based prakṛtibhāva).",
+  "sthanin": "no sound replaced; an atideśa 'like a non-pluta'",
+  "adesa": "the pluta behaves as a short/regular vowel before iti (so ordinary sandhi applies): suśloka3 iti -> suśloketi",
+  "nimitta": "the next word is the non-Vedic iti that 'stands in the position' (upasthita = 'अनार्ष इतिकरणः') after a pluta",
+  "conditions": [
+   "Kasika: 'उपस्थितं नामानार्ष इतिकरणः, समुदायादवच्छिद्य पदं येन स्वरूपेऽवस्थाप्यते। तस्मिन् परतः प्लुतोऽप्लुतवद् भवति। प्लुतकार्यं प्रकृतिभावं न करोति। सुश्लोक३ इति सुश्लोकेति। सुमङ्गल३ इति सुमङ्गलेति'.",
+   "'वत्करणं किम्? अप्लुत इत्युच्यमाने प्लुत एव प्रतिषिध्यते ... प्रगृह्याश्रये प्रकृतिभावे प्लुतस्य श्रवणं न स्यात्। अग्नी३ इति। वायू३ इति' - the pluta is not undone, and a pluta pragṛhya (agnī3 iti) still keeps prakṛtibhāva because that rests on 1.1.11, not on plutatva.",
+   "Balamanorama: the iti here is added by the padakāra ('पदकारप्रक्षिप्तत्वादवैदिकः'), so the sutra works on pada-pāṭha forms; Tattvabodhini: the 'moderns' (navyāḥ) read 'aplutavat' as 'does the non-pluta's work (yaṇ etc.)', but then paratva would override the pragṛhya prakṛtibhāva of agnī3 iti and the 'vat' would have no purpose; so the older reading 'plutakāryaṃ prakṛtibhāvaṃ na karoti' is better ('प्राचां व्याख्यैव ज्यायसी'). The Kaumudi words it as 'अप्लुतकार्यं यणादिकं करोतीत्यर्थः' (the non-pluta's work: yaṇ etc.), the Kasika/Balamanorama as 'प्लुतकार्यं प्रकृतिभावं न करोति'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "6.1.125",
+    "note": "removes the pluta half of the prakṛtibhāva before iti."
+   }
+  ],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [
+   {
+    "text": "वद्वचनं प्लुतकार्यप्रतिषेधार्थम्",
+    "source": "Mahabhasya on 6.1.129 (vartika 1)"
+   },
+   {
+    "text": "प्लुतप्रतिषेधे हि प्रगृह्यप्लुतप्रतिषेधप्रसङ्गोऽन्येन विहितत्वात्",
+    "source": "Mahabhasya on 6.1.129 (vartika 2)"
+   }
+  ],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [
+   "prakrtibhava-133",
+   "prakrtibhava-134",
+   "prakrtibhava-135",
+   "prakrtibhava-136"
+  ],
+  "laghu_ref": null,
+  "notes": "Not in Laghu; in Siddhāntakaumudī. The engine needs flag 'pluta' and to know the iti is anārṣa."
+ },
+ {
+  "id": "6.1.130",
+  "text_iast": "ī3 cākravarmaṇasya",
+  "family": "prakrtibhava",
+  "tier": "extended",
+  "kind": "atidesa",
+  "effect": "In Cakravarmana's opinion a pluta ī (and, according to the Kasika, other plutas) is optionally treated as non-pluta before a vowel.",
+  "sthanin": "no sound replaced; optional atideśa",
+  "adesa": "the pluta behaves as non-pluta: chinu hi3 idam -> cinu hīdam",
+  "nimitta": "a pluta ī before a vowel (any following ac); the option holds both before iti and elsewhere",
+  "conditions": [
+   "Kasika: 'ई३कारः प्लुतोऽचि परतश्चाक्रवर्मणस्याचार्यस्य मतेनाप्लुतवद् भवति। अस्तु हीत्यब्रूताम्। अस्ति हि३ इत्यब्रूताम्। चिनु हीदम्। चिनु हि३ इदम्'; 'उभयत्रविभाषेयम्'; 'ईकारादन्यत्राप्ययमप्लुतवद्भाव इष्यते। वशा३ इयं वशेयम्'.",
+   "Balamanorama: 'इतिशब्दे परतो नित्यतया प्राप्ते, तदन्यत्राऽप्राप्ते चारम्भादुभयत्र विभाषेयम्' (the option holds both where 6.1.129 makes the aplutavat obligatory and where it did not apply)."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "6.1.125",
+    "note": "optionally removes the pluta half of the prakṛtibhāva."
+   }
+  ],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": "vibhasa (Cakravarmana), 'ubhayatra vibhāṣā': pluta kept (prakṛtibhāva) or treated as non-pluta.",
+  "vedic_only": false,
+  "examples": [
+   "prakrtibhava-137",
+   "prakrtibhava-138",
+   "prakrtibhava-139"
+  ],
+  "laghu_ref": null,
+  "notes": "The Kasika example 'asti hi3 ityabrūtām / astu hītyabrūtām' has an asti/astu misprint. The pluta of hi (particle in an answer) arises by 8.2.93 (Balamanorama) or 8.2.105 (Tattvabodhini); Not in Laghu."
+ },
+ {
+  "id": "6.1.131",
+  "text_iast": "diva ut",
+  "family": "prakrtibhava",
+  "tier": "internal",
+  "kind": "vidhi",
+  "effect": "The prātipadika div, when word-final (pada), has its final v replaced by u (sudyubhyām, dyubhiḥ).",
+  "sthanin": "the final v of div (pada-final)",
+  "adesa": "u",
+  "nimitta": "the prātipadika div (without anubandha) is a pada (before bhyām, bhis, bhyas, su, or word-final)",
+  "conditions": [
+   "Kasika: 'दिव इति प्रातिपदिकं गृह्यते न धातुः, सानुबन्धकत्वात्। दिवः पदस्योकारादेशो भवति। दिवि कामो यस्य द्युकामः। द्युमान्। द्युभ्याम्, द्युभिः'; 'पदस्येति किम्? दिवौ, दिवः'; 'निरनुबन्धकग्रहणात् (परि॰ ८१) इह न भवति - अक्षद्यूभ्याम्, अक्षद्यूभिः'.",
+   "Kasika: 'तपरकरणमूठो निवृत्त्यर्थं द्युभ्याम्, द्युभिरिति' (tapara so that 6.4.20 ūṭh does not apply).",
+   "Kaumudi/Laghu: 'दिवोऽन्तादेश उकारः स्यात्पदान्ते। सुद्युभ्याम्'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [
+   "prakrtibhava-140",
+   "prakrtibhava-141",
+   "prakrtibhava-142",
+   "prakrtibhava-143"
+  ],
+  "laghu_ref": "vlk_266",
+  "notes": "Declension rule, not a junction sandhi. Balamanorama's corpus entry for 6.1.131 is the wrong text (it prints the commentary on 6.1.135 suṭ kāt pūrvaḥ). The u then becomes part of yaṇ (i + u -> yu, 6.1.77) in sudyubhyām; Kaumudi does not name 6.1.77."
+ },
+ {
+  "id": "8.2.82",
+  "text_iast": "vākyasya ṭeḥ pluta udāttaḥ",
+  "family": "prakrtibhava",
+  "tier": "support",
+  "kind": "adhikara",
+  "effect": "Heading for 8.2.82-8.2.107: the last vowel (ṭi) of a vākya (and, where stated, of a pada) is replaced by its pluta, which is udātta.",
+  "sthanin": "the ṭi (last vowel with any following consonants) of the vākya",
+  "adesa": "pluta (udātta)",
+  "nimitta": "the adhikāra 'vākyasya ṭeḥ pluta udāttaḥ' continues (with pada, svarita, anudātta variations) to the end of the pāda",
+  "conditions": [
+   "Kasika: 'वाक्यस्य टेरिति, प्लुत इति च, उदात्त इति च, एतत्त्रयमप्यधिकृतं वेदितव्यमा पादपरिसमाप्तेः'; 'वाक्यग्रहणमनन्त्यस्य पदस्य प्लुतनिवृत्त्यर्थम्। टिग्रहणं व्यञ्जनान्तस्यापि टेरचः प्लुतो यथा स्यात् - अग्निचित् इति'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "8.2.1 pūrvatrāsiddham makes pluta rules asiddha for the sapādasaptādhyāyī, but the Mahabhasya on 6.1.125 shows that the pluta is siddha for svarasandhi via the jñāpaka in 6.1.125.",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [],
+  "laghu_ref": null,
+  "notes": "PLUTA-CREATION rule of the tripādī: it makes a pluta (three-mora) vowel at the end of a vākya/pada in a particular use; OUT OF SCOPE for the sandhi engine except that its OUTPUT (a pluta vowel) is the input flag 'pluta' for 6.1.125. Accent aspects (udātta/anudātta/svarita) are out of scope. Not in Laghu."
+ },
+ {
+  "id": "8.2.83",
+  "text_iast": "pratyabhivāde’śūdre",
+  "family": "prakrtibhava",
+  "tier": "extended",
+  "kind": "vidhi",
+  "effect": "In a reply greeting (pratyabhivāda) to a non-śūdra the last vowel of the vākya is made pluta.",
+  "sthanin": "ṭi of the reply vākya",
+  "adesa": "pluta (udātta)",
+  "nimitta": "pratyabhivāda: the elder's blessing in reply to abhivādana, addressed to a non-śūdra",
+  "conditions": [
+   "Kasika: 'प्रत्यभिवादो नाम यदभिवाद्यमानो गुरुराशिषं प्रयुङ्क्ते, तत्राशूद्रविषये यद् वाक्यं वर्तते तस्य टेः प्लुत उदात्तो भवति। अभिवादये देवदत्तोऽहं भोः, आयुष्मानेधि देवदत्त३'; 'अशूद्र इति किम्? ... आयुष्मानेधि तुषजक'; vartika 'स्त्रियामपि प्रतिषेधो वक्तव्यः' and 'भोराजन्यविशां वेति वक्तव्यम्'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [
+   {
+    "text": "स्त्रियां न ।",
+    "source": "vartika commentary data, corpus.varttikas_on('8.2.83')"
+   },
+   {
+    "text": "भोराजन्यविशां वेति वाच्यम् ।",
+    "source": "vartika commentary data, corpus.varttikas_on('8.2.83')"
+   }
+  ],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [],
+  "laghu_ref": null,
+  "notes": "PLUTA-CREATION rule of the tripādī: it makes a pluta (three-mora) vowel at the end of a vākya/pada in a particular use; OUT OF SCOPE for the sandhi engine except that its OUTPUT (a pluta vowel) is the input flag 'pluta' for 6.1.125. Accent aspects (udātta/anudātta/svarita) are out of scope. Kasika's cross-reference to this sutra as [[८.२.८६]] under 8.2.86 is a slip; this is 8.2.83."
+ },
+ {
+  "id": "8.2.84",
+  "text_iast": "dūrāddhūte ca",
+  "family": "prakrtibhava",
+  "tier": "core",
+  "kind": "vidhi",
+  "effect": "In a call from a distance the last vowel of the vākya containing the vocative is made pluta (optional).",
+  "sthanin": "ṭi of the calling vākya",
+  "adesa": "pluta (udātta)",
+  "nimitta": "dūrāddhūta: calling someone from afar; usually the vocative stands at the end of the vākya",
+  "conditions": [
+   "Laghu: 'दूरात्सम्बोधने वाक्यस्य टेः प्लुतो वा'; Kasika: 'आगच्छ भो माणवक देवदत्त३'; 'दूरादिति किम्? आगच्छ भो माणवक देवदत्त'; 'दूरादाह्वाने वाक्यस्यान्ते यत्र संबोधनपदं भवति, तत्रायं प्लुत इष्यते'; 'हूतग्रहणं च सम्बोधनमात्रोपलक्षणार्थम्': also 'सक्तून् पिब देवदत्त३'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": "vibhasa (Laghu 'वा'; Kasika on 8.2.86 quotes 'सर्व एव प्लुतः साहसमनिच्छता विभाषा कर्तव्यः', Mahabhasya 3.420): every pluta rule is optional",
+  "vedic_only": false,
+  "examples": [
+   "prakrtibhava-104",
+   "prakrtibhava-105",
+   "prakrtibhava-106"
+  ],
+  "laghu_ref": "vlk_49",
+  "notes": "PLUTA-CREATION rule of the tripādī: it makes a pluta (three-mora) vowel at the end of a vākya/pada in a particular use; OUT OF SCOPE for the sandhi engine except that its OUTPUT (a pluta vowel) is the input flag 'pluta' for 6.1.125. Accent aspects (udātta/anudātta/svarita) are out of scope. Laghu vlk_49 is the only pluta rule in the Laghu sandhi chapter, put there to explain 'āgaccha kṛṣṇa 3 atra' under 6.1.125. GRETIL tag p_8,2.84 is right."
+ },
+ {
+  "id": "8.2.85",
+  "text_iast": "haiheprayoge haihayoḥ",
+  "family": "prakrtibhava",
+  "tier": "extended",
+  "kind": "vidhi",
+  "effect": "With the calling particles hai / he (used in a call from afar) only hai and he themselves are made pluta.",
+  "sthanin": "the vowel of hai/he",
+  "adesa": "pluta",
+  "nimitta": "haihe-prayoga in a call from afar",
+  "conditions": [
+   "Kasika: 'हैहेप्रयोगे दूराद्धूते यद् वाक्यं वर्तते तत्र हैहयोरेव प्लुतो भवति। है३ देवदत्त। हे३ देवदत्त। देवदत्त है३'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [],
+  "laghu_ref": null,
+  "notes": "PLUTA-CREATION rule of the tripādī: it makes a pluta (three-mora) vowel at the end of a vākya/pada in a particular use; OUT OF SCOPE for the sandhi engine except that its OUTPUT (a pluta vowel) is the input flag 'pluta' for 6.1.125. Accent aspects (udātta/anudātta/svarita) are out of scope. "
+ },
+ {
+  "id": "8.2.86",
+  "text_iast": "guroranṛto’nantyasyāpyekaikasya prācām",
+  "family": "prakrtibhava",
+  "tier": "extended",
+  "kind": "vidhi",
+  "effect": "In a call from afar any heavy (guru) vowel, also not the last one, may be made pluta (opinion of the eastern grammarians), except ṛ.",
+  "sthanin": "a guru vowel (not ṛ), one at a time, even non-final, in the vocative word",
+  "adesa": "pluta",
+  "nimitta": "a call from afar; the eastern teachers' (prācām) option",
+  "conditions": [
+   "Kasika: 'ऋकारवर्जितस्य गुरोरनन्त्यस्य, अपिशब्दादन्त्यस्यापि टेरेकैकस्य संबोधने वर्तमानस्य प्लुतो भवति प्राचामाचार्याणां मतेन। दे३वदत्त, देव३दत्त, देवदत्त३. ... गुरोरिति किम्? वकारात् परस्य मा भूत्। अनृत इति किम्? कृष्णमि३त्र, कृष्णमित्र३'; 'प्राचामिति ग्रहणं विकल्पार्थम्'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": "vibhasa: prācām; via the yoga-vibhāga 'prācām' makes every pluta rule optional (Kaumudi 'तेन सर्वः प्लुतो विकल्प्यते')",
+  "vedic_only": false,
+  "examples": [],
+  "laghu_ref": null,
+  "notes": "PLUTA-CREATION rule of the tripādī: it makes a pluta (three-mora) vowel at the end of a vākya/pada in a particular use; OUT OF SCOPE for the sandhi engine except that its OUTPUT (a pluta vowel) is the input flag 'pluta' for 6.1.125. Accent aspects (udātta/anudātta/svarita) are out of scope. GRETIL Laghu vlk_365 is tagged 'p_8,2.86' but the item is 'ahan' = 8.2.68: the Laghu does NOT contain this sutra. laghu_ref is therefore null."
+ },
+ {
+  "id": "8.2.87",
+  "text_iast": "omabhyādāne",
+  "family": "prakrtibhava",
+  "tier": "vedic",
+  "kind": "vidhi",
+  "effect": "At the start of a rite the word oṃ has its o made pluta.",
+  "sthanin": "o of om",
+  "adesa": "pluta",
+  "nimitta": "abhyādāna: the beginning of the recitation",
+  "conditions": [
+   "Kasika: 'अभ्यादानं प्रारम्भः, तत्र य ओम्शब्दः तस्य प्लुतो भवति। ओ३म् अग्निमीळे पुरोहितम्'; 'अभ्यादान इति किम्? ओमित्येतदक्षरमुद्गीथमुपासीत'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": true,
+  "examples": [],
+  "laghu_ref": null,
+  "notes": "PLUTA-CREATION rule of the tripādī: it makes a pluta (three-mora) vowel at the end of a vākya/pada in a particular use; OUT OF SCOPE for the sandhi engine except that its OUTPUT (a pluta vowel) is the input flag 'pluta' for 6.1.125. Accent aspects (udātta/anudātta/svarita) are out of scope. Ritual (yajñakarma) use; Vedic only. "
+ },
+ {
+  "id": "8.2.88",
+  "text_iast": "ye yajñakarmaṇi",
+  "family": "prakrtibhava",
+  "tier": "vedic",
+  "kind": "vidhi",
+  "effect": "In a rite the word ye (of 'ye yajāmahe') is made pluta.",
+  "sthanin": "e of ye",
+  "adesa": "pluta",
+  "nimitta": "yajñakarma, the formula 'ye yajāmahe'",
+  "conditions": [
+   "Kasika: 'ये इत्येतस्य यज्ञकर्मणि प्लुतो भवति। ये३ यजामहे। यज्ञकर्मणीति किम्? ये यजामह इति पञ्चाक्षरम्'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": true,
+  "examples": [],
+  "laghu_ref": null,
+  "notes": "PLUTA-CREATION rule of the tripādī: it makes a pluta (three-mora) vowel at the end of a vākya/pada in a particular use; OUT OF SCOPE for the sandhi engine except that its OUTPUT (a pluta vowel) is the input flag 'pluta' for 6.1.125. Accent aspects (udātta/anudātta/svarita) are out of scope. Ritual (yajñakarma) use; Vedic only. "
+ },
+ {
+  "id": "8.2.89",
+  "text_iast": "praṇavaṣṭeḥ",
+  "family": "prakrtibhava",
+  "tier": "vedic",
+  "kind": "vidhi",
+  "effect": "In a rite the end of a pada/half-verse is replaced by the pranava (o3m).",
+  "sthanin": "the ṭi of the pāda/ardharca end",
+  "adesa": "o3m (pranava, ओकार pluta)",
+  "nimitta": "yajñakarma; end of a pāda or half-stanza",
+  "conditions": [
+   "Kasika: 'यज्ञकर्मणि टेः प्रणव आदेशो भवति ... पादस्य वार्द्धर्चस्य वान्त्यमक्षरमुपसंगृह्य तदाद्यक्षरशेषस्य स्थाने त्रिमात्रमोकारमोङ्कारं वा विदधति, तं प्रणवमित्याचक्षते'; 'टिग्रहणं सर्वादेशार्थम्'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": true,
+  "examples": [],
+  "laghu_ref": null,
+  "notes": "PLUTA-CREATION rule of the tripādī: it makes a pluta (three-mora) vowel at the end of a vākya/pada in a particular use; OUT OF SCOPE for the sandhi engine except that its OUTPUT (a pluta vowel) is the input flag 'pluta' for 6.1.125. Accent aspects (udātta/anudātta/svarita) are out of scope. Ritual (yajñakarma) use; Vedic only. "
+ },
+ {
+  "id": "8.2.90",
+  "text_iast": "yājyā’ntaḥ",
+  "family": "prakrtibhava",
+  "tier": "vedic",
+  "kind": "vidhi",
+  "effect": "In a rite the last vowel of a yājyā mantra's last vākya is pluta.",
+  "sthanin": "ṭi of the last vākya of a yājyā",
+  "adesa": "pluta",
+  "nimitta": "yajñakarma; the closing of a yājyā mantra",
+  "conditions": [
+   "Kasika: 'याज्या नाम ये याज्याकाण्डे पठ्यन्ते मन्त्रास्तेषामन्त्यो यष्टिः स प्लवते, यज्ञकर्मणि'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": true,
+  "examples": [],
+  "laghu_ref": null,
+  "notes": "PLUTA-CREATION rule of the tripādī: it makes a pluta (three-mora) vowel at the end of a vākya/pada in a particular use; OUT OF SCOPE for the sandhi engine except that its OUTPUT (a pluta vowel) is the input flag 'pluta' for 6.1.125. Accent aspects (udātta/anudātta/svarita) are out of scope. Ritual (yajñakarma) use; Vedic only. "
+ },
+ {
+  "id": "8.2.91",
+  "text_iast": "brūhipreṣyaśrauṣaḍvauṣaḍāvahānāmādeḥ",
+  "family": "prakrtibhava",
+  "tier": "vedic",
+  "kind": "vidhi",
+  "effect": "In a rite the first vowel of brūhi, preṣya, śrauṣaṭ, vauṣaṭ, āvaha is made pluta.",
+  "sthanin": "the first vowel of the word",
+  "adesa": "pluta",
+  "nimitta": "yajñakarma; the words brūhi, preṣya, śrauṣaṭ, vauṣaṭ, āvaha",
+  "conditions": [
+   "Kasika: 'ब्रूहि प्रेष्य श्रौषट् वौषट् आवह इत्येतेषामादेः प्लुतो भवति यज्ञकर्मणि'; 'आवह देवान् यजमानाय इत्येवमादावयं प्लुतो न भवति। सर्वे विधयश्छन्दसि विकल्प्यन्ते'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": true,
+  "examples": [],
+  "laghu_ref": null,
+  "notes": "PLUTA-CREATION rule of the tripādī: it makes a pluta (three-mora) vowel at the end of a vākya/pada in a particular use; OUT OF SCOPE for the sandhi engine except that its OUTPUT (a pluta vowel) is the input flag 'pluta' for 6.1.125. Accent aspects (udātta/anudātta/svarita) are out of scope. Ritual (yajñakarma) use; Vedic only. "
+ },
+ {
+  "id": "8.2.92",
+  "text_iast": "agnītpreṣaṇe parasya ca",
+  "family": "prakrtibhava",
+  "tier": "vedic",
+  "kind": "vidhi",
+  "effect": "In the agnīdh's command the first vowel and the following one are made pluta.",
+  "sthanin": "the first vowel and that of the following word",
+  "adesa": "pluta",
+  "nimitta": "agnīt-preṣaṇa: the agnīdh's command ā śrāvaya",
+  "conditions": [
+   "Kasika: 'अग्नीधः प्रेषणमग्नीत्प्रेषणम्। तत्रादेः प्लुतो भवति परस्य च। आ३ श्रा३वय। ओ३श्रा३वय'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": true,
+  "examples": [],
+  "laghu_ref": null,
+  "notes": "PLUTA-CREATION rule of the tripādī: it makes a pluta (three-mora) vowel at the end of a vākya/pada in a particular use; OUT OF SCOPE for the sandhi engine except that its OUTPUT (a pluta vowel) is the input flag 'pluta' for 6.1.125. Accent aspects (udātta/anudātta/svarita) are out of scope. Ritual (yajñakarma) use; Vedic only. "
+ },
+ {
+  "id": "8.2.93",
+  "text_iast": "vibhāṣā pṛṣṭaprativacane heḥ",
+  "family": "prakrtibhava",
+  "tier": "extended",
+  "kind": "vidhi",
+  "effect": "In the answer to a question the word hi may optionally be made pluta.",
+  "sthanin": "the vowel of hi",
+  "adesa": "pluta",
+  "nimitta": "prṣṭa-prativacana: hi in the reply",
+  "conditions": [
+   "Kasika: 'पृष्टप्रतिवचने विभाषा हेः प्लुतो भवति। अकार्षीः कटं देवदत्त? अकार्षं हि३, अकार्षं हि'; 'हेरिति किम्? करोमि ननु'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": "vibhasa: hi3 or hi",
+  "vedic_only": false,
+  "examples": [],
+  "laghu_ref": null,
+  "notes": "PLUTA-CREATION rule of the tripādī: it makes a pluta (three-mora) vowel at the end of a vākya/pada in a particular use; OUT OF SCOPE for the sandhi engine except that its OUTPUT (a pluta vowel) is the input flag 'pluta' for 6.1.125. Accent aspects (udātta/anudātta/svarita) are out of scope. "
+ },
+ {
+  "id": "8.2.94",
+  "text_iast": "nigṛhyānuyoge ca",
+  "family": "prakrtibhava",
+  "tier": "extended",
+  "kind": "vidhi",
+  "effect": "In a cross-examination that makes the other abandon his view, the last vowel of the vākya may be made pluta.",
+  "sthanin": "ṭi of the vākya",
+  "adesa": "pluta",
+  "nimitta": "nigṛhyānuyoga: catching a disputant",
+  "conditions": [
+   "Kasika: 'अनित्यः शब्द इत्यात्थ३, अनित्यः शब्द इत्यात्थ'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": "vibhasa",
+  "vedic_only": false,
+  "examples": [],
+  "laghu_ref": null,
+  "notes": "PLUTA-CREATION rule of the tripādī: it makes a pluta (three-mora) vowel at the end of a vākya/pada in a particular use; OUT OF SCOPE for the sandhi engine except that its OUTPUT (a pluta vowel) is the input flag 'pluta' for 6.1.125. Accent aspects (udātta/anudātta/svarita) are out of scope. "
+ },
+ {
+  "id": "8.2.95",
+  "text_iast": "āmreḍitaṃ bhartsane",
+  "family": "prakrtibhava",
+  "tier": "extended",
+  "kind": "vidhi",
+  "effect": "In an abusive (bhartsana) repetition the repeated (āmreḍita) word is made pluta.",
+  "sthanin": "ṭi of the āmreḍita",
+  "adesa": "pluta",
+  "nimitta": "bhartsana: abuse with doubling",
+  "conditions": [
+   "Kasika: 'चौरचौर३, वृषलवृषल३, दस्योदस्यो३ घातयिष्यामि त्वा'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [
+   {
+    "text": "भर्त्सने पर्यायेणेति वक्तव्यम् ।",
+    "source": "vartika commentary data, corpus.varttikas_on('8.2.95')"
+   }
+  ],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [],
+  "laghu_ref": null,
+  "notes": "PLUTA-CREATION rule of the tripādī: it makes a pluta (three-mora) vowel at the end of a vākya/pada in a particular use; OUT OF SCOPE for the sandhi engine except that its OUTPUT (a pluta vowel) is the input flag 'pluta' for 6.1.125. Accent aspects (udātta/anudātta/svarita) are out of scope. "
+ },
+ {
+  "id": "8.2.96",
+  "text_iast": "aṅgayuktaṃ tiṅ ākāṅkṣam",
+  "family": "prakrtibhava",
+  "tier": "extended",
+  "kind": "vidhi",
+  "effect": "A finite verb form combined with aṅga that needs a continuation is made pluta in a reproach.",
+  "sthanin": "ṭi of the tiṅanta",
+  "adesa": "pluta",
+  "nimitta": "bhartsana: aṅga + tiṅ that expects more",
+  "conditions": [
+   "Kasika: 'अङ्ग कूज३, अङ्ग व्याहर३ इदानीं ज्ञास्यसि जाल्म'; 'तिङिति किम्? अङ्ग देवदत्त'; 'आकाङ्क्षमिति किम्? अङ्ग पच'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [],
+  "laghu_ref": null,
+  "notes": "PLUTA-CREATION rule of the tripādī: it makes a pluta (three-mora) vowel at the end of a vākya/pada in a particular use; OUT OF SCOPE for the sandhi engine except that its OUTPUT (a pluta vowel) is the input flag 'pluta' for 6.1.125. Accent aspects (udātta/anudātta/svarita) are out of scope. "
+ },
+ {
+  "id": "8.2.97",
+  "text_iast": "vicāryamāṇānām",
+  "family": "prakrtibhava",
+  "tier": "extended",
+  "kind": "vidhi",
+  "effect": "The last vowel of each alternative in a deliberation (vicāryamāṇa) is made pluta.",
+  "sthanin": "ṭi of the alternatives",
+  "adesa": "pluta",
+  "nimitta": "vicāra: weighing alternatives",
+  "conditions": [
+   "Kasika: 'होतव्यं दीक्षितस्य गृहा३इ ... तिष्ठेद्यूपा३इ। अनुप्रहरेद्यूपा३इ'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [],
+  "laghu_ref": null,
+  "notes": "PLUTA-CREATION rule of the tripādī: it makes a pluta (three-mora) vowel at the end of a vākya/pada in a particular use; OUT OF SCOPE for the sandhi engine except that its OUTPUT (a pluta vowel) is the input flag 'pluta' for 6.1.125. Accent aspects (udātta/anudātta/svarita) are out of scope. "
+ },
+ {
+  "id": "8.2.98",
+  "text_iast": "pūrvaṃ tu bhāṣāyām",
+  "family": "prakrtibhava",
+  "tier": "extended",
+  "kind": "vidhi",
+  "effect": "In the language (bhāṣā) the pluta in a deliberation falls on the earlier alternative.",
+  "sthanin": "the vowel of the earlier alternative",
+  "adesa": "pluta",
+  "nimitta": "bhāṣāyām vicāra",
+  "conditions": [
+   "Kasika: 'अहिर्नु३ रज्जुर्नु। लोष्टो नु३ कपोतो नु। प्रयोगापेक्षं पूर्वत्वम्'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [],
+  "laghu_ref": null,
+  "notes": "PLUTA-CREATION rule of the tripādī: it makes a pluta (three-mora) vowel at the end of a vākya/pada in a particular use; OUT OF SCOPE for the sandhi engine except that its OUTPUT (a pluta vowel) is the input flag 'pluta' for 6.1.125. Accent aspects (udātta/anudātta/svarita) are out of scope. "
+ },
+ {
+  "id": "8.2.99",
+  "text_iast": "pratiśravaṇe ca",
+  "family": "prakrtibhava",
+  "tier": "extended",
+  "kind": "vidhi",
+  "effect": "The last vowel of a vākya expressing assent/promise/attention (pratiśravaṇa) is made pluta.",
+  "sthanin": "ṭi of the vākya",
+  "adesa": "pluta",
+  "nimitta": "pratiśravaṇa: acceptance, promise, readiness to listen",
+  "conditions": [
+   "Kasika: 'देवदत्त भोः, किमात्थ३। गां मे देहि भोः, अहं ते ददामि३'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [],
+  "laghu_ref": null,
+  "notes": "PLUTA-CREATION rule of the tripādī: it makes a pluta (three-mora) vowel at the end of a vākya/pada in a particular use; OUT OF SCOPE for the sandhi engine except that its OUTPUT (a pluta vowel) is the input flag 'pluta' for 6.1.125. Accent aspects (udātta/anudātta/svarita) are out of scope. "
+ },
+ {
+  "id": "8.2.100",
+  "text_iast": "anudāttaṃ praśnāntābhipūjitayoḥ",
+  "family": "prakrtibhava",
+  "tier": "extended",
+  "kind": "vidhi",
+  "effect": "The pluta at a question's end and in praise is anudātta.",
+  "sthanin": "the pluta",
+  "adesa": "anudātta pluta",
+  "nimitta": "praśnānta, abhipūjita",
+  "conditions": [
+   "Kasika: 'अनुदात्तः प्लुतो भवति प्रश्नान्ते, अभिपूजिते च। अगमः३ पूर्वान् ग्रामान् अग्निभूता३इ, पटा३उ'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [],
+  "laghu_ref": null,
+  "notes": "PLUTA-CREATION rule of the tripādī: it makes a pluta (three-mora) vowel at the end of a vākya/pada in a particular use; OUT OF SCOPE for the sandhi engine except that its OUTPUT (a pluta vowel) is the input flag 'pluta' for 6.1.125. Accent aspects (udātta/anudātta/svarita) are out of scope. ACCENT-ONLY: out of scope."
+ },
+ {
+  "id": "8.2.101",
+  "text_iast": "ciditi copamā’rthe prayujyamāne",
+  "family": "prakrtibhava",
+  "tier": "extended",
+  "kind": "vidhi",
+  "effect": "With cit of comparison the pluta is anudātta (agnicid bhāyāt).",
+  "sthanin": "ṭi",
+  "adesa": "anudātta pluta",
+  "nimitta": "cit as an upamā particle",
+  "conditions": [
+   "Kasika: 'चिदित्येतस्मिन् निपात उपमार्थे प्रयुज्यमाने वाक्यस्य टेरनुदात्तः प्लुतो भवति ... अग्निचिद् भाया३त्'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [],
+  "laghu_ref": null,
+  "notes": "PLUTA-CREATION rule of the tripādī: it makes a pluta (three-mora) vowel at the end of a vākya/pada in a particular use; OUT OF SCOPE for the sandhi engine except that its OUTPUT (a pluta vowel) is the input flag 'pluta' for 6.1.125. Accent aspects (udātta/anudātta/svarita) are out of scope. Mostly accent; out of scope."
+ },
+ {
+  "id": "8.2.102",
+  "text_iast": "uparisvidāsīditi ca",
+  "family": "prakrtibhava",
+  "tier": "extended",
+  "kind": "vidhi",
+  "effect": "In upariṣvid āsīt the last vowel is an anudātta pluta.",
+  "sthanin": "ṭi",
+  "adesa": "anudātta pluta",
+  "nimitta": "the phrase upari svid āsīt",
+  "conditions": [
+   "Kasika: 'उपरिस्विदासीदित्येतस्य टेरनुदात्तः प्लुतो भवति'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [],
+  "laghu_ref": null,
+  "notes": "PLUTA-CREATION rule of the tripādī: it makes a pluta (three-mora) vowel at the end of a vākya/pada in a particular use; OUT OF SCOPE for the sandhi engine except that its OUTPUT (a pluta vowel) is the input flag 'pluta' for 6.1.125. Accent aspects (udātta/anudātta/svarita) are out of scope. Mostly accent; out of scope."
+ },
+ {
+  "id": "8.2.103",
+  "text_iast": "svaritamāmreḍite’sūyāsammatikopakutsaneṣu",
+  "family": "prakrtibhava",
+  "tier": "extended",
+  "kind": "vidhi",
+  "effect": "Before an āmreḍita expressing contempt, assent, anger, or reproach the pluta is svarita.",
+  "sthanin": "ṭi",
+  "adesa": "svarita pluta",
+  "nimitta": "āmreḍita in asūyā/sammati/kopa/kutsana",
+  "conditions": [
+   "Kasika: 'माणवक३ माणवक, अभिरूपक३ अभिरूपक रिक्तं त आभिरूप्यम्' etc."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [],
+  "laghu_ref": null,
+  "notes": "PLUTA-CREATION rule of the tripādī: it makes a pluta (three-mora) vowel at the end of a vākya/pada in a particular use; OUT OF SCOPE for the sandhi engine except that its OUTPUT (a pluta vowel) is the input flag 'pluta' for 6.1.125. Accent aspects (udātta/anudātta/svarita) are out of scope. ACCENT-ONLY: out of scope."
+ },
+ {
+  "id": "8.2.104",
+  "text_iast": "kṣiyā’’śīḥpraiṣeṣu tiṅ ākāṅkṣam",
+  "family": "prakrtibhava",
+  "tier": "extended",
+  "kind": "vidhi",
+  "effect": "A verb that needs a continuation is made a svarita pluta in kṣiyā, āśīḥ and praiṣa.",
+  "sthanin": "ṭi of the tiṅanta",
+  "adesa": "svarita pluta",
+  "nimitta": "kṣiyā (impropriety), āśīḥ (wish), praiṣa (command)",
+  "conditions": [
+   "Kasika: 'स्वयं रथेन याति३ ... सुतांश्च लप्सीष्ट३ ... कटं कुरु३ ग्रामं च गच्छ'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [],
+  "laghu_ref": null,
+  "notes": "PLUTA-CREATION rule of the tripādī: it makes a pluta (three-mora) vowel at the end of a vākya/pada in a particular use; OUT OF SCOPE for the sandhi engine except that its OUTPUT (a pluta vowel) is the input flag 'pluta' for 6.1.125. Accent aspects (udātta/anudātta/svarita) are out of scope. ACCENT-ONLY: out of scope."
+ },
+ {
+  "id": "8.2.105",
+  "text_iast": "anantyasyāpi praśnākhyānayoḥ",
+  "family": "prakrtibhava",
+  "tier": "extended",
+  "kind": "vidhi",
+  "effect": "In a question and in a narration a non-final as well as the final vowel of every pada may be made a svarita pluta.",
+  "sthanin": "ṭi of any pada",
+  "adesa": "svarita pluta",
+  "nimitta": "praśna and ākhyāna",
+  "conditions": [
+   "Kasika: 'अनन्त्यस्यापि अन्त्यस्यापि पदस्य टेः प्लुतो भवति प्रश्न आख्याने च। अगमः३ पूर्वान् ग्रामान् अग्निभूताइ३, पटाउ३'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [],
+  "laghu_ref": null,
+  "notes": "PLUTA-CREATION rule of the tripādī: it makes a pluta (three-mora) vowel at the end of a vākya/pada in a particular use; OUT OF SCOPE for the sandhi engine except that its OUTPUT (a pluta vowel) is the input flag 'pluta' for 6.1.125. Accent aspects (udātta/anudātta/svarita) are out of scope. ACCENT-ONLY: out of scope."
+ },
+ {
+  "id": "8.2.106",
+  "text_iast": "plutāvaica idutau",
+  "family": "prakrtibhava",
+  "tier": "extended",
+  "kind": "vidhi",
+  "effect": "When a pluta is called for on ai/au, only the i/u part is lengthened (ai3, au3).",
+  "sthanin": "the i / u of ai, au (the second half)",
+  "adesa": "the pluta i / u",
+  "nimitta": "a pluta is prescribed for the diphthong ai or au",
+  "conditions": [
+   "Kasika: 'दूराद्धूतादिषु प्लुतो विहितः। तत्र ऐचः प्लुतप्रसङ्गे तदवयवभूताविदुतौ प्लुतौ। ऐ३तिकायन। औ३पमन्यव'; 'भाष्ये तूक्तम् - इष्यत एव चतुर्मात्रः प्लुतः'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [],
+  "laghu_ref": null,
+  "notes": "PLUTA-CREATION rule of the tripādī: it makes a pluta (three-mora) vowel at the end of a vākya/pada in a particular use; OUT OF SCOPE for the sandhi engine except that its OUTPUT (a pluta vowel) is the input flag 'pluta' for 6.1.125. Accent aspects (udātta/anudātta/svarita) are out of scope. Kasika/Mahabhasya disagree on the length (three vs. four moras)."
+ },
+ {
+  "id": "8.2.107",
+  "text_iast": "eco’pragṛhyasyādūrāddhūte pūrvasyārdhasyāduttarasyedutau",
+  "family": "prakrtibhava",
+  "tier": "extended",
+  "kind": "vidhi",
+  "effect": "For a non-pragṛhya e/o/ai/au in a pluta context other than the call from afar the first half becomes a (pluta), the second half i/u.",
+  "sthanin": "e, o, ai, au (non-pragṛhya, pada-final) in the listed contexts",
+  "adesa": "a3 + i / a3 + u (and ā3 + i/u for ai/au)",
+  "nimitta": "praśnānta, abhipūjita, vicāryamāṇa, pratyabhivāda, yājyānta (not a call from afar); not pragṛhya",
+  "conditions": [
+   "Kasika: 'एचोऽप्रगृह्यस्यादूराद्धूते प्लुतविषयस्य पूर्वस्यार्धस्याकार आदेशो भवति, स च प्लुतः, उत्तरस्येकारोकारावादेशौ भवतः ... अगमः३ पूर्वान् ग्रामान् अग्निभूता३इ, पटा३उ'; 'अप्रगृह्यस्येति किम्? शोभने खलु स्तः खट्वे३' (pragṛhya duals are not split)."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [
+   {
+    "text": "प्रश्नान्ताभिपूजितविचार्यमाणप्रत्यभिवादनयाज्यान्तेष्वेव ।",
+    "source": "vartika commentary data, corpus.varttikas_on('8.2.107')"
+   },
+   {
+    "text": "पदान्तग्रहणं कर्तव्यम् ।",
+    "source": "vartika commentary data, corpus.varttikas_on('8.2.107')"
+   },
+   {
+    "text": "आमन्त्रिते छन्दसि प्लुतविकारोऽयं वक्तव्यः ।",
+    "source": "vartika commentary data, corpus.varttikas_on('8.2.107')"
+   }
+  ],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [],
+  "laghu_ref": null,
+  "notes": "PLUTA-CREATION rule of the tripādī: it makes a pluta (three-mora) vowel at the end of a vākya/pada in a particular use; OUT OF SCOPE for the sandhi engine except that its OUTPUT (a pluta vowel) is the input flag 'pluta' for 6.1.125. Accent aspects (udātta/anudātta/svarita) are out of scope. The result of this rule (a3 + i, a3 + u) is visible as two vowels; but it is created in the tripādī and read by nothing in the sandhi engine. It names 'apragṛhya', so pragṛhya info is required."
+ },
+ {
+  "id": "8.3.33",
+  "text_iast": "maya uño vo vā",
+  "family": "prakrtibhava",
+  "tier": "core",
+  "kind": "vidhi",
+  "effect": "After a may-letter, the particle uñ before a vowel is optionally replaced by v.",
+  "sthanin": "uñ (the particle u) that is pragṛhya",
+  "adesa": "v (optional)",
+  "nimitta": "the uñ stands after a letter of the pratyāhāra may (a stop or nasal, e.g. m of kim/śam, d of tad) and before a vowel",
+  "conditions": [
+   "Kasika: 'मय उत्तरस्य उञो वा वकारादेशो भवत्यचि परतः। शम्वस्तु वेदिः, शमु अस्तु वेदिः। तद्वस्य परेतः, तदु अस्य परेतः। किम्वावपनम्, किमु आवपनम्। प्रगृह्यत्वादुञः प्रकृतिभावे प्राप्ते वकारो विधीयते'.",
+   "Praudhamanorama: 'मयः परस्येति। परादिति तु प्राचः प्रमादः' - the wording is 'may + ṣaṣṭhī of uñ' (the may letter comes before the uñ), and 'षष्ठीनिर्दिष्टस्य हि आदेशा उच्यन्ते' (Mahabhasya).",
+   "Laghu: 'मयः परस्य उञो वो वाऽचि। किम्वुक्तम्, किमु उक्तम्'; Kaumudi: 'वत्वस्यासिद्धत्वान्नानुस्वारः' - the v is produced in the tripādī, so 8.3.23 (mo 'nusvāraḥ, before hal) does not turn the m into anusvāra.",
+   "Tattvabodhini/Praudhamanorama: the sutra is placed in the tripādī on purpose: if it followed 6.1.77 directly (as 'may uño ve') the m would become anusvāra ('प्रकृतिभावमात्रबाधनार्थत्वे हि इको यणित्यनन्तरं मय उञो वेत्येवावक्ष्यत्, यणं चान्वर्तयिष्यत्')."
+  ],
+  "exceptions_and_blockers": [
+   {
+    "id": "8.3.23",
+    "note": "the m before the (asiddha) v is not turned into anusvāra ('वत्वस्यासिद्धत्वान्नानुस्वारः')."
+   },
+   {
+    "id": "1.1.17",
+    "note": "the uñ of this sutra is the particle that 1.1.17/1.1.18 treat; for the plain nipāta u the same rule applies (Kasika 'शमु अस्तु') if it is uñ."
+   }
+  ],
+  "overrides": [
+   {
+    "id": "6.1.125",
+    "note": "prakṛtibhāva is optionally replaced by the substitution v ('प्रकृतिभावे प्राप्ते वत्ववचनम्', Balamanorama)."
+   },
+   {
+    "id": "6.1.77",
+    "note": "the v is not the yaṇ of 6.1.77: it is a distinct substitution that is asiddha for 8.3.23."
+   }
+  ],
+  "overridden_by": [],
+  "ordering_notes": "In the tripādī, hence asiddha for everything before it (8.2.1): 8.3.23 (also tripādī, earlier) cannot see the v; later tripādī rules (8.4.47 anaci ca doubling, 8.4.59 vā padāntasya, 8.4.64) see it and multiply the results (Praudhamanorama counts 28 forms of 'kim u iti'; not modelled).",
+  "varttikas": [],
+  "optional": "vibhasa: uñ -> v or unchanged (pragṛhya, nitya prakṛtibhāva of 6.1.125).",
+  "vedic_only": false,
+  "examples": [
+   "prakrtibhava-108",
+   "prakrtibhava-144",
+   "prakrtibhava-145",
+   "prakrtibhava-146",
+   "prakrtibhava-147"
+  ],
+  "laghu_ref": "vlk_58",
+  "notes": "Corpus caveat: the Tattvabodhini block stored under 8.3.33 begins with a passage that really belongs to 1.1.18 (the discussion of why the ūm̐ substitute is called pragṛhya and why Śākalya's name is repeated) followed by the actual 8.3.33 remarks. Kasika's examples are Vedic (Vajasaneyi Samhita 23.44, 23.9); the Laghu's kimvuktam is Sanskrit prose. The pratyāhāra 'may' is m ṅ ṇ n jh bh gh ḍh dh j b g ḍ d kh ph ch ṭh th c ṭ t k p (computed from the Śivasūtras, not from the corpus). Prauḍhamanoramā gives the full 28-form derivation for 'kim u iti' combining 1.1.17-18, 8.3.33, 8.4.57, 8.4.47, 8.4.59, 8.4.64: not needed for the engine's core."
+ },
+ {
+  "id": "8.4.57",
+  "text_iast": "aṇo’pragṛhyasyānunāsikaḥ",
+  "family": "prakrtibhava",
+  "tier": "extended",
+  "kind": "vidhi",
+  "effect": "A non-pragṛhya aṇ (a, i, u and their savarṇas) at the end of an utterance (avasāna) may be nasalised.",
+  "sthanin": "a non-pragṛhya a/i/u (with all savarṇas) at avasāna",
+  "adesa": "the same vowel with anunāsika (candrabindu), optional",
+  "nimitta": "the vowel is a savarṇa of a, i or u, is not pragṛhya, and stands at the end of the utterance (pause)",
+  "conditions": [
+   "Kasika: 'अणोऽप्रगृह्यसंज्ञस्यावसाने वर्तमानस्य वानुनासिकादेशो भवति। दधिँ, दधि। मधुँ, मधु। कुमारीँ, कुमारी। अण इति किम्? कर्तृ। हर्तृ। अप्रगृह्यस्येति किम्? अग्नी। वायू'.",
+   "Balamanorama: 'वा अवसाने' continue; 'अत्र अण् पूर्वेणैव णकारेण, व्याख्यानात् ... कर्तृ इत्यत्र नानुनासिकः'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "A tripādī rule that fires at the very end (avasāna, i.e. only when nothing follows). It needs the 'pragṛhya' fact of the word, not just its letters (agnī vs. kumārī).",
+  "varttikas": [],
+  "optional": "vibhasa: nasalised or plain at avasāna (dadhiṃ / dadhi).",
+  "vedic_only": false,
+  "examples": [
+   "prakrtibhava-148",
+   "prakrtibhava-149",
+   "prakrtibhava-150",
+   "prakrtibhava-151",
+   "prakrtibhava-152",
+   "prakrtibhava-153",
+   "prakrtibhava-154"
+  ],
+  "laghu_ref": null,
+  "notes": "Not in Laghu. The nasalised output is written with 'm̐' (m + U+0310) in the gold files. Balamanorama closes the ac-sandhi chapter here with the remark that omitting kutva/ścutva in such examples is not a fault ('अतोऽत्र कुत्वश्चुत्वयोरभावेऽपि न दोषः')."
+ }
+]

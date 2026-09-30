@@ -1,0 +1,5384 @@
+[
+ {
+  "id": "ac_yan_ayadi-001",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "dadhi",
+   "atra"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "dadhyatra",
+   "daddhyatra",
+   "dadhyyatra",
+   "daddhyyatra"
+  ],
+  "sutras": [
+   "6.1.77"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.77",
+   "locator": "Kāśikā on 6.1.77",
+   "quote": "दध्यत्र"
+  },
+  "confidence": "certain",
+  "notes": "Stock example of yaṇ: i -> y before a following vowel. The first output (dadhyatra) is what 6.1.77 alone gives. daddhyatra is the Kāśikā's own example under 8.4.47 (quote: 'दद्ध्यत्र। मद्ध्वत्र।' on 8.4.47): 8.4.47 anaci ca doubles dh (dadhdhy atra) and 8.4.53 turns the first dh into d. dadhyyatra / daddhyyatra add the doubling of y by the vārttika 'yaṇo mayo dve' (Kāśikā on 8.4.47 reads it as 'दध्य्यत्र, मध्व्वत्रेत्युदाहरणम्'; Mahābhāṣya on 8.4.47 has 'दध्य्यत्र'). 8.2.23 saṃyogāntasya lopaḥ does NOT delete the final y of 'dadhy' because yaṇ is bahiraṅga and asiddha for it (Kāśikā on 8.2.23). Śākalya's optional prakṛtibhāva alternative 'dadhi atra' (6.1.127, other family) is deliberately not listed."
+ },
+ {
+  "id": "ac_yan_ayadi-002",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "madhu",
+   "atra"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "madhvatra",
+   "maddhvatra",
+   "madhvvatra",
+   "maddhvvatra"
+  ],
+  "sutras": [
+   "6.1.77",
+   "8.4.47",
+   "8.4.53"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.47",
+   "locator": "Kāśikā on 8.4.47",
+   "quote": "मद्ध्वत्र"
+  },
+  "confidence": "certain",
+  "notes": "u -> v (1.1.50 sthānato 'ntaryāt: u is oṣṭhya, v is dantoṣṭhya, the nearest of y v r l). Kāśikā on 6.1.77 has plain मध्वत्र; on 8.4.47 it has मद्ध्वत्र (dh doubled, first dh -> d by 8.4.53); 'मध्व्वत्र' is the Kāśikā's example for the second reading of the vārttika 'yaṇo mayo dve' (v doubled after may). No saṃyogānta-lopa of the final v (yaṇ is asiddha as bahiraṅga for 8.2.23)."
+ },
+ {
+  "id": "ac_yan_ayadi-003",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "kartṛ",
+   "artham"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "kartrartham"
+  ],
+  "sutras": [
+   "6.1.77"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.77",
+   "locator": "Kāśikā on 6.1.77",
+   "quote": "कर्त्रर्थम्"
+  },
+  "confidence": "certain",
+  "notes": "ṛ -> r. The Kāśikā lists only this form; optional 8.4.46 doubling of the t after r (karttrartham) is possible in principle but is not mentioned by the source."
+ },
+ {
+  "id": "ac_yan_ayadi-004",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "hartṛ",
+   "artham"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "hartrartham"
+  ],
+  "sutras": [
+   "6.1.77"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.77",
+   "locator": "Kāśikā on 6.1.77",
+   "quote": "हर्त्रर्थम्"
+  },
+  "confidence": "certain",
+  "notes": "Same pattern as kartrartham (ṛ -> r)."
+ },
+ {
+  "id": "ac_yan_ayadi-005",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "ḷ",
+   "ākṛtiḥ"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "lākṛtiḥ"
+  ],
+  "sutras": [
+   "6.1.77"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.77",
+   "locator": "Kāśikā on 6.1.77",
+   "quote": "लाकृतिः"
+  },
+  "confidence": "probable",
+  "notes": "Compound ḷ-ākṛti ('the shape of ḷ'; Bālamanoramā on 8.2.23: 'ऌवर्णस्य आकृतिरिव आकृतिर्यस्य'). Split by me from the joined example. ḷ + ā are asavarṇa (ā is not ḷ-savarṇa), so yaṇ applies. Of y v r l the substitute is l (dantya, 1.1.50); Bālamanoramā on 8.2.23 explains why not v: both v and l are 'prāpta' and the later vidhi (l) wins by para-vipratiṣedha/apavāda. The Laghu text lists lākṛtiḥ as a vārttika example of 'yaṇaḥ pratiṣedho vācyaḥ' (no saṃyogānta-lopa; nothing to delete here anyway). Visarga is the nominative -s."
+ },
+ {
+  "id": "ac_yan_ayadi-006",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "bho",
+   "i",
+   "indram"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "pluta"
+   ],
+   "1": [
+    "nipata"
+   ]
+  },
+  "outputs": [
+   "bhoyindram"
+  ],
+  "sutras": [
+   "6.1.77"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.77",
+   "locator": "Kāśikā on 6.1.77",
+   "quote": "भो३ इ इन्द्रम्। भो३यिन्द्रम्"
+  },
+  "confidence": "certain",
+  "notes": "Vārttika 'यणादेशः प्लुतपूर्वस्य च' (Kāśikā: 'इकः प्लुतपूर्वस्य सवर्णदीर्घबाधनार्थं यणादेशो वक्तव्यः'): an ik that FOLLOWS a pluta vowel is turned into yaṇ although savarṇa-dīrgha (6.1.101) would otherwise apply. Written 'bho3 i indram' in the source; the project alphabet has no pluta digit, so the pluta is carried by flag 'pluta' on word 0 and omitted from the output. The lone 'i' is the pragṛhya nipāta i (Padamañjarī: 'इकारः स्वरादिपाठान्निपात प्रगृह्यसंज्ञकः'), whose prakṛtibhāva (6.1.125) is overridden by the yaṇ vārttika."
+ },
+ {
+  "id": "ac_yan_ayadi-007",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "agnā",
+   "i",
+   "indram"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "pluta"
+   ],
+   "1": [
+    "nipata"
+   ]
+  },
+  "outputs": [
+   "agnāyindram"
+  ],
+  "sutras": [
+   "6.1.77"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "bhashya",
+   "sutra": "6.1.77",
+   "locator": "Mahābhāṣya on 6.1.77",
+   "quote": "अग्ना3यिन्द्रम्"
+  },
+  "confidence": "probable",
+  "notes": "Mahābhāṣya example of the same vārttika ('अग्ना3इ इन्द्रम् - अग्ना3यिन्द्रम्'); I split the joined 'अग्ना3इ' into agnā(pluta) + i. Pluta digit omitted (no digit in the alphabet)."
+ },
+ {
+  "id": "ac_yan_ayadi-008",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "paṭā",
+   "u",
+   "udakam"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "pluta"
+   ],
+   "1": [
+    "nipata"
+   ]
+  },
+  "outputs": [
+   "paṭāvudakam"
+  ],
+  "sutras": [
+   "6.1.77"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "bhashya",
+   "sutra": "6.1.77",
+   "locator": "Mahābhāṣya on 6.1.77",
+   "quote": "पटा3वुदकम्"
+  },
+  "confidence": "probable",
+  "notes": "Mahābhāṣya example ('पटा3उ उदकम् - पटा3वुदकम्'); split by me into paṭā(pluta) + u + udakam."
+ },
+ {
+  "id": "ac_yan_ayadi-009",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "agnā",
+   "i",
+   "āśā"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "pluta"
+   ],
+   "1": [
+    "nipata"
+   ]
+  },
+  "outputs": [
+   "agnāyāśā"
+  ],
+  "sutras": [
+   "6.1.77"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "bhashya",
+   "sutra": "6.1.77",
+   "locator": "Mahābhāṣya on 6.1.77",
+   "quote": "अग्ना3याशा"
+  },
+  "confidence": "probable",
+  "notes": "Mahābhāṣya example ('अग्ना3इ आशा -अग्ना3याशा'); split by me."
+ },
+ {
+  "id": "ac_yan_ayadi-010",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "paṭā",
+   "u",
+   "āśā"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "pluta"
+   ],
+   "1": [
+    "nipata"
+   ]
+  },
+  "outputs": [
+   "paṭāvāśā"
+  ],
+  "sutras": [
+   "6.1.77"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "bhashya",
+   "sutra": "6.1.77",
+   "locator": "Mahābhāṣya on 6.1.77",
+   "quote": "पटा3वाशा"
+  },
+  "confidence": "probable",
+  "notes": "Mahābhāṣya example ('पटा3उ आशा - पटा3वाशा'); split by me."
+ },
+ {
+  "id": "ac_yan_ayadi-011",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "dadhi",
+   "karoti"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "dadhikaroti"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "nyaas",
+   "sutra": "6.1.77",
+   "locator": "Nyāsa on 6.1.77",
+   "quote": "दधि करोति"
+  },
+  "confidence": "certain",
+  "notes": "'aci iti kim?' (Nyāsa on 6.1.77): a following consonant gives no yaṇ."
+ },
+ {
+  "id": "ac_yan_ayadi-012",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "vāc",
+   "atra"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "vāgatra"
+  ],
+  "sutras": [
+   "8.2.30",
+   "8.2.39"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "nyaas",
+   "sutra": "6.1.77",
+   "locator": "Nyāsa on 6.1.77",
+   "quote": "वागत्रेत्यत्र कुत्वादेव सिद्धत्वाद्यणादेशो मा भूदिति"
+  },
+  "confidence": "probable",
+  "notes": "'ik iti kim?' (Nyāsa): the consonant c is not replaced by a semivowel; kutva (8.2.30 coḥ kuḥ) alone gives the result. Kutva is the only rule the Nyāsa names; 8.2.39 (jhalāṃ jaśo 'nte) supplies the g and is added by me. Input written with underlying c (the source shows the result vāgatra)."
+ },
+ {
+  "id": "ac_yan_ayadi-013",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "dadhi",
+   "udakam"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "dadhyudakam"
+  ],
+  "sutras": [
+   "6.1.77",
+   "1.1.66"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.66",
+   "locator": "Kāśikā on 1.1.66",
+   "quote": "दध्युदकम्"
+  },
+  "confidence": "certain",
+  "notes": "Only the i BEFORE the vowel is replaced (tasmin nirdiṣṭe pūrvasya); the following u is untouched."
+ },
+ {
+  "id": "ac_yan_ayadi-014",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "madhu",
+   "idam"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "madhvidam"
+  ],
+  "sutras": [
+   "6.1.77",
+   "1.1.66"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.66",
+   "locator": "Kāśikā on 1.1.66",
+   "quote": "मध्विदम्"
+  },
+  "confidence": "certain",
+  "notes": "Same: u -> v, the following i stays."
+ },
+ {
+  "id": "ac_yan_ayadi-015",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "pacati",
+   "odanam"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "pacatyodanam"
+  ],
+  "sutras": [
+   "6.1.77",
+   "1.1.66"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.66",
+   "locator": "Kāśikā on 1.1.66",
+   "quote": "पचत्योदनम्"
+  },
+  "confidence": "certain",
+  "notes": "i of pacati -> y before o."
+ },
+ {
+  "id": "ac_yan_ayadi-016",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "agnicit",
+   "atra"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "agnicidatra"
+  ],
+  "sutras": [
+   "8.2.39"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.66",
+   "locator": "Kāśikā on 1.1.66",
+   "quote": "अग्निचिदत्रेति व्यवहितस्य मा भूत्"
+  },
+  "confidence": "certain",
+  "notes": "Counter-example for the word 'nirdiṣṭa' (adjacency): the i of agnicit is separated from the vowel by the consonant c-t, so yaṇ cannot apply. The Mahābhāṣya on 6.1.77 says the same for the word 'ik' ('इह मा भूत् - अग्निचिदत्र, सोमसुदत्र । ... जश्त्वमत्र बाधकं भविष्यति'). The visible change t -> d is jaśtva (8.2.39), which the source names only in the Mahābhāṣya."
+ },
+ {
+  "id": "ac_yan_ayadi-017",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "ud",
+   "prasthānam"
+  ],
+  "boundary": "upasarga",
+  "flags": {
+   "0": [
+    "upasarga"
+   ]
+  },
+  "outputs": [
+   "utprasthānam"
+  ],
+  "sutras": [
+   "8.4.55"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "balamanorama",
+   "sutra": "1.1.67",
+   "locator": "Bālamanoramā on 1.1.67",
+   "quote": "उत्प्रस्थानम्"
+  },
+  "confidence": "probable",
+  "notes": "Counter-example for 'avyavahitasya' in 1.1.67 (Bālamanoramā: 'अव्यवहिते किम्, उत्प्रस्थानम् । उदःस्थास्तम्भोरिति पूर्वसवर्णो न भवति'): 8.4.61 udaḥ sthāstambhoḥ pūrvasya does not apply because the p of pra separates ud from sthā. The change d -> t before p is khari ca (8.4.55), not named by the source (my inference)."
+ },
+ {
+  "id": "ac_yan_ayadi-018",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "ce",
+   "anam"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "cayanam"
+  ],
+  "sutras": [
+   "6.1.78"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.78",
+   "locator": "Kāśikā on 6.1.78",
+   "quote": "चयनम्"
+  },
+  "confidence": "probable",
+  "notes": "ci + lyuṭ -> ce + ana (guṇa) -> cayana; split by me from the joined example (Vasu: 'चि+ ल्युट् = चे + अन = चयनम्'); the final -m is the neuter nominative ending."
+ },
+ {
+  "id": "ac_yan_ayadi-019",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "lo",
+   "anam"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "lavanam"
+  ],
+  "sutras": [
+   "6.1.78"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.78",
+   "locator": "Kāśikā on 6.1.78",
+   "quote": "लवनम्"
+  },
+  "confidence": "probable",
+  "notes": "lū + lyuṭ -> lo + ana -> lavana (Vasu: 'लो + अन् = लवनं')."
+ },
+ {
+  "id": "ac_yan_ayadi-020",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "cai",
+   "akaḥ"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "cāyakaḥ"
+  ],
+  "sutras": [
+   "6.1.78"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.78",
+   "locator": "Kāśikā on 6.1.78",
+   "quote": "चायकः"
+  },
+  "confidence": "probable",
+  "notes": "ci + ṇvul -> cai + aka (vṛddhi) -> cāyaka; visarga is the nominative -s."
+ },
+ {
+  "id": "ac_yan_ayadi-021",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "lau",
+   "akaḥ"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "lāvakaḥ"
+  ],
+  "sutras": [
+   "6.1.78"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.78",
+   "locator": "Kāśikā on 6.1.78",
+   "quote": "लावकः"
+  },
+  "confidence": "probable",
+  "notes": "lū + ṇvul -> lau + aka -> lāvaka."
+ },
+ {
+  "id": "ac_yan_ayadi-022",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "ke",
+   "ete"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "kayete"
+  ],
+  "sutras": [
+   "6.1.78"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.78",
+   "locator": "Kāśikā on 6.1.78",
+   "quote": "कयेते"
+  },
+  "confidence": "probable",
+  "notes": "Nyāsa on 6.1.78: 'के+एते'. ke is the nominative PLURAL of ka (not a dual, so no pragṛhya blocking). Shows e + e -> ay + e."
+ },
+ {
+  "id": "ac_yan_ayadi-023",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "ye",
+   "ete"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "yayete"
+  ],
+  "sutras": [
+   "6.1.78"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.78",
+   "locator": "Kāśikā on 6.1.78",
+   "quote": "ययेते"
+  },
+  "confidence": "probable",
+  "notes": "Nyāsa: 'ये+एत'. ye is the nominative plural of ya."
+ },
+ {
+  "id": "ac_yan_ayadi-024",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "vāyau",
+   "avaruṇaddhi"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "vāyāvavaruṇaddhi"
+  ],
+  "sutras": [
+   "6.1.78"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.78",
+   "locator": "Kāśikā on 6.1.78",
+   "quote": "वायाववरुणद्धि"
+  },
+  "confidence": "certain",
+  "notes": "Nyāsa: 'वायौ+अवरुणद्धि'. au -> āv before a vowel. (The ṇ of avaruṇaddhi comes from 8.4.1, outside this family.)"
+ },
+ {
+  "id": "ac_yan_ayadi-025",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "hare",
+   "e"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "haraye"
+  ],
+  "sutras": [
+   "6.1.78",
+   "1.3.10"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": "1.3.10",
+   "locator": "Laghu text (GRETIL) 1.3.10",
+   "quote": "haraye / viṣṇave / nāyakaḥ / pāvakaḥ"
+  },
+  "confidence": "probable",
+  "notes": "Laghu text vlk_23 (yathāsaṃkhya): e -> ay, o -> av, ai -> āy, au -> āv in that order. hari + ṅe -> hare + e (guṇa) -> haraye; split by me from the joined form."
+ },
+ {
+  "id": "ac_yan_ayadi-026",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "viṣṇo",
+   "e"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "viṣṇave"
+  ],
+  "sutras": [
+   "6.1.78",
+   "1.3.10"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": "1.3.10",
+   "locator": "Laghu text (GRETIL) 1.3.10",
+   "quote": "haraye / viṣṇave / nāyakaḥ / pāvakaḥ"
+  },
+  "confidence": "probable",
+  "notes": "viṣṇu + ṅe -> viṣṇo + e -> viṣṇave. Split by me."
+ },
+ {
+  "id": "ac_yan_ayadi-027",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "nai",
+   "akaḥ"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "nāyakaḥ"
+  ],
+  "sutras": [
+   "6.1.78",
+   "1.3.10"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": "1.3.10",
+   "locator": "Laghu text (GRETIL) 1.3.10",
+   "quote": "haraye / viṣṇave / nāyakaḥ / pāvakaḥ"
+  },
+  "confidence": "probable",
+  "notes": "nī + ṇvul -> nai + aka -> nāyaka (ai -> āy). Split by me; visarga is the nominative -s."
+ },
+ {
+  "id": "ac_yan_ayadi-028",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "pau",
+   "akaḥ"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "pāvakaḥ"
+  ],
+  "sutras": [
+   "6.1.78",
+   "1.3.10"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": "1.3.10",
+   "locator": "Laghu text (GRETIL) 1.3.10",
+   "quote": "haraye / viṣṇave / nāyakaḥ / pāvakaḥ"
+  },
+  "confidence": "probable",
+  "notes": "pū + ṇvul -> pau + aka -> pāvaka (au -> āv). Split by me."
+ },
+ {
+  "id": "ac_yan_ayadi-029",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "hare",
+   "iha"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "hara iha",
+   "harayiha"
+  ],
+  "sutras": [
+   "6.1.78",
+   "8.3.19"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": "8.2.1",
+   "locator": "Laghu text (GRETIL) 8.2.1",
+   "quote": "hara iha, harayiha / viṣṇa iha, viṣṇaviha"
+  },
+  "confidence": "certain",
+  "notes": "Laghu text vlk_31 (pūrvatrāsiddham): hare + iha -> haray + iha by 6.1.78 (sapādasaptādhyāyī, done first); then the tripādī rule lopaḥ śākalyasya (8.3.19: the y/v after a-varṇa at the end of a pada may be deleted before a vowel, optional) gives 'hara iha' (hiatus, written with a space) or, without deletion, 'harayiha'. This is the Laghu's own illustration of 8.2.1: 8.3.19 sees the output of 6.1.78."
+ },
+ {
+  "id": "ac_yan_ayadi-030",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "viṣṇo",
+   "iha"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "viṣṇa iha",
+   "viṣṇaviha"
+  ],
+  "sutras": [
+   "6.1.78",
+   "8.3.19"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": "8.2.1",
+   "locator": "Laghu text (GRETIL) 8.2.1",
+   "quote": "hara iha, harayiha / viṣṇa iha, viṣṇaviha"
+  },
+  "confidence": "certain",
+  "notes": "Same as hare iha: viṣṇo + iha -> viṣṇav + iha -> viṣṇa iha / viṣṇaviha (o -> av)."
+ },
+ {
+  "id": "ac_yan_ayadi-031",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "go",
+   "yam"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "gavyam"
+  ],
+  "sutras": [
+   "6.1.79"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": "6.1.79",
+   "locator": "Laghu text (GRETIL) 6.1.79",
+   "quote": "gavyam / nāvyam / (adhvaparamāṇe ci) / gavyūtiḥ"
+  },
+  "confidence": "probable",
+  "notes": "go + yat (gopayasor yat, 4.3.160; Siddhāntakaumudī on 6.1.79 quotes this) -> gavya. o is not followed by a vowel so 6.1.78 cannot act; 6.1.79 supplies av before a y-initial affix. 'yam' = affix yat + neuter ending. Bālamanoramā: the following lopa rules 8.3.19/8.3.22 do not delete the v because the word is a bha here (no padatva)."
+ },
+ {
+  "id": "ac_yan_ayadi-032",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "nau",
+   "yam"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "nāvyam"
+  ],
+  "sutras": [
+   "6.1.79"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": "6.1.79",
+   "locator": "Laghu text (GRETIL) 6.1.79",
+   "quote": "gavyam / nāvyam / (adhvaparamāṇe ci) / gavyūtiḥ"
+  },
+  "confidence": "probable",
+  "notes": "nau + yat (nauvayodharmaviṣamūlamūlasītātulābhyas tāryatulyaprāpyavadhyānāmyasamasamitasaṃmiteṣu, 4.4.91) -> nāvya (au -> āv)."
+ },
+ {
+  "id": "ac_yan_ayadi-033",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "bābho",
+   "yaḥ"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "bābhravyaḥ"
+  ],
+  "sutras": [
+   "6.1.79"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.79",
+   "locator": "Kāśikā on 6.1.79",
+   "quote": "बाभ्रव्यः"
+  },
+  "confidence": "probable",
+  "notes": "babhru + yañ -> bābhro + ya (ādivṛddhi + guṇa of u by 6.4.146) -> bābhravya. bābho is the post-guṇa stem (my split, following Vasu: 'बभ्रु + यञ् = बाभ्रो + य = बाभ्रव्यः'). The ya is a pratyaya; the stem is not a dhātu so 6.1.80 does not restrict it."
+ },
+ {
+  "id": "ac_yan_ayadi-034",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "māṇḍo",
+   "yaḥ"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "māṇḍavyaḥ"
+  ],
+  "sutras": [
+   "6.1.79"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.79",
+   "locator": "Kāśikā on 6.1.79",
+   "quote": "माण्डव्यः"
+  },
+  "confidence": "probable",
+  "notes": "maṇḍu + yañ (gargādibhyo yañ, 4.1.105 per Nyāsa) -> māṇḍo + ya -> māṇḍavya. Split by me."
+ },
+ {
+  "id": "ac_yan_ayadi-035",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "śaṅko",
+   "yam"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "śaṅkavyam"
+  ],
+  "sutras": [
+   "6.1.79"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.79",
+   "locator": "Kāśikā on 6.1.79",
+   "quote": "शङ्कव्यं दारु"
+  },
+  "confidence": "probable",
+  "notes": "śaṅku + yat -> śaṅko + ya -> śaṅkavya (dāru 'wood'); split by me. The source prints the neuter ending as anusvāra before the next word (śaṅkavyaṃ dāru); the output here is the word in pause."
+ },
+ {
+  "id": "ac_yan_ayadi-036",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "pico",
+   "yaḥ"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "picavyaḥ"
+  ],
+  "sutras": [
+   "6.1.79"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.79",
+   "locator": "Kāśikā on 6.1.79",
+   "quote": "पिचव्यः कार्पासः"
+  },
+  "confidence": "probable",
+  "notes": "picu + yat -> pico + ya -> picavya (kārpāsa 'cotton'); split by me."
+ },
+ {
+  "id": "ac_yan_ayadi-037",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "nau",
+   "yaḥ"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "nāvyaḥ"
+  ],
+  "sutras": [
+   "6.1.79"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.79",
+   "locator": "Kāśikā on 6.1.79",
+   "quote": "नाव्यो ह्रदः"
+  },
+  "confidence": "probable",
+  "notes": "nau + yat -> nāvya; the source shows it in the phrase 'nāvyo hradaḥ' (visarga -> o before the voiced h, another family)."
+ },
+ {
+  "id": "ac_yan_ayadi-038",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "rai",
+   "yati"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "raiyati"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.79",
+   "locator": "Kāśikā on 6.1.79",
+   "quote": "रायमिच्छति रैयति"
+  },
+  "confidence": "certain",
+  "notes": "'vānta iti kim?': ai is not replaced by āv (only o/au take the va-ending replacements). rai + kyac -> raiyati ('desires wealth'). Padamañjarī: the word rai is Vedic-only ('रैशब्दश्छान्दसः'). Input splits the kyac-verb form as rai + yati (my split)."
+ },
+ {
+  "id": "ac_yan_ayadi-039",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "ce",
+   "yam"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "ceyam"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "bhashya",
+   "sutra": "6.1.79",
+   "locator": "Mahābhāṣya on 6.1.79",
+   "quote": "चेयम् जेयम्"
+  },
+  "confidence": "probable",
+  "notes": "Mahābhāṣya: without the word 'vānta' 6.1.79 would turn e before ya into ay in ceyam/jeyam; the actual forms keep e. Meaning: ci + yat 'to be collected/fit to be collected' (not śakya-arthe, so 6.1.81 does not apply)."
+ },
+ {
+  "id": "ac_yan_ayadi-040",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "go",
+   "bhyām"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "gobhyām"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.79",
+   "locator": "Kāśikā on 6.1.79",
+   "quote": "गोभ्याम्"
+  },
+  "confidence": "certain",
+  "notes": "'yi iti kim?': the affix does not begin with y, so no av."
+ },
+ {
+  "id": "ac_yan_ayadi-041",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "nau",
+   "bhyām"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "naubhyām"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.79",
+   "locator": "Kāśikā on 6.1.79",
+   "quote": "नौभ्याम्"
+  },
+  "confidence": "certain",
+  "notes": "Same: bh-initial ending."
+ },
+ {
+  "id": "ac_yan_ayadi-042",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "go",
+   "yānam"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "goyānam"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.79",
+   "locator": "Kāśikā on 6.1.79",
+   "quote": "गोयानम्"
+  },
+  "confidence": "certain",
+  "notes": "'pratyaya iti kim?': yāna is a word (ṣaṣṭhī-samāsa), not a pratyaya beginning with y."
+ },
+ {
+  "id": "ac_yan_ayadi-043",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "nau",
+   "yānam"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "nauyānam"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.79",
+   "locator": "Kāśikā on 6.1.79",
+   "quote": "नौयानम्"
+  },
+  "confidence": "certain",
+  "notes": "Same as goyānam."
+ },
+ {
+  "id": "ac_yan_ayadi-044",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "go",
+   "yūtim"
+  ],
+  "boundary": "samasa",
+  "veda": true,
+  "outputs": [
+   "gavyūtim"
+  ],
+  "sutras": [
+   "6.1.79"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.79",
+   "locator": "Kāśikā on 6.1.79",
+   "quote": "गव्यूतिमुक्षतम्"
+  },
+  "confidence": "probable",
+  "notes": "Vārttika 'गोर्यूतौ छन्दस्युपसंख्यानम्' (Vedic): go before yūti -> gav-yūti (ṚV 3.62.16 'आ नो मित्रावरुणा ... गव्यूतिमुक्षतम्'). yūti is not a pratyaya, hence the vārttika. Split by me."
+ },
+ {
+  "id": "ac_yan_ayadi-045",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "go",
+   "yūtiḥ"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "gavyūtiḥ"
+  ],
+  "sutras": [
+   "6.1.79"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": "6.1.79",
+   "locator": "Laghu text (GRETIL) 6.1.79",
+   "quote": "gavyam / nāvyam / (adhvaparamāṇe ci) / gavyūtiḥ"
+  },
+  "confidence": "probable",
+  "notes": "SEMANTIC-CONDITION (not decidable from the letters alone): vārttika 'adhvaparimāṇe ca' (the Laghu text spells it 'adhvaparamāṇe ci'): go before yūti -> gavyūtiḥ (a measure of road, krośa-yuga) also in the ordinary language. Same letters as the counter-example goyūtiḥ. yūti is nipātita (SK: ऊतियूतिजूतिसातिहेतिकीर्तयश्च).",
+  "flags": {
+   "0": [
+    "adhvaparimana"
+   ]
+  },
+  "flags_added": [
+   "adhvaparimana"
+  ]
+ },
+ {
+  "id": "ac_yan_ayadi-046",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "go",
+   "yūtiḥ"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "goyūtiḥ"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.79",
+   "locator": "Kāśikā on 6.1.79",
+   "quote": "छन्दसीति किम् ? गोयूतिः"
+  },
+  "confidence": "certain",
+  "notes": "SEMANTIC-CONDITION (not decidable from the letters alone): 'chandasīti kim?': outside the Veda (and outside the measure-of-road sense) the word stays goyūtiḥ."
+ },
+ {
+  "id": "ac_yan_ayadi-047",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "lū",
+   "yam"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "0": [
+    "dhatu:lū"
+   ]
+  },
+  "outputs": [
+   "lavyam"
+  ],
+  "sutras": [
+   "7.3.84",
+   "6.1.79",
+   "6.1.80"
+  ],
+  "derivation": [
+   {
+    "sutra": "7.3.84",
+    "after": "lo yam",
+    "note": "guṇa of ū, conditioned by the y-affix (source: Bālamanoramā on 6.1.80)"
+   },
+   {
+    "sutra": "6.1.79",
+    "after": "lavyam",
+    "note": "o -> av before a y-initial pratyaya; 6.1.80 allows it because this o was made by that very affix"
+   }
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.80",
+   "locator": "Kāśikā on 6.1.80",
+   "quote": "लव्यम्"
+  },
+  "confidence": "probable",
+  "notes": "lū + yat -> lo + ya (guṇa by 7.3.84, produced BY the y-affix) -> lavya. Bālamanoramā spells the steps: 'अचो यत् । सार्वधातुकार्धधातुकयोरित्यूकारस्य गुण ओकारः । तस्य धात्ववयवत्वाद्यादिप्रत्ययानिमित्तकत्वाच्च वान्तादेशः'. Input is the root + affix before guṇa; 'yam' = yat + neuter ending. Split by me."
+ },
+ {
+  "id": "ac_yan_ayadi-048",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "pū",
+   "yam"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "0": [
+    "dhatu:pū"
+   ]
+  },
+  "outputs": [
+   "pavyam"
+  ],
+  "sutras": [
+   "7.3.84",
+   "6.1.79",
+   "6.1.80"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.80",
+   "locator": "Kāśikā on 6.1.80",
+   "quote": "पव्यम्"
+  },
+  "confidence": "probable",
+  "notes": "Same as lavyam (pū + yat)."
+ },
+ {
+  "id": "ac_yan_ayadi-049",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "avaśya",
+   "lau",
+   "yam"
+  ],
+  "boundary": "samasa",
+  "flags": {
+   "1": [
+    "dhatu:lū",
+    "tannimitta"
+   ]
+  },
+  "outputs": [
+   "avaśyalāvyam"
+  ],
+  "sutras": [
+   "3.1.125",
+   "7.2.115",
+   "6.1.79",
+   "6.1.80"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.80",
+   "locator": "Kāśikā on 6.1.80",
+   "quote": "अवश्यलाव्यम्"
+  },
+  "confidence": "probable",
+  "notes": "lū + ṇyat (orāvaśyake 3.1.125): the ū gets vṛddhi au (aco ñṇiti 7.2.115, named by Nyāsa), again produced by the affix, so au -> āv. The compound with avaśyam (mayūravyaṃsakādi, m dropped: Nyāsa 'लुम्पेदवश्यमः कृत्ये') is spelled out by me as avaśya + lau + yam.",
+  "flags_added": [
+   "tannimitta"
+  ]
+ },
+ {
+  "id": "ac_yan_ayadi-050",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "upa",
+   "ūyate"
+  ],
+  "boundary": "upasarga",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "dhatu:ve"
+   ]
+  },
+  "outputs": [
+   "upoyate"
+  ],
+  "sutras": [
+   "6.1.87"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.80",
+   "locator": "Kāśikā on 6.1.80",
+   "quote": "उपोयते"
+  },
+  "confidence": "probable",
+  "notes": "Counter-example for 'tannimittasya': Nyāsa derives upoyate from ā/upa + ve + yak -> ūyate; the guṇa o comes from upa + ū (ādguṇaḥ 6.1.87), NOT from the y-affix, so 6.1.79 must not turn it into av. The inner u -> ū (7.4.25) is caused by yak; the o is not. Split by me from the Nyāsa's description."
+ },
+ {
+  "id": "ac_yan_ayadi-051",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "lūyamāna",
+   "iḥ"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "lauyamāniḥ"
+  ],
+  "sutras": [
+   "4.1.95",
+   "7.2.117"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.80",
+   "locator": "Kāśikā on 6.1.80",
+   "quote": "लौयमानिः"
+  },
+  "confidence": "probable",
+  "notes": "Counter-example: lūyamāna + iñ (ata iñ 4.1.95) with vṛddhi au by taddhiteṣv acām ādeḥ 7.2.117 (Nyāsa: 'सा च तद्धितनिमित्ता, न तु यकारादिप्रत्ययनिमित्ता'); au is not caused by the y-affix, so no āv. pauyamāniḥ is the twin example."
+ },
+ {
+  "id": "ac_yan_ayadi-052",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "kṣe",
+   "yaḥ"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "0": [
+    "dhatu:kṣi",
+    "shakyartha"
+   ]
+  },
+  "outputs": [
+   "kṣayyaḥ"
+  ],
+  "sutras": [
+   "6.1.81"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.81",
+   "locator": "Kāśikā on 6.1.81",
+   "quote": "क्षय्यः"
+  },
+  "confidence": "probable",
+  "notes": "SEMANTIC-CONDITION (not decidable from the letters alone): nipātana: e of kṣi (+yat) becomes ay only in the sense 'able to be' (śakyaḥ kṣetuṃ kṣayyaḥ). kṣe = guṇa-ed kṣi. Same letters would give kṣeyam in the 'fit to be' sense.",
+  "flags_added": [
+   "shakyartha"
+  ]
+ },
+ {
+  "id": "ac_yan_ayadi-053",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "je",
+   "yaḥ"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "0": [
+    "dhatu:ji",
+    "shakyartha"
+   ]
+  },
+  "outputs": [
+   "jayyaḥ"
+  ],
+  "sutras": [
+   "6.1.81"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.81",
+   "locator": "Kāśikā on 6.1.81",
+   "quote": "जय्यः"
+  },
+  "confidence": "probable",
+  "notes": "SEMANTIC-CONDITION (not decidable from the letters alone): śakyo jetuṃ jayyaḥ.",
+  "flags_added": [
+   "shakyartha"
+  ]
+ },
+ {
+  "id": "ac_yan_ayadi-054",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "kṣe",
+   "yam"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "0": [
+    "dhatu:kṣi"
+   ]
+  },
+  "outputs": [
+   "kṣeyam"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.81",
+   "locator": "Kāśikā on 6.1.81",
+   "quote": "क्षेयं पापम्"
+  },
+  "confidence": "certain",
+  "notes": "SEMANTIC-CONDITION (not decidable from the letters alone): 'śakyārtha iti kim?': in the sense 'fit/worthy to be destroyed' (arhe kṛtyatṛcaś ca, 3.3.169) the e stays: kṣeyaṃ pāpam."
+ },
+ {
+  "id": "ac_yan_ayadi-055",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "je",
+   "yam"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "0": [
+    "dhatu:ji"
+   ]
+  },
+  "outputs": [
+   "jeyam"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.81",
+   "locator": "Siddhāntakaumudī on 6.1.81",
+   "quote": "जेतुं योग्यं जेयं मनः"
+  },
+  "confidence": "certain",
+  "notes": "SEMANTIC-CONDITION (not decidable from the letters alone): Siddhāntakaumudī's counter-example (Kāśikā has 'जेयो वृषलः'): jeyam manaḥ 'the mind is to be conquered' (yogya, not śakya)."
+ },
+ {
+  "id": "ac_yan_ayadi-056",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "kre",
+   "yaḥ"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "0": [
+    "dhatu:krī",
+    "krayartha"
+   ]
+  },
+  "outputs": [
+   "krayyaḥ"
+  ],
+  "sutras": [
+   "6.1.82"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.82",
+   "locator": "Kāśikā on 6.1.82",
+   "quote": "क्रय्यः कम्बलः"
+  },
+  "confidence": "probable",
+  "notes": "SEMANTIC-CONDITION (not decidable from the letters alone): nipātana: krī + yat -> krayya only when the thing is 'put out for sale' (tadarthe: krayārthaṃ yaḥ prasāritaḥ). kre = guṇa-ed krī.",
+  "flags_added": [
+   "krayartha"
+  ]
+ },
+ {
+  "id": "ac_yan_ayadi-057",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "kre",
+   "yam"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "0": [
+    "dhatu:krī"
+   ]
+  },
+  "outputs": [
+   "kreyam"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.82",
+   "locator": "Kāśikā on 6.1.82",
+   "quote": "क्रेयं नो धान्यम्"
+  },
+  "confidence": "certain",
+  "notes": "SEMANTIC-CONDITION (not decidable from the letters alone): 'tadartha iti kim?': 'kreyaṃ no dhānyam, na cāsti krayyam' — grain we want to buy is kreya (kre-ya, e stays); only grain put out for sale is krayya."
+ },
+ {
+  "id": "ac_yan_ayadi-058",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "bhe",
+   "yam"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "0": [
+    "dhatu:bhī"
+   ]
+  },
+  "veda": true,
+  "outputs": [
+   "bhayyam"
+  ],
+  "sutras": [
+   "6.1.83"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.83",
+   "locator": "Kāśikā on 6.1.83",
+   "quote": "भय्यं किलासीत्"
+  },
+  "confidence": "probable",
+  "notes": "Vedic nipātana: bhī + yat (kṛtyalyuṭo bahulam, 3.3.113, ablative sense: 'that from which one is afraid') -> bhayya. bhe = guṇa-ed bhī."
+ },
+ {
+  "id": "ac_yan_ayadi-059",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "prave",
+   "yā"
+  ],
+  "boundary": "anga",
+  "veda": true,
+  "outputs": [
+   "pravayyā"
+  ],
+  "sutras": [
+   "6.1.83"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.83",
+   "locator": "Kāśikā on 6.1.83",
+   "quote": "वत्सतरी प्रवय्या"
+  },
+  "confidence": "probable",
+  "notes": "Vedic nipātana in the feminine only (Kāśikā: 'प्रवय्या इति स्त्रियामेव निपातनम्। अन्यत्र प्रवेयमित्येव भवति'): pra + vī + yat + āp. Split by me.",
+  "flags": {
+   "0": [
+    "stri"
+   ]
+  },
+  "flags_added": [
+   "stri"
+  ]
+ },
+ {
+  "id": "ac_yan_ayadi-060",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "hṛde",
+   "yāḥ"
+  ],
+  "boundary": "anga",
+  "veda": true,
+  "outputs": [
+   "hṛdayyāḥ"
+  ],
+  "sutras": [
+   "6.1.83"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.83",
+   "locator": "Siddhāntakaumudī on 6.1.83",
+   "quote": "हृदे भवा हृदय्या आपः"
+  },
+  "confidence": "probable",
+  "notes": "Vārttika 'हृदय्या उपसंख्यानम्': hṛda + yat (bhave chandasi, 4.4.110) with ay for the e ('hṛde + ya = hṛday + ya' in Vasu). The Kāśikā prints ह्रदय्या (hradayyā), the Kaumudī and the Mahābhāṣya hṛdayyā; I follow the Kaumudī. Vedic only. Split by me."
+ },
+ {
+  "id": "ac_yan_ayadi-061",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "śara",
+   "yā"
+  ],
+  "boundary": "anga",
+  "veda": true,
+  "outputs": [
+   "śaravyā"
+  ],
+  "sutras": [
+   "6.1.83"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "bhashya",
+   "sutra": "6.1.83",
+   "locator": "Mahābhāṣya on 6.1.83",
+   "quote": "शरव्या वै तेजनम्"
+  },
+  "confidence": "probable",
+  "notes": "Second vārttika on 6.1.83 (Mahābhāṣya: 'शरस्य च हृदस्य चातोऽव्वक्तव्यः। हृदव्या आपः। शरव्या वै तेजनम्'): here it is av (not ay) and it replaces the final a. Vedic. Split by me."
+ },
+ {
+  "id": "ac_yan_ayadi-062",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "bhe",
+   "yam"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "bheyam"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.83",
+   "locator": "Kāśikā on 6.1.83",
+   "quote": "छन्दसीति किम् ? भेयम्। प्रवेयम्"
+  },
+  "confidence": "certain",
+  "notes": "'chandasīti kim?': in ordinary language the forms are bheyam / praveyam. Same letters as bhayyam; the difference is veda=false."
+ },
+ {
+  "id": "ac_yan_ayadi-063",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "prave",
+   "yam"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "praveyam"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.83",
+   "locator": "Kāśikā on 6.1.83",
+   "quote": "छन्दसीति किम् ? भेयम्। प्रवेयम्"
+  },
+  "confidence": "certain",
+  "notes": "Ordinary language praveyam (Kāśikā)."
+ },
+ {
+  "id": "ac_yan_ayadi-064",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "arkaḥ"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "arkkaḥ",
+   "arkaḥ"
+  ],
+  "sutras": [
+   "8.4.46"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.46",
+   "locator": "Kāśikā on 8.4.46",
+   "quote": "अर्क्कः"
+  },
+  "confidence": "certain",
+  "notes": "k after r after the vowel a is doubled. 8.4.46 is optional (vā anuvṛtti from 8.4.45, Tattvabodhinī on 8.4.47: 'यरो वेति चानुवर्तते'); Śākalya (8.4.51) gives arkaḥ with no doubling. Input shows the pausal visarga form (arka + s)."
+ },
+ {
+  "id": "ac_yan_ayadi-065",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "markaḥ"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "markkaḥ",
+   "markaḥ"
+  ],
+  "sutras": [
+   "8.4.46"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.46",
+   "locator": "Kāśikā on 8.4.46",
+   "quote": "मर्क्कः"
+  },
+  "confidence": "certain",
+  "notes": "Same as arkkaḥ."
+ },
+ {
+  "id": "ac_yan_ayadi-066",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "brahmā"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "brahmmā",
+   "brahmā"
+  ],
+  "sutras": [
+   "8.4.46"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.46",
+   "locator": "Kāśikā on 8.4.46",
+   "quote": "ब्रह्म्मा"
+  },
+  "confidence": "certain",
+  "notes": "m after h after the vowel a is doubled (optional). Śākalya/8.4.51: brahmā."
+ },
+ {
+  "id": "ac_yan_ayadi-067",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "apa",
+   "hnute"
+  ],
+  "boundary": "upasarga",
+  "outputs": [
+   "apahnnute",
+   "apahnute"
+  ],
+  "sutras": [
+   "8.4.46"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.46",
+   "locator": "Kāśikā on 8.4.46",
+   "quote": "अपह्न्नुते"
+  },
+  "confidence": "certain",
+  "notes": "n after h (after the vowel a of apa) is doubled, although a vowel (u) follows: 8.4.46 doubles even before a vowel, unlike 8.4.47."
+ },
+ {
+  "id": "ac_yan_ayadi-068",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "kim",
+   "hnute"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "kinhnute",
+   "kiṃhnute"
+  ],
+  "sutras": [
+   "8.3.27"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.46",
+   "locator": "Kāśikā on 8.4.46",
+   "quote": "किन् ह्नुते"
+  },
+  "confidence": "certain",
+  "notes": "'aca iti kim?': the n is not after a vowel (the h follows the m/n of kim), so no doubling. The m before h + n becomes n or anusvāra by napare naḥ (8.3.27; Kāśikā on 8.3.27: 'किन् ह्नुते, किं ह्नुते'); the 8.4.46 passage prints the n form (with a space)."
+ },
+ {
+  "id": "ac_yan_ayadi-069",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "kim",
+   "hmalayati"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "kimhmalayati",
+   "kiṃhmalayati"
+  ],
+  "sutras": [
+   "8.3.26"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.46",
+   "locator": "Kāśikā on 8.4.46",
+   "quote": "किम् ह्मलयति"
+  },
+  "confidence": "certain",
+  "notes": "'aca iti kim?': the m is not after a vowel, no doubling. m before h + m is he mapare vā (8.3.26; Kāśikā on 8.3.26: 'किम् ह्मलयति किं ह्मलयति'): m stays or becomes anusvāra."
+ },
+ {
+  "id": "ac_yan_ayadi-070",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "gaurī",
+   "au"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "gauryyau",
+   "gauryau"
+  ],
+  "sutras": [
+   "6.1.77",
+   "8.4.46"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": "8.4.46",
+   "locator": "Laghu text (GRETIL) 8.4.46",
+   "quote": "acaḥ parābhyāṃ rephahakārābhyāṃ parasya yaro dve vā staḥ / gauryyau"
+  },
+  "confidence": "certain",
+  "notes": "gaurī + au: yaṇ (6.1.77), then y after r after the vowel au is doubled (optional). 6.1.127 (Śākalya's hrasva alternative) does not apply because gaurī is not pada-final here (Laghu text on 6.1.127: 'padāntā iti kim ? gauryau')."
+ },
+ {
+  "id": "ac_yan_ayadi-071",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "hari",
+   "anubhavaḥ"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "haryyanubhavaḥ",
+   "haryanubhavaḥ"
+  ],
+  "sutras": [
+   "6.1.77",
+   "8.4.46"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.4.46",
+   "locator": "Siddhāntakaumudī on 8.4.46",
+   "quote": "हर्य्यनुभवः"
+  },
+  "confidence": "certain",
+  "notes": "Bālamanoramā: 'हरेरनुभवः: हरि-अनुभव इति स्थिते रेफादिकारस्य यण् । तस्य द्वित्वम्'. The y follows r (which follows the vowel a) and is followed by a vowel, so 8.4.47 anaci ca cannot apply but 8.4.46 can (Bālamanoramā: 'अचः परत्वाऽभावादच्परकत्वाच्च द्वित्वमप्राप्तं विधीयते')."
+ },
+ {
+  "id": "ac_yan_ayadi-072",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "nahi",
+   "asti"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "nahyyasti",
+   "nahyasti"
+  ],
+  "sutras": [
+   "6.1.77",
+   "8.4.46"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.4.46",
+   "locator": "Siddhāntakaumudī on 8.4.46",
+   "quote": "नह्य्यस्ति"
+  },
+  "confidence": "certain",
+  "notes": "y after h (after the vowel a) is doubled before the vowel a (Bālamanoramā: 'नहि — अस्ति इति स्थिते हकारादिकारस्य यण् । तस्य द्वित्वम्')."
+ },
+ {
+  "id": "ac_yan_ayadi-073",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "vāpī",
+   "aśvaḥ"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "vāpyaśvaḥ"
+  ],
+  "sutras": [
+   "6.1.77"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "laghukaumudi",
+   "sutra": "8.4.46",
+   "locator": "Laghusiddhāntakaumudī (corpus) on 8.4.46",
+   "quote": "न समासे (वार्त्तिकम्) । वाप्यश्वः"
+  },
+  "confidence": "uncertain",
+  "notes": "Laghu (corpus and GRETIL text): vārttika 'na samāse' with the example vāpyaśvaḥ - no doubling of the y in a compound. The Laghu attaches it to 8.4.46, but here the y stands after p, not after r/h, so the mechanism that would double it is not stated in the on-disk sources (probably the vārttika 'yaṇo mayo dve' of 8.4.47). Treat as an open point; do not implement doubling here."
+ },
+ {
+  "id": "ac_yan_ayadi-074",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "smitam"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "smitam"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.47",
+   "locator": "Kāśikā on 8.4.47",
+   "quote": "स्मितम्। ध्मातम्"
+  },
+  "confidence": "certain",
+  "notes": "'aca ity eva': the doubling only happens to a yar standing after a VOWEL. The m of smitam follows s, not a vowel: no doubling."
+ },
+ {
+  "id": "ac_yan_ayadi-075",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "dhmātam"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "dhmātam"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.47",
+   "locator": "Kāśikā on 8.4.47",
+   "quote": "स्मितम्। ध्मातम्"
+  },
+  "confidence": "certain",
+  "notes": "Same: m follows dh, not a vowel."
+ },
+ {
+  "id": "ac_yan_ayadi-076",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "ulkā"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "ulkkā",
+   "ulkā"
+  ],
+  "sutras": [
+   "8.4.47"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.47",
+   "locator": "Kāśikā on 8.4.47",
+   "quote": "तेषामुल्क्का, वल्म्मीक इत्युदाहरणम्"
+  },
+  "confidence": "certain",
+  "notes": "Vārttika 'यणो मयो द्वे भवत इति वक्तव्यम्', first reading (yaṇaḥ pañcamī, mayaḥ ṣaṣṭhī): a may (k) after a yaṇ (l) is doubled (Mahābhāṣya: 'यदि यण इति पञ्चमी मय इति षष्ठी उल्क्का वल्म्मीकमित्युदाहरणम्'). Optional (vā)."
+ },
+ {
+  "id": "ac_yan_ayadi-077",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "valmīka"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "valmmīka",
+   "valmīka"
+  ],
+  "sutras": [
+   "8.4.47"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.47",
+   "locator": "Kāśikā on 8.4.47",
+   "quote": "तेषामुल्क्का, वल्म्मीक इत्युदाहरणम्"
+  },
+  "confidence": "certain",
+  "notes": "Same vārttika, first reading: m after l is doubled. (Vasu on this sūtra prints वाल्मीकः.)"
+ },
+ {
+  "id": "ac_yan_ayadi-078",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "sthālī"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "sthālī",
+   "stthālī",
+   "sththālī"
+  ],
+  "sutras": [
+   "8.4.47"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.47",
+   "locator": "Kāśikā on 8.4.47",
+   "quote": "तदा स्त्थाली स्त्थातेत्युदाहरणम्"
+  },
+  "confidence": "probable",
+  "notes": "Vārttika 'शरः खयो द्वे भवत इति वक्तव्यम्', first reading (śaraḥ pañcamī, khayaḥ ṣaṣṭhī): a khay (th) after a śar (s) is doubled. The Kāśikā writes the doubled aspirate as t + th (स्त्थाली = stthālī), the Mahābhāṣya as th + th (स्थ्थाली = sththālī); both spellings are listed. Optional (vā)."
+ },
+ {
+  "id": "ac_yan_ayadi-079",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "sthātā"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "sthātā",
+   "stthātā",
+   "sththātā"
+  ],
+  "sutras": [
+   "8.4.47"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.47",
+   "locator": "Kāśikā on 8.4.47",
+   "quote": "तदा स्त्थाली स्त्थातेत्युदाहरणम्"
+  },
+  "confidence": "probable",
+  "notes": "Same as sthālī (Kāśikā/Mahābhāṣya स्थ्थाता)."
+ },
+ {
+  "id": "ac_yan_ayadi-080",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "vatsaḥ"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "vatsaḥ",
+   "vatssaḥ",
+   "vathsaḥ"
+  ],
+  "sutras": [
+   "8.4.47"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.47",
+   "locator": "Kāśikā on 8.4.47",
+   "quote": "वत्स्सः"
+  },
+  "confidence": "certain",
+  "notes": "Vārttika 'śaraḥ khayo dve', second reading (khayaḥ pañcamī, śaraḥ ṣaṣṭhī): a śar (s) after a khay (t) is doubled -> vatssaḥ. vathsaḥ is the Pauṣkarasādi variant (vārttika 'चयो द्वितीयाः शरि पौष्करसादेः' under 8.4.48): a car before a śar becomes the aspirate of its class. Visarga = nominative -s."
+ },
+ {
+  "id": "ac_yan_ayadi-081",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "ikṣuḥ"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "ikṣuḥ",
+   "ikṣṣuḥ"
+  ],
+  "sutras": [
+   "8.4.47"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.47",
+   "locator": "Kāśikā on 8.4.47",
+   "quote": "इक्ष्षुः"
+  },
+  "confidence": "certain",
+  "notes": "Second reading: ṣ after k is doubled -> ikṣṣuḥ."
+ },
+ {
+  "id": "ac_yan_ayadi-082",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "kṣīram"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "kṣīram",
+   "kṣṣīram",
+   "khṣīram"
+  ],
+  "sutras": [
+   "8.4.47"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.47",
+   "locator": "Kāśikā on 8.4.47",
+   "quote": "क्ष्षीरम्"
+  },
+  "confidence": "certain",
+  "notes": "Second reading: ṣ after k doubled -> kṣṣīram; khṣīram is the Pauṣkarasādi variant (Kāśikā on 8.4.48: 'ककारस्य खकारः — ख्षीरम्')."
+ },
+ {
+  "id": "ac_yan_ayadi-083",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "apsarāḥ"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "apsarāḥ",
+   "apssarāḥ",
+   "aphsarāḥ"
+  ],
+  "sutras": [
+   "8.4.47"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.47",
+   "locator": "Kāśikā on 8.4.47",
+   "quote": "अप्स्सराः"
+  },
+  "confidence": "certain",
+  "notes": "Second reading: s after p doubled -> apssarāḥ; aphsarāḥ is the Pauṣkarasādi variant (Kāśikā on 8.4.48: 'पकारस्य फकारः — अफ्सराः')."
+ },
+ {
+  "id": "ac_yan_ayadi-084",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "vāk"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "vākk",
+   "vāk"
+  ],
+  "sutras": [
+   "8.4.47"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.47",
+   "locator": "Kāśikā on 8.4.47",
+   "quote": "वाक्क्, वाक्"
+  },
+  "confidence": "certain",
+  "notes": "Vārttika 'अवसाने च यरो द्वे भवत इति वक्तव्यम्': a yar at the pause is doubled (optional). Possible because 'anaci' is a paryudāsa (= 'other than a vowel', pause included; Mahābhāṣya: 'नायं प्रसज्यप्रतिषेधः - अचि नेति। किं तर्हि? पर्युदासोऽयं यदन्यदचेति'). Input is the pausal form."
+ },
+ {
+  "id": "ac_yan_ayadi-085",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "tvak"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "tvakk",
+   "tvak"
+  ],
+  "sutras": [
+   "8.4.47"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.47",
+   "locator": "Kāśikā on 8.4.47",
+   "quote": "त्वक्क्, त्वक्"
+  },
+  "confidence": "certain",
+  "notes": "Same vārttika (avasāne ca)."
+ },
+ {
+  "id": "ac_yan_ayadi-086",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "ṣaṭ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "ṣaṭṭ",
+   "ṣaṭ"
+  ],
+  "sutras": [
+   "8.4.47"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.47",
+   "locator": "Kāśikā on 8.4.47",
+   "quote": "षट्ट्, षट्"
+  },
+  "confidence": "certain",
+  "notes": "Same vārttika."
+ },
+ {
+  "id": "ac_yan_ayadi-087",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "tat"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "tatt",
+   "tat"
+  ],
+  "sutras": [
+   "8.4.47"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.47",
+   "locator": "Kāśikā on 8.4.47",
+   "quote": "तत्त्, तत्"
+  },
+  "confidence": "certain",
+  "notes": "Same vārttika."
+ },
+ {
+  "id": "ac_yan_ayadi-088",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "sudhī",
+   "upāsyaḥ"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "suddhyupāsyaḥ",
+   "sudhyupāsyaḥ",
+   "sudhyyupāsyaḥ",
+   "suddhyyupāsyaḥ"
+  ],
+  "sutras": [
+   "6.1.77",
+   "1.1.66",
+   "1.1.50",
+   "8.4.47",
+   "8.4.53",
+   "8.2.23",
+   "1.1.52"
+  ],
+  "derivation": [
+   {
+    "sutra": "6.1.77",
+    "after": "sudhy upāsya",
+    "note": "Laghu: 'ikaḥ sthāne yaṇ syādaci saṃhitāyāṃ viṣaye'; 1.1.66 'saptamīnirdeśena vidhīyamānaṃ kāryaṃ varṇāntareṇāvyavahatasya pūrvasya bodhyam'; 1.1.50 'prasaṅge sati sadṛśatama ādeśaḥ syāt' -> y"
+   },
+   {
+    "sutra": "8.4.47",
+    "after": "sudhdhy upāsya",
+    "note": "Laghu: 'acaḥ parasya yaro dve vā sto na tvaci' - the dh is doubled"
+   },
+   {
+    "sutra": "8.4.53",
+    "after": "suddhy upāsya",
+    "note": "Laghu: 'spaṣṭam / iti pūrvadhakārasya dakāraḥ'"
+   },
+   {
+    "sutra": "8.2.23",
+    "after": "suddhy upāsya",
+    "note": "Laghu: 'saṃyogāntaṃ yatpadaṃ tadantasya lopaḥ syāt' + 1.1.52 alo 'ntyasya: 'iti yalope prāpte'; the y-deletion is prāpta but blocked by the vārttika 'yaṇaḥ pratiṣedho vācyaḥ'"
+   },
+   {
+    "sutra": "1.1.52",
+    "after": "suddhyupāsyaḥ",
+    "note": "Laghu: 'iti yalope prāpte - (yaṇaḥ pratiṣedho vācyaḥ) / suddhyupāsyaḥ'"
+   }
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": "6.1.77",
+   "locator": "Laghu text (GRETIL) 6.1.77",
+   "quote": "iti yalope prāpte - (yaṇaḥ pratiṣedho vācyaḥ) / suddhyupāsyaḥ"
+  },
+  "confidence": "certain",
+  "notes": "Varadarāja's derivation of the compound sudhī-upāsya ('worshipped by the wise'; Bālamanoramā: 'सुधीभि रूपास्य इति विग्रहः', tṛtīyā-samāsa with bhis-luk). Steps as in the Laghu: (1) 6.1.77 with 1.1.66 (tasmin nirdiṣṭe pūrvasya: only the ī before the vowel is replaced) and 1.1.50 (sthāne 'ntaratamaḥ: ī -> y) gives 'sudhy upāsya'; (2) 8.4.47 anaci ca doubles the dh: 'sudhdhy upāsya'; (3) 8.4.53 changes the first dh to d: 'suddhy upāsya'; (4) 8.2.23 saṃyogāntasya lopaḥ (with 1.1.52 alo 'ntyasya) would now delete the final y ('iti yalope prāpte') - the vārttika 'yaṇaḥ pratiṣedho vācyaḥ' forbids it -> suddhyupāsyaḥ. Outputs: the Laghu shows only suddhyupāsyaḥ; the Siddhāntakaumudī on 8.2.23 says the optional doublings of dh and y give FOUR forms (एकधमेकयम्, द्विधं द्वियम्, द्विधमेकयम्, एकधं द्वियम्), which are the four listed. Later commentators (Tattvabodhinī) argue for more forms (re-doubling); ignored here. Visarga = nominative -s; the Laghu writes the compound stem before the ending."
+ },
+ {
+  "id": "ac_yan_ayadi-089",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "madhu",
+   "ariḥ"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "maddhvariḥ",
+   "madhvariḥ",
+   "madhvvariḥ",
+   "maddhvvariḥ"
+  ],
+  "sutras": [
+   "6.1.77",
+   "8.4.47",
+   "8.4.53",
+   "8.2.23"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "balamanorama",
+   "sutra": "8.2.23",
+   "locator": "Bālamanoramā on 8.2.23",
+   "quote": "मद्ध्वरिः"
+  },
+  "confidence": "certain",
+  "notes": "Bālamanoramā on 8.2.23: madhu (name of an asura) + ari 'enemy' = Hari; u -> v (sthānato 'ntaryāt or yathāsaṃkhya), dh doubled -> maddhvariḥ; no saṃyogānta-lopa (vārttika yaṇaḥ pratiṣedho vācyaḥ). The Laghu text on disk prints 'maddhariḥ' (with the v lost) - a GRETIL corruption; the Siddhāntakaumudī has मद्ध्वरिः. The further forms follow the four-form pattern of the Siddhāntakaumudī on 8.2.23."
+ },
+ {
+  "id": "ac_yan_ayadi-090",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "dhātṛ",
+   "aṃśaḥ"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "dhātraṃśaḥ",
+   "dhāttraṃśaḥ"
+  ],
+  "sutras": [
+   "6.1.77",
+   "8.4.47"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.2.23",
+   "locator": "Siddhāntakaumudī on 8.2.23",
+   "quote": "धात्रंशः"
+  },
+  "confidence": "probable",
+  "notes": "ṛ -> r before the vowel a (1.1.51 makes it raparaḥ only for guṇa etc.; here it is plain yaṇ). Bālamanoramā on 8.2.23: 'अत्र तकारस्यैव द्वित्वं न तु रेफस्येत्यनुपदमेव अचोरहाब्यामित्यत्र वक्ष्यते'; Tattvabodhinī: 'तकारस्य तु द्वित्वं भवत्येव। तच्च वेत्यतो रूपद्वयम्'. So the t may be doubled (dhāttraṃśaḥ) but the r is never doubled (8.4.46 speaks of a yar AFTER r; the r here is the nimitta of no rule). The Laghu text prints 'dhātraśaḥ' (anusvāra lost) - GRETIL corruption. Split by me."
+ },
+ {
+  "id": "ac_yan_ayadi-091",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "putra",
+   "ādinī"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "putrādinī"
+  ],
+  "sutras": [
+   "8.4.48"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.48",
+   "locator": "Kāśikā on 8.4.48",
+   "quote": "पुत्रादिनी त्वमसि पापे"
+  },
+  "confidence": "certain",
+  "notes": "SEMANTIC-CONDITION (not decidable from the letters alone): In the sense of abuse (ākrośa) the t of putra is NOT doubled before ādinī ('you child-eater, you wretch'). 8.4.47 would have doubled it (Kāśikā: 'अनचि च इति प्राप्तिः प्रतिषिध्यते'). The a + ā -> ā of the compound (6.1.101) is not named by the source."
+ },
+ {
+  "id": "ac_yan_ayadi-092",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "putra",
+   "ādinī"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "puttrādinī",
+   "putrādinī"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.48",
+   "locator": "Kāśikā on 8.4.48",
+   "quote": "पुत्रानत्तीति पुत्त्रादिनी शिशुमारी व्याघ्री"
+  },
+  "confidence": "certain",
+  "notes": "SEMANTIC-CONDITION (not decidable from the letters alone): 'ākrośa iti kim?': stating a fact (a tigress that eats her cubs) the doubling is allowed: puttrādinī; the ordinary optionality of 8.4.47 remains, so putrādinī is also fine. Same letters as the abusive use."
+ },
+ {
+  "id": "ac_yan_ayadi-093",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "putra",
+   "putrādinī"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "putraputrādinī"
+  ],
+  "sutras": [
+   "8.4.48"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.48",
+   "locator": "Kāśikā on 8.4.48",
+   "quote": "पुत्रपुत्रादिनी त्वमसि पापे"
+  },
+  "confidence": "probable",
+  "notes": "SEMANTIC-CONDITION (not decidable from the letters alone): Vārttika 'tatpare ca': the t of a putra that stands before ANOTHER putra which itself stands before ādinī is also undoubled (Padamañjarī: 'स आदिनीशब्दो यस्मात्परस्तत्रापि परतः'). Split into putra + putrādinī by me."
+ },
+ {
+  "id": "ac_yan_ayadi-094",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "putra",
+   "hatī"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "puttrahatī",
+   "putrahatī"
+  ],
+  "sutras": [
+   "8.4.48"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.48",
+   "locator": "Kāśikā on 8.4.48",
+   "quote": "पुत्त्रहती, पुत्रहती"
+  },
+  "confidence": "certain",
+  "notes": "Vārttika 'vā hatajagdhayoḥ' (Kāśikā: 'वा हतजग्धपर इति वक्तव्यम्'): before hata/jagdha the doubling of the t of putra is optional (bahuvrīhi 'putro hato yayā'; feminine in ī). Bālamanoramā notes the vārttika can also be read as a niyama."
+ },
+ {
+  "id": "ac_yan_ayadi-095",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "putra",
+   "jagdhī"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "puttrajagdhī",
+   "putrajagdhī"
+  ],
+  "sutras": [
+   "8.4.48"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.48",
+   "locator": "Kāśikā on 8.4.48",
+   "quote": "पुत्त्रजग्धी, पुत्रजग्धी"
+  },
+  "confidence": "certain",
+  "notes": "Same vārttika (jagdha)."
+ },
+ {
+  "id": "ac_yan_ayadi-096",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "vatsaḥ"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "vatsaḥ",
+   "vatssaḥ",
+   "vathsaḥ"
+  ],
+  "sutras": [
+   "8.4.48"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.48",
+   "locator": "Kāśikā on 8.4.48",
+   "quote": "तकारस्य थकारः — वथ्सः"
+  },
+  "confidence": "certain",
+  "notes": "Vārttika 'चयो द्वितीयाः शरि पौष्करसादेः': in Pauṣkarasādi's opinion a car (c/ṭ/t/k/p) before a śar becomes the second (aspirated) letter of its class: vathsaḥ. A matāntara; the ordinary forms remain valid. Same input as the 8.4.47 case; outputs are the union."
+ },
+ {
+  "id": "ac_yan_ayadi-097",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "kṣīram"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "kṣīram",
+   "kṣṣīram",
+   "khṣīram"
+  ],
+  "sutras": [
+   "8.4.48"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.48",
+   "locator": "Kāśikā on 8.4.48",
+   "quote": "ककारस्य खकारः — ख्षीरम्"
+  },
+  "confidence": "certain",
+  "notes": "Pauṣkarasādi: k -> kh before ṣ."
+ },
+ {
+  "id": "ac_yan_ayadi-098",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "apsarāḥ"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "apsarāḥ",
+   "apssarāḥ",
+   "aphsarāḥ"
+  ],
+  "sutras": [
+   "8.4.48"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.48",
+   "locator": "Kāśikā on 8.4.48",
+   "quote": "पकारस्य फकारः — अफ्सराः"
+  },
+  "confidence": "certain",
+  "notes": "Pauṣkarasādi: p -> ph before s."
+ },
+ {
+  "id": "ac_yan_ayadi-099",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "karṣati"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "karṣati"
+  ],
+  "sutras": [
+   "8.4.49"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.49",
+   "locator": "Kāśikā on 8.4.49",
+   "quote": "कर्षति। वर्षति। आदर्शः। अक्षदर्शः"
+  },
+  "confidence": "certain",
+  "notes": "The ṣ (a śar, hence a yar) stands after r after the vowel a, so 8.4.46 would double it (Kāśikā: 'अचो रहाभ्याम्० इति प्राप्तिः प्रतिषिध्यते'); 8.4.49 forbids the doubling before a vowel (ati). Nothing is doubled: karṣṣati is wrong."
+ },
+ {
+  "id": "ac_yan_ayadi-100",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "varṣati"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "varṣati"
+  ],
+  "sutras": [
+   "8.4.49"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.49",
+   "locator": "Kāśikā on 8.4.49",
+   "quote": "कर्षति। वर्षति। आदर्शः। अक्षदर्शः"
+  },
+  "confidence": "certain",
+  "notes": "Same (ṣ before a)."
+ },
+ {
+  "id": "ac_yan_ayadi-101",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "ādarśaḥ"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "ādarśaḥ"
+  ],
+  "sutras": [
+   "8.4.49"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.49",
+   "locator": "Kāśikā on 8.4.49",
+   "quote": "कर्षति। वर्षति। आदर्शः। अक्षदर्शः"
+  },
+  "confidence": "certain",
+  "notes": "Same (ś after r, before a)."
+ },
+ {
+  "id": "ac_yan_ayadi-102",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "akṣa",
+   "darśaḥ"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "akṣadarśaḥ"
+  ],
+  "sutras": [
+   "8.4.49"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.49",
+   "locator": "Kāśikā on 8.4.49",
+   "quote": "कर्षति। वर्षति। आदर्शः। अक्षदर्शः"
+  },
+  "confidence": "certain",
+  "notes": "Same; the compound is only a splitting of the example."
+ },
+ {
+  "id": "ac_yan_ayadi-103",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "darśyate"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "darśśyate",
+   "darśyate"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.49",
+   "locator": "Kāśikā on 8.4.49",
+   "quote": "अचीति किम्? दर्श्श्यते"
+  },
+  "confidence": "certain",
+  "notes": "'aci iti kim?': before a consonant (y) the ś after r IS doubled (8.4.46, optional). (Nyāsa/Padamañjarī gloss the example differently as 'darśaḥ'; the Kāśikā and Vasu read दर्श्श्यते.)"
+ },
+ {
+  "id": "ac_yan_ayadi-104",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "catur",
+   "su"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "caturṣu"
+  ],
+  "sutras": [
+   "8.3.16",
+   "8.4.49"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": "8.4.49",
+   "locator": "Laghu text (GRETIL) 8.4.49",
+   "quote": "aci pare śaro na dve staḥ / caturṣu"
+  },
+  "confidence": "probable",
+  "notes": "Laghu text vlk_270-271: catur + su -> (roḥ supi 8.3.16 keeps the r; ṣatva; 'ṣasya dvitve prāpte') the ṣ would be doubled after r by 8.4.46 but 8.4.49 forbids it before the vowel u. The ṣatva step is not named by the Laghu."
+ },
+ {
+  "id": "ac_yan_ayadi-105",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "indraḥ"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "indraḥ",
+   "inndraḥ"
+  ],
+  "sutras": [
+   "8.4.50"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.50",
+   "locator": "Kāśikā on 8.4.50",
+   "quote": "इन्द्रः। चन्द्रः। मन्द्रः। राष्ट्रम्। भ्राष्ट्रम्"
+  },
+  "confidence": "certain",
+  "notes": "Śākaṭāyana: no doubling where three or more consonants are joined. The Siddhāntakaumudī turns it into an option ('त्र्यादिषु वर्णेषु संयुक्तेषु वा द्वित्वम् । इन्न्द्रः । इन्द्रः') - so both inndraḥ and indraḥ. Nāgeśa: the sūtra is an OPTIONAL prohibition of a prāpta doubling. Input is the pausal form."
+ },
+ {
+  "id": "ac_yan_ayadi-106",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "candraḥ"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "candraḥ",
+   "canndraḥ"
+  ],
+  "sutras": [
+   "8.4.50"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.50",
+   "locator": "Kāśikā on 8.4.50",
+   "quote": "इन्द्रः। चन्द्रः। मन्द्रः। राष्ट्रम्। भ्राष्ट्रम्"
+  },
+  "confidence": "probable",
+  "notes": "Same as indraḥ; the doubled form canndraḥ is my application of the SK's pattern (inndraḥ), not written in the sources."
+ },
+ {
+  "id": "ac_yan_ayadi-107",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "mandraḥ"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "mandraḥ",
+   "manndraḥ"
+  ],
+  "sutras": [
+   "8.4.50"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.50",
+   "locator": "Kāśikā on 8.4.50",
+   "quote": "इन्द्रः। चन्द्रः। मन्द्रः। राष्ट्रम्। भ्राष्ट्रम्"
+  },
+  "confidence": "probable",
+  "notes": "Same as candraḥ."
+ },
+ {
+  "id": "ac_yan_ayadi-108",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "rāṣṭram"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "rāṣṭram",
+   "rāṣṣṭram"
+  ],
+  "sutras": [
+   "8.4.50"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.50",
+   "locator": "Kāśikā on 8.4.50",
+   "quote": "इन्द्रः। चन्द्रः। मन्द्रः। राष्ट्रम्। भ्राष्ट्रम्"
+  },
+  "confidence": "certain",
+  "notes": "ṣ after the vowel ā before ṭ-r (three consonants ṣṭr): Śākaṭāyana refuses doubling; SK gives 'राष्ष्ट्रम् । राष्ट्रम्'."
+ },
+ {
+  "id": "ac_yan_ayadi-109",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "bhrāṣṭram"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "bhrāṣṭram",
+   "bhrāṣṣṭram"
+  ],
+  "sutras": [
+   "8.4.50"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.50",
+   "locator": "Kāśikā on 8.4.50",
+   "quote": "इन्द्रः। चन्द्रः। मन्द्रः। राष्ट्रम्। भ्राष्ट्रम्"
+  },
+  "confidence": "probable",
+  "notes": "Same as rāṣṭram (Padamañjarī: the sūtra 'दीर्घादाचार्याणाम्' is asiddha here, so this refusal is the one that acts on bhrāṣṭram). Doubled form by analogy with SK's rāṣṣṭram."
+ },
+ {
+  "id": "ac_yan_ayadi-110",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "arkaḥ"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "arkkaḥ",
+   "arkaḥ"
+  ],
+  "sutras": [
+   "8.4.51"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.51",
+   "locator": "Kāśikā on 8.4.51",
+   "quote": "अर्कः। मर्कः"
+  },
+  "confidence": "certain",
+  "notes": "Śākalya: no doubling anywhere; these are exactly the examples of 8.4.46 given back undoubled. The doubled form stays valid in other schools, so the outputs are the union (same as the 8.4.46 case)."
+ },
+ {
+  "id": "ac_yan_ayadi-111",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "brahmā"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "brahmmā",
+   "brahmā"
+  ],
+  "sutras": [
+   "8.4.51"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.4.51",
+   "locator": "Siddhāntakaumudī on 8.4.51",
+   "quote": "द्वित्वं न । अर्कः । ब्रह्मा"
+  },
+  "confidence": "certain",
+  "notes": "Śākalya; SK example (the Kāśikā prints the word as 'बह्मा' - a typo)."
+ },
+ {
+  "id": "ac_yan_ayadi-112",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "dātram"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "dātram",
+   "dāttram"
+  ],
+  "sutras": [
+   "8.4.52"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.52",
+   "locator": "Kāśikā on 8.4.52",
+   "quote": "दात्रम्। पात्रम्। मूत्रम्। सूत्रम्"
+  },
+  "confidence": "certain",
+  "notes": "The ācāryas: no doubling of a yar after a LONG vowel (8.4.47 would allow dāttram). The t stands after ā and before r. The option remains for those who do not follow this view, so dāttram is listed."
+ },
+ {
+  "id": "ac_yan_ayadi-113",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "pātram"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "pātram",
+   "pāttram"
+  ],
+  "sutras": [
+   "8.4.52"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.52",
+   "locator": "Kāśikā on 8.4.52",
+   "quote": "दात्रम्। पात्रम्। मूत्रम्। सूत्रम्"
+  },
+  "confidence": "certain",
+  "notes": "Same as dātram."
+ },
+ {
+  "id": "ac_yan_ayadi-114",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "mūtram"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "mūtram",
+   "mūttram"
+  ],
+  "sutras": [
+   "8.4.52"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.52",
+   "locator": "Kāśikā on 8.4.52",
+   "quote": "दात्रम्। पात्रम्। मूत्रम्। सूत्रम्"
+  },
+  "confidence": "certain",
+  "notes": "Same, long ū."
+ },
+ {
+  "id": "ac_yan_ayadi-115",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "sūtram"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "sūtram",
+   "sūttram"
+  ],
+  "sutras": [
+   "8.4.52"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.52",
+   "locator": "Kāśikā on 8.4.52",
+   "quote": "दात्रम्। पात्रम्। मूत्रम्। सूत्रम्"
+  },
+  "confidence": "certain",
+  "notes": "Same, long ū."
+ },
+ {
+  "id": "ac_yan_ayadi-116",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "labh",
+   "tā"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "labdhā"
+  ],
+  "sutras": [
+   "8.2.40",
+   "8.4.53"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.53",
+   "locator": "Kāśikā on 8.4.53",
+   "quote": "लब्धा"
+  },
+  "confidence": "probable",
+  "notes": "labh + tṛc/tumun/tavyat: 8.2.40 (jhaṣas tathor dho 'dhaḥ) makes the t of the affix dh, then 8.4.53 turns the bh before that dh into b (Nyāsa: 'झषस्तथोर्धोऽधः इति धकारे झशि भकारस्य जश्त्वम् -बकारः'). Input split by me; the source gives only the finished form."
+ },
+ {
+  "id": "ac_yan_ayadi-117",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "labh",
+   "tum"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "labdhum"
+  ],
+  "sutras": [
+   "8.2.40",
+   "8.4.53"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.53",
+   "locator": "Kāśikā on 8.4.53",
+   "quote": "लब्धुम्"
+  },
+  "confidence": "probable",
+  "notes": "labh + tṛc/tumun/tavyat: 8.2.40 (jhaṣas tathor dho 'dhaḥ) makes the t of the affix dh, then 8.4.53 turns the bh before that dh into b (Nyāsa: 'झषस्तथोर्धोऽधः इति धकारे झशि भकारस्य जश्त्वम् -बकारः'). Input split by me; the source gives only the finished form."
+ },
+ {
+  "id": "ac_yan_ayadi-118",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "labh",
+   "tavyam"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "labdhavyam"
+  ],
+  "sutras": [
+   "8.2.40",
+   "8.4.53"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.53",
+   "locator": "Kāśikā on 8.4.53",
+   "quote": "लब्धव्यम्"
+  },
+  "confidence": "probable",
+  "notes": "labh + tṛc/tumun/tavyat: 8.2.40 (jhaṣas tathor dho 'dhaḥ) makes the t of the affix dh, then 8.4.53 turns the bh before that dh into b (Nyāsa: 'झषस्तथोर्धोऽधः इति धकारे झशि भकारस्य जश्त्वम् -बकारः'). Input split by me; the source gives only the finished form."
+ },
+ {
+  "id": "ac_yan_ayadi-119",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "doh",
+   "tā"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "dogdhā"
+  ],
+  "sutras": [
+   "8.2.32",
+   "8.2.40",
+   "8.4.53"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.53",
+   "locator": "Kāśikā on 8.4.53",
+   "quote": "दोग्धा"
+  },
+  "confidence": "probable",
+  "notes": "duh (already guṇa-ed here: doh; guṇa 7.3.86 is not named by the source) + affix: 8.2.32 dāder dhātor ghaḥ turns the h into gh (Nyāsa: 'दादेर्धातोर्धः इति हकारस्य धकार' - the printed Nyāsa says dh, the Kāśikā/Nyāsa intend gh), 8.2.40 makes the affix t a dh, and 8.4.53 turns the gh into g. Input split by me; the source gives only the finished form."
+ },
+ {
+  "id": "ac_yan_ayadi-120",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "doh",
+   "tum"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "dogdhum"
+  ],
+  "sutras": [
+   "8.2.32",
+   "8.2.40",
+   "8.4.53"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.53",
+   "locator": "Kāśikā on 8.4.53",
+   "quote": "दोग्धुम्"
+  },
+  "confidence": "probable",
+  "notes": "duh (already guṇa-ed here: doh; guṇa 7.3.86 is not named by the source) + affix: 8.2.32 dāder dhātor ghaḥ turns the h into gh (Nyāsa: 'दादेर्धातोर्धः इति हकारस्य धकार' - the printed Nyāsa says dh, the Kāśikā/Nyāsa intend gh), 8.2.40 makes the affix t a dh, and 8.4.53 turns the gh into g. Input split by me; the source gives only the finished form."
+ },
+ {
+  "id": "ac_yan_ayadi-121",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "doh",
+   "tavyam"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "dogdhavyam"
+  ],
+  "sutras": [
+   "8.2.32",
+   "8.2.40",
+   "8.4.53"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.53",
+   "locator": "Kāśikā on 8.4.53",
+   "quote": "दोग्धव्यम्"
+  },
+  "confidence": "probable",
+  "notes": "duh (already guṇa-ed here: doh; guṇa 7.3.86 is not named by the source) + affix: 8.2.32 dāder dhātor ghaḥ turns the h into gh (Nyāsa: 'दादेर्धातोर्धः इति हकारस्य धकार' - the printed Nyāsa says dh, the Kāśikā/Nyāsa intend gh), 8.2.40 makes the affix t a dh, and 8.4.53 turns the gh into g. Input split by me; the source gives only the finished form."
+ },
+ {
+  "id": "ac_yan_ayadi-122",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "bodh",
+   "tā"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "boddhā"
+  ],
+  "sutras": [
+   "8.2.40",
+   "8.4.53"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.53",
+   "locator": "Kāśikā on 8.4.53",
+   "quote": "बोद्धा"
+  },
+  "confidence": "probable",
+  "notes": "budh (guṇa-ed here: bodh) + affix: 8.2.40 makes t -> dh, then 8.4.53 turns the first dh into d (Nyāsa: 'जश्त्वेन धकारस्य दकारः'). Input split by me; the source gives only the finished form."
+ },
+ {
+  "id": "ac_yan_ayadi-123",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "bodh",
+   "tum"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "boddhum"
+  ],
+  "sutras": [
+   "8.2.40",
+   "8.4.53"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.53",
+   "locator": "Kāśikā on 8.4.53",
+   "quote": "बोद्धुम्"
+  },
+  "confidence": "probable",
+  "notes": "budh (guṇa-ed here: bodh) + affix: 8.2.40 makes t -> dh, then 8.4.53 turns the first dh into d (Nyāsa: 'जश्त्वेन धकारस्य दकारः'). Input split by me; the source gives only the finished form."
+ },
+ {
+  "id": "ac_yan_ayadi-124",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "bodh",
+   "tavyam"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "boddhavyam"
+  ],
+  "sutras": [
+   "8.2.40",
+   "8.4.53"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.53",
+   "locator": "Kāśikā on 8.4.53",
+   "quote": "बोद्धव्यम्"
+  },
+  "confidence": "probable",
+  "notes": "budh (guṇa-ed here: bodh) + affix: 8.2.40 makes t -> dh, then 8.4.53 turns the first dh into d (Nyāsa: 'जश्त्वेन धकारस्य दकारः'). Input split by me; the source gives only the finished form."
+ },
+ {
+  "id": "ac_yan_ayadi-125",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "dattaḥ"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "dattaḥ"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.53",
+   "locator": "Kāśikā on 8.4.53",
+   "quote": "दत्तः। दत्थः। दध्मः"
+  },
+  "confidence": "certain",
+  "notes": "'jhaśi iti kim?': the letter after the d is t, not a jhaś, so no jaśtva. Given as a finished word (the source does not derive it); the t comes from the ordinary khari ca (8.4.55) on dad + ta."
+ },
+ {
+  "id": "ac_yan_ayadi-126",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "datthaḥ"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "datthaḥ"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.53",
+   "locator": "Kāśikā on 8.4.53",
+   "quote": "दत्तः। दत्थः। दध्मः"
+  },
+  "confidence": "certain",
+  "notes": "Same: th is a khay, not a jhaś."
+ },
+ {
+  "id": "ac_yan_ayadi-127",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "dadhmaḥ"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "dadhmaḥ"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.53",
+   "locator": "Kāśikā on 8.4.53",
+   "quote": "दत्तः। दत्थः। दध्मः"
+  },
+  "confidence": "certain",
+  "notes": "Same: m is not a jhaś."
+ },
+ {
+  "id": "ac_yan_ayadi-128",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "bhṛsj",
+   "au"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "bhṛjjau"
+  ],
+  "sutras": [
+   "8.4.40",
+   "8.4.53"
+  ],
+  "derivation": [
+   {
+    "sutra": "8.4.40",
+    "after": "bhṛśj au",
+    "note": "Laghu: 'sasya ścutvena śaḥ'"
+   },
+   {
+    "sutra": "8.4.53",
+    "after": "bhṛjjau",
+    "note": "Laghu: 'jhalāṃ jaś jhaśi iti śasya jaḥ / bhṛjjau'"
+   }
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": "8.2.29",
+   "locator": "Laghu text (GRETIL) 8.2.29",
+   "quote": "sasya ścutvena saḥ / jhalāṃ jaś jhaśi iti śasya jaḥ / bhṛjjau"
+  },
+  "confidence": "certain",
+  "notes": "Laghu text vlk_311: bhṛsj + au (root bhṛsj + kvip, dual): before a vowel there is no pada-final conjunct, so 8.2.29 does not act; s becomes ś by ścutva (8.4.40, 'sasya ścutvena śaḥ'), and 8.4.53 turns that ś into j before the j ('iti śasya jaḥ'). Input is the root form bhṛsj (my normalisation of the printed 'bhṛjj-'). The GRETIL text prints 'sasya ścutvena saḥ' (typo for śaḥ); 'sasya ścutvena śaḥ' is the sense."
+ },
+ {
+  "id": "ac_yan_ayadi-129",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "bha",
+   "bhūva"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "1": [
+    "dhatu:bhū"
+   ],
+   "0": [
+    "abhyasa"
+   ]
+  },
+  "outputs": [
+   "babhūva"
+  ],
+  "sutras": [
+   "8.4.54"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": "8.4.54",
+   "locator": "Laghu text (GRETIL) 8.4.54",
+   "quote": "abhyāse jhalāṃ caraḥ syurjaśaśca / jhaśāṃ jaśaḥ khayāṃ cara iti vivekaḥ / babhūva / babhuvatuḥ / babhūvuḥ"
+  },
+  "confidence": "probable",
+  "notes": "Word 0 is the abhyāsa (reduplicative syllable) and word 1 the rest of the reduplicated stem; the letters alone do not mark this (no flag exists), so an implementer must pass abhyāsa context. bhū + a (liṭ, bhavater aḥ 7.4.73 gives the abhyāsa vowel a): bha-bhūva; bh in the abhyāsa is a jhaś, so it becomes its jaś b (Bālamanoramā: 'भ भूव् अ इति स्थिते — अभ्यासे चर्च').",
+  "flags_added": [
+   "abhyasa"
+  ]
+ },
+ {
+  "id": "ac_yan_ayadi-130",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "bha",
+   "bhuvatuḥ"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "1": [
+    "dhatu:bhū"
+   ],
+   "0": [
+    "abhyasa"
+   ]
+  },
+  "outputs": [
+   "babhuvatuḥ"
+  ],
+  "sutras": [
+   "8.4.54"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": "8.4.54",
+   "locator": "Laghu text (GRETIL) 8.4.54",
+   "quote": "abhyāse jhalāṃ caraḥ syurjaśaśca / jhaśāṃ jaśaḥ khayāṃ cara iti vivekaḥ / babhūva / babhuvatuḥ / babhūvuḥ"
+  },
+  "confidence": "probable",
+  "notes": "Word 0 is the abhyāsa (reduplicative syllable) and word 1 the rest of the reduplicated stem; the letters alone do not mark this (no flag exists), so an implementer must pass abhyāsa context. bhū + atus with uvaṅ (6.4.77): bha-bhuvatuḥ -> babhuvatuḥ.",
+  "flags_added": [
+   "abhyasa"
+  ]
+ },
+ {
+  "id": "ac_yan_ayadi-131",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "bha",
+   "bhūvuḥ"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "1": [
+    "dhatu:bhū"
+   ],
+   "0": [
+    "abhyasa"
+   ]
+  },
+  "outputs": [
+   "babhūvuḥ"
+  ],
+  "sutras": [
+   "8.4.54"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": "8.4.54",
+   "locator": "Laghu text (GRETIL) 8.4.54",
+   "quote": "abhyāse jhalāṃ caraḥ syurjaśaśca / jhaśāṃ jaśaḥ khayāṃ cara iti vivekaḥ / babhūva / babhuvatuḥ / babhūvuḥ"
+  },
+  "confidence": "probable",
+  "notes": "Word 0 is the abhyāsa (reduplicative syllable) and word 1 the rest of the reduplicated stem; the letters alone do not mark this (no flag exists), so an implementer must pass abhyāsa context. bhū + us: bha-bhūvuḥ -> babhūvuḥ.",
+  "flags_added": [
+   "abhyasa"
+  ]
+ },
+ {
+  "id": "ac_yan_ayadi-132",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "bhu",
+   "bhūṣati"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "bubhūṣati"
+  ],
+  "sutras": [
+   "8.4.54"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.54",
+   "locator": "Kāśikā on 8.4.54",
+   "quote": "बुभूषति"
+  },
+  "confidence": "probable",
+  "notes": "Word 0 is the abhyāsa (reduplicative syllable) and word 1 the rest of the reduplicated stem; the letters alone do not mark this (no flag exists), so an implementer must pass abhyāsa context. bhū + san: the abhyāsa bhu -> bu (jhaś -> jaś of its own class).",
+  "flags": {
+   "0": [
+    "abhyasa"
+   ]
+  },
+  "flags_added": [
+   "abhyasa"
+  ]
+ },
+ {
+  "id": "ac_yan_ayadi-133",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "chi",
+   "khaniṣati"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "cikhaniṣati"
+  ],
+  "sutras": [
+   "8.4.54"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.54",
+   "locator": "Kāśikā on 8.4.54",
+   "quote": "चिखनिषति"
+  },
+  "confidence": "probable",
+  "notes": "Word 0 is the abhyāsa (reduplicative syllable) and word 1 the rest of the reduplicated stem; the letters alone do not mark this (no flag exists), so an implementer must pass abhyāsa context. khan + san: reduplication, kuhoś cuḥ (7.4.62) makes the abhyāsa kha -> cha, and 8.4.54 makes that aspirate ch its car c (Nyāsa: 'कुहोश्चुः इति चुत्वम् -छकारः, तस्थानेन चकारः').",
+  "flags": {
+   "0": [
+    "abhyasa"
+   ]
+  },
+  "flags_added": [
+   "abhyasa"
+  ]
+ },
+ {
+  "id": "ac_yan_ayadi-134",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "chi",
+   "chitsati"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "cicchitsati"
+  ],
+  "sutras": [
+   "6.1.73",
+   "8.4.54"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.54",
+   "locator": "Kāśikā on 8.4.54",
+   "quote": "चिच्छित्सति"
+  },
+  "confidence": "probable",
+  "notes": "Word 0 is the abhyāsa (reduplicative syllable) and word 1 the rest of the reduplicated stem; the letters alone do not mark this (no flag exists), so an implementer must pass abhyāsa context. chid + san: the abhyāsa chi + chitsati; tuk (che ca 6.1.73) gives 'cchi', then the abhyāsa ch -> c by 8.4.54 (Nyāsa: 'छे च तुक्, चुत्वम्'; his printed चित्छित्सति is a variant reading).",
+  "flags": {
+   "0": [
+    "abhyasa"
+   ]
+  },
+  "flags_added": [
+   "abhyasa"
+  ]
+ },
+ {
+  "id": "ac_yan_ayadi-135",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "ṭhi",
+   "ṭhakārayiṣati"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "ṭiṭhakārayiṣati"
+  ],
+  "sutras": [
+   "8.4.54"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.54",
+   "locator": "Kāśikā on 8.4.54",
+   "quote": "टिठकारयिषति"
+  },
+  "confidence": "probable",
+  "notes": "Word 0 is the abhyāsa (reduplicative syllable) and word 1 the rest of the reduplicated stem; the letters alone do not mark this (no flag exists), so an implementer must pass abhyāsa context. ṭhakāram ācaṣṭe -> ṇic -> san: the abhyāsa ṭh -> ṭ.",
+  "flags": {
+   "0": [
+    "abhyasa"
+   ]
+  },
+  "flags_added": [
+   "abhyasa"
+  ]
+ },
+ {
+  "id": "ac_yan_ayadi-136",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "thi",
+   "ṣṭhāsati"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "tiṣṭhāsati"
+  ],
+  "sutras": [
+   "7.4.61",
+   "8.4.54"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.54",
+   "locator": "Kāśikā on 8.4.54",
+   "quote": "तिष्ठासति"
+  },
+  "confidence": "probable",
+  "notes": "Word 0 is the abhyāsa (reduplicative syllable) and word 1 the rest of the reduplicated stem; the letters alone do not mark this (no flag exists), so an implementer must pass abhyāsa context. sthā + san: śarpūrvāḥ khayaḥ (7.4.61) leaves the th in the abhyāsa; 8.4.54 makes it t (Padamañjarī: 'शर्पूर्वाः खयः इति थकारस्य शेषः, तस्य चर्त्वं तकारः'). The ṣ of ṣṭhāsati (ṣatva) is not derived here.",
+  "flags": {
+   "0": [
+    "abhyasa"
+   ]
+  },
+  "flags_added": [
+   "abhyasa"
+  ]
+ },
+ {
+  "id": "ac_yan_ayadi-137",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "phi",
+   "phakārayiṣati"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "piphakārayiṣati"
+  ],
+  "sutras": [
+   "8.4.54"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.54",
+   "locator": "Kāśikā on 8.4.54",
+   "quote": "पिफकारयिषति"
+  },
+  "confidence": "probable",
+  "notes": "Word 0 is the abhyāsa (reduplicative syllable) and word 1 the rest of the reduplicated stem; the letters alone do not mark this (no flag exists), so an implementer must pass abhyāsa context. Same as ṭiṭhakārayiṣati: ph -> p.",
+  "flags": {
+   "0": [
+    "abhyasa"
+   ]
+  },
+  "flags_added": [
+   "abhyasa"
+  ]
+ },
+ {
+  "id": "ac_yan_ayadi-138",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "jhi",
+   "ghatsati"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "jighatsati"
+  ],
+  "sutras": [
+   "8.4.54"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.54",
+   "locator": "Kāśikā on 8.4.54",
+   "quote": "जिघत्सति"
+  },
+  "confidence": "probable",
+  "notes": "Word 0 is the abhyāsa (reduplicative syllable) and word 1 the rest of the reduplicated stem; the letters alone do not mark this (no flag exists), so an implementer must pass abhyāsa context. ad + san: ghasḷ replaces ad (2.4.37); the abhyāsa gha -> jha by cutva, then 8.4.54 makes the aspirate its jaś ja (Nyāsa: 'पूर्ववदभ्यासस्य चुत्वम् -झकारः, तस्य जश्त्वम् -जकारः'); the s of the stem becomes t (7.4.49).",
+  "flags": {
+   "0": [
+    "abhyasa"
+   ]
+  },
+  "flags_added": [
+   "abhyasa"
+  ]
+ },
+ {
+  "id": "ac_yan_ayadi-139",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "ḍhu",
+   "ḍhaukiṣate"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "ḍuḍhaukiṣate"
+  ],
+  "sutras": [
+   "8.4.54"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.54",
+   "locator": "Kāśikā on 8.4.54",
+   "quote": "डुढौकिषते"
+  },
+  "confidence": "probable",
+  "notes": "Word 0 is the abhyāsa (reduplicative syllable) and word 1 the rest of the reduplicated stem; the letters alone do not mark this (no flag exists), so an implementer must pass abhyāsa context. ḍhauk + san: abhyāsa ḍhu -> ḍu.",
+  "flags": {
+   "0": [
+    "abhyasa"
+   ]
+  },
+  "flags_added": [
+   "abhyasa"
+  ]
+ },
+ {
+  "id": "ac_yan_ayadi-140",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "ci",
+   "cīṣati"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "cicīṣati"
+  ],
+  "sutras": [
+   "8.4.54"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.54",
+   "locator": "Kāśikā on 8.4.54",
+   "quote": "चिचीषति"
+  },
+  "confidence": "probable",
+  "notes": "Word 0 is the abhyāsa (reduplicative syllable) and word 1 the rest of the reduplicated stem; the letters alone do not mark this (no flag exists), so an implementer must pass abhyāsa context. 'prakṛticarāṃ prakṛticaro bhavanti': an abhyāsa car stays its own car (the jaśtva alternative is excluded). ci + san: ci-cīṣati - nothing changes."
+ },
+ {
+  "id": "ac_yan_ayadi-141",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "ji",
+   "janiṣate"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "jijaniṣate"
+  ],
+  "sutras": [
+   "8.4.54"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.54",
+   "locator": "Kāśikā on 8.4.54",
+   "quote": "जिजनिषते"
+  },
+  "confidence": "probable",
+  "notes": "Word 0 is the abhyāsa (reduplicative syllable) and word 1 the rest of the reduplicated stem; the letters alone do not mark this (no flag exists), so an implementer must pass abhyāsa context. 'prakṛtijaśāṃ prakṛtijaśo bhavanti': an abhyāsa jaś stays its own jaś (no car). jan + san: nothing changes."
+ },
+ {
+  "id": "ac_yan_ayadi-142",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "bu",
+   "budhe"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "bubudhe"
+  ],
+  "sutras": [
+   "8.4.54"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.54",
+   "locator": "Kāśikā on 8.4.54",
+   "quote": "बुबुधे"
+  },
+  "confidence": "probable",
+  "notes": "Word 0 is the abhyāsa (reduplicative syllable) and word 1 the rest of the reduplicated stem; the letters alone do not mark this (no flag exists), so an implementer must pass abhyāsa context. budh, liṭ ātmanepada: bu-budhe; abhyāsa b (jaś) stays."
+ },
+ {
+  "id": "ac_yan_ayadi-143",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "da",
+   "dau"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "dadau"
+  ],
+  "sutras": [
+   "8.4.54"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.54",
+   "locator": "Kāśikā on 8.4.54",
+   "quote": "ददौ"
+  },
+  "confidence": "probable",
+  "notes": "Word 0 is the abhyāsa (reduplicative syllable) and word 1 the rest of the reduplicated stem; the letters alone do not mark this (no flag exists), so an implementer must pass abhyāsa context. dā, liṭ: da-dau; abhyāsa d (jaś) stays."
+ },
+ {
+  "id": "ac_yan_ayadi-144",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "śay",
+   "yā"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "śayyā",
+   "śayyyā"
+  ],
+  "sutras": [
+   "8.4.47",
+   "8.4.64"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.64",
+   "locator": "Kāśikā on 8.4.64",
+   "quote": "शय्या, शय्य्या"
+  },
+  "confidence": "probable",
+  "notes": "śī -> śay (ayaṅ 7.4.22) + yā (kyap 3.3.99): two y's, and 8.4.47 anaci ca doubles the first y (y after the vowel a, before a consonant y) giving a third y: śayyyā. 8.4.64 then optionally deletes the middle one: śayyā / śayyyā (Kāśikā: 'द्वौ यकारौ, क्रमजस्तृतीयः, तत्र मध्यमस्य वा लोपो भवति'). Input split by me."
+ },
+ {
+  "id": "ac_yan_ayadi-145",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "ādity",
+   "yaḥ"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "ādityaḥ",
+   "ādityyaḥ",
+   "ādityyyaḥ"
+  ],
+  "sutras": [
+   "8.4.64"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.64",
+   "locator": "Kāśikā on 8.4.64",
+   "quote": "आदित्यो देवता अस्य स्थालीपाकस्येति आदित्य्यः, आदित्यः, आदित्य्य्य इति"
+  },
+  "confidence": "probable",
+  "notes": "āditya + ṇya (sāsya devatā 4.2.24; ṇyaḥ by 4.1.85): after yasyeti ca (6.4.148) drops the a of āditya there are two y's, doubling makes a third, and 8.4.64 may delete the middle one or both middle ones. Kāśikā lists ādityyaḥ, ādityaḥ, ādityyya. SK: 'लोपारम्भफलं तु आदित्यो देवताऽस्येत्यादित्यं हविरित्यादौ' - the single-y form ādityam depends on this sūtra (ā-pātyasya ca taddhite 6.4.151 does not apply because no apatya sense). Input split by me."
+ },
+ {
+  "id": "ac_yan_ayadi-146",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "āditi",
+   "yaḥ"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "ādityaḥ",
+   "ādityyaḥ"
+  ],
+  "sutras": [
+   "4.1.85",
+   "8.4.64"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.64",
+   "locator": "Kāśikā on 8.4.64",
+   "quote": "अदितेरपत्यमादित्य इत्यत्र तकारात् पर एको यकारः"
+  },
+  "confidence": "probable",
+  "notes": "aditer apatyam ādityaḥ (aditi + ṇya 4.1.85): one y after t; the vārttika 'yaṇo mayo dve' doubles it and 8.4.64 optionally deletes the middle one: ādityaḥ / ādityyaḥ. (The Kāśikā's text 'आदित्यः, आदित्य्यः'.) Input split by me."
+ },
+ {
+  "id": "ac_yan_ayadi-147",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "prājāpat",
+   "yaḥ"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "prājāpatyaḥ",
+   "prājāpatyyaḥ"
+  ],
+  "sutras": [
+   "8.4.64"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": "8.4.64",
+   "locator": "Laghu text (GRETIL) 8.4.64",
+   "quote": "halaḥ parasya yamo lopaḥ syād vā yami / iti yalopaḥ / ādityaḥ / prājāpatyaḥ"
+  },
+  "confidence": "probable",
+  "notes": "Laghu text (line of vlk_1003, tagged 4.1.85 by mistake): after the taddhita ṇya the y is doubled and one y may be deleted. prajāpater apatyam. Split by me."
+ },
+ {
+  "id": "ac_yan_ayadi-148",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "dur",
+   "labhaḥ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "durlabhaḥ",
+   "durllabhaḥ"
+  ],
+  "sutras": [
+   "8.4.46",
+   "8.4.64"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "tattvabodhini",
+   "sutra": "8.4.64",
+   "locator": "Tattvabodhinī on 8.4.64",
+   "quote": "दुर्लभः"
+  },
+  "confidence": "probable",
+  "notes": "Tattvabodhinī lists durlabhaḥ among the examples where 8.4.46 doubles the l (after r after the vowel u) and 8.4.64 then optionally deletes one l. Input dur written with the r (from dus, 8.2.66); split by me."
+ },
+ {
+  "id": "ac_yan_ayadi-149",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "kur",
+   "maḥ"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "kurmaḥ",
+   "kurmmaḥ"
+  ],
+  "sutras": [
+   "8.4.46",
+   "8.4.64"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "tattvabodhini",
+   "sutra": "8.4.64",
+   "locator": "Tattvabodhinī on 8.4.64",
+   "quote": "कुर्मः"
+  },
+  "confidence": "probable",
+  "notes": "Tattvabodhinī: kurmaḥ (kṛ + mas): 8.4.46 doubles the m after r, 8.4.64 optionally deletes one m. Split by me."
+ },
+ {
+  "id": "ac_yan_ayadi-150",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "annam"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "annam"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.64",
+   "locator": "Kāśikā on 8.4.64",
+   "quote": "हल इति किम्? अन्नम्"
+  },
+  "confidence": "certain",
+  "notes": "'hala iti kim?': the first n of anna follows a vowel, not a consonant, so no deletion."
+ },
+ {
+  "id": "ac_yan_ayadi-151",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "arghyam"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "arghyam"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.64",
+   "locator": "Kāśikā on 8.4.64",
+   "quote": "यमामिति किम्? अर्घ्यम्"
+  },
+  "confidence": "certain",
+  "notes": "'yamām iti kim?': gh before y is not a yam (semivowel/nasal), so it is not deleted. (Optional doublings of 8.4.46 are not enumerated.)"
+ },
+ {
+  "id": "ac_yan_ayadi-152",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "śārṅgam"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "śārṅgam"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.64",
+   "locator": "Kāśikā on 8.4.64",
+   "quote": "यमीति किम्? शार्ङ्गम्"
+  },
+  "confidence": "certain",
+  "notes": "'yamīti kim?': ṅ is a yam after a hal (r) but is not followed by a yam (g follows)."
+ },
+ {
+  "id": "ac_yan_ayadi-153",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "māhātmyam"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "māhātmyam"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.4.64",
+   "locator": "Siddhāntakaumudī on 8.4.64",
+   "quote": "यमां यमीति यथासङ्ख्यविज्ञानान्नेह । माहात्म्यम्"
+  },
+  "confidence": "certain",
+  "notes": "The sūtra is read yathāsaṃkhya (1.3.10): m is deleted only before m, y before y, etc. In māhātmya the m before y is therefore not deleted."
+ },
+ {
+  "id": "ac_yan_ayadi-154",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "gomānt"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "gomān"
+  ],
+  "sutras": [
+   "8.2.23"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.2.23",
+   "locator": "Kāśikā on 8.2.23",
+   "quote": "गोमान्। यवमान्। कृतवान्। हतवान्"
+  },
+  "confidence": "probable",
+  "notes": "gomat + s: after nuṃ (7.1.70), dīrgha (6.4.14) and the loss of the ending s (6.1.68) the pada is gomānt, ending in a saṃyoga (nt); 8.2.23 deletes the final t (with 1.1.52 alo 'ntyasya: 'तदन्तस्य लोपः'). Input is that intermediate pada (my normalisation)."
+ },
+ {
+  "id": "ac_yan_ayadi-155",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "yavamānt"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "yavamān"
+  ],
+  "sutras": [
+   "8.2.23"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.2.23",
+   "locator": "Kāśikā on 8.2.23",
+   "quote": "गोमान्। यवमान्। कृतवान्। हतवान्"
+  },
+  "confidence": "probable",
+  "notes": "Same as gomān."
+ },
+ {
+  "id": "ac_yan_ayadi-156",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "kṛtavānt"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "kṛtavān"
+  ],
+  "sutras": [
+   "8.2.23"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.2.23",
+   "locator": "Kāśikā on 8.2.23",
+   "quote": "गोमान्। यवमान्। कृतवान्। हतवान्"
+  },
+  "confidence": "probable",
+  "notes": "Same (ktavatu)."
+ },
+ {
+  "id": "ac_yan_ayadi-157",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "hatavānt"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "hatavān"
+  ],
+  "sutras": [
+   "8.2.23"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.2.23",
+   "locator": "Kāśikā on 8.2.23",
+   "quote": "गोमान्। यवमान्। कृतवान्। हतवान्"
+  },
+  "confidence": "probable",
+  "notes": "Same (ktavatu)."
+ },
+ {
+  "id": "ac_yan_ayadi-158",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "śreyas",
+   "s"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "śreyān"
+  ],
+  "sutras": [
+   "7.1.70",
+   "6.1.68",
+   "8.2.66",
+   "8.2.23",
+   "6.4.8"
+  ],
+  "derivation": [
+   {
+    "sutra": "7.1.70",
+    "after": "śreyans s",
+    "note": "Vasu: nuṃ"
+   },
+   {
+    "sutra": "6.1.68",
+    "after": "śreyans",
+    "note": "Vasu: loss of the ending s"
+   },
+   {
+    "sutra": "8.2.66",
+    "after": "śreyanr",
+    "note": "Vasu: s -> ru"
+   },
+   {
+    "sutra": "8.2.23",
+    "after": "śreyan",
+    "note": "Vasu: saṃyogānta-lopa (the r is asiddha)"
+   },
+   {
+    "sutra": "6.4.8",
+    "after": "śreyān",
+    "note": "Vasu: dīrgha"
+   }
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "vasu_english",
+   "sutra": "8.2.23",
+   "locator": "Vasu's English translation on 8.2.23",
+   "quote": "श्रेयस् + स् = श्रेयन्स् + स्"
+  },
+  "confidence": "certain",
+  "notes": "Vasu spells the derivation: śreyas + s = śreyans + s [7.1.70] = śreyans [6.1.68] = śreyanr [8.2.66] = śreyan [8.2.23] = śreyān [6.4.8]. The point (Kāśikā: 'इह श्रेयान्, भूयानिति रुत्वं परमप्यसिद्धत्वात् संयोगान्तस्य लोपं न बाधते'): ruttva 8.2.66 comes later in the tripādī and is asiddha for 8.2.23, so it does not pre-empt the saṃyoga-lopa."
+ },
+ {
+  "id": "ac_yan_ayadi-159",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "bhūyas",
+   "s"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "bhūyān"
+  ],
+  "sutras": [
+   "7.1.70",
+   "6.1.68",
+   "8.2.66",
+   "8.2.23",
+   "6.4.8"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.2.23",
+   "locator": "Kāśikā on 8.2.23",
+   "quote": "श्रेयान्, भूयानिति"
+  },
+  "confidence": "probable",
+  "notes": "Same derivation as śreyān (by analogy; the Kāśikā only names the words)."
+ },
+ {
+  "id": "ac_yan_ayadi-160",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "yaśas"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "yaśaḥ"
+  ],
+  "sutras": [
+   "8.2.66"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.2.23",
+   "locator": "Kāśikā on 8.2.23",
+   "quote": "यशः, पय इति"
+  },
+  "confidence": "certain",
+  "notes": "Ruttva 8.2.66 DOES displace jaśtva 8.2.39 (the final s does not become d): 'जश्त्वे तु नाप्राप्ते तदारभ्यत इति तस्य बाधकं भवति — यशः, पय इति'. The visarga step (8.3.15) is not named by the source."
+ },
+ {
+  "id": "ac_yan_ayadi-161",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "gomant",
+   "au"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "gomantau"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "nyaas",
+   "sutra": "8.2.23",
+   "locator": "Nyāsa on 8.2.23",
+   "quote": "पदस्येति किम्? गोमन्तौ, गोमन्तः"
+  },
+  "confidence": "certain",
+  "notes": "'padasyeti kim?': the t of gomant- is inside a word before an ending that starts with a vowel, not pada-final, so it is not deleted."
+ },
+ {
+  "id": "ac_yan_ayadi-162",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "gomant",
+   "as"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "gomantaḥ"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "nyaas",
+   "sutra": "8.2.23",
+   "locator": "Nyāsa on 8.2.23",
+   "quote": "पदस्येति किम्? गोमन्तौ, गोमन्तः"
+  },
+  "confidence": "certain",
+  "notes": "Same (nom. pl.); input has the underlying ending -as, the source shows the visarga form."
+ },
+ {
+  "id": "ac_yan_ayadi-163",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "lasj",
+   "taḥ"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "lagnaḥ"
+  ],
+  "sutras": [
+   "8.2.29",
+   "8.2.45",
+   "8.2.30"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.2.29",
+   "locator": "Kāśikā on 8.2.29",
+   "quote": "लग्नः"
+  },
+  "confidence": "probable",
+  "notes": "lasj + kta: the s (first of the saṃyoga sj followed by the jhal t) is deleted by 8.2.29; oditaś ca (8.2.45) makes the t -> n, and coḥ kuḥ (8.2.30) makes j -> g (Nyāsa: 'सकारस्य लोपः, ओदितश्च इति नत्वम्... चोः कुः इति कुत्वम् -गकारः'). The tripādī order would put 8.2.30 before 8.2.45; Padamañjarī: 'तस्यासिद्धत्वात् कुत्वम्' (the nattva is asiddha, so the g still sees a jhal t). Both orders give lagnaḥ. Input split by me; visarga = nominative -s."
+ },
+ {
+  "id": "ac_yan_ayadi-164",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "sādhu",
+   "lasj"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "sādhulak",
+   "sādhulag"
+  ],
+  "sutras": [
+   "8.2.29",
+   "8.2.30"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.2.29",
+   "locator": "Kāśikā on 8.2.29",
+   "quote": "साधुलक्"
+  },
+  "confidence": "probable",
+  "notes": "sādhu + lasj (kvip): pada-final saṃyoga sj -> s deleted (8.2.29), j -> g by kutva (8.2.30), and at the pause k/g by vā avasāne (8.4.56). The source prints sādhulak only."
+ },
+ {
+  "id": "ac_yan_ayadi-165",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "takṣ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "taṭ",
+   "taḍ"
+  ],
+  "sutras": [
+   "8.2.29"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.2.29",
+   "locator": "Kāśikā on 8.2.29",
+   "quote": "ककारस्य — तक्षेः — तट्"
+  },
+  "confidence": "probable",
+  "notes": "takṣ (root takṣ + kvip): the k, first of the pada-final saṃyoga kṣ, is deleted (8.2.29) leaving ṣ, which becomes ṭ (8.2.36) and at the pause ṭ/ḍ; only 8.2.29 is named by the source."
+ },
+ {
+  "id": "ac_yan_ayadi-166",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "takṣ",
+   "taḥ"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "taṣṭaḥ"
+  ],
+  "sutras": [
+   "8.2.29",
+   "8.4.41"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.2.29",
+   "locator": "Kāśikā on 8.2.29",
+   "quote": "तष्टः"
+  },
+  "confidence": "probable",
+  "notes": "takṣ + kta: k deleted before the jhal t (8.2.29), then t -> ṭ after ṣ by ṣṭunā ṣṭuḥ (8.4.41, not named). Input split by me."
+ },
+ {
+  "id": "ac_yan_ayadi-167",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "kāṣṭha",
+   "takṣ"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "kāṣṭhataṭ",
+   "kāṣṭhataḍ"
+  ],
+  "sutras": [
+   "8.2.29"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.2.29",
+   "locator": "Kāśikā on 8.2.29",
+   "quote": "काष्ठतट्"
+  },
+  "confidence": "probable",
+  "notes": "Compound of kāṣṭha + takṣ (kvip); same as taṭ."
+ },
+ {
+  "id": "ac_yan_ayadi-168",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "vāsī",
+   "artham"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "vāsyartham"
+  ],
+  "sutras": [
+   "6.1.77"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.2.29",
+   "locator": "Kāśikā on 8.2.29",
+   "quote": "वास्यर्थम्, काक्यर्थम्"
+  },
+  "confidence": "certain",
+  "notes": "vāsī + artham: after yaṇ the pada 'vāsy' ends in a saṃyoga (sy) whose first letter s would be deleted by 8.2.29 - it is NOT, because yaṇ is bahiraṅga and asiddha for 8.2.29 (Kāśikā: 'बहिरङ्गलक्षणस्य यणादेशस्यासिद्धत्वात् संयोगादिलोपो न भवति'). Same point in the Mahābhāṣya on 8.2.23 (काक्यर्थं वास्यर्थम्)."
+ },
+ {
+  "id": "ac_yan_ayadi-169",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "kākī",
+   "artham"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "kākyartham"
+  ],
+  "sutras": [
+   "6.1.77"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.2.29",
+   "locator": "Kāśikā on 8.2.29",
+   "quote": "वास्यर्थम्, काक्यर्थम्"
+  },
+  "confidence": "certain",
+  "notes": "Same: the k of 'ky' is not deleted."
+ },
+ {
+  "id": "ac_yan_ayadi-170",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "narnartti"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "narnartti"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.2.29",
+   "locator": "Kāśikā on 8.2.29",
+   "quote": "स्कोरिति किम्? नर्नर्त्ति। वर्वर्त्ति"
+  },
+  "confidence": "certain",
+  "notes": "'skor iti kim?': the first letter of the conjunct rtt is r, not s/k, so nothing is deleted (nṛt + yaṅluk)."
+ },
+ {
+  "id": "ac_yan_ayadi-171",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "varvartti"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "varvartti"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.2.29",
+   "locator": "Kāśikā on 8.2.29",
+   "quote": "स्कोरिति किम्? नर्नर्त्ति। वर्वर्त्ति"
+  },
+  "confidence": "certain",
+  "notes": "Same (vṛt + yaṅluk)."
+ },
+ {
+  "id": "ac_yan_ayadi-172",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "payas"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "payaḥ"
+  ],
+  "sutras": [
+   "8.2.66"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.2.29",
+   "locator": "Kāśikā on 8.2.29",
+   "quote": "संयोगाद्योरिति किम्? पयः"
+  },
+  "confidence": "certain",
+  "notes": "'saṃyogādyor iti kim?': the s of payas is a single final consonant, not the first of a saṃyoga, so 8.2.29 is not involved; the visarga comes from ruttva (8.2.66) + 8.3.15."
+ },
+ {
+  "id": "ac_yan_ayadi-173",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "takṣ",
+   "itā"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "takṣitā"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.2.29",
+   "locator": "Kāśikā on 8.2.29",
+   "quote": "अन्ते चेति किम्? तक्षिता। तक्षकः"
+  },
+  "confidence": "certain",
+  "notes": "'ante ceti kim?': the k of kṣ is followed by a vowel (i), not by a jhal and not at the end of a pada, so it stays."
+ },
+ {
+  "id": "ac_yan_ayadi-174",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "takṣ",
+   "akaḥ"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "takṣakaḥ"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.2.29",
+   "locator": "Kāśikā on 8.2.29",
+   "quote": "अन्ते चेति किम्? तक्षिता। तक्षकः"
+  },
+  "confidence": "certain",
+  "notes": "Same (vowel follows)."
+ },
+ {
+  "id": "ac_yan_ayadi-175",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "kāṣṭhaśak",
+   "sthātā"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "kāṣṭhaśaksthātā"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.2.29",
+   "locator": "Kāśikā on 8.2.29",
+   "quote": "झलि सङीति वक्तव्यम्"
+  },
+  "confidence": "uncertain",
+  "notes": "Vārttika 'jhali saṅ iti vaktavyam' (jhal narrowed to the pratyāhāra saṅ) keeps the k of 'kāṣṭhaśak' before the th of sthātā. The Mahābhāṣya (quoted by the Kāśikā) answers that no such word exists: 'काष्ठशगेव नास्ति कुतोऽयं काष्ठशकि तिष्ठेत्' - so the vārttika is rejected. Kept as an open point; do not implement."
+ },
+ {
+  "id": "ac_yan_ayadi-176",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "bhṛsj"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "bhṛṭ",
+   "bhṛḍ"
+  ],
+  "sutras": [
+   "8.2.29"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": "8.2.29",
+   "locator": "Laghu text (GRETIL) 8.2.29",
+   "quote": "padānte jhali ca yaḥ saṃyogastadādyoḥ skorlopaḥ / bhṛṭ"
+  },
+  "confidence": "certain",
+  "notes": "Laghu text vlk_311: bhṛsj (bhṛjjati, kvip) -> bhṛṭ. The Laghu gives only 8.2.29 for the step; the following ṣatva and ṭutva (8.2.36, 8.4.41) are not named. SK: 'भृट् । भृड्' (car/jaśtva option at the pause)."
+ },
+ {
+  "id": "ac_yan_ayadi-177",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "bhṛsj",
+   "bhyām"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "bhṛḍbhyām"
+  ],
+  "sutras": [
+   "8.2.29"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": "8.2.29",
+   "locator": "Laghu text (GRETIL) 8.2.29",
+   "quote": "bhṛjjau / bhṛḍbhyām"
+  },
+  "confidence": "probable",
+  "notes": "Laghu text: bhṛḍbhyām. Before the jhal bh the s of the conjunct sj is deleted by 8.2.29 (the ending starts with a jhal); the later ṣatva/ṭutva/jaśtva steps are not named. Input split by me."
+ },
+ {
+  "id": "ac_yan_ayadi-178",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "daṇḍa",
+   "agram"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "daṇḍāgram"
+  ],
+  "sutras": [
+   "1.1.9",
+   "6.1.101"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.9",
+   "locator": "Kāśikā on 1.1.9",
+   "quote": "दण्डाग्रम्। खट्वाग्रम्"
+  },
+  "confidence": "certain",
+  "notes": "Kāśikā: 'सवर्णप्रदेशाः — अकः सवर्णे दीर्घः इत्येवमादयः'. Both a's are savarṇa (same sthāna kaṇṭha, same prayatna), so 6.1.101 gives the long ā. The same example is used for 1.1.50 (sthānataḥ: the ā is kaṇṭhya)."
+ },
+ {
+  "id": "ac_yan_ayadi-179",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "khaṭvā",
+   "agram"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "khaṭvāgram"
+  ],
+  "sutras": [
+   "1.1.9",
+   "6.1.101"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.9",
+   "locator": "Kāśikā on 1.1.9",
+   "quote": "दण्डाग्रम्। खट्वाग्रम्"
+  },
+  "confidence": "certain",
+  "notes": "Long ā + short a are savarṇa (18 varieties of a)."
+ },
+ {
+  "id": "ac_yan_ayadi-180",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "hotṛ",
+   "ḷkāraḥ"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "hotṝkāraḥ"
+  ],
+  "sutras": [
+   "1.1.9",
+   "6.1.101"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": "6.1.101",
+   "locator": "Laghu text (GRETIL) 6.1.101",
+   "quote": "akaḥ savarṇe 'ci pare pūrvaparayordīrgha ekādeśaḥ syāt / daityāraḥ / śrīśiḥ / viṣṇūdayaḥ / hotṝkāraḥ //"
+  },
+  "confidence": "probable",
+  "notes": "Vārttika 'ṛḷvarṇayor mithaḥ sāvarṇyaṃ vācyam' (1.1.9; Kāśikā: 'होतृ ऌकारः — होतृृकारः'): ṛ and ḷ are savarṇa, so ṛ + ḷ -> long ṝ (no ḷ-dīrgha exists, Kāśikā: 'ऌवर्णस्य दीर्घा न सन्ति'). Source shown is the Laghu's example list under 6.1.101. The same list prints 'daityāraḥ' for daityāriḥ (SK) - a GRETIL corruption. Split by me."
+ },
+ {
+  "id": "ac_yan_ayadi-181",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "tṛp",
+   "tā"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "tarptā"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.9",
+   "locator": "Kāśikā on 1.1.9",
+   "quote": "तर्प्ता, तर्प्तुमित्यत्र"
+  },
+  "confidence": "probable",
+  "notes": "'āsyagrahaṇaṃ kim?': p and t have the same prayatna but different sthāna, so they are NOT savarṇa and 8.4.65 (jharo jhari savarṇe) does not delete the p. Input tṛp + tā (guṇa ar) split by me."
+ },
+ {
+  "id": "ac_yan_ayadi-182",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "arus",
+   "cyotati"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "aruścyotati"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.9",
+   "locator": "Kāśikā on 1.1.9",
+   "quote": "अरुश्च्योततीत्यत्र"
+  },
+  "confidence": "probable",
+  "notes": "'prayatnagrahaṇaṃ kim?': ś and c have the same sthāna (tālu) but different prayatna, so they are not savarṇa and 8.4.65 does not delete the ś. The ś itself is visarga-ścutva (8.3.34, 8.4.40; not named). Input written with the underlying s."
+ },
+ {
+  "id": "ac_yan_ayadi-183",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "vāk",
+   "ścotati"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "vākścotati"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "tattvabodhini",
+   "sutra": "1.1.9",
+   "locator": "Tattvabodhinī on 1.1.9",
+   "quote": "वाक्श्चोतति"
+  },
+  "confidence": "probable",
+  "notes": "Tattvabodhinī's counter-example for 'prayatna': ś (ūṣman) and c (sparśa) are not savarṇa, so 8.4.65 does not delete the ś. Input shows the kutva-ed final k (from vāc)."
+ },
+ {
+  "id": "ac_yan_ayadi-184",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "daṇḍa",
+   "hastaḥ"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "daṇḍahastaḥ"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.10",
+   "locator": "Kāśikā on 1.1.10",
+   "quote": "अवर्णहकारौ — दण्डहस्तः"
+  },
+  "confidence": "certain",
+  "notes": "a and h have the same sthāna and prayatna but an ac and a hal are never savarṇa (nāj-jhalau), so no savarṇa-dīrgha happens (there is no vowel following anyway; the point is 'ā + h' not being treated as savarṇa)."
+ },
+ {
+  "id": "ac_yan_ayadi-185",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "dadhi",
+   "śītam"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "dadhiśītam"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.10",
+   "locator": "Kāśikā on 1.1.10",
+   "quote": "इवर्णशकारौ — दधिशीतम्"
+  },
+  "confidence": "certain",
+  "notes": "i and ś: the same sthāna (tālu) and, in the Kāśikā's view of prayatna, an ac and a hal are not savarṇa; so no dīrgha (and no yaṇ, because ś is not an ac)."
+ },
+ {
+  "id": "ac_yan_ayadi-186",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "dadhi",
+   "harati"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "dadhiharati"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "1.1.10",
+   "locator": "Siddhāntakaumudī on 1.1.10",
+   "quote": "तेन दधीत्यस्य हरति शीतलं षष्ठं सान्द्रमित्येतेषु परेषु यणादिकं न"
+  },
+  "confidence": "certain",
+  "notes": "SK/Laghu: if h were savarṇa to a (and so counted as an ac), dadhi + harati would get yaṇ; nājjhalau prevents it. Same for śītalam, ṣaṣṭham, sāndram."
+ },
+ {
+  "id": "ac_yan_ayadi-187",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "dadhi",
+   "ṣaṣṭham"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "dadhiṣaṣṭham"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "1.1.10",
+   "locator": "Siddhāntakaumudī on 1.1.10",
+   "quote": "तेन दधीत्यस्य हरति शीतलं षष्ठं सान्द्रमित्येतेषु परेषु यणादिकं न"
+  },
+  "confidence": "certain",
+  "notes": "ṛ-varṇa/ṣ savarṇa pair: no yaṇ before ṣ."
+ },
+ {
+  "id": "ac_yan_ayadi-188",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "yūpa",
+   "agram"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "yūpāgram"
+  ],
+  "sutras": [
+   "1.1.50",
+   "6.1.101"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.50",
+   "locator": "Kāśikā on 1.1.50",
+   "quote": "दण्डाग्रम्। यूपाग्रम्"
+  },
+  "confidence": "certain",
+  "notes": "sthānataḥ āntaryam: of the possible long vowels the one with the same sthāna (kaṇṭhya ā) is the substitute (Kāśikā: 'द्वयोरकारयोः कण्ठ्य एव दीर्घ आकारो भवति')."
+ },
+ {
+  "id": "ac_yan_ayadi-189",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "ci",
+   "tā"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "cetā"
+  ],
+  "sutras": [
+   "7.3.84",
+   "1.1.50"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.50",
+   "locator": "Kāśikā on 1.1.50",
+   "quote": "चेता। स्तोता"
+  },
+  "confidence": "certain",
+  "notes": "Where several types of āntarya compete, sthāna wins ('यत्रानेकविधमान्तर्यं तत्र स्थानत आन्तर्यं बलीयः'): for i/u the guṇa e/o (same sthāna) and not a (same measure, pramāṇa). 7.3.84 is named in the Bālamanoramā on 1.1.50, not in the Kāśikā. tṛc has ṛ; the nominative gives cetā."
+ },
+ {
+  "id": "ac_yan_ayadi-190",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "stu",
+   "tā"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "stotā"
+  ],
+  "sutras": [
+   "7.3.84",
+   "1.1.50"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.50",
+   "locator": "Kāśikā on 1.1.50",
+   "quote": "चेता। स्तोता"
+  },
+  "confidence": "certain",
+  "notes": "Same, u -> o."
+ },
+ {
+  "id": "ac_yan_ayadi-191",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "pac",
+   "aḥ"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "pākaḥ"
+  ],
+  "sutras": [
+   "7.3.52",
+   "1.1.50"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.50",
+   "locator": "Kāśikā on 1.1.50",
+   "quote": "पाकः। त्यागः। रागः"
+  },
+  "confidence": "probable",
+  "notes": "guṇataḥ āntaryam: coḥ kuḥ (7.3.52) replaces c by the k of the same guṇa (voiceless, unaspirated), j by g. The vṛddhi ā (7.2.116) is not named here. Split by me."
+ },
+ {
+  "id": "ac_yan_ayadi-192",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "tyaj",
+   "aḥ"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "tyāgaḥ"
+  ],
+  "sutras": [
+   "7.3.52",
+   "1.1.50"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.50",
+   "locator": "Kāśikā on 1.1.50",
+   "quote": "पाकः। त्यागः। रागः"
+  },
+  "confidence": "probable",
+  "notes": "j -> g (voiced, unaspirated); split by me."
+ },
+ {
+  "id": "ac_yan_ayadi-193",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "adas",
+   "smai"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "0": [
+    "adas"
+   ]
+  },
+  "outputs": [
+   "amuṣmai"
+  ],
+  "sutras": [
+   "8.2.80",
+   "1.1.50"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.50",
+   "locator": "Kāśikā on 1.1.50",
+   "quote": "अमुष्मै। अमूभ्याम्"
+  },
+  "confidence": "probable",
+  "notes": "pramāṇataḥ āntaryam: adaso 'ser dād u do maḥ (8.2.80) replaces the vowel after d by a short u for a short a and by long ū for a long one; the d becomes m. The ṣ of smai is ṣatva (not named)."
+ },
+ {
+  "id": "ac_yan_ayadi-194",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "adas",
+   "bhyām"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "0": [
+    "adas"
+   ]
+  },
+  "outputs": [
+   "amūbhyām"
+  ],
+  "sutras": [
+   "8.2.80",
+   "1.1.50"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.50",
+   "locator": "Kāśikā on 1.1.50",
+   "quote": "अमुष्मै। अमूभ्याम्"
+  },
+  "confidence": "probable",
+  "notes": "Same: bhyām lengthens (dīrgha -> ū)."
+ },
+ {
+  "id": "ac_yan_ayadi-195",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "kṛ",
+   "tā"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "kartā"
+  ],
+  "sutras": [
+   "7.3.84",
+   "1.1.51"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.51",
+   "locator": "Kāśikā on 1.1.51",
+   "quote": "कर्ता। हर्ता"
+  },
+  "confidence": "certain",
+  "notes": "uraṇ raparaḥ: the a of guṇa which replaces ṛ is followed by r (a + r = ar). 7.3.84 is not named by the Kāśikā. Nominative of the tṛc form."
+ },
+ {
+  "id": "ac_yan_ayadi-196",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "hṛ",
+   "tā"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "hartā"
+  ],
+  "sutras": [
+   "7.3.84",
+   "1.1.51"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.51",
+   "locator": "Kāśikā on 1.1.51",
+   "quote": "कर्ता। हर्ता"
+  },
+  "confidence": "certain",
+  "notes": "Same."
+ },
+ {
+  "id": "ac_yan_ayadi-197",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "kṝ",
+   "ati"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "kirati"
+  ],
+  "sutras": [
+   "7.1.100",
+   "1.1.51"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.51",
+   "locator": "Kāśikā on 1.1.51",
+   "quote": "किरति। गिरति"
+  },
+  "confidence": "probable",
+  "notes": "ṝta iddhātoḥ (7.1.100) gives i and 1.1.51 makes it ir (i + r). Root kṝ (kṝ vikṣepe) with śa; split by me."
+ },
+ {
+  "id": "ac_yan_ayadi-198",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "gṝ",
+   "ati"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "girati"
+  ],
+  "sutras": [
+   "7.1.100",
+   "1.1.51"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.51",
+   "locator": "Kāśikā on 1.1.51",
+   "quote": "किरति। गिरति"
+  },
+  "confidence": "probable",
+  "notes": "Same (gṝ)."
+ },
+ {
+  "id": "ac_yan_ayadi-199",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "kṛṣṇa",
+   "ṛddhiḥ"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "kṛṣṇarddhiḥ"
+  ],
+  "sutras": [
+   "6.1.87",
+   "1.1.51"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": "1.1.51",
+   "locator": "Laghu text (GRETIL) 1.1.51",
+   "quote": "ṛ iti triṃśataḥ saṃjñetyuktam / tatsthāne yo 'ṇ sa raparaḥ sanneva pravartate / kṛṣṇarddhiḥ / tavalkāraḥ //"
+  },
+  "confidence": "certain",
+  "notes": "a + ṛ -> guṇa; the a-substitute is raparaḥ and by āntarya (ṛ is ṛ-sthāna) it is ar (SK: 'तत्रान्तरतम्यात् कृष्णर्द्धिरित्यत्राऽर्'). SK adds 'अचो रहाभ्याम् द्वे इति पक्षे द्वित्वम्' - an optional extra doubling of the dh after r; not enumerated here."
+ },
+ {
+  "id": "ac_yan_ayadi-200",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "tava",
+   "ḷkāraḥ"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "tavalkāraḥ"
+  ],
+  "sutras": [
+   "6.1.87",
+   "1.1.51"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": "1.1.51",
+   "locator": "Laghu text (GRETIL) 1.1.51",
+   "quote": "ṛ iti triṃśataḥ saṃjñetyuktam / tatsthāne yo 'ṇ sa raparaḥ sanneva pravartate / kṛṣṇarddhiḥ / tavalkāraḥ //"
+  },
+  "confidence": "certain",
+  "notes": "a + ḷ -> al (vārttika 'lapara iti vaktavyam' on 1.1.51: the substitute for ḷ is followed by l, so al)."
+ },
+ {
+  "id": "ac_yan_ayadi-201",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "pañca",
+   "goṇī"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "pañcagoṇiḥ"
+  ],
+  "sutras": [
+   "1.2.50",
+   "1.1.52"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.52",
+   "locator": "Kāśikā on 1.1.52",
+   "quote": "पञ्चगोणिः। दशगोणिः"
+  },
+  "confidence": "probable",
+  "notes": "id goṇyāḥ (1.2.50) is stated with a genitive (goṇyāḥ), so by alo 'ntyasya only the FINAL ī becomes short i. Split by me (dvigu, taddhitārtha)."
+ },
+ {
+  "id": "ac_yan_ayadi-202",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "daśa",
+   "goṇī"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "daśagoṇiḥ"
+  ],
+  "sutras": [
+   "1.2.50",
+   "1.1.52"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.52",
+   "locator": "Kāśikā on 1.1.52",
+   "quote": "पञ्चगोणिः। दशगोणिः"
+  },
+  "confidence": "probable",
+  "notes": "Same as pañcagoṇiḥ."
+ },
+ {
+  "id": "ac_yan_ayadi-203",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "vṛkṣa",
+   "bhis"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "vṛkṣaiḥ"
+  ],
+  "sutras": [
+   "7.1.9",
+   "1.1.70"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.70",
+   "locator": "Kāśikā on 1.1.70",
+   "quote": "वृक्षैः। प्लक्षैः"
+  },
+  "confidence": "certain",
+  "notes": "ato bhisa ais (7.1.9): the a of 'ato' is tapara (a-t), so it refers only to SHORT a (same time), not to ā. Input carries the underlying -s of bhis; the output shows the visarga."
+ },
+ {
+  "id": "ac_yan_ayadi-204",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "plakṣa",
+   "bhis"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "plakṣaiḥ"
+  ],
+  "sutras": [
+   "7.1.9",
+   "1.1.70"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.70",
+   "locator": "Kāśikā on 1.1.70",
+   "quote": "वृक्षैः। प्लक्षैः"
+  },
+  "confidence": "certain",
+  "notes": "Same as vṛkṣaiḥ."
+ },
+ {
+  "id": "ac_yan_ayadi-205",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "khaṭvā",
+   "bhis"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "khaṭvābhiḥ"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.70",
+   "locator": "Kāśikā on 1.1.70",
+   "quote": "तत्कालस्येति किम्? खट्वाभिः। मालाभिः"
+  },
+  "confidence": "certain",
+  "notes": "'tatkālasyeti kim?': without tatkāla, 7.1.9 would also apply to long ā and give khaṭvaiḥ; with it the ending stays -bhis (-bhiḥ)."
+ },
+ {
+  "id": "ac_yan_ayadi-206",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "mālā",
+   "bhis"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "mālābhiḥ"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.70",
+   "locator": "Kāśikā on 1.1.70",
+   "quote": "तत्कालस्येति किम्? खट्वाभिः। मालाभिः"
+  },
+  "confidence": "certain",
+  "notes": "Same as khaṭvābhiḥ."
+ },
+ {
+  "id": "ac_yan_ayadi-207",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "kim",
+   "hyaḥ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "kiyhyaḥ",
+   "kiy̐hyaḥ",
+   "kiṃhyaḥ"
+  ],
+  "sutras": [
+   "1.3.10",
+   "8.3.26"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.3.26",
+   "locator": "Kāśikā on 8.3.26",
+   "quote": "किं ह्यः"
+  },
+  "confidence": "probable",
+  "notes": "Yathāsaṃkhya (1.3.10) example of the vārttika 'यवलपरे यवला वेति वक्तव्यम्' under he mapare vā (8.3.26; corpus.varttikas_on('8.3.26')): m before h + y/v/l becomes y/v/l respectively (kiy hyaḥ, kiv̐ hvalayati, kil hlādayati) or anusvāra. The printed Kāśikā shows the y/l forms with a private-use candrabindu glyph (U+F151) that cannot be quoted; SK on 1.3.10 lists the same words (कियूँह्यः । किंह्यः । किब्ँह्वलयति ...) with a candrabindu; the spellings with and without candrabindu (U+0310) are both listed. Cross-family: nasal_anusvara. Split kim + hyaḥ by me."
+ },
+ {
+  "id": "ac_yan_ayadi-208",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "kim",
+   "hvalayati"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "kivhvalayati",
+   "kiv̐hvalayati",
+   "kiṃhvalayati"
+  ],
+  "sutras": [
+   "1.3.10",
+   "8.3.26"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.3.26",
+   "locator": "Kāśikā on 8.3.26",
+   "quote": "किवँ् ह्वलयति, किं ह्वलयति"
+  },
+  "confidence": "probable",
+  "notes": "As kiṃhyaḥ; h followed by v."
+ },
+ {
+  "id": "ac_yan_ayadi-209",
+  "family": "ac_yan_ayadi",
+  "input": [
+   "kim",
+   "hlādayati"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "kilhlādayati",
+   "kil̐hlādayati",
+   "kiṃhlādayati"
+  ],
+  "sutras": [
+   "1.3.10",
+   "8.3.26"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.3.26",
+   "locator": "Kāśikā on 8.3.26",
+   "quote": "किं ह्लादयति"
+  },
+  "confidence": "probable",
+  "notes": "As kiṃhyaḥ; h followed by l."
+ }
+]

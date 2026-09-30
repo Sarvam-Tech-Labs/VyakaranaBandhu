@@ -143,6 +143,56 @@ def _tinanta_generate_payload(root: str) -> dict:
             "entries": [_tinanta_entry_payload(e) for e in entries]}
 
 
+def _sandhi_payload(text: str, *, boundary: str = "pada", veda: bool = False,
+                    pause: bool = True) -> dict:
+    """
+    The sandhi engine's derivation for `text`, as the browser wants it.
+
+    Imported here, not at module level, for the reason `/api/tinanta/*` is:
+    the engine reads the corpus and every rule module, and a request to
+    classify one word should not pay for that. An input the engine cannot read
+    is an answer, not a crash — the message says which letter and why.
+    """
+    from src.astadhyayi.sandhi import SandhiInputError, sandhi
+
+    try:
+        return sandhi(text, boundary=boundary, veda=veda,
+                      pause=pause).to_dict()
+    except SandhiInputError as exc:
+        return {"error": str(exc), "kind": "input"}
+
+
+def _sandhi_split_payload(text: str, *, limit: int = 12,
+                          require_change: bool = False) -> dict:
+    """
+    The ways `text` can be split into two words, each proved by derivation.
+
+    The junction index behind it is read from a cache built from the rules;
+    the first request after a rule changes rebuilds it, which takes a minute.
+    Without a lexicon the splits are all unvalidated, and the answer says so.
+    """
+    from src.astadhyayi.sandhi import SandhiInputError
+    from src.astadhyayi.sandhi import split as _split
+
+    lexicon = _split.default_lexicon()
+    try:
+        found = _split.split(text, lexicon=lexicon,
+                             require_change=require_change)
+    except SandhiInputError as exc:
+        return {"error": str(exc), "kind": "input"}
+    return {
+        "input": text,
+        "lexicon": len(lexicon) if lexicon is not None else 0,
+        "validated": lexicon is not None,
+        "total": len(found),
+        "splits": [item.to_dict() for item in found[:limit]],
+        "note": ("" if lexicon is not None else
+                 "No word list is available, so every split the grammar "
+                 "allows is listed and none is validated: a cut where "
+                 "nothing changed is always possible."),
+    }
+
+
 def _tinanta_reverse_payload(word: str) -> dict:
     """
     Every root the grammar could have made `word` from, in लट् (laṭ).
@@ -298,6 +348,26 @@ class SanskritAPIHandler(SimpleHTTPRequestHandler):
                     tradition=params.get("tradition", ["auto"])[0],
                 )
                 self._send_json(result)
+                return
+
+            # 12. /api/sandhi?text=...&boundary=...&veda=...&pause=...
+            if parsed.path == "/api/sandhi":
+                self._send_json(_sandhi_payload(
+                    params.get("text", [""])[0],
+                    boundary=params.get("boundary", ["pada"])[0],
+                    veda=params.get("veda", ["0"])[0] in ("1", "true"),
+                    pause=params.get("pause", ["1"])[0] not in ("0", "false"),
+                ))
+                return
+
+            # 12b. /api/sandhi/split?text=...&limit=...&require_change=...
+            if parsed.path == "/api/sandhi/split":
+                self._send_json(_sandhi_split_payload(
+                    params.get("text", [""])[0],
+                    limit=int(params.get("limit", ["12"])[0]),
+                    require_change=params.get("require_change", ["0"])[0]
+                    in ("1", "true"),
+                ))
                 return
 
             # Aṣṭādhyāyī — the codification browser and playground.
@@ -506,6 +576,25 @@ class SanskritAPIHandler(SimpleHTTPRequestHandler):
                 self._send_json(result)
                 return
 
+            # 15b. /api/sandhi/split — {text, limit?, require_change?}
+            if parsed.path == "/api/sandhi/split":
+                self._send_json(_sandhi_split_payload(
+                    data.get("text", ""),
+                    limit=int(data.get("limit", 12)),
+                    require_change=bool(data.get("require_change", False)),
+                ))
+                return
+
+            # 15. /api/sandhi — {text, boundary?, veda?, pause?}
+            if parsed.path == "/api/sandhi":
+                self._send_json(_sandhi_payload(
+                    data.get("text", ""),
+                    boundary=data.get("boundary", "pada"),
+                    veda=bool(data.get("veda", False)),
+                    pause=bool(data.get("pause", True)),
+                ))
+                return
+
             self.send_response(404)
             self.end_headers()
         except Exception as e:
@@ -559,7 +648,30 @@ class ThreadedHTTPServer(ThreadingMixIn, HTTPServer):
     allow_reuse_address = os.name != "nt"
 
 
+def _warm_sandhi() -> None:
+    """
+    Load the sandhi engine before anyone asks for it.
+
+    Its first derivation imports every rule module and the whole codified
+    Aṣṭādhyāyī behind them, which takes several seconds; done here, in the
+    background, that wait is the server's start-up and not a user's first
+    click. A failure is not fatal — the endpoint reports it on request.
+    """
+    try:
+        from src.astadhyayi.sandhi import sandhi
+
+        sandhi("iti ādi")
+        sandhi("rāmaḥ atra")
+        from src.astadhyayi.sandhi import split as _split
+
+        _split.default_index()          # read the cache, or build it once
+    except Exception:
+        pass
+
+
 def run_server(port=PORT):
+    import threading
+
     server_address = ("0.0.0.0", port)
     try:
         httpd = ThreadedHTTPServer(server_address, SanskritAPIHandler)
@@ -568,12 +680,14 @@ def run_server(port=PORT):
         print("Another server.py is probably already running on this port.")
         print("List them with:  python server.py --who")
         raise SystemExit(1)
+    threading.Thread(target=_warm_sandhi, daemon=True).start()
     print(f"============================================================")
     print(f"  Sanskrit Morphological & Subanta Server Running!")
     print(f"  Local Web App: http://127.0.0.1:{port}")
     print(f"  Classify API : http://127.0.0.1:{port}/api/classify?text=rāmaḥ")
     print(f"  Subanta API  : http://127.0.0.1:{port}/api/subanta/generate?stem=rāma")
     print(f"  Chandas API  : http://127.0.0.1:{port}/api/chandas/analyze?text=dharmakṣetre kurukṣetre")
+    print(f"  Sandhi API   : http://127.0.0.1:{port}/api/sandhi?text=iti ādi")
     print(f"============================================================")
     try:
         httpd.serve_forever()

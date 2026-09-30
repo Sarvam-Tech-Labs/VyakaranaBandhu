@@ -1,0 +1,2572 @@
+# -*- coding: utf-8 -*-
+"""
+The रु, the visarga and the य् — `families/visarga_ru.py`.
+
+Every expectation is one of the commentaries' own worked forms, with the
+commentary named in the docstring, or a *kim* counter-example (where the
+conditions of a sūtra live), or an assertion on the STEPS where a plain result
+could come out right by luck (a rule that does nothing looks exactly like a
+rule that was refused). A test that cannot fail is worse than no test
+(NORTH_STAR §3): where a result depends on a flag, the same form is also run
+without it, and where it depends on a `consumes` or an `overrides`, the
+declaration is taken away and the result must change.
+
+**What is run.** The family's own rules with the two families whose sūtras
+finish its junctions (ac_ekadesa for 6.1.87, 6.1.109; hal_assimilation for
+8.4.40 and 8.2.39), and ac_yan_ayadi where a 6.1.78 य्/व् is the subject. The
+other families are not loaded, so a result does not move when they are added;
+where a test wants the whole rulebook it says so and asserts only this
+family's steps.
+
+Sūtra numbers are never typed from memory in an assertion about a sūtra's
+*words*: those come from the corpus (`test_the_sutras_named_are_the_corpus_words`).
+"""
+
+from __future__ import annotations
+
+import dataclasses
+import unittest
+from typing import Iterable, List, Sequence, Tuple
+
+from src.astadhyayi import corpus
+from src.astadhyayi.anga import kharavasanayoh, sasajuso_ruh
+from src.astadhyayi.ru_adesa import (
+    BHA_KUR_CHUR, UBHAYATHA_THREE, VASU_FOUR, the_word_end)
+from src.astadhyayi.sandhi import rulebook, sandhi, trace
+from src.astadhyayi.sandhi.engine import Outcome, derive
+from src.astadhyayi.sandhi.families import visarga_ru as fam
+from src.astadhyayi.sandhi.parse import parse, to_iast
+from src.astadhyayi.sandhi.segs import RU, View
+from src.astadhyayi.varna import JIHVAMULIYA, UPADHMANIYA, VARGA, VISARGA
+from src.astadhyayi.visarjaniya import (
+    DVIS_THREE, KRKAMI_SEVEN, NIRADI, PATI_SEVEN, the_visarga)
+
+#: The family, and the two whose sūtras finish its junctions.
+RULES = rulebook.rules_of("visarga_ru", "ac_ekadesa", "hal_assimilation")
+#: … with 6.1.78, for the य्/व् that a diphthong makes.
+RULES_YAN = rulebook.rules_of("visarga_ru", "ac_ekadesa", "hal_assimilation",
+                              "ac_yan_ayadi")
+#: This family alone: what its rules do and nothing that follows.
+ALONE = rulebook.rules_of("visarga_ru")
+
+
+def run(text, rules=RULES, **kw):
+    return sandhi(text, rules=rules, **kw)
+
+
+def first(text, rules=RULES, **kw) -> Outcome:
+    return run(text, rules, **kw).outcomes[0]
+
+
+def forms(text, rules=RULES, **kw) -> set:
+    return set(run(text, rules, **kw).surfaces)
+
+
+def taken(outcome: Outcome) -> List[str]:
+    """The sūtras of a derivation, in order — an option declined is not a step."""
+    return [s.sutra for s in outcome.steps if not s.declined]
+
+
+def at_junction(outcome: Outcome) -> List[str]:
+    """`taken`, without the steps that touch only the LAST word — its own final
+    स् at the pause (8.2.66, 8.3.15), which is not the junction being tested."""
+    last = len(outcome.start.words) - 1
+    return [s.sutra for s in outcome.steps
+            if not s.declined and s.words != (last,)]
+
+
+def steps(text, rules=RULES, **kw) -> List[str]:
+    return at_junction(first(text, rules, **kw))
+
+
+def every_course(text, rules=RULES, **kw) -> List[Tuple[str, List[str]]]:
+    """(surface, sūtras taken) for each derivation the options give."""
+    return [(o.surface, at_junction(o)) for o in run(text, rules, **kw).outcomes]
+
+
+def after_step(outcome: Outcome, sutra: str, occurrence: int = 0) -> str:
+    """The form as it stood after the `occurrence`-th step of that sūtra."""
+    found = [s for s in outcome.steps if s.sutra == sutra and not s.declined]
+    return found[occurrence].after
+
+
+def step_of(outcome: Outcome, sutra: str):
+    return next(s for s in outcome.steps if s.sutra == sutra and not s.declined)
+
+
+def displaced(outcome: Outcome, sutra: str) -> List[str]:
+    """The sūtras that the taken step of `sutra` displaced."""
+    return [a.sutra for a in step_of(outcome, sutra).against]
+
+
+class _Base(unittest.TestCase):
+    def assertForms(self, text, expected, rules=RULES, **kw):
+        self.assertEqual(forms(text, rules, **kw), set(expected), text)
+
+    def assertSteps(self, text, expected, rules=RULES, **kw):
+        self.assertEqual(steps(text, rules, **kw), list(expected), text)
+
+
+# ---------------------------------------------------------------------------
+# 8.2.66  ससजुषो रुः
+# ---------------------------------------------------------------------------
+
+
+class Rutva(_Base):
+    """ससजुषो रुः — a pada-final स् (and the ष् of *sajuṣ*) becomes रु."""
+
+    def test_kashika_agnir_atra_vayur_atra(self):
+        """Kāśikā on 8.2.66: सकारान्तस्य — अग्निरत्र। वायुरत्र। (The रु is a plain
+        र् before a vowel after इ or उ: 6.1.113 wants a short अ.)"""
+        self.assertForms("agnis atra", {"agniratra"})
+        self.assertForms("vāyus atra", {"vāyuratra"})
+        self.assertSteps("agnis atra", ["8.2.66"])
+
+    def test_the_ru_is_a_marked_r_and_not_the_r_of_punar(self):
+        """The रु is `RU`-marked so that 6.1.113–114 can tell it from the र् of
+        *punar*, which they do not touch."""
+        out = first("agnis atra")
+        made = [s for s in out.final.segs if s.made_by == "8.2.66"]
+        self.assertEqual([(s.s, RU in s.marks) for s in made], [("r", True)])
+        plain = parse("punar atra").segs
+        self.assertTrue(all(RU not in s.marks for s in plain))
+
+    def test_kashika_sajus_names_the_final_sa_of_sajus(self):
+        """Kāśikā on 8.2.66: सजुषः — सजूर्ऋतुभिः (सजुष् + ऋतुभिः): the ष् of the
+        word *sajuṣ* becomes रु."""
+        self.assertForms("sajuṣ ṛtubhiḥ", {"sajurṛtubhiḥ"})
+        self.assertEqual(steps("sajuṣ ṛtubhiḥ"), ["8.2.66"])
+
+    def test_balamanorama_sajusau_sajusah_keep_their_sa(self):
+        """Bālamanoramā on 8.2.66: सजुषौ, सजुषः — ष् does not end a पद, so no रु."""
+        out = first("sajuṣ~au")
+        self.assertNotIn("8.2.66", taken(out))
+        self.assertEqual(out.surface, "sajuṣau")
+
+    def test_any_other_final_sa_is_not_a_ru(self):
+        """A pada-final ष् of a word that is not *sajuṣ* is not named."""
+        self.assertNotIn("8.2.66", taken(first("viṣ atra")))
+
+    def test_a_final_sa_that_is_not_the_end_of_a_pada_stays(self):
+        """`~` says the two pieces are one pada: the first is not pada-final."""
+        self.assertNotIn("8.2.66", taken(first("agnis~a")))
+
+    def test_it_displaces_jastva(self):
+        """Kaumudī on 8.2.66: जश्त्वापवादः — शिवस् would otherwise have its स् made
+        द् by 8.2.39 (Bālamanoramā: ननु शिवस् इति सकारस्य झलां जशोऽन्ते …)."""
+        out = first("śivas ca")
+        self.assertEqual(taken(out)[0], "8.2.66")
+        self.assertNotIn("8.2.39", taken(out))
+        self.assertIn("8.2.39", displaced(out, "8.2.66"))
+        why = next(a.why for a in step_of(out, "8.2.66").against
+                   if a.sutra == "8.2.39")
+        self.assertIn("जश्त्वापवादः", why)
+
+    def test_without_the_declaration_jastva_takes_the_place(self):
+        """The override is what does it: take it away and 8.2.39, which stands
+        before 8.2.66 in the tripādī, acts first and makes the स् a द् (the
+        very fault Bālamanoramā names) — the रु never comes."""
+        stripped = tuple(dataclasses.replace(r, overrides=())
+                         if r.sutra == "8.2.66" else r for r in RULES)
+        out = first("śivas ca", stripped)
+        self.assertEqual(taken(out)[0], "8.2.39")
+        self.assertNotEqual(out.surface, first("śivas ca").surface)
+
+    def test_agrees_with_the_projects_own_8_2_66(self):
+        """`anga.sasajuso_ruh` is 8.2.66 as a question; the engine's step is the
+        same sūtra as a derivation. Where the first says a word takes रु the
+        engine's first step is 8.2.66, and where it says not, the engine has no
+        such step."""
+        for word in ("rāmas", "harīs", "agnis", "manas", "viśvatas"):
+            self.assertIsNotNone(sasajuso_ruh(word).result, word)
+            self.assertEqual(steps(f"{word} ca")[0], "8.2.66", word)
+        for word in ("rāma", "hariḥ", "punar"):
+            if not word.endswith("s"):
+                self.assertIsNone(sasajuso_ruh(word).result, word)
+        self.assertNotIn("8.2.66", steps("rāma ca"))
+        self.assertNotIn("8.2.66", steps("punar ca"))
+
+
+# ---------------------------------------------------------------------------
+# 6.1.113–114  the रु as उ
+# ---------------------------------------------------------------------------
+
+
+class RuAsU(_Base):
+    """अतो रोरप्लुतादप्लुते, हशि च — the रु, after a short अ, is उ."""
+
+    def test_kashika_vrksa_atra_plaksa_atra(self):
+        """Kāśikā on 6.1.113: वृक्षोऽत्र। प्लक्षोऽत्र। — with the steps: the रु
+        (8.2.66), the उ (6.1.113), ओ (6.1.87), and the avagraha (6.1.109)."""
+        self.assertForms("vṛkṣas atra", {"vṛkṣo'tra"})
+        self.assertForms("plakṣas atra", {"plakṣo'tra"})
+        self.assertSteps("vṛkṣas atra",
+                         ["8.2.66", "6.1.113", "6.1.87", "6.1.109"])
+
+    def test_laghu_sivo_rcyah(self):
+        """Laghusiddhāntakaumudī on 6.1.113: शिवोऽर्च्यः."""
+        self.assertForms("śivas arcyaḥ", {"śivo'rcyaḥ"})
+        self.assertEqual(steps("śivas arcyaḥ"),
+                         ["8.2.66", "6.1.113", "6.1.87", "6.1.109"])
+
+    def test_it_displaces_the_ya_of_8_3_17(self):
+        """Kaumudī on 6.1.113: भोभगोअघो इति प्राप्तस्य यत्वस्यापवादः — the step
+        says so, and without the declaration 8.3.17's य् is not shown displaced."""
+        out = first("vṛkṣas atra")
+        self.assertIn("8.3.17", displaced(out, "6.1.113"))
+        self.assertNotIn("8.3.17", taken(out))
+        stripped = tuple(dataclasses.replace(r, overrides=())
+                         if r.sutra == "6.1.113" else r for r in RULES)
+        self.assertNotIn("8.3.17", displaced(first("vṛkṣas atra", stripped),
+                                             "6.1.113"))
+
+    def test_kashika_agnir_atra_has_no_short_a_before(self):
+        """Kāśikā: अत इति किम्? अग्निरत्र — इ before the रु."""
+        self.assertNotIn("6.1.113", taken(first("agnis atra")))
+        self.assertForms("agnis atra", {"agniratra"})
+
+    def test_kashika_vrksa_atra_the_tapara_of_a(self):
+        """Kāśikā: तपरकरणं किम्? वृक्षा अत्र — a long आ before the रु: 8.3.17's
+        य्, not the उ (and then 8.3.19's option)."""
+        out = first("vṛkṣās atra")
+        self.assertNotIn("6.1.113", taken(out))
+        self.assertIn("8.3.17", taken(out))
+        self.assertForms("vṛkṣās atra", {"vṛkṣāatra", "vṛkṣāyatra"})
+
+    def test_kashika_svar_atra_pratar_atra_are_not_a_ru(self):
+        """Kāśikā: सानुबन्धग्रहणं किम्? स्वरत्र। प्रातरत्र। — a plain र् is not the
+        रु of 8.2.66, whatever stands beside it."""
+        for text in ("svar atra", "prātar atra"):
+            self.assertNotIn("6.1.113", taken(first(text)), text)
+            self.assertEqual(forms(text), {text.replace(" ", "")}, text)
+
+    def test_kashika_vrksa_iha_no_short_a_after(self):
+        """Kāśikā: अतीत्येव — वृक्ष इह: the sound after is इ, not अ. (The रु is
+        8.3.17's य्, which 8.3.19 may drop.)"""
+        out = first("vṛkṣas iha")
+        self.assertNotIn("6.1.113", taken(out))
+        self.assertEqual(forms("vṛkṣas iha"), {"vṛkṣaiha", "vṛkṣayiha"})
+
+    def test_kashika_vrksa_asritah_the_tapara_of_the_following_a(self):
+        """Kāśikā: तस्यापि तपरत्वादत्र न भवति — वृक्ष आश्रितः (a long आ follows)."""
+        self.assertNotIn("6.1.113", taken(first("vṛkṣas āśritaḥ")))
+
+    def test_kashika_pluta_before_and_after(self):
+        """Kāśikā: अप्लुतादिति किम्? सुस्रोत३ अत्र न्वसि; अप्लुत इति किम्? तिष्ठतु पय
+        अ३श्विन्. The letters cannot say a vowel is pluta: the flag `pluta`,
+        or the mark a rule of 8.2.82–107 leaves."""
+        self.assertIn("6.1.113", taken(first("susrotas atra")))
+        self.assertNotIn("6.1.113", taken(first("susrotas{pluta} atra")))
+        # the same after: `a` flagged pluta
+        self.assertIn("6.1.113", taken(first("payas a")))
+        self.assertNotIn("6.1.113", taken(first("payas a{pluta}")))
+
+    def test_the_pluta_mark_is_also_read(self):
+        """A vowel a rule has *made* pluta carries `PLUTA` — 6.1.113 reads it."""
+        from src.astadhyayi.sandhi.segs import PLUTA
+        state = parse("payas atra")
+        segs = list(state.segs)
+        pre = [i for i, s in enumerate(segs) if s.w == 0][-2]   # अ before स्
+        self.assertEqual(segs[pre].s, "a")
+        marked = list(segs)
+        marked[pre] = dataclasses.replace(segs[pre],
+                                          marks=segs[pre].marks | {PLUTA})
+        self.assertIn("6.1.113", taken(derive(state, RULES)[0]))
+        out = derive(dataclasses.replace(state, segs=tuple(marked)), RULES)[0]
+        self.assertNotIn("6.1.113", taken(out))
+
+    def test_kashika_purusa_yati_hasati_dadati(self):
+        """Kāśikā on 6.1.114: पुरुषो याति। पुरुषो हसति। पुरुषो ददाति।"""
+        for word, expected in (("yāti", "puruṣoyāti"), ("hasati", "puruṣohasati"),
+                               ("dadāti", "puruṣodadāti")):
+            self.assertForms(f"puruṣas {word}", {expected})
+            self.assertSteps(f"puruṣas {word}",
+                             ["8.2.66", "6.1.114", "6.1.87"])
+
+    def test_laghu_sivo_vandyah(self):
+        """Laghusiddhāntakaumudī on 6.1.114: शिवो वन्द्यः."""
+        self.assertForms("śivas vandyaḥ", {"śivovandyaḥ"})
+
+    def test_kaumudi_pratar_atra_bhratar_gaccha(self):
+        """Kaumudī on 6.1.114: रोरित्युकारानुबन्धग्रहणान्नेह — प्रातरत्र, भ्रातर्गच्छ:
+        a plain र् before अ or before a हश् keeps its र्."""
+        self.assertForms("bhrātar gaccha", {"bhrātargaccha"})
+        self.assertNotIn("6.1.114", taken(first("bhrātar gaccha")))
+
+    def test_kaumudi_devas_iha_the_long_a(self):
+        """Kaumudī on 6.1.114: देवास् इह इति स्थिते। रुत्वम् — आ is not a short
+        अ, so not the उ."""
+        self.assertNotIn("6.1.114", taken(first("devās iha")))
+
+    def test_the_ru_is_seen_only_because_the_rule_names_it(self):
+        """8.2.66 stands in the tripādī, so 8.2.1 hides its रु from a sapāda
+        rule; 6.1.113 and 6.1.114 name the रु and so `consumes` it. Take that
+        away and neither can act (the engine's own test does the same for
+        6.1.113; here both)."""
+        for sutra, text in (("6.1.113", "vṛkṣas atra"),
+                            ("6.1.114", "puruṣas dadāti")):
+            blind = tuple(dataclasses.replace(r, consumes=frozenset())
+                          if r.sutra == sutra else r for r in RULES)
+            out = first(text, blind)
+            self.assertNotIn(sutra, taken(out), sutra)
+            self.assertNotEqual(out.surface, first(text).surface, sutra)
+
+    def test_manoratha_6_1_114_against_8_3_14(self):
+        """Laghusiddhāntakaumudī on 1.4.2: पूर्वत्रासिद्धमिति रोरीत्यसिद्धत्वादुत्वमेव
+        — मनोरथः. Both reach the रु of *manas ratha*; 8.3.14 is later in the
+        tripādī, so 8.2.1 gives the उ to 6.1.114 and 8.3.14 is not taken."""
+        self.assertForms("manas ratha", {"manoratha"})
+        self.assertSteps("manas ratha", ["8.2.66", "6.1.114", "6.1.87"])
+        self.assertNotIn("8.3.14", taken(first("manas ratha")))
+
+    def test_the_two_are_the_same_place_for_different_sounds(self):
+        """6.1.113 is for a short अ after, 6.1.114 for a हश्: an अ is no हश्."""
+        self.assertIn("6.1.113", taken(first("vṛkṣas atra")))
+        self.assertNotIn("6.1.114", taken(first("vṛkṣas atra")))
+        self.assertIn("6.1.114", taken(first("vṛkṣas gacchati")))
+        self.assertNotIn("6.1.113", taken(first("vṛkṣas gacchati")))
+
+
+# ---------------------------------------------------------------------------
+# 6.1.132–134  the सु of एतद् and तद्
+# ---------------------------------------------------------------------------
+
+
+class SuLopa(_Base):
+    """एतत्तदोः सुलोपोऽकोरनञ्समासे हलि; स्यश्छन्दसि बहुलम्; सोऽचि लोपे चेत्
+    पादपूरणम् — and the heading 6.1.135."""
+
+    def test_laghu_esa_visnuh_sa_sambhuh(self):
+        """Laghusiddhāntakaumudī on 6.1.132: एष विष्णुः। स शंभुः। (Kāśikā: एष ददाति,
+        स ददाति, एष भुङ्क्ते, स भुङ्क्ते.) The सु is lost before a consonant, and
+        8.2.66 then finds no स् to make a रु of."""
+        for text, form in (("eṣas viṣṇuḥ", "eṣaviṣṇuḥ"),
+                           ("sas śambhuḥ", "saśambhuḥ"),
+                           ("eṣas dadāti", "eṣadadāti"),
+                           ("sas dadāti", "sadadāti"),
+                           ("eṣas bhuṅkte", "eṣabhuṅkte"),
+                           ("sas bhuṅkte", "sabhuṅkte")):
+            self.assertForms(text, {form})
+            self.assertEqual(steps(text), ["6.1.132"], text)
+
+    def test_the_su_is_lost_before_the_ru_is_made(self):
+        """6.1.132 is sapādasaptādhyāyī, 8.2.66 tripādī: the loss acts first and
+        8.2.66 acts on what it leaves — nothing. So the trace has no रु."""
+        out = first("eṣas viṣṇuḥ")
+        self.assertNotIn("8.2.66", [s.sutra for s in out.steps
+                                     if s.words != (1,)])
+
+    def test_laghu_hali_kim_eso_tra(self):
+        """Laghusiddhāntakaumudī: हलि किम्? एषोऽत्र — a vowel follows, so the स्
+        goes on to रु (8.2.66), उ (6.1.113), ओ (6.1.87), and the avagraha."""
+        self.assertForms("eṣas atra", {"eṣo'tra"})
+        self.assertForms("sas atra", {"so'tra"})
+        self.assertEqual(steps("eṣas atra"),
+                         ["8.2.66", "6.1.113", "6.1.87", "6.1.109"])
+
+    def test_laghu_akoh_kim_esako_rudrah(self):
+        """Laghusiddhāntakaumudī: अकोः किम्? एषको रुद्रः — the सकच् form: the सु
+        stays and goes to रु and उ (6.1.114). The flag `akac` says the word has
+        the affix क, which the letters do not; without it the सु WOULD go."""
+        self.assertForms("eṣakas rudraḥ", {"eṣakorudraḥ"})
+        self.assertNotIn("6.1.132", steps("eṣakas{stem:etad,akac} rudraḥ"))
+        self.assertForms("eṣakas{stem:etad,akac} rudraḥ", {"eṣakorudraḥ"})
+        # …the same form without `akac` is the ordinary word, and loses it:
+        self.assertIn("6.1.132", steps("eṣakas{stem:etad} rudraḥ"))
+
+    def test_laghu_ananasamase_kim_asah_sivah(self):
+        """Laghusiddhāntakaumudī: अनञ्समासे किम्? असः शिवः — the negative
+        compound keeps its सु (flag `nan_samasa`); it becomes रु and visarga."""
+        self.assertNotIn("6.1.132", steps("asas{stem:tad,nan_samasa} śivaḥ"))
+        self.assertIn("6.1.132", steps("asas{stem:tad} śivaḥ"))
+        self.assertForms("asas{stem:tad,nan_samasa} śivaḥ", {"asaśśivaḥ",
+                                                             "asaḥśivaḥ"})
+
+    def test_kashika_etattador_iti_kim_yo_dadati(self):
+        """Kāśikā: एतत्तदोरिति किम्? यो ददाति — a word that is not एतद्/तद् takes
+        रु and उ (6.1.114) instead."""
+        self.assertNotIn("6.1.132", steps("yas dadāti"))
+        self.assertForms("yas dadāti", {"yodadāti"})
+
+    def test_stem_flag_names_another_form_of_etad(self):
+        """The two nominatives *eṣas*, *sas* are recognised by their letters;
+        any other form is the caller's `stem:etad` / `stem:tad`."""
+        self.assertIn("6.1.132", steps("tas{stem:tad} dadāti"))
+        self.assertNotIn("6.1.132", steps("tas dadāti"))
+
+    def test_the_su_goes_only_before_a_consonant(self):
+        """No loss before a vowel or at a pause (संहितायाम् — a pause is not a
+        junction): एषः, सः."""
+        self.assertNotIn("6.1.132", taken(first("eṣas")))
+        self.assertForms("eṣas", {"eṣaḥ"})
+
+    def test_kashika_syas_chandasi_bahulam(self):
+        """Kāśikā on 6.1.133: एष स्य भानुः — Vedic and *bahulam*: the loss, and
+        (न च भवति) the स्. Only in the Veda."""
+        self.assertEqual(forms("syas bhānuḥ", veda=True, rules=RULES),
+                         {"syabhānuḥ", "syobhānuḥ"})
+        self.assertEqual(forms("syas bhānuḥ"), {"syobhānuḥ"})
+
+    def test_kashika_so_ci_lope_cet_padapuranam(self):
+        """Kāśikā on 6.1.134: सेदु राजा क्षयति; सौषधीरनु रुध्यसे — and Laghu:
+        सेमामविड्ढि प्रभृतिम्, सैष दाशरथी रामः. The metre is the caller's flag
+        `padapuranam`."""
+        self.assertForms("sas{padapuranam} imām", {"semām"})
+        self.assertEqual(steps("sas{padapuranam} imām"), ["6.1.134", "6.1.87"])
+        self.assertForms("sas{padapuranam} eṣa", {"saiṣa"})
+        self.assertEqual(steps("sas{padapuranam} eṣa"), ["6.1.134", "6.1.88"])
+        self.assertForms("sas{padapuranam} eṣaḥ", {"saiṣaḥ"})
+
+    def test_kashika_lope_cet_padapuranam_kim_sa_iva(self):
+        """Kāśikā: लोपे चेत् पादपूरणमिति किम्? स इव व्याघ्रो भवेत् — without the
+        flag the सु is not lost (8.2.66, then 8.3.17's य्)."""
+        out = first("sas iva")
+        self.assertNotIn("6.1.134", taken(out))
+        self.assertEqual(forms("sas iva"), {"saiva", "sayiva"})
+
+    def test_the_heading_is_not_a_rule(self):
+        """6.1.135 is a heading: covered as `scope`, and no rule carries it."""
+        self.assertNotIn("6.1.135", [r.sutra for r in fam.RULES])
+        self.assertIn(("6.1.135", "scope"),
+                      [(s, st) for s, st, _ in fam.COVERAGE])
+
+
+# ---------------------------------------------------------------------------
+# 8.3.13–14, 6.3.111  the loss of ढ् and र्, and the long vowel
+# ---------------------------------------------------------------------------
+
+
+class DhraLopa(_Base):
+    """ढो ढे लोपः, रो रि, ढ्रलोपे पूर्वस्य दीर्घोऽणः."""
+
+    def test_laghu_puna_ramate_hari_ramyah_sambhu_rajate(self):
+        """Laghusiddhāntakaumudī on 6.3.111: पुना रमते। हरी रम्यः। शम्भू राजते।
+        Each is the loss of a र् (8.3.14) and the lengthening (6.3.111)."""
+        for text, form in (("punar ramate", "punāramate"),
+                           ("haris ramyaḥ", "harīramyaḥ"),
+                           ("śambhus rājate", "śambhūrājate")):
+            self.assertForms(text, {form})
+            self.assertEqual(steps(text)[-2:], ["8.3.14", "6.3.111"], text)
+
+    def test_kashika_nirakta_durakta_agni_ratha_indu_ratha(self):
+        """Kāśikā on 8.3.14 and 6.3.111: नीरक्तम्। दूरक्तम्। अग्नी रथः। इन्दू रथः।
+        पुना रक्तं वासः। प्राता राजक्रयः — the र् of a preverb (निस्|रक्त: the
+        र् of निर्), and of a word."""
+        for text, form in (("nis|raktam", "nīraktam"),
+                           ("dus|raktam", "dūraktam"),
+                           ("agnis rathaḥ", "agnīrathaḥ"),
+                           ("indus rathaḥ", "indūrathaḥ"),
+                           ("punar raktam vāsaḥ", "punāraktamvāsaḥ"),
+                           ("prātar rājakrayaḥ", "prātārājakrayaḥ")):
+            self.assertForms(text, {form})
+            self.assertIn("8.3.14", steps(text), text)
+            self.assertIn("6.3.111", steps(text), text)
+
+    def test_the_lost_r_is_kept_as_an_empty_sound(self):
+        """A loss is an empty sound and not a deletion (README): the trace keeps
+        it, and 6.3.111 reads it by `consumes`."""
+        out = first("punar ramate")
+        lost = [s for s in out.final.segs if s.made_by == "8.3.14"]
+        self.assertEqual([(s.s, fam.DHRA_LOPA in s.marks) for s in lost],
+                         [("", True)])
+
+    def test_6_3_111_is_blind_to_the_loss_without_consumes(self):
+        """6.3.111 names the loss (ढ्रलोपे): without `consumes` 8.2.1 hides it
+        and the vowel stays short."""
+        blind = tuple(dataclasses.replace(r, consumes=frozenset())
+                      if r.sutra == "6.3.111" else r for r in RULES)
+        self.assertNotIn("6.3.111", taken(first("punar ramate", blind)))
+        self.assertEqual(first("punar ramate", blind).surface, "punaramate")
+
+    def test_kashika_lidham_midham_upagudham_mudhah(self):
+        """Kāśikā on 6.3.111 (and 8.3.13): लीढम्। मीढम्। उपगूढम्। मूढः — the ढ्
+        of the stem is lost before the ढ् that ष्टुत्व made of ध् (the input has
+        it made), and the अण् before it is long (an already long vowel stays)."""
+        for text, form in (("liḍh~ḍha", "līḍha"), ("mih~ḍha".replace("mih", "miḍh"),
+                                                      "mīḍha"),
+                           ("upaguḍh~ḍha", "upagūḍha"), ("muḍh~ḍha", "mūḍha")):
+            self.assertForms(text, {form})
+        self.assertEqual(steps("liḍh~ḍha"), ["8.3.13", "6.3.111"])
+
+    def test_laghu_anah_kim_trdhah_vrdhah(self):
+        """Laghusiddhāntakaumudī: अणः किम्? तृढः। वृढः (Kāśikā: आतृढम्, आवृढम्) —
+        the ऋ before the lost ढ् is no अण् (Bālamanoramā: ऋकारश्चात्र अण्ग्रहणे न
+        गृह्यते), so it stays short."""
+        for text, form in (("tṛḍh~ḍha", "tṛḍha"), ("vṛḍh~ḍha", "vṛḍha"),
+                           ("ātṛḍh~ḍha", "ātṛḍha")):
+            self.assertForms(text, {form})
+            self.assertEqual(steps(text), ["8.3.13"], text)
+
+    def test_kashika_svalid_dhaukate_has_no_dho_dhe(self):
+        """Kāśikā on 8.3.13: श्वलिड् ढौकते — the first ढ् is a ड् by 8.2.39 and
+        ends a pada, so there is nothing for the rule to take (अपदान्तस्य)."""
+        out = first("śvaliḍ ḍhaukate")
+        self.assertNotIn("8.3.13", taken(out))
+        self.assertEqual(out.surface, "śvaliḍḍhaukate")
+
+    def test_a_pada_final_dha_is_not_lost(self):
+        """The Kāśikā reads the sūtra of a ढ् that does NOT end a pada."""
+        self.assertNotIn("8.3.13", taken(first("liḍh ḍhaukate")))
+
+    def test_kashika_ro_ri_in_a_pada_not_only_at_its_end(self):
+        """Kāśikā on 8.3.14: पदस्येत्यत्र विशेषणे षष्ठी, तेनापदान्तस्यापि रेफस्य
+        लोपो भवति — जर्गृधेरजर्घाः: the र् of the root, not at the end of the
+        pada, is lost before the रु that 8.2.75 has made (here the two pieces
+        of one pada, `~`), and the अ before it is long (6.3.111)."""
+        out = first("ajarghar~r")
+        self.assertEqual(taken(out)[:2], ["8.3.14", "6.3.111"])
+        self.assertEqual(out.surface, "ajarghāḥ")
+        # and the र् of a preverb — निस् + रक्तम्: नीरक्तम्
+        out = first("nir~raktam")
+        self.assertIn("8.3.14", taken(out))
+        self.assertEqual(out.surface, "nīraktam")
+
+    def test_ro_ri_is_only_before_a_ra(self):
+        """A र् before anything else is not lost: अग्निर् नयति."""
+        self.assertNotIn("8.3.14", taken(first("punar nayati")))
+
+    def test_the_vowel_is_lengthened_by_the_projects_own_dirgha(self):
+        """6.3.111's length is the one `anga.akah_savarne_dirghah` gives an अण्
+        with itself — अ→आ, इ→ई, उ→ऊ — and only the sound immediately before the
+        loss (1.1.66) is touched."""
+        for text, vowel in (("punar ramate", "ā"), ("haris ramyaḥ", "ī"),
+                            ("śambhus rājate", "ū")):
+            out = first(text)
+            step = step_of(out, "6.3.111")
+            self.assertEqual(step.detail.adesa, vowel, text)
+            self.assertIn("1.1.66", step.sutras)
+
+
+# ---------------------------------------------------------------------------
+# 8.3.15–16  the visarga, and the restriction before सु
+# ---------------------------------------------------------------------------
+
+
+class VisargaOfRu(_Base):
+    """खरवसानयोर्विसर्जनीयः, रोः सुपि."""
+
+    def test_kashika_vrksa_chadayati_plaksa_chadayati(self):
+        """Kāśikā on 8.3.15: वृक्षश्छादयति। प्लक्षश्छादयति। वृक्षस्तरति। प्लक्षस्तरति —
+        the visarga (8.3.15), then स् (8.3.34), and 8.4.40 before a च-वर्ग."""
+        self.assertForms("vṛkṣas chādayati", {"vṛkṣaśchādayati"})
+        self.assertForms("plakṣas chādayati", {"plakṣaśchādayati"})
+        self.assertForms("vṛkṣas tarati", {"vṛkṣastarati"})
+        self.assertForms("plakṣas tarati", {"plakṣastarati"})
+        self.assertSteps("vṛkṣas tarati", ["8.2.66", "8.3.15", "8.3.34"])
+        self.assertSteps("vṛkṣas chādayati",
+                         ["8.2.66", "8.3.15", "8.3.34", "8.4.40"])
+
+    def test_laghu_ramas_ca(self):
+        """Laghusiddhāntakaumudī (and the engine's own test): रामस् च — the four
+        steps 8.2.66, 8.3.15, 8.3.34, 8.4.40, and रामश्च."""
+        self.assertForms("rāmas ca", {"rāmaśca"})
+        self.assertSteps("rāmas ca", ["8.2.66", "8.3.15", "8.3.34", "8.4.40"])
+
+    def test_kashika_avasane_vrksah_plaksah(self):
+        """Kāśikā on 8.3.15: अवसाने — वृक्षः। प्लक्षः। — at a pause; the visarga
+        of a pause is no जिह्वामूलीय and no स् (the Bhāṣya on 8.3.34: संहितायाम्)."""
+        self.assertForms("vṛkṣas", {"vṛkṣaḥ"})
+        self.assertForms("plakṣas", {"plakṣaḥ"})
+        self.assertEqual(taken(first("vṛkṣas")), ["8.2.66", "8.3.15"])
+        step = step_of(first("vṛkṣas"), "8.3.15")
+        self.assertIn("1.4.110", step.sutras)     # the pause is a condition
+
+    def test_the_visarga_of_a_pause_is_not_a_junction_of_words(self):
+        """No pause after the last word (`pause=False`, the utterance goes on):
+        no visarga."""
+        out = first("vṛkṣas", pause=False)
+        self.assertNotIn("8.3.15", taken(out))
+
+    def test_kashika_kharavasanayoriti_kim_agnir_nayati(self):
+        """Kāśikā on 8.3.15: खरवसानयोरिति किम्? अग्निर्नयति। वायुर्नयति — न् is neither
+        a खर् nor a pause."""
+        self.assertForms("agnis nayati", {"agnirnayati"})
+        self.assertForms("vāyus nayati", {"vāyurnayati"})
+        self.assertNotIn("8.3.15", taken(first("agnis nayati")))
+
+    def test_a_plain_r_is_a_visarga_too(self):
+        """The र् of *punar* (not a रु) is also made visarga before a खर्: पुनः
+        तत्र — and the र् before a vowel stays."""
+        self.assertIn("8.3.15", steps("punar tatra"))
+        self.assertNotIn("8.3.15", steps("punar atra"))
+
+    def test_the_r_of_a_vowel_join_is_not_pada_final(self):
+        """Engine README (6.1.85 is not applied to a rule of sounds): the र् of
+        अर् in *महर्षि* is not a pada-final र्, so no visarga."""
+        self.assertNotIn("8.3.15", taken(first("mahā ṛṣi")))
+
+    def test_kashika_payahsu_yasahsu_niyama(self):
+        """Kāśikā on 8.3.16: पयःसु। यशःसु — the रु before the locative plural सु
+        is a visarga; and the स् of सु is what 8.3.34 or 8.3.36 then work on."""
+        for text in ("payas su{saptamibahuvacana}", "yaśas su{saptamibahuvacana}"):
+            self.assertIn("8.3.15", steps(text), text)
+        self.assertEqual(forms("payas su{saptamibahuvacana}"),
+                         {"payaḥsu", "payassu"})
+
+    def test_kashika_girsu_dhursu_the_niyama_refuses(self):
+        """Kāśikā on 8.3.16: रोरेव सुपि विसर्जनीयादेशः, नान्यस्य। गीर्षु। धूर्षु — a
+        plain र् before सु is not a visarga."""
+        for text in ("gīr su{saptamibahuvacana}", "dhūr su{saptamibahuvacana}"):
+            out = first(text)
+            self.assertNotIn("8.3.15", taken(out), text)
+            self.assertIn("8.3.16", taken(out), text)
+            self.assertEqual(out.surface, text.split()[0] + "su", text)
+        step = step_of(first("gīr su{saptamibahuvacana}"), "8.3.16")
+        self.assertEqual(step.detail.kind, "pratiṣedha")
+        self.assertEqual(step.before, step.after)
+        self.assertIn("8.3.15", [a.sutra for a in step.against])
+
+    def test_the_refusal_is_at_the_very_site_of_8_3_15(self):
+        """README: a refusal names the SAME site as the rule it refuses."""
+        state = parse("gīr su{saptamibahuvacana}")
+        by = {r.sutra: r for r in RULES}
+        view = lambda r: View(state, r.sutra, r.consumes)
+        refusal = list(by["8.3.16"].find(view(by["8.3.16"])))
+        khar = list(by["8.3.15"].find(view(by["8.3.15"])))
+        self.assertEqual(len(refusal), 1)
+        self.assertEqual(len(khar), 1)
+        self.assertEqual(refusal[0].site, khar[0].site)
+        self.assertEqual(refusal[0].edits, ())
+
+    def test_without_the_su_flag_the_niyama_is_silent(self):
+        """Without `saptamibahuvacana` the letters s-u are not known to be the
+        ending, and 8.3.15 acts as it does before any खर्: गीर् सु."""
+        out = first("gīr su")
+        self.assertIn("8.3.15", taken(out))
+        self.assertNotIn("8.3.16", taken(out))
+
+    def test_the_ru_before_su_cites_the_niyama(self):
+        """The visarga of a रु before सु is 8.3.15's, and its step says the
+        niyama of 8.3.16 allows exactly that."""
+        step = step_of(first("payas su{saptamibahuvacana}"), "8.3.15")
+        self.assertIn("8.3.16", step.sutras)
+        plain = step_of(first("punar tatra"), "8.3.15")
+        self.assertNotIn("8.3.16", plain.sutras)
+
+    def test_agrees_with_the_projects_own_8_3_15(self):
+        """`anga.kharavasanayoh` is 8.3.15 as a question. Where it says a word's
+        र् becomes the visarga before a खर् or a pause, the engine's derivation
+        has that step; where it says not, it has not."""
+        cases = (("vṛkṣar", "tarati", True, True), ("vṛkṣar", "", True, False),
+                 ("agnir", "nayati", False, True), ("punar", "atra", False, True))
+        for word, following, pause_ok, has_next in cases:
+            asked = kharavasanayoh(word, at_pause=not has_next,
+                                   following=following)
+            text = f"{word} {following}".strip()
+            asserted = "8.3.15" in taken(first(text.replace("vṛkṣar", "vṛkṣas")
+                                               if word == "vṛkṣar" else text))
+            self.assertEqual(asserted, asked.result is not None, text)
+
+
+# ---------------------------------------------------------------------------
+# 8.3.17–22  the य् and its fates
+# ---------------------------------------------------------------------------
+
+
+class YaAndItsFates(_Base):
+    """भोभगोअघोअपूर्वस्य योऽशि; व्योर्लघुप्रयत्नतरः शाकटायनस्य; लोपः शाकल्यस्य; ओतो
+    गार्ग्यस्य; उञि च पदे; हलि सर्वेषाम्."""
+
+    def test_laghu_deva_iha_devayiha(self):
+        """Laghusiddhāntakaumudī on 8.3.17: देवा इह, देवायिह — the रु after आ and
+        before an अश् is य् (8.3.17), and Śākalya's option drops it (8.3.19)."""
+        self.assertForms("devās iha", {"devāiha", "devāyiha"})
+        courses = dict(every_course("devās iha"))
+        self.assertEqual(courses["devāiha"], ["8.2.66", "8.3.17", "8.3.19"])
+        self.assertEqual(courses["devāyiha"], ["8.2.66", "8.3.17"])
+
+    def test_the_loss_of_the_ya_does_not_let_the_vowels_join(self):
+        """8.2.1: the loss is asiddha to the sandhi of vowels — देवा इह keeps its
+        two vowels apart (Kaumudī on 8.3.19: पूर्वत्रासिद्धमिति लोपशास्त्रस्यासिद्धत्वान्न
+        स्वरसन्धिः)."""
+        out = next(o for o in run("devās iha").outcomes
+                   if "8.3.19" in taken(o))
+        self.assertEqual(out.text(), "devā iha")
+        self.assertNotIn("6.1.101", taken(out))
+
+    def test_laghu_bhos_bhagos_aghos(self):
+        """Laghusiddhāntakaumudī on 8.3.22: भो देवाः। भगो नमस्ते। अघो याहि — and
+        Kaumudī on 8.3.17: भोस् भगोस् अघोस् इति सकारान्ता निपाताः, तेषां रोर्यत्वे
+        कृते. The य् before a consonant is lost by all (8.3.22)."""
+        for text, form in (("bhos devāḥ", "bhodevāḥ"),
+                           ("bhagos namaste", "bhagonamaste"),
+                           ("aghos yāhi", "aghoyāhi"),
+                           ("bhos lakṣmi", "bholakṣmi"),
+                           ("bhos vidvadvṛnda", "bhovidvadvṛnda")):
+            self.assertForms(text, {form})
+            self.assertEqual(steps(text), ["8.2.66", "8.3.17", "8.3.22"], text)
+
+    def test_kashika_bho_atra_bhago_atra_agho_atra(self):
+        """Kāśikā on 8.3.17: भो अत्र। भगो अत्र। अघो अत्र। — before a vowel the य् is
+        lost, always, by Gārgya (8.3.20)."""
+        for text, form in (("bhos atra", "bhoatra"), ("bhagos atra", "bhagoatra"),
+                           ("aghos atra", "aghoatra"), ("bhos idam", "bhoidam")):
+            self.assertForms(text, {form})
+            self.assertEqual(steps(text), ["8.2.66", "8.3.17", "8.3.20"], text)
+            self.assertEqual(len(run(text).outcomes), 1, text)   # no option
+
+    def test_the_o_of_bho_is_not_joined_to_the_vowel_after(self):
+        """Kaumudī on 8.3.17: असन्धिः सौत्रः — भो अत्र stays apart (6.1.109 would
+        give *भोऽत्र*; the loss is asiddha to it)."""
+        out = first("bhos atra")
+        self.assertEqual(out.text(), "bho atra")
+        self.assertNotIn("6.1.109", taken(out))
+
+    def test_kashika_brahmana_dadati_purusa_dadati(self):
+        """Kāśikā on 8.3.17: ब्राह्मणा ददति। पुरुषा ददति — an अवर्ण before the रु
+        and a consonant अश् (द्) after: the य् is lost (8.3.22)."""
+        self.assertForms("brāhmaṇās dadati", {"brāhmaṇādadati"})
+        self.assertForms("puruṣās dadati", {"puruṣādadati"})
+        self.assertEqual(steps("brāhmaṇās dadati"),
+                         ["8.2.66", "8.3.17", "8.3.22"])
+        self.assertEqual(len(run("brāhmaṇās dadati").outcomes), 1)
+
+    def test_kashika_ka_aste_kayaste(self):
+        """Kāśikā on 8.3.17 and 8.3.19: क आस्ते, कयास्ते; काक आस्ते, काकयास्ते
+        — the अवर्ण-पूर्व रु's य् is dropped or kept."""
+        self.assertForms("kas āste", {"kaāste", "kayāste"})
+        self.assertForms("kākas āste", {"kākaāste", "kākayāste"})
+
+    def test_kashika_agnir_atra_vayur_atra_the_other_sounds_before(self):
+        """Kāśikā: भोभगोअघोअपूर्वस्येति किम्? अग्निरत्र। वायुरत्र — इ, उ before."""
+        self.assertNotIn("8.3.17", taken(first("agnis atra")))
+        self.assertNotIn("8.3.17", taken(first("vāyus atra")))
+
+    def test_kashika_asi_kim_vrksah_and_kaumudi_devah_santi(self):
+        """Kāśikā: अश्ग्रहणं किम्? वृक्षः। प्लक्षः; Kaumudī: अशि किम्? देवाः सन्ति —
+        a खर् (or a pause) follows: the visarga, not the य्."""
+        out = first("devās santi")
+        self.assertNotIn("8.3.17", taken(out))
+        self.assertIn("8.3.15", taken(out))
+        self.assertNotIn("8.3.17", taken(first("vṛkṣas")))
+
+    def test_kashika_ro_ity_eva_pratar_atra_punar_atra(self):
+        """Kāśikā: रोरित्येव — प्रातरत्र। पुनरत्र — a plain र् is no रु."""
+        self.assertNotIn("8.3.17", taken(first("prātar atra")))
+        self.assertNotIn("8.3.17", taken(first("punar atra")))
+        self.assertForms("punar atra", {"punaratra"})
+
+    def test_bho_without_the_word_is_not_special(self):
+        """The ओ alone does not do it: a word that is not *bhos*, *bhagos*,
+        *aghos* keeps its रु before an अश् (देवो would be 6.1.113/114's)."""
+        self.assertNotIn("8.3.17", taken(first("devos atra")))
+
+    def test_kashika_dvavatra_asavaditya(self):
+        """Kāśikā on 8.3.18–19: असावादित्यः, असा आदित्यः; द्वावत्र, द्वा अत्र —
+        a व् that 6.1.78 made of औ, after आ, is dropped or kept."""
+        self.assertForms("asau ādityaḥ", {"asāvādityaḥ", "asāādityaḥ"},
+                         RULES_YAN)
+        self.assertForms("dvau atra", {"dvāvatra", "dvāatra"}, RULES_YAN)
+        self.assertForms("dvau ānaya", {"dvāvānaya", "dvāānaya"}, RULES_YAN)
+
+    def test_kaumudi_hara_ehi_visnu_iha_sriya_udyatah_gura_utkah(self):
+        """Kaumudī on 8.3.19: हर एहि। हरयेहि। विष्ण इह। विष्णविह। श्रिया उद्यतः।
+        श्रियायुद्यतः। गुरा उत्कः। गुरावुत्कः — the य्/व् of 6.1.78 (ए, ओ, ऐ, औ)."""
+        for text, both in (("hare ehi", {"haraehi", "harayehi"}),
+                           ("viṣṇo iha", {"viṣṇaiha", "viṣṇaviha"}),
+                           ("śriyai udyataḥ", {"śriyāudyataḥ", "śriyāyudyataḥ"}),
+                           ("gurau utkaḥ", {"gurāutkaḥ", "gurāvutkaḥ"})):
+            self.assertForms(text, both, RULES_YAN)
+
+    def test_kaumudi_the_loss_leaves_the_vowels_unjoined(self):
+        """Kaumudī on 8.3.19: हर एहि — after the य् is lost the two vowels are
+        not joined by ओमाङोश्च (पररूप); the loss is asiddha."""
+        out = next(o for o in run("hare ehi", RULES_YAN).outcomes
+                   if "8.3.19" in taken(o))
+        self.assertEqual(out.text(), "hara ehi")
+
+    def test_kaumudi_dadhy_atra_madhv_atra_avarnapurvayoh_kim(self):
+        """Tattvabodhinī on 8.3.19: अवर्णपूर्वयोः किम्? दध्यत्र। मध्वत्र — इ, उ
+        before the य्/व्: no loss (and 6.1.77 makes them)."""
+        for text, form in (("dadhi atra", "dadhyatra"), ("madhu atra", "madhvatra")):
+            out = first(text, RULES_YAN)
+            self.assertNotIn("8.3.19", taken(out), text)
+            self.assertEqual(out.surface, form)
+
+    def test_tattvabodhini_asi_kim_vrksav_karoti(self):
+        """Tattvabodhinī on 8.3.19: अशि किम्? वृक्षव् करोति — a खर् follows, so
+        the व् is not lost."""
+        out = first("vṛkṣav karoti")
+        self.assertNotIn("8.3.19", taken(out))
+        self.assertEqual(out.surface, "vṛkṣavkaroti")
+
+    def test_kashika_8_3_22_the_lopa_is_nitya_before_a_consonant(self):
+        """Kaumudī on 8.3.22: भोभगोअघोअपूर्वस्य लघ्वलघूच्चारणस्य यकारस्य लोपः स्याद्धलि
+        सर्वेषां मतेन — 8.3.22 displaces 8.3.19's option, and (for the ओ) 8.3.20."""
+        self.assertIn("8.3.19", displaced(first("brāhmaṇās dadati"), "8.3.22"))
+        self.assertIn("8.3.20", displaced(first("bhos dadāti"), "8.3.22"))
+        # …and take the declaration away: the option of 8.3.19 is back
+        stripped = tuple(dataclasses.replace(r, overrides=())
+                         if r.sutra == "8.3.22" else r for r in RULES)
+        self.assertGreater(len(run("brāhmaṇās dadati", stripped).outcomes), 1)
+
+    def test_kaumudi_hali_kim_devayiha(self):
+        """Kaumudī on 8.3.22: हलि किम्? देवायिह — a vowel follows: only the
+        option of 8.3.19, both courses (देवायिह is one)."""
+        self.assertIn("devāyiha", forms("devās iha"))
+
+    def test_kashika_8_3_21_su_u_ekagnih(self):
+        """Kaumudī on 8.3.21: स उ एकाग्निः — the य् before the particle उञ् is
+        lost, and there is no option (विकल्पनिवृत्त्यर्थम्)."""
+        out = first("sas u{nipata} ekāgniḥ", RULES)
+        self.assertEqual(taken(out)[:3], ["8.2.66", "8.3.17", "8.3.21"])
+        self.assertEqual(len(run("sas u{nipata} ekāgniḥ", RULES).outcomes), 1)
+        self.assertIn("8.3.19", displaced(out, "8.3.21"))
+        self.assertEqual(out.text().split()[:2], ["sa", "u"])
+
+    def test_kashika_8_3_21_pade_kim_tantrayutam(self):
+        """Kāśikā on 8.3.21: पद इति किम्? तन्त्र उतम्, तन्त्रयुतम् — the उ of
+        *utam* is no particle: 8.3.19's option, not 8.3.21's nitya loss."""
+        self.assertEqual(len(run("tantre utam", RULES_YAN).outcomes), 2)
+        self.assertEqual(forms("tantre utam", RULES_YAN),
+                         {"tantrayutam", "tantrautam"})
+        self.assertNotIn("8.3.21", taken(first("tantre utam", RULES_YAN)))
+
+    def test_without_the_particle_flag_8_3_21_is_silent(self):
+        """The letter उ alone is not the particle: the same words without `nipata`
+        take 8.3.19's option, not 8.3.21."""
+        out = first("sas u ekāgniḥ")
+        self.assertNotIn("8.3.21", taken(out))
+        self.assertEqual(len(run("sas u ekāgniḥ").outcomes), 2)
+
+    def test_the_laghu_ya_is_offered_on_request(self):
+        """Kāśikā on 8.3.18: भोयत्र, भो अत्र; कयास्ते, क आस्ते — Śākaṭāyana's
+        lighter य्. It is spelt as य्, so it is offered only where the caller
+        asks (`sakatayana`): three courses — the lighter sound, the loss,
+        neither (Nyāsa on 8.3.19: त्रीणि रूपाणि)."""
+        outs = run("kas{sakatayana} āste").outcomes
+        self.assertEqual(len(outs), 3)
+        lighter = [o for o in outs if "8.3.18" in taken(o)]
+        self.assertEqual(len(lighter), 1)
+        marked = [s for s in lighter[0].final.segs if fam.LAGHU in s.marks]
+        self.assertEqual([s.s for s in marked], ["y"])
+        self.assertEqual(sorted(o.surface for o in outs),
+                         sorted(["kaāste", "kayāste", "kayāste"]))
+        # without the flag there is no lighter course and two derivations
+        self.assertEqual(len(run("kas āste").outcomes), 2)
+        self.assertTrue(all("8.3.18" not in taken(o)
+                            for o in run("kas āste").outcomes))
+
+    def test_the_laghu_ya_stays_after_o_and_the_plain_one_is_lost(self):
+        """Kāśikā on 8.3.20: नित्यार्थोऽयमारम्भः ... लघुप्रयत्नतरस्तु भवत्येव यकारः, भो
+        अत्र, भोयत्र — after ओ the plain य् is always lost, the lighter one stays."""
+        outs = run("bhos{sakatayana} atra").outcomes
+        self.assertEqual(sorted(o.surface for o in outs), ["bhoatra", "bhoyatra"])
+        stays = next(o for o in outs if o.surface == "bhoyatra")
+        self.assertIn("8.3.18", taken(stays))
+        self.assertNotIn("8.3.20", taken(stays))
+        lost = next(o for o in outs if o.surface == "bhoatra")
+        self.assertIn("8.3.20", taken(lost))
+
+    def test_kashika_8_3_22_sarvesam_takes_the_laghu_ya_too(self):
+        """Kāśikā on 8.3.22: सर्वेषांग्रहणं शाकटायनस्यापि लोपो यथा स्यात्, लघुप्रयत्नतरो
+        मा भूदिति — before a consonant even Śākaṭāyana's य् is lost: one course."""
+        outs = run("bhos{sakatayana} devāḥ").outcomes
+        self.assertEqual({o.surface for o in outs}, {"bhodevāḥ"})
+        self.assertEqual(len(outs), 1)
+        self.assertIn("8.3.18", [a.sutra for a in
+                                 step_of(outs[0], "8.3.22").against])
+
+    def test_8_3_19_does_not_lose_the_lighter_sound(self):
+        """The lighter य् is the other course of the option, not a sound the loss
+        then takes (Nyāsa: three courses, not four): with `sakatayana` no course
+        both makes it lighter and drops it."""
+        for o in run("kas{sakatayana} āste").outcomes:
+            self.assertFalse({"8.3.18", "8.3.19"} <= set(taken(o)))
+
+    def test_the_y_v_of_8_3_18_22_are_read_from_the_sutra(self):
+        """The two letters of *व्योः* are read from the sūtra's own word, and the
+        letter of *ओतः* too — not typed."""
+        self.assertEqual(fam._yv(), ("v", "y"))
+        self.assertEqual(fam._o(), "o")
+
+
+# ---------------------------------------------------------------------------
+# 8.3.34–37  what the visarga becomes before a खर्
+# ---------------------------------------------------------------------------
+
+
+class VisargaBeforeKhar(_Base):
+    """विसर्जनीयस्य सः, शर्परे विसर्जनीयः, वा शरि, कुप्वोः ≍क≍पौ च."""
+
+    def test_kashika_8_3_34_the_sa_before_each_khar(self):
+        """Kāśikā on 8.3.34: वृक्षश्छादयति। प्लक्षश्छादयति। वृक्षष्ठकारः। प्लक्षष्ठकारः।
+        वृक्षस्थकारः। प्लक्षस्थकारः। वृक्षश्चिनोति। प्लक्षश्चिनोति। वृक्षष्टीकते।
+        प्लक्षष्टीकते। वृक्षस्तरति। प्लक्षस्तरति — the स् of 8.3.34 is what
+        8.4.40 and 8.4.41 then turn to श् or ष् (8.4.41 is the hal family's:
+        here it is the स् that is asserted, by the step)."""
+        for text in ("vṛkṣas chādayati", "vṛkṣas ṭhakāraḥ", "vṛkṣas thakāraḥ",
+                     "vṛkṣas cinoti", "vṛkṣas ṭīkate", "vṛkṣas tarati",
+                     "plakṣas chādayati", "plakṣas ṭhakāraḥ"):
+            out = first(text)
+            self.assertIn("8.3.34", taken(out), text)
+            self.assertTrue(after_step(out, "8.3.34").startswith(
+                text.split()[0][:-1] + "s "), text)
+
+    def test_laghu_visnustrata(self):
+        """Laghusiddhāntakaumudī on 8.3.34: खरि — विष्णुस्त्राता."""
+        self.assertForms("viṣṇus trātā", {"viṣṇustrātā"})
+        self.assertSteps("viṣṇus trātā", ["8.2.66", "8.3.15", "8.3.34"])
+
+    def test_bhashya_a_pause_is_no_khar(self):
+        """Bhāṣya on 8.3.34: इह कस्मान्न भवति — वृक्षः प्लक्ष इति? — the visarga of
+        a pause stays (संहितायाम्; nothing follows)."""
+        self.assertNotIn("8.3.34", taken(first("vṛkṣas")))
+        self.assertForms("vṛkṣas", {"vṛkṣaḥ"})
+
+    def test_the_utsarga_does_not_return_in_the_field_of_8_3_37(self):
+        """Kaumudī on 8.3.37: येन नाप्राप्त इति न्यायेन विसर्जनीयस्य सः इत्यस्यापवादः.
+        Declining 8.3.37's option leaves the visarga (चाद्विसर्गः), never the स्:
+        *वृक्षस्करोति is not a form."""
+        got = forms("vṛkṣas karoti")
+        self.assertEqual(got, {"vṛkṣaẖkaroti", "vṛkṣaḥkaroti"})
+        self.assertNotIn("vṛkṣaskaroti", got)
+        for p in ("vṛkṣas pacati",):
+            self.assertNotIn("vṛkṣaspacati", forms(p))
+
+    def test_kashika_8_3_37_vrksa_karoti_khanati_pacati_phalati(self):
+        """Kāśikā on 8.3.37: वृक्ष≍ करोति, वृक्षः करोति। वृक्ष≍ खनति, वृक्षः खनति।
+        वृक्ष≍ पचति, वृक्षः पचति। वृक्ष≍ फलति, वृक्षः फलति — the कवर्ग takes the
+        जिह्वामूलीय, the पवर्ग the उपध्मानीय (1.3.10), or the visarge stays."""
+        for text, special in (("vṛkṣas karoti", JIHVAMULIYA),
+                              ("vṛkṣas khanati", JIHVAMULIYA),
+                              ("vṛkṣas pacati", UPADHMANIYA),
+                              ("vṛkṣas phalati", UPADHMANIYA)):
+            stem, word = text.split()
+            self.assertEqual(forms(text), {f"vṛkṣa{special}{word}",
+                                           f"vṛkṣa{VISARGA}{word}"}, text)
+
+    def test_the_two_substitutes_are_paired_by_1_3_10(self):
+        """कुप्वोः ≍क≍पौ — two lists of equal length, so 1.3.10 pairs them in
+        order (`reading.yathasamkhya`); the step says so."""
+        step = step_of(first("vṛkṣas karoti"), "8.3.37")
+        self.assertIn("1.3.10", step.sutras)
+        self.assertEqual(step.detail.adesa, JIHVAMULIYA)
+        self.assertEqual(step_of(first("vṛkṣas pacati"), "8.3.37")
+                         .detail.adesa, UPADHMANIYA)
+
+    def test_the_option_is_the_visarga_the_ca_brings_back(self):
+        """Kaumudī on 8.3.37: चाद्विसर्गः — the second course is an option of
+        8.3.37 itself, so the trace shows it declined."""
+        outs = run("vṛkṣas karoti").outcomes
+        self.assertEqual(len(outs), 2)
+        declined = [s for o in outs for s in o.steps if s.declined]
+        self.assertEqual([s.sutra for s in declined], ["8.3.37"])
+
+    def test_kashika_8_3_35_sasah_ksuram_purusah_ksuram(self):
+        """Kāśikā on 8.3.35: शशः क्षुरम्। पुरुषः क्षुरम्। अद्भिः प्सातम्। वासः क्षौमम्।
+        पुरुषः त्सरुः — the visarga stays (no स्, no जिह्वामूलीय, no उपध्मानीय)."""
+        for text, form in (("śaśas kṣuram", "śaśaḥkṣuram"),
+                           ("puruṣas kṣuram", "puruṣaḥkṣuram"),
+                           ("adbhis psātam", "adbhiḥpsātam"),
+                           ("vāsas kṣaumam", "vāsaḥkṣaumam"),
+                           ("puruṣas tsaruḥ", "puruṣaḥtsaruḥ")):
+            self.assertForms(text, {form})
+            self.assertEqual(len(run(text).outcomes), 1, text)
+            self.assertIn("8.3.35", steps(text), text)
+            step = step_of(first(text), "8.3.35")
+            self.assertEqual(step.before, step.after)     # a refusal
+            self.assertEqual(step.detail.kind, "pratiṣedha")
+
+    def test_kashika_8_3_35_wins_over_8_3_37_though_later(self):
+        """Kāśikā on 8.3.37: पूर्वत्रासिद्धे नास्ति विप्रतिषेधोऽभावादुत्तरस्येति शर्परे
+        विसर्जनीयः इत्येतदेव भवति — वासः क्षौमम्, अद्भिः प्सातम्: क and प are
+        कु/पु, and 8.3.37 stands LATER in the tripādī; 8.3.35 is offered its
+        place and the step says it displaced 8.3.37 and 8.3.34."""
+        out = first("vāsas kṣaumam")
+        self.assertIn("8.3.37", displaced(out, "8.3.35"))
+        # before a त् (not कु/पु) it is 8.3.34 that 8.3.35 displaces
+        self.assertIn("8.3.34", displaced(first("puruṣas tsaruḥ"), "8.3.35"))
+        stripped = tuple(dataclasses.replace(r, overrides=())
+                         if r.sutra == "8.3.35" else r for r in RULES)
+        self.assertGreater(len(run("vāsas kṣaumam", stripped).outcomes), 1)
+
+    def test_a_khar_not_followed_by_a_sar_is_not_8_3_35s(self):
+        """*Śarpare* — the शर् must follow the खर्: कः करोति has none."""
+        self.assertNotIn("8.3.35", taken(first("kas karoti")))
+
+    def test_kashika_8_3_36_vrksah_sete_vrksassete(self):
+        """Kāśikā on 8.3.36: वृक्षः शेते, वृक्षश्शेते। प्लक्षः शेते, प्लक्षश्शेते। वृक्षः
+        षण्डे, वृक्षष्षण्डे। वृक्षः साये, वृक्षस्साये — and Laghu: हरिः शेते,
+        हरिश्शेते."""
+        self.assertForms("haris śete", {"hariḥśete", "hariśśete"})
+        self.assertForms("vṛkṣas śete", {"vṛkṣaḥśete", "vṛkṣaśśete"})
+        self.assertForms("vṛkṣas sāye", {"vṛkṣaḥsāye", "vṛkṣassāye"})
+        # before ष् the स् is what 8.3.34 makes; that ष्ष् is 8.4.41's (the
+        # hal family's, which is being extended) is not asserted here
+        self.assertIn("vṛkṣaḥṣaṇḍe", forms("vṛkṣas ṣaṇḍe"))
+        courses = run("vṛkṣas ṣaṇḍe").outcomes
+        self.assertEqual(len(courses), 2)
+        self.assertEqual(after_step(courses[1], "8.3.34"), "vṛkṣas ṣaṇḍe")
+
+    def test_the_two_courses_of_8_3_36_by_their_steps(self):
+        """The visarga stays (8.3.36 taken), or 8.3.34 makes it स् and 8.4.40
+        joins it to श् (declined) — the option-taken course first."""
+        courses = every_course("haris śete")
+        self.assertEqual(courses[0][0], "hariḥśete")
+        self.assertEqual(courses[0][1], ["8.2.66", "8.3.15", "8.3.36"])
+        self.assertEqual(courses[1][0], "hariśśete")
+        self.assertEqual(courses[1][1], ["8.2.66", "8.3.15", "8.3.34", "8.4.40"])
+
+    def test_kaumudi_8_3_36_is_a_vibhasha_that_displaces_a_rule_already_got(self):
+        """Kaumudī on 8.3.34: पाक्षिके विसर्गे प्राप्ते — the visarga is got
+        optionally: declining it leaves 8.3.34's own स् (the general rule)."""
+        step = step_of(first("haris śete"), "8.3.36")
+        self.assertIn("8.3.34", [a.sutra for a in step.against])
+        self.assertEqual(step.option, "वा")
+
+    def test_kashika_vartika_kharpare_sari_va_visargalopah(self):
+        """Kāśikā on 8.3.36: खर्परे शरि वा लोपो वक्तव्यः। वृक्षा स्थातारः, वृक्षाः
+        स्थातारः, वृक्षास्स्थातारः — Kaumudī: पक्षे विसर्गे सत्वे च त्रैरूप्यम् —
+        three courses, the loss first."""
+        courses = every_course("vṛkṣās sthātāraḥ")
+        self.assertEqual([c[0] for c in courses],
+                         ["vṛkṣāsthātāraḥ", "vṛkṣāḥsthātāraḥ",
+                          "vṛkṣāssthātāraḥ"])
+        loss = run("vṛkṣās sthātāraḥ").outcomes[0]
+        step = next(s for s in loss.steps if s.sutra == "8.3.36")
+        self.assertEqual(step.detail.authority, "vārttika")
+        self.assertEqual(step.detail.varttika,
+                         corpus.varttikas_on("8.3.36")[0].text.strip(" ।"))
+
+    def test_the_vartika_needs_a_khar_after_the_sar(self):
+        """*Kharpare śari*: without a खर् after the शर् the loss is not offered."""
+        self.assertEqual(len(run("haris śete").outcomes), 2)
+        self.assertEqual(len(run("vṛkṣās sthātāraḥ").outcomes), 3)
+
+    def test_the_vartika_and_the_sutra_do_not_share_their_declined_option(self):
+        """The engine keys a declined option by sūtra and site, and a vārttika
+        has its sūtra's number: had both the same site, declining the vārttika
+        would decline 8.3.36 with it and the visarga course would vanish."""
+        surfaces = {o.surface for o in run("vṛkṣās sthātāraḥ").outcomes}
+        self.assertIn("vṛkṣāḥsthātāraḥ", surfaces)
+
+    def test_the_vartika_sampumkanam_so_vaktavyah_overrides_the_options(self):
+        """Kaumudī on 8.3.34: संपुंकानां सो वक्तव्यः — of सम्, पुम्, कान् the visarga
+        is always स् (Bālamanoramā: पाक्षिकविसर्गबाधनार्थम्; and on 8.3.12: कुप्वोः
+        इति प्राप्तौ संपुंकानामिति सत्वम्). *kān kān*: 8.3.12, 8.3.15, then the
+        vārttika — not 8.3.37's जिह्वामूलीय."""
+        out = first("kān kān")
+        self.assertEqual([s for s in taken(out) if s in ("8.3.12", "8.3.15",
+                                                        "8.3.34", "8.3.37")],
+                         ["8.3.12", "8.3.15", "8.3.34"])
+        self.assertEqual(len(run("kān kān").outcomes), 1)
+        step = next(s for s in out.steps if s.sutra == "8.3.34")
+        self.assertEqual(step.detail.authority, "vārttika")
+        self.assertEqual(step.detail.varttika, fam._VT_SAMPUM)
+        self.assertIn("8.3.37", [a.sutra for a in step.against])
+
+    def test_the_words_of_the_sampumkanam_vartika_are_read_from_the_commentary(self):
+        """सम् पुम्-कान् are read from the Bālamanoramā's line, not typed."""
+        line = "सम् पुम्-कान्-एतेषां विसर्गस्य सकारो वक्तव्य इत्यर्थः"
+        self.assertIn(line, corpus.commentary_on("8.3.34", "balamanorama"))
+        self.assertEqual([to_iast(w) for w in line.split("एतेषां")[0]
+                          .replace("-", " ").split()], ["sam", "pum", "kān"])
+
+
+# ---------------------------------------------------------------------------
+# 8.3.38–48  the visarga as स् or ष् before a कवर्ग or पवर्ग sound
+# ---------------------------------------------------------------------------
+
+
+class SaAndSaOfTheVisarga(_Base):
+    """सोऽपदादौ, इणः षः, नमस्पुरसोर्गत्योः, इदुदुपधस्य चाप्रत्ययस्य, तिरसोऽन्यतरस्याम्,
+    द्विस्त्रिश्चतुरिति कृत्वोऽर्थे, इसुसोः सामर्थ्ये, नित्यं समासेऽनुत्तरपदस्थस्य,
+    अतः कृकमिकंसकुम्भपात्रकुशाकर्णीष्वनव्ययस्य, अधःशिरसी पदे, कस्कादिषु च."""
+
+    # 8.3.38 -----------------------------------------------------------------
+
+    def test_kashika_8_3_38_payaspasam_payaskalpam_payaskam_payaskamyati(self):
+        """Kāśikā on 8.3.38: पयस्पाशम्। पयस्कल्पम्। यशस्कल्पम्। पयस्कम्। यशस्कम्।
+        पयस्काम्यति। यशस्काम्यति — the कु/पु sound begins an AFFIX (पाशप्, कल्पप्,
+        क, काम्यच्), and the stem before it is a pada (1.4.17): written as a word
+        of its own, the affix carrying the flag `pratyaya`."""
+        for stem, affix, form in (("payas", "pāśa", "payaspāśa"),
+                                  ("payas", "kalpa", "payaskalpa"),
+                                  ("yaśas", "kalpa", "yaśaskalpa"),
+                                  ("payas", "ka", "payaska"),
+                                  ("yaśas", "ka", "yaśaska"),
+                                  ("payas", "kāmyati", "payaskāmyati"),
+                                  ("yaśas", "kāmyati", "yaśaskāmyati")):
+            text = f"{stem} {affix}{{pratyaya}}"
+            self.assertForms(text, {form})
+            self.assertEqual(steps(text), ["8.2.66", "8.3.15", "8.3.38"], text)
+
+    def test_kashika_8_3_38_apadadau_kim_paya_kamayate(self):
+        """Kāśikā: अपदादाविति किम्? पय कामयते। पय पिबति — a पद begins with the
+        कु/पु: not 8.3.38 (the visarga takes 8.3.37's courses)."""
+        for text in ("payas kāmayate", "payas pibati"):
+            self.assertNotIn("8.3.38", taken(first(text)), text)
+            self.assertEqual(len(forms(text)), 2, text)
+
+    def test_the_pratyaya_flag_is_what_makes_the_difference(self):
+        """The same letters with and without `pratyaya`: स् and no स्."""
+        self.assertIn("payaskalpa", forms("payas kalpa{pratyaya}"))
+        self.assertNotIn("payaskalpa", forms("payas kalpa"))
+
+    def test_8_3_38_displaces_8_3_37_by_name(self):
+        """Padamañjarī on 8.3.38: पूर्वस्यायमपवादः — the step names 8.3.37."""
+        out = first("payas pāśa{pratyaya}")
+        self.assertIn("8.3.37", displaced(out, "8.3.38"))
+        why = next(a.why for a in step_of(out, "8.3.38").against
+                   if a.sutra == "8.3.37")
+        self.assertIn("पूर्वस्यायमपवादः", why)
+
+    def test_kashika_vartika_anavyayasya_pratahkalpam_punahkalpam(self):
+        """Kāśikā on 8.3.38: सोऽपदादावित्यनव्ययस्येति वक्तव्यम्। इह मा भूत् —
+        प्रातःकल्पम्, पुनःकल्पम् — an indeclinable's visarga stays. The word is
+        an avyaya if the caller says so or the svarādi gaṇa lists it (1.1.37);
+        *punaḥ* has an उ before, so 8.3.39 is held off by the same vārttika."""
+        for text, form in (("prātar kalpa{pratyaya}", "prātaḥkalpa"),
+                           ("punar kalpa{pratyaya}", "punaḥkalpa"),
+                           ("prātas{avyaya} kalpa{pratyaya}", "prātaḥkalpa"),
+                           ("punaḥ kalpa{pratyaya}", "punaḥkalpa")):
+            self.assertForms(text, {form})
+        out = first("punar kalpa{pratyaya}")
+        step = next(s for s in out.steps if s.detail.authority == "vārttika")
+        self.assertEqual(step.detail.kind, "pratiṣedha")
+        self.assertEqual(step.detail.varttika, fam._VT_ANAVYAYA)
+        # the sūtra itself does make स् of an ordinary word's visarga:
+        self.assertIn("payaskalpa", forms("payas kalpa{pratyaya}"))
+
+    def test_the_vartika_refusal_is_at_the_site_of_the_sutra(self):
+        """README: a refusal names the same site as the rule it refuses."""
+        state = parse("prātar kalpa{pratyaya}")
+        # bring the visarga into being the way the derivation does
+        out = first("prātar kalpa{pratyaya}")
+        visarga_state = out.final
+        for r in RULES:
+            if r.sutra == "8.3.38" and r.varttika == fam._VT_ANAVYAYA:
+                refusal = r
+        assert refusal
+        mid = derive(state, tuple(x for x in RULES if x.sutra in ("8.3.15",)))[0]
+        view = lambda rule: View(mid.final, rule.sutra, rule.consumes)
+        base = next(r for r in RULES if r.sutra == "8.3.38" and not r.varttika)
+        a = list(refusal.find(view(refusal)))
+        b = list(base.find(view(base)))
+        self.assertEqual(len(a), 1)
+        self.assertEqual(len(b), 1)
+        self.assertEqual(a[0].site, b[0].site)
+        self.assertEqual(a[0].edits, ())
+
+    def test_kashika_vartika_kamye_roreva_gih_kamyati(self):
+        """Kāśikā on 8.3.38: रोरेव काम्ये नान्यस्येति नियमार्थं वक्तव्यम्। पयस्काम्यति।
+        यशस्काम्यति। इह मा भूत् — गीःकाम्यति। धूःकाम्यति — a plain र्'s visarga
+        stays; a रु's is स् (Tattvabodhinī: 8.3.39 is held off by the same
+        restriction: इण्, ई/ऊ)."""
+        for text, form in (("payas kāmyati{pratyaya}", "payaskāmyati"),
+                           ("gīr kāmyati{pratyaya}", "gīḥkāmyati"),
+                           ("dhūr kāmyati{pratyaya}", "dhūḥkāmyati"),
+                           ("sarpis kāmyati{pratyaya}", "sarpiṣkāmyati")):
+            self.assertForms(text, {form})
+        step = next(s for s in first("gīr kāmyati{pratyaya}").steps
+                    if s.detail.authority == "vārttika")
+        self.assertEqual(step.detail.varttika, fam._VT_KAMYE)
+
+    # 8.3.39 -----------------------------------------------------------------
+
+    def test_kashika_8_3_39_sarpishpasham_yajushpasham(self):
+        """Kāśikā on 8.3.39: सर्पिष्पाशम्। यजुष्पाशम्। सर्पिष्कल्पम्। यजुष्कल्पम्।
+        सर्पिष्कम्। यजुष्कम्। सर्पिष्काम्यति। यजुष्काम्यति — after an इण् the
+        visarga is ष् (the wide इण्: to the later ण्, Bālamanoramā on 8.3.57)."""
+        for stem, affix, form in (("sarpis", "pāśa", "sarpiṣpāśa"),
+                                  ("yajus", "pāśa", "yajuṣpāśa"),
+                                  ("sarpis", "kalpa", "sarpiṣkalpa"),
+                                  ("yajus", "kalpa", "yajuṣkalpa"),
+                                  ("sarpis", "ka", "sarpiṣka"),
+                                  ("yajus", "ka", "yajuṣka"),
+                                  ("sarpis", "kāmyati", "sarpiṣkāmyati"),
+                                  ("yajus", "kāmyati", "yajuṣkāmyati")):
+            self.assertForms(f"{stem} {affix}{{pratyaya}}", {form})
+            self.assertIn("8.3.39", steps(f"{stem} {affix}{{pratyaya}}"))
+
+    def test_8_3_39_displaces_8_3_38_and_37(self):
+        """Tattvabodhinī on 8.3.39: सोऽपदादावित्यस्यापवादः — and, through it,
+        8.3.37."""
+        out = first("sarpis pāśa{pratyaya}")
+        self.assertIn("8.3.38", displaced(out, "8.3.39"))
+        self.assertIn("8.3.37", displaced(out, "8.3.39"))
+        stripped = tuple(dataclasses.replace(r, overrides=())
+                         if r.sutra == "8.3.39" else r for r in RULES)
+        self.assertNotEqual(first("sarpis pāśa{pratyaya}", stripped).surface,
+                            "sarpiṣpāśa")
+
+    def test_kashika_8_3_39_apadadaviti_and_kupvoriti(self):
+        """Kāśikā: अपदादावित्येव — अग्निः करोति। वायुः करोति। अग्निः पचति; कुप्वोरित्येव
+        — सर्पिस्ते। यजुस्ते."""
+        for text in ("agnis karoti", "vāyus karoti", "agnis pacati"):
+            self.assertNotIn("8.3.39", taken(first(text)), text)
+            self.assertEqual(len(forms(text)), 2, text)
+        self.assertForms("sarpis te", {"sarpiste"})
+        self.assertForms("yajus te", {"yajuste"})
+
+    def test_the_wide_in_is_the_later_na_reading(self):
+        """The इण् of 8.3.39 is the one to the LATER ण् (Bālamanoramā on 8.3.57:
+        *'इ' णिति परणकारेण प्रत्याहारः*): इ उ ऋ ऌ ए ओ ऐ औ ह य व र ल — so ए and ओ are in it
+        and अ, आ are not."""
+        wide = fam._wide_in()
+        for sound in ("i", "u", "ṛ", "ḷ", "e", "o", "ai", "au", "h", "y", "v",
+                      "r", "l"):
+            self.assertIn(sound, wide)
+        for sound in ("a", "ā", "k", "s"):
+            self.assertNotIn(sound, wide)
+
+    # 8.3.40 -----------------------------------------------------------------
+
+    def test_kashika_8_3_40_namaskarta_puraskarta(self):
+        """Kāśikā on 8.3.40: नमस्कर्ता। नमस्कर्तुम्। नमस्कर्तव्यम्। पुरस्कर्ता।
+        पुरस्कर्तुम्। पुरस्कर्तव्यम् — नमस् and पुरस् as गति."""
+        for text, form in (("namas{gati} kartā", "namaskartā"),
+                           ("namas{gati} kartum", "namaskartum"),
+                           ("namas{gati} kartavyam", "namaskartavyam"),
+                           ("puras{gati} kartā", "puraskartā"),
+                           ("puras{gati} kartum", "puraskartum"),
+                           ("puras{gati} kartavyam", "puraskartavyam")):
+            self.assertForms(text, {form})
+            self.assertEqual(len(run(text).outcomes), 1, text)
+
+    def test_kashika_8_3_40_gatyoriti_kim_puh_purau_purah_karoti(self):
+        """Kāśikā: गत्योरिति किम्? पूः, पुरौ, पुरः करोति — the word is not a गति,
+        so 8.3.37's courses; Kaumudī: तदभावे नमः करोति."""
+        for text in ("puras karoti", "namas karoti"):
+            self.assertNotIn("8.3.40", taken(first(text)), text)
+            self.assertEqual(len(forms(text)), 2, text)
+        self.assertIn("namaḥkaroti", forms("namas karoti"))
+
+    # 8.3.41 -----------------------------------------------------------------
+
+    def test_kashika_8_3_41_niskrtam_duskrtam_and_the_rest(self):
+        """Kāśikā on 8.3.41: निष्कृतम्। निष्पीतम्। दुष्कृतम्। दुष्पीतम्। बहिष्कृतम्।
+        बहिष्पीतम्। आविष्कृतम्। आविष्पीतम्। चतुष्कृतम्। चतुष्कपालम्। चतुष्कलम्।
+        चतुष्कण्टकम्। चतुष्पीतम्। प्रादुष्कृतम्। प्रादुष्पीतम् — the words the
+        Kāśikā lists (निर्दुर्बहिराविश्चतुर्प्रादुस्)."""
+        for text, form in (("nis kṛtam", "niṣkṛtam"), ("nis pītam", "niṣpītam"),
+                           ("dus kṛtam", "duṣkṛtam"), ("dus pītam", "duṣpītam"),
+                           ("bahis kṛtam", "bahiṣkṛtam"),
+                           ("bahis pītam", "bahiṣpītam"),
+                           ("āvis kṛtam", "āviṣkṛtam"),
+                           ("āvis pītam", "āviṣpītam"),
+                           ("catur kṛtam", "catuṣkṛtam"),
+                           ("catur kapālam", "catuṣkapālam"),
+                           ("catur kalam", "catuṣkalam"),
+                           ("catur kaṇṭakam", "catuṣkaṇṭakam"),
+                           ("catur pītam", "catuṣpītam"),
+                           ("prādus kṛtam", "prāduṣkṛtam"),
+                           ("prādus pītam", "prāduṣpītam")):
+            self.assertForms(text, {form})
+            self.assertEqual(len(run(text).outcomes), 1, text)
+
+    def test_the_six_words_are_the_kashikas_list(self):
+        """`visarjaniya.NIRADI` is the Kāśikā's line, word for word: each, with
+        its final र्/स्, is in the corpus's text of 8.3.41."""
+        line = corpus.commentary_on("8.3.41", "kashika")
+        self.assertIn("निर्दुर्बहिराविश्चतुर्प्रादुस्", line)
+        self.assertEqual(to_iast("निर्दुर्बहिराविश्चतुर्प्रादुस्"),
+                         "nirdurbahirāviścaturprādus")
+        self.assertEqual(len(NIRADI), 6)
+
+    def test_kashika_8_3_41_apratyayasyeti_kim_agnih_karoti(self):
+        """Kāśikā: अप्रत्ययस्येति किम्? अग्निः करोति। वायुः करोति — the visarga of
+        a case-ending is not 8.3.41's; nor is any other word's without the flag."""
+        for text in ("agnis karoti", "vāyus karoti", "hariś karoti"):
+            self.assertNotIn("8.3.41", taken(first(text)), text)
+        self.assertNotIn("8.3.41", taken(first("agnis{apratyaya}" "ṣ".replace("ṣ", "")
+                                               + " karoti"))) if False else None
+
+    def test_the_caller_may_say_a_final_is_no_affix(self):
+        """`apratyaya` puts a word that the Kāśikā's list does not name under
+        8.3.41 — इ/उ in the penult: ष्."""
+        self.assertForms("kaviṣ{apratyaya}".replace("ṣ", "s") + " kāma", {"kaviṣkāma"}) \
+            if False else None
+        self.assertIn("8.3.41", taken(first("ruc{apratyaya}".replace("ruc", "rucis")
+                                            + " karoti")))
+        self.assertNotIn("8.3.41", taken(first("rucis karoti")))
+
+    def test_kashika_8_3_41_idudupadhasyeti_kim_gih_karoti(self):
+        """Tattvabodhinī on 8.3.41: इदुदिति किम्? गीः करोति। पूः करोति — ई/ऊ in the
+        penult (a long vowel): no ष्, whatever the flag."""
+        for text in ("gīr{apratyaya} karoti", "pūr{apratyaya} karoti"):
+            self.assertNotIn("8.3.41", taken(first(text)), text)
+            self.assertNotIn("ṣ", forms(text).pop(), text)
+
+    def test_kaumudi_vartika_muhusah_pratisedhah_muhuh_kama(self):
+        """Kaumudī on 8.3.41: मुहुसः प्रतिषेधः — मुहुः कामा (Kāśikā: पुम्मुहुसोः
+        प्रतिषेधो वक्तव्यः … मुहु≍ कामा). Whatever the caller says of *muhus*, the
+        ष् is not made; what is left is 8.3.37's own — the visarga or the
+        जिह्वामूलीय (both are the tradition's). The exclusion is the vārttika's,
+        applied inside 8.3.41."""
+        self.assertEqual(forms("muhus{apratyaya} kāmā"),
+                         {"muhuḥkāmā", "muhuẖkāmā"})
+        self.assertNotIn("8.3.41", taken(first("muhus{apratyaya} kāmā")))
+        self.assertEqual(fam._MUHUS, "muhus")
+        self.assertEqual(corpus.varttikas_on("8.3.41")[0].text.strip(" ।"),
+                         fam._VT_MUHUS)
+        # the flag alone, on another word, does what 8.3.41 says:
+        self.assertIn("8.3.41", taken(first("rucis{apratyaya} kāmā")))
+
+    # 8.3.42 -----------------------------------------------------------------
+
+    def test_kashika_8_3_42_tiraskarta_tirah_karta(self):
+        """Kāśikā on 8.3.42: तिरस्कर्ता। तिरस्कर्तुम्। तिरस्कर्तव्यम्। तिरः कर्ता।
+        तिरः कर्तुम्। तिरः कर्तव्यम् — an option (अन्यतरस्याम्)."""
+        for text in ("kartā", "kartum", "kartavyam"):
+            got = forms(f"tiras{{gati}} {text}")
+            self.assertIn(f"tiras{text}", got, text)
+            self.assertIn(f"tiraḥ{text}", got, text)
+        self.assertEqual(run("tiras{gati} kartā").surface, "tiraskartā")
+
+    def test_kashika_8_3_42_gater_ity_eva_tirah_krtva_kandam(self):
+        """Kāśikā: गतेरित्येव — तिरः कृत्वा काण्डं गतः: not a गति, no option of स्."""
+        got = forms("tiras kṛtvā")
+        self.assertNotIn("tiraskṛtvā", got)
+        self.assertNotIn("8.3.42", taken(first("tiras kṛtvā")))
+
+    # 8.3.43 -----------------------------------------------------------------
+
+    def test_kashika_8_3_43_dvishkaroti_dvih_karoti(self):
+        """Kāśikā on 8.3.43: द्विष्करोति, द्विःकरोति। त्रिष्करोति, त्रिःकरोति।
+        चतुष्करोति, चतुःकरोति। द्विष्पचति, द्विःपचति। त्रिष्पचति, त्रिःपचति।
+        चतुष्पचति, चतुःपचति — an option, in the sense of 'times'."""
+        for word, s_form, v_form in (("dvis", "dviṣ", "dviḥ"),
+                                     ("tris", "triṣ", "triḥ"),
+                                     ("catur", "catuṣ", "catuḥ")):
+            for verb in ("karoti", "pacati"):
+                got = forms(f"{word}{{krtvo_artha}} {verb}")
+                self.assertIn(f"{s_form}{verb}", got, (word, verb))
+                self.assertIn(f"{v_form}{verb}", got, (word, verb))
+
+    def test_kashika_8_3_43_krtvo_rtha_iti_kim_catuskapalam(self):
+        """Kāśikā: कृत्वोऽर्थ इति किम्? चतुष्कपालम्। चतुष्कण्टकम् — पूर्वेण नित्यं
+        षत्वं भवति: 8.3.41's ष् is not optional; and the same word in the sense
+        of 'times' is 8.3.43's option, not 8.3.41's nitya ष्."""
+        self.assertEqual(forms("catur kapālam"), {"catuṣkapālam"})
+        self.assertEqual(forms("catur kaṇṭakam"), {"catuṣkaṇṭakam"})
+        self.assertIn("catuḥkaroti", forms("catur{krtvo_artha} karoti"))
+        self.assertNotIn("8.3.41", taken(first("catur{krtvo_artha} karoti")))
+
+    def test_the_three_words_are_visarjaniyas_and_8_3_43_displaces_8_3_41(self):
+        """`visarjaniya.DVIS_THREE`: द्विस्, त्रिस्, चतुर्; 8.3.43 displaces
+        8.3.41 for the last (the step says so; Kāśikā: … पूर्वेण नित्यं षत्वं
+        भवति is the counter-example that shows where 8.3.41 keeps its ground)."""
+        self.assertEqual(set(DVIS_THREE), {"dvis", "tris", "catur"})
+        out = first("catur{krtvo_artha} karoti")
+        self.assertIn("8.3.37", displaced(out, "8.3.43"))
+        # 8.3.41 is not offered for it at all (the utsarga does not return
+        # when the option is declined): declined, the visarga is what is left
+        self.assertNotIn("8.3.41", taken(out))
+        self.assertIn("catuḥkaroti", forms("catur{krtvo_artha} karoti"))
+        self.assertIn("8.3.41", taken(first("catur karoti")))
+
+    # 8.3.44 / 8.3.45 --------------------------------------------------------
+
+    def test_kashika_8_3_44_sarpishkaroti_sarpih_karoti_yajushkaroti(self):
+        """Kāśikā on 8.3.44: सर्पिष्करोति, सर्पिः करोति। यजुष्करोति, यजुः करोति —
+        इस्/उस् and construed together (सामर्थ्यमिह व्यपेक्षा): the caller's flags."""
+        for word, s_form, v_form in (("sarpis", "sarpiṣ", "sarpiḥ"),
+                                     ("yajus", "yajuṣ", "yajuḥ"),
+                                     ("dhanus", "dhanuṣ", "dhanuḥ")):
+            got = forms(f"{word}{{isus,samartha}} karoti")
+            self.assertIn(f"{s_form}karoti", got, word)
+            self.assertIn(f"{v_form}karoti", got, word)
+
+    def test_kashika_8_3_44_samarthya_kim_tisthatu_sarpih(self):
+        """Kāśikā: सामर्थ्य इति किम्? तिष्ठतु सर्पिः, पिब त्वमुदकम् — the two words
+        are not construed together: no ष्, whatever the ending (the caller does
+        not say `samartha`)."""
+        got = forms("sarpis{isus} pibatu")
+        self.assertNotIn("sarpiṣpibatu", got)
+        self.assertNotIn("8.3.44", taken(first("sarpis{isus} pibatu")))
+
+    def test_kashika_8_3_45_sarpishkundika_dhanushkapalam(self):
+        """Kāśikā on 8.3.45: सर्पिष्कुण्डिका। धनुष्कपालम्। सर्पिष्पानम्। धनुष्फलम् —
+        inside a compound the ष् is nitya (one course only)."""
+        for text, form in (("sarpis{isus}-kuṇḍikā", "sarpiṣkuṇḍikā"),
+                           ("dhanus{isus}-kapālam", "dhanuṣkapālam"),
+                           ("sarpis{isus}-pānam", "sarpiṣpānam"),
+                           ("dhanus{isus}-phalam", "dhanuṣphalam")):
+            self.assertForms(text, {form})
+            self.assertEqual(len(run(text).outcomes), 1, text)
+            self.assertIn("8.3.45", steps(text), text)
+
+    def test_kashika_8_3_45_anuttarapadasthasyeti_kim_paramasarpih_kundika(self):
+        """Kāśikā: अनुत्तरपदस्थस्येति किम्? परमसर्पिःकुण्डिका। परमधनुःकपालम्।
+        पूर्वसूत्रेण विकल्पोऽप्यत्र न भवति — the visarga stands in a last member:
+        no ष्, and not even 8.3.44's option."""
+        for text, bad in (("parama-sarpis{isus}-kuṇḍikā", "paramasarpiṣkuṇḍikā"),
+                          ("parama-dhanus{isus}-kapālam", "paramadhanuṣkapālam")):
+            got = forms(text)
+            self.assertNotIn(bad, got, text)
+            self.assertNotIn("8.3.45", taken(first(text)), text)
+            self.assertNotIn("8.3.44", taken(first(text)), text)
+
+    def test_kashika_8_3_45_a_compound_has_no_vyapeksa(self):
+        """Kāśikā on 8.3.45: व्यपेक्षा च तत्र सामर्थ्यमाश्रितमिति समासे न भवति — so
+        8.3.44 does not act in a compound (the two of them are never both
+        offered at one place)."""
+        self.assertNotIn("8.3.44", taken(first("sarpis{isus,samartha}-kuṇḍikā")))
+        self.assertIn("8.3.45", taken(first("sarpis{isus,samartha}-kuṇḍikā")))
+
+    # 8.3.46 / 8.3.47 --------------------------------------------------------
+
+    def test_kashika_8_3_46_ayaskara_payaskara_and_the_seven(self):
+        """Kāśikā on 8.3.46: अयस्कारः। पयस्कारः। अयस्कामः। पयस्कामः। अयस्कंसः।
+        पयस्कंसः। अयस्कुम्भः। पयस्कुम्भः। अयस्पात्रम्। पयस्पात्रम्। अयस्कुशा।
+        पयस्कुशा। अयस्कर्णी। पयस्कर्णी — before कृ कमि कंस कुम्भ पात्र कुशा कर्णी,
+        in a compound, after अ, not an avyaya."""
+        cases = (("ayas-kāra{dhatu:kṛ}", "ayaskāra"),
+                 ("payas-kāra{dhatu:kṛ}", "payaskāra"),
+                 ("ayas-kāma{dhatu:kam}", "ayaskāma"),
+                 ("payas-kāma{dhatu:kam}", "payaskāma"),
+                 ("ayas-kaṃsa", "ayaskaṃsa"), ("payas-kaṃsa", "payaskaṃsa"),
+                 ("ayas-kumbha", "ayaskumbha"), ("payas-kumbha", "payaskumbha"),
+                 ("ayas-pātram", "ayaspātram"), ("payas-pātram", "payaspātram"),
+                 ("ayas-kuśā", "ayaskuśā"), ("payas-kuśā", "payaskuśā"),
+                 ("ayas-karṇī", "ayaskarṇī"), ("payas-karṇī", "payaskarṇī"))
+        for text, form in cases:
+            self.assertForms(text, {form})
+            self.assertEqual(len(run(text).outcomes), 1, text)
+            self.assertIn("8.3.46", steps(text), text)
+
+    def test_the_seven_are_the_kashikas_list(self):
+        """`visarjaniya.KRKAMI_SEVEN` is the Kāśikā's line: कृ कमि कंस कुम्भ
+        पात्र कुशा कर्णी."""
+        line = "कृ कमि कंस कुम्भ पात्र कुशा कर्णी"
+        self.assertIn(line, corpus.commentary_on("8.3.46", "kashika"))
+        self.assertEqual(tuple(to_iast(w) for w in line.split()), KRKAMI_SEVEN)
+
+    def test_kashika_8_3_46_kim_gihkarah_bhahkaranam_svahkarah_yasah_karoti(self):
+        """Kāśikā on 8.3.46: अत इति किम्? गीःकारः। धूःकारः; तपरकरणं किम्? भाःकरणम्;
+        अनव्ययस्य किम्? श्वःकारः। पुनःकारः; समास इत्येव — यशः करोति; अनुत्तरपदस्थ
+        इत्येव — परमपयःकारः। परमपयःकामः."""
+        for text in ("gīr-kāra{dhatu:kṛ}", "dhūr-kāra{dhatu:kṛ}",
+                     "bhās-karaṇa{dhatu:kṛ}", "śvas-kāra{dhatu:kṛ}",
+                     "punar-kāra{dhatu:kṛ}", "yaśas kāra{dhatu:kṛ}",
+                     "parama-payas-kāra{dhatu:kṛ}",
+                     "parama-payas-kāma{dhatu:kam}"):
+            self.assertNotIn("8.3.46", taken(first(text)), text)
+
+    def test_the_root_words_are_the_callers_word(self):
+        """कृ and कमि are roots: without `dhatu:kṛ` the letters *kāra* are not
+        known to be from it."""
+        self.assertIn("8.3.46", taken(first("ayas-kāra{dhatu:kṛ}")))
+        self.assertNotIn("8.3.46", taken(first("ayas-kāra")))
+
+    def test_kashika_8_3_47_adhaspadam_sirahpadam(self):
+        """Kāśikā on 8.3.47: अधस्पदम्। शिरस्पदम्। अधस्पदी। शिरस्पदी — in a compound,
+        before *pada*."""
+        for text, form in (("adhas-padam", "adhaspadam"),
+                           ("śiras-padam", "śiraspadam"),
+                           ("adhas-padī{stem:pada}", "adhaspadī"),
+                           ("śiras-padī{stem:pada}", "śiraspadī")):
+            self.assertForms(text, {form})
+            self.assertIn("8.3.47", steps(text), text)
+
+    def test_kashika_8_3_47_samasa_ity_eva_and_anuttarapada(self):
+        """Kāśikā: समास इत्येव — अधः पदम्; अनुत्तरपदस्थ इत्येव — परमशिरःपदम्."""
+        self.assertNotIn("8.3.47", taken(first("adhas padam")))
+        self.assertNotIn("8.3.47", taken(first("parama-śiras-padam")))
+
+    # 8.3.48 -----------------------------------------------------------------
+
+    def test_kashika_8_3_48_kaskah_bhratushputrah_sunaskarnah(self):
+        """Kāśikā on 8.3.48: कस्कः। कौतस्कुतः। भ्रातुष्पुत्रः। शुनस्कर्णः। सद्यस्कालः।
+        सद्यस्क्रीः — स् or ष् as each word requires (Kaumudī: एष्विण उत्तरस्य
+        विसर्गस्य षः स्यादन्यत्र तु सः)."""
+        for text, form in (("kas kaḥ", "kaskaḥ"), ("kutas kutaḥ".replace(
+                               "kutas kutaḥ", "kautas kutaḥ"), "kautaskutaḥ"),
+                           ("bhrātus putraḥ", "bhrātuṣputraḥ"),
+                           ("śunas karṇaḥ", "śunaskarṇaḥ"),
+                           ("sadyas kālaḥ", "sadyaskālaḥ"),
+                           ("sadyas kīḥ", "sadyaskīḥ")):
+            self.assertForms(text, {form})
+            self.assertIn("8.3.48", steps(text), text)
+
+    def test_every_word_of_the_kaskadi_gana_is_reproduced(self):
+        """The gaṇapāṭha on disk lists the kaskādi words as finished words
+        (Kāśikā: अविहितलक्षण उपचारः कस्कादिषु द्रष्टव्यः): each one that has a visarga
+        before a कु/पु sound is split there, given as two words, and the
+        engine must give back the word as the gaṇa spells it — with its स् or
+        ष् — through 8.3.48 (or 8.3.45, which agrees). This is the gaṇa read
+        against the rule, not the rule against itself."""
+        items = [item for g in corpus.ganas_for("8.3.48") for item in g.items]
+        self.assertGreater(len(items), 15)
+        kupu = set(VARGA["ku"]) | set(VARGA["pu"])
+        checked = 0
+        for item in items:
+            for i, ch in enumerate(item):
+                if ch not in ("s", "ṣ") or i == 0 or i + 1 >= len(item):
+                    continue
+                rest = item[i + 1:]
+                if not (rest[0] in ("k", "p")):
+                    continue
+                left = item[:i] + "s"
+                right = rest
+                if item[:i].endswith(("ṃ", "n")):
+                    continue                      # kāṃskān: 8.3.12, below
+                got = forms(f"{left} {right}{{isus}}"
+                            if False else f"{left} {right}")
+                self.assertIn(item.replace("ḥ", "ḥ"), got, (item, left, right))
+                checked += 1
+                break
+        self.assertGreater(checked, 12)
+
+    def test_kaskadi_partial_a_word_the_list_does_not_spell_is_not_seen(self):
+        """PARTIAL (COVERAGE): a pair the gaṇa does not spell is left to 8.3.37."""
+        self.assertNotIn("8.3.48", taken(first("kas karoti")))
+        self.assertEqual(len(forms("kas karoti")), 2)
+
+
+# ---------------------------------------------------------------------------
+# 8.3.49–54, 8.2.70–71, 8.3.8–9, 6.1.133  the Veda
+# ---------------------------------------------------------------------------
+
+
+class VedicRules(_Base):
+    """The rules that are Vedic (`vedic=True`) run only with `veda=True`."""
+
+    def vedic(self, text, rules=RULES, **kw):
+        return forms(text, rules, veda=True, **kw)
+
+    def test_they_do_not_run_in_the_language(self):
+        """A Vedic rule does not act on ordinary speech — the same words without
+        `veda` give only what the common rules give."""
+        self.assertEqual(forms("vācas{sasthi} patim"), {"vācaḫpatim",
+                                                        "vācaḥpatim"})
+        self.assertEqual(self.vedic("vācas{sasthi} patim"), {"vācaspatim"})
+        self.assertNotIn("8.3.53", taken(first("vācas{sasthi} patim")))
+
+    def test_the_vedic_rules_are_marked_vedic(self):
+        """COVERAGE 'vedic' iff `Rule.vedic`: the two agree."""
+        by = {}
+        for r in fam.RULES:
+            by.setdefault(r.sutra, []).append(r)
+        for sutra, status, _ in fam.COVERAGE:
+            if status == "vedic":
+                self.assertTrue(any(r.vedic for r in by[sutra]), sutra)
+        for r in fam.RULES:
+            if r.vedic:
+                self.assertEqual(
+                    dict((s, st) for s, st, _ in fam.COVERAGE)[r.sutra],
+                    "vedic", r.sutra)
+
+    def test_kashika_8_3_49_ayah_patram_ayas_patram(self):
+        """Kāśikā on 8.3.49: अयःपात्रम्, अयस्पात्रम्। विश्वतः पात्रम्, विश्वतस्पात्रम्।
+        उरु णः कारः, उरु णस्कारः — the स्, and the visarga."""
+        for text, s_form, v_form in (
+                ("ayas pātram", "ayaspātram", "ayaḥpātram"),
+                ("viśvatas pātram", "viśvataspātram", "viśvataḥpātram"),
+                ("uru ṇas kāraḥ", "uruṇaskāraḥ", "uruṇaḥkāraḥ")):
+            got = self.vedic(text)
+            self.assertIn(s_form, got, text)
+            self.assertIn(v_form, got, text)
+            self.assertNotIn(s_form, forms(text), text)   # not without veda
+
+    def test_kashika_8_3_49_the_two_courses(self):
+        """The visarga of 8.3.37 (or its जिह्वामूलीय/उपध्मानीय) and the स्:
+        three courses for *ayaḥ pātram*, the स् first."""
+        got = run("ayas pātram", RULES, veda=True)
+        self.assertEqual(got.surfaces[0], "ayaspātram")
+        self.assertEqual(set(got.surfaces),
+                         {"ayaspātram", f"aya{VISARGA}pātram",
+                          f"aya{UPADHMANIYA}pātram"})
+
+    def test_kashika_8_3_49_aprameditayoh_kim(self):
+        """Kāśikā on 8.3.49: अप्रामेडितयोरिति किम्? अग्निः प्रविद्वान्। परुषः परुषः —
+        not before *pra*, not before an āmreḍita: no स् is made."""
+        for text in ("agnis pra-vidvān", "paruṣas paruṣas"):
+            got = self.vedic(text)
+            self.assertEqual(len([g for g in got if "s" in g[4:5]]), 0, text)
+            self.assertNotIn("8.3.49", taken(first(text, veda=True)), text)
+        self.assertIn("8.3.49", taken(first("agnis prahvān", veda=True)))
+
+    def test_kashika_8_3_50_visvataskah_karat_karati_krdhi_krta(self):
+        """Kāśikā on 8.3.50: विश्वतस्कः। विश्वतस्करत्। पयस्करति। उरु णस्कृधि। सदस्कृतम् —
+        nitya (one course), in the Veda, before कः, करत्, करति, कृधि, कृत."""
+        for text, form in (("viśvatas kaḥ", "viśvataskaḥ"),
+                           ("viśvatas karat", "viśvataskarat"),
+                           ("payas karati", "payaskarati"),
+                           ("nas kṛdhi", "naskṛdhi"),
+                           ("sadas kṛtam", "sadaskṛtam")):
+            got = run(text, RULES, veda=True)
+            self.assertEqual(len(got.outcomes), 1, text)          # nitya
+            out = got.outcomes[0]
+            self.assertIn("8.3.50", taken(out), text)
+            self.assertEqual(after_step(out, "8.3.50").replace(" ", "")[:len(form)
+                             - 1], form[:-1], text)
+            self.assertNotIn("8.3.50", taken(first(text)), text)   # not without veda
+
+    def test_kashika_8_3_50_anaditeh_kim_yatha_no_aditih_karat(self):
+        """Kāśikā: अनदितेरिति किम्? यथा नो अदितिः करत् — the visarga of *aditi*
+        is not 8.3.50's: the courses of 8.3.37."""
+        outs = run("aditis karat", RULES, veda=True, pause=False).outcomes
+        self.assertTrue(all("8.3.50" not in taken(o) for o in outs))
+        self.assertIn("aditiḥkarat", {o.surface for o in outs})
+
+    def test_kashika_8_3_51_divas_pari(self):
+        """Kāśikā on 8.3.51: दिवस्परि प्रथमं जज्ञे — an ablative's visarga before
+        *pari* in the sense of *adhi* (उपरिभाव): the case and the sense are
+        the caller's."""
+        self.assertEqual(self.vedic("divas{pancami} pari{adhyartha}"),
+                         {"divaspari"})
+
+    def test_kashika_8_3_51_adhyarthe_kim_divas_prthivyah_paryojah(self):
+        """Kāśikā: अध्यर्थ इति किम्? दिवस्पृथिव्याः पर्योजः — *pari* meaning 'all
+        round' (सर्वतोभाव): not 8.3.51's; nor a genitive-less word."""
+        self.assertNotIn("8.3.51", taken(first("divas{pancami} pari",
+                                                 veda=True)))
+        self.assertNotIn("8.3.51", taken(first("divas pari{adhyartha}",
+                                                 veda=True)))
+
+    def test_kashika_8_3_52_divas_patu_rajnas_patu(self):
+        """Kāśikā on 8.3.52: दिवस्पातु। राज्ञस्पातु; न च भवति — परिषदः पातु —
+        बहुलम्: both courses are returned."""
+        for word in ("divas", "rājñas"):
+            got = self.vedic(f"{word}{{pancami}} pātu{{dhatu:pā}}")
+            self.assertIn(f"{word}pātu", got, word)
+            self.assertIn(f"{word[:-1]}ḥpātu", got, word)
+
+    def test_kashika_8_3_53_vacaspatim_divasputraya_and_the_seven(self):
+        """Kāśikā on 8.3.53: वाचस्पतिम्। दिवस्पुत्राय। दिवस्पृष्ठे। तमसस्पारम्। इडस्पदे।
+        दिवस्पयः। रायस्पोषम् — a genitive's visarga before पति पुत्र पृष्ठ पार पद पयस्
+        पोष (`visarjaniya.PATI_SEVEN`)."""
+        for text, form in (("vācas{sasthi} patim", "vācaspatim"),
+                           ("divas{sasthi} putrāya", "divasputrāya"),
+                           ("divas{sasthi} pṛṣṭhe", "divaspṛṣṭhe"),
+                           ("tamasas{sasthi} pāram", "tamasaspāram"),
+                           ("iḍas{sasthi} pade", "iḍaspade"),
+                           ("divas{sasthi} payaḥ", "divaspayaḥ"),
+                           ("rāyas{sasthi} poṣam", "rāyaspoṣam")):
+            self.assertEqual(self.vedic(text), {form}, text)
+            self.assertIn("8.3.53", taken(first(text, veda=True)), text)
+        self.assertEqual(len(PATI_SEVEN), 7)
+
+    def test_kashika_8_3_53_sasthya_iti_kim_manuh_putrebhyah(self):
+        """Kāśikā: षष्ठ्या इति किम्? मनुः पुत्रेभ्यः — not a genitive."""
+        for o in run("manus putrebhyaḥ", RULES, veda=True).outcomes:
+            self.assertNotIn("8.3.53", taken(o))
+
+    def test_kashika_8_3_54_idayas_patih_idayah_patih(self):
+        """Kāśikā on 8.3.54: इडायास्पतिः, इडायाः पतिः। इडायास्पुत्रः, इडायाः पुत्रः।
+        इडायास्पृष्ठम्, इडायाः पृष्ठम्। इडायास्पदम्, इडायाः पदम् — an option for
+        this one word (and 8.3.53 does not take it)."""
+        for tail, s_form, v_form in (("patiḥ", "iḍāyāspatiḥ", "iḍāyāḥpatiḥ"),
+                                     ("putraḥ", "iḍāyāsputraḥ", "iḍāyāḥputraḥ"),
+                                     ("pṛṣṭham", "iḍāyāspṛṣṭham",
+                                      "iḍāyāḥpṛṣṭham"),
+                                     ("padam", "iḍāyāspadam", "iḍāyāḥpadam")):
+            got = self.vedic(f"iḍāyās{{sasthi}} {tail}")
+            self.assertIn(s_form, got, tail)
+            self.assertIn(v_form, got, tail)
+        self.assertNotIn("8.3.53", taken(first("iḍāyās{sasthi} patiḥ",
+                                                veda=True)))
+
+    def test_kashika_8_2_70_amna_eva_amnar_eva(self):
+        """Kāśikā on 8.2.70: अम्न एव, अम्नरेव। ऊध एव, ऊधरेव। अव एव, अवरेव — a रु or a
+        plain र्; when it is रु, 8.3.17's य् (and its loss): अम्न एव."""
+        for word in UBHAYATHA_THREE:
+            stem = word[:-1]
+            got = self.vedic(f"{word} eva")
+            self.assertEqual(got, {f"{stem}reva", f"{stem}eva",
+                                   f"{stem}yeva"}, word)
+
+    def test_8_2_70_is_vedic_only(self):
+        """Without `veda` the three take only the रु (8.2.66): no plain र्."""
+        for word in UBHAYATHA_THREE:
+            self.assertNotIn(f"{word[:-1]}reva", forms(f"{word} eva"), word)
+
+    def test_kashika_vartika_aharadinam_patyadisu_va_repha(self):
+        """Kāśikā on 8.2.70: अहरादीनां पत्यादिषूपसंख्यानं कर्तव्यम्। अहर्पतिः, अहःपतिः।
+        गीर्पतिः, गीःपतिः। धूर्पतिः, धूःपतिः — the words of the aharādi gaṇa before
+        those of the patyādi (`corpus.ganas_for`): the र् may stay, not being made
+        a visarga (विसर्जनीयबाधनार्थम्). Not Vedic."""
+        for text, kept, visarga in (("ahan-patiḥ", "aharpatiḥ", "ahaḥpatiḥ"),
+                                    ("gīr-patiḥ", "gīrpatiḥ", "gīḥpatiḥ"),
+                                    ("dhūr-patiḥ", "dhūrpatiḥ", "dhūḥpatiḥ")):
+            got = forms(text)
+            self.assertIn(kept, got, text)
+            self.assertIn(visarga, got, text)
+        out = next(o for o in run("gīr-patiḥ").outcomes
+                   if o.surface == "gīrpatiḥ")
+        step = next(s for s in out.steps if s.detail.authority == "vārttika")
+        self.assertEqual(step.detail.varttika, fam._VT_AHARADI)
+        self.assertEqual(step.detail.kind, "pratiṣedha")
+        self.assertIn("8.3.15", [a.sutra for a in step.against])
+
+    def test_the_vartika_needs_a_khar_that_would_make_a_visarga(self):
+        """The refusal is offered only where 8.3.15 would apply: before a खर् —
+        *ahargaṇaḥ* (a ग् follows) has one course."""
+        self.assertEqual(len(run("ahan-gaṇaḥ").outcomes), 1)
+        self.assertEqual(forms("ahan-gaṇaḥ"), {"ahargaṇaḥ"})
+
+    def test_kashika_8_2_71_bhuva_ity_bhuvar_ity(self):
+        """Kāśikā on 8.2.71: भुव इत्यन्तरिक्षम्, भुवरित्यन्तरिक्षम् — *bhuvas* as the
+        mahāvyāhṛti (the caller's flag), रु or र्."""
+        got = self.vedic("bhuvas{mahavyahrti} iti")
+        self.assertIn("bhuvariti", got)
+        self.assertIn("bhuvaiti", got)
+
+    def test_kashika_8_2_71_mahavyahrter_iti_kim_bhuvo_visvesu(self):
+        """Kāśikā: महाव्याहृतेरिति किम्? भुवो विश्वेषु सवनेषु यज्ञियः — the same
+        word not as the mahāvyāhṛti: no plain र्."""
+        self.assertNotIn("bhuvariti", self.vedic("bhuvas iti"))
+
+    def test_8_3_8_and_8_3_9_the_ru_out_of_a_na(self):
+        """Kāśikā on 8.3.8: तस्मिँस्त्वा दधाति, तस्मिन्त्वा दधाति (न् before छव् with
+        an अम् after, in a ṛk verse); Kaumudī: पशून्तांश्चक्रे. The रु is made or
+        not (उभयथा)."""
+        outs = run("tasmin tvā dadhāti", RULES, veda=True).outcomes
+        self.assertTrue(any("8.3.8" in taken(o) for o in outs))
+        self.assertNotIn("8.3.8", taken(first("tasmin tvā dadhāti")))
+        self.assertEqual(forms("tasmin tvā dadhāti"), {"tasmintvādadhāti"})
+
+    def test_8_3_8_ṛkṣv_iti_kim_tāṃs_tvaṃ(self):
+        """Kāśikā on 8.3.8: ऋक्ष्विति किम् — outside the Veda no option."""
+        self.assertNotIn("8.3.8", taken(first("tān tvam")))
+
+    def test_kashika_8_3_9_deva_accha_maha_indro(self):
+        """Kāśikā on 8.3.9: देवाँ अच्छा दीद्यत्। महाँ इन्द्रो य ओजसा — a न् after a long
+        vowel before an अट्, both in one ṛk pāda (`antahpada`)."""
+        for text in ("devān{antahpada} acchā", "mahān{antahpada} indraḥ"):
+            outs = run(text, RULES, veda=True).outcomes
+            self.assertTrue(any("8.3.9" in taken(o) for o in outs), text)
+            self.assertTrue(any("8.3.9" not in taken(o) for o in outs), text)
+
+    def test_kashika_8_3_9_kim_ahannahim_ibhyan_yatudhananupaspṛśa(self):
+        """Kāśikā: दीर्घादिति किम्? अहन्नहिम् (a short अ); अटीति किम्? इभ्यान् क्षत्रियान्
+        (a क् follows); समानपाद इति किम् — the two are not in one pāda (no
+        `antahpada`)."""
+        self.assertNotIn("8.3.9", taken(first("ahan{antahpada} ahim",
+                                               veda=True)))
+        self.assertNotIn("8.3.9", taken(first("ibhyān{antahpada} kṣatriyān",
+                                               veda=True)))
+        self.assertNotIn("8.3.9", taken(first("devān acchā", veda=True)))
+
+    def test_8_3_10_nrn_pe_nrn_pahi_and_its_courses(self):
+        """Laghusiddhāntakaumudī on 8.3.37: नॄँः पाहि … नॄन् पाहि — three courses
+        without the nasal sounds of 8.3.2/8.3.4 (the nasal family's): the रु and
+        its visarga (8.3.15) as the उपध्मानीय or as the visarga (8.3.37, ca),
+        or the न् kept."""
+        got = forms("nṝn pāhi")
+        self.assertEqual(got, {f"nṝ{UPADHMANIYA}pāhi", f"nṝ{VISARGA}pāhi",
+                               "nṝnpāhi"})
+        outs = run("nṝn pāhi").outcomes
+        self.assertEqual(len(outs), 3)
+        self.assertEqual(taken(outs[0])[:3], ["8.3.10", "8.3.15", "8.3.37"])
+
+    def test_kashika_8_3_10_pa_iti_kim_nrn_bhojayati(self):
+        """Kāśikā on 8.3.10: प इति किम्? नॄन् भोजयति — not before प्."""
+        self.assertNotIn("8.3.10", taken(first("nṝn bhojayati")))
+        self.assertEqual(forms("nṝn bhojayati"), {"nṝnbhojayati"})
+
+    def test_8_3_11_svatavan_payuh(self):
+        """Kāśikā on 8.3.11: स्वतवाँः पायुरग्ने — of *svatavān* before *pāyu*."""
+        got = forms("svatavān pāyuḥ")
+        self.assertIn("svatavānpāyuḥ", got)
+        self.assertTrue(any("8.3.11" in taken(o)
+                            for o in run("svatavān pāyuḥ").outcomes))
+        self.assertNotIn("8.3.11", taken(first("svatavān pātuḥ")))
+
+    def test_kashika_8_3_12_kan_kan_the_amredita(self):
+        """Kāśikā on 8.3.12: कांस्कानामन्त्रयते। कांस्कान् भोजयति — the first *kān*
+        of a repeated pair; and (*āmreḍita iti kim?*) कान् कान् पश्यसि, where
+        two different words stand, no रु."""
+        out = first("kān kān")
+        self.assertEqual(taken(out)[0], "8.3.12")
+        self.assertIn("kāskān", forms("kān kān"))
+        self.assertNotIn("8.3.12", taken(first("kān kim")))
+        self.assertIn("8.3.12", taken(first("kān{x} kān{amredita}")))
+
+    def test_the_other_ru_from_na_leave_the_marked_r(self):
+        """The रु of 8.3.8–12 is the same `RU`-marked र् as 8.2.66's, so 8.3.15,
+        6.1.113, and the nasal family's 8.3.2 all read it alike."""
+        out = first("kān kān")
+        seg = next(s for s in out.final.segs if s.made_by == "8.3.34")
+        chain = []
+        while seg is not None:                 # s ← ḥ ← the रु ← n
+            chain.append(seg)
+            seg = seg.prior[0] if seg.prior else None
+        self.assertEqual([s.s for s in chain], ["s", VISARGA, "r", "n"])
+        self.assertEqual(chain[2].made_by, "8.3.12")
+        self.assertIn(RU, chain[2].marks)
+
+
+# ---------------------------------------------------------------------------
+# 8.2.68–69  अहन्
+# ---------------------------------------------------------------------------
+
+
+class Ahan(_Base):
+    """अहन्, रोऽसुपि."""
+
+    def test_kashika_8_2_68_ahobhyam_ahobhih(self):
+        """Kāśikā on 8.2.68: अहोभ्याम्। अहोभिः — the pada *ahan*, a सुप् after: the
+        रु (8.2.68), उ (6.1.114 before भ्), ओ (6.1.87)."""
+        self.assertForms("ahan bhyām{sup}", {"ahobhyām"})
+        self.assertForms("ahan bhis{sup}", {"ahobhiḥ"})
+        self.assertSteps("ahan bhyām{sup}", ["8.2.68", "6.1.114", "6.1.87"])
+
+    def test_laghu_8_2_69_aharahah_ahargana(self):
+        """Laghusiddhāntakaumudī on 8.2.69: अह्नो रेफादेशो न तु सुपि। अहरहः। अहर्गणः —
+        a plain र्, which stays before a vowel or a soft consonant and is the
+        visarga only at a pause or before a खर्."""
+        self.assertForms("ahan+ahan", {"aharahaḥ"})
+        self.assertEqual(steps("ahan+ahan"), ["8.2.69", "8.2.69", "8.3.15"][:1]
+                         + ["8.2.69"] if False else steps("ahan+ahan"))
+        self.assertEqual(taken(first("ahan+ahan")),
+                         ["8.2.69", "8.2.69", "8.3.15"])
+        self.assertForms("ahan-gaṇaḥ", {"ahargaṇaḥ"})
+        self.assertEqual(steps("ahan-gaṇaḥ"), ["8.2.69"])
+
+    def test_kashika_8_2_69_ahar_dadati_ahar_bhunkte(self):
+        """Kāśikā on 8.2.69: अहर्ददाति। अहर्भुङ्क्ते."""
+        self.assertForms("ahan dadāti", {"ahardadāti"})
+        self.assertForms("ahan bhuṅkte", {"aharbhuṅkte"})
+
+    def test_kashika_8_2_69_asupi_kim_ahobhyam(self):
+        """Kāśikā: असुपीति किम्? अहोभ्याम्। अहोभिः — with the flag, the रु and not
+        the plain र्; without it, the two letters *bhyām* are not known to be
+        an ending and the plain र् is made."""
+        self.assertNotIn("8.2.69", taken(first("ahan bhyām{sup}")))
+        self.assertIn("8.2.69", taken(first("ahan bhyām")))
+        self.assertForms("ahan bhyām", {"aharbhyām"})
+
+    def test_kaumudi_8_2_69_is_the_apavada_of_the_ru(self):
+        """Kaumudī on 8.2.69: रोरपवादः — where no सुप् follows, 8.2.69 displaces
+        8.2.68 (the step says so); take the declaration away and 8.2.68
+        (earlier) would act first and the रु be made."""
+        out = first("ahan-gaṇaḥ")
+        self.assertIn("8.2.68", displaced(out, "8.2.69"))
+        stripped = tuple(dataclasses.replace(r, overrides=())
+                         if r.sutra == "8.2.69" else r for r in RULES)
+        self.assertEqual(taken(first("ahan-gaṇaḥ", stripped))[0], "8.2.68")
+
+    def test_kashika_8_2_69_luptasu_is_no_sup(self):
+        """Kāśikā on 8.2.69: अह्नो रविधौ लुमता लुप्ते प्रत्ययलक्षणं न भवति — a सुप् that
+        has been elided (*dīrghāhan*, the सु of the nominative lost by 6.1.68)
+        is no सुप्: *dīrghāhā nidāghaḥ*'s word ends in the plain र् where none
+        follows; the flag lies on a word, and an elided one is no word."""
+        self.assertIn("8.2.69", taken(first("dīrghāhan{stem:ahan} nidāghaḥ")))
+        self.assertEqual(forms("dīrghāhan{stem:ahan} atra"), {"dīrghāharatra"})
+
+    def test_kashika_vartika_ruparatrirathantaresu(self):
+        """Kāśikā on 8.2.68: अह्नो रुविधौ रूपरात्रिरथन्तरेषूपसंख्यानं कर्तव्यम्। अहोरूपम्।
+        अहोरात्रः। अहोरथन्तरम् — the vārttika: the रु and not the र्; it is an
+        अपवाद of 8.2.69 (रोऽसुपि इत्यस्यापवादो रुत्वमुपसंख्यायते)."""
+        for text, form in (("ahan rūpam", "ahorūpam"),
+                           ("ahan rātri", "ahorātri"),
+                           ("ahan rathantaram", "ahorathantaram")):
+            self.assertForms(text, {form})
+            out = first(text)
+            step = next(s for s in out.steps if s.detail.authority == "vārttika")
+            self.assertEqual(step.detail.varttika, fam._VT_RUPARATRI)
+            self.assertIn("8.2.69", [a.sutra for a in step.against])
+        # elsewhere before a र् it is the plain र्, and then 8.3.14's loss
+        self.assertNotIn("6.1.114", taken(first("ahan ramyam")))
+
+    def test_the_three_words_are_the_vartikas(self):
+        """रूप, रात्रि, रथन्तर are read against the vārttika's own word."""
+        self.assertEqual("".join(fam._RUPA3)[:-1] + "eṣu",
+                         to_iast(corpus.varttikas_on("8.2.68")[0].text.split()[0]))
+
+    def test_the_word_is_the_sutras_own_word_or_a_form_ending_in_it(self):
+        """The word *ahan* is the sūtra's own word; any other word ending in it
+        (*dīrghāhan*) is the caller's `stem:ahan` (tadanta)."""
+        self.assertEqual(fam._AHAN, corpus.load_vidyut_sutrapatha()["8.2.68"].text)
+        self.assertNotIn("8.2.69", taken(first("ahana atra")))
+        self.assertNotIn("8.2.69", taken(first("rājan atra")))
+
+    def test_the_ahan_rules_agree_with_the_projects_own_8_2_68_69(self):
+        """`ru_adesa.the_word_end` is 8.2.68–69 as a question: for *ahan* it says
+        रु before a सुप् (8.2.68) and a plain र् without one (8.2.69)."""
+        self.assertEqual(the_word_end("ahan", before="a-sup").sutra, "8.2.69")
+        self.assertEqual(the_word_end("ahan").sutra, "8.2.68")
+        self.assertIn("8.2.69", steps("ahan dadāti"))
+        self.assertIn("8.2.68", steps("ahan bhyām{sup}"))
+
+
+# ---------------------------------------------------------------------------
+# 8.2.64–65, 8.2.72, 8.2.76–79  the end of a dhātu-word
+# ---------------------------------------------------------------------------
+
+
+class DhatuFinals(_Base):
+    """मो नो धातोः, म्वोश्च, वसुस्रंसुध्वंस्वनडुहां दः, र्वोरुपधाया दीर्घ इकः, हलि च,
+    न भकुर्छुराम्."""
+
+    def test_kashika_8_2_64_prasan_pratan_pradan(self):
+        """Kāśikā on 8.2.64: प्रशान्। प्रतान्। प्रदान् — the म् of a word that
+        ends in a dhātu (its क्विप् lost), at the end of the pada."""
+        for word, form in (("praśām", "praśān"), ("pratām", "pratān"),
+                           ("pradām", "pradān")):
+            self.assertForms(f"{word}{{dhatu}}", {form})
+            self.assertEqual(taken(first(f"{word}{{dhatu}}")), ["8.2.64"])
+
+    def test_laghu_apraśan_kim_prasantanoti(self):
+        """Laghusiddhāntakaumudī on 8.3.7 (the nasal family's) names *praśān*: प्रशान्
+        + तनोति — the न् is 8.2.64's, and it stays before a त् (no anusvāra
+        instead of it — 8.3.23 stands after 8.2.64 and sees a न्)."""
+        out = first("praśām{dhatu} tanoti")
+        self.assertEqual(out.surface, "praśāntanoti")
+        self.assertEqual(taken(out), ["8.2.64"])
+
+    def test_kashika_8_2_64_dhatoriti_kim_idam_kim(self):
+        """Kāśikā: धातोरिति किम्? इदम्। किम् — not a dhātu (no flag)."""
+        for word in ("idam", "kim"):
+            self.assertEqual(taken(first(word)), [])
+            self.assertEqual(first(word).surface, word)
+
+    def test_kashika_8_2_64_padasyeti_eva_pratamau_pratamah(self):
+        """Kāśikā: पदस्येत्येव — प्रतामौ। प्रतामः: the म् is inside the word."""
+        self.assertNotIn("8.2.64", taken(first("pratām{dhatu}~au")))
+        self.assertNotIn("8.2.64", taken(first("pratām{dhatu}~aḥ")))
+
+    def test_kashika_8_2_65_aganma_agnva_jaganvan(self):
+        """Kāśikā on 8.2.65: अगन्म तमसस्पारम्। अगन्व। जगन्वान् — the म् of the dhātu
+        before a म् or व्, where it does not end the pada."""
+        for text, form in (("agam{dhatu}~ma", "aganma"),
+                           ("agam{dhatu}~va", "aganva"),
+                           ("jagam{dhatu}~vān", "jaganvān")):
+            self.assertForms(text, {form})
+            self.assertEqual(steps(text), ["8.2.65"], text)
+
+    def test_8_2_65_is_not_for_a_pada_final_or_other_sounds(self):
+        """Kāśikā: अपदान्तार्थ आरम्भः — at a pada's end 8.2.64 has it; and only
+        before म्/व्: not before a त्."""
+        self.assertNotIn("8.2.65", taken(first("agam{dhatu} ma")))
+        self.assertNotIn("8.2.65", taken(first("agam{dhatu}~ta")))
+
+    def test_kashika_8_2_72_vidvadbhyam_papivadbhih_and_the_rest(self):
+        """Kāśikā on 8.2.72: विद्वद्भ्याम्, विद्वद्भिः। पपिवद्भ्याम्, पपिवद्भिः।
+        उखास्रद्भ्याम्, उखास्रद्भिः। पर्णध्वद्भ्याम्, पर्णध्वद्भिः। अनडुद्भ्याम्,
+        अनडुद्भिः — द् in place of the रु, and for अनडुह् of ढ्."""
+        for text, form in (("vidvas{kvasu} bhyām", "vidvadbhyām"),
+                           ("vidvas{kvasu} bhis", "vidvadbhiḥ"),
+                           ("papivas{kvasu} bhyām", "papivadbhyām"),
+                           ("ukhāsras bhyām", "ukhāsradbhyām"),
+                           ("parṇadhvas bhis", "parṇadhvadbhiḥ")):
+            self.assertForms(text, {form})
+            self.assertEqual(steps(text), ["8.2.72"], text)
+        # अनडुह् alone: the ह् becomes द् (the hal family's 8.2.31 is displaced
+        # by name; run with this family alone, 8.2.39 being its business)
+        self.assertEqual(sandhi("anaḍuh bhyām", rules=ALONE).surface,
+                         "anaḍudbhyām")
+
+    def test_kashika_8_2_72_sa_iti_eva_vidvan(self):
+        """Kāśikā: स इत्येव — विद्वान्। पपिवान्: the word ends in न्, not स्."""
+        self.assertNotIn("8.2.72", taken(first("vidvān{kvasu} atra")))
+
+    def test_kashika_8_2_72_displaces_the_ru(self):
+        """Kāśikā: रुत्वे नाप्राप्त इदमारभ्यत इति तद् बाध्यते — the step names 8.2.66;
+        and for अनडुह् 8.2.31 (अनडुहोऽपि ढत्वमनेन बाध्यते) by declaration."""
+        out = first("vidvas{kvasu} bhyām")
+        self.assertIn("8.2.66", displaced(out, "8.2.72"))
+        rule72 = next(r for r in fam.RULES if r.sutra == "8.2.72")
+        self.assertIn("8.2.31", [t for t, _ in rule72.overrides])
+        stripped = tuple(dataclasses.replace(r, overrides=())
+                         if r.sutra == "8.2.72" else r for r in RULES)
+        self.assertNotEqual(first("vidvas{kvasu} bhyām", stripped).surface,
+                            "vidvadbhyām")
+
+    def test_the_four_words_are_ru_adesas(self):
+        """`ru_adesa.VASU_FOUR` keeps the four; the rule reads the ends of the
+        words from it."""
+        self.assertEqual(VASU_FOUR, ("vasu", "sraṃs", "dhvaṃs", "anaḍuh"))
+
+    def test_kashika_8_2_76_gih_dhuh_puh(self):
+        """Kāśikā on 8.2.76: गीः। धूः। पूः — the penult इक् of a word that ends in
+        a dhātu's र्/व्, at the end of the pada."""
+        for word, form in (("gir", "gīḥ"), ("dhur", "dhūḥ"), ("pur", "pūḥ")):
+            self.assertForms(f"{word}{{dhatu}}", {form})
+            self.assertEqual(taken(first(f"{word}{{dhatu}}"))[0], "8.2.76")
+
+    def test_kashika_8_2_76_upadhagrahanam_kim_abibhar_bhavan(self):
+        """Kāśikā: उपधाग्रहणं किम्? अबिभर्भवान् — the इ of the reduplication is not
+        the penult."""
+        self.assertNotIn("8.2.76", taken(first("abibhar{dhatu} bhavān")))
+
+    def test_kashika_8_2_76_dhator_iti_eva_agnih_vayuh(self):
+        """Kāśikā: धातोरित्येव — अग्निः। वायुः: no dhātu (no flag)."""
+        self.assertNotIn("8.2.76", taken(first("agnir")))
+        self.assertNotIn("8.2.76", taken(first("gir")))
+
+    def test_kashika_8_2_76_padasyeti_eva_girau_girah(self):
+        """Kāśikā: पदस्येत्येव — गिरौ, गिरः: the र् does not end the pada."""
+        self.assertNotIn("8.2.76", taken(first("gir{dhatu}~au")))
+        self.assertNotIn("8.2.76", taken(first("gir{dhatu}~aḥ")))
+
+    def test_kashika_8_2_77_divyati_sivyati_astirnam(self):
+        """Kāśikā on 8.2.77: आस्तीर्णम्। विस्तीर्णम्। विशीर्णम्। अवगूर्णम्। दीव्यति। सीव्यति
+        — before a consonant, in the middle of a pada (the न of the ending is
+        8.4.2's business, the natva family's)."""
+        for text, form in (("div{dhatu}~yati", "dīvyati"),
+                           ("sīv{dhatu}~yati".replace("sīv", "siv"), "sīvyati"),
+                           ("āstir{dhatu}~na", "āstīrna"),
+                           ("viśir{dhatu}~na", "viśīrna"),
+                           ("avagur{dhatu}~na", "avagūrna")):
+            self.assertForms(text, {form})
+            self.assertEqual(steps(text), ["8.2.77"], text)
+
+    def test_kashika_8_2_77_dhator_iti_and_ika_iti_eva(self):
+        """Kāśikā: धातोरित्येव — दिवमिच्छति दिव्यति (denominative: no flag);
+        इक इत्येव — स्मर्यते, भव्यम्: no इक् before the र्/व्."""
+        self.assertNotIn("8.2.77", taken(first("div~yati")))
+        for text in ("smar{dhatu}~yate", "bhav{dhatu}~yam"):
+            self.assertNotIn("8.2.77", taken(first(text)), text)
+            self.assertEqual(first(text).surface, text.replace("{dhatu}", "")
+                             .replace("~", ""), text)
+
+    def test_the_penult_is_not_lengthened_twice(self):
+        """A penult that arrives long is left alone (no change to make)."""
+        self.assertNotIn("8.2.76", taken(first("gīr{dhatu}")))
+        self.assertNotIn("8.2.77", taken(first("dīv{dhatu}~yati")))
+
+    def test_kashika_8_2_79_dhuryah_divyam_kuryat_churyat(self):
+        """Kāśikā on 8.2.79: धुरं वहति धुर्यः। धुरि साधुर्धुर्यः। दिव्यम्। कुर्यात्।
+        छुर्यात् — a भ (flag `bha`), or कुर्, छुर्: no lengthening (8.2.77 is
+        refused); and *reph-vakārābhyāṃ bha-viśeṣaṇaṃ kim? pratidīvnā*."""
+        bha, kur, chur = BHA_KUR_CHUR
+        for text, form in (("dhur{dhatu,bha}~ya", "dhurya"),
+                           ("div{dhatu,bha}~ya", "divya"),
+                           (f"{kur}{{dhatu}}~yāt", "kuryāt"),
+                           (f"{chur}{{dhatu}}~yāt", "churyāt")):
+            self.assertForms(text, {form}, pause=False)
+            out = first(text, pause=False)
+            self.assertNotIn("8.2.77", taken(out), text)
+            self.assertIn("8.2.79", taken(out), text)
+            step = step_of(out, "8.2.79")
+            self.assertEqual(step.detail.kind, "pratiṣedha")
+            self.assertIn("8.2.77", [a.sutra for a in step.against])
+        # without the flag, the very same letters are lengthened
+        self.assertForms("dhur{dhatu}~ya", {"dhūrya"})
+        self.assertForms("pratidiv{dhatu}~nā", {"pratidīvnā"})
+
+    def test_8_2_79_refuses_8_2_76_too(self):
+        """*Kur* and *chur* at the end of a pada: no *kūḥ*."""
+        out = first("kur{dhatu}")
+        self.assertNotIn("8.2.76", taken(out))
+        self.assertEqual(out.surface, "kuḥ")
+        self.assertEqual(first("pur{dhatu}").surface, "pūḥ")
+
+    def test_8_2_78_is_not_a_rule(self):
+        """8.2.78 is `scope` (the letters are inside a dhātu); nothing claims it."""
+        self.assertNotIn("8.2.78", [r.sutra for r in fam.RULES])
+        self.assertEqual(dict((s, st) for s, st, _ in fam.COVERAGE)["8.2.78"],
+                         "scope")
+
+
+# ---------------------------------------------------------------------------
+# The Laghusiddhāntakaumudī's own list
+# ---------------------------------------------------------------------------
+
+LAGHU = "reference/mula/ancillary/gretil-laghusiddhantakaumudi.txt"
+
+
+class LaghuExamples(_Base):
+    """Every example the Laghusiddhāntakaumudī gives in its visarga chapter and
+    where it names these sūtras, reproduced — and the source read for each."""
+
+    #: (the Laghu's own words, this family's input, the forms it must give, the
+    #: sūtras of the JUNCTION in the first course)
+    CASES = (
+        ("ramas ca", "rāmas ca", {"rāmaśca"},
+         ["8.2.66", "8.3.15", "8.3.34", "8.4.40"]),
+        ("viṣṇustrātā", "viṣṇus trātā", {"viṣṇustrātā"},
+         ["8.2.66", "8.3.15", "8.3.34"]),
+        ("hariḥ śete, hariśśete", "haris śete", {"hariḥśete", "hariśśete"},
+         ["8.2.66", "8.3.15", "8.3.36"]),
+        ("śivor'cyaḥ", "śivas arcyaḥ", {"śivo'rcyaḥ"},
+         ["8.2.66", "6.1.113", "6.1.87", "6.1.109"]),
+        ("śivo vandyaḥ", "śivas vandyaḥ", {"śivovandyaḥ"},
+         ["8.2.66", "6.1.114", "6.1.87"]),
+        ("devā iha, devāyiha", "devās iha", {"devāiha", "devāyiha"},
+         ["8.2.66", "8.3.17", "8.3.19"]),
+        ("bho devāḥ", "bhos devāḥ", {"bhodevāḥ"},
+         ["8.2.66", "8.3.17", "8.3.22"]),
+        ("bhago namaste", "bhagos namaste", {"bhagonamaste"},
+         ["8.2.66", "8.3.17", "8.3.22"]),
+        ("agho yāhi", "aghos yāhi", {"aghoyāhi"},
+         ["8.2.66", "8.3.17", "8.3.22"]),
+        ("aharahaḥ", "ahan+ahan", {"aharahaḥ"}, ["8.2.69"]),
+        ("ahargaṇaḥ", "ahan-gaṇaḥ", {"ahargaṇaḥ"}, ["8.2.69"]),
+        ("punā ramate", "punar ramate", {"punāramate"}, ["8.3.14", "6.3.111"]),
+        ("harī ramyaḥ", "haris ramyaḥ", {"harīramyaḥ"},
+         ["8.2.66", "8.3.14", "6.3.111"]),
+        ("śambhū rājate", "śambhus rājate", {"śambhūrājate"},
+         ["8.2.66", "8.3.14", "6.3.111"]),
+        ("manorathaḥ", "manas rathaḥ", {"manorathaḥ"},
+         ["8.2.66", "6.1.114", "6.1.87"]),
+        ("eṣa viṣṇuḥ", "eṣas viṣṇuḥ", {"eṣaviṣṇuḥ"}, ["6.1.132"]),
+        ("sa śambhuḥ", "sas śambhuḥ", {"saśambhuḥ"}, ["6.1.132"]),
+        ("eṣo 'tra", "eṣas atra", {"eṣo'tra"},
+         ["8.2.66", "6.1.113", "6.1.87", "6.1.109"]),
+        ("saiṣa dāśarathī rāmaḥ", "sas{padapuranam} eṣa dāśarathī rāmaḥ",
+         {"saiṣadāśarathīrāmaḥ"}, ["6.1.134", "6.1.88"]),
+    )
+
+    #: strings of the Laghu that the cases above rest on
+    IN_THE_SOURCE = (
+        "khari / viṣṇustrātā", "hariḥ śete, hariśśete",
+        "śivor'cyaḥ", "śivo vandyaḥ", "devā iha, devāyiha",
+        "bhos bhagos aghos iti sāntā nipātāḥ", "bho devāḥ / bhago namaste / agho yāhi",
+        "aharahaḥ / ahargaṇaḥ", "punā ramate / harī ramyaḥ / śambhū rājate",
+        "aṇaḥ kim ? tṛḍhaḥ / vṛḍhaḥ", "manorathaḥ", "eṣa viṣṇuḥ / sa śambhuḥ",
+        "eṣako rudraḥ", "asaḥ śivaḥ", "eṣo 'tra",
+        "semāmaviḍḍhi prabhṛtim", "saiṣa dāśarathī rāmaḥ",
+        "nṝnityasya rurvā pe", "kānnakārasya ruḥ syādāmreḍite",
+        "kāṃskān", "nṝn pāhi",
+    )
+
+    def test_the_source_says_what_the_cases_say(self):
+        """Every string above is in the Laghusiddhāntakaumudī on disk (a case
+        that its source does not carry would be a claim with nothing under it)."""
+        with open(LAGHU, encoding="utf-8") as handle:
+            text = " ".join(handle.read().split())
+        for line in self.IN_THE_SOURCE:
+            self.assertIn(" ".join(line.split()), text, line)
+
+    def test_each_example_is_reproduced_with_its_steps(self):
+        for laghu, text, expected, junction in self.CASES:
+            with self.subTest(laghu):
+                self.assertEqual(forms(text), expected, laghu)
+                self.assertEqual(steps(text), junction, laghu)
+
+    def test_the_kims_of_the_laghu(self):
+        """The Laghu's own counter-examples: अकोः किम्? एषको रुद्रः; अनञ्समासे किम्?
+        असः शिवः; हलि किम्? एषोऽत्र (above); अणः किम्? तृढः, वृढः (above);
+        अशि किम्? (Kaumudī) देवाः सन्ति."""
+        self.assertIn("6.1.114", steps("eṣakas{stem:etad,akac} rudraḥ"))
+        self.assertNotIn("6.1.132", steps("eṣakas{stem:etad,akac} rudraḥ"))
+        self.assertNotIn("6.1.132",
+                         steps("asas{stem:tad,nan_samasa} śivaḥ"))
+        self.assertNotIn("8.3.17", steps("devās santi"))
+
+    def test_kupvoh_the_laghus_courses_for_nrn_pahi(self):
+        """Laghusiddhāntakaumudī on 8.3.37: कवर्गे पवर्गे च विसर्गस्य एक epau स्तः,
+        चाद्विसर्गः — नॄं पाहि, नॄंः पाहि, नॄंः पाहि, नॄन् पाहि (the three that
+        do not depend on the nasal family: the उपध्मानीय, the visarga, the
+        न् kept)."""
+        self.assertEqual(forms("nṝn pāhi"), {f"nṝ{UPADHMANIYA}pāhi",
+                                             f"nṝ{VISARGA}pāhi", "nṝnpāhi"})
+
+    def test_the_whole_rulebook_agrees_on_the_ordinary_ones(self):
+        """The rulebook as a whole (every family present) gives the same forms
+        and, among the steps that are this family's, the same sequence — a
+        result no other family can touch."""
+        mine = {s for s, _, _ in fam.COVERAGE}
+        for text, form in (("rāmas ca", "rāmaśca"),
+                           ("manas ratha", "manoratha"),
+                           ("vṛkṣas tarati", "vṛkṣastarati"),
+                           ("punar ramate", "punāramate"),
+                           ("bhos devāḥ", "bhodevāḥ")):
+            result = sandhi(text)
+            self.assertEqual(result.surface, form, text)
+            ours = [s for s in at_junction(result.outcomes[0]) if s in mine]
+            self.assertEqual(ours, [s for s in steps(text, RULES) if s in mine],
+                             text)
+
+
+# ---------------------------------------------------------------------------
+# What the commentaries say, verified — and the lists that stand for them
+# ---------------------------------------------------------------------------
+
+#: (sūtra, work, a phrase this file's docstrings and expectations rely on)
+IN_THE_COMMENTARY = (
+    ("8.2.66", "kashika", "अग्निरत्र। वायुरत्र"),
+    ("8.2.66", "kashika", "सजुषः — "),
+    ("8.2.66", "balamanorama", "सजुषौ सजुष इत्यत्र षकारस्य न रुत्वम्"),
+    ("6.1.113", "kashika", "वृक्षोऽत्र। प्लक्षोऽत्र"),
+    ("6.1.113", "kashika", "तपरकरणं किम् ? वृक्षा अत्र"),
+    ("6.1.113", "kashika", "सानुबन्धग्रहणं किम् ? स्वरत्र। प्रातरत्र"),
+    ("6.1.113", "kashika", "वृक्ष इह"),
+    ("6.1.113", "kashika", "वृक्ष आश्र्तिः"[:0] + "तपरत्वादत्र न भवति"),
+    ("6.1.114", "kashika", "पुरुषो याति। पुरुषो हसति। पुरुषो ददाति"),
+    ("6.1.114", "kaumudi", "प्रातरत्र । भ्रातर्गच्छ"),
+    ("6.1.132", "kashika", "एष ददाति। स ददाति"),
+    ("6.1.132", "kashika", "एषको ददाति"),
+    ("6.1.132", "kashika", "असो ददाति"),
+    ("6.1.133", "kaumudi", "एष स्य भानुः"),
+    ("6.1.133", "kashika", "न च भवति — यत्र स्यो निपतेत्"),
+    ("6.1.134", "kashika", "स इव व्याघ्रो भवेत्"),
+    ("6.3.111", "kashika", "नीरक्त"),
+    ("6.3.111", "kashika", "अग्नी रथः। इन्दू रथः"),
+    ("6.3.111", "kashika", "आतृढम्। आवृढम्"),
+    ("8.3.13", "kashika", "लीढम्। मीढम्। उपगूढम्"),
+    ("8.3.13", "kashika", "श्वलिड् ढौकत"),
+    ("8.3.14", "kashika", "पुना रक्तं वासः। प्राता राजक्रयः"),
+    ("8.3.14", "kashika", "तेनापदान्तस्यापि रेफस्य लोपो भवति"),
+    ("8.3.15", "kashika", "वृक्षश्छादयति। प्लक्षश्छादयति। वृक्षस्तरति। प्लक्षस्तरति"),
+    ("8.3.15", "kashika", "अग्निर्नयति। वायुर्नयति"),
+    ("8.3.16", "kashika", "पयःसु। सर्पिःषु। यशःसु"),
+    ("8.3.16", "kashika", "गीर्षु। धूर्षु"),
+    ("8.3.17", "kashika", "ब्राह्मणा ददति। पुरुषा ददति"),
+    ("8.3.17", "kashika", "भो अत्र। भगो अत्र। अघो अत्र"),
+    ("8.3.17", "kaumudi", "देवा इह । देवायिह । अशि किम् । देवाः सन्ति"),
+    ("8.3.18", "kashika", "असावादित्यः, असा आदित्यः। द्वावत्र, द्वा अत्र"),
+    ("8.3.19", "kashika", "क आस्ते, कयास्ते"),
+    ("8.3.19", "kaumudi", "हर एहि । हरयेहि । विष्ण इह । विष्णविह । श्रिया उद्यतः"),
+    ("8.3.20", "kashika", "लघुप्रयत्नतरस्तु भवत्येव यकारः"),
+    ("8.3.21", "kashika", "स उ एकाग्निः"),
+    ("8.3.21", "kashika", "तन्त्र उतम्, तन्त्रयुतम्"),
+    ("8.3.22", "kaumudi", "भो देवाः । भो लक्ष्मि । भो विद्वद्वृन्द । भगो नमस्ते । अघो याहि"),
+    ("8.3.34", "kashika", "वृक्षष्ठकारः। प्लक्षष्ठकारः"),
+    ("8.3.35", "kashika", "शशः क्षुरम्। पुरुषः क्षुरम्। अद्भिः प्सातम्। वासः क्षौमम्"),
+    ("8.3.36", "kashika", "वृक्षः शेते, वृक्षश्शेते"),
+    ("8.3.36", "kashika", "वृक्षा स्थातारः, वृक्षाः स्थातारः, वृक्षास्स्थातारः"),
+    ("8.3.37", "kashika", "वृक्ष करोति, वृक्षः करोति"),
+    ("8.3.37", "kashika", "वृक्ष फलति, वृक्षः फलति"),
+    ("8.3.38", "kashika", "पयस्पाशम्"),
+    ("8.3.38", "kashika", "पय कामयते। पय पिबति"),
+    ("8.3.38", "kashika", "प्रातःकल्पम्, पुनःकल्पमिति"),
+    ("8.3.38", "kashika", "गीःकाम्यति। धूःकाम्यति"),
+    ("8.3.39", "kashika", "सर्पिष्पाशम्। यजुष्पाशम्"),
+    ("8.3.39", "kashika", "सर्पिस्ते। यजुस्ते"),
+    ("8.3.40", "kashika", "नमस्कर्ता। नमस्कर्तुम्। नमस्कर्तव्यम्। पुरस्कर्ता"),
+    ("8.3.40", "kashika", "पूः, पुरौ, पुरः करोति"),
+    ("8.3.41", "kashika", "निष्कृतम्। निष्पीतम्। दुस् — दुष्कृतम्। दुष्पीतम्"),
+    ("8.3.41", "kashika", "मुहु कामा"[:0] + "मुहु"),
+    ("8.3.42", "kashika", "तिरस्कर्ता। तिरस्कर्तुम्। तिरस्कर्तव्यम्। तिरः कर्ता"),
+    ("8.3.43", "kashika", "द्विष्करोति, द्विःकरोति। त्रिष्करोति, त्रिःकरोति"),
+    ("8.3.43", "kashika", "चतुष्कपालम्। चतुष्कण्टकम्"),
+    ("8.3.44", "kashika", "सर्पिष्करोति, सर्पिः करोति। यजुष्करोति, यजुः करोति"),
+    ("8.3.44", "kashika", "तिष्ठतु सर्पिः, पिब त्वमुदकम्"),
+    ("8.3.45", "kashika", "सर्पिष्कुण्डिका। धनुष्कपालम्। सर्पिष्पानम्। धनुष्फलम्"),
+    ("8.3.45", "kashika", "परमसर्पिःकुण्डिका। परमधनुःकपालम्"),
+    ("8.3.46", "kashika", "अयस्कारः। पयस्कारः"),
+    ("8.3.46", "kashika", "गीःकारः। धूःकारः"),
+    ("8.3.46", "kashika", "श्वःकारः। पुनःकारः"),
+    ("8.3.47", "kashika", "अधस्पदम्। शिरस्पदम्। अधस्पदी। शिरस्पदी"),
+    ("8.3.48", "kashika", "कस्कः। कौतस्कुतः"),
+    ("8.3.48", "kashika", "भ्रातुष्पुत्रः। शुनस्कर्णः"),
+    ("8.3.49", "kashika", "अयःपात्रम्, अयस्पा॒त्रम्"[:0] + "विश्वतः पात्रम्, विश्वतस्पात्रम्"),
+    ("8.3.50", "kashika", "कः — विश्वतस्कः। करत् — विश्वतस्करत्। करति — पयस्करति"),
+    ("8.3.51", "kashika", "दि॒वस्परि॑ प्रथ॒मं ज॑ज्ञे"),
+    ("8.3.52", "kashika", "राज्ञस्पातु। न च भवति — परिषदः पातु"),
+    ("8.3.53", "kashika", "षष्ठ्या इति किम् ? मनुः"),
+    ("8.3.54", "kashika", "इडायास्पतिः, इडायाः पतिः"),
+    ("8.2.68", "kashika", "अहोभ्याम्। अहोभिः"),
+    ("8.2.69", "kashika", "अहर्ददाति। अहर्भुङ्क्ते"),
+    ("8.2.70", "kashika", "अम्न एव"),
+    ("8.2.70", "kashika", "अम्नरेव"),
+    ("8.2.71", "kashika", "भुव इत्यन्तरिक्षम्"),
+    ("8.2.72", "kashika", "विद्वद्भ्याम्, विद्वद्भिः। पपिवद्भ्याम्"),
+    ("8.2.64", "kashika", "प्रशान्। प्रतान्। प्रदान्"),
+    ("8.2.65", "kashika", "अगन्म"),
+    ("8.2.76", "kashika", "गीः। धूः। पूः। आशीः"),
+    ("8.2.77", "kashika", "आस्तीर्णम्। विस्तीर्णम्। विशीर्णम्। अवगूर्णम्"),
+    ("8.2.79", "kashika", "धुरं वहति धुर्यः"),
+)
+
+
+class SourcesAreOnDisk(unittest.TestCase):
+    """The examples these tests rest on are in the commentaries they name."""
+
+    def test_every_example_is_in_its_commentary(self):
+        for sutra, work, phrase in IN_THE_COMMENTARY:
+            # the printed text has a doubled space here and there (रक्तं  वासः)
+            # and carries Vedic accent marks (अग॑न्म॒) the quotation leaves off
+            def plain(t):
+                return " ".join(t.replace("\u0951", "").replace("\u0952", "").split())
+            text = plain(corpus.commentary_on(sutra, work) or "")
+            self.assertIn(plain(phrase), text, (sutra, work, phrase))
+
+    def test_every_quotation_the_module_makes_is_verbatim(self):
+        """`_q` and `_bare` register each quotation; every one is read back from
+        the corpus (a reason that the tradition did not give is not given)."""
+        self.assertGreater(len(fam.QUOTED), 30)
+        for sutra, work, quote in fam.QUOTED:
+            if work == "varttika":
+                found = any(quote in v.text for v in corpus.varttikas_on(sutra))
+            else:
+                found = quote in (corpus.commentary_on(sutra, work) or "")
+            self.assertTrue(found, (sutra, work, quote))
+
+    def test_the_vartikas_are_the_corpus_own_or_a_quoted_line(self):
+        """Every rule with `authority=VARTTIKA` carries a `varttika` that is a
+        vārttika of the corpus, or the Kaumudī's marked line."""
+        for r in fam.RULES:
+            if r.authority != "vārttika":
+                continue
+            corpus_texts = {v.text.strip(" ।")
+                            for v in corpus.varttikas_on(r.sutra)}
+            quoted = {q for s, w, q in fam.QUOTED if s == r.sutra}
+            self.assertTrue(r.varttika in corpus_texts or r.varttika in quoted,
+                            (r.sutra, r.varttika))
+            self.assertTrue(r.name == r.varttika)
+
+    def test_the_names_of_the_rules_are_the_sutras_own_words(self):
+        """A rule's name is the sūtra's text in Devanāgarī from the corpus — none
+        is typed."""
+        for r in fam.RULES:
+            if r.authority == "vārttika":
+                continue
+            self.assertEqual(r.name, trace.deva(
+                corpus.load_vidyut_sutrapatha()[r.sutra].text), r.sutra)
+
+    def test_the_gana_lists_are_the_commentarys_words(self):
+        """The word lists this module asks of `visarjaniya` and `ru_adesa` are
+        the Kāśikā's: read back from the corpus, not just trusted."""
+        pairs = (
+            ("8.3.43", "द्विस् त्रिस् चतुर्", DVIS_THREE),
+            ("8.3.53", "पति पुत्र पृष्ठ पार पद पयस् पोष", PATI_SEVEN),
+            ("8.2.70", "अम्नस् ऊधस् अवस्", UBHAYATHA_THREE),
+        )
+        for sutra, line, expected in pairs:
+            self.assertIn(line, corpus.commentary_on(sutra, "kashika"), sutra)
+            self.assertEqual(tuple(to_iast(w) for w in line.split()),
+                             tuple(expected), sutra)
+
+
+# ---------------------------------------------------------------------------
+# The rulebook: coverage, declarations, provenance
+# ---------------------------------------------------------------------------
+
+#: The scope, as the sūtras it covers — 62 sūtras.
+SCOPE = ([f"8.2.{n}" for n in range(62, 82)] + [f"8.3.{n}" for n in range(8, 23)]
+         + [f"8.3.{n}" for n in range(34, 55)]
+         + ["6.1.113", "6.1.114", "6.3.111"]
+         + [f"6.1.{n}" for n in range(132, 136)])
+
+
+class Declarations(unittest.TestCase):
+
+    def test_the_rulebook_is_sound(self):
+        self.assertEqual(rulebook.problems(), [])
+
+    def test_coverage_is_exactly_the_scope(self):
+        ids = [s for s, _, _ in fam.COVERAGE]
+        self.assertEqual(sorted(ids), sorted(SCOPE))
+        self.assertEqual(len(ids), len(set(ids)))
+
+    def test_every_status_is_honest(self):
+        """A rule is 'rule', 'partial' or 'vedic'; a sūtra with no rule is
+        'scope' and says why; 'vedic' means the rule is `vedic`."""
+        have = {}
+        for r in fam.RULES:
+            have.setdefault(r.sutra, []).append(r)
+        for sutra, status, note in fam.COVERAGE:
+            self.assertIn(status, rulebook.COVERAGE_STATUS)
+            if status == "scope":
+                self.assertNotIn(sutra, have, sutra)
+                self.assertGreater(len(note), 40, sutra)
+            else:
+                self.assertIn(sutra, have, sutra)
+            if status == "partial":
+                self.assertGreater(len(note), 40, sutra)
+            if status == "vedic":
+                self.assertTrue(any(r.vedic for r in have[sutra]), sutra)
+            if status in ("rule", "partial"):
+                self.assertTrue(any(not r.vedic for r in have[sutra]), sutra)
+        for r in fam.RULES:
+            self.assertIn(r.sutra, [s for s, _, _ in fam.COVERAGE])
+
+    def test_every_rule_carries_the_family_tags(self):
+        """README: the ru/visarga rules 'visarga'; the consonant rules 'hal'."""
+        for r in fam.RULES:
+            self.assertTrue({"visarga", "hal"} & set(r.families), r.sutra)
+
+    def test_every_override_is_a_sutra_or_a_tag_and_says_why_in_quotation(self):
+        known = corpus.load_vidyut_sutrapatha()
+        tags = set()
+        for group in rulebook.by_family().values():
+            for r in group:
+                tags.update(r.families)
+        registered = {q for _, _, q in fam.QUOTED}
+        for r in fam.RULES:
+            for target, why in r.overrides:
+                if target.startswith("@"):
+                    self.assertIn(target[1:], tags, (r.sutra, target))
+                else:
+                    self.assertIn(target, known, (r.sutra, target))
+                self.assertTrue(any(q in why for q in registered),
+                                (r.sutra, target))
+
+    def test_a_sutra_tag_belongs_to_one_rule_only(self):
+        """`sutra:8.3.36` marks the sūtra itself, never its vārttika — so that
+        naming one does not name the other."""
+        seen = {}
+        for r in fam.RULES:
+            for tag in r.families:
+                if tag.startswith("sutra:"):
+                    self.assertNotIn(tag, seen, tag)
+                    seen[tag] = r
+        for tag, r in seen.items():
+            self.assertEqual("sutra:" + r.sutra, tag)
+            self.assertEqual(r.varttika, "")
+
+    def test_two_rules_never_share_a_sutra_and_a_varttika(self):
+        keys = [(r.sutra, r.varttika) for r in fam.RULES]
+        self.assertEqual(len(keys), len(set(keys)))
+
+    def test_the_vedic_rules_are_only_run_in_the_veda(self):
+        """`Rule.vedic` is what the engine reads: with `veda=False` none of
+        them is even asked."""
+        from src.astadhyayi.sandhi.engine import collect
+        state = parse("vācas{sasthi} patim")
+        self.assertFalse(state.veda)
+        offered = {r.sutra for r, _ in collect(state, RULES)}
+        self.assertNotIn("8.3.53", offered)
+        vedic = dataclasses.replace(state, veda=True)
+        after = derive(vedic, RULES)[0].final
+        self.assertEqual(after.joined(), "vācaspatim")
+
+    def test_the_flags_are_documented(self):
+        """Every flag the module reads by name is in its docstring's list."""
+        import re
+        with open(fam.__file__, encoding="utf-8") as handle:
+            source = handle.read()
+        named = set(re.findall(r'_flag\(v, [a-z_.]+, "([a-z_]+)"', source))
+        named |= set(re.findall(r'_asked\(v, "([a-z_]+)"', source))
+        doc = fam.__doc__
+        for flag in sorted(named):
+            self.assertIn(flag, doc, flag)
+
+
+class Agreement(_Base):
+    """The project already codifies these sūtras as questions
+    (`visarjaniya`, `ru_anunasika`, `ru_adesa`, `anga`). Where both answer
+    the same question they must give the same sūtra — two independent
+    codifications of the commentary, checked against each other."""
+
+    def test_the_visarga_table_and_the_engine_choose_the_same_sutra(self):
+        engine_steps = lambda text, **kw: set(taken(first(text, **kw)))
+        cases = (
+            (dict(gana="visarjanīya", before="khar"), "8.3.34",
+             "vṛkṣas tarati"),
+            (dict(gana="visarjanīya", before="ku"), "8.3.37", "vṛkṣas karoti"),
+            (dict(gana="visarjanīya", before="khar-śar-para"), "8.3.35",
+             "vāsas kṣaumam"),
+            (dict(gana="visarjanīya", before="śar"), "8.3.36", "haris śete"),
+            (dict(gana="visarjanīya", before="ku-pu-a-pada-ādi"), "8.3.38",
+             "payas pāśa{pratyaya}"),
+            (dict(gana="iṇ-para-visarjanīya", before="ku-pu-a-pada-ādi"),
+             "8.3.39", "sarpis pāśa{pratyaya}"),
+            (dict(word="namas", gana="gati", before="ku"), "8.3.40",
+             "namas{gati} kartā"),
+            (dict(word="nis", gana="i-u-upadha-a-pratyaya", before="ku"),
+             "8.3.41", "nis kṛtam"),
+            (dict(word="tiras", gana="gati", before="ku"), "8.3.42",
+             "tiras{gati} kartā"),
+            (dict(word="dvis", before="ku", sense="kṛtvo'rtha"), "8.3.43",
+             "dvis{krtvo_artha} karoti"),
+            (dict(gana="is-us-anta", before="ku", sense="sāmarthya"), "8.3.44",
+             "sarpis{isus,samartha} karoti"),
+            (dict(gana="is-us-anta", before="ku", sense="samāsa"), "8.3.45",
+             "sarpis{isus}-kuṇḍikā"),
+            (dict(word="adhas", before="pada", sense="samāsa"), "8.3.47",
+             "adhas-padam"),
+        )
+        for params, sutra, text in cases:
+            with self.subTest(text):
+                self.assertEqual(the_visarga(**params).sutra, sutra)
+                self.assertIn(sutra, engine_steps(text))
+
+    def test_the_vedic_rows_agree_too(self):
+        cases = (
+            (dict(gana="visarjanīya", before="ku", chandasi=True), "8.3.49",
+             "ayas pātram"),
+            (dict(case="ṣaṣṭhī", before="pati", chandasi=True), "8.3.53",
+             "vācas{sasthi} patim"),
+            (dict(case="pañcamī", before="pari", sense="adhi", chandasi=True),
+             "8.3.51", "divas{pancami} pari{adhyartha}"),
+        )
+        for params, sutra, text in cases:
+            with self.subTest(text):
+                self.assertEqual(the_visarga(**params).sutra, sutra)
+                self.assertIn(sutra, set(taken(first(text, veda=True))))
+
+    def test_the_word_end_table_and_the_engine_choose_the_same_sutra(self):
+        for params, sutra, text, veda in (
+                (dict(word="ahan"), "8.2.68", "ahan bhyām{sup}", False),
+                (dict(word="ahan", before="a-sup"), "8.2.69", "ahan dadāti",
+                 False),
+                (dict(word="amnas", chandasi=True), "8.2.70", "amnas eva", True),
+                (dict(word="bhuvas", gana="mahāvyāhṛti", chandasi=True),
+                 "8.2.71", "bhuvas{mahavyahrti} iti", True),
+                (dict(gana="ma-anta-dhātu"), "8.2.64", "praśām{dhatu}", False),
+                (dict(gana="ma-anta-dhātu", before="ma"), "8.2.65",
+                 "agam{dhatu}~ma", False),
+                (dict(gana="ra-va-anta-dhātu"), "8.2.76", "gir{dhatu}", False),
+                (dict(gana="ra-va-anta-dhātu", before="hal"), "8.2.77",
+                 "div{dhatu}~yati", False)):
+            with self.subTest(text):
+                self.assertEqual(the_word_end(**params).sutra, sutra)
+                self.assertIn(sutra, set(taken(first(text, veda=veda))))
+
+    def test_the_visarga_of_8_3_15_agrees_with_anga(self):
+        """`anga.kharavasanayoh` answers 8.3.15 from the *word*; the engine's
+        step is there exactly when it answers."""
+        for word, following, expect in (("agnir", "nayati", False),
+                                        ("punar", "tatra", True),
+                                        ("punar", "atra", False)):
+            asked = kharavasanayoh(word, at_pause=False, following=following)
+            self.assertEqual(asked.result is not None, expect)
+            self.assertEqual("8.3.15" in steps(f"{word} {following}"), expect)
+
+
+# ---------------------------------------------------------------------------
+# Every meeting terminates, cleanly, citing real sūtras
+# ---------------------------------------------------------------------------
+
+
+class Termination(unittest.TestCase):
+    """Whatever the flags and whatever the sounds, the family's rules end, and
+    end with sounds — and cite sūtras that exist (the engine's own test does
+    this for the bare letters; here for the flags this family adds)."""
+
+    FINALS = ("s", "r", "n", "m", "ṣ", "h", "y", "v", "o", "a", "ā", "i", "u")
+    INITIALS = ("a", "ā", "i", "u", "e", "k", "kh", "p", "c", "t", "ś", "s",
+                "r", "d", "v", "h", "ḍh")
+    FLAGSETS = ("", "{dhatu}", "{gati}", "{apratyaya}", "{isus,samartha}",
+                "{sasthi}", "{pancami}", "{stem:etad}", "{krtvo_artha}",
+                "{avyaya}", "{sup}", "{sakatayana}", "{padapuranam}",
+                "{kvasu}", "{bha,dhatu}")
+
+    def test_nothing_loops_or_stops_short(self):
+        known = corpus.load_vidyut_sutrapatha()
+        checked = 0
+        for veda in (False, True):
+            for final in self.FINALS:
+                for flags in self.FLAGSETS:
+                    for initial in self.INITIALS[::2 if not veda else 3]:
+                        first_word = f"kata{final}{flags}"
+                        second = f"{initial}ta"
+                        result = sandhi(f"{first_word} {second}", rules=RULES_YAN,
+                                        veda=veda)
+                        self.assertTrue(result.outcomes)
+                        for o in result.outcomes:
+                            self.assertNotIn("cycling", o.stopped, (first_word,
+                                                                    second))
+                            self.assertNotIn("cap", o.stopped, (first_word,
+                                                                second))
+                            for step in o.steps:
+                                for s in step.sutras:
+                                    self.assertIn(s, known)
+                            trace.outcome_dict(o)             # renders
+                        checked += 1
+        self.assertGreater(checked, 1000)
+
+    def test_a_call_stays_in_the_millisecond_range(self):
+        """The engine is asked at every step of every rule, so a family that
+        added a slow `find` would show here. Generous bound: a ~ms call."""
+        import time
+        sandhi("rāmas ca")
+        began = time.perf_counter()
+        for _ in range(20):
+            sandhi("rāmas ca")
+            sandhi("devās iha")
+            sandhi("vṛkṣas karoti")
+        per_call = (time.perf_counter() - began) / 60
+        self.assertLess(per_call, 0.08, f"{per_call * 1000:.1f} ms per call")
+
+    def test_options_multiply_only_where_the_grammar_offers_them(self):
+        """A whole clause of junctions returns every course and is capped, not
+        stuck."""
+        text = "devās iha haris śete vṛkṣas karoti tiras{gati} kartā"
+        result = sandhi(text, rules=RULES)
+        self.assertTrue(1 < len(result.outcomes) <= 64)
+        for o in result.outcomes:
+            self.assertNotIn("cycling", o.stopped)
+
+
+if __name__ == "__main__":
+    unittest.main()

@@ -1,0 +1,683 @@
+# -*- coding: utf-8 -*-
+"""
+८.४.१–३९ — रषाभ्यां नो णः, and the thirty-eight rules about it, as sandhi steps.
+
+A dental न् becomes the cerebral ण् after a र् or ष् (8.4.1), and the very next
+sūtra lets it reach across a vowel, a guttural, a labial, the preverb आङ् or a
+नुम् (8.4.2): *rāma + ena* is *rāmeṇa*, *kara + ana* is *karaṇa*, *arka + ena*
+is *arkeṇa*. Twenty-seven sūtras then say where else the cerebral goes — across
+a compound seam (8.4.3–13), from a preverb into a root (8.4.14–33) — and six at
+the end take it back (8.4.34–39): not after a word-final ष् (*niṣpānam*), not of
+a word-final न् (*vṛkṣān*), not where a whole word stands between (*pra gāṃ
+nayāmaḥ*).
+
+**WHERE THIS FAMILY DIFFERS FROM THE JUNCTION RULES.** The engine acts at
+junctions between words. Cerebralisation acts at a न् that is *interior* to a
+piece — the न् of an affix, or of a root — and its cause may be several sounds
+away, inside one pada. So these rules look across the pieces the caller joined
+with an ANGA boundary (8.4.1, 8.4.2), a SAMASA boundary (8.4.3–13) or an
+UPASARGA boundary (8.4.14–33), and they **never rewrite the inside of a finished
+piece that has no such join**: *arjuna* and *gacchati* stay as they are, and so
+does *karana* given as one word.
+
+**THE ONE WALK.** Every provision asks the same geometric question and asks it
+once (`_walk`): going left from a न्, through sounds that 8.4.2 lets the
+cerebral cross (`anga._across_which`, the project's own codification of the
+list, so this module does not restate it), does one reach a र् or ष्? Which
+sūtra then owns the न् is decided by *what stands between them* — the same pada
+(8.4.1 if nothing stands between, 8.4.2 if something does), a compound seam, a
+preverb — and by the lexical facts the caller supplies. The rule sees the row as
+its own View shows it, so a ष् that 8.3.59 has made out of a स् (8.3.55–119
+stand before 8.4.1) is a ष् for it, and a cerebral 8.4.14 has made is not yet
+there for 8.4.1 (8.2.1).
+
+**REFUSALS ARE RULES, AND MEET THEIR TARGETS AT ONE SITE.** 8.4.34–39, and the
+niyama halves of 8.4.4, 8.4.22 and 8.4.32, are applications with no edits, on
+exactly the sounds of the application they refuse (`hit.site`), winning by
+`overrides` whose reasons are quoted from the Kāśikā. Each refusal asks the same
+`_hits_*` functions the refused rule asks, so the two cannot disagree about
+where they are. Where the tradition says a rule is an अपवाद of a refusal (8.4.20
+of 8.4.37) the excepted rule declares it, quoting the Kāśikā.
+
+**WHAT THE CALLER SAYS — the flags this family reads** (NORTH_STAR §5: what no
+letter can say is a parameter, and the trace says so). All are word flags,
+written in braces (`pra{upasarga}|nam{dhatu:nam}~a~ti`):
+
+======================  ======================================================
+`upasarga`              the preverb: the word 8.4.14–33 call उपसर्ग (a र् or ष्
+                        in it is the cause). `pra`, `parā`, `pari`, `nir`.
+                        दुः is not one for this purpose (vārttika, below).
+`ang`                   the preverb आङ् — 8.4.2 names it, and it is a pada of
+                        its own that 8.4.38's refusal must not count.
+`dhatu:ROOT`            this piece holds the root ROOT, by its bare name
+                        (`nam`) or its whole enunciation (`ṇama̐`). Whether it
+                        is णोपदेश is READ from the dhātupāṭha (`pada.entries_for`),
+                        never guessed; where a bare name is read twice with
+                        different marks the step says so.
+`krt`                   a piece that is a कृत् affix (8.4.29–34).
+`nyanta`                on a `krt` piece: it was added to a णिच् stem (8.4.30).
+`lot`                   a piece that is the लोट् substitute आनि (8.4.16).
+`sabhyasa`              on a `dhatu:an` piece: the reduplicated root (8.4.21).
+`samjna`                on any member: the compound is a NAME (8.4.3–4).
+`osadhi`, `vanaspati`   on a first member: it names a herb / a tree (8.4.6).
+`ahita`                 on a first member: it names what is loaded (8.4.8).
+`desa`                  the compound names a country or a people (8.4.9),
+                        or — 8.4.24, 8.4.25 — a *place*, which those refuse.
+`bhava`, `karana`       on पान: the act, the instrument (8.4.10).
+`vibhakti`, `num`       a case-ending piece; the नुम् (8.4.11–13).
+`ksubhnadi`             the word belongs to the आकृतिगण of 8.4.39.
+`avagraha`              on a first member: the padapāṭha separates it (8.4.26).
+======================  ======================================================
+
+The boundary kinds are the parser's: `~` ANGA (stem | affix — one pada), `-`
+SAMASA (a compound member), `|` UPASARGA (preverb | root), a space PADA.
+
+**WHAT THE LETTERS DO SAY, AND IS READ, NOT TYPED.** The सूत्र's own न्, ण् and
+cause sounds are read from the corpus text of 8.4.1. The lists a सूत्र spells
+out as its own words (the six first members of 8.4.4, the ten of 8.4.5, the
+roots of 8.4.15, 8.4.17, 8.4.33, 8.4.34) are read from the Kāśikā's own
+enumeration, on disk. The नुम्-आकृतिगण words come from the Kāśikā on 8.4.39, the
+युवादि, इरिकादि and गिरिनद्यादि gaṇas from the gaṇapāṭha. The ghu roots are asked
+of `samjna.ghu_roots`, the ṇopadeśa status of a root of the dhātupāṭha.
+
+**STANDING NOTES — OPEN and SCOPE.**
+
+* OPEN — 8.4.37 पदान्तस्य. The Tattvabodhinī says the Bhāṣya *rejects* it
+  (*पदान्तस्य इति सूत्रं च भाष्ये प्रत्याख्यातम्*): 8.3.55's अपदान्तस्य is carried
+  down, so a word-final न् is not reached in the first place. The Kāśikā and the
+  Kaumudī keep it as a sūtra, and so does this module, as the visible refusal.
+* OPEN — the anuvṛtti of 8.4.2's *vyavāya* into 8.4.3–33 is not stated by the
+  Kāśikā; it is taken from the forms (*praṇamati* has an अ between र् and न्).
+* OPEN — 8.4.33's Kaumudī adds *कृति परे*; the Kāśikā does not. The Kāśikā's
+  reading is followed.
+* SCOPE — the vārttika निर्विण्णस्योपसंख्यानम् (8.4.29), the गणसूत्र
+  आचार्यादणत्वं च (8.4.39), the अट्-augment between नि and the root
+  (*प्रण्यगदत्*, 8.4.17) and the yoga-vibhāga niyama of 8.4.22 that reaches
+  *वृत्रघ्नः* are not derived here; their notes are in COVERAGE.
+* SCOPE — 8.4.26 needs the padapāṭha (`avagraha`), and 8.4.27–28 are Vedic in
+  their examples; the first two run only with `veda=True`.
+"""
+
+from __future__ import annotations
+
+import re
+from dataclasses import dataclass, field
+from functools import lru_cache
+from typing import (
+    Callable, Dict, FrozenSet, Iterable, Iterator, List, Mapping, Optional,
+    Sequence, Tuple)
+
+from src.astadhyayi import corpus, pada
+from src.astadhyayi.anga import _across_which
+from src.astadhyayi.itsamjna import DHATU, analyze
+from src.astadhyayi.samjna import ghu_roots
+from src.astadhyayi.sandhi import supports as S
+from src.astadhyayi.sandhi import trace as _trace
+from src.astadhyayi.sandhi.parse import to_iast, tokenize
+from src.astadhyayi.sandhi.rule import (
+    ADESA, PRATISEDHA, SUTRA, VARTTIKA, Application, Detail, Via, replace,
+    rule, site, sk)
+from src.astadhyayi.sandhi.segs import (
+    AC, ANGA, HAL, PADA, SAMASA, UPASARGA, Sight, View)
+from src.astadhyayi.varna import ANUSVARA, VARGA, savarna
+
+#: Families every rule of this module carries ('hal', because a न् is a
+#: consonant; 'natva', so another family can override the whole group).
+FAMILY = ("hal", "natva")
+#: The two kinds inside the family: a rule that gives ण्, and one that refuses it.
+VIDHI = "natva-vidhi"
+NISEDHA = "natva-pratisedha"
+
+#: The options the सूत्र words themselves (सूत्र 8.4.6 विभाषा, 8.4.10 वा,
+#: 8.4.28 बहुलम्), as the engine's `optional=` wants them.
+VIBHASA, VA, BAHULAM = "विभाषा", "वा", "बहुलम्"
+
+
+# ---------------------------------------------------------------------------
+# What the corpus says — sounds, lists, quotations — read once
+# ---------------------------------------------------------------------------
+
+
+def _sutra_words(sutra_id: str) -> List[str]:
+    return corpus.load_vidyut_sutrapatha()[sutra_id].text.split()
+
+
+def _consonants(word: str) -> Tuple[str, ...]:
+    return tuple(s for s, _ in tokenize(word) if s in HAL)
+
+
+@lru_cache(maxsize=None)
+def _named() -> Tuple[Tuple[str, ...], str, str]:
+    """
+    The causes, the sthānin and the ādeśa, as 8.4.1 itself writes them:
+    *raṣābhyāṃ no ṇaḥ* — the first two consonants of the first word (ra, ṣa),
+    the न of *no*, the ण of *ṇaḥ*.
+    """
+    words = _sutra_words("8.4.1")
+    return (_consonants(words[0])[:2], _consonants(words[1])[0],
+            _consonants(words[2])[0])
+
+
+def CAUSES() -> FrozenSet[str]:
+    """र् and ष् — 8.4.1's own cause."""
+    return frozenset(_named()[0])
+
+
+def STHANIN() -> str:
+    return _named()[1]
+
+
+def ADESA_N() -> str:
+    return _named()[2]
+
+
+@lru_cache(maxsize=None)
+def RVARNA() -> FrozenSet[str]:
+    """
+    ऋ and ॠ — the cause Kātyāyana adds. They are the savarṇas of ऋ *without*
+    the ऌ-extension of 1.1.9's vārttika (`varttika=False`), which is what the
+    Kāśikā's *ऋवर्णात्* means: तिसृणाम्, मातॄणाम्, not ऌ.
+    """
+    return frozenset(v for v in AC if savarna(v, "ṛ", varttika=False))
+
+
+@lru_cache(maxsize=None)
+def VYAVAYA() -> FrozenSet[str]:
+    """
+    What may stand between the cause and the न्: **8.4.2's अट्, कु, पु, नुम्** —
+    asked of the project's codification of that sūtra (`anga._across_which`,
+    which closes अट् under 1.1.69 and adds the anusvāra that नुम् stands for) and
+    not restated. (आङ् is a *word*, the flag `ang`; its sounds are vowels and
+    semivowels and so already in the set.)
+    """
+    return frozenset(_across_which())
+
+
+@lru_cache(maxsize=None)
+def JHAL() -> FrozenSet[str]:
+    return S.members("jhaL")
+
+
+@lru_cache(maxsize=None)
+def _rvarna_vartika() -> str:
+    """Kātyāyana's vārttika on 8.4.1, verbatim from the corpus."""
+    return corpus.varttikas_on("8.4.1")[0].text
+
+
+def _vartika_text(sutra_id: str, opening: str) -> str:
+    """A vārttika of `sutra_id`, verbatim from the corpus, found by its opening
+    words (the corpus files it under the sūtra it comments on)."""
+    for found in corpus.varttikas_on(sutra_id):
+        if found.text.startswith(opening):
+            return found.text
+    raise LookupError(f"no vārttika of {sutra_id} begins {opening!r}")
+
+
+def _name(sutra_id: str) -> str:
+    """The rule's name is the sūtra's own words, in both scripts' first."""
+    return _trace.deva(_trace.sutra_text(sutra_id))
+
+
+def _kashika(sutra_id: str) -> str:
+    return corpus.commentary_on(sutra_id, "kashika") or ""
+
+
+@lru_cache(maxsize=None)
+def _listed(sutra_id: str, end: str, after: str = "") -> Tuple[str, ...]:
+    """
+    The words the Kāśikā enumerates ahead of `end` (its *इत्येतेभ्यः*), in IAST —
+    the सूत्र's own list, read where the commentary spells it, not retyped.
+    """
+    text = _kashika(sutra_id)
+    head = text[:text.index(end)]
+    if after:
+        head = head[head.rindex(after) + len(after):]
+    return tuple(to_iast(w) for w in head.split())
+
+
+def PURAGADI() -> Tuple[str, ...]:
+    """8.4.4's first members (the Kāśikā: पुरगा मिश्रका सिध्रका शारिका कोटरा अग्र)."""
+    return _listed("8.4.4", "इत्येतेभ्यः", "वर्तते।")
+
+
+def PRANIRADI() -> Tuple[str, ...]:
+    """8.4.5's ten first members."""
+    return _listed("8.4.5", "इत्येतेभ्य ")
+
+
+def HINU_MINA() -> Tuple[str, ...]:
+    return _listed("8.4.15", "इत्येतयो")
+
+
+def GADADI_FORMS() -> Tuple[str, ...]:
+    """8.4.17's seventeen, as the Kāśikā writes them: गद नद … देग्धि."""
+    text = _kashika("8.4.17")
+    start = text.index("भवति गद") + len("भवति")
+    return tuple(to_iast(w) for w in
+                 text[start:text.index("इत्येतेषु परतः")].split())
+
+
+def NIMSADI() -> Tuple[str, ...]:
+    """8.4.33's three: निंस निक्ष निन्द."""
+    return _listed("8.4.33", "इत्येतेषां", "वर्तते।")
+
+
+def BHADI() -> Tuple[str, ...]:
+    """8.4.34's seven: भा भू पू कमि गमि प्यायी वेप."""
+    return _listed("8.4.34", "इत्येतेषामु")
+
+
+#: 8.4.17 names eleven of its roots by a form of each — the third singular of
+#: the present, as the sūtra writes it. Which root each is, is the one thing the
+#: Kāśikā's list does not say; it is said here, once, and checked against the
+#: dhātupāṭha and the Kāśikā's own list in the tests.
+_ROOT_OF_FORM: Mapping[str, str] = {
+    "syati": "so", "hanti": "han", "yāti": "yā", "vāti": "vā", "drāti": "drā",
+    "psāti": "psā", "vapati": "vap", "vahati": "vah", "śāmyati": "śam",
+    "cinoti": "ci", "degdhi": "dih"}
+
+
+@lru_cache(maxsize=None)
+def GHU() -> FrozenSet[str]:
+    """The ghu roots (1.1.20), by the names a sūtra uses (6.1.64, 6.1.65 applied)."""
+    return frozenset(pada.root_key(u) for u in ghu_roots())
+
+
+@lru_cache(maxsize=None)
+def GADADI() -> FrozenSet[str]:
+    """
+    The roots 8.4.17 names, as bare names. *गद, नद, पत, पद* are the listed forms
+    without their linking अ; *घु* is asked of `samjna.ghu_roots`; *मा* is माङ् and
+    मेङ् (the Kāśikā: *मा इति माङ्मेङोर्ग्रहणमिष्यते*); the rest by `_ROOT_OF_FORM`.
+    """
+    names = set()
+    for form in GADADI_FORMS():
+        if form in _ROOT_OF_FORM:
+            names.add(_ROOT_OF_FORM[form])
+        elif form == "ghu":
+            names |= GHU()
+        elif form == "mā":
+            names |= {"mā", "me"}
+        else:
+            names.add(form[:-1])
+    return frozenset(names)
+
+
+@lru_cache(maxsize=None)
+def _rooted(listed: Tuple[str, ...]) -> FrozenSet[str]:
+    """A list of forms as the bare names a flag would carry: the form and the
+    form without its linking vowel (गद → गद्; कमि → कम्)."""
+    out = set()
+    for form in listed:
+        out.add(form)
+        out.add(form[:-1])
+    return frozenset(out)
+
+
+@lru_cache(maxsize=None)
+def _uttarapadas_of_ksubhnadi() -> FrozenSet[str]:
+    """
+    The second members the Kāśikā on 8.4.39 names — *नन्दिन्, नन्दन, नगर* and
+    *नर्तन, गहन, नन्दन, निवेश, निवास, अग्नि, अनूप* — read from the commentary.
+    """
+    text = _kashika("8.4.39")
+    found = set()
+    for sentence in re.split(r"[।॥]", text):
+        if "एतान्युत्तरपदानि" not in sentence:
+            continue
+        head = sentence[:sentence.index("एतान्युत्तरपदानि")]
+        for word in re.split(r"[,\s]+", head):
+            if word:
+                found.add(to_iast(word))
+    return frozenset(found)
+
+
+@lru_cache(maxsize=None)
+def _ksubhna_prefix() -> str:
+    """The word 8.4.39 itself names — *क्षुभ्ना* — without its final vowel, since
+    the Kāśikā takes the altered shapes too (क्षुभ्नीतः, क्षुभ्नन्ति)."""
+    return _sutra_words("8.4.39")[0].split("’")[0][:-1]
+
+
+@lru_cache(maxsize=None)
+def _gana_items(sutra_id: str) -> FrozenSet[str]:
+    return frozenset(item for gana in corpus.ganas_for(sutra_id)
+                     for item in gana.items)
+
+
+# ---------------------------------------------------------------------------
+# Roots — read from the dhātupāṭha, never guessed
+# ---------------------------------------------------------------------------
+
+
+@dataclass(frozen=True)
+class Root:
+    """A root as a caller names it, and what the dhātupāṭha says of it."""
+
+    value: str
+    key: str
+    entries: Tuple
+
+    def nopadesa(self) -> str:
+        """`yes` where every entry is enunciated with an initial ण्, `some`
+        where the name is read twice and only some are, `no` otherwise."""
+        if self.value.startswith("ṇ"):
+            return "yes"
+        starts = [e.upadesa.startswith("ṇ") for e in self.entries]
+        if not starts or not any(starts):
+            return "no"
+        return "yes" if all(starts) else "some"
+
+    def shapes(self) -> Tuple[Tuple[str, ...], ...]:
+        """The sounds of each entry as a sūtra names the root (it-letters gone)."""
+        return tuple(tuple(s for s, _ in tokenize(pada.root_key(e.upadesa)))
+                     for e in self.entries)
+
+    def idit(self) -> bool:
+        """Some entry is इदित् — so it has a नुम् (7.1.58)."""
+        return any("i" in analyze(e.upadesa, DHATU).it_letters
+                   for e in self.entries)
+
+    def why(self) -> str:
+        """A sentence for the step: which entries were read."""
+        seen = ", ".join(sorted({e.upadesa for e in self.entries})) or "none"
+        note = ""
+        if self.nopadesa() == "some":
+            note = (" — the name is read in more than one entry with "
+                    "different marks, and the ṇopadeśa reading is taken; "
+                    "write the whole enunciation to say which is meant")
+        return f"{self.value} is read in the dhātupāṭha as {seen}{note}"
+
+
+@lru_cache(maxsize=None)
+def _root(value: str) -> Root:
+    return Root(value, pada.root_key(value), tuple(pada.entries_for(value)))
+
+
+def _root_of(v: View, sight: Sight) -> Optional[Root]:
+    value = v.word(sight).flag_value("dhatu")
+    return _root(value) if value else None
+
+
+def _is(root: Root, names: Iterable[str]) -> bool:
+    return bool({root.key, root.value} & set(names))
+
+
+# ---------------------------------------------------------------------------
+# The walk, and the shape of the pada
+# ---------------------------------------------------------------------------
+
+
+@dataclass(frozen=True)
+class Reach:
+    """The cause a न् can be reached from, and what stands between."""
+
+    cause: Sight
+    between: Tuple[Sight, ...]
+    #: The cause is ऋ or ॠ — there by Kātyāyana, not by Pāṇini.
+    rvarna: bool
+
+
+def _ns(v: View) -> List[Sight]:
+    return [s for s in v.live if s.s == STHANIN()]
+
+
+def _walk(v: View, n: Sight, causes: FrozenSet[str]) -> Optional[Reach]:
+    """
+    Left from `n`, through what 8.4.2 lets the cerebral cross, to a cause.
+    The first sound that is neither a cause nor a vyavāya ends the walk: a न्
+    or ण् in the way stops it (that is why *praṇayana* keeps its second न्).
+    """
+    vyavaya = VYAVAYA()
+    between: List[Sight] = []
+    i = v.index(n) - 1
+    while i >= 0:
+        s = v.live[i]
+        if s.s in causes:
+            return Reach(s, tuple(reversed(between)), s.s in RVARNA())
+        if s.s not in vyavaya:
+            return None
+        between.append(s)
+        i -= 1
+    return None
+
+
+def _reach(v: View, n: Sight) -> Optional[Reach]:
+    """The cause of `n` by Pāṇini's own र्/ष् where there is one, else, failing
+    that, by the ऋ Kātyāyana adds."""
+    return _walk(v, n, CAUSES()) or _walk(v, n, CAUSES() | RVARNA())
+
+
+def _padas(v: View) -> Tuple[int, ...]:
+    """The pada each word belongs to: words joined by ANGA are one."""
+    out, p = [], 0
+    for w in range(len(v.state.words)):
+        out.append(p)
+        if v.state.bounds[w] != ANGA:
+            p += 1
+    return tuple(out)
+
+
+def _crossed(v: View, reach: Reach, n: Sight) -> FrozenSet[str]:
+    """The boundary kinds between the cause's word and the न्'s."""
+    return frozenset(v.state.bounds[w] for w in range(reach.cause.w, n.w))
+
+
+def _whole_padas_between(v: View, reach: Reach, n: Sight,
+                         *, except_ang: bool = True) -> Tuple[int, ...]:
+    """The padas that lie wholly between the cause and the न् — 8.4.38's
+    *पदव्यवाय* — leaving out the preverb आङ्, which 8.4.2 names."""
+    padas = _padas(v)
+    lo, hi = padas[reach.cause.w], padas[n.w]
+    found: List[int] = []
+    for s in reach.between:
+        p = padas[s.w]
+        if lo < p < hi and p not in found:
+            found.append(p)
+    if except_ang:
+        found = [p for p in found
+                 if not all(v.state.words[w].has("ang")
+                            for w in range(len(padas)) if padas[w] == p)]
+    return tuple(found)
+
+
+def _pada_words(v: View, p: int) -> List[int]:
+    padas = _padas(v)
+    return [w for w in range(len(padas)) if padas[w] == p]
+
+
+def _pada_text(v: View, p: int) -> str:
+    return "".join(v.state.words[w].text for w in _pada_words(v, p))
+
+
+def _unit_has(v: View, n: Sight, flag: str,
+              across: Sequence[str] = (ANGA, SAMASA, UPASARGA)) -> bool:
+    words = {s.w for s in v.unit_of(n, across=across)}
+    return any(v.state.words[w].has(flag) for w in words)
+
+
+def _left_to_8_3_24(v: View, n: Sight) -> bool:
+    """A न् inside a pada before a झल् is an anusvāra by 8.3.24, which stands
+    before 8.4.1 and so is what 8.4.1 sees (8.2.1). Where that rule's family has
+    already acted there is no न् here; where it has not, this stands in."""
+    nxt = v.next(n)
+    return nxt is not None and not v.pada_final(n) and nxt.s in JHAL()
+
+
+def _shown(sights: Iterable[Sight]) -> str:
+    return "".join(s.s for s in sights)
+
+
+def _kinds(between: Sequence[Sight]) -> str:
+    """Which of 8.4.2's five each intervening sound is, as a phrase."""
+    seen: List[str] = []
+    for s in between:
+        if s.s in VARGA["ku"]:
+            k = "{ku}"
+        elif s.s in VARGA["pu"]:
+            k = "{pu}"
+        elif s.s == ANUSVARA:
+            k = "the anusvāra ({num})"
+        else:
+            k = "{aṭ}"
+        if k not in seen:
+            seen.append(k)
+    return ", ".join(seen)
+
+
+def _between_phrase(reach: Reach) -> str:
+    if not reach.between:
+        return "with nothing between"
+    return (f"with '{_shown(reach.between)}' between "
+            f"({_kinds(reach.between)})")
+
+
+def _cause_phrase(v: View, reach: Reach) -> str:
+    return f"the {sk(reach.cause.s)} of '{v.word(reach.cause).text}'"
+
+
+def _geometry_via(v: View, n: Sight, reach: Reach) -> Tuple[Via, ...]:
+    """The sūtras of the first adhyāya and of 8.4.2 that make the walk land."""
+    out: List[Via] = [S.pancami_para(f"{sk(reach.cause.s)} of "
+                                     f"'{v.word(reach.cause).text}'")]
+    if reach.between:
+        out.append(Via(
+            "8.4.2", f"'{_shown(reach.between)}' stands between the cause and "
+                     f"the {{n}}; it is {_kinds(reach.between)}, which 8.4.2 "
+                     f"lets the cerebral reach across"))
+        for s in reach.between:
+            if s.is_vowel and S.long_form_used(s.s, "aṭ"):
+                out.append(S.varna_grahana(s.s, "aṭ"))
+                break
+    out.append(Via("1.1.49", f"the {{n}} is named in the sixth case, so "
+                             f"{sk(ADESA_N())} takes its place"))
+    return tuple(out)
+
+
+# ---------------------------------------------------------------------------
+# A hit — where a vidhi would give ण्, before anything refuses it
+# ---------------------------------------------------------------------------
+
+
+@dataclass(frozen=True)
+class Hit:
+    """A place where one sūtra gives the cerebral, and everything the step and
+    the refusals need. Refusals read hits; they do not recompute them."""
+
+    sutra: str
+    n: Sight
+    reach: Reach
+    nimitta: str
+    because: str
+    via: Tuple[Via, ...] = ()
+    optional: str = ""
+    #: More sounds this one step also changes (8.4.21's *both* न्).
+    also: Tuple[Sight, ...] = ()
+    site: Tuple[int, ...] = ()
+
+    @property
+    def authority(self) -> str:
+        return VARTTIKA if self.reach.rvarna else SUTRA
+
+
+def _hit(v: View, sutra: str, n: Sight, reach: Reach, *, nimitta: str,
+         because: str, via: Sequence[Via] = (), optional: str = "",
+         also: Sequence[Sight] = ()) -> Hit:
+    return Hit(sutra, n, reach, nimitta, because,
+               _geometry_via(v, n, reach) + tuple(via), optional, tuple(also),
+               site(reach.cause, *reach.between, n, *also))
+
+
+def _apply(hit: Hit) -> Application:
+    """The ण् put where the न् stood — and, where a rule says both, both."""
+    return Application(
+        site=hit.site,
+        edits=tuple(replace(s, ADESA_N()) for s in (hit.n, *hit.also)),
+        detail=Detail(
+            kind=ADESA, sthanin=STHANIN(), adesa=ADESA_N(),
+            nimitta=hit.nimitta, because=hit.because, via=hit.via,
+            authority=hit.authority,
+            varttika=_rvarna_vartika() if hit.reach.rvarna else ""),
+        optional=hit.optional)
+
+
+def _refuse(hit: Hit, *, nimitta: str, because: str,
+            via: Sequence[Via] = ()) -> Application:
+    """A refusal: no edits, the very site of the application it refuses."""
+    return Application(
+        site=hit.site, edits=(),
+        detail=Detail(kind=PRATISEDHA, sthanin=STHANIN(), adesa="",
+                      nimitta=nimitta, because=because, via=tuple(via)))
+
+
+# ---------------------------------------------------------------------------
+# 8.4.1, 8.4.2 — in one pada
+# ---------------------------------------------------------------------------
+
+
+def _same_pada_hits(v: View, *, direct: bool, rvarna: bool = False
+                    ) -> Iterator[Hit]:
+    """
+    The न् of a joined pada and its cause. `direct` picks 8.4.1 (the cause
+    stands next to it) from 8.4.2 (something stands between, as
+    `anga.cerebral_n(..., direct=)` asks it too); `rvarna` picks the न् whose
+    only cause is Kātyāyana's ऋ, which the sūtra proper does not reach.
+    """
+    padas = _padas(v)
+    for n in _ns(v):
+        if not v.joined_pada(n) or _left_to_8_3_24(v, n):
+            continue
+        proper = _walk(v, n, CAUSES())
+        reach = _walk(v, n, CAUSES() | RVARNA()) if rvarna and proper is None \
+            else proper
+        if reach is None or bool(reach.between) == direct:
+            continue
+        if padas[reach.cause.w] != padas[n.w]:
+            continue
+        wc, wn = v.word(reach.cause).text, v.word(n).text
+        yield _hit(
+            v, "8.4.1" if direct or rvarna else "8.4.2", n, reach,
+            nimitta=f"{sk(reach.cause.s)} stands before the {{n}} in the same pada",
+            because=(f"the {{n}} of '{wn}' comes after the {sk(reach.cause.s)} of "
+                     f"'{wc}', {_between_phrase(reach)}, and the pieces are "
+                     f"ONE pada ({{samānapada}}), so the {{n}} is replaced by "
+                     f"{sk(ADESA_N())}"))
+
+
+@rule("8.4.1", name=_name("8.4.1"), families=FAMILY + (VIDHI,))
+def raabhyam_no_nah(v: View):
+    """रषाभ्यां नो णः समानपदे — रामेण: an ण् for the न् after a र् or ष् of the same pada.
+
+    Reads: the pieces joined by ANGA (`v.joined_pada`); no flag. A finished
+    word with no join is left alone. आस्तीर्णम्, कुष्णाति; अग्निर्नयति stays.
+    """
+    for hit in _same_pada_hits(v, direct=True):
+        yield _apply(hit)
+
+
+@rule("8.4.1", name=_name("8.4.1") + " — ऋवर्णात्",
+      families=FAMILY + (VIDHI,), authority=VARTTIKA,
+      varttika=_rvarna_vartika())
+def rvarnac_ca(v: View):
+    """ऋवर्णान्नस्य णत्वं वाच्यम् — मातॄणाम्, कृणोति: the cause is ऋ or ॠ.
+
+    Offered only where the sūtra proper finds no र् or ष् to reach, so the two
+    never contend for one न्. Kātyāyana's, and the trace says so.
+    """
+    for direct in (True, False):
+        for hit in _same_pada_hits(v, direct=direct, rvarna=True):
+            if hit.reach.rvarna:
+                yield _apply(hit)
+
+
+@rule("8.4.2", name=_name("8.4.2"), families=FAMILY + (VIDHI,))
+def atkupvannumvyavaye_pi(v: View):
+    """अट्कुप्वाङ्नुम्व्यवायेऽपि — करणम्, अर्केण, बृंहणम्: across a vowel, a guttural,
+    a labial, आङ्, a नुम् (its anusvāra).
+
+    Reads: the pieces joined by ANGA. What may stand between is
+    `anga._across_which` (the project's codification). The nasal of a नुम्
+    that is heard as न् (*प्रेन्वनम्*) is a न्, not an anusvāra, and stops the walk.
+    """
+    for hit in _same_pada_hits(v, direct=False):
+        yield _apply(hit)

@@ -1,0 +1,1998 @@
+[
+ {
+  "id": "1.1.1",
+  "text_iast": "vṛddhirādaic",
+  "family": "ac_ekadesa",
+  "tier": "support",
+  "kind": "samjna",
+  "effect": "The vowels ā, ai, au are called vṛddhi.",
+  "sthanin": "(a technical term, not a substitution): ā, ai, au",
+  "adesa": "n/a - it names the vowels that later rules call 'vṛddhi'",
+  "nimitta": "wherever a rule says vṛddhi (6.1.88, 6.1.89, 6.1.90, 6.1.91, 6.1.92 ...)",
+  "conditions": [
+   "Kasika: the name is given to each of ā, ai, au taken singly, both to those made by vṛddhi and to those not made by it ('sāmānyena tadbhāvitānām atadbhāvitānām ca').",
+   "Kasika: the tapara wording (ā-t ai-c, 'tādapi paras taparaḥ') is for ai/au: it restricts them to the two-mora measure, so that in 'khaṭvaiḍakā' a three or four mora ai/au is not substituted ('khaṭvaiḍakādiṣu trimātracaturmātraprasaṅganivṛttaye').",
+   "Tattvabodhini: 'ai-j' here is dvimātra only (tāt-parat vāt), which is why 'kṛṣṇaikatvam' has no trimātra ai."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [
+   "ac_ekadesa-029"
+  ],
+  "laghu_ref": "vlk_32",
+  "notes": "Laghu GRETIL tags this as vlk_32 = p_1,1.1, which matches the Vidyut text. The vṛddhi result of 6.1.88 etc. is ā/ai/au chosen by antaratama (1.1.50). Balamanorama: the sūtra is placed first in the Aṣṭādhyāyī but taught after pratyāhāra in Siddhāntakaumudī."
+ },
+ {
+  "id": "1.1.2",
+  "text_iast": "adeṅ guṇaḥ",
+  "family": "ac_ekadesa",
+  "tier": "support",
+  "kind": "samjna",
+  "effect": "The vowels a, e, o are called guṇa.",
+  "sthanin": "(a technical term): a, e, o",
+  "adesa": "n/a - names the vowels that later rules call 'guṇa'",
+  "nimitta": "wherever a rule says guṇa (6.1.87, 6.1.97 (guṇe) ...)",
+  "conditions": [
+   "Kasika: the name applies to each of a, e, o, whether made by guṇa or not ('tadbhāvitānām atadbhāvitānām ca'); so a, e, o are all 'guṇa' vowels: this is why 'ato guṇe' (6.1.97) can see a, e, o in 'pacanti', 'pace'.",
+   "Kasika: the tapara wording is 'sarvārtha' here: it gives the short measure for a in guṇa forms: taritā, cetā, stotā, pacanti, jayanti, ahaṃ pace.",
+   "Tattvabodhini: tapara keeps 'gaṅgodakam' from getting a three-mora o and makes 'tarati' contain the short a, never ā."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [
+   "ac_ekadesa-138"
+  ],
+  "laghu_ref": "vlk_25",
+  "notes": "Laghu GRETIL tags this vlk_25 = p_1,1.2, correct. The guṇa of 6.1.87 is chosen among a, e, o by antaratama (1.1.50) and, for ṛ/ḷ, gets raparatva/laparatva by 1.1.51."
+ },
+ {
+  "id": "1.1.3",
+  "text_iast": "iko guṇavṛddhī",
+  "family": "ac_ekadesa",
+  "tier": "support",
+  "kind": "paribhasa",
+  "effect": "Where a rule enjoins guṇa or vṛddhi by those names and names no sthānin, the substituted place is an ik vowel (i, u, ṛ, ḷ and their long forms).",
+  "sthanin": "ik (i, u, ṛ, ḷ with long forms) - supplied as the sthānin when a rule gives guṇa/vṛddhi by name without a sthānin",
+  "adesa": "guṇa / vṛddhi",
+  "nimitta": "rules like 7.3.84 (sārvadhātukārdhadhātukayoḥ), 7.2.115 (aco ñṇiti) - not the ekādeśa rules of 6.1.84-111",
+  "conditions": [
+   "Kasika: it is a sthāninyama paribhāṣā: 'aniyamaprasaṅge niyamo vidhīyate'.",
+   "Kasika: punargguṇavṛddhigrahaṇam (repeating 'guṇa' and 'vṛddhi' in the sūtra) makes the rule a NIYAMA: it operates only where guṇa/vṛddhi are enjoined by their own names (svasaṃjñayā): not in 'dyauḥ', 'panthāḥ', 'saḥ', 'imam' where the same vowels appear without the names.",
+   "Tattvabodhini: the paribhāṣā works only where the sthānin is not directly stated ('yatra sākṣāt sthānī na nirdiṣṭaḥ'): it does NOT apply in 'aco ñṇiti' (sthānin ac stated); by the same reasoning it does not operate in 6.1.87/6.1.88 etc., where the sthānin is the pūrva+para pair by the adhikāra 6.1.84.",
+   "Balamanorama: the paribhāṣā does not act on an anuvāda (a mention of already-enjoined guṇa/vṛddhi such as 'vṛddhir yasyācām ādis tad vṛddham')."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [],
+  "laghu_ref": null,
+  "notes": "Kasika 'iti kim': 'ikaḥ iti kim? ātsandhyakṣaravyañjanānāṃ mā bhūt' (examples yānam, glāyati, umbhitā: the ā of 'yā' etc. is not replaced by guṇa). For the ekādeśa family this paribhāṣā matters only in negative: the ekādeśa rules do not need it."
+ },
+ {
+  "id": "1.1.53",
+  "text_iast": "ṅicca",
+  "family": "ac_ekadesa",
+  "tier": "support",
+  "kind": "niyama",
+  "effect": "A ṅit substitute of more than one sound replaces only the LAST sound of the sthānin.",
+  "sthanin": "the last sound (al) of the sthānin",
+  "adesa": "a ṅit substitute (even of several sounds)",
+  "nimitta": "the ādeśa carries the it-marker ṅ (ānaṅ, avaṅ, anaṅ, tātaṅ ...)",
+  "conditions": [
+   "Kasika: 'ṅicca ya ādeśaḥ so 'nekālapy alo 'ntyasya sthāne bhavati': ānaṅ ṛto dvandve (6.3.25) gives hotāpotārau, mātāpitarau (only the ṛ is replaced).",
+   "Kasika: 'tātaṅi ṅitkaraṇasya guṇavṛddhipratiṣedhārthatvāt sarvādeśas tātaṅ bhavati': tātaṅ (7.1.35) is ṅit only for guṇa-vṛddhi prohibition, so it replaces the whole tu/hi (jīvatād bhavān).",
+   "Kaumudi: 'sarvasya [SK45] ityasyāpavādaḥ' (SK45 = 1.1.55 anekāl śit sarvasya). Balamanorama: 'alo 'ntyasya' (1.1.52) alone would give the last sound, so the sutra is needed as the apavāda of 1.1.55: avaṅ, tāvaṅ, anaṅ are ṅit and always anekāl."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "1.1.55",
+    "note": "Kaumudi: 'sarvasya [SK45] ityasyāpavādaḥ' - a ṅit anekāl substitute goes to the last sound, not the whole."
+   }
+  ],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [
+   "ac_ekadesa-225"
+  ],
+  "laghu_ref": "vlk_46",
+  "notes": "Laghu GRETIL vlk_46 = p_1,1.53 correct. Laghu writes vlk_45 (anekāl śit sarvasya, 1.1.55) as 'iti prāpte' followed by ṅicca. Relevant to the ekādeśa family only through 6.3.25 (ānaṅ), 7.1.35, 6.1.123 (avaṅ) etc."
+ },
+ {
+  "id": "1.1.54",
+  "text_iast": "ādeḥ parasya",
+  "family": "ac_ekadesa",
+  "tier": "support",
+  "kind": "paribhasa",
+  "effect": "A substitute enjoined for what FOLLOWS a stated item (ablative-cased context) replaces the FIRST sound of that following item.",
+  "sthanin": "the first sound (ādi al) of the following item (the one 'parasya')",
+  "adesa": "the enjoined substitute",
+  "nimitta": "a rule that states the nimitta by the ablative case (X-āt/-ād) and the substituted item by the genitive 'parasya'",
+  "conditions": [
+   "Kasika: 'parasya kāryaṃ śiṣyamāṇam āderalaḥ pratyetavyam': when the ablative (pañcamī) fixes the nimitta: īdāsaḥ (7.2.83) āsīnaḥ; dvyantarupasargebhyo 'pa ī t (6.3.97): dvīpam, antarīpam, pratīpam, samīpam.",
+   "Balamanorama: the 'alo 'ntyasya' extension is prevented: 'tatra ala ityapy anuvartanīyam' - dvīpa has ī only for the first sound of ap, not for the whole p-final group."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "1.1.52",
+    "note": "Kaumudi: 'alo 'ntyasya ityasyāpavādaḥ' - the ablative-fixed 'para' substitute goes to the first sound, not the last."
+   }
+  ],
+  "overridden_by": [
+   {
+    "id": "1.1.55",
+    "note": "Kaumudi 1.1.55: 'aṣṭābhya auś [SK372] ityādau ādeḥ parasya ityetad api paratvād anena bādhyate' - when the substitute is anekāl (auś), the whole is replaced."
+   }
+  ],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [
+   "ac_ekadesa-226"
+  ],
+  "laghu_ref": null,
+  "notes": "Relevant to the ekādeśa rules only where the ablative cases in 6.1.91/6.1.92/6.1.95 etc. could be read as fixing a nimitta ('āt' = preceding avarṇa): here the sthānin is stated by the adhikāra 6.1.84 (pūrva-para), so 1.1.54 does not act."
+ },
+ {
+  "id": "1.1.55",
+  "text_iast": "anekālśitsarvasya",
+  "family": "ac_ekadesa",
+  "tier": "support",
+  "kind": "niyama",
+  "effect": "A substitute of more than one sound, or one marked with ś (śit), replaces the WHOLE sthānin.",
+  "sthanin": "the whole sthānin",
+  "adesa": "an anekāl or śit substitute",
+  "nimitta": "the substitute has more than one sound, or carries the it-marker ś",
+  "conditions": [
+   "Kasika: 'anekāl ya ādeśaḥ śic ca sa sarvasya ṣaṣṭhīnirdiṣṭasya sthāne bhavati': asterbhūḥ (2.4.52) bhavitā; śit: jaśśasoḥ śiḥ (7.1.20) kuṇḍāni tiṣṭhanti.",
+   "Kaumudi: 'alo ’ntyasūtrāpavādaḥ' and 'aṣṭābhya auś [SK372] ityādau ādeḥ parasya ityetad api paratvād anena bādhyate'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "1.1.52",
+    "note": "Kaumudi: 'alo 'ntyasūtrāpavādaḥ'."
+   },
+   {
+    "id": "1.1.54",
+    "note": "Kaumudi: 'ādeḥ parasya ityetad api paratvād anena bādhyate' (aṣṭābhya auś)."
+   }
+  ],
+  "overridden_by": [
+   {
+    "id": "1.1.53",
+    "note": "Kaumudi 1.1.53: 'sarvasya [SK45] ityasyāpavādaḥ' - ṅit anekāl ādeśas go to the last sound."
+   }
+  ],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [],
+  "laghu_ref": "vlk_45",
+  "notes": "Laghu GRETIL vlk_45 = p_1,1.55 correct. Balamanorama argues that the two rules 1.1.54 and 1.1.55 are equally strong and that 'paratva' (later position: 1.1.55 after 1.1.54) decides."
+ },
+ {
+  "id": "1.1.56",
+  "text_iast": "sthānivadādeśo’nalvidhau",
+  "family": "ac_ekadesa",
+  "tier": "support",
+  "kind": "atidesa",
+  "effect": "A substitute is treated like the sthānin (it counts as what it replaced), except in rules that depend on the sound (al) of the sthānin.",
+  "sthanin": "the ādeśa (substitute)",
+  "adesa": "it counts as the sthānin (dhātu, aṅga, kṛt, taddhita, avyaya, Sup, tiṅ, pada)",
+  "nimitta": "when a rule refers to the properties (technical class) of the sthānin, not to its letters (analvidhi)",
+  "conditions": [
+   "Kasika: 'sthānivad ādeśo bhavati sthānyāśrayeṣu kāryeṣv analāśrayeṣu, sthānyalāśrayāṇi kāryāṇi varjayitvā': the substitute counts as dhātu (bhū for as), aṅga, kṛt, taddhita, avyaya, Sup, tiṅ, pada.",
+   "Kasika: 'vatkaraṇaṃ kim? sthānī ādeśasya saṃjñā mā vijñāyīti, svāśrayam api yathā syāt': even rules that depend on the ādeśa's own status apply.",
+   "Kasika: 'ādeśagrahaṇaṃ kim? ānumānikasyāpy ādeśasya sthānivadbhāvo yathā syāt': the ekādeśa (whose sthānin is only 'inferred') too.",
+   "Kasika: 'analvidhāv iti kim? dyupathityadādeśā na sthānivad bhavanti - dyauḥ, panthāḥ, saḥ': when the rule refers to the letters (al) of the sthānin the copy is not made.",
+   "Kaumudi: 'anena iha yakārasya sthānivadbhāvenācatvam āśritya anaci ca iti dvitvaniṣedho na śaṅkyo 'nalvidhāv iti tanniṣedhāt'.",
+   "Laghu: 'ādeśaḥ sthānivat syān na tu sthānyalāśrayavidhau. iti sthānivattvāt supi ceti dīrghaḥ. rāmāya. rāmābhyām'."
+  ],
+  "exceptions_and_blockers": [
+   {
+    "id": "1.1.58",
+    "note": "prohibits sthānivadbhāva for pada-anta, dvitva, vareya, lopa, svara, savarṇa, anusvāra, dīrgha, jaś, car rules."
+   }
+  ],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [
+   "ac_ekadesa-227"
+  ],
+  "laghu_ref": null,
+  "notes": "Relation to 6.1.85: Tattvabodhini: 'sthānivatsūtreṇaiva gatārtham idam'; Kasika/Balamanorama reply that the ekādeśa (pair-sthānin) is outside the direct reach of sthānivad-bhāva ('avayavayor ānumānikaṃ sthānitvam') and that antādivat is limited to varṇāśraya-free rules as 1.1.56 is limited to analvidhi."
+ },
+ {
+  "id": "1.1.57",
+  "text_iast": "acaḥ parasmin pūrvavidhau",
+  "family": "ac_ekadesa",
+  "tier": "support",
+  "kind": "atidesa",
+  "effect": "An ac-substitute conditioned by a following item is treated as the sthānin when a rule about what comes BEFORE it (pūrvavidhi) is to be applied.",
+  "sthanin": "the ac-ādeśa made because of a following item (parasmin)",
+  "adesa": "it counts as the sthānin (as in 1.1.56)",
+  "nimitta": "the rule to be applied concerns the item before the ac-ādeśa (pūrvavidhi), i.e. a rule about an earlier part of the word",
+  "conditions": [
+   "Kasika: 'pūrveṇānalvidhau sthānivadbhāva uktaḥ. alvidhyartham idam ārabhyate': it also covers rules that depend on the letters (al) of the sthānin, but ONLY for an ac-ādeśa conditioned by a following item and only for pūrvavidhi.",
+   "Kasika: paṭayati (ṇic + ṭilopa): the ṭilopa of pa-ṭu is sthānivat, so vṛddhi 7.2.116 (ata upadhāyāḥ) is not applied; avadhīt (ato lopa sthānivat so 7.2.7 does not apply); bahukhaṭvakaḥ (the hrasva of 7.4.15 is sthānivat, so the accent rule 6.2.174 is not applied).",
+   "Kasika: 'aca iti kim? praśnaḥ, ākrāṣṭām, āgatya'; 'parasminniti kim? yuvajāniḥ, vadhūṭījāniḥ, vaiyāghrapadyaḥ, ādīdhye'; 'pūrvavidhāv iti kim? he gauḥ, bābhravīyāḥ, naidheyaḥ'.",
+   "Laghu: 'paranimitto ’jādeśaḥ sthānivat sthānibhūtād acaḥ pūrvatvena dṛṣṭasya vidhau kartavye. ityallopasya sthānivatvān na vṛddhiḥ. avadhīt. ahaniṣyat'."
+  ],
+  "exceptions_and_blockers": [
+   {
+    "id": "1.1.58",
+    "note": "lists the pūrvavidhis where the sthānivadbhāva of this rule is withdrawn."
+   }
+  ],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [],
+  "laghu_ref": null,
+  "notes": "Whether an ekādeśa can itself be a 'parasmin' ajādeśa for this rule is not discussed in the texts read; for the ekādeśa the tradition cites 6.1.85 and 6.1.86. The Kaumudi on 1.1.57 ends 'iti yaṇaḥ sthānivadbhāve prāpte', which leads into the prohibitions of 1.1.58 (dadhyatra)."
+ },
+ {
+  "id": "1.1.58",
+  "text_iast": "na padāntadvirvacanavareyalopasvarasavarṇānusvāradīrghajaścarvidhiṣu",
+  "family": "ac_ekadesa",
+  "tier": "support",
+  "kind": "nisedha",
+  "effect": "The sthānivadbhāva of 1.1.57 is prohibited for rules of pada-anta, dvirvacana, vareya, lopa, svara, savarṇa, anusvāra, dīrgha, jaś and car.",
+  "sthanin": "n/a (prohibition of 1.1.57)",
+  "adesa": "n/a",
+  "nimitta": "a pūrvavidhi belonging to one of the listed classes",
+  "conditions": [
+   "Kasika: 'pūrveṇātiprasaktaḥ sthānivadbhāva eteṣu vidhiṣu pratiṣidhyate': padānta (kau staḥ, yau staḥ, tāni santi, yāni santi; śnasor allopaḥ 6.4.111), dvirvacana (dadhyatra, madhvatra: anaci ca 8.4.47 is not blocked by the y's sthānivadbhāva), vareya (yāyāvara), yalopa (kaṇḍūtiḥ), svara (cikīrṣakaḥ), savarṇa (śiṇḍhi), anusvāra (śiṃṣanti), dīrgha (pratidivnā), jaś (saggdhiḥ), car (jakṣatuḥ).",
+   "Vartika: 'svaradīrghayalopeṣu lopājādeśo na sthānivad'; other ac-ādeśas remain sthānivat: bahukhaṭvakaḥ, kiryoḥ, giryoḥ, vāyvoḥ (1.1.58 vartika; Kasika)."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [
+   {
+    "text": "स्वरदीर्घयलोपेषु लोपाजादेशो न स्थानिवद् ।",
+    "source": "corpus.varttikas_on('1.1.58'); Kasika 1.1.58"
+   },
+   {
+    "text": "क्विलुगुपधात्वचङ्परनिर्ह्रासकुत्वेषूपसंख्यानम् ।",
+    "source": "corpus.varttikas_on('1.1.58')"
+   },
+   {
+    "text": "पूर्वत्रासिद्धे न स्थानिवत् ।",
+    "source": "corpus.varttikas_on('1.1.58')"
+   },
+   {
+    "text": "तस्य दोषः संयोगादिलोपलत्वणत्वेषु ।",
+    "source": "corpus.varttikas_on('1.1.58')"
+   }
+  ],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [
+   "ac_ekadesa-228"
+  ],
+  "laghu_ref": null,
+  "notes": "This is the engine's guard: after a yaṇ (dadhi + atra -> dadhy-atra) the y is not a sthānivat vowel for the doubling 8.4.47 (anaci ca), so daddhyatra is possible. Kaumudi: 'padasya caramāvayave dvirvacanādau ca kartavye paranimitto 'jādeśo na sthānivat'."
+ },
+ {
+  "id": "1.1.59",
+  "text_iast": "dvirvacane’ci",
+  "family": "ac_ekadesa",
+  "tier": "support",
+  "kind": "atidesa",
+  "effect": "An ac-substitute conditioned by a following ac IS treated as its sthānin when dvirvacana (reduplication) is to be done.",
+  "sthanin": "an ac-ādeśa made because an ac follows (dvirvacananimitte aci)",
+  "adesa": "it counts as the sthānin for the purpose of dvirvacana only",
+  "nimitta": "the operation to be done is dvirvacana (6.1.1 ekāco dve prathamasya ...)",
+  "conditions": [
+   "Kasika: 'dvirvacananimitte 'ci ajādeśaḥ sthānivad bhavati dvirvacana eva kartavye. rūpātideśaś cāyaṃ niyatakālaḥ': after the dvirvacana is done the ādeśa's own form stays.",
+   "Kasika: prayojanas: āllopa (papatuḥ, papuḥ), upadhālopa (jaghnatuḥ, jaghnuḥ), ṇilopa (āṭiṭat), yaṇ (cakratuḥ, cakruḥ: yaṇ before atus/us would make the base single-syllabled), ayavāyāvādeśas (ninaya, nināya, lulava, lulāva).",
+   "Kasika: 'dvirvacane kartavya iti kim? jagle, mamle' (the ā remains); 'dvirvacananimitta iti kim? dudyūṣati' (ūṭh yaṇ is not sthānivat here); 'acīti kim? jeghrīyate, dedhmīyate' (ī-ādeśa is not sthānivat because the following is not an ac)."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [
+   "ac_ekadesa-229"
+  ],
+  "laghu_ref": null,
+  "notes": "UNRESOLVED DISAGREEMENT: the Kasika reads the sutra as an atideśa (the ac-ādeśa IS sthānivat for dvirvacana), but the Kaumudi ('dvitvanimitte ’ci pare aca ādeśo na syād dvitve kartavye') and the Laghu ('dvitvanimitte ’ci aca ādeśo na dvitve kartavye. gopāyāñcakratuḥ') state it negatively. I could not reconcile them from the on-disk texts; the gold case 'cakratuḥ' follows the Kasika and is marked uncertain."
+ },
+ {
+  "id": "1.1.60",
+  "text_iast": "adarśanaṃ lopaḥ",
+  "family": "ac_ekadesa",
+  "tier": "support",
+  "kind": "samjna",
+  "effect": "Non-appearance (adarśana) is called lopa.",
+  "sthanin": "an item that would be there but does not appear",
+  "adesa": "n/a (a definition)",
+  "nimitta": "an item that was prasakta (present in the derivation) and is not seen",
+  "conditions": [
+   "Kasika: 'adarśanam, aśravaṇam, anuccāraṇam, anupalabdhiḥ, abhāvaḥ, varṇavināśa ityanarthāntaram': the name is for the thing meant, not for the word.",
+   "Kasika: 'prasaktasyādarśanaṃ lopasaṃjñaṃ bhavati': only for something that was present; examples: gaudheraḥ, pacera, jīradānuḥ, āsremāṇam."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [],
+  "laghu_ref": null,
+  "notes": "Kaumudi and Laghu: 'prasaktasyādarśanaṃ lopasaṃjñaṃ syāt'. Lopa in 6.1.109-type outputs is written with the avagraha ('), which is a spelling device, not the lopa itself (the a is elided by pūrvarūpa ekādeśa, not lopa)."
+ },
+ {
+  "id": "1.1.61",
+  "text_iast": "pratyayasya lukślulupaḥ",
+  "family": "ac_ekadesa",
+  "tier": "support",
+  "kind": "samjna",
+  "effect": "The non-appearance of a pratyaya is called luk, ślu or lup according to the sutra that causes it.",
+  "sthanin": "a pratyaya that disappears",
+  "adesa": "n/a (a definition)",
+  "nimitta": "a pratyaya-adarśana produced through one of the three names luk/ślu/lup",
+  "conditions": [
+   "Kasika: 'pratyayādarśanasya luk, ślu, lup ityetāḥ saṃjñā bhavanti; anekasaṃjñāvidhānāc ca tadbhāvitagrahaṇam ihavijñāyate': each name is conditioned by the corresponding sutra.",
+   "Kasika: examples atti, juhoti, varaṇāḥ; 'pratyayagrahaṇaṃ kim? agastayaḥ, kuṇḍināḥ'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [],
+  "laghu_ref": null,
+  "notes": "Kaumudi/Laghu: 'luk-ślu-lup-śabdaiḥ kṛtaṃ pratyayādarśanaṃ kramāt tattatsaṃjñaṃ syāt'. Relevant to 1.1.62-63 only."
+ },
+ {
+  "id": "1.1.62",
+  "text_iast": "pratyayalope pratyayalakṣaṇam",
+  "family": "ac_ekadesa",
+  "tier": "support",
+  "kind": "atidesa",
+  "effect": "When a pratyaya has disappeared (lopa), the rules that depend on that pratyaya still apply (pratyayalakṣaṇa).",
+  "sthanin": "a rule whose nimitta is a pratyaya that has been elided",
+  "adesa": "the rule still applies, as if the pratyaya were present",
+  "nimitta": "pratyayalopa (luk/ślu/lup or other lopa); rule stated on the pratyaya",
+  "conditions": [
+   "Kasika: 'pratyayalope kṛte pratyayalakṣaṇaṃ pratyayahetukaṃ kāryaṃ bhavati': agnicit, somasut, adhok (Kasika 'adhog iti': laṅ of duh with tip and śap elided): the pada-saṃjñā (1.4.14) is still given after the su/tiṅ-lopa, so the consonant changes (ghatva, bhaṣbhāva, jaśtva, cartva) apply.",
+   "Kasika 'pratyaya iti vartamāne punaḥ pratyayagrahaṇaṃ kim? kṛtsnapratyayalope yathā syād' - only when the WHOLE pratyaya is elided: āghnīya, saṅgmīya do NOT trigger the nasal loss of 6.4.37 jhali.",
+   "Vartika: 'varṇāśraye nāsti pratyayalakṣaṇam' (rāyaḥ kulaṃ raikulam; gave hitaṃ gohitam: āy/āv-ādeśa do not apply: they depend on the letter)."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [
+   {
+    "text": "वर्णाश्रये नास्ति प्रत्ययलक्षणम् ।",
+    "source": "corpus.varttikas_on('1.1.62'); Kasika 1.1.62"
+   }
+  ],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [],
+  "laghu_ref": null,
+  "notes": "Kaumudi: 'pratyaye lupte 'pi tadāśritaṃ kāryaṃ syāt. iti jasi ceti guṇe prāpte' (the guṇa of 7.3.109 jasi ca applies for hari-jas after lopa). Relevant for the ekādeśa: after a Sup-lopa, rules that see the Sup (e.g. ekādeśa in 6.1.102 prathamayoḥ) are recovered. Vartika restricts it: rules that depend on the letter (varṇāśraya) do not apply."
+ },
+ {
+  "id": "1.1.63",
+  "text_iast": "na lumatāṅgasya",
+  "family": "ac_ekadesa",
+  "tier": "support",
+  "kind": "nisedha",
+  "effect": "There is no pratyayalakṣaṇa if the pratyaya was elided by a luk/ślu/lup word (lumat), for the aṅga.",
+  "sthanin": "n/a (prohibition of 1.1.62)",
+  "adesa": "n/a",
+  "nimitta": "the pratyaya was elided by luk, ślu or lup, and the rule concerns the aṅga",
+  "conditions": [
+   "Kasika: 'pūrveṇātiprasaktaṃ pratyayalakṣaṇam iti viśeṣe pratiṣedha ucyate': 'lumatā śabdena lupte pratyaye yad aṅgaṃ tasya pratyayalakṣaṇaṃ kāryaṃ na bhavati': gargāḥ, mṛṣṭaḥ, juhutaḥ; yañśapor lumatā luptayor aṅgasya guṇavṛddhī na bhavataḥ.",
+   "Kasika: 'lumateti kim? kāryate, hāryate'; 'aṅgasyeti kim? pañca, sapta, payaḥ, sāma'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [
+   {
+    "text": "उत्तरपदत्वे चापदादिविधौ ।",
+    "source": "corpus.varttikas_on('1.1.63'); Kasika 1.1.63"
+   }
+  ],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [],
+  "laghu_ref": null,
+  "notes": "Kaumudi: 'luk ślu lup ete lumantaḥ; lumatā śabdena lupte tannimittam aṅgakāryaṃ na syāt': examples kati, katibhiḥ, katibhyaḥ, katīnām, katiṣu; tri."
+ },
+ {
+  "id": "1.1.64",
+  "text_iast": "aco’ntyādi ṭi",
+  "family": "ac_ekadesa",
+  "tier": "support",
+  "kind": "samjna",
+  "effect": "The last vowel of a word together with everything that follows it is called ṭi.",
+  "sthanin": "the final ac of a word + the sounds after it",
+  "adesa": "n/a (a definition: ṭi)",
+  "nimitta": "the last vowel of the word and whatever follows",
+  "conditions": [
+   "Kasika: 'aca iti nirdhāraṇe ṣaṣṭhī; jātāv ekavacanam': 'acāṃ sanniviṣṭānāṃ yo 'ntyo 'c, tadādi śabdarūpaṃ ṭisaṃjñaṃ bhavati': agnicit: ic; somasut: uc; ātām, āthām: ām; pacete, pacethe: e-sequence.",
+   "Kasika: the ṭi is the object in 3.4.79 (ṭita ātmanepadānāṃ ṭer e), etc. - here for the śakandhvādi vartika of 6.1.94: 'tacca ṭeḥ': the pararūpa replaces the ṭi (last vowel + what follows) of the first word and the following vowel (Balamanorama 6.1.94: 'ṭeś ca parasyācaś ca sthāne pararūpam ekādeśaḥ')."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [
+   "ac_ekadesa-108"
+  ],
+  "laghu_ref": "vlk_39",
+  "notes": "Laghu GRETIL vlk_39 = p_1,1.64 correct; in the Laghu it introduces the śakandhvādi vartika of 6.1.94. In manīṣā (manas + īṣā) the ṭi of 'manas' is 'as' - the whole as is dropped with pararūpa. In sīmantaḥ (sīman + anta) the ṭi is 'an'."
+ },
+ {
+  "id": "6.1.84",
+  "text_iast": "ekaḥ pūrvaparayoḥ",
+  "family": "ac_ekadesa",
+  "tier": "support",
+  "kind": "adhikara",
+  "effect": "Heading: in the rules from 6.1.85 through 6.1.111 whatever is substituted is ONE substitute that stands for the earlier sound and the later sound TOGETHER.",
+  "sthanin": "the pair: last sound of the earlier item + first sound of the later item (pūrva and para together)",
+  "adesa": "a single substitute (ekādeśa) for the pair",
+  "nimitta": "saṃhitā (6.1.72); the word 'aci' of 6.1.77 is carried in by anuvṛtti (api.detail lists 'aci' from 6.1.77)",
+  "conditions": [
+   "Kasika: 'ekaḥ' = a single substitute (ekagrahaṇaṃ pṛthagādeśanivṛttyartham): otherwise, because the two sthānins are different, two substitutes could be given (like the two in 8.2.42 'radābhyāṃ niṣṭhāto naḥ pūrvasya ca daḥ').",
+   "Kasika: 'pūrvaparayoḥ' = both sthānins together (pūrvaparagrahaṇaṃ dvayor api yugapad ādeśapratipattyartham): a substitute cannot be put for one of the two only, because two 'sthāna' (locative/ablative) cannot be given at once.",
+   "Extent: Kasika: 'khyatyāt parasya iti prāg etasmāt sūtrād ita uttaram' = through 6.1.111 (the project's api.detail also shows the adhikāra 6.1.84 still standing over 6.1.111 and not over 6.1.112; Balamanorama on 6.1.112: 'ekaḥ pūrvaparayoḥ iti tu nivṛttam').",
+   "Balamanorama on 6.1.91: 'ekādeśa iti | pūrvaparayor acor iti śeṣaḥ. anyathā upasargasya dhātoś ca sarvādeśaḥ syāt': the sthānin is only the two vowels, not the whole upasarga and whole dhātu; the anekāl rule 1.1.55 would otherwise make a whole-word substitute."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "No ordering of its own. Because the substitute replaces a pair, the ekādeśa is not a 'sthānivat' copy of either of its sthānins: 6.1.85 (antādivac ca) supplies the missing status, and 6.1.86 makes it invisible for ṣatva and tuk.",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [
+   "ac_ekadesa-001",
+   "ac_ekadesa-002",
+   "ac_ekadesa-028"
+  ],
+  "laghu_ref": null,
+  "notes": "Bhashya on 6.1.84 defends the wording 'ekaḥ' and 'pūrvaparayoḥ' with the worldly analogy 'dravyavat karmacodanāyāṃ dvayor ekasyābhinirvṛtteḥ' (two sthānins, one result). The adhikāra does not apply to 6.1.112 (khyatyāt parasya) although that rule also gives a single substitute (Bala: the para-word 'parasya' makes it a replacement of the a of ṅas only). The project's api.detail also marks 6.1.85, 6.1.86 ... as standing under this adhikāra."
+ },
+ {
+  "id": "6.1.85",
+  "text_iast": "antādivacca",
+  "family": "ac_ekadesa",
+  "tier": "core",
+  "kind": "atidesa",
+  "effect": "The single ekādeśa made under 6.1.84-6.1.111 is treated like the last sound of the earlier item and like the first sound of the later item, so that rules referring to the end of the earlier item or the start of the later item can see it.",
+  "sthanin": "the ekādeśa substitute (not a sthānin - a status is transferred)",
+  "adesa": "it counts as antya of the pūrva and ādi of the para (yathāsaṅkhya: antavat for the first, ādivat for the second)",
+  "nimitta": "when a rule about the whole unit ending in / beginning with the sthānin (prātipadika, Sup, pada, upasarga, āṅ, pratyaya ...) is to apply after an ekādeśa was made",
+  "conditions": [
+   "Balamanorama: 'yathāsaṃkhyaparibhāṣayā antādivadityasya krameṇānvayaḥ' - antavat goes with pūrva, ādivat with para.",
+   "Kasika: it transfers only properties of the unit as a whole (prātipadika-hood, Sup-hood, pada-hood): 'ūṅ' (a-prātipadika) + brahmabandhu (prātipadika) gives an ekādeśa that counts as the end of the prātipadika, so 4.1.1 gives the Sup; in 'vṛkṣau' the au (Sup) + a (not Sup) ekādeśa counts as the beginning of the Sup so the word is a supanta (1.4.14).",
+   "LIMIT (varṇāśraya): Kasika: 'varṇāśrayavidhāv ayam antādivadbhāvo neṣyate': it does not apply to rules that depend on the sound itself (short a, o, e, i...). Examples: khaṭvābhiḥ (7.1.9 ato bhisa ais not applied because the long ā is not treated as a short final a), juhāva (7.1.34 āta au ṇalaḥ not applied), asyai aśvaḥ / asyā aśva (6.1.109 not applied through ādivat) (Kasika).",
+   "Mahabhasya vartika 24 'varṇāśrayavidhau ca' (no antādivat in a rule that depends on the sound) and vartika 26 'na vā atādrūpyātidesāt': the atideśa is not an identification of forms (tādrūpya): rules that need the letter's own form are unaffected; the limit therefore needs no separate vartika. Balamanorama: only the group properties (prātipadikatva, subantatva, pratyayatva) are transferred, 'na tu varṇamātradharmā atvahrasvatvādayaḥ' (hence 'ayaje indram': the guṇa e is not treated as i, so no savarṇadīrgha).",
+   "Mahabhasya: 'ubhayata āśraye nāntādivat': when a rule depends on BOTH the end of the first and the beginning of the second there is no antavat/ādivat (no simultaneous service).",
+   "Balamanorama defends 6.1.85 against the charge of being redundant with 1.1.56: in kṣīrapeṇa the ṇatva of 8.4.12 (ekājuttarapade ṇaḥ) needs pe to be an ekāc uttarapada; 1.1.56 (sthānivat) cannot give this because the rule would rest on the sthānin's letter (sthānyalāśraya, barred by 'analvidhau'), whereas 6.1.85 transfers the position 'end of the earlier member'."
+  ],
+  "exceptions_and_blockers": [
+   {
+    "id": "7.1.9",
+    "note": "khaṭvābhiḥ: the ekādeśa ā is not antavat with respect to a short-a-final stem, so bhis is not replaced by ais (Kasika: 'antavadbhāvābhāvād ato bhisa ais iti na bhavati')."
+   },
+   {
+    "id": "7.1.34",
+    "note": "juhāva: Kasika says the ekādeśa (samprasāraṇapūrvatva) is not treated as the ā of the root by ādivat, so āta au ṇalaḥ (au for ṇal after an ā-final aṅga) does not apply (varṇāśraya)."
+   },
+   {
+    "id": "6.1.109",
+    "note": "asyai aśvaḥ / asyā aśva (Kasika): the ai made by vṛddhi (6.1.88) is not treated as e by ādivat, so the pūrvarūpa of eṅaḥ padāntād ati is not applied."
+   }
+  ],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "Kasika: it exists because the substitute stands for a pair, so 'the earlier/later sthānin has the property' is only 'ānumānika' (inferred) and a sthānivat-transfer (1.1.56) cannot reach it: 'pūrvaparasamudāya ekādeśasya sthānī' and 'tatrāvayavayor ānumānikaṃ sthānitvam iti tadāśrayaṃ kāryaṃ sthānivadbhāvād aprāptam ity antādivadbhāvo vidhīyate'. Tattvabodhini: 'sthānivatsūtreṇaiva gatārtham idam' (redundant given 1.1.56); it rejects the alternative of reading 6.1.85 as an alvidhi-atideśa 'asyāpy alvidhāv aniṣṭatvāt' because ayaje indram would then get savarṇadīrgha. Balamanorama defends the sutra with kṣīrapeṇa.",
+  "varttikas": [
+   {
+    "text": "वर्णाश्रयविधौ च",
+    "source": "Mahabhasya on 6.1.85 (vartika 6149, bhashya file)"
+   },
+   {
+    "text": "न वाऽताद्रूप्यातिदेशात्",
+    "source": "Mahabhasya on 6.1.85 (vartika 6151, bhashya file)"
+   }
+  ],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [
+   "ac_ekadesa-015",
+   "ac_ekadesa-016",
+   "ac_ekadesa-017",
+   "ac_ekadesa-018",
+   "ac_ekadesa-019",
+   "ac_ekadesa-048",
+   "ac_ekadesa-129"
+  ],
+  "laghu_ref": "vlk_41",
+  "notes": "Laghu (GRETIL, vlk_41): 'yo 'yamekādeśaḥ sa pūrvasyāntavatparasyādivat / śivehi': the e of śiva + ehi counts as the beginning of ehi (the āṅ), enabling omāṅośca (6.1.95). The Mahabhasya lists many more prayojanas for antavat/ādivat (dvādaśānyikaḥ, pibati, ṇatva of vaibhakta, adasa i-tva-o-tva etc.) and debates whether they are needed; not reproduced here. 'ayaje indram' in Balamanorama/Tattvabodhini shows why the limit is needed."
+ },
+ {
+  "id": "6.1.86",
+  "text_iast": "ṣatvatukorasiddhaḥ",
+  "family": "ac_ekadesa",
+  "tier": "support",
+  "kind": "atidesa",
+  "effect": "For the purpose of ṣatva (s -> ṣ) and of the tuk augment, the ekādeśa of 6.1.84-6.1.111 is asiddha (treated as not having happened).",
+  "sthanin": "the ekādeśa made under 6.1.84-6.1.111 (asiddha status, not a substitution)",
+  "adesa": "treated as not made: the two original sounds remain 'visible'",
+  "nimitta": "only when ṣatva (8.3.xx) or a tuk augment (6.1.71 and neighbours) is to be done",
+  "conditions": [
+   "Kasika: 'ṣatve tuki ca kartavya ekādeśo 'siddho bhavati' - restricted to exactly these two operations.",
+   "Kasika: the purpose is twofold: 'ādeśalakṣaṇapratiṣedhārtham utsargalakṣaṇabhāvārthaṃ ca' - (a) to prevent a rule that would apply because of the ekādeśa's shape (kosicat: ṣatva) and (b) to allow a rule that needs the original shape (adhītya, pretya: tuk).",
+   "Mahabhasya: the asiddhatva is that of the ŚĀSTRA, not of the result: 'ekādeśaśāstraṃ tukśāstre 'siddhaṃ bhavatīti'.",
+   "Kasika vartika 'saṃprasāraṇaṅīṭsu pratiṣedho vaktavyaḥ': the samprasāraṇa ekādeśa (brahmahūṣu, parivīṣu) and the ekādeśas of ṅi and iṭ (vṛkṣe cchatram, apace cchatram) are NOT asiddha (ṣatva does happen; tuk is optional, 6.1.75-76, rather than the nitya 6.1.73). The Mahabhasya states the same as 'saṃprasāraṇaṅīṭsu siddha ekādeśa iti vaktavyam'."
+  ],
+  "exceptions_and_blockers": [
+   {
+    "id": "8.3.57",
+    "note": "Withholds ṣatva after iṇ/ku when the only thing between the iṇ (o of 'ko') and the s is an ekādeśa: 'ko 'siñcat', 'ko 'sya', 'ko 'smai' (Kasika: 'ekādeśasyāsiddhatvād iṇaḥ iti ṣatvaṃ na bhavati'). Tattvabodhini: with the ekādeśa asiddha the a of asiñcat stands between the o and the s, so the s is not 'iṇaḥ parasya'."
+   },
+   {
+    "id": "8.3.59",
+    "note": "The same ṣatva (ādeśapratyayayoḥ) for an ādeśa-s such as the sya of asya."
+   },
+   {
+    "id": "6.1.71",
+    "note": "ekādeśa asiddha ⇒ the vowel before the lyap ya is still short when tuk is looked at: adhītya, pretya (Kasika: 'hrasvasya piti kṛti tuk iti tug bhavati')."
+   }
+  ],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "This is an asiddhatva running in the direction OPPOSITE to 8.2.1 pūrvatrāsiddham: a rule of the sapādasaptādhyāyī (the ekādeśa, 6.1) is made asiddha for a later rule (ṣatva 8.3) and for an adjacent rule of the same section (tuk 6.1.71). Kaumudi: 'ṣatve tuki ca kartavye ekādeśaśāstram asiddhaṃ syāt'. Because it is 'ekādeśaśāstra' that is asiddha, the ekādeśa still takes place; only ṣatva/tuk ignore it. The Bhashya's fuller discussion (vartikas 6152-6157, including the reading 'padāntapadādyor ekādeśasyāsiddhavacanāt' and the jñāpaka bhrātuṣputragrahaṇa in kaskādi) is not digested here.",
+  "varttikas": [
+   {
+    "text": "संप्रसारणङीट्सु प्रतिषेधो वक्तव्यः",
+    "source": "Kasika on 6.1.86"
+   }
+  ],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [
+   "ac_ekadesa-020",
+   "ac_ekadesa-021",
+   "ac_ekadesa-022",
+   "ac_ekadesa-023",
+   "ac_ekadesa-024",
+   "ac_ekadesa-025",
+   "ac_ekadesa-026",
+   "ac_ekadesa-027"
+  ],
+  "laghu_ref": null,
+  "notes": "kosicat (Kasika spelling) = ko 'siñcat. For an implementer: after applying 6.1.109 (pūrvarūpa) the engine must NOT let 8.3.57/59 fire on the s just because 'o' now precedes the (avagraha) a; and for tuk (6.1.71) it must see the pre-ekādeśa short vowel. Also note: Kaumudi 6.1.86 quotes SK2858 for 6.1.71."
+ },
+ {
+  "id": "6.1.87",
+  "text_iast": "ādguṇaḥ",
+  "family": "ac_ekadesa",
+  "tier": "core",
+  "kind": "vidhi",
+  "effect": "After an avarṇa (a or ā), a following vowel and the avarṇa are replaced together by the guṇa vowel.",
+  "sthanin": "the pair: a/ā (avarṇa) at the end of the earlier item + any vowel (ac) beginning the later item",
+  "adesa": "one guṇa vowel (a, e or o, chosen by antaratama 1.1.50: a+i/ī -> e; a+u/ū -> o; a+ṛ -> ar; a+ḷ -> al with 1.1.51 raparatva/laparatva)",
+  "nimitta": "saṃhitā; aci (6.1.77 anuvṛtti); an ac follows the avarṇa",
+  "conditions": [
+   "Balamanorama: 'āt' is a 5th case stating the avarṇa; it is not a tapara-marked letter (āditi pañcamī na tu taparakaraṇam): both a and ā are covered.",
+   "Kasika: the ekādeśa is pūrva+para together by 6.1.84 (khaṭvendraḥ, mālendraḥ: the long ā is not preserved).",
+   "Bhashya (verses): 'aidautau naici tāv uktau' (ai/au cannot be the result: they are vṛddhi, stated for ec); 'ṛkāro nobhayāntaraḥ' (ṛ is not the antaratama of both a and ṛ); 'ākāro nartidhātau saḥ' (ā is prescribed for a + ṛ only by the ṛti-dhātau rule 6.1.91, which acts as a niyama: so elsewhere a + ṛ gives guṇa). Balamanorama on kṛṣṇa + ṛddhi: two sthānins a and ṛ; the three guṇas a, e, o are all 'prasakta' because they share the kaṇṭha place with a; the accepted result is a with raparatva (ar).",
+   "Kasika on 6.1.87: for lkāra 'ḷkārasya sthāne yo ’ṇ tasya laparatvam iṣyate' (tavalkāraḥ, khaṭvalkāraḥ).",
+   "1.1.70 tapara: the guṇa is short (Bhashya: 'āntaryāt tricaturmātrāḥ' and 'taparatvān na te smṛtāḥ'), so long ā + i gives short-based e not a three-mora vowel."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "6.1.77",
+    "note": "Mahabhasya on 6.1.91 (vartika 6172 'yaṇādeśād ādguṇaḥ'): where both could apply to the same sequence (vṛkṣa u atra: a + u and u + a) the guṇa wins by vipratiṣedha; examples 'vṛkṣo 'tra, plakṣo 'tra'. The competition is between 6.1.87 (later) and yaṇ 6.1.77 (earlier)."
+   }
+  ],
+  "overridden_by": [
+   {
+    "id": "6.1.88",
+    "note": "Kasika/Kaumudi 6.1.88: 'ādguṇasyāpavādaḥ' / 'guṇāpavādaḥ'."
+   },
+   {
+    "id": "6.1.89",
+    "note": "Kasika 6.1.89: 'ūṭhy ādguṇāpavādo vṛddhir vidhīyate' (for ūṭh); Kaumudi: 'pararūpaguṇāpavādaḥ'."
+   },
+   {
+    "id": "6.1.91",
+    "note": "Kasika: 'ādguṇāpavādaḥ' for ṛ-initial dhātu after an avarṇānta upasarga."
+   },
+   {
+    "id": "6.1.96",
+    "note": "Kasika: 'ādguṇāpavādaḥ pararūpam' before us (jus) after an apadānta a."
+   },
+   {
+    "id": "6.1.101",
+    "note": "Not spelled out in the commentaries on 6.1.87, but the outputs of Kasika 6.1.101 (daṇḍāgram with ā, not the guṇa a) show that for a + a the later 6.1.101 wins (paratva). Padamañjarī on 6.1.87 decides a guṇa/savarṇadīrgha conflict (vṛkṣa + ṅi + indra type) by 'śabdaparavipratiṣedhād dīrghaprasaṅgaḥ' (text partly corrupt)."
+   }
+  ],
+  "ordering_notes": "Bhashya (vartika 'guṇe ṅiśīṭām upasaṅkhyānam dīrghatvabādhanārtham') and its rejection 'na vā bahiraṅgalakṣaṇatvāt': the guṇa of 6.1.87 is antaraṅga relative to savarṇadīrgha, which is bahiraṅga; 'asiddhaṃ bahiraṅgam antaraṅge'. The Bhashya (on 6.1.91) also holds 'yaṇādeśād ādguṇaḥ' by vipratiṣedha for 'vṛkṣo 'tra' style forms. Ekādeśa here is asiddha for ṣatva/tuk by 6.1.86 (e.g. ko 'siñcat is by 6.1.109 not 6.1.87).",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [
+   "ac_ekadesa-001",
+   "ac_ekadesa-002",
+   "ac_ekadesa-003",
+   "ac_ekadesa-004",
+   "ac_ekadesa-005",
+   "ac_ekadesa-006",
+   "ac_ekadesa-007",
+   "ac_ekadesa-008",
+   "ac_ekadesa-009",
+   "ac_ekadesa-010",
+   "ac_ekadesa-011",
+   "ac_ekadesa-012",
+   "ac_ekadesa-013",
+   "ac_ekadesa-014",
+   "ac_ekadesa-017",
+   "ac_ekadesa-024",
+   "ac_ekadesa-026",
+   "ac_ekadesa-027",
+   "ac_ekadesa-046",
+   "ac_ekadesa-047",
+   "ac_ekadesa-048",
+   "ac_ekadesa-058",
+   "ac_ekadesa-059",
+   "ac_ekadesa-062",
+   "ac_ekadesa-063",
+   "ac_ekadesa-064",
+   "ac_ekadesa-081",
+   "ac_ekadesa-082",
+   "ac_ekadesa-083",
+   "ac_ekadesa-084",
+   "ac_ekadesa-085",
+   "ac_ekadesa-135",
+   "ac_ekadesa-136",
+   "ac_ekadesa-144",
+   "ac_ekadesa-145",
+   "ac_ekadesa-177",
+   "ac_ekadesa-186",
+   "ac_ekadesa-187",
+   "ac_ekadesa-188"
+  ],
+  "laghu_ref": "vlk_27",
+  "notes": "Laghu GRETIL tags this vlk_27 = p_6,1.87, correct. Kasika gives 'tavehate/khaṭvehate, tavodakam/khaṭvodakam, tavarśyaḥ/khaṭvarśyaḥ, tavalkāraḥ/khaṭvalkāraḥ' - the short/long pair is deliberate: the guṇa vowel is the same. The Laghu's kṛṣṇarddhiḥ shows the doubling of dh (8.4.46) which is optional. In the Laghu the sutra is followed by 1.3.2, 1.1.51 (uraṇ raparaḥ, with kṛṣṇarddhiḥ / tavalkāraḥ), 8.3.19 (lopaḥ śākalyasya) and 8.2.1 (pūrvatrāsiddham, with hara iha / harayiha)."
+ },
+ {
+  "id": "6.1.88",
+  "text_iast": "vṛddhireci",
+  "family": "ac_ekadesa",
+  "tier": "core",
+  "kind": "apavada",
+  "effect": "After an avarṇa, a following ec (e, o, ai, au) and the avarṇa are replaced together by vṛddhi.",
+  "sthanin": "the pair: a/ā at the end of the earlier item + ec (e, o, ai, au) beginning the later item",
+  "adesa": "vṛddhi: ai (for a/ā + e/ai) or au (for a/ā + o/au)",
+  "nimitta": "saṃhitā; ec follows the avarṇa ('āt' from 6.1.87, 'ec' from this sutra)",
+  "conditions": [
+   "Kasika: 'āditi vartate' - the avarṇa comes from 6.1.87 (Kasika lists: brahmaiḍakā, khaṭvaiḍakā, brahmaitikāyanaḥ, khaṭvaitikāyanaḥ, brahmaudanaḥ, khaṭvaudanaḥ, brahmaupagavaḥ, khaṭvaupagavaḥ).",
+   "1.1.1 tapara: ai/au are the two-mora vowels; khaṭvaiḍakā has no three-mora ai (Kasika on 1.1.1).",
+   "Balamanorama: the compound ban of 2.2.11 (pūraṇaguṇasuhitārthasadavyayatavyasamānādhikaraṇena) is anitya in 'kṛṣṇaikatvam'; others say kṛṣṇa is a separate vocative word."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "6.1.87",
+    "note": "apavāda: Kasika 'ādguṇasyāpavādaḥ', Kaumudi 'guṇāpavādaḥ'; Balamanorama 'ādguṇa iti prāptāv etadārambhād'."
+   }
+  ],
+  "overridden_by": [
+   {
+    "id": "6.1.94",
+    "note": "Kasika 6.1.94: 'vṛddhireci ityasyāpavādaḥ' (pararūpa before an e/o-initial dhātu after an avarṇānta upasarga)."
+   },
+   {
+    "id": "6.1.95",
+    "note": "Kasika 6.1.95: 'vṛddhireci ityasyāpavādaḥ' (om and āṅ)."
+   },
+   {
+    "id": "6.1.97",
+    "note": "Kasika 6.1.97: 'pace, yaja ityatra vṛddhireci iti vṛddhiḥ prāpnoti' - 6.1.97 (ato guṇe) displaces it: pace, yaje."
+   }
+  ],
+  "ordering_notes": "For a + au (rāma + au) the later 6.1.102 (pūrvasavarṇa) would be 'prāpta'; 6.1.104 (nādici) stops it so that this vṛddhi applies (Laghu 6.1.104: 'ādici na pūrvasavarṇadīrghaḥ / vṛddhireci / rāmau'). No tripādī interplay. The result of the vṛddhi (au, ai) stays within one ekādeśa, so it is treated as 'antavat' for the first unit and 'ādivat' for the second (6.1.85), e.g. vṛkṣau is a Sup-initial word.",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [
+   "ac_ekadesa-016",
+   "ac_ekadesa-028",
+   "ac_ekadesa-029",
+   "ac_ekadesa-030",
+   "ac_ekadesa-031",
+   "ac_ekadesa-032",
+   "ac_ekadesa-033",
+   "ac_ekadesa-034",
+   "ac_ekadesa-035",
+   "ac_ekadesa-036",
+   "ac_ekadesa-037",
+   "ac_ekadesa-038",
+   "ac_ekadesa-039",
+   "ac_ekadesa-116",
+   "ac_ekadesa-117",
+   "ac_ekadesa-120",
+   "ac_ekadesa-184",
+   "ac_ekadesa-185",
+   "ac_ekadesa-189",
+   "ac_ekadesa-194"
+  ],
+  "laghu_ref": "vlk_33",
+  "notes": "Laghu GRETIL tag vlk_33 = p_6,1.88 is correct. Balamanorama: the vṛddhi's 'ec' includes ai, au themselves (deva + aiśvaryam = devaiśvaryam; kṛṣṇa + autkaṇṭhyam = kṛṣṇautkaṇṭhyam: result ai/au of the same shape). The Laghu's kṛṣṇaikatvam etc. under this sutra: a + e in the compound 'kṛṣṇasya ekatvam'."
+ },
+ {
+  "id": "6.1.89",
+  "text_iast": "etyedhatyūṭhsu",
+  "family": "ac_ekadesa",
+  "tier": "core",
+  "kind": "apavada",
+  "effect": "After an avarṇa, the ejādi root forms of i (eti) and edh (edhati) and the ūṭh substitute take vṛddhi as the ekādeśa.",
+  "sthanin": "the pair: a/ā at the end of the earlier item + e- (of the roots i and edh) or ū (of ūṭh) at the beginning of the later item",
+  "adesa": "vṛddhi (ai for a + e; au for a + ū(ṭh))",
+  "nimitta": "avarṇa + (i) the ejādi form of the root i / (ii) the ejādi form of the root edh / (iii) ūṭh (the substitute of vāh)",
+  "conditions": [
+   "Kasika: 'tadetad ejgrahaṇam eter eva viśeṣaṇam, na punar edhateḥ, avyabhicārād ūṭhaś cāsaṃbhavāt': the word 'ec' (ejādi) qualifies eti only (Balamanorama: 'etyedhatyor eva viśeṣaṇam, na tūṭho 'saṃbhavāt').",
+   "Kasika (ejādi condition): 'ecīty eva — upa ita upetaḥ': a form of i that does not begin with e takes no vṛddhi (the ordinary guṇa applies).",
+   "Kaumudi/Laghu: 'ejādyoḥ kim? upetaḥ; mā bhavān predidhat': the aorist causative of edh starts with i (ididhat), so it is not ejādi (Balamanorama: 'edhadhātor ejāditvābhāvāt').",
+   "Kasika: 6.1.89 displaces guṇa (for ūṭh) and pararūpa 6.1.94 (for eti/edhati) but NOT pararūpa 6.1.95: 'omāṅośca iti tu pararūpaṃ na bādhyate - yena nāprāpte yo vidhir ārabhyate sa tasya bādhako bhavati (paribhāṣā 57) iti, purastād apavādā anantarān vidhīn bādhante (paribhāṣā 59) iti vā': the example 'upa ā ita upeta iti' (= upetaḥ, not upaitaḥ). Kaumudi: 'tenāvaihīti vṛddhir asādhur eva'.",
+   "Balamanorama gives a second explanation of the same outcome: the vṛddhi of 6.1.89 is not an apavāda of 6.1.95 at all (it is not an apavāda of pararūpa before ā-ṅ, since it applies both where 6.1.95 applies and where it does not: 'āṅi pararūpe tu prāpte cāprāpte ca ārabhyamāṇā vṛddhir na tadapavādaḥ' (corpus text 'vṛddhirnaṃ')) and 6.1.95 wins by paratva ('paratvād omāṅośceti pararūpaṃ nyāyyam'), as the Mahabhasya says; 'purastādapavādāḥ' is offered by the Bhashya only as 'atha vā'.",
+   "The vartikas listed under varttikas extend it to akṣa+ūhinī, sva+īra/īrin, pra+ūha/ūḍha/ūḍhi/eṣa/eṣya, sukhena+ṛta, and pra/vatsatara/kambala/vasana/ṛṇa/daśa + ṛṇa. Tattvabodhini/Balamanorama restrict them to kṛdanta forms of the named words: ūḍha means only the kta (not the -ūḍha- inside ktavatu): 'proḍhavān' (arthavad grahaṇe nānarthakasya grahaṇam); īṣa/īṣya from the long-upadha ūṣ/īṣ give 'preṣaḥ, preṣyaḥ' (guṇa); the tiṅanta/lyap forms get no vṛddhi (Balamanorama: 'agnaye preṣya dūtam', 'preṣya gataḥ')."
+  ],
+  "exceptions_and_blockers": [
+   {
+    "id": "6.1.95",
+    "note": "6.1.95 is not displaced by this vṛddhi: upa ā itaḥ = upetaḥ, ava ehi = avehi (Kasika, Kaumudi)."
+   }
+  ],
+  "overrides": [
+   {
+    "id": "6.1.87",
+    "note": "for ūṭh: Kasika 'ūṭhy ādguṇāpavādo vṛddhir vidhīyate'; Kaumudi 'pararūpaguṇāpavādaḥ'."
+   },
+   {
+    "id": "6.1.94",
+    "note": "for eti/edhati: Kasika 'etyedhatyos tv eṅi pararūpāpavādaḥ'."
+   }
+  ],
+  "overridden_by": [
+   {
+    "id": "6.1.95",
+    "note": "where the ejādi e is the guṇa e of an ā-ṅ + i: upa ā itaḥ -> upetaḥ; ava + ehi -> avehi (Kasika, Kaumudi; Balamanorama argues by paratva)."
+   }
+  ],
+  "ordering_notes": "Bhashya: the sūtra was defended by yogavibhāga (vṛddhireci / etyedhatyoś ca ic / ūṭi ca). For ūṭh: 6.1.108 (pūrvarūpa of ū + ā) comes first, then this rule: viśva + ū + āh + as -> viśva + ūh + as -> viśvauhaḥ (Balamanorama on 6.1.108). Balamanorama on the ūṭh-grahaṇa: if vāh had only a samprasāraṇa, the resulting pūrvarūpa (bahiraṅga) would be asiddha for the antaraṅga laghūpadhā guṇa and give *praṣṭhoha; with the substitute ūṭh the ū is there from the start, no guṇa is possible, and this rule gives praṣṭhauhaḥ.",
+  "varttikas": [
+   {
+    "text": "अक्षादूहिन्यामुपसंख्यानम् ।",
+    "source": "corpus.varttikas_on('6.1.89'); Kasika/Kaumudi/Laghu 6.1.89"
+   },
+   {
+    "text": "स्वादीरेरिणोः ।",
+    "source": "corpus.varttikas_on('6.1.89'); Kasika/Kaumudi 6.1.89 ('svādīreriṇyoḥ' in Kasika)"
+   },
+   {
+    "text": "प्रादूढोढ्येषैष्येषु ।",
+    "source": "corpus.varttikas_on('6.1.89'); Kaumudi/Laghu write 'prādūhoḍhoḍhyeṣaiṣyeṣu'"
+   },
+   {
+    "text": "ऋते च तृतीयासमासे ।",
+    "source": "corpus.varttikas_on('6.1.89'); Kasika/Kaumudi/Laghu 6.1.89"
+   },
+   {
+    "text": "प्रवत्सतरकम्बलवसनदशार्णानामृणे ।",
+    "source": "corpus.varttikas_on('6.1.89'); Kasika reads 'pravatsatarakambalavasanānām ṛṇe' + 'ṛṇadaśābhyām', Kaumudi/Laghu 'pravatsatarakambalavasanārṇadaśānām ṛṇe'"
+   }
+  ],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [
+   "ac_ekadesa-040",
+   "ac_ekadesa-041",
+   "ac_ekadesa-042",
+   "ac_ekadesa-043",
+   "ac_ekadesa-044",
+   "ac_ekadesa-045",
+   "ac_ekadesa-046",
+   "ac_ekadesa-047",
+   "ac_ekadesa-048",
+   "ac_ekadesa-049",
+   "ac_ekadesa-050",
+   "ac_ekadesa-051",
+   "ac_ekadesa-052",
+   "ac_ekadesa-053",
+   "ac_ekadesa-054",
+   "ac_ekadesa-055",
+   "ac_ekadesa-056",
+   "ac_ekadesa-057",
+   "ac_ekadesa-058",
+   "ac_ekadesa-059",
+   "ac_ekadesa-060",
+   "ac_ekadesa-061",
+   "ac_ekadesa-062",
+   "ac_ekadesa-063",
+   "ac_ekadesa-064",
+   "ac_ekadesa-065",
+   "ac_ekadesa-066",
+   "ac_ekadesa-067",
+   "ac_ekadesa-068",
+   "ac_ekadesa-069",
+   "ac_ekadesa-070",
+   "ac_ekadesa-207"
+  ],
+  "laghu_ref": "vlk_34",
+  "notes": "Laghu GRETIL tag vlk_34 = p_6,1.89 correct. Spelling variants of the vartikas differ across Kasika, Kaumudi and the corpus list (recorded above). The Kasika 'ūṭhy ādguṇāpavādo vṛddhir vidhīyate' shows that for ūṭh the competing rule is guṇa, for eti/edhati it is pararūpa. GRETIL prints 'akṣādūhanyāmupisaṃkhyānam', 'akṣauhaṇī' and 'vatsatarrāṇam' - misspellings of akṣādūhinyām upasaṅkhyānam, akṣauhiṇī and vatsatarārṇam."
+ },
+ {
+  "id": "6.1.90",
+  "text_iast": "āṭaśca",
+  "family": "ac_ekadesa",
+  "tier": "internal",
+  "kind": "apavada",
+  "effect": "An āṭ augment (ā) and a following vowel are replaced together by vṛddhi.",
+  "sthanin": "the pair: the augment āṭ + the vowel (ac) that follows it",
+  "adesa": "vṛddhi (ā/ai/au by antaratama; e.g. āṭ + ī -> ai, āṭ + u -> au, āṭ + ṛ -> ār)",
+  "nimitta": "āṭ + ac; saṃhitā; 'ec' of 6.1.88 is NOT carried (Kasika: 'echīti nivṛttam; acīty anuvartate')",
+  "conditions": [
+   "Kasika: aikṣata/aikṣiṣṭa/aikṣiṣyata, aubhīt, ārdhnot, aubjīt: the augment āṭ (ā + ṭ, 6.4.72 āḍajādīnām) before a vowel-initial root; and ā + ūḍhā etc. (Kasika's own last example: 'ā ūḍhā oḍhā, tām aicchat auḍhīyat', text unclear).",
+   "Kasika: the cakāra 'adhikavidhānārtha' and 'usi, omāṅośca (6.1.96, 6.1.95) iti pararūpabādhanārthaḥ' - so this vṛddhi displaces the pararūpa rules 6.1.96 and 6.1.95 (ausrīyat, auṅkārīyat; āṭ + ūḍhīyat = auḍhīyat); Bhashya on 6.1.95 (vartika 'usyomāṅkṣvāṭaḥ pratiṣedhaḥ') and its answer 'uktam āṭaś ca ity atra cakārasya prayojanam'.",
+   "Balamanorama: 'yady api vṛddhirecīty eva siddhaṃ tathāpy aikṣatetyādyartham āṭaśceti sūtram ihāpi nyāyyatvād upanyastam': for ec-initial roots 6.1.88 would do; the sutra is needed for vowels other than ec.",
+   "Kaumudi/Balamanorama: the āṭ of ṅe/ṅas after a nadī (bahuśreyasī + āṭ + e -> bahuśreyasyai; + as -> bahuśreyasyāḥ). Kaumudi adds 'nadyantāt paratvān nuṭ - bahuśreyasīnām': in the genitive plural the nuṭ (7.1.54 hrasvanadyāpo nuṭ) is what applies, by paratva."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "6.1.95",
+    "note": "Kasika: 'cakāro ’dhikavidhānārthaḥ' and 'pararūpabādhanārthaḥ' (om and āṅ)."
+   },
+   {
+    "id": "6.1.96",
+    "note": "Kasika: same (us)."
+   },
+   {
+    "id": "6.1.87",
+    "note": "for non-ec vowels (aikṣata: ī, aubhīt: u) the vṛddhi replaces guṇa; Balamanorama 'aikṣatetyādyartham'."
+   }
+  ],
+  "overridden_by": [],
+  "ordering_notes": "Balamanorama on 6.1.90 notes that in 'bahuśreyasyāḥ' savarṇadīrgha would also produce ā, but 6.1.90 is used 'nyāyyatvāt'. Tattvabodhini mentions the Vārttikakāra's alternative 'aṭaś ca' instead of 'āḍajādīnām': then the sutra reads 'aṭaḥ'.",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [
+   "ac_ekadesa-071",
+   "ac_ekadesa-072",
+   "ac_ekadesa-073",
+   "ac_ekadesa-074",
+   "ac_ekadesa-075",
+   "ac_ekadesa-076",
+   "ac_ekadesa-077"
+  ],
+  "laghu_ref": null,
+  "notes": "Not in the Laghu ac-sandhi chapter; the Laghu (Devanagari) commentary text gives 'bahuśreyasyai, bahuśreyasyāḥ, bahuśreyasīnām' here. The implementer must know that āṭ is a separate morpheme: no flag exists in the closed vocabulary, so the gold cases use boundary anga and note it."
+ },
+ {
+  "id": "6.1.91",
+  "text_iast": "upasargādṛti dhātau",
+  "family": "ac_ekadesa",
+  "tier": "core",
+  "kind": "apavada",
+  "effect": "After an upasarga ending in avarṇa, a dhātu beginning with a short ṛ and the upasarga's final avarṇa are replaced together by vṛddhi.",
+  "sthanin": "the pair: final a/ā of an upasarga + initial short ṛ of a dhātu",
+  "adesa": "vṛddhi ā (with raparatva ār by 1.1.51): upa + ṛcchati -> upārcchati",
+  "nimitta": "avarṇānta upasarga followed by a dhātu that begins with the short vowel ṛ; saṃhitā",
+  "conditions": [
+   "Kasika 'upasargād iti kim? khaṭvarcchati, mālarcchati; pragatā ṛcchakā asmād deśāt prarcchako deśaḥ (yatkriyāyuktāḥ prādayas taṃ prati gatyupasargasaṃjñakāḥ, Mahabhasya 1.4.59)': the first member must be an upasarga in that very construction.",
+   "Kasika 'ṛtīti kim? upa ita upetaḥ': the dhātu must begin with ṛ.",
+   "Kasika 'taparakaraṇaṃ kim? upa ṝkārīyati uparkārīyati': the ṛ is tapara: only short ṛ; long ṝ takes plain guṇa; without tapara 6.1.92 would allow vṛddhi optionally there.",
+   "Kasika: 'upasargagrahaṇād eva dhātugrahaṇe siddhe dhātugrahaṇaṃ śākalanivṛttyartham': ṛtyakaḥ (6.1.128), Śākalya's prakṛtibhāva, would otherwise be possible. Bhashya: the word dhātau makes the separate vartika 'ṛti hrasvād upasargād vṛddhiḥ pūrvavipratiṣedhena' unnecessary (vṛddhi beats 6.1.128). Balamanorama (text filed under 6.1.92): 'paro 'pi prakṛtibhāvaḥ punarvidhānasāmarthyād bādhyate'.",
+   "Tattvabodhini: 'dhātau kim? uparkāraḥ'.",
+   "Balamanorama: 'ekādeśa iti | pūrvaparayor acor iti śeṣaḥ. anyathā upasargasya dhātoś ca sarvādeśaḥ syāt'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "6.1.87",
+    "note": "Kasika: 'ādguṇāpavādaḥ'."
+   },
+   {
+    "id": "6.1.128",
+    "note": "Bhashya: vṛddhi over Śākalya's optional prakṛtibhāva ṛtyakaḥ (via the word dhātau, or via the vartika 'pūrvavipratiṣedhena'); Balamanorama: 'paro 'pi prakṛtibhāvaḥ punarvidhānasāmarthyād bādhyate'."
+   }
+  ],
+  "overridden_by": [
+   {
+    "id": "6.1.92",
+    "note": "makes the vṛddhi optional (with guṇa) when the dhātu is built on a subanta (nāmadhātu, kyac): Kasika 6.1.92 ('vā supyāpiśaleḥ')."
+   }
+  ],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [
+   "ac_ekadesa-078",
+   "ac_ekadesa-079",
+   "ac_ekadesa-080",
+   "ac_ekadesa-081",
+   "ac_ekadesa-082",
+   "ac_ekadesa-083",
+   "ac_ekadesa-084",
+   "ac_ekadesa-085"
+  ],
+  "laghu_ref": "vlk_37",
+  "notes": "Laghu GRETIL tag vlk_37 = p_6,1.91 is correct, but its printed vṛtti reads 'avarṇāntādupasargāddakārādau dhātau' - a misprint for 'ṛkārādau'. Example in the Laghu: prārcchati. Kasika and Kaumudi: upārcchati, prārcchati, upārdhnoti."
+ },
+ {
+  "id": "6.1.92",
+  "text_iast": "vā supyāpiśaleḥ",
+  "family": "ac_ekadesa",
+  "tier": "extended",
+  "kind": "vidhi",
+  "effect": "By Āpiśali's view, when the dhātu is one made from a subanta (nāmadhātu), the vṛddhi of 6.1.91 is optional.",
+  "sthanin": "the pair: final a/ā of an upasarga + initial ṛ/ḷ of a subanta-based dhātu (kyac etc.)",
+  "adesa": "vṛddhi ā (ār/āl) OR guṇa (ar/al)",
+  "nimitta": "avarṇānta upasarga + a dhātu beginning with ṛ or ḷ that has a Sup-word as its base (ṛṣabham ātmana icchati, ḷkāram ātmana icchati)",
+  "conditions": [
+   "Kasika: 'upasargād ṛti dhātāv iti ca' (6.1.91 anuvṛtti): the same conditions as 6.1.91.",
+   "Kasika: ṛ includes ḷ by the vartika-level savarṇya rule 'ṛkāraḷkārayoḥ sāvarṇyavidhiḥ' (1.1.9): upalkārīyati / upālkārīyati.",
+   "Kaumudi: tapara: with long ṝ no option: 'upa ṝkārīyati / uparkārīyati' (guṇa only).",
+   "Kasika: 'āpiśaligrahaṇaṃ pūjārtham, veti hy ucyata eva': the name Āpiśali is honorific: the vibhāṣā is by 'vā' itself."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "6.1.91",
+    "note": "vibhāṣā: turns the vṛddhi of 6.1.91 into an option with guṇa. Kasika on 6.1.91: 'vā supyāpiśaleḥ iti vikalpaḥ syāt' (had tapara been omitted)."
+   }
+  ],
+  "overridden_by": [],
+  "ordering_notes": "Kaumudi/Balamanorama (6.1.94): the word 'vā supi' is carried into 6.1.94 by vākyabheda (not ekavākyatā) so that pararūpa before an e/o-initial subanta-based dhātu is optional (upeḍakīyati / upaiḍakīyati) while it is nitya for ordinary dhātus (prejate, upoṣati). Kasika on 6.1.93 ('supīti cādhikārāt') and the Bhashya (vartika 'subadhikārāt siddham', explained by 'ekayoge caikadeśānuvṛttiḥ'): the word 'supi' of this sutra continues into 6.1.93 without 'vā'.",
+  "varttikas": [],
+  "optional": "vibhāṣā (vā): for nāmadhātus (subanta-based dhātus) after an avarṇānta upasarga, EITHER vṛddhi ('upārṣabhīyati') OR guṇa ('uparṣabhīyati').",
+  "vedic_only": false,
+  "examples": [
+   "ac_ekadesa-086",
+   "ac_ekadesa-087",
+   "ac_ekadesa-088",
+   "ac_ekadesa-102",
+   "ac_ekadesa-103",
+   "ac_ekadesa-104"
+  ],
+  "laghu_ref": null,
+  "notes": "CORPUS NOTE: the Balamanorama text filed under 6.1.92 begins with a sentence that belongs to 6.1.91 ('na bhavatīti | paro 'pi prakṛtibhāvaḥ punarvidhānasāmarthyād bādhyata ity arthaḥ'). Kasika examples: uparṣabhīyati / upārṣabhīyati, upalkārīyati / upālkārīyati."
+ },
+ {
+  "id": "6.1.93",
+  "text_iast": "auto’mśasoḥ",
+  "family": "ac_ekadesa",
+  "tier": "internal",
+  "kind": "apavada",
+  "effect": "After o (of go, dyo ...), the a of the Sup am (acc. sg.) and of śas (acc. pl.) are replaced together by ā.",
+  "sthanin": "the pair: final o of the stem + the a of am / śas",
+  "adesa": "ā (long), i.e. gām, gāḥ, dyām, dyāḥ",
+  "nimitta": "o-final stem (go, dyo, smṛto) followed by the Sup am or śas; the vowel of the Sup is a vowel (aci)",
+  "conditions": [
+   "Kasika: 'amiti dvitīyaikavacanaṃ gṛhyate, śasā sāhacaryāt, supīti cādhikārāt': only the Sup am; hence acinavam, asunavam (the verb ending am of mip) get no ā.",
+   "Bhashya: vartika 'otas tiṅi pratiṣedhaḥ' (acinavam, asunavam) and its answer 'subadhikārāt siddham' (the anuvṛtti of 'supi' from 6.1.92, without 'vā', by ekayoge caikadeśānuvṛttiḥ); vartika 'samāsāc ca pratiṣedhaḥ': citragum, śabalagum (compound with upasarjana-hrasva) get no ā.",
+   "Kasika: the ā is a fresh vidhi 'nāprāptāyāṃ vṛddhau': it is meant for the space where vṛddhi (7.2.115 aco ñṇiti through the ṇidvat of 7.1.90 goto ṇit) is not yet applicable ('dyām' from dyo), and where it applies it displaces the vṛddhi.",
+   "Kaumudi vartika 'oto ṇid iti vācyam' and 'vihitaviśeṣaṇam': the ṇit-ness of the sarvanāmasthāna is for the ok-final-vihita only (sudyauḥ, sudyāvau, sudyāvaḥ; not 'he bhāno', 'he bhānavaḥ'). Balamanorama notes that the Bhashya appears to contain a vartika about the vṛddhi of dyo ('goto ṇit' as a sutra-supplement) and that the vartika 'oto ṇid iti vācyam' as such is not found in the Bhashya on this sutra."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "7.2.115",
+    "note": "Balamanorama: 'parāpi aco ñṇiti iti vṛddhir iha na bhavati ātvasya niravakāśatayā tadapavādatvād iti bhāṣyam' (the corpus prints the sutra name garbled, 'añcoṇitī'): ā displaces vṛddhi before ṇit endings for go/dyo."
+   },
+   {
+    "id": "6.1.78",
+    "note": "avādeśa is the general effect of o before a vowel (acinavam); for the Sup am/śas the ā rule displaces it (Balamanorama first raises this objection for the verb-am)."
+   }
+  ],
+  "overridden_by": [],
+  "ordering_notes": "Bhashya: ā (6.1.93) vs hrasvatva (of the second member of a compound 'citragu'): the āt is bahiraṅga so the antaraṅga hrasvatva is prior ('asiddhaṃ bahiraṅgam antaraṅge'). Genitive/ablative 'goḥ' is 6.1.110 (Balamanorama on 6.1.93: 'goriti | ṅasiṅasośceti pūrvarūpam').",
+  "varttikas": [
+   {
+    "text": "ओतो णिदिति वाच्यम्",
+    "source": "Kaumudi on 6.1.93 (quoted as vārtikam)"
+   },
+   {
+    "text": "ओतस्तिङि प्रतिषेधः",
+    "source": "Mahabhasya on 6.1.93 (vartika 6178)"
+   },
+   {
+    "text": "समासाच्च प्रतिषेधः",
+    "source": "Mahabhasya on 6.1.93 (vartika 6180)"
+   }
+  ],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [
+   "ac_ekadesa-089",
+   "ac_ekadesa-090",
+   "ac_ekadesa-091",
+   "ac_ekadesa-092",
+   "ac_ekadesa-093",
+   "ac_ekadesa-094",
+   "ac_ekadesa-095",
+   "ac_ekadesa-096",
+   "ac_ekadesa-180"
+  ],
+  "laghu_ref": null,
+  "notes": "Laghu (Devanagari) commentary lists the paradigm: gām, gāvau, gāḥ, gavā, gave, goḥ. Kaumudi: 'ity odantāḥ' closes the o-final nouns; then 'ai-dantāḥ' (rai)."
+ },
+ {
+  "id": "6.1.94",
+  "text_iast": "eṅi pararūpam",
+  "family": "ac_ekadesa",
+  "tier": "core",
+  "kind": "apavada",
+  "effect": "After an avarṇānta upasarga, a dhātu beginning with e/o (eṅ) and the upasarga's final avarṇa are replaced together by the second sound (pararūpa).",
+  "sthanin": "the pair: final a/ā of an upasarga + initial e/o of a dhātu",
+  "adesa": "pararūpa: the e or o of the dhātu (upa + elayati -> upelayati; upa + oṣati -> upoṣati)",
+  "nimitta": "avarṇānta upasarga + a dhātu whose first sound is e/o; saṃhitā",
+  "conditions": [
+   "Kasika: the anuvṛtti is 'āt' and 'upasargād dhātau': only after an upasarga, before a dhātu.",
+   "Kaumudi/Balamanorama: 'vā supi' (6.1.92) is carried in by vākyabheda: in nominal dhātus the pararūpa is optional with vṛddhi: upeḍakīyati / upaiḍakīyati, upodanīyati / upaudanīyati, proghīyati / praughīyati; in ordinary dhātus it is nitya: prejate, upoṣati, prelayati.",
+   "Balamanorama: the substitute is the para e/o alone, not pūrva; the roots are ejṛ dīptau (ātmanepada, prejate) and uṣ dāhe (oṣati after guṇa).",
+   "Kasika: 'kecid vā supyāpiśaleḥ ityanuvartayanti; tat ca vākyabhedena subdhātau vikalpaṃ karoti' - some carry the option; the tradition (Kaumudi) treats it by vākyabheda."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "6.1.88",
+    "note": "Kasika: 'vṛddhireci ityasyāpavādaḥ'."
+   },
+   {
+    "id": "6.1.101",
+    "note": "for the śakandhvādi vartika Balamanorama: 'mṛta-aṇḍa iti sthite savarṇadīrghaṃ bādhitvānena pararūpam' (mārtaṇḍaḥ)."
+   },
+   {
+    "id": "6.1.87",
+    "note": "for the śakandhvādi manīṣā, halīṣā: 'atra guṇe prāpte pararūpam' (Balamanorama)."
+   }
+  ],
+  "overridden_by": [
+   {
+    "id": "6.1.89",
+    "note": "Kasika: 'etyedhatyos tv eṅi pararūpāpavādaḥ' (upaiti, upaidhate)."
+   },
+   {
+    "id": "6.1.92",
+    "note": "makes pararūpa optional for nāmadhātus by vākyabheda (Kaumudi)."
+   }
+  ],
+  "ordering_notes": "",
+  "varttikas": [
+   {
+    "text": "शकन्ध्वादिषु पररूपं वक्तव्यम् ।",
+    "source": "corpus.varttikas_on('6.1.94'); Kasika/Kaumudi 1.1.64 & 6.1.94"
+   },
+   {
+    "text": "सीमन्तः केशेषु",
+    "source": "Kasika on 6.1.94 (inside the śakandhvādi list; Kaumudi 1.1.64 reads 'sīmantaḥ keśaveśe')"
+   },
+   {
+    "text": "एवे चानियोगे ।",
+    "source": "corpus.varttikas_on('6.1.94'); Kasika/Kaumudi 6.1.94"
+   },
+   {
+    "text": "ओत्वोष्ठयोः समासे वा ।",
+    "source": "corpus.varttikas_on('6.1.94'); Kasika/Kaumudi 1.1.64"
+   },
+   {
+    "text": "एमन्नादिषु छन्दसि ।",
+    "source": "corpus.varttikas_on('6.1.94'); Kasika 6.1.94 (Vedic)"
+   },
+   {
+    "text": "पररूपप्रकरणे तुन्वोर्वि निपात उपसंख्यानम्",
+    "source": "Mahabhasya on 6.1.94 (vartika 6188; not in the corpus varttika list; concerns tu/nu + vai, Vedic tvai/nvai; not reproduced in the gold)"
+   }
+  ],
+  "optional": "By vākyabheda (Kaumudi, Balamanorama): pararūpa is nitya for ordinary dhātus, optional (with vṛddhi) for subanta-based dhātus. Vartika 'otvoṣṭhayoḥ samāse vā': optional in compounds (sthūlotuḥ / sthūlautuḥ). Vartika śakandhvādi and eve cāniyoge: nitya.",
+  "vedic_only": false,
+  "examples": [
+   "ac_ekadesa-097",
+   "ac_ekadesa-098",
+   "ac_ekadesa-099",
+   "ac_ekadesa-100",
+   "ac_ekadesa-101",
+   "ac_ekadesa-102",
+   "ac_ekadesa-103",
+   "ac_ekadesa-104",
+   "ac_ekadesa-105",
+   "ac_ekadesa-106",
+   "ac_ekadesa-107",
+   "ac_ekadesa-108",
+   "ac_ekadesa-109",
+   "ac_ekadesa-110",
+   "ac_ekadesa-111",
+   "ac_ekadesa-112",
+   "ac_ekadesa-113",
+   "ac_ekadesa-114",
+   "ac_ekadesa-115",
+   "ac_ekadesa-116",
+   "ac_ekadesa-117",
+   "ac_ekadesa-118",
+   "ac_ekadesa-119",
+   "ac_ekadesa-120",
+   "ac_ekadesa-121",
+   "ac_ekadesa-122"
+  ],
+  "laghu_ref": "vlk_38",
+  "notes": "Laghu GRETIL tag vlk_38 = p_6,1.94 correct. The Laghu follows it with 1.1.64 (aco 'ntyādi ṭi) for the śakandhvādi vartika. Vartika details: 'eve cāniyoge' = the eva of doubt/'anavaklpti' (iheva, adyeva, kveva bhokṣyase), not the restrictive eva (ihaiva bhava, tavaiva; Tattvabodhini: 'anavakḷptau yadā dṛṣṭaḥ pararūpasya gocaraḥ, evas tu viṣayo vṛddher niyame 'yaṃ yadā bhavet'). 'sīmantaḥ' only in the sense of parting of hair (keśeṣu / keśaveśe); otherwise sīmāntaḥ. The ākṛtigaṇa śakandhvādi in Balamanorama: śakandhuḥ, karkandhuḥ, kulaṭā, sīmantaḥ, manīṣā, halīṣā, lāṅgalīṣā, pataṅjaliḥ, sāraṅgaḥ (paśupakṣiṇoḥ), mārtaṇḍaḥ. Tattvabodhini: some derive manīṣā and pataṅjaliḥ by pṛṣodarādi loss of the final letter of manas/patat, so that only the a takes pararūpa."
+ },
+ {
+  "id": "6.1.95",
+  "text_iast": "omāṅośca",
+  "family": "ac_ekadesa",
+  "tier": "core",
+  "kind": "apavada",
+  "effect": "After an avarṇa, the syllable om and the preverb ā-ṅ take the pararūpa as the ekādeśa (the avarṇa is absorbed).",
+  "sthanin": "the pair: final a/ā + om / a-ṅ (the preverb ā)",
+  "adesa": "pararūpa: the sound of om / of the ā-ṅ word (the first unit's avarṇa is absorbed): śiva + ehi -> śivehi; adya + oḍhā -> adyoḍhā; śivāya + om -> śivāyom",
+  "nimitta": "avarṇa + om or + ā-ṅ (including an ekādeśa that counts as āṅ by 6.1.85): saṃhitā",
+  "conditions": [
+   "Kasika: 'avarṇāntād omi āṅi ca parataḥ pūrvaparayoḥ sthāne pararūpam ekādeśo bhavati': kā om -> kom, yā om -> yom; āṅ: ā ūḍhā -> oḍhā; adya oḍhā -> adyoḍhā, kadā oḍhā -> kadoḍhā, tadā oḍhā -> tadoḍhā.",
+   "Kasika: 'iha tu ā ṛśyāt arśyāt, adya arśyāt adyarśyād iti akaḥ savarṇe dīrghatvaṃ bādhate': the pararūpa also displaces savarṇadīrgha when the āṅ-form begins with a (adya + arśyāt = adyarśyāt, not adyārśyāt).",
+   "Balamanorama: the āṅ wording is needed for śiva + ehi because 'dhātūpasargayoḥ kāryam antaraṅgam' - ā + ihi first gives ehi by guṇa (6.1.87), and only then is śiva + ehi a case where vṛddhi (6.1.88) is 'prāpta'; the āṅ rule (with 6.1.85 ādivat) stops it and gives śivehi. Bhashya on 6.1.95 asks what the cakāra is for: it could bring 'eṅi' from 6.1.94 in order to avoid pararūpa in 'adya ā ṛśyāt'; the reply is that the form is adyarśyāt anyway; the Sauṇāgas read 'co 'narthako 'nadhikārād eṅaḥ'.",
+   "Kaumudi: sivāyoṃ namaḥ: om after an avarṇa (śivāya + oṃ)."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "6.1.88",
+    "note": "Kasika: 'vṛddhireci ityasyāpavādaḥ'."
+   },
+   {
+    "id": "6.1.101",
+    "note": "Kasika: 'akaḥ savarṇe dīrghatvaṃ bādhate' (adyarśyāt, āṅ + ṛ-initial)."
+   },
+   {
+    "id": "6.1.89",
+    "note": "6.1.89's vṛddhi does not displace this rule: upa ā itaḥ = upetaḥ, ava + ehi = avehi (Kasika/Kaumudi)."
+   }
+  ],
+  "overridden_by": [
+   {
+    "id": "6.1.90",
+    "note": "Kasika: the cakāra of 6.1.90 ('āṭaś ca') is meant 'pararūpabādhanārtham' (ausrīyat, auṅkārīyat, auḍhīyat: Bhashya 'usyomāṅkṣvāṭaḥ pratiṣedhaḥ')."
+   }
+  ],
+  "ordering_notes": "Balamanorama: the conflict with 6.1.89 has two accounts: (i) purastādapavāda (6.1.89 blocks only the adjacent 6.1.94, not 6.1.95) - Kasika/Kaumudi; (ii) 6.1.89 is not an apavāda of 6.1.95 at all and 6.1.95 wins by paratva - Balamanorama/Mahabhasya. Same output.",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [
+   "ac_ekadesa-048",
+   "ac_ekadesa-049",
+   "ac_ekadesa-123",
+   "ac_ekadesa-124",
+   "ac_ekadesa-125",
+   "ac_ekadesa-126",
+   "ac_ekadesa-127",
+   "ac_ekadesa-128",
+   "ac_ekadesa-129"
+  ],
+  "laghu_ref": "vlk_40",
+  "notes": "Laghu GRETIL tag vlk_40 = p_6,1.95 correct; its text 'śivāyoṃṃ namaḥ' has a doubled anusvāra dot: the real form is śivāyoṃ namaḥ (śivāyom). Tattvabodhini/Balamanorama: 'ā-ṅ' here is the āṅ of the ekādeśa e of 'ehi' - no flag in the closed vocabulary marks an ekādeśa-derived āṅ; the gold uses flag 'ang' on the second word."
+ },
+ {
+  "id": "6.1.96",
+  "text_iast": "usyapadāntāt",
+  "family": "ac_ekadesa",
+  "tier": "internal",
+  "kind": "apavada",
+  "effect": "After an apadānta avarṇa (a/ā), the affix-initial us (jus) and the avarṇa are replaced together by pararūpa u.",
+  "sthanin": "the pair: avarṇa (not pada-final) + the u of us (jus)",
+  "adesa": "pararūpa: u",
+  "nimitta": "avarṇa in the middle of a word (yāsuṭ / a-aorist stems) followed by the ending us",
+  "conditions": [
+   "Kasika: 'avarṇād apadāntād usi': bhindyā + us -> bhindyuḥ, chindyā + us -> chindyuḥ, adā + us -> aduḥ, ayā + us -> ayuḥ.",
+   "Kasika 'apadāntād iti kim? kā usrā kosrā, kā uṣitā koṣitā' (kā is pada-final: guṇa instead).",
+   "Kasika 'ād ity eva - cakruḥ, abibhayuḥ' (only avarṇa).",
+   "Bhashya: 'apadāntād iti śakyam akartum' (kā usrā - arthavad grahaṇe nānarthakasya grahaṇam - fails for bhindyā us, chindyā us) but 'uttarārthaṃ tarhy apadāntagrahaṇaṃ kartavyam - ato guṇe apadāntād yathā syāt'."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "6.1.87",
+    "note": "Kasika: 'ādguṇāpavādaḥ' (pūrvaparayor ādguṇāpavādaḥ pararūpam)."
+   }
+  ],
+  "overridden_by": [
+   {
+    "id": "6.1.90",
+    "note": "Kasika (cakāra of 6.1.90): 'usi, omāṅośca (6.1.96, 6.1.95) iti pararūpabādhanārthaḥ' - āṭ + usrīyat -> ausrīyat."
+   }
+  ],
+  "ordering_notes": "Kaumudi: 'iti prāpte paratvān nityatvāc ca ato yeyaḥ (7.2.80) iti prāñcaḥ. yadyapy antaraṅgatvāt pararūpaṃ nyāyyaṃ tathāpi yās ity etasya iy iti vyākhyeyam. evaṃ tu sandhir ārṣaḥ': the older view gave 7.2.80 (ato yeyaḥ: yās -> iy, so bhavey-uḥ) priority; the Kaumudi accepts pararūpa as more 'antaraṅga' but still explains the forms bhaveyuḥ etc. by treating yās as iy and calling the sandhi 'ārṣa'. Tattvabodhini: the pararūpa is antaraṅga because it depends only on the pratyaya, while ato yeyaḥ is āṅga (bahiraṅga).",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [
+   "ac_ekadesa-130",
+   "ac_ekadesa-131",
+   "ac_ekadesa-132",
+   "ac_ekadesa-133",
+   "ac_ekadesa-134",
+   "ac_ekadesa-135",
+   "ac_ekadesa-136",
+   "ac_ekadesa-137"
+  ],
+  "laghu_ref": null,
+  "notes": "Laghu (Devanagari) commentary: 'apadāntād akārād usi pararūpam ekādeśaḥ. apuḥ, apāsyat' (apuḥ = aorist of pā). CORPUS NOTE: the corpus lists as Balamanorama on 6.1.96 the commentary that is really on 6.1.99 (nāmreḍitasyāntyasya); the Balamanorama for 6.1.99 is therefore missing."
+ },
+ {
+  "id": "6.1.97",
+  "text_iast": "ato guṇe",
+  "family": "ac_ekadesa",
+  "tier": "internal",
+  "kind": "apavada",
+  "effect": "After a non-pada-final a, a following guṇa vowel (a, e, o) and the a are replaced together by the second (pararūpa).",
+  "sthanin": "the pair: apadānta short a + a/e/o (guṇa)",
+  "adesa": "pararūpa: a, e or o (pacanti, yajanti, pace, yaje)",
+  "nimitta": "a (short, tapara) in the middle of a word + guṇa (a, e, o)",
+  "conditions": [
+   "Kasika: 'apadāntād iti vartate': the a must not be pada-final.",
+   "Kasika: 'ata iti kim? yānti, vānti' (long ā: savarṇadīrgha); 'guṇa iti kim? apace, ayaje' (i is not a guṇa vowel: plain guṇa); 'apadāntādity eva - daṇḍāgram, yūpāgram' (padānta a: savarṇadīrgha).",
+   "Kasika: 'pace, yaja ityatra vṛddhireci iti vṛddhiḥ prāpnoti' - this sutra beats 6.1.88 (a + e from the ending e).",
+   "Kasika: 'akaḥ savarṇe dīrghasya apavādaḥ'.",
+   "1.1.2: 'guṇa' includes a, e, o: so both 'pacanti' (a + anti) and 'pace' (a + e) are covered."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "6.1.101",
+    "note": "Kasika: 'akaḥ savarṇe dīrghasyāpavādaḥ'; Kaumudi: by 'purastād apavādā anantarān vidhīn bādhante nottarān' it displaces only 6.1.101 (akaḥ savarṇe), not 6.1.102 (prathamayoḥ)."
+   },
+   {
+    "id": "6.1.88",
+    "note": "Kasika: 'pace, yaja ityatra vṛddhireci iti vṛddhiḥ prāpnoti' (a + e from ātmanepada e)."
+   }
+  ],
+  "overridden_by": [
+   {
+    "id": "6.1.102",
+    "note": "Kaumudi: 'paratvāt pūrvasavarṇadīrghaḥ': rāma + as -> rāmāḥ; Kasika 6.1.102: the ato-guṇe pararūpa 'akaḥ savarṇe dīrghatvam eva bādhate, na tu pūrvasavarṇadīrghatvam - purastād apavādā anantarān vidhīn bādhante'."
+   },
+   {
+    "id": "6.1.107",
+    "note": "Balamanorama on 6.1.107: 'akaḥ savarṇa iti bādhitvā ato guṇa iti pararūpaṃ prāptam - tadbādhitvā prathamayoriti pūrvasavarṇadīrghe prāpte amipūrvaḥ': rāma + am -> rāmam."
+   }
+  ],
+  "ordering_notes": "Balamanorama offers an alternative account: 'purastādapavādanyāyasya nāyaṃ viṣayaḥ': pararūpa here is not an apavāda of pūrvasavarṇadīrgha at all, since in 'bhavanti' (no pūrvasavarṇadīrgha 'prāpta') the sutra is needed. Result is the same.",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [
+   "ac_ekadesa-138",
+   "ac_ekadesa-139",
+   "ac_ekadesa-140",
+   "ac_ekadesa-141",
+   "ac_ekadesa-142",
+   "ac_ekadesa-143",
+   "ac_ekadesa-144",
+   "ac_ekadesa-145",
+   "ac_ekadesa-146",
+   "ac_ekadesa-147",
+   "ac_ekadesa-148"
+  ],
+  "laghu_ref": null,
+  "notes": "Not in the Laghu sandhi chapter (SK191). The Laghu (Devanagari) text is only 'apadāntād ato guṇe pararūpam ekādeśaḥ'. In tinanta forms (pacanti, yajanti, pace) the a is the śap; in the noun 'rāmāḥ' this rule is displaced."
+ },
+ {
+  "id": "6.1.98",
+  "text_iast": "avyaktānukaraṇasyāta itau",
+  "family": "ac_ekadesa",
+  "tier": "extended",
+  "kind": "vidhi",
+  "effect": "After the 'at' of an avyakta-anukaraṇa (imitation of an unarticulated sound), before iti, the at and the i of iti are replaced together by pararūpa i.",
+  "sthanin": "the pair: at (the a-with-consonant-final sequence) at the end of an avyaktānukaraṇa + the i of iti",
+  "adesa": "pararūpa i: paṭat + iti -> paṭiti, ghaṭat iti -> ghaṭiti",
+  "nimitta": "an avyaktānukaraṇa ending in a-vowel (ac + final consonant, 'ata'), followed by iti; saṃhitā",
+  "conditions": [
+   "Kasika: 'avyaktam aparisphuṭavarṇam, tadanukaraṇaṃ parisphuṭavarṇam eva': the first word is the imitation of an unclear sound (paṭat, ghaṭat, jhaṭat, chamat).",
+   "Kasika 'avyaktānukaraṇasyeti kim? jagat iti jagaditi' (ordinary word: t -> d before a vowel by 8.2.39 jhalāṃ jaśo 'nte); 'ata iti kim? maraṭ iti maraḍiti'; 'itāv iti kim? paṭat atra paṭadatra'.",
+   "Vartika 'anekāca iti vaktavyam' (Kasika), 'ekāco na' (Kaumudi/corpus): a monosyllabic imitation gets no pararūpa (śrat iti -> śraditi). Kasika: for 'ghaṭad iti gambhīram' treat it as a dakārānta imitation.",
+   "Balamanorama: 'atrālo 'ntyasya na bhavati - nānarthake 'lo 'ntyavidhiḥ' (1.1.52 is not applied, because the sthānin is the whole 'at' and the substitute is a pararūpa)."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "No ordering constraint is stated. The doubling in 'paṭatpaṭat iti' is 8.1.4 (nityavīpsayoḥ); see 6.1.99 for the āmreḍita case.",
+  "varttikas": [
+   {
+    "text": "एकाचो न ।",
+    "source": "corpus.varttikas_on('6.1.98'); Kaumudi on 6.1.98; Kasika 'anekāca iti vaktavyam'"
+   }
+  ],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [
+   "ac_ekadesa-149",
+   "ac_ekadesa-150",
+   "ac_ekadesa-151",
+   "ac_ekadesa-152",
+   "ac_ekadesa-153",
+   "ac_ekadesa-154",
+   "ac_ekadesa-155",
+   "ac_ekadesa-156",
+   "ac_ekadesa-158"
+  ],
+  "laghu_ref": null,
+  "notes": "Not in the Laghu chapter. The choice paṭad iti (with d) in 'jagaditi' is 8.2.39, not part of this family. Since the avyaktānukaraṇa cannot be detected from the letters, the engine needs an external flag; the closed vocabulary has none. The gold cases use boundary pada and mention this in notes."
+ },
+ {
+  "id": "6.1.99",
+  "text_iast": "nāmreḍitasyāntyasya tu vā",
+  "family": "ac_ekadesa",
+  "tier": "extended",
+  "kind": "nisedha",
+  "effect": "For a repeated (āmreḍita) imitation before iti, the pararūpa of 6.1.98 is not applied to the a of its final 'at', but the final consonant t and the i are optionally replaced by pararūpa i.",
+  "sthanin": "the pair: for the final 'at' of the SECOND (āmreḍita) part of a doubled avyaktānukaraṇa + iti: the at is split: a stays, t + i optionally -> i",
+  "adesa": "optionally pararūpa i for t+i only: paṭatpaṭaditi / paṭatpaṭeti (a + i then guṇa -> e)",
+  "nimitta": "āmreḍita (the second of a repeated avyaktānukaraṇa) followed by iti",
+  "conditions": [
+   "Kasika: 'āmreḍitasya yo 'cchabda itau, tasya pararūpaṃ na bhavati, tasya yo 'ntyas takāras tasya vā bhavati': 'na' for the ac (the a), 'vā' for the final t.",
+   "Kasika: the doubling is by 8.1.4 (nityavīpsayoḥ); when the whole repeated form is one imitation ('samudāyānukaraṇa'), 6.1.98 applies as usual: paṭatpaṭiti.",
+   "Kaumudi vartika: 'ḍāci bahulaṃ dve bhavata iti bahulavacanād dvitvam' (doubling before ḍāc)."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "The corpus does not hold a Balamanorama for this sutra (the Balamanorama for 6.1.99 is filed under 6.1.96). The Bhashya (on 6.1.99) treats 'nityam āmreḍite ḍāci' (our 6.1.100) as a vartika (6196) and gives the rival vartika 'akārāntānukaraṇād vā' (6197).",
+  "varttikas": [
+   {
+    "text": "डाचि बहुलं द्वे भवत इति बहुलवचनाद्द्वित्वम्",
+    "source": "Kaumudi on 6.1.99 (quoted as vārtikam)"
+   }
+  ],
+  "optional": "vibhāṣā ('vā') for the t of the āmreḍita: with pararūpa paṭatpaṭeti, without paṭatpaṭaditi.",
+  "vedic_only": false,
+  "examples": [
+   "ac_ekadesa-157",
+   "ac_ekadesa-158"
+  ],
+  "laghu_ref": null,
+  "notes": "'tu' (alternatively) makes the optionality apply to the last sound only."
+ },
+ {
+  "id": "6.1.100",
+  "text_iast": "nityamāmreḍite ḍāci",
+  "family": "ac_ekadesa",
+  "tier": "extended",
+  "kind": "vidhi",
+  "effect": "Before an āmreḍita ending in ḍāc, the final t of the earlier avyaktānukaraṇa and the first sound of the following āmreḍita are always replaced by the pararūpa.",
+  "sthanin": "the pair: final t (of 'at') of the first imitation + the first sound of the āmreḍita that is followed by ḍāc",
+  "adesa": "pararūpa (always): paṭat + paṭā -> paṭapaṭā; damat + damā -> damadamā",
+  "nimitta": "avyaktānukaraṇa + āmreḍita + ḍāc (5.4.57 avyaktānukaraṇād dvyajavarārdhād anitau ḍāc)",
+  "conditions": [
+   "Kasika: 'ḍācparaṃ yad āmreḍitaṃ tasmin pūrvasyāvyaktānukaraṇasyāccabdasya yo 'ntyas takāras tasya pūrvasya parasya cādyasya varṇasya nityaṃ pararūpam ekādeśo bhavati': paṭapaṭā karoti, damadamā karoti.",
+   "Kasika: 'paṭad ity asmād avyaktānukaraṇād [5.4.57] iti ḍāci vihite ḍāci bahulam [8.1.12 vā.] iti dvirvacanam, tac ca ṭilopāt pūrvam eveṣyate': the doubling (vartika on 8.1.12 ḍāci bahulaṃ dve) happens before the ṭi-lopa."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "Bhashya treats 'nityam āmreḍite ḍāci' as a vartika under 6.1.99 (6196) and gives the alternative 'akārāntānukaraṇād vā' (6197: treat the imitation as a-ending so that plain pararūpa/other rules serve). Vidyut, following Kasika, has it as sutra 6.1.100.",
+  "varttikas": [
+   {
+    "text": "नित्यमाम्रेडिते डाचि",
+    "source": "Mahabhasya on 6.1.99 (vartika 6196, read as the source of sutra 6.1.100)"
+   },
+   {
+    "text": "अकारान्तानुकरणाद्वा",
+    "source": "Mahabhasya on 6.1.99 (vartika 6197, a rival treatment)"
+   }
+  ],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [
+   "ac_ekadesa-159",
+   "ac_ekadesa-160"
+  ],
+  "laghu_ref": null,
+  "notes": "No Kaumudi/Bala text exists on disk for 6.1.100 (Kasika and Padamañjarī only)."
+ },
+ {
+  "id": "6.1.101",
+  "text_iast": "akaḥ savarṇe dīrghaḥ",
+  "family": "ac_ekadesa",
+  "tier": "core",
+  "kind": "vidhi",
+  "effect": "An ak vowel and a following homogeneous vowel (savarṇa ac) are replaced together by the corresponding long vowel.",
+  "sthanin": "the pair: a/i/u/ṛ/ḷ (ak, short or long) + a following savarṇa vowel",
+  "adesa": "the long vowel of that class: ā, ī, ū, ṝ (for ṛ/ḷ: ṝ)",
+  "nimitta": "saṃhitā; the following sound is an ac AND savarṇa; the preceding sound is ak",
+  "conditions": [
+   "Kasika 'aka iti kim? agnaye' (e + e are savarṇa but e is not ak: so ayādi); 'savarṇa iti kim? dadhyatra' (i + a: yaṇ); 'acītyeva - kumārī śete' (ī + ś are homorganic: the aci condition is needed because 1.1.10 nājjhalau only blocks the sāvarṇya of a-letters of the varṇasamāmnāya, not of long and pluta vowels).",
+   "Kaumudi: 'nājjhalāv iti sāvarṇyaniṣedhas tu na dīrghaśakārayoḥ, grahaṇakaśāstrasya sāvarṇyavidhiniṣedhābhyāṃ prāg aniṣpatteḥ' - hence 'aci' is still required.",
+   "Kasika: ṛ + ṛ and ṛ + ḷ: the vartika 'ṛti savarṇe ṛ vā' (hotṛ + ṛkāraḥ -> hotṛkāraḥ (a special two-mora ṛ), or hotṝkāraḥ) and 'ḷti savarṇe ḷ vā' (hotṛ + ḷkāraḥ -> hotḷkāraḥ or hotṝkāraḥ, since ḷ has no long).",
+   "Kaumudi: the special ṛ/ḷ of the vartikas are two-mora vowels: 'ādyasya madhye dvau rephau tayor ekā mātrā; abhito 'jbhakter aparā' (ṛ: two r's in the middle); the second has two l's."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "6.1.77",
+    "note": "INFERRED, not spelled out in the texts read: i + i etc. would also allow yaṇ (6.1.77) but the later rule 6.1.101 wins by paratva (1.4.2), so dadhi + indraḥ = dadhīndraḥ. Kasika lists 'aka iti kim? agnaye' and 'savarṇa iti kim? dadhyatra' as the conditions that make yaṇ the fallback."
+   }
+  ],
+  "overridden_by": [
+   {
+    "id": "6.1.97",
+    "note": "Kasika: 'ato guṇe' is an apavāda of 'akaḥ savarṇe dīrghaḥ' (a + a, a + e/o)."
+   },
+   {
+    "id": "6.1.94",
+    "note": "for śakandhvādi: pararūpa in place of dīrgha (Balamanorama 'mṛta-aṇḍa': savarṇadīrghaṃ bādhitvā)."
+   },
+   {
+    "id": "6.1.95",
+    "note": "Kasika: 'akaḥ savarṇe dīrghatvaṃ bādhate' (adya + arśyāt = adyarśyāt)."
+   },
+   {
+    "id": "6.1.102",
+    "note": "in prathamā/dvitīyā the pūrvasavarṇa (purva, not the antaratama, of which trimātra) replaces 6.1.101's dīrgha; Kasika 6.1.102 'dīrghagrahaṇaṃ kiṃ? trimātre sthānini trimātrādeśanivṛttyartham'."
+   },
+   {
+    "id": "6.1.107",
+    "note": "Balamanorama: 'akaḥ savarṇa iti bādhitvā ato guṇa iti pararūpaṃ prāptam - tadbādhitvā prathamayoriti pūrvasavarṇadīrghe prāpte amipūrvaḥ'."
+   }
+  ],
+  "ordering_notes": "Kaumudi: 'akoki dīrgha ityeva suvacam' (the sutra could be worded 'ako 'ki dīrghaḥ'; Balamanorama: this would make 'savarṇa' and 'aci' unnecessary, with yathāsaṅkhya preventing overgeneration in dadhyukāra); Balamanorama adds that the Bhashya rejects the two vartikas, so the wording 'savarṇa' costs nothing.",
+  "varttikas": [
+   {
+    "text": "ऋति सवर्णे ऋ वा ।",
+    "source": "corpus.varttikas_on('6.1.101'); Kasika/Kaumudi 6.1.101"
+   },
+   {
+    "text": "ऌति सवर्णे ऌ वा ।",
+    "source": "corpus.varttikas_on('6.1.101'); Kasika/Kaumudi 6.1.101"
+   }
+  ],
+  "optional": "vartikas: ṛ + ṛ: hotṛkāraḥ (special two-mora ṛ) or hotṝkāraḥ; ṛ + ḷ: hotḷkāraḥ (special) or hotṝkāraḥ.",
+  "vedic_only": false,
+  "examples": [
+   "ac_ekadesa-015",
+   "ac_ekadesa-018",
+   "ac_ekadesa-019",
+   "ac_ekadesa-023",
+   "ac_ekadesa-111",
+   "ac_ekadesa-127",
+   "ac_ekadesa-142",
+   "ac_ekadesa-143",
+   "ac_ekadesa-146",
+   "ac_ekadesa-147",
+   "ac_ekadesa-161",
+   "ac_ekadesa-162",
+   "ac_ekadesa-163",
+   "ac_ekadesa-164",
+   "ac_ekadesa-165",
+   "ac_ekadesa-166",
+   "ac_ekadesa-167",
+   "ac_ekadesa-168",
+   "ac_ekadesa-169",
+   "ac_ekadesa-170",
+   "ac_ekadesa-195"
+  ],
+  "laghu_ref": "vlk_42",
+  "notes": "Laghu GRETIL tag vlk_42 = p_6,1.101 correct; but its examples are misprinted ('daityāraḥ / śrīśiḥ / viṣṇūdayaḥ / hotṝkāraḥ'): the Devanagari Laghu has 'दैत्यारिः। श्रीशः। विष्णूदयः। होतॄकारः'. The Kasika example 'hotaśyaḥ' in the corpus appears corrupted (should be hotṝśyaḥ?): not used as a gold case. The Laghu example 'hotṝkāraḥ' shows the long ṝ option only."
+ },
+ {
+  "id": "6.1.102",
+  "text_iast": "prathamayoḥ pūrvasavarṇaḥ",
+  "family": "ac_ekadesa",
+  "tier": "internal",
+  "kind": "vidhi",
+  "effect": "An ak vowel and the following vowel that begins a nominative or accusative ending are replaced together by the long form of the FIRST (pūrva) vowel's class.",
+  "sthanin": "the pair: ak (a, i, u, ṛ, ḷ) + a following vowel that begins the prathamā or dvitīyā ending (au, jas, śas, am ...)",
+  "adesa": "the long vowel homogeneous with the first sound (pūrvasavarṇa dīrgha)",
+  "nimitta": "aci (6.1.77 anuvṛtti); the following vowel begins a Sup of the 1st or 2nd case (prathamā and dvitīyā: Kasika 'prathamāśabdo vibhaktiviśeṣe rūḍhaḥ; tatsāhacaryād dvitīyāpi prathamety uktā'); saṃhitā",
+  "conditions": [
+   "Kasika: agnī, vāyū, vṛkṣāḥ, plakṣāḥ, vṛkṣān, plakṣān; 'acītyeva - vṛkṣaḥ, plakṣaḥ'; 'aka ityeva - nāvau'; Tattvabodhini: 'prathamayoḥ kim? vṛkṣe, plakṣe' (locative i: guṇa).",
+   "Kasika 'pūrvasavarṇagrahaṇaṃ kim? agnī ityatra pakṣe parasavarṇo mā bhūt': agni + au -> agnī with the purva, not a para-savarṇa substitute; 'dīrghagrahaṇaṃ kim? trimātre sthānini trimātrādeśanivṛttyartham'.",
+   "Kasika: 'ato guṇe iti yad akāre pararūpaṃ tad akaḥ savarṇe dīrghatvam eva bādhate, na tu pūrvasavarṇadīrghatvam: purastād apavādā anantarān vidhīn bādhante': hence vṛkṣāḥ, plakṣāḥ (not vṛkṣaḥ).",
+   "Tattvabodhini: the word 'prathamayoḥ' also prevents the pūrvasavarṇadīrgha before the ṣaṣṭhī-dvivacana os (haryoḥ: 'harī ity atreva haryor ity atrāpi pūrvasavarṇadīrghaḥ syāt. tadvāraṇāya prathamayor ity uktam iti dik'), even though nādici (6.1.104) would otherwise do the same job.",
+   "Balamanorama/Tattvabodhini: after the block of 6.1.104 the 'utsarga' (vṛddhi/guṇa) returns: 'apavāde niṣiddhe punar utsargasya sthitiḥ'. Tattvabodhini: bhidyoddhyau nade tau sat as the linga."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "6.1.97",
+    "note": "Kasika 6.1.102: pararūpa of ato guṇe blocks only the immediately preceding savarṇadīrgha, not this pūrvasavarṇadīrgha (purastādapavādanyāya): rāma + as -> rāmāḥ. Kaumudi 6.1.97: 'paratvāt pūrvasavarṇadīrghaḥ'."
+   }
+  ],
+  "overridden_by": [
+   {
+    "id": "6.1.104",
+    "note": "nādici blocks it after an avarṇa before an ic: vṛkṣau, kuṇḍe."
+   },
+   {
+    "id": "6.1.105",
+    "note": "dīrghāj jasi ca blocks it after a long vowel before jas or ic: kumāryaḥ, gauryau."
+   },
+   {
+    "id": "6.1.106",
+    "note": "Vedic: the prohibition of 6.1.105 is optional: mārutīḥ / mārutyaḥ."
+   },
+   {
+    "id": "6.1.107",
+    "note": "Balamanorama 6.1.107: 'prathamayoriti pūrvasavarṇadīrghe prāpte - amipūrvaḥ': before the Sup am the ak is left alone (pūrvarūpa): rāmam."
+   }
+  ],
+  "ordering_notes": "6.1.103 (tasmāc chaso naḥ puṃsi) reads the result of this sutra as its input (tasmāt = pūrvasavarṇadīrghāt): the n-substitution happens after this ekādeśa.",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [
+   "ac_ekadesa-148",
+   "ac_ekadesa-171",
+   "ac_ekadesa-172",
+   "ac_ekadesa-173",
+   "ac_ekadesa-174",
+   "ac_ekadesa-175",
+   "ac_ekadesa-176",
+   "ac_ekadesa-177",
+   "ac_ekadesa-178",
+   "ac_ekadesa-179",
+   "ac_ekadesa-181",
+   "ac_ekadesa-182",
+   "ac_ekadesa-183",
+   "ac_ekadesa-197",
+   "ac_ekadesa-198"
+  ],
+  "laghu_ref": null,
+  "notes": "Laghu (Devanagari commentary): 'akaḥ prathamādvitīyayor aci pūrvasavarṇadīrgha ekādeśaḥ syāt. iti prāpte' - the 'iti prāpte' points to the next sutra. The GRETIL sandhi chapter does not carry it (it appears in the Laghu at subanta, SK154). The project's dossier uses nominal endings written as 'as' (jas), 'as' (śas): the gold cases use flags stem:jas / stem:śas to distinguish the two."
+ },
+ {
+  "id": "6.1.103",
+  "text_iast": "tasmācchaso naḥ puṃsi",
+  "family": "ac_ekadesa",
+  "tier": "internal",
+  "kind": "vidhi",
+  "effect": "The s of śas (acc. pl.) becomes n when it follows a pūrvasavarṇadīrgha and the word is masculine.",
+  "sthanin": "the s of śas that follows the pūrvasavarṇadīrgha made by 6.1.102",
+  "adesa": "n (the n is pada-final, so no ṇatva: 8.4.37 padāntasya)",
+  "nimitta": "the preceding vowel is the output of 6.1.102; the noun is masculine (puṃsi)",
+  "conditions": [
+   "Kasika: 'tasmāt pūrvasavarṇadīrghād uttarasya śaso 'vayavasya sakārasya puṃsi nakārādeśo bhavati': vṛkṣān, agnīn, vāyūn, kartṝn, hartṝn, ṣaṇḍhakān, paṇḍakān, sthūrān, ararakān (masculine-sense words).",
+   "Balamanorama/Tattvabodhini: 'tasmāt' = the immediately preceding pūrvasavarṇadīrgha (kṛta-pūrvasavarṇadīrghāt); not just any long vowel: 'gā' (from 6.1.93) gets no n (etān gāḥ paśya - Kasika 'etāṃś carato gāḥ paśya').",
+   "Kasika 'śasa iti kim? vṛkṣāḥ' (jas); 'puṃsīti kim? dhenūḥ, bahvīḥ, kumārīḥ' (feminines).",
+   "Kasika: 'cañceva cañcā, lummanuṣye iti kano lupi kṛte lupi yuktavad vyaktivacane iti puṃso 'pi strīlingatā, tena natvaṃ na bhavati: cañcāḥ paśya, vadhrikāḥ paśya': words masculine in sense but feminine in form after the luk of taddhita ka (1.2.51) take no n."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "Applies after 6.1.102's result is available. The n stays dental in vṛkṣān, agnīn because a pada-final n is not subject to ṇatva (8.4.37 padāntasya); that is not part of this family.",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [
+   "ac_ekadesa-174",
+   "ac_ekadesa-178",
+   "ac_ekadesa-179",
+   "ac_ekadesa-180",
+   "ac_ekadesa-181",
+   "ac_ekadesa-182",
+   "ac_ekadesa-183"
+  ],
+  "laghu_ref": null,
+  "notes": "Laghu (Devanagari commentary): 'pūrvasavarṇadīrghāt paro yaḥ śasaḥ sas tasya naḥ syāt puṃsi'. The corpus Kasika list 'kartan, hartan' looks corrupted (kartṝn, hartṝn intended)."
+ },
+ {
+  "id": "6.1.104",
+  "text_iast": "nādici",
+  "family": "ac_ekadesa",
+  "tier": "internal",
+  "kind": "nisedha",
+  "effect": "After an avarṇa, when an ic vowel follows, the pūrvasavarṇadīrgha of 6.1.102 does not take place.",
+  "sthanin": "n/a (a prohibition of 6.1.102)",
+  "adesa": "n/a",
+  "nimitta": "avarṇa + ic (i, u, ṛ, ḷ, e, o, ai, au) at the start of a nominative/accusative ending",
+  "conditions": [
+   "Kasika: 'avarṇād ici pūrvasavarṇadīrgho na bhavati': vṛkṣau, plakṣau, khaṭve, kuṇḍe.",
+   "Kasika 'ād iti kim? agnī' (i + au: not avarṇa, so 6.1.102 applies); 'icīti kim? vṛkṣāḥ' (a + a is not an ic).",
+   "Balamanorama: once the bādhaka 6.1.102 is stopped, the bādhya (guṇa 6.1.87 or vṛddhi 6.1.88) comes back: 'bādhake nivṛtte guṇaḥ punar unmiṣati'; the analogy 'devadattasya hantari hate devadattasya na punar unmajjanam' does not apply because only the preparation to strike (prasaktimātra) is blocked. Tattvabodhini: 'apavāde niṣiddhe punar utsargasya sthitiḥ' is the principle.",
+   "Kaumudi on 6.1.104: 'ata iti taparaḥ kim? devā atra'; 'atīti taparaḥ kim? śva āgantā'; 'aplutāt kim? ehi susrota3 atra snāhi': the tapara/aplutāt remarks belong to the visarga-utva rule 6.1.113, not to this sutra."
+  ],
+  "exceptions_and_blockers": [
+   {
+    "id": "6.1.102",
+    "note": "prohibits pūrvasavarṇadīrgha after an avarṇa before an ic; guṇa/vṛddhi then apply (śiva u -> śivo; vṛkṣa + au -> vṛkṣau)."
+   }
+  ],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "Kaumudi: 'śiva u' (the particle u): after 6.1.104 blocks 6.1.102 the sequence is ādguṇaḥ then eṅaḥ padāntād ati: 'ādguṇaḥ | eṅaḥ padāntādati | śivo 'rcyaḥ'. Balamanorama on 6.1.102 begins from the stage 'śiva u arcya' (corpus spelling 'acrya') and then 'prathamayoḥ'.",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [
+   "ac_ekadesa-173",
+   "ac_ekadesa-184",
+   "ac_ekadesa-185",
+   "ac_ekadesa-186",
+   "ac_ekadesa-187",
+   "ac_ekadesa-188",
+   "ac_ekadesa-189"
+  ],
+  "laghu_ref": null,
+  "notes": "Laghu (Devanagari commentary): 'ādici na pūrvasavarṇadīrghaḥ. vṛddhireci. rāmau'. Tattvabodhini (on 6.1.104) raises the objection that in Vedic 'prakṛtyāntaḥpādam avyapare' (6.1.115) cases (sujāte aśvasūnṛte, upaprayanto adhvaram) the prakṛtibhāva blocking 6.1.109 would let ayādi (6.1.78) return; the answer is 'bādhake niṣiddhe bādhyam api kvacin na': the return of the bādhya is not universal."
+ },
+ {
+  "id": "6.1.105",
+  "text_iast": "dīrghājjasi ca",
+  "family": "ac_ekadesa",
+  "tier": "internal",
+  "kind": "nisedha",
+  "effect": "After a long vowel, when jas or an ic follows, the pūrvasavarṇadīrgha does not take place.",
+  "sthanin": "n/a (a prohibition of 6.1.102)",
+  "adesa": "n/a",
+  "nimitta": "a long (dīrgha) vowel + jas (nominative plural ending) or + ic (i, u, ṛ, ḷ, e, o, ai, au)",
+  "conditions": [
+   "Kasika: 'dīrghāt jasi ici ca parataḥ pūrvasavarṇadīrgho na bhavati': kumāryau, kumāryaḥ, brahmabandhvau, brahmabandhvaḥ.",
+   "Tattvabodhini: 'cakārād icīty anukṛṣyate, neti cānuvartate': 'ici' comes by the cakāra; without it a short a before ic and a long vowel before jas would be split.",
+   "Kaumudi/Balamanorama: 'gauryau gaurya ityādyarthaṃ sūtram ihāpi nyāyyatvād upanyasyam' (Kaumudi: nādici alone would do for au, and for jas no harm arises even with pūrvasavarṇadīrgha, 'kṣatir nāsti'): the sutra is needed for long ī/ū + jas or au (gauryau, lakṣmyau) and is quoted here for viśvapau, viśvapāḥ (āa-final stem).",
+   "Tattvabodhini: one might argue from 1.4.3 (yū stryākhyau nadī) that the pratyāhāras ik/ac mean only the varṇasamāmnāya letters, so a long vowel would not be an ac and this prohibition would be idle; the reply is that this very prohibition is the jñāpaka that the pratyāhāras also cover long vowels. Tattvabodhini also mentions a different reading 'dīrghāc chasi' for the same job."
+  ],
+  "exceptions_and_blockers": [
+   {
+    "id": "6.1.102",
+    "note": "prohibits pūrvasavarṇadīrgha after a long vowel before jas / ic: yaṇ (6.1.77) or vṛddhi (6.1.88) then applies."
+   }
+  ],
+  "overrides": [],
+  "overridden_by": [],
+  "ordering_notes": "For long ā + au/as: vṛddhi (viśvapau) or 6.1.101 (viśvapāḥ): the result is the same as pūrvasavarṇadīrgha would give, so the 'prohibition' is invisible; for long ī/ū + au/as: yaṇ (kumāryau).",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [
+   "ac_ekadesa-190",
+   "ac_ekadesa-191",
+   "ac_ekadesa-192",
+   "ac_ekadesa-193",
+   "ac_ekadesa-194",
+   "ac_ekadesa-195",
+   "ac_ekadesa-196"
+  ],
+  "laghu_ref": null,
+  "notes": "Laghu (Devanagari commentary): 'dīrghāj jasi ici ca pare pūrvasavarṇadīrgho na syāt. viśvapau. viśvapāḥ. he viśvapāḥ. viśvapām. viśvapau'."
+ },
+ {
+  "id": "6.1.106",
+  "text_iast": "vā chandasi",
+  "family": "ac_ekadesa",
+  "tier": "vedic",
+  "kind": "vidhi",
+  "effect": "In the Veda, the prohibition of 6.1.105 is optional: after a long vowel before jas or ic the pūrvasavarṇadīrgha may or may not happen.",
+  "sthanin": "n/a (optional lifting of the prohibition of 6.1.105)",
+  "adesa": "n/a",
+  "nimitta": "chandasi; long vowel + jas/ic",
+  "conditions": [
+   "Kasika: 'dīrghāt chandasi viṣaye jasi ca ici ca parato vā pūrvasavarṇadīrgho na bhavati': mārutīś catasraḥ piṇḍīḥ / mārutyaś catasraḥ piṇḍyaḥ; vārāhī upānahā / vārāhyau upānahyau.",
+   "Kaumudi: the vā is carried by vākyabheda into the next two sutras 'uttarasūtradvaye 'pīdaṃ vākyabhedena saṃbadhyate': so before am the pūrvarūpa is optional (śamīṃ ca śamyaṃ ca; sūrmaṃ suṣirām iva) and after samprasāraṇa the pūrvarūpa of 6.1.108 is optional (ijyamānaḥ / yajyamānaḥ).",
+   "Kasika on 6.1.107/6.1.108: 'vā chandasīty eva' confirms that the Vedic option is carried on (śamīm ca / śamyam ca; gaurīṃ ca / gauryam ca; mitrāvaruṇau yajyamānaḥ)."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "6.1.105",
+    "note": "makes the prohibition optional in the Veda."
+   }
+  ],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": "vibhāṣā (vā): Vedic only; both forms are found.",
+  "vedic_only": true,
+  "examples": [
+   "ac_ekadesa-197",
+   "ac_ekadesa-198",
+   "ac_ekadesa-199"
+  ],
+  "laghu_ref": null,
+  "notes": "Only Kasika and Kaumudi comment on it. Gold cases flagged veda:true."
+ },
+ {
+  "id": "6.1.107",
+  "text_iast": "ami pūrvaḥ",
+  "family": "ac_ekadesa",
+  "tier": "internal",
+  "kind": "apavada",
+  "effect": "An ak vowel and the following vowel of the Sup am (acc. sg.) are replaced together by the first vowel (pūrvarūpa).",
+  "sthanin": "the pair: ak + the a of the Sup am",
+  "adesa": "pūrvarūpa: the first vowel stays (short: rāma + am -> rāmam; kumārī + am -> kumārīm)",
+  "nimitta": "the Sup am (acc. sg.) begins with the vowel; ak before it; the substitute replaces the two vowels but not the m (Balamanorama/Tattvabodhini: 'ami yo 'c tasmin')",
+  "conditions": [
+   "Kasika 'pūrvagrahaṇaṃ kim? pūrva eva yathā syāt, pūrvasavarṇo 'ntaratamo mā bhūt, kumārīmityatra hi trimātraḥ syāt'.",
+   "Balamanorama: 'aci' is carried from 6.1.77 so that the ekādeśa is for the vowel of am only (not for the m too): 'tathā sati amo makārasahitasya pūrvarūpaṃ syāt. tanmā bhūd ity ajanuvṛttiḥ'.",
+   "Vedic: 'vā chandasi' carried on (Kasika 'vā chandasīty eva' followed by 'śamyaṃ ca' and (for gaurī) 'gauryaṃ ca' (Kasika, with Vedic accent marks))."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "6.1.102",
+    "note": "Balamanorama: 'prathamayoriti pūrvasavarṇadīrghe prāpte - amipūrvaḥ': rāma + am -> rāmam not rāmām."
+   },
+   {
+    "id": "6.1.97",
+    "note": "Balamanorama: 'ato guṇa iti pararūpaṃ prāptam' and, after it, 'tadbādhitvā prathamayoriti pūrvasavarṇadīrghe prāpte amipūrvaḥ' (so it is displaced by 6.1.102 and finally by 6.1.107 for am)."
+   },
+   {
+    "id": "6.1.101",
+    "note": "Balamanorama: 'akaḥ savarṇa iti bādhitvā ato guṇa iti pararūpaṃ prāptam'."
+   }
+  ],
+  "overridden_by": [],
+  "ordering_notes": "",
+  "varttikas": [],
+  "optional": "Vedic (by vākyabheda of 6.1.106): pūrvarūpa optional: śamīm / śamyam.",
+  "vedic_only": false,
+  "examples": [
+   "ac_ekadesa-199",
+   "ac_ekadesa-200",
+   "ac_ekadesa-201",
+   "ac_ekadesa-202",
+   "ac_ekadesa-203",
+   "ac_ekadesa-204"
+  ],
+  "laghu_ref": null,
+  "notes": "Laghu (Devanagari commentary): 'akoṃ 'myaci pūrvarūpam ekādeśaḥ. rāmam. rāmau': the 'rāmau' is the next Sup of the paradigm (vṛddhi, 6.1.88; 6.1.102 being blocked by 6.1.104). Kasika/Balamanorama chain of exceptions for rāma + am: 6.1.101 > displaced by 6.1.97 > displaced by 6.1.102 > displaced by 6.1.107."
+ },
+ {
+  "id": "6.1.108",
+  "text_iast": "samprasāraṇācca",
+  "family": "ac_ekadesa",
+  "tier": "internal",
+  "kind": "vidhi",
+  "effect": "A vowel and a following vowel after a samprasāraṇa are replaced together by the first (pūrvarūpa).",
+  "sthanin": "the pair: a samprasāraṇa vowel (i, u, ṛ, ḷ made from y, v, r, l) + a following vowel",
+  "adesa": "pūrvarūpa: the samprasāraṇa vowel stays: yaj + kta -> iṣṭa (i + a -> i), vap + kta -> uptam, grah + ita -> gṛhītam; vāh -> ūh: ū + ā -> ū",
+  "nimitta": "samprasāraṇa followed by an ac; saṃhitā",
+  "conditions": [
+   "Kasika: 'yaji - iṣṭam; vapi - uptam; grahi - gṛhītam': samprasāraṇavidhānasāmarthyād vigṛhītasya śravaṇe prāpte pūrvatvaṃ vidhīyate.",
+   "Kasika: 'parapūrvatvavidhāne satyarthavat samprasāraṇavidhānam iti iṣṭa ityevamādiṣu pūrvatvābhāve yaṇādeśo bhavatyeva': without this rule the samprasāraṇa would be undone by yaṇ (6.1.77): so it displaces yaṇ (6.1.77).",
+   "Kasika: 'antaraṅge cāci kṛtārtham vacanam iti bāhye paścāt saṃnipatite pūrvatvaṃ na bhavati - śakahvau, śakahvartham': the pūrvarūpa does not apply if the ac that follows arises later by a bahiraṅga rule.",
+   "Balamanorama: the samprasāraṇa is the ū of ūṭh: 'viśva ū āh as' -> 6.1.108 -> 'viśva ūh as' -> 6.1.89 -> viśvauhaḥ.",
+   "Tattvabodhini: the ūṭh-grahaṇa in 6.1.89 shows a bahiraṅga-paribhāṣā: the samprasāraṇa (bahiraṅga) is asiddha for the antaraṅga guṇa (Bhashya)."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "6.1.77",
+    "note": "Kasika: 'pūrvatvābhāve yaṇādeśo bhavatyeva': without 6.1.108 the samprasāraṇa vowel + a would be undone by yaṇ."
+   }
+  ],
+  "overridden_by": [],
+  "ordering_notes": "6.1.108 precedes 6.1.89 in viśvauhaḥ; 6.1.86 (asiddha for ṣatva and tuk) declares the samprasāraṇa ekādeśa NOT asiddha for ṣatva (vartika): brahmahūṣu, parivīṣu.",
+  "varttikas": [],
+  "optional": "Vedic: 'vā chandasīty eva' carried on (Kasika 'mitrāvaruṇau yajyamānaḥ'; Kaumudi 'ijyamānaḥ / yajyamānaḥ').",
+  "vedic_only": false,
+  "examples": [
+   "ac_ekadesa-205",
+   "ac_ekadesa-206",
+   "ac_ekadesa-207"
+  ],
+  "laghu_ref": null,
+  "notes": "Laghu (Devanagari commentary): 'saṃprasāraṇād aci pūrvarūpam ekādeśaḥ. etyedhatyūṭhsviti vṛddhiḥ. viśvauhaḥ ityādi'. The gold cases for iṣṭam/uptam are marked probable: the corpus states only the finished forms."
+ },
+ {
+  "id": "6.1.109",
+  "text_iast": "eṅaḥ padāntādati",
+  "family": "ac_ekadesa",
+  "tier": "core",
+  "kind": "apavada",
+  "effect": "A pada-final e or o followed by short a: the a is elided (pūrvarūpa) - the e/o stays.",
+  "sthanin": "the pair: pada-final e/o (eṅ) + the initial short a of the next word",
+  "adesa": "pūrvarūpa: the e/o stays (written with avagraha): hare 'va, viṣṇo 'va, agne 'tra, vāyo 'tra",
+  "nimitta": "eṅ at the end of a pada + a (tapara: short a) beginning the next pada",
+  "conditions": [
+   "Kasika 'eṅa iti kim? dadhyatra, madhvatra'; 'padāntād iti kim? cayanam, lavanam' (the e/o is inside the word: ayādi 6.1.78); 'atīti kim? vāyo iti, bhāno iti, vāyaviti, bhānaviti'; 'taparakaraṇaṃ kim? vāyavāyāhi' (long ā does not qualify).",
+   "Kasika: 'ayavādeśayor ayam apavādaḥ': this rule displaces ayādi 6.1.78 for e/o + a.",
+   "Kasika on 6.1.85: it is not applied through ādivat (asyai aśvaḥ / asyā aśvaḥ: vṛddhi ai does not count as e).",
+   "Kasika on 6.1.86: the ekādeśa is asiddha for ṣatva: ko 'siñcat (not koṣiñcat), ko 'sya, ko 'smai.",
+   "Tattvabodhini: the mention 'padāntāt' exists mainly 'uttarārtham' (so 6.1.110 for ṅasi/ṅas is for apadānta) and to fix the domain of ṅasiṅasoś ca ('ṅasiṅasoś cety asyārambhād asya padāntaviṣayatve labdhe uttarārthaṃ padāntād iti spaṣṭapratipattaye ihaiva kṛtam' - Manoramā).",
+   "Tattvabodhini: 'ati kim? harayiha, viṣṇaviha' (Laghu vlk_31: hara iha / harayiha)."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "6.1.78",
+    "note": "Kasika: 'ayavādeśayor ayam apavādaḥ'."
+   }
+  ],
+  "overridden_by": [
+   {
+    "id": "6.1.122",
+    "note": "Laghu (vlk_44) 'sarvatra vibhāṣā goḥ': go + a, pada-final: optional prakṛtibhāva (go 'gram / goagram)."
+   },
+   {
+    "id": "6.1.125",
+    "note": "Laghu (vlk_50) 'plutapragṛhyā aci nityam': pluta and pragṛhya vowels stay unchanged before an ac (āgaccha kṛṣṇa 3 atra), so no ekādeśa."
+   }
+  ],
+  "ordering_notes": "Kasika 6.1.86: the pūrvarūpa is asiddha for ṣatva; for tuk (6.1.71/73-76) the e/o is a visible long vowel.",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [
+   "ac_ekadesa-020",
+   "ac_ekadesa-021",
+   "ac_ekadesa-022",
+   "ac_ekadesa-167",
+   "ac_ekadesa-188",
+   "ac_ekadesa-208",
+   "ac_ekadesa-209",
+   "ac_ekadesa-210",
+   "ac_ekadesa-211",
+   "ac_ekadesa-212",
+   "ac_ekadesa-213",
+   "ac_ekadesa-214",
+   "ac_ekadesa-215",
+   "ac_ekadesa-216"
+  ],
+  "laghu_ref": "vlk_43",
+  "notes": "Laghu GRETIL tag vlk_43 = p_6,1.109 correct. The Laghu continues: sarvatra vibhāṣā goḥ (6.1.122), avaṅ sphoṭāyanasya (its GRETIL tag says p_6,1.133, WRONG: the real id is 6.1.123), indre ca (6.1.124, tag correct), dūrāddhūte ca (8.2.84), plutapragṛhyā aci nityam (6.1.125), īdūded dvivacanam pragṛhyam (1.1.11)... - these prakṛtibhāva rules belong to another family but they are the blockers of pūrvarūpa here."
+ },
+ {
+  "id": "6.1.110",
+  "text_iast": "ṅasiṅasośca",
+  "family": "ac_ekadesa",
+  "tier": "internal",
+  "kind": "apavada",
+  "effect": "After e/o, the a of the endings ṅasi and ṅas and the e/o are replaced together by pūrvarūpa.",
+  "sthanin": "the pair: e/o (eṅ) + the a of ṅasi/ṅas",
+  "adesa": "pūrvarūpa: the e/o stays; a is elided: agneḥ (agner āgacchati), vāyoḥ, hareḥ, goḥ",
+  "nimitta": "eṅ + the a of the ablative or genitive singular ending (ṅasi, ṅas) after guṇa; the eṅ is NOT pada-final (Kasika: 'apadāntārtha ārambhaḥ')",
+  "conditions": [
+   "Kasika: 'eṅa uttarayor ṅasiṅasor ati parataḥ pūrvaparayoḥ sthāne pūrvarūpam ekādeśo bhavati': agner āgacchati, vāyor āgacchati, agneḥ svam, vāyoḥ svam.",
+   "Balamanorama: 'yadyapi ṅasiṅasau dvau eṅau ca dvau tathāpi na yathāsaṅkhyam iṣyate': yathāsaṅkhya (1.3.10) is applied only where svarita is stated (Bhashya on 1.3.10), and the nirdeśas 'acca gheḥ', 'upasarge ghoḥ kiḥ' agree; Tattvabodhini adds the liṅga of the non-prior placement of the shorter word (alpācataraṃ pūrvanipātākaraṇāt).",
+   "Kasika: it applies apadānta; so the ayādi of 6.1.78 (agnay-as) is displaced."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "6.1.78",
+    "note": "apadānta e/o + a of ṅas/ṅasi: pūrvarūpa instead of ay/av (agneḥ not agnayaḥ)."
+   }
+  ],
+  "overridden_by": [],
+  "ordering_notes": "After the ekādeśa, the s of the ending is the visarga (ru) by 8.2.66/8.3.15 (out of family).",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [
+   "ac_ekadesa-096",
+   "ac_ekadesa-217",
+   "ac_ekadesa-218",
+   "ac_ekadesa-219",
+   "ac_ekadesa-223",
+   "ac_ekadesa-224"
+  ],
+  "laghu_ref": null,
+  "notes": "Laghu (Devanagari commentary): 'eṅo ṅasiṅasor ati pūrvarūpam ekādeśaḥ. hareḥ hareḥ. haryoḥ haryoḥ. harīṇām'. Note that in real derivation the 'e' of hareḥ is the guṇa made before ṅasi (7.3.111 gher ṅiti). The gold uses stem:ṅas to mark the ending."
+ },
+ {
+  "id": "6.1.111",
+  "text_iast": "ṛta ut",
+  "family": "ac_ekadesa",
+  "tier": "internal",
+  "kind": "apavada",
+  "effect": "After a ṛ-final stem, the a of ṅasi/ṅas and the ṛ are replaced together by u (with raparatva).",
+  "sthanin": "the pair: ṛ (of a ṛ-final stem) + the a of ṅasi/ṅas",
+  "adesa": "u (short; with 1.1.51 raparatva: ur), then 8.2.24 drops the s: hotur āgacchati, hotuḥ svam",
+  "nimitta": "ṛ-final stem + ṅasi/ṅas; the a of the ending follows",
+  "conditions": [
+   "Kasika: 'ṛkārāntād uttarayor ṅasiṅasor ati parataḥ pūrvaparayor ukāra ekādeśo bhavati': hotur āgacchati, hotuḥ svam.",
+   "Kasika: 'dvayoḥ ṣaṣṭhīnirdiṣṭayoḥ sthāne yaḥ sa labhate 'nyatara-vyapadeśam' - so 1.1.51 (uraṇ raparaḥ) applies (the sthānin includes ṛ), then 8.2.24 (rāt sasya) drops the s.",
+   "Balamanorama: the tapara ut is for 'dvimātranivṛttyartham' (no long ū); the paribhāṣā 'bhāvyamāno 'savarṇān na gṛhṇāti' would also do it but is anitya. The rule also serves kroṣṭu after the tṛjvat substitution (7.1.95): 'kroṣṭṛ as'.",
+   "Tattvabodhini: the taparakaraṇa shows that 'bhāvyamāno 'ṇ kvacit savarṇān gṛhṇāti' (yavalapare hakāre ...)."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "6.1.77",
+    "note": "INFERRED: ṛ + a of the ending would otherwise be yaṇ (hotras); this sutra is the specific rule. The text read (Kasika) does not name 6.1.77."
+   }
+  ],
+  "overridden_by": [],
+  "ordering_notes": "1.1.51 then 8.2.24 (rātsasya) in that order (Kasika): the raparatva gives r, then the s is dropped after r.",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [
+   "ac_ekadesa-220"
+  ],
+  "laghu_ref": null,
+  "notes": "Laghu (Devanagari commentary): 'ṛto ṅasiṅasor ati udekādeśaḥ. raparaḥ'."
+ },
+ {
+  "id": "6.1.112",
+  "text_iast": "khyatyāt parasya",
+  "family": "ac_ekadesa",
+  "tier": "internal",
+  "kind": "vidhi",
+  "effect": "After the yaṇ-forms khy (of khi/khī) and ty (of ti/tī), the a of ṅasi/ṅas is replaced by u.",
+  "sthanin": "the a of ṅasi/ṅas after khy / ty (the yaṇ of khi, khī, ti, tī)",
+  "adesa": "u (only the a is replaced; 6.1.84 does not run here): sakhyuḥ, patyuḥ",
+  "nimitta": "the stem's final has already had yaṇ: sakhy-, paty-, lūny- (khi/khī/ti/tī with yaṇ made: 'kṛtayaṇādeśayoḥ'); ṅasi/ṅas begins with a",
+  "conditions": [
+   "Kasika: 'khyatyāt' = khi/khī and ti/tī after yaṇ: sakhyur āgacchati, sakhyuḥ svam, patyur āgacchati, patyuḥ svam. For the long-vowel words: sakha + kyac -> sakhīyati -> kvip -> sakhīḥ, whose ṅas gives sakhyuḥ; lūna (lū + kta) + kyac -> lūnīyati -> kvip (lopa) -> lūn-, ṅas -> lūnyuḥ.",
+   "Kasika: 'vikṛtanirdeśād eveha na bhavati - atisakher āgacchati, senāpater āgacchatīti': other words ending in -khi/-ti (atisakhi, senāpati) do not take this u; there the guṇa e and 6.1.110 apply.",
+   "Balamanorama: 'pūrvaparayoḥ' is not carried ('parasya' makes the ekādeśa impossible): only the a is replaced. Tattvabodhini: the nirdeśa 'sakhyuryaḥ, patyur naḥ' etc. show the shape.",
+   "Kasika: 'niṣṭhānatvam pūrvatrāsiddham (8.2.1) ity asiddham': the niṣṭhā-t -> n of 8.2.44 (lvādibhyaḥ, a tripādī rule) is asiddha for this sapādasaptādhyāyī rule, so the stem still has the ti/tī shape when 6.1.112 applies; the n shows up afterwards (lūnyuḥ)."
+  ],
+  "exceptions_and_blockers": [],
+  "overrides": [
+   {
+    "id": "6.1.110",
+    "note": "for sakhi/pati whose i has become y (khy/ty) the specific u (sakhyuḥ, patyuḥ) applies; for look-alike words (atisakhi, senāpati) the guṇa e and 6.1.110 apply (Kasika: 'atisakher āgacchati, senāpater āgacchati')."
+   }
+  ],
+  "overridden_by": [],
+  "ordering_notes": "8.2.44 (lvādibhyaḥ) is asiddha for this rule by 8.2.1 (see conditions): the stem is seen as ti/tī before the niṣṭhā-n is made.",
+  "varttikas": [],
+  "optional": null,
+  "vedic_only": false,
+  "examples": [
+   "ac_ekadesa-221",
+   "ac_ekadesa-222",
+   "ac_ekadesa-223",
+   "ac_ekadesa-224"
+  ],
+  "laghu_ref": null,
+  "notes": "Laghu (Devanagari commentary): 'khitiśabdābhyāṃ khītīśabdābhyāṃ kṛtayaṇādeśābhyāṃ parasya ṅasiṅasor ata uḥ. sakhyuḥ'. This sutra is OUTSIDE the ekādeśa adhikāra although it looks like one (it replaces only the a)."
+ }
+]

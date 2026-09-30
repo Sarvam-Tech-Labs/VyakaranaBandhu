@@ -1,0 +1,6448 @@
+[
+ {
+  "id": "ac_ekadesa-001",
+  "family": "ac_ekadesa",
+  "input": [
+   "khaṭvā",
+   "indraḥ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "khaṭvendraḥ"
+  ],
+  "sutras": [
+   "6.1.87"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.87",
+   "locator": "Kāśikā on 6.1.87",
+   "quote": "खट्वेन्द्रः"
+  },
+  "confidence": "probable",
+  "notes": "Kasika cites khatvendrah under 6.1.84 and again under 6.1.87. Split into khatva+indra by me. One e replaces both the final a of khatva and the initial i of indra (6.1.84 ekah purvaparayoh)."
+ },
+ {
+  "id": "ac_ekadesa-002",
+  "family": "ac_ekadesa",
+  "input": [
+   "mālā",
+   "indraḥ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "mālendraḥ"
+  ],
+  "sutras": [
+   "6.1.87"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.87",
+   "locator": "Kāśikā on 6.1.87",
+   "quote": "मालेन्द्रः"
+  },
+  "confidence": "probable",
+  "notes": "Long a (mala) + i -> e: the guna replaces the whole a+i sequence; the long a is not left standing."
+ },
+ {
+  "id": "ac_ekadesa-003",
+  "family": "ac_ekadesa",
+  "input": [
+   "tava",
+   "īhate"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "tavehate"
+  ],
+  "sutras": [
+   "6.1.87"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.87",
+   "locator": "Kāśikā on 6.1.87",
+   "quote": "तवेहते"
+  },
+  "confidence": "probable",
+  "notes": "tava + ihate (root ih, i long): a + i-vowel -> e. Split by me from the joined form."
+ },
+ {
+  "id": "ac_ekadesa-004",
+  "family": "ac_ekadesa",
+  "input": [
+   "khaṭvā",
+   "īhate"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "khaṭvehate"
+  ],
+  "sutras": [
+   "6.1.87"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.87",
+   "locator": "Kāśikā on 6.1.87",
+   "quote": "खट्वेहते"
+  },
+  "confidence": "probable",
+  "notes": "Same as the previous case with long final a."
+ },
+ {
+  "id": "ac_ekadesa-005",
+  "family": "ac_ekadesa",
+  "input": [
+   "tava",
+   "udakam"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "tavodakam"
+  ],
+  "sutras": [
+   "6.1.87"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.87",
+   "locator": "Kāśikā on 6.1.87",
+   "quote": "तवोदकम्"
+  },
+  "confidence": "probable",
+  "notes": "a + u -> o."
+ },
+ {
+  "id": "ac_ekadesa-006",
+  "family": "ac_ekadesa",
+  "input": [
+   "khaṭvā",
+   "udakam"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "khaṭvodakam"
+  ],
+  "sutras": [
+   "6.1.87"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.87",
+   "locator": "Kāśikā on 6.1.87",
+   "quote": "खट्वोदकम्"
+  },
+  "confidence": "probable",
+  "notes": "long a + u -> o."
+ },
+ {
+  "id": "ac_ekadesa-007",
+  "family": "ac_ekadesa",
+  "input": [
+   "tava",
+   "ṛśyaḥ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "tavarśyaḥ"
+  ],
+  "sutras": [
+   "6.1.87",
+   "1.1.51"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.87",
+   "locator": "Kāśikā on 6.1.87",
+   "quote": "तवर्श्यः"
+  },
+  "confidence": "probable",
+  "notes": "a + r-vowel -> ar: guna a in place of both, and 1.1.51 (uran raparah) makes the substitute followed by r. Kasika lists this under 6.1.87; 1.1.51 is added because Kasika (end of 6.1.87) and Laghu (vlk_29, kṛṣṇarddhiḥ) treat it that way."
+ },
+ {
+  "id": "ac_ekadesa-008",
+  "family": "ac_ekadesa",
+  "input": [
+   "khaṭvā",
+   "ṛśyaḥ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "khaṭvarśyaḥ"
+  ],
+  "sutras": [
+   "6.1.87",
+   "1.1.51"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.87",
+   "locator": "Kāśikā on 6.1.87",
+   "quote": "खट्वर्श्यः"
+  },
+  "confidence": "probable",
+  "notes": "Long a + r-vowel -> ar, the long a shortens because guna is a (1.1.2, tapara)."
+ },
+ {
+  "id": "ac_ekadesa-009",
+  "family": "ac_ekadesa",
+  "input": [
+   "tava",
+   "ḷkāraḥ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "tavalkāraḥ"
+  ],
+  "sutras": [
+   "6.1.87",
+   "1.1.51"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.87",
+   "locator": "Kāśikā on 6.1.87",
+   "quote": "तवल्कारः"
+  },
+  "confidence": "probable",
+  "notes": "a + l-vowel -> al. Kasika: lkarasya sthane yo an tasya laparatvam isyate (lparatva is by 1.1.51 read as 'lapara' for l-vowel). The output has a consonant l, not a vocalic l. Laghu (GRETIL) also lists tavalkāraḥ under 1.1.51."
+ },
+ {
+  "id": "ac_ekadesa-010",
+  "family": "ac_ekadesa",
+  "input": [
+   "khaṭvā",
+   "ḷkāraḥ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "khaṭvalkāraḥ"
+  ],
+  "sutras": [
+   "6.1.87",
+   "1.1.51"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.87",
+   "locator": "Kāśikā on 6.1.87",
+   "quote": "खट्वल्कारः"
+  },
+  "confidence": "probable",
+  "notes": "Long a + l-vowel -> al."
+ },
+ {
+  "id": "ac_ekadesa-011",
+  "family": "ac_ekadesa",
+  "input": [
+   "upa",
+   "indraḥ"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "upendraḥ"
+  ],
+  "sutras": [
+   "6.1.87"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi",
+   "sutra": "6.1.87",
+   "locator": "Laghusiddhāntakaumudī on 6.1.87",
+   "quote": "उपेन्द्रः"
+  },
+  "confidence": "probable",
+  "notes": "Laghu (Devanagari) and Kaumudi example. upa here is the prefix of the compound; split by me. Laghu GRETIL text: 'upendraḥ / gaṅgodakam'."
+ },
+ {
+  "id": "ac_ekadesa-012",
+  "family": "ac_ekadesa",
+  "input": [
+   "ramā",
+   "īśaḥ"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "rameśaḥ"
+  ],
+  "sutras": [
+   "6.1.87"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.87",
+   "locator": "Siddhāntakaumudī on 6.1.87",
+   "quote": "रमेशः"
+  },
+  "confidence": "probable",
+  "notes": "Kaumudi example (ramayah isah, a tatpurusa); split by me. Balamanorama on 6.1.87 states 'rama-isa iti sthite akarasya ikarasya ca sthane...'."
+ },
+ {
+  "id": "ac_ekadesa-013",
+  "family": "ac_ekadesa",
+  "input": [
+   "gaṅgā",
+   "udakam"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "gaṅgodakam"
+  ],
+  "sutras": [
+   "6.1.87"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi",
+   "sutra": "6.1.87",
+   "locator": "Laghusiddhāntakaumudī on 6.1.87",
+   "quote": "गङ्गोदकम्"
+  },
+  "confidence": "probable",
+  "notes": "Laghu example; Balamanorama gives the split 'gaṅgā-udakam'."
+ },
+ {
+  "id": "ac_ekadesa-014",
+  "family": "ac_ekadesa",
+  "input": [
+   "kṛṣṇa",
+   "ṛddhiḥ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "kṛṣṇarddhiḥ",
+   "kṛṣṇardhiḥ"
+  ],
+  "sutras": [
+   "6.1.87",
+   "1.1.51"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "balamanorama",
+   "sutra": "6.1.87",
+   "locator": "Bālamanoramā on 6.1.87",
+   "quote": "कृष्णर्द्धिरित्यत्र कृष्ण ऋद्धिरिति स्थिते"
+  },
+  "confidence": "certain",
+  "notes": "Balamanorama: the two sthanins a and r-vowel could take a, e or o (all guna, all sharing the throat place); the accepted result is a with raparatva (ar). Laghu (GRETIL, under 1.1.51) writes kṛṣṇarddhiḥ with a doubled dh (8.4.46 aco rahabhyam dve is optional, so kṛṣṇardhiḥ is also accepted; the tradition writes the doubled form). Mahabhasya on 6.1.87: 'rkaro nobhayantarah'."
+ },
+ {
+  "id": "ac_ekadesa-015",
+  "family": "ac_ekadesa",
+  "input": [
+   "brahmabandhu",
+   "ū"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "brahmabandhū"
+  ],
+  "sutras": [
+   "6.1.101",
+   "6.1.85"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.85",
+   "locator": "Kāśikā on 6.1.85",
+   "quote": "ब्रह्मबन्धूरित्यत्र ब्रह्मबन्धु इति प्रातिपदिकम्, ऊङित्यप्रातिपदिकम्"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: the ekadesa of u (end of the stem) and u (the feminine affix ūṅ) counts as final of the stem brahmabandhu (antavat), so a Sup (su) can follow by 4.1.1. Kasika writes the final form brahmabandhūḥ; the su and its visarga are not in the input here. Input second word is the affix ūṅ (its ṅ is an it)."
+ },
+ {
+  "id": "ac_ekadesa-016",
+  "family": "ac_ekadesa",
+  "input": [
+   "vṛkṣa",
+   "au"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "vṛkṣau"
+  ],
+  "sutras": [
+   "6.1.88",
+   "6.1.85"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.85",
+   "locator": "Kāśikā on 6.1.85",
+   "quote": "वृक्षावित्यत्र सुबौकारोऽसुबकारः"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: the Sup is au, the a is not a Sup. The vrddhi ekadesa counts as the beginning of the Sup (adivat), so the result is a supanta and hence a pada (1.4.14). Kasika prints vṛkṣāv (before iti)."
+ },
+ {
+  "id": "ac_ekadesa-017",
+  "family": "ac_ekadesa",
+  "input": [
+   "kṣīrapa",
+   "ina"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "kṣīrapeṇa"
+  ],
+  "sutras": [
+   "6.1.87",
+   "6.1.85",
+   "8.4.12"
+  ],
+  "derivation": [
+   {
+    "sutra": "6.1.87",
+    "after": "kṣīrape na",
+    "note": "a + i -> e (Balamanorama: 'aad gunah ityekadesa ekarah')"
+   },
+   {
+    "sutra": "6.1.85",
+    "after": "kṣīrape na",
+    "note": "e counts as end of kṣīrapa, so pe is an ekac uttarapada"
+   },
+   {
+    "sutra": "8.4.12",
+    "after": "kṣīrapeṇa",
+    "note": "n -> ṇ"
+   }
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "balamanorama",
+   "sutra": "6.1.85",
+   "locator": "Bālamanoramā on 6.1.85",
+   "quote": "क्षीरप-इनेति स्थिते"
+  },
+  "confidence": "probable",
+  "notes": "Balamanorama: the guna e is treated as the final of the earlier member (purvantavat), so pe counts as a single-vowel uttarapada and the nasal becomes n (8.4.12 ekajuttarapade nah). Balamanorama also says 1.1.56 sthanivat does not do this job because the rule to be applied (ṇatva) depends on the sthanin's letter in a way 1.1.56 excludes (analvidhau). The corpus text prints 'यताक्षीरपेण' (typo for yatha ksirapena)."
+ },
+ {
+  "id": "ac_ekadesa-018",
+  "family": "ac_ekadesa",
+  "input": [
+   "khaṭva",
+   "ā",
+   "s"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "khaṭvā"
+  ],
+  "sutras": [
+   "6.1.101",
+   "6.1.85",
+   "6.1.68"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "balamanorama",
+   "sutra": "6.1.85",
+   "locator": "Bālamanoramā on 6.1.85",
+   "quote": "अत्र खट्वाशब्दादजाद्यतष्टाप् । सवर्णदीर्घः आकारः"
+  },
+  "confidence": "probable",
+  "notes": "Balamanorama: khatva + tap (spelled a here): savarnadirgha gives long a; because of adivat this long a counts as the tap (a feminine affix), so the su that follows is dropped (halṅyabbhyo dirghat sutisyapṛktaṃ hal, 6.1.68). The input 's' is su; the source does not show the split in exactly this form."
+ },
+ {
+  "id": "ac_ekadesa-019",
+  "family": "ac_ekadesa",
+  "input": [
+   "khaṭva",
+   "ā",
+   "bhis"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "khaṭvābhiḥ"
+  ],
+  "sutras": [
+   "6.1.101"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.85",
+   "locator": "Kāśikā on 6.1.85",
+   "quote": "खट्वाभिरित्यत्रान्तवद्भावाभावाद्"
+  },
+  "confidence": "probable",
+  "notes": "LIMIT of 6.1.85: it does not apply to rules that depend on the letter itself (varnasraya). Because the long a from a+a is not treated as a short final a, 7.1.9 (ato bhisa ais) does not turn bhis into ais. Result is khaṭvābhiḥ, not *khaṭvaiḥ. Mahabhasya: 'na va atadrupyatidesat'."
+ },
+ {
+  "id": "ac_ekadesa-020",
+  "family": "ac_ekadesa",
+  "input": [
+   "kas",
+   "asiñcat"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "ko'siñcat"
+  ],
+  "sutras": [
+   "6.1.109",
+   "6.1.86"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.86",
+   "locator": "Siddhāntakaumudī on 6.1.86",
+   "quote": "कोऽसिचत् । इह षत्वं न"
+  },
+  "confidence": "probable",
+  "notes": "Underlying kas (visarga form kah). The ekadesa (purvarupa o) is asiddha for the ṣatva rule (8.3.57/8.3.59), so the s of asiñcat, which is separated from o by the (invisible) a, does not become ṣ. Kasika prints the verb as asicat (nasal omitted); Kaumudi has the same spelling; the verb is asiñcat (laṅ of sic)."
+ },
+ {
+  "id": "ac_ekadesa-021",
+  "family": "ac_ekadesa",
+  "input": [
+   "kas",
+   "asya"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "ko'sya"
+  ],
+  "sutras": [
+   "6.1.109",
+   "6.1.86"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.86",
+   "locator": "Kāśikā on 6.1.86",
+   "quote": "कोऽस्य योऽस्य कोऽस्मै योऽस्मै"
+  },
+  "confidence": "probable",
+  "notes": "Kasika: ekadesasyasiddhatvad iṇaḥ (8.3.57) ityanena ṣatva does not happen. Underlying kas; visarga form kah. Split by me."
+ },
+ {
+  "id": "ac_ekadesa-022",
+  "family": "ac_ekadesa",
+  "input": [
+   "kas",
+   "asmai"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "ko'smai"
+  ],
+  "sutras": [
+   "6.1.109",
+   "6.1.86"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.86",
+   "locator": "Kāśikā on 6.1.86",
+   "quote": "कोऽस्य योऽस्य कोऽस्मै योऽस्मै"
+  },
+  "confidence": "probable",
+  "notes": "As above with asmai."
+ },
+ {
+  "id": "ac_ekadesa-023",
+  "family": "ac_ekadesa",
+  "input": [
+   "adhi",
+   "i",
+   "ya"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "dhatu:i"
+   ]
+  },
+  "outputs": [
+   "adhītya"
+  ],
+  "sutras": [
+   "6.1.86",
+   "6.1.71",
+   "6.1.101"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.86",
+   "locator": "Kāśikā on 6.1.86",
+   "quote": "अधीत्य, प्रेत्येत्यत्रैकादेशस्यासिद्धत्वाद्"
+  },
+  "confidence": "probable",
+  "notes": "Kasika: the ekadesa is asiddha for the tuk augment, so the i is still short when 6.1.71 (hrasvasya piti krti tuk) looks at it; tuk is added after i, then adhi+itya gives long i. The input splits adhi, the root i and the lyap ya (from ktva), my reading of the joined form."
+ },
+ {
+  "id": "ac_ekadesa-024",
+  "family": "ac_ekadesa",
+  "input": [
+   "pra",
+   "i",
+   "ya"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "dhatu:i"
+   ]
+  },
+  "outputs": [
+   "pretya"
+  ],
+  "sutras": [
+   "6.1.86",
+   "6.1.71",
+   "6.1.87"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.86",
+   "locator": "Kāśikā on 6.1.86",
+   "quote": "अधीत्य, प्रेत्येत्यत्रैकादेशस्यासिद्धत्वाद्"
+  },
+  "confidence": "probable",
+  "notes": "Same as adhītya: pra + itya -> pretya (a + i -> e by 6.1.87), tuk added first."
+ },
+ {
+  "id": "ac_ekadesa-025",
+  "family": "ac_ekadesa",
+  "input": [
+   "brahmahū",
+   "su"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "brahmahūṣu"
+  ],
+  "sutras": [
+   "8.3.57"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.86",
+   "locator": "Kāśikā on 6.1.86",
+   "quote": "ब्रह्महूषु। परिवीषु"
+  },
+  "confidence": "probable",
+  "notes": "Kasika vartika 'saṃprasāraṇaṅīṭsu pratiṣedho vaktavyaḥ': the samprasarana ekadesa is NOT asiddha for ṣatva, so s -> ṣ after the u. The sutras field names 8.3.57 (iṇkoḥ), which Kasika cites for ṣatva under this sutra. The input brahmahū already contains the ekadesa."
+ },
+ {
+  "id": "ac_ekadesa-026",
+  "family": "ac_ekadesa",
+  "input": [
+   "vṛkṣe",
+   "chatram"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "vṛkṣecchatram",
+   "vṛkṣe chatram"
+  ],
+  "sutras": [
+   "6.1.87",
+   "6.1.75",
+   "6.1.76"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.86",
+   "locator": "Kāśikā on 6.1.86",
+   "quote": "वृक्षेच्छत्रम्, वृक्षे छत्रम्"
+  },
+  "confidence": "probable",
+  "notes": "Same vartika: the ekadesa e of a+ṅi is NOT asiddha for tuk. If it were, the short a would trigger the nitya tuk of 6.1.73 (che ca); instead the e is long and 6.1.75/6.1.76 (dirghat, padantad va) make tuk optional. Kasika's markup labels the nitya rule [[6.1.76]] by mistake (it is 6.1.73)."
+ },
+ {
+  "id": "ac_ekadesa-027",
+  "family": "ac_ekadesa",
+  "input": [
+   "apace",
+   "chatram"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "apacecchatram",
+   "apace chatram"
+  ],
+  "sutras": [
+   "6.1.87",
+   "6.1.75",
+   "6.1.76"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.86",
+   "locator": "Kāśikā on 6.1.86",
+   "quote": "अपचेच्छत्रम्, अपचे छत्रम्"
+  },
+  "confidence": "probable",
+  "notes": "Vartika case for iṭ: the e is the ekadesa of a and the augment/affix i."
+ },
+ {
+  "id": "ac_ekadesa-028",
+  "family": "ac_ekadesa",
+  "input": [
+   "brahma",
+   "eḍakā"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "brahmaiḍakā"
+  ],
+  "sutras": [
+   "6.1.88"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.88",
+   "locator": "Kāśikā on 6.1.88",
+   "quote": "ब्रह्मैडका"
+  },
+  "confidence": "probable",
+  "notes": "a + e -> ai. Kasika: adgunasyapavadah."
+ },
+ {
+  "id": "ac_ekadesa-029",
+  "family": "ac_ekadesa",
+  "input": [
+   "khaṭvā",
+   "eḍakā"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "khaṭvaiḍakā"
+  ],
+  "sutras": [
+   "6.1.88",
+   "1.1.1"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.88",
+   "locator": "Kāśikā on 6.1.88",
+   "quote": "खट्वैडका"
+  },
+  "confidence": "probable",
+  "notes": "Long a + e -> ai (short-final ai, not three morae). Kasika on 1.1.1: tapara ai is there 'khaṭvaiḍakādiṣu trimātracaturmātraprasaṅganivṛttaye'."
+ },
+ {
+  "id": "ac_ekadesa-030",
+  "family": "ac_ekadesa",
+  "input": [
+   "brahma",
+   "aitikāyanaḥ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "brahmaitikāyanaḥ"
+  ],
+  "sutras": [
+   "6.1.88"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.88",
+   "locator": "Kāśikā on 6.1.88",
+   "quote": "ब्रह्मैतिकायनः"
+  },
+  "confidence": "probable",
+  "notes": "a + ai -> ai. The second word is the vrddhi patronymic aitikayana; split by me (a + e would give the same spelling)."
+ },
+ {
+  "id": "ac_ekadesa-031",
+  "family": "ac_ekadesa",
+  "input": [
+   "brahma",
+   "odanaḥ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "brahmaudanaḥ"
+  ],
+  "sutras": [
+   "6.1.88"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.88",
+   "locator": "Kāśikā on 6.1.88",
+   "quote": "ब्रह्मौदनः"
+  },
+  "confidence": "probable",
+  "notes": "a + o -> au."
+ },
+ {
+  "id": "ac_ekadesa-032",
+  "family": "ac_ekadesa",
+  "input": [
+   "khaṭvā",
+   "odanaḥ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "khaṭvaudanaḥ"
+  ],
+  "sutras": [
+   "6.1.88"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.88",
+   "locator": "Kāśikā on 6.1.88",
+   "quote": "खट्वौदनः"
+  },
+  "confidence": "probable",
+  "notes": "long a + o -> au."
+ },
+ {
+  "id": "ac_ekadesa-033",
+  "family": "ac_ekadesa",
+  "input": [
+   "brahma",
+   "aupagavaḥ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "brahmaupagavaḥ"
+  ],
+  "sutras": [
+   "6.1.88"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.88",
+   "locator": "Kāśikā on 6.1.88",
+   "quote": "ब्रह्मौपगवः"
+  },
+  "confidence": "probable",
+  "notes": "a + au -> au; second word is the vrddhi patronymic aupagava; split by me."
+ },
+ {
+  "id": "ac_ekadesa-034",
+  "family": "ac_ekadesa",
+  "input": [
+   "khaṭvā",
+   "aupagavaḥ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "khaṭvaupagavaḥ"
+  ],
+  "sutras": [
+   "6.1.88"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.88",
+   "locator": "Kāśikā on 6.1.88",
+   "quote": "खट्वौपगवः"
+  },
+  "confidence": "probable",
+  "notes": "long a + au -> au."
+ },
+ {
+  "id": "ac_ekadesa-035",
+  "family": "ac_ekadesa",
+  "input": [
+   "kṛṣṇa",
+   "ekatvam"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "kṛṣṇaikatvam"
+  ],
+  "sutras": [
+   "6.1.88"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi",
+   "sutra": "6.1.88",
+   "locator": "Laghusiddhāntakaumudī on 6.1.88",
+   "quote": "कृष्णैकत्वम्"
+  },
+  "confidence": "probable",
+  "notes": "Laghu example. Balamanorama: 'kṛṣṇasya-ekatvam' a sasthi compound, and notes that others take kṛṣṇa as a separate vocative word because 2.2.11 (purana-guna...) might forbid the compound (gunavacana). Either way the junction is a + e."
+ },
+ {
+  "id": "ac_ekadesa-036",
+  "family": "ac_ekadesa",
+  "input": [
+   "gaṅgā",
+   "oghaḥ"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "gaṅgaughaḥ"
+  ],
+  "sutras": [
+   "6.1.88"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi",
+   "sutra": "6.1.88",
+   "locator": "Laghusiddhāntakaumudī on 6.1.88",
+   "quote": "गङ्गौघः"
+  },
+  "confidence": "certain",
+  "notes": "Balamanorama gives 'gaṅgā-ogha iti sthite'. Long a + o -> au."
+ },
+ {
+  "id": "ac_ekadesa-037",
+  "family": "ac_ekadesa",
+  "input": [
+   "deva",
+   "aiśvaryam"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "devaiśvaryam"
+  ],
+  "sutras": [
+   "6.1.88"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi",
+   "sutra": "6.1.88",
+   "locator": "Laghusiddhāntakaumudī on 6.1.88",
+   "quote": "देवैश्वर्यम्"
+  },
+  "confidence": "probable",
+  "notes": "Laghu example. a + ai -> ai (the ai already present is the vrddhi of 6.1.88's ec). Split by me; Balamanorama's own text for this word is garbled."
+ },
+ {
+  "id": "ac_ekadesa-038",
+  "family": "ac_ekadesa",
+  "input": [
+   "kṛṣṇa",
+   "autkaṇṭhyam"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "kṛṣṇautkaṇṭhyam"
+  ],
+  "sutras": [
+   "6.1.88"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi",
+   "sutra": "6.1.88",
+   "locator": "Laghusiddhāntakaumudī on 6.1.88",
+   "quote": "कृष्णौत्कण्ठ्यम्"
+  },
+  "confidence": "probable",
+  "notes": "a + au -> au."
+ },
+ {
+  "id": "ac_ekadesa-039",
+  "family": "ac_ekadesa",
+  "input": [
+   "tatra",
+   "eva"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "tatraiva"
+  ],
+  "sutras": [
+   "6.1.88"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "tests_cases",
+   "sutra": "6.1.88",
+   "locator": "tests/test_cases.py SANDHI_CASES entry 'tatraiva'",
+   "quote": "\"text\": \"tatraiva\""
+  },
+  "confidence": "certain",
+  "notes": "Project test data (tests/test_cases.py SANDHI_CASES, expected_subtype 'Vṛddhi', expected_left 'tatra', expected_right 'eva'; note 'Vṛddhi between indeclinables (a + e -> ai)'). eva here is restrictive (see the aniyoga counter-examples under 6.1.94: tavaiva, ihaiva)."
+ },
+ {
+  "id": "ac_ekadesa-040",
+  "family": "ac_ekadesa",
+  "input": [
+   "upa",
+   "eti"
+  ],
+  "boundary": "upasarga",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "dhatu:i"
+   ]
+  },
+  "outputs": [
+   "upaiti"
+  ],
+  "sutras": [
+   "6.1.89"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi",
+   "sutra": "6.1.89",
+   "locator": "Laghusiddhāntakaumudī on 6.1.89",
+   "quote": "उपैति"
+  },
+  "confidence": "probable",
+  "notes": "Kaumudi/Laghu/Kasika. a + e (of root i, ejadi) -> ai instead of pararupa 6.1.94 (Kasika: 'etyedhatyostvenipararupapavadah')."
+ },
+ {
+  "id": "ac_ekadesa-041",
+  "family": "ac_ekadesa",
+  "input": [
+   "upa",
+   "eṣi"
+  ],
+  "boundary": "upasarga",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "dhatu:i"
+   ]
+  },
+  "outputs": [
+   "upaiṣi"
+  ],
+  "sutras": [
+   "6.1.89"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.89",
+   "locator": "Kāśikā on 6.1.89",
+   "quote": "उपैषि"
+  },
+  "confidence": "probable",
+  "notes": "Same, second person."
+ },
+ {
+  "id": "ac_ekadesa-042",
+  "family": "ac_ekadesa",
+  "input": [
+   "upa",
+   "emi"
+  ],
+  "boundary": "upasarga",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "dhatu:i"
+   ]
+  },
+  "outputs": [
+   "upaimi"
+  ],
+  "sutras": [
+   "6.1.89"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.89",
+   "locator": "Kāśikā on 6.1.89",
+   "quote": "उपैमि"
+  },
+  "confidence": "probable",
+  "notes": "Same, first person."
+ },
+ {
+  "id": "ac_ekadesa-043",
+  "family": "ac_ekadesa",
+  "input": [
+   "upa",
+   "edhate"
+  ],
+  "boundary": "upasarga",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "dhatu:edh"
+   ]
+  },
+  "outputs": [
+   "upaidhate"
+  ],
+  "sutras": [
+   "6.1.89"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi",
+   "sutra": "6.1.89",
+   "locator": "Laghusiddhāntakaumudī on 6.1.89",
+   "quote": "उपैधते"
+  },
+  "confidence": "probable",
+  "notes": "Root edh (to grow); a + e -> ai (again apavada of pararupa 6.1.94)."
+ },
+ {
+  "id": "ac_ekadesa-044",
+  "family": "ac_ekadesa",
+  "input": [
+   "pra",
+   "edhate"
+  ],
+  "boundary": "upasarga",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "dhatu:edh"
+   ]
+  },
+  "outputs": [
+   "praidhate"
+  ],
+  "sutras": [
+   "6.1.89"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.89",
+   "locator": "Kāśikā on 6.1.89",
+   "quote": "प्रैधते"
+  },
+  "confidence": "probable",
+  "notes": "As above with pra."
+ },
+ {
+  "id": "ac_ekadesa-045",
+  "family": "ac_ekadesa",
+  "input": [
+   "praṣṭha",
+   "ūhas"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "1": [
+    "stem:ūṭh"
+   ]
+  },
+  "outputs": [
+   "praṣṭhauhaḥ"
+  ],
+  "sutras": [
+   "6.1.89"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi",
+   "sutra": "6.1.89",
+   "locator": "Laghusiddhāntakaumudī on 6.1.89",
+   "quote": "प्रष्ठौहः"
+  },
+  "confidence": "probable",
+  "notes": "praṣṭhavāh + śas: the stem vah has the samprasarana substitute ūṭh (ūh); a + ū(ṭ)h -> au (vrddhi, apavada of adgunah). Input written with underlying as (visarga in output). Flag stem:ūṭh marks the ūṭh substitute (6.4.132 vāha ūṭh). Kasika also gives praṣṭhauhā, praṣṭhauhe."
+ },
+ {
+  "id": "ac_ekadesa-046",
+  "family": "ac_ekadesa",
+  "input": [
+   "upa",
+   "itaḥ"
+  ],
+  "boundary": "upasarga",
+  "flags": {
+   "0": [
+    "upasarga"
+   ]
+  },
+  "outputs": [
+   "upetaḥ"
+  ],
+  "sutras": [
+   "6.1.87"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.89",
+   "locator": "Siddhāntakaumudī on 6.1.89",
+   "quote": "एजाद्योः किम् । उपेतः"
+  },
+  "confidence": "probable",
+  "notes": "COUNTER-EXAMPLE 'ejadyoh kim': itah is not ejadi (starts with i), so no vrddhi; plain guna e. Kasika: 'ecīty eva — upa ita upetaḥ'."
+ },
+ {
+  "id": "ac_ekadesa-047",
+  "family": "ac_ekadesa",
+  "input": [
+   "pra",
+   "ididhat"
+  ],
+  "boundary": "upasarga",
+  "flags": {
+   "0": [
+    "upasarga"
+   ]
+  },
+  "outputs": [
+   "predidhat"
+  ],
+  "sutras": [
+   "6.1.87"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "laghukaumudi",
+   "sutra": "6.1.89",
+   "locator": "Laghusiddhāntakaumudī on 6.1.89",
+   "quote": "मा भवान्प्रेदिधत्"
+  },
+  "confidence": "probable",
+  "notes": "COUNTER-EXAMPLE: the aorist of the causative of edh starts with i (ididhat: e shortened by 7.4.1 ṇau caṅyupadhāyā hrasvaḥ), so the root is not ejadi here and 6.1.89 does not apply. The augment is dropped after mā (6.4.74). Balamanorama: 'pra-ididhad iti sthite etyedhatīti na vṛddhiḥ, edhadhātor ejāditvābhāvāt'."
+ },
+ {
+  "id": "ac_ekadesa-048",
+  "family": "ac_ekadesa",
+  "input": [
+   "upa",
+   "ā",
+   "itaḥ"
+  ],
+  "boundary": "upasarga",
+  "flags": {
+   "1": [
+    "ang",
+    "upasarga"
+   ]
+  },
+  "outputs": [
+   "upetaḥ"
+  ],
+  "sutras": [
+   "6.1.87",
+   "6.1.85",
+   "6.1.95"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.89",
+   "locator": "Kāśikā on 6.1.89",
+   "quote": "तेनेह न भवति — उप आ इत उपेत इति"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: 6.1.89 does NOT displace 6.1.95 (omaṅos ca), by 'purastadapavada anantaran vidhin badhante nottaran'. ā-N + itah gives etah (guna), and upa + etah gives pararupa upetaḥ, not *upaitaḥ."
+ },
+ {
+  "id": "ac_ekadesa-049",
+  "family": "ac_ekadesa",
+  "input": [
+   "ava",
+   "ehi"
+  ],
+  "boundary": "upasarga",
+  "flags": {
+   "1": [
+    "ang"
+   ]
+  },
+  "outputs": [
+   "avehi"
+  ],
+  "sutras": [
+   "6.1.95"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.89",
+   "locator": "Siddhāntakaumudī on 6.1.89",
+   "quote": "तेनावैहीति वृद्धिरसाधुरेव"
+  },
+  "confidence": "probable",
+  "notes": "Kaumudi: because of purastadapavadanyaya the vrddhi of 6.1.89 does not block 6.1.95, so avaihi is wrong and avehi (pararupa) is right. The Kaumudi does not print avehi; I supply it. Balamanorama (6.1.89) disagrees about WHY: it says 6.1.89 is not an apavada of 6.1.95 at all and 6.1.95 wins by paratva ('paratvad omanosceti pararupam nyayyam'), citing the Mahabhasya; the result is the same."
+ },
+ {
+  "id": "ac_ekadesa-050",
+  "family": "ac_ekadesa",
+  "input": [
+   "akṣa",
+   "ūhinī"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "akṣauhiṇī"
+  ],
+  "sutras": [
+   "6.1.89"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.89",
+   "locator": "Siddhāntakaumudī on 6.1.89",
+   "quote": "अक्षौहिणी सेना"
+  },
+  "confidence": "probable",
+  "notes": "Vartika 'akṣādūhinyām upasaṅkhyānam': a + ū -> au (vrddhi) instead of guna. The n->ṇ is by 8.4.3 (purvapadat samjnayam). Balamanorama: 'akṣa — ūhinīti sthite guṇa prāpte'."
+ },
+ {
+  "id": "ac_ekadesa-051",
+  "family": "ac_ekadesa",
+  "input": [
+   "sva",
+   "īram"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "svairam"
+  ],
+  "sutras": [
+   "6.1.89"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.89",
+   "locator": "Kāśikā on 6.1.89",
+   "quote": "स्वैरम्"
+  },
+  "confidence": "probable",
+  "notes": "Vartika 'svādīreriṇyor vṛddhir vaktavyā' (Kasika): sva + īra -> svaira.",
+  "flags": {
+   "1": [
+    "stem:īra"
+   ]
+  },
+  "flags_added": [
+   "stem:īra"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-052",
+  "family": "ac_ekadesa",
+  "input": [
+   "sva",
+   "īriṇī"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "svairiṇī"
+  ],
+  "sutras": [
+   "6.1.89"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.89",
+   "locator": "Kāśikā on 6.1.89",
+   "quote": "स्वैरिणी"
+  },
+  "confidence": "probable",
+  "notes": "Same vartika with īrin (feminine īriṇī). Kaumudi explains svairī as 'svenerituṃ śīlam asya'. Tattvabodhini says the reading 'īreriṇyoḥ' is an incorrect variant.",
+  "flags": {
+   "1": [
+    "stem:īrin"
+   ]
+  },
+  "flags_added": [
+   "stem:īrin"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-053",
+  "family": "ac_ekadesa",
+  "input": [
+   "pra",
+   "ūḍhaḥ"
+  ],
+  "boundary": "upasarga",
+  "flags": {
+   "0": [
+    "upasarga"
+   ]
+  },
+  "outputs": [
+   "prauḍhaḥ"
+  ],
+  "sutras": [
+   "6.1.89"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.89",
+   "locator": "Kāśikā on 6.1.89",
+   "quote": "प्रौढः"
+  },
+  "confidence": "probable",
+  "notes": "Vartika 'prādūhoḍhoḍhyeṣaiṣyeṣu': pra + ūḍha (kta of vah) -> prauḍha."
+ },
+ {
+  "id": "ac_ekadesa-054",
+  "family": "ac_ekadesa",
+  "input": [
+   "pra",
+   "ūḍhiḥ"
+  ],
+  "boundary": "upasarga",
+  "flags": {
+   "0": [
+    "upasarga"
+   ]
+  },
+  "outputs": [
+   "prauḍhiḥ"
+  ],
+  "sutras": [
+   "6.1.89"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.89",
+   "locator": "Kāśikā on 6.1.89",
+   "quote": "प्रौढिः"
+  },
+  "confidence": "probable",
+  "notes": "Same vartika, ūḍhi."
+ },
+ {
+  "id": "ac_ekadesa-055",
+  "family": "ac_ekadesa",
+  "input": [
+   "pra",
+   "ūhaḥ"
+  ],
+  "boundary": "upasarga",
+  "flags": {
+   "0": [
+    "upasarga"
+   ]
+  },
+  "outputs": [
+   "prauhaḥ"
+  ],
+  "sutras": [
+   "6.1.89"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi",
+   "sutra": "6.1.89",
+   "locator": "Laghusiddhāntakaumudī on 6.1.89",
+   "quote": "प्रौहः"
+  },
+  "confidence": "probable",
+  "notes": "Same vartika, ūha."
+ },
+ {
+  "id": "ac_ekadesa-056",
+  "family": "ac_ekadesa",
+  "input": [
+   "pra",
+   "eṣaḥ"
+  ],
+  "boundary": "upasarga",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "krdanta"
+   ]
+  },
+  "outputs": [
+   "praiṣaḥ"
+  ],
+  "sutras": [
+   "6.1.89"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.89",
+   "locator": "Kāśikā on 6.1.89",
+   "quote": "प्रैषः"
+  },
+  "confidence": "probable",
+  "notes": "Same vartika, eṣa (ghañ of iṣ).",
+  "flags_added": [
+   "krdanta"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-057",
+  "family": "ac_ekadesa",
+  "input": [
+   "pra",
+   "eṣyaḥ"
+  ],
+  "boundary": "upasarga",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "krdanta"
+   ]
+  },
+  "outputs": [
+   "praiṣyaḥ"
+  ],
+  "sutras": [
+   "6.1.89"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.89",
+   "locator": "Kāśikā on 6.1.89",
+   "quote": "प्रैष्यः"
+  },
+  "confidence": "probable",
+  "notes": "Same vartika, eṣya.",
+  "flags_added": [
+   "krdanta"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-058",
+  "family": "ac_ekadesa",
+  "input": [
+   "pra",
+   "ūḍhavān"
+  ],
+  "boundary": "upasarga",
+  "flags": {
+   "0": [
+    "upasarga"
+   ]
+  },
+  "outputs": [
+   "proḍhavān"
+  ],
+  "sutras": [
+   "6.1.87"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.89",
+   "locator": "Siddhāntakaumudī on 6.1.89",
+   "quote": "प्रोढवान्"
+  },
+  "confidence": "probable",
+  "notes": "COUNTER-EXAMPLE to the vartika: ūḍha inside the ktavatu form is meaningless as a separate word, so 'arthavadgrahaṇe nānarthakasya grahaṇam' blocks the vartika and plain guna applies (Kaumudi: 'proḍhavān')."
+ },
+ {
+  "id": "ac_ekadesa-059",
+  "family": "ac_ekadesa",
+  "input": [
+   "pra",
+   "īṣaḥ"
+  ],
+  "boundary": "upasarga",
+  "flags": {
+   "0": [
+    "upasarga"
+   ]
+  },
+  "outputs": [
+   "preṣaḥ"
+  ],
+  "sutras": [
+   "6.1.87"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.89",
+   "locator": "Siddhāntakaumudī on 6.1.89",
+   "quote": "प्रेषः । प्रेष्यः"
+  },
+  "confidence": "probable",
+  "notes": "COUNTER-EXAMPLE: the vartika covers eṣa/eṣya from iṣ (tudadi, divadi, kryadi) but not īṣa/īṣya from ūṣ-type roots with long upadha (ūṣ 'uñcha', īṣ 'gatihimsadarśana'); there plain guna gives preṣaḥ."
+ },
+ {
+  "id": "ac_ekadesa-060",
+  "family": "ac_ekadesa",
+  "input": [
+   "sukhena",
+   "ṛtaḥ"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "sukhārtaḥ"
+  ],
+  "sutras": [
+   "6.1.89",
+   "1.1.51"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.89",
+   "locator": "Kāśikā on 6.1.89",
+   "quote": "सुखेन ऋतः सुखार्तः"
+  },
+  "confidence": "certain",
+  "notes": "Vartika 'ṛte ca tṛtīyāsamāse': a + ṛ -> ār only in an instrumental compound.",
+  "flags": {
+   "0": [
+    "trtiya"
+   ]
+  },
+  "flags_added": [
+   "trtiya"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-061",
+  "family": "ac_ekadesa",
+  "input": [
+   "duḥkhena",
+   "ṛtaḥ"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "duḥkhārtaḥ"
+  ],
+  "sutras": [
+   "6.1.89",
+   "1.1.51"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.89",
+   "locator": "Kāśikā on 6.1.89",
+   "quote": "दुःखेन ऋतो दुःखार्तः"
+  },
+  "confidence": "certain",
+  "notes": "Same vartika. Visarga of duḥkhena is given as the source writes it (duḥkha with visarga is inside the word).",
+  "flags": {
+   "0": [
+    "trtiya"
+   ]
+  },
+  "flags_added": [
+   "trtiya"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-062",
+  "family": "ac_ekadesa",
+  "input": [
+   "sukhena",
+   "itaḥ"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "sukhetaḥ"
+  ],
+  "sutras": [
+   "6.1.87"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.89",
+   "locator": "Kāśikā on 6.1.89",
+   "quote": "सुखेन इतः सुखेतः"
+  },
+  "confidence": "certain",
+  "notes": "COUNTER-EXAMPLE 'ṛta iti kim'."
+ },
+ {
+  "id": "ac_ekadesa-063",
+  "family": "ac_ekadesa",
+  "input": [
+   "parama",
+   "ṛtaḥ"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "paramartaḥ"
+  ],
+  "sutras": [
+   "6.1.87",
+   "1.1.51"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.89",
+   "locator": "Kāśikā on 6.1.89",
+   "quote": "परमर्तः"
+  },
+  "confidence": "probable",
+  "notes": "COUNTER-EXAMPLE 'tṛtīyeti kim': a karmadharaya, not an instrumental compound, so plain guna + raparatva."
+ },
+ {
+  "id": "ac_ekadesa-064",
+  "family": "ac_ekadesa",
+  "input": [
+   "sukhena",
+   "ṛtaḥ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "sukhenartaḥ"
+  ],
+  "sutras": [
+   "6.1.87",
+   "1.1.51"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.89",
+   "locator": "Kāśikā on 6.1.89",
+   "quote": "सुखेनर्तः"
+  },
+  "confidence": "probable",
+  "notes": "COUNTER-EXAMPLE 'samāsa iti kim': the same two words NOT compounded (boundary pada) give guna; vartika applies only inside the compound. Compare the samasa case with the same words."
+ },
+ {
+  "id": "ac_ekadesa-065",
+  "family": "ac_ekadesa",
+  "input": [
+   "pra",
+   "ṛṇam"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "prārṇam"
+  ],
+  "sutras": [
+   "6.1.89"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.89",
+   "locator": "Kāśikā on 6.1.89",
+   "quote": "प्रार्णम्"
+  },
+  "confidence": "probable",
+  "notes": "Vartika 'pravatsatarakambalavasanārṇadaśānām ṛṇe' (Kasika reads ...vasanānām ṛṇe + a separate vartika 'ṛṇadaśābhyām'; Kaumudi and the corpus vartika list read ...vasanārṇadaśānām ṛṇe). a + ṛ -> ār.",
+  "flags": {
+   "1": [
+    "stem:ṛṇa"
+   ]
+  },
+  "flags_added": [
+   "stem:ṛṇa"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-066",
+  "family": "ac_ekadesa",
+  "input": [
+   "vatsatara",
+   "ṛṇam"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "vatsatarārṇam"
+  ],
+  "sutras": [
+   "6.1.89"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.89",
+   "locator": "Kāśikā on 6.1.89",
+   "quote": "वत्सतरार्णम्"
+  },
+  "confidence": "probable",
+  "notes": "Same vartika.",
+  "flags": {
+   "1": [
+    "stem:ṛṇa"
+   ]
+  },
+  "flags_added": [
+   "stem:ṛṇa"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-067",
+  "family": "ac_ekadesa",
+  "input": [
+   "kambala",
+   "ṛṇam"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "kambalārṇam"
+  ],
+  "sutras": [
+   "6.1.89"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.89",
+   "locator": "Kāśikā on 6.1.89",
+   "quote": "कम्बलार्णम्"
+  },
+  "confidence": "probable",
+  "notes": "Same vartika.",
+  "flags": {
+   "1": [
+    "stem:ṛṇa"
+   ]
+  },
+  "flags_added": [
+   "stem:ṛṇa"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-068",
+  "family": "ac_ekadesa",
+  "input": [
+   "vasana",
+   "ṛṇam"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "vasanārṇam"
+  ],
+  "sutras": [
+   "6.1.89"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.89",
+   "locator": "Kāśikā on 6.1.89",
+   "quote": "वसनार्णम्"
+  },
+  "confidence": "probable",
+  "notes": "Same vartika.",
+  "flags": {
+   "1": [
+    "stem:ṛṇa"
+   ]
+  },
+  "flags_added": [
+   "stem:ṛṇa"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-069",
+  "family": "ac_ekadesa",
+  "input": [
+   "ṛṇa",
+   "ṛṇam"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "ṛṇārṇam"
+  ],
+  "sutras": [
+   "6.1.89"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.89",
+   "locator": "Kāśikā on 6.1.89",
+   "quote": "ऋणार्णम्"
+  },
+  "confidence": "probable",
+  "notes": "Vartika 'ṛṇadaśābhyām': a + ṛ -> ār (vrddhi with raparatva) in ṛṇa + ṛṇam -> ṛṇārṇam (a debt taken to repay a debt).",
+  "flags": {
+   "1": [
+    "stem:ṛṇa"
+   ]
+  },
+  "flags_added": [
+   "stem:ṛṇa"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-070",
+  "family": "ac_ekadesa",
+  "input": [
+   "daśa",
+   "ṛṇam"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "daśārṇam"
+  ],
+  "sutras": [
+   "6.1.89"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.89",
+   "locator": "Kāśikā on 6.1.89",
+   "quote": "दशार्णम्"
+  },
+  "confidence": "probable",
+  "notes": "Same vartika.",
+  "flags": {
+   "1": [
+    "stem:ṛṇa"
+   ]
+  },
+  "flags_added": [
+   "stem:ṛṇa"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-071",
+  "family": "ac_ekadesa",
+  "input": [
+   "ā",
+   "īkṣata"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "aikṣata"
+  ],
+  "sutras": [
+   "6.1.90"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.90",
+   "locator": "Kāśikā on 6.1.90",
+   "quote": "ऐक्षत"
+  },
+  "confidence": "probable",
+  "notes": "The first word is the augment āṭ (aḍ before an ajadi root, 6.4.72). The root īkṣ begins with a vowel. āṭ + ī -> ai (vrddhi). No flag in the closed vocabulary marks the augment.",
+  "flags": {
+   "0": [
+    "aat"
+   ]
+  },
+  "flags_added": [
+   "aat"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-072",
+  "family": "ac_ekadesa",
+  "input": [
+   "ā",
+   "ubhīt"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "aubhīt"
+  ],
+  "sutras": [
+   "6.1.90"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.90",
+   "locator": "Kāśikā on 6.1.90",
+   "quote": "औभीत्"
+  },
+  "confidence": "probable",
+  "notes": "āṭ + ubhīt (luṅ of ubh) -> aubhīt.",
+  "flags": {
+   "0": [
+    "aat"
+   ]
+  },
+  "flags_added": [
+   "aat"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-073",
+  "family": "ac_ekadesa",
+  "input": [
+   "ā",
+   "ṛdhnot"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "ārdhnot"
+  ],
+  "sutras": [
+   "6.1.90",
+   "1.1.51"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.90",
+   "locator": "Kāśikā on 6.1.90",
+   "quote": "आर्ध्नोत्"
+  },
+  "confidence": "probable",
+  "notes": "āṭ + ṛdhnot -> ārdhnot (vrddhi ā with raparatva).",
+  "flags": {
+   "0": [
+    "aat"
+   ]
+  },
+  "flags_added": [
+   "aat"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-074",
+  "family": "ac_ekadesa",
+  "input": [
+   "ā",
+   "usrīyat"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "ausrīyat"
+  ],
+  "sutras": [
+   "6.1.90"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.90",
+   "locator": "Kāśikā on 6.1.90",
+   "quote": "औस्रीयत्"
+  },
+  "confidence": "probable",
+  "notes": "Kasika: the cakara of 6.1.90 is 'adhikavidhanartha' and blocks the pararupa rules 6.1.96 (usyapadantat) and 6.1.95 (omanos ca), which would otherwise apply because the sequence 'us-'/'oM-' begins the word. The forms are the ktyac denominatives of usra and oṅkāra; spelling of the forms is Kasika's.",
+  "flags": {
+   "0": [
+    "aat"
+   ]
+  },
+  "flags_added": [
+   "aat"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-075",
+  "family": "ac_ekadesa",
+  "input": [
+   "ā",
+   "oṅkārīyat"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "auṅkārīyat"
+  ],
+  "sutras": [
+   "6.1.90"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.90",
+   "locator": "Kāśikā on 6.1.90",
+   "quote": "औङ्कारीयत्"
+  },
+  "confidence": "probable",
+  "notes": "See previous case: āṭ + oṅkārīyat -> auṅkārīyat, pararupa of 6.1.95 not applied.",
+  "flags": {
+   "0": [
+    "aat"
+   ]
+  },
+  "flags_added": [
+   "aat"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-076",
+  "family": "ac_ekadesa",
+  "input": [
+   "bahuśreyasī",
+   "ā",
+   "e"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "bahuśreyasyai"
+  ],
+  "sutras": [
+   "6.1.90",
+   "6.1.77"
+  ],
+  "derivation": [
+   {
+    "sutra": "6.1.90",
+    "after": "bahuśreyasī ai",
+    "note": "āṭ + e -> ai"
+   },
+   {
+    "sutra": "6.1.77",
+    "after": "bahuśreyasyai",
+    "note": "ī -> y before ai"
+   }
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "balamanorama",
+   "sutra": "6.1.90",
+   "locator": "Bālamanoramā on 6.1.90",
+   "quote": "बहुश्रेयसी आ ए इति स्थिते"
+  },
+  "confidence": "certain",
+  "notes": "ṅe after a nadi: āṭ + e -> ai (6.1.90), then ī + ai -> yai (yaṇ). Balamanorama: 'āṭaśceti vṛddhau yaṇādeśe ca rūpam'. He adds that savarnadirgha or 6.1.88 would also do, but 6.1.90 is used because 'nyayyatvat'.",
+  "flags": {
+   "1": [
+    "aat"
+   ],
+   "2": [
+    "sup:ṅe"
+   ]
+  },
+  "flags_added": [
+   "aat",
+   "sup:ṅe"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-077",
+  "family": "ac_ekadesa",
+  "input": [
+   "bahuśreyasī",
+   "ā",
+   "as"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "bahuśreyasyāḥ"
+  ],
+  "sutras": [
+   "6.1.90",
+   "6.1.77"
+  ],
+  "derivation": [
+   {
+    "sutra": "6.1.90",
+    "after": "bahuśreyasī ās",
+    "note": "āṭ + as -> ā"
+   },
+   {
+    "sutra": "6.1.77",
+    "after": "bahuśreyasyās",
+    "note": "ī -> y"
+   }
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "balamanorama",
+   "sutra": "6.1.90",
+   "locator": "Bālamanoramā on 6.1.90",
+   "quote": "बहुश्रेयसी आ अस् इति स्थिते"
+  },
+  "confidence": "certain",
+  "notes": "ṅas/ṅasi after a nadi: āṭ + as -> ā (vrddhi, 6.1.90), then ī + ā -> yā; visarga from s. Balamanorama notes savarnadirgha would also give ā but 6.1.90 is applied by 'nyayyatvat'.",
+  "flags": {
+   "1": [
+    "aat"
+   ],
+   "2": [
+    "sup:ṅas"
+   ]
+  },
+  "flags_added": [
+   "aat",
+   "sup:ṅas"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-078",
+  "family": "ac_ekadesa",
+  "input": [
+   "upa",
+   "ṛcchati"
+  ],
+  "boundary": "upasarga",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "dhatu:ṛch"
+   ]
+  },
+  "outputs": [
+   "upārcchati"
+  ],
+  "sutras": [
+   "6.1.91",
+   "1.1.51"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.91",
+   "locator": "Kāśikā on 6.1.91",
+   "quote": "उपार्च्छति"
+  },
+  "confidence": "probable",
+  "notes": "Avarnanta upasarga + dhatu beginning with short ṛ: vrddhi (apavada of adgunah) with raparatva."
+ },
+ {
+  "id": "ac_ekadesa-079",
+  "family": "ac_ekadesa",
+  "input": [
+   "pra",
+   "ṛcchati"
+  ],
+  "boundary": "upasarga",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "dhatu:ṛch"
+   ]
+  },
+  "outputs": [
+   "prārcchati"
+  ],
+  "sutras": [
+   "6.1.91",
+   "1.1.51"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": "6.1.91",
+   "locator": "GRETIL Laghusiddhantakaumudi text, ac-sandhi chapter (vlk tag checked against Vidyut text)",
+   "quote": "prārcchati"
+  },
+  "confidence": "probable",
+  "notes": "Laghu GRETIL text example ('prārcchati'; the line of the Sutra text has the typo 'dakārādau' for 'ṛkārādau')."
+ },
+ {
+  "id": "ac_ekadesa-080",
+  "family": "ac_ekadesa",
+  "input": [
+   "upa",
+   "ṛdhnoti"
+  ],
+  "boundary": "upasarga",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "dhatu:ṛdh"
+   ]
+  },
+  "outputs": [
+   "upārdhnoti"
+  ],
+  "sutras": [
+   "6.1.91",
+   "1.1.51"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.91",
+   "locator": "Kāśikā on 6.1.91",
+   "quote": "उपार्ध्नोति"
+  },
+  "confidence": "probable",
+  "notes": "Root ṛdh."
+ },
+ {
+  "id": "ac_ekadesa-081",
+  "family": "ac_ekadesa",
+  "input": [
+   "khaṭvā",
+   "ṛcchati"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "khaṭvarcchati"
+  ],
+  "sutras": [
+   "6.1.87",
+   "1.1.51"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.91",
+   "locator": "Kāśikā on 6.1.91",
+   "quote": "खट्वर्च्छति"
+  },
+  "confidence": "probable",
+  "notes": "COUNTER-EXAMPLE 'upasargād iti kim': khaṭvā is not an upasarga, so plain guna."
+ },
+ {
+  "id": "ac_ekadesa-082",
+  "family": "ac_ekadesa",
+  "input": [
+   "mālā",
+   "ṛcchati"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "mālarcchati"
+  ],
+  "sutras": [
+   "6.1.87",
+   "1.1.51"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.91",
+   "locator": "Kāśikā on 6.1.91",
+   "quote": "मालर्च्छति"
+  },
+  "confidence": "probable",
+  "notes": "COUNTER-EXAMPLE, same."
+ },
+ {
+  "id": "ac_ekadesa-083",
+  "family": "ac_ekadesa",
+  "input": [
+   "pra",
+   "ṛcchakaḥ"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "prarcchakaḥ"
+  ],
+  "sutras": [
+   "6.1.87",
+   "1.1.51"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.91",
+   "locator": "Kāśikā on 6.1.91",
+   "quote": "प्रर्च्छको देशः"
+  },
+  "confidence": "probable",
+  "notes": "COUNTER-EXAMPLE (Kasika): 'pragata ṛcchakā asmād deśāt prarcchako deśaḥ'. pra is not connected with a verbal action of the dhatu here, so it is not an upasarga (1.4.59 kriyayoge) and only guna applies."
+ },
+ {
+  "id": "ac_ekadesa-084",
+  "family": "ac_ekadesa",
+  "input": [
+   "upa",
+   "ṝkārīyati"
+  ],
+  "boundary": "upasarga",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "dhatu"
+   ]
+  },
+  "outputs": [
+   "uparkārīyati"
+  ],
+  "sutras": [
+   "6.1.87",
+   "1.1.51"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.91",
+   "locator": "Kāśikā on 6.1.91",
+   "quote": "उप ॠकारीयति उपर्कारीयति"
+  },
+  "confidence": "certain",
+  "notes": "COUNTER-EXAMPLE 'tapara-karaṇaṃ kim': the ṛ of 6.1.91 is tapara, so the long ṝ is not covered; without tapara, 6.1.92 would make vrddhi optional. With long ṝ only guna+raparatva gives uparkārīyati."
+ },
+ {
+  "id": "ac_ekadesa-085",
+  "family": "ac_ekadesa",
+  "input": [
+   "upa",
+   "ṛkāraḥ"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "uparkāraḥ"
+  ],
+  "sutras": [
+   "6.1.87",
+   "1.1.51"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "tattvabodhini",
+   "sutra": "6.1.91",
+   "locator": "Tattvabodhinī on 6.1.91",
+   "quote": "धातौ किम् , उपर्कारः"
+  },
+  "confidence": "probable",
+  "notes": "COUNTER-EXAMPLE 'dhatau kim': ṛkāra is a noun, not a dhatu, so 6.1.91 does not apply and guna gives uparkāraḥ. (Tattvabodhini also notes upa- is arguably not an upasarga there.)"
+ },
+ {
+  "id": "ac_ekadesa-086",
+  "family": "ac_ekadesa",
+  "input": [
+   "upa",
+   "ṛṣabhīyati"
+  ],
+  "boundary": "upasarga",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "dhatu",
+    "subanta"
+   ]
+  },
+  "outputs": [
+   "upārṣabhīyati",
+   "uparṣabhīyati"
+  ],
+  "sutras": [
+   "6.1.92",
+   "1.1.51"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.92",
+   "locator": "Kāśikā on 6.1.92",
+   "quote": "उपर्षभीयति, उपार्षभीयति"
+  },
+  "confidence": "probable",
+  "notes": "ṛṣabham ātmana icchati: a nominal verb (kyac) made from a subanta; vrddhi is optional by Apisali's view. flags: word 1 is a dhatu built on a subanta.",
+  "flags_added": [
+   "subanta"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-087",
+  "family": "ac_ekadesa",
+  "input": [
+   "upa",
+   "ḷkārīyati"
+  ],
+  "boundary": "upasarga",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "dhatu",
+    "subanta"
+   ]
+  },
+  "outputs": [
+   "upālkārīyati",
+   "upalkārīyati"
+  ],
+  "sutras": [
+   "6.1.92",
+   "1.1.51"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.92",
+   "locator": "Kāśikā on 6.1.92",
+   "quote": "उपल्कारीयति, उपाल्कारीयति"
+  },
+  "confidence": "probable",
+  "notes": "ḷ counts as ṛ by the savarnya (Kasika: 'ṛkāraḷkārayoḥ sāvarṇyavidhiḥ') so the l-vowel is covered.",
+  "flags_added": [
+   "subanta"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-088",
+  "family": "ac_ekadesa",
+  "input": [
+   "pra",
+   "ṛṣabhīyati"
+  ],
+  "boundary": "upasarga",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "dhatu",
+    "subanta"
+   ]
+  },
+  "outputs": [
+   "prārṣabhīyati",
+   "prarṣabhīyati"
+  ],
+  "sutras": [
+   "6.1.92",
+   "1.1.51"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.92",
+   "locator": "Siddhāntakaumudī on 6.1.92",
+   "quote": "प्रार्षभीयति । प्रर्षभीयति"
+  },
+  "confidence": "probable",
+  "notes": "Kaumudi example.",
+  "flags_added": [
+   "subanta"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-089",
+  "family": "ac_ekadesa",
+  "input": [
+   "go",
+   "am"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "gām"
+  ],
+  "sutras": [
+   "6.1.93"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.93",
+   "locator": "Kāśikā on 6.1.93",
+   "quote": "गां पश्य"
+  },
+  "confidence": "probable",
+  "notes": "go + am (acc. sg.): a substitutes for o and the a of am (apavada of vrddhi, 7.2.115 aco ñṇiti, since am is ṇidvat after go by 7.1.90).",
+  "flags": {
+   "1": [
+    "stem:am"
+   ]
+  },
+  "flags_added": [
+   "stem:am"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-090",
+  "family": "ac_ekadesa",
+  "input": [
+   "go",
+   "as"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "1": [
+    "stem:śas"
+   ]
+  },
+  "outputs": [
+   "gāḥ"
+  ],
+  "sutras": [
+   "6.1.93"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.93",
+   "locator": "Kāśikā on 6.1.93",
+   "quote": "गाः पश्य"
+  },
+  "confidence": "probable",
+  "notes": "go + śas (acc. pl.): ā. Input as = the s of śas (ś is it); flag stem:śas. No naḥ (6.1.103) here because the ā is not a purvasavarnadirgha."
+ },
+ {
+  "id": "ac_ekadesa-091",
+  "family": "ac_ekadesa",
+  "input": [
+   "dyo",
+   "am"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "dyām"
+  ],
+  "sutras": [
+   "6.1.93"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.93",
+   "locator": "Kāśikā on 6.1.93",
+   "quote": "द्यां पश्य"
+  },
+  "confidence": "probable",
+  "notes": "dyo (a feminine o-stem) + am.",
+  "flags": {
+   "1": [
+    "stem:am"
+   ]
+  },
+  "flags_added": [
+   "stem:am"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-092",
+  "family": "ac_ekadesa",
+  "input": [
+   "dyo",
+   "as"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "1": [
+    "stem:śas"
+   ]
+  },
+  "outputs": [
+   "dyāḥ"
+  ],
+  "sutras": [
+   "6.1.93"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.93",
+   "locator": "Kāśikā on 6.1.93",
+   "quote": "द्याः पश्य"
+  },
+  "confidence": "probable",
+  "notes": "dyo + śas."
+ },
+ {
+  "id": "ac_ekadesa-093",
+  "family": "ac_ekadesa",
+  "input": [
+   "smṛto",
+   "am"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "smṛtām"
+  ],
+  "sutras": [
+   "6.1.93"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.93",
+   "locator": "Siddhāntakaumudī on 6.1.93",
+   "quote": "स्मृताम्"
+  },
+  "confidence": "probable",
+  "notes": "Bahuvrihi (Kaumudi: uḥ śambhuḥ smṛto yena saḥ) = smṛtau (nom. smṛtauḥ, stem ends in o). Kaumudi's paradigm: smṛtau, smṛtāvau, smṛtāvaḥ, smṛtām.",
+  "flags": {
+   "1": [
+    "stem:am"
+   ]
+  },
+  "flags_added": [
+   "stem:am"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-094",
+  "family": "ac_ekadesa",
+  "input": [
+   "acino",
+   "am"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "acinavam"
+  ],
+  "sutras": [
+   "6.1.78"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.93",
+   "locator": "Kāśikā on 6.1.93",
+   "quote": "चिनवमसुनवमित्यत्र न भवति"
+  },
+  "confidence": "probable",
+  "notes": "COUNTER-EXAMPLE: 'am' here is the verb ending (mip -> am, laṅ 1sg of ci), not the Sup am. Kasika: 'amiti dvitiyaikavacanam grhyate, sasa sahacaryat, supiti cadhikarat'. So 6.1.93 does not apply; the o becomes av (6.1.78)."
+ },
+ {
+  "id": "ac_ekadesa-095",
+  "family": "ac_ekadesa",
+  "input": [
+   "asuno",
+   "am"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "asunavam"
+  ],
+  "sutras": [
+   "6.1.78"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.93",
+   "locator": "Kāśikā on 6.1.93",
+   "quote": "चिनवमसुनवमित्यत्र न भवति"
+  },
+  "confidence": "probable",
+  "notes": "COUNTER-EXAMPLE, same (root su)."
+ },
+ {
+  "id": "ac_ekadesa-096",
+  "family": "ac_ekadesa",
+  "input": [
+   "go",
+   "as"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "1": [
+    "stem:ṅas"
+   ]
+  },
+  "outputs": [
+   "goḥ"
+  ],
+  "sutras": [
+   "6.1.110"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "balamanorama",
+   "sutra": "6.1.93",
+   "locator": "Bālamanoramā on 6.1.93",
+   "quote": "गोरिति"
+  },
+  "confidence": "probable",
+  "notes": "Genitive/ablative singular from the paradigm of go in Laghu/Balamanorama: purvarupa by 6.1.110 (ṅasiṅasośca), then rutva and visarga. Flag stem:ṅas marks ṅas/ṅasi as against śas."
+ },
+ {
+  "id": "ac_ekadesa-097",
+  "family": "ac_ekadesa",
+  "input": [
+   "upa",
+   "elayati"
+  ],
+  "boundary": "upasarga",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "dhatu"
+   ]
+  },
+  "outputs": [
+   "upelayati"
+  ],
+  "sutras": [
+   "6.1.94"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.94",
+   "locator": "Kāśikā on 6.1.94",
+   "quote": "उपेलयति"
+  },
+  "confidence": "probable",
+  "notes": "Avarnanta upasarga + e-initial dhatu: pararupa e (apavada of vrddhi 6.1.88)."
+ },
+ {
+  "id": "ac_ekadesa-098",
+  "family": "ac_ekadesa",
+  "input": [
+   "pra",
+   "elayati"
+  ],
+  "boundary": "upasarga",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "dhatu"
+   ]
+  },
+  "outputs": [
+   "prelayati"
+  ],
+  "sutras": [
+   "6.1.94"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.94",
+   "locator": "Kāśikā on 6.1.94",
+   "quote": "प्रेलयति"
+  },
+  "confidence": "probable",
+  "notes": "As above."
+ },
+ {
+  "id": "ac_ekadesa-099",
+  "family": "ac_ekadesa",
+  "input": [
+   "upa",
+   "oṣati"
+  ],
+  "boundary": "upasarga",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "dhatu:uṣ"
+   ]
+  },
+  "outputs": [
+   "upoṣati"
+  ],
+  "sutras": [
+   "6.1.94"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi",
+   "sutra": "6.1.94",
+   "locator": "Laghusiddhāntakaumudī on 6.1.94",
+   "quote": "उपोषति"
+  },
+  "confidence": "probable",
+  "notes": "Root uṣ (dāhe) after guna: oṣati. Balamanorama: 'uṣa oṣatīti sthite ...' (the corpus text is garbled after that). The e/o must be at the beginning of the dhatu-form here. Flag dhatu:uṣ for root uṣ."
+ },
+ {
+  "id": "ac_ekadesa-100",
+  "family": "ac_ekadesa",
+  "input": [
+   "pra",
+   "oṣati"
+  ],
+  "boundary": "upasarga",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "dhatu:uṣ"
+   ]
+  },
+  "outputs": [
+   "proṣati"
+  ],
+  "sutras": [
+   "6.1.94"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.94",
+   "locator": "Kāśikā on 6.1.94",
+   "quote": "प्रोषति"
+  },
+  "confidence": "probable",
+  "notes": "As above."
+ },
+ {
+  "id": "ac_ekadesa-101",
+  "family": "ac_ekadesa",
+  "input": [
+   "pra",
+   "ejate"
+  ],
+  "boundary": "upasarga",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "dhatu:ej"
+   ]
+  },
+  "outputs": [
+   "prejate"
+  ],
+  "sutras": [
+   "6.1.94"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi",
+   "sutra": "6.1.94",
+   "locator": "Laghusiddhāntakaumudī on 6.1.94",
+   "quote": "प्रेजते"
+  },
+  "confidence": "probable",
+  "notes": "Root ej (ṛ-ej dīptau, ātmanepada). Balamanorama: 'ejṛ dīptau'; the ejṛ kampane is parasmaipada (prejati)."
+ },
+ {
+  "id": "ac_ekadesa-102",
+  "family": "ac_ekadesa",
+  "input": [
+   "upa",
+   "eḍakīyati"
+  ],
+  "boundary": "upasarga",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "dhatu",
+    "subanta"
+   ]
+  },
+  "outputs": [
+   "upeḍakīyati",
+   "upaiḍakīyati"
+  ],
+  "sutras": [
+   "6.1.94",
+   "6.1.92"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.94",
+   "locator": "Kāśikā on 6.1.94",
+   "quote": "उपेडकीयति, उपैडकीयति"
+  },
+  "confidence": "probable",
+  "notes": "Nominal verb (kyac) on eḍaka. Kaumudi/Balamanorama: 6.1.94 has vaa supi from 6.1.92 by vakyabheda, so pararupa is optional (with vrddhi) when the dhatu is built on a subanta, but nitya in ordinary dhatus. Kasika says 'kecid' hold this.",
+  "flags_added": [
+   "subanta"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-103",
+  "family": "ac_ekadesa",
+  "input": [
+   "upa",
+   "odanīyati"
+  ],
+  "boundary": "upasarga",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "dhatu",
+    "subanta"
+   ]
+  },
+  "outputs": [
+   "upodanīyati",
+   "upaudanīyati"
+  ],
+  "sutras": [
+   "6.1.94",
+   "6.1.92"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.94",
+   "locator": "Kāśikā on 6.1.94",
+   "quote": "उपोदनीयति, उपौदनीयति"
+  },
+  "confidence": "probable",
+  "notes": "As above with odana.",
+  "flags_added": [
+   "subanta"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-104",
+  "family": "ac_ekadesa",
+  "input": [
+   "pra",
+   "oghīyati"
+  ],
+  "boundary": "upasarga",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "dhatu",
+    "subanta"
+   ]
+  },
+  "outputs": [
+   "proghīyati",
+   "praughīyati"
+  ],
+  "sutras": [
+   "6.1.94",
+   "6.1.92"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.94",
+   "locator": "Siddhāntakaumudī on 6.1.94",
+   "quote": "प्रोघीयति । प्रौघीयति"
+  },
+  "confidence": "probable",
+  "notes": "Kaumudi example.",
+  "flags_added": [
+   "subanta"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-105",
+  "family": "ac_ekadesa",
+  "input": [
+   "śaka",
+   "andhuḥ"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "śakandhuḥ"
+  ],
+  "sutras": [
+   "6.1.94"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.94",
+   "locator": "Kāśikā on 6.1.94",
+   "quote": "शक अन्धुः शकन्धुः"
+  },
+  "confidence": "certain",
+  "notes": "Vartika 'śakandhvādiṣu pararūpaṃ vaktavyam' (apavada of savarnadirgha 6.1.101). Kasika states the split. Balamanorama: it is the ṭi (1.1.64) of the first member and the next vowel that take pararupa."
+ },
+ {
+  "id": "ac_ekadesa-106",
+  "family": "ac_ekadesa",
+  "input": [
+   "kula",
+   "aṭā"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "kulaṭā"
+  ],
+  "sutras": [
+   "6.1.94"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.94",
+   "locator": "Kāśikā on 6.1.94",
+   "quote": "कुल अटा कुलटा"
+  },
+  "confidence": "certain",
+  "notes": "Same vartika (kulāni aṭati). Without it savarnadirgha would give kulāṭā."
+ },
+ {
+  "id": "ac_ekadesa-107",
+  "family": "ac_ekadesa",
+  "input": [
+   "karka",
+   "andhuḥ"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "karkandhuḥ"
+  ],
+  "sutras": [
+   "6.1.94"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "balamanorama",
+   "sutra": "6.1.94",
+   "locator": "Bālamanoramā on 6.1.94",
+   "quote": "कर्क-अन्धुरिति स्थिते पररूपम्"
+  },
+  "confidence": "certain",
+  "notes": "Same vartika (Laghu also lists karkandhuḥ)."
+ },
+ {
+  "id": "ac_ekadesa-108",
+  "family": "ac_ekadesa",
+  "input": [
+   "manas",
+   "īṣā"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "manīṣā"
+  ],
+  "sutras": [
+   "6.1.94",
+   "1.1.64"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "balamanorama",
+   "sutra": "6.1.94",
+   "locator": "Bālamanoramā on 6.1.94",
+   "quote": "मनस-ईषेति विग्रहः"
+  },
+  "confidence": "probable",
+  "notes": "Sakandhvadi (ākṛtigaṇa): the ṭi as (1.1.64) of manas and the following ī take pararūpa ī. Balamanorama gives the splitting 'manasa-īṣā'; underlying stem manas (its final s is part of ṭi). Laghu lists manīṣā."
+ },
+ {
+  "id": "ac_ekadesa-109",
+  "family": "ac_ekadesa",
+  "input": [
+   "hala",
+   "īṣā"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "halīṣā"
+  ],
+  "sutras": [
+   "6.1.94"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "balamanorama",
+   "sutra": "6.1.94",
+   "locator": "Bālamanoramā on 6.1.94",
+   "quote": "हलस्य ईषेति विग्रहः"
+  },
+  "confidence": "certain",
+  "notes": "Sakandhvadi: pararupa ī instead of guna e."
+ },
+ {
+  "id": "ac_ekadesa-110",
+  "family": "ac_ekadesa",
+  "input": [
+   "sīman",
+   "antaḥ"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "sīmantaḥ"
+  ],
+  "sutras": [
+   "6.1.94"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.94",
+   "locator": "Kāśikā on 6.1.94",
+   "quote": "सीम्नोऽन्तः सीमन्तः"
+  },
+  "confidence": "certain",
+  "notes": "Vartika 'sīmantaḥ keśeṣu': pararupa only in the sense of a parting of hair. Kasika: 'sīmno 'ntaḥ sīmantaḥ'. The split sīman + anta (with n-final stem) is by me.",
+  "flags": {
+   "0": [
+    "keśaveśe"
+   ]
+  },
+  "flags_added": [
+   "keśaveśe"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-111",
+  "family": "ac_ekadesa",
+  "input": [
+   "sīman",
+   "antaḥ"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "sīmāntaḥ"
+  ],
+  "sutras": [
+   "6.1.101"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.94",
+   "locator": "Kāśikā on 6.1.94",
+   "quote": "अन्यत्र सीमान्तः"
+  },
+  "confidence": "certain",
+  "notes": "COUNTER-EXAMPLE: in any other sense (boundary), plain savarnadirgha: sīmāntaḥ."
+ },
+ {
+  "id": "ac_ekadesa-112",
+  "family": "ac_ekadesa",
+  "input": [
+   "sāra",
+   "aṅgaḥ"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "sāraṅgaḥ"
+  ],
+  "sutras": [
+   "6.1.94"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "balamanorama",
+   "sutra": "6.1.94",
+   "locator": "Bālamanoramā on 6.1.94",
+   "quote": "सार-अङ्ग इति स्थिते"
+  },
+  "confidence": "certain",
+  "notes": "Sakandhvadi (gana vartika 'sāraṅgaḥ paśupakṣiṇoḥ', found in Balamanorama, not in the Mahabhasya): pararupa a for the animal/bird sarañga; in other senses sārāṅgaḥ (savarnadirgha).",
+  "flags": {
+   "0": [
+    "paśupakṣiṇoḥ"
+   ]
+  },
+  "flags_added": [
+   "paśupakṣiṇoḥ"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-113",
+  "family": "ac_ekadesa",
+  "input": [
+   "iha",
+   "eva"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "iheva"
+  ],
+  "sutras": [
+   "6.1.94"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.94",
+   "locator": "Kāśikā on 6.1.94",
+   "quote": "इह एव इहेव"
+  },
+  "confidence": "certain",
+  "notes": "Vartika 'eve cāniyoge pararūpaṃ vaktavyam': eva in a non-restricting sense (anavaklpti, doubt). Kasika: iha eva -> iheva.",
+  "flags": {
+   "1": [
+    "aniyoga"
+   ]
+  },
+  "flags_added": [
+   "aniyoga"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-114",
+  "family": "ac_ekadesa",
+  "input": [
+   "adya",
+   "eva"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "adyeva"
+  ],
+  "sutras": [
+   "6.1.94"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.94",
+   "locator": "Kāśikā on 6.1.94",
+   "quote": "अद्य एव अद्येव"
+  },
+  "confidence": "certain",
+  "notes": "Same vartika.",
+  "flags": {
+   "1": [
+    "aniyoga"
+   ]
+  },
+  "flags_added": [
+   "aniyoga"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-115",
+  "family": "ac_ekadesa",
+  "input": [
+   "kva",
+   "eva"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "kveva"
+  ],
+  "sutras": [
+   "6.1.94"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.94",
+   "locator": "Siddhāntakaumudī on 6.1.94",
+   "quote": "क्वेव भोक्ष्यसे"
+  },
+  "confidence": "probable",
+  "notes": "Kaumudi: niyoga = avadharana; here eva marks doubt (anavakalpti), so pararupa.",
+  "flags": {
+   "1": [
+    "aniyoga"
+   ]
+  },
+  "flags_added": [
+   "aniyoga"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-116",
+  "family": "ac_ekadesa",
+  "input": [
+   "iha",
+   "eva"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "ihaiva"
+  ],
+  "sutras": [
+   "6.1.88"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.94",
+   "locator": "Kāśikā on 6.1.94",
+   "quote": "इहैव भव"
+  },
+  "confidence": "certain",
+  "notes": "COUNTER-EXAMPLE 'aniyoga iti kim': eva restricts (emphatic: 'be just here'), so vrddhi."
+ },
+ {
+  "id": "ac_ekadesa-117",
+  "family": "ac_ekadesa",
+  "input": [
+   "tava",
+   "eva"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "tavaiva"
+  ],
+  "sutras": [
+   "6.1.88"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.94",
+   "locator": "Siddhāntakaumudī on 6.1.94",
+   "quote": "तवैव"
+  },
+  "confidence": "certain",
+  "notes": "COUNTER-EXAMPLE (Kaumudi): 'tavaiva' = only yours, eva is restrictive, so vrddhi."
+ },
+ {
+  "id": "ac_ekadesa-118",
+  "family": "ac_ekadesa",
+  "input": [
+   "sthūla",
+   "otuḥ"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "sthūlotuḥ",
+   "sthūlautuḥ"
+  ],
+  "sutras": [
+   "6.1.94"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.94",
+   "locator": "Kāśikā on 6.1.94",
+   "quote": "स्थूल ओतुः स्थूलौतुः, स्थूलोतुः"
+  },
+  "confidence": "certain",
+  "notes": "Vartika 'otvoṣṭhayoḥ samāse vā pararūpaṃ vaktavyam': optional pararupa in a compound."
+ },
+ {
+  "id": "ac_ekadesa-119",
+  "family": "ac_ekadesa",
+  "input": [
+   "bimba",
+   "oṣṭhī"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "bimbauṣṭhī",
+   "bimboṣṭhī"
+  ],
+  "sutras": [
+   "6.1.94"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.94",
+   "locator": "Kāśikā on 6.1.94",
+   "quote": "बिम्बौष्ठी, बिम्बोष्ठी"
+  },
+  "confidence": "certain",
+  "notes": "Same vartika.",
+  "flags": {
+   "1": [
+    "stem:oṣṭha"
+   ]
+  },
+  "flags_added": [
+   "stem:oṣṭha"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-120",
+  "family": "ac_ekadesa",
+  "input": [
+   "devadatta",
+   "oṣṭham"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "sambuddhi"
+   ]
+  },
+  "outputs": [
+   "devadattauṣṭham"
+  ],
+  "sutras": [
+   "6.1.88"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.94",
+   "locator": "Kāśikā on 6.1.94",
+   "quote": "तिष्ठ देवदत्तौष्ठं पश्य"
+  },
+  "confidence": "probable",
+  "notes": "COUNTER-EXAMPLE 'samāsa iti kim': not a compound, so nitya vrddhi, no option. devadatta is a vocative here."
+ },
+ {
+  "id": "ac_ekadesa-121",
+  "family": "ac_ekadesa",
+  "input": [
+   "tvā",
+   "eman"
+  ],
+  "boundary": "pada",
+  "veda": true,
+  "outputs": [
+   "tveman"
+  ],
+  "sutras": [
+   "6.1.94"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.94",
+   "locator": "Kāśikā on 6.1.94",
+   "quote": "अपां त्वा एमन्"
+  },
+  "confidence": "certain",
+  "notes": "Vartika 'emannādiṣu chandasi pararūpam' (Vedic). Kasika: apāṃ tvā eman -> apāṃ tveman."
+ },
+ {
+  "id": "ac_ekadesa-122",
+  "family": "ac_ekadesa",
+  "input": [
+   "tvā",
+   "odman"
+  ],
+  "boundary": "pada",
+  "veda": true,
+  "outputs": [
+   "tvodman"
+  ],
+  "sutras": [
+   "6.1.94"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.94",
+   "locator": "Kāśikā on 6.1.94",
+   "quote": "अपां त्वा ओद्मन्"
+  },
+  "confidence": "certain",
+  "notes": "Same vartika: apāṃ tvā odman -> tvodman."
+ },
+ {
+  "id": "ac_ekadesa-123",
+  "family": "ac_ekadesa",
+  "input": [
+   "kā",
+   "om"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "kom"
+  ],
+  "sutras": [
+   "6.1.95"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.95",
+   "locator": "Kāśikā on 6.1.95",
+   "quote": "का ओमित्यवोचत् कोमित्यवोचत्"
+  },
+  "confidence": "certain",
+  "notes": "a + om -> pararupa o (apavada of vrddhi).",
+  "flags": {
+   "1": [
+    "nipata"
+   ]
+  },
+  "flags_added": [
+   "nipata"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-124",
+  "family": "ac_ekadesa",
+  "input": [
+   "adya",
+   "oḍhā"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "1": [
+    "ang"
+   ]
+  },
+  "outputs": [
+   "adyoḍhā"
+  ],
+  "sutras": [
+   "6.1.95"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.95",
+   "locator": "Kāśikā on 6.1.95",
+   "quote": "अद्य ओढा अद्योढा"
+  },
+  "confidence": "certain",
+  "notes": "oḍhā = a-N + ūḍhā (guna o); the e/o that stands as the ekadesa of a-N is treated as a-N (6.1.85 adivat), so pararupa applies, not vrddhi."
+ },
+ {
+  "id": "ac_ekadesa-125",
+  "family": "ac_ekadesa",
+  "input": [
+   "kadā",
+   "oḍhā"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "1": [
+    "ang"
+   ]
+  },
+  "outputs": [
+   "kadoḍhā"
+  ],
+  "sutras": [
+   "6.1.95"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.95",
+   "locator": "Kāśikā on 6.1.95",
+   "quote": "कदा ओढा कदोढा"
+  },
+  "confidence": "certain",
+  "notes": "Same."
+ },
+ {
+  "id": "ac_ekadesa-126",
+  "family": "ac_ekadesa",
+  "input": [
+   "tadā",
+   "oḍhā"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "1": [
+    "ang"
+   ]
+  },
+  "outputs": [
+   "tadoḍhā"
+  ],
+  "sutras": [
+   "6.1.95"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.95",
+   "locator": "Kāśikā on 6.1.95",
+   "quote": "तदा ओढा तदोढा"
+  },
+  "confidence": "certain",
+  "notes": "Same."
+ },
+ {
+  "id": "ac_ekadesa-127",
+  "family": "ac_ekadesa",
+  "input": [
+   "adya",
+   "arśyāt"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "1": [
+    "ang"
+   ]
+  },
+  "outputs": [
+   "adyarśyāt"
+  ],
+  "sutras": [
+   "6.1.95"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.95",
+   "locator": "Kāśikā on 6.1.95",
+   "quote": "अद्य अर्श्यात् अद्यर्श्यादिति"
+  },
+  "confidence": "certain",
+  "notes": "6.1.95 also displaces savarnadirgha: adya + arśyāt (= ā-N + ṛśyāt, guna ar, which counts as a-N) -> adyarśyāt, not *adyārśyāt (Kasika: akah savarne dirghatvam badhate)."
+ },
+ {
+  "id": "ac_ekadesa-128",
+  "family": "ac_ekadesa",
+  "input": [
+   "śivāya",
+   "oṃ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "śivāyoṃ"
+  ],
+  "sutras": [
+   "6.1.95"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.95",
+   "locator": "Siddhāntakaumudī on 6.1.95",
+   "quote": "शिवायों नमः"
+  },
+  "confidence": "probable",
+  "notes": "Kaumudi/Laghu. Pararupa o; the result is śivāyoṃ namaḥ. (GRETIL prints 'śivāyoṃṃ' with a doubled dot.)",
+  "flags": {
+   "1": [
+    "nipata"
+   ]
+  },
+  "flags_added": [
+   "nipata"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-129",
+  "family": "ac_ekadesa",
+  "input": [
+   "śiva",
+   "ehi"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "1": [
+    "ang"
+   ]
+  },
+  "outputs": [
+   "śivehi"
+  ],
+  "sutras": [
+   "6.1.85",
+   "6.1.95"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.95",
+   "locator": "Siddhāntakaumudī on 6.1.95",
+   "quote": "शिव एहि । शिवेहि"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi. ehi = a-N + ihi (a + i -> e by 6.1.87). The Laghu lists 'śivehi' as the example of 6.1.85 (vlk_41: 'yo 'yamekādeśaḥ sa pūrvasyāntavatparasyādivat / śivehi'): because that e counts as the beginning of the word ehi, i.e. as a-N (adivat), 6.1.95 (a-N) applies to siva + ehi and gives pararupa, not vrddhi (siva+ehi -> *sivaihi). Balamanorama on 6.1.95 states that the a-N wording exists to block vrddhi after guna made 'siva-ehi'; 'dhatupasargayoh karyam antarangam'."
+ },
+ {
+  "id": "ac_ekadesa-130",
+  "family": "ac_ekadesa",
+  "input": [
+   "bhindyā",
+   "us"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "bhindyuḥ"
+  ],
+  "sutras": [
+   "6.1.96"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.96",
+   "locator": "Kāśikā on 6.1.96",
+   "quote": "भिन्द्या उस् भिन्द्युः"
+  },
+  "confidence": "certain",
+  "notes": "Optative (yāsuṭ) + jus (us): the final a of the yās sequence is not pada-final; pararupa u."
+ },
+ {
+  "id": "ac_ekadesa-131",
+  "family": "ac_ekadesa",
+  "input": [
+   "chindyā",
+   "us"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "chindyuḥ"
+  ],
+  "sutras": [
+   "6.1.96"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.96",
+   "locator": "Kāśikā on 6.1.96",
+   "quote": "छिन्द्या उस् छिन्द्युः"
+  },
+  "confidence": "certain",
+  "notes": "Same."
+ },
+ {
+  "id": "ac_ekadesa-132",
+  "family": "ac_ekadesa",
+  "input": [
+   "adā",
+   "us"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "aduḥ"
+  ],
+  "sutras": [
+   "6.1.96"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.96",
+   "locator": "Kāśikā on 6.1.96",
+   "quote": "अदा उस् अदुः"
+  },
+  "confidence": "certain",
+  "notes": "Aorist of dā/da."
+ },
+ {
+  "id": "ac_ekadesa-133",
+  "family": "ac_ekadesa",
+  "input": [
+   "ayā",
+   "us"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "ayuḥ"
+  ],
+  "sutras": [
+   "6.1.96"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.96",
+   "locator": "Kāśikā on 6.1.96",
+   "quote": "अया उस् अयुः"
+  },
+  "confidence": "certain",
+  "notes": "Aorist/imperf of ā."
+ },
+ {
+  "id": "ac_ekadesa-134",
+  "family": "ac_ekadesa",
+  "input": [
+   "apā",
+   "us"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "apuḥ"
+  ],
+  "sutras": [
+   "6.1.96"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi",
+   "sutra": "6.1.96",
+   "locator": "Laghusiddhāntakaumudī on 6.1.96",
+   "quote": "अपुः। अपास्यत्"
+  },
+  "confidence": "probable",
+  "notes": "Laghu: apuḥ = aorist of pā + jus (a-pā-us)."
+ },
+ {
+  "id": "ac_ekadesa-135",
+  "family": "ac_ekadesa",
+  "input": [
+   "kā",
+   "usrā"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "kosrā"
+  ],
+  "sutras": [
+   "6.1.87"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.96",
+   "locator": "Kāśikā on 6.1.96",
+   "quote": "का उस्रा कोस्रा"
+  },
+  "confidence": "certain",
+  "notes": "COUNTER-EXAMPLE 'apadantad iti kim': kā is pada-final so pararupa is blocked and plain guna gives kosrā."
+ },
+ {
+  "id": "ac_ekadesa-136",
+  "family": "ac_ekadesa",
+  "input": [
+   "kā",
+   "uṣitā"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "koṣitā"
+  ],
+  "sutras": [
+   "6.1.87"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.96",
+   "locator": "Kāśikā on 6.1.96",
+   "quote": "का उषिता कोषिता"
+  },
+  "confidence": "certain",
+  "notes": "COUNTER-EXAMPLE, same."
+ },
+ {
+  "id": "ac_ekadesa-137",
+  "family": "ac_ekadesa",
+  "input": [
+   "cakṛ",
+   "us"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "cakruḥ"
+  ],
+  "sutras": [
+   "6.1.77"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.96",
+   "locator": "Kāśikā on 6.1.96",
+   "quote": "चक्रुः। अबिभयुः"
+  },
+  "confidence": "probable",
+  "notes": "COUNTER-EXAMPLE 'ād ity eva': the last vowel of cakṛ is ṛ, not an avarna, so pararupa does not apply; ṛ becomes r (yaṇ)."
+ },
+ {
+  "id": "ac_ekadesa-138",
+  "family": "ac_ekadesa",
+  "input": [
+   "paca",
+   "anti"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "pacanti"
+  ],
+  "sutras": [
+   "6.1.97"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.97",
+   "locator": "Kāśikā on 6.1.97",
+   "quote": "पचन्ति। यजन्ति"
+  },
+  "confidence": "probable",
+  "notes": "a of the śap + a of anti (a is a guna letter, 1.1.2): pararupa (apavada of savarnadirgha)."
+ },
+ {
+  "id": "ac_ekadesa-139",
+  "family": "ac_ekadesa",
+  "input": [
+   "yaja",
+   "anti"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "yajanti"
+  ],
+  "sutras": [
+   "6.1.97"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.97",
+   "locator": "Kāśikā on 6.1.97",
+   "quote": "पचन्ति। यजन्ति"
+  },
+  "confidence": "probable",
+  "notes": "Same."
+ },
+ {
+  "id": "ac_ekadesa-140",
+  "family": "ac_ekadesa",
+  "input": [
+   "paca",
+   "e"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "pace"
+  ],
+  "sutras": [
+   "6.1.97"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.97",
+   "locator": "Kāśikā on 6.1.97",
+   "quote": "पचे,यज इत्यत्र"
+  },
+  "confidence": "probable",
+  "notes": "Kasika: 'pace yaje ityatra vrddhireci iti vrddhih prapnoti' - 6.1.97 displaces vrddhi (6.1.88) here: a + e (guna) -> pararupa e."
+ },
+ {
+  "id": "ac_ekadesa-141",
+  "family": "ac_ekadesa",
+  "input": [
+   "yaja",
+   "e"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "yaje"
+  ],
+  "sutras": [
+   "6.1.97"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.97",
+   "locator": "Kāśikā on 6.1.97",
+   "quote": "पचे,यज इत्यत्र"
+  },
+  "confidence": "probable",
+  "notes": "Same."
+ },
+ {
+  "id": "ac_ekadesa-142",
+  "family": "ac_ekadesa",
+  "input": [
+   "yā",
+   "anti"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "yānti"
+  ],
+  "sutras": [
+   "6.1.101"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.97",
+   "locator": "Kāśikā on 6.1.97",
+   "quote": "यान्ति। वान्ति"
+  },
+  "confidence": "probable",
+  "notes": "COUNTER-EXAMPLE 'ata iti kim': ā is long, so pararupa does not apply; savarnadirgha gives yānti."
+ },
+ {
+  "id": "ac_ekadesa-143",
+  "family": "ac_ekadesa",
+  "input": [
+   "vā",
+   "anti"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "vānti"
+  ],
+  "sutras": [
+   "6.1.101"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.97",
+   "locator": "Kāśikā on 6.1.97",
+   "quote": "यान्ति। वान्ति"
+  },
+  "confidence": "probable",
+  "notes": "Same."
+ },
+ {
+  "id": "ac_ekadesa-144",
+  "family": "ac_ekadesa",
+  "input": [
+   "apaca",
+   "i"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "apace"
+  ],
+  "sutras": [
+   "6.1.87"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.97",
+   "locator": "Kāśikā on 6.1.97",
+   "quote": "अपचे। अयजे"
+  },
+  "confidence": "probable",
+  "notes": "COUNTER-EXAMPLE 'guna iti kim': i is not a guna vowel, so ordinary guna (a+i -> e) and not pararupa."
+ },
+ {
+  "id": "ac_ekadesa-145",
+  "family": "ac_ekadesa",
+  "input": [
+   "ayaja",
+   "i"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "ayaje"
+  ],
+  "sutras": [
+   "6.1.87"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.97",
+   "locator": "Kāśikā on 6.1.97",
+   "quote": "अपचे। अयजे"
+  },
+  "confidence": "probable",
+  "notes": "Same."
+ },
+ {
+  "id": "ac_ekadesa-146",
+  "family": "ac_ekadesa",
+  "input": [
+   "daṇḍa",
+   "agram"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "daṇḍāgram"
+  ],
+  "sutras": [
+   "6.1.101"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.97",
+   "locator": "Kāśikā on 6.1.97",
+   "quote": "दण्डाग्रम्। यूपाग्रम्"
+  },
+  "confidence": "probable",
+  "notes": "COUNTER-EXAMPLE 'apadantad ityeva': daṇḍa is pada-final, so pararupa does not apply; savarnadirgha gives daṇḍāgram. Same word under 6.1.101."
+ },
+ {
+  "id": "ac_ekadesa-147",
+  "family": "ac_ekadesa",
+  "input": [
+   "yūpa",
+   "agram"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "yūpāgram"
+  ],
+  "sutras": [
+   "6.1.101"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.97",
+   "locator": "Kāśikā on 6.1.97",
+   "quote": "दण्डाग्रम्। यूपाग्रम्"
+  },
+  "confidence": "probable",
+  "notes": "COUNTER-EXAMPLE, same."
+ },
+ {
+  "id": "ac_ekadesa-148",
+  "family": "ac_ekadesa",
+  "input": [
+   "rāma",
+   "as"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "1": [
+    "stem:jas"
+   ]
+  },
+  "outputs": [
+   "rāmāḥ"
+  ],
+  "sutras": [
+   "6.1.102"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.97",
+   "locator": "Siddhāntakaumudī on 6.1.97",
+   "quote": "परत्वात्पूर्वसवर्णदीर्घः"
+  },
+  "confidence": "probable",
+  "notes": "Kaumudi: 6.1.97 is prapta (rama + as: a + a guna letter) but 6.1.102 (prathamayoh purvasavarnah) wins by paratva; 6.1.97 (purastad apavada) only displaces 6.1.101, not 6.1.102. Underlying s of jas; visarga in output. Flag stem:jas."
+ },
+ {
+  "id": "ac_ekadesa-149",
+  "family": "ac_ekadesa",
+  "input": [
+   "paṭat",
+   "iti"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "paṭiti"
+  ],
+  "sutras": [
+   "6.1.98"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.98",
+   "locator": "Kāśikā on 6.1.98",
+   "quote": "पटत् इति पटिति"
+  },
+  "confidence": "certain",
+  "notes": "at + i of iti -> i (pararupa). The first word is an avyaktanukarana (imitation of a sound). No flag in the closed vocabulary marks avyaktanukarana; nipata is the nearest but it is not one.",
+  "flags": {
+   "0": [
+    "avyakta"
+   ]
+  },
+  "flags_added": [
+   "avyakta"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-150",
+  "family": "ac_ekadesa",
+  "input": [
+   "ghaṭat",
+   "iti"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "ghaṭiti"
+  ],
+  "sutras": [
+   "6.1.98"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.98",
+   "locator": "Kāśikā on 6.1.98",
+   "quote": "घटत् इति घटिति"
+  },
+  "confidence": "certain",
+  "notes": "Same.",
+  "flags": {
+   "0": [
+    "avyakta"
+   ]
+  },
+  "flags_added": [
+   "avyakta"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-151",
+  "family": "ac_ekadesa",
+  "input": [
+   "jhaṭat",
+   "iti"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "jhaṭiti"
+  ],
+  "sutras": [
+   "6.1.98"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.98",
+   "locator": "Kāśikā on 6.1.98",
+   "quote": "झटत् इति झटिति"
+  },
+  "confidence": "certain",
+  "notes": "Same.",
+  "flags": {
+   "0": [
+    "avyakta"
+   ]
+  },
+  "flags_added": [
+   "avyakta"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-152",
+  "family": "ac_ekadesa",
+  "input": [
+   "chamat",
+   "iti"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "chamiti"
+  ],
+  "sutras": [
+   "6.1.98"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.98",
+   "locator": "Kāśikā on 6.1.98",
+   "quote": "छमत् इति छमिति"
+  },
+  "confidence": "certain",
+  "notes": "Same.",
+  "flags": {
+   "0": [
+    "avyakta"
+   ]
+  },
+  "flags_added": [
+   "avyakta"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-153",
+  "family": "ac_ekadesa",
+  "input": [
+   "jagat",
+   "iti"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "jagaditi"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.98",
+   "locator": "Kāśikā on 6.1.98",
+   "quote": "जगत् इति जगदिति"
+  },
+  "confidence": "certain",
+  "notes": "COUNTER-EXAMPLE 'avyaktanukaranasyeti kim': jagat is an ordinary word, so no pararupa; only the ordinary final consonant change t -> d (jhalam jaśo 'nte)."
+ },
+ {
+  "id": "ac_ekadesa-154",
+  "family": "ac_ekadesa",
+  "input": [
+   "paṭat",
+   "atra"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "paṭadatra"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.98",
+   "locator": "Kāśikā on 6.1.98",
+   "quote": "पटत् अत्र पटदत्र"
+  },
+  "confidence": "certain",
+  "notes": "COUNTER-EXAMPLE 'itav iti kim': atra is not iti."
+ },
+ {
+  "id": "ac_ekadesa-155",
+  "family": "ac_ekadesa",
+  "input": [
+   "śrat",
+   "iti"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "śraditi"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.98",
+   "locator": "Kāśikā on 6.1.98",
+   "quote": "श्रत् इति श्रदिति"
+  },
+  "confidence": "certain",
+  "notes": "COUNTER-EXAMPLE (vartika 'anekāca iti vaktavyam', Kaumudi 'ekāco na'): a monosyllabic imitation has no pararupa.",
+  "flags": {
+   "0": [
+    "avyakta"
+   ]
+  },
+  "flags_added": [
+   "avyakta"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-156",
+  "family": "ac_ekadesa",
+  "input": [
+   "maraṭ",
+   "iti"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "maraḍiti"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.98",
+   "locator": "Kāśikā on 6.1.98",
+   "quote": "मरट् इति मरडिति"
+  },
+  "confidence": "certain",
+  "notes": "COUNTER-EXAMPLE 'ata iti kim': the imitation ends in ṭ (a-ṭ), not in 'at' with t, so the sthānin of 6.1.98 is absent; only the final consonant change ṭ -> ḍ (8.2.39).",
+  "flags": {
+   "0": [
+    "avyakta"
+   ]
+  },
+  "flags_added": [
+   "avyakta"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-157",
+  "family": "ac_ekadesa",
+  "input": [
+   "paṭat",
+   "paṭat",
+   "iti"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "paṭatpaṭaditi",
+   "paṭatpaṭeti"
+  ],
+  "sutras": [
+   "6.1.99"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.99",
+   "locator": "Kāśikā on 6.1.99",
+   "quote": "पटत्पटदिति, पटत्पटेति करोति"
+  },
+  "confidence": "certain",
+  "notes": "Repeated avyaktanukarana (amredita) + iti: the a of the second paṭat is never replaced (nāmreḍitasya), the final t is optionally replaced together with i by pararupa (a + i then gives e by guna: paṭeti) or not (t -> d before the vowel: paṭaditi). The repetition itself is 8.1.4 (nityavipsayoh). In the alternative sense of imitating the whole complex 'paṭatpaṭat' the ordinary 6.1.98 applies and gives paṭatpaṭiti.",
+  "flags": {
+   "0": [
+    "avyakta"
+   ],
+   "1": [
+    "avyakta",
+    "amredita"
+   ]
+  },
+  "flags_added": [
+   "amredita",
+   "avyakta"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-158",
+  "family": "ac_ekadesa",
+  "input": [
+   "paṭatpaṭat",
+   "iti"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "paṭatpaṭiti"
+  ],
+  "sutras": [
+   "6.1.98"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.99",
+   "locator": "Kāśikā on 6.1.99",
+   "quote": "पटत्पटिति करोति"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: 'yada tu samudayanukaranam tada bhavatyeva purvena pararupam': when the whole repeated form is one imitation, 6.1.98 applies.",
+  "flags": {
+   "0": [
+    "avyakta"
+   ]
+  },
+  "flags_added": [
+   "avyakta"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-159",
+  "family": "ac_ekadesa",
+  "input": [
+   "paṭat",
+   "paṭā"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "paṭapaṭā"
+  ],
+  "sutras": [
+   "6.1.100"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.100",
+   "locator": "Kāśikā on 6.1.100",
+   "quote": "पटपटा करोति"
+  },
+  "confidence": "probable",
+  "notes": "Kasika: the amredita followed by ḍāc: the final t of the earlier avyaktanukarana and the first sound of the second element take pararupa (nityam), giving paṭa-paṭā. The dvitva (8.1.12 vartika 'ḍāci bahulaṃ dve') applies before the ṭi-lopa. Split by me; the input paṭā is the ḍāc form of the second element.",
+  "flags": {
+   "0": [
+    "avyakta"
+   ],
+   "1": [
+    "amredita",
+    "dac"
+   ]
+  },
+  "flags_added": [
+   "amredita",
+   "avyakta",
+   "dac"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-160",
+  "family": "ac_ekadesa",
+  "input": [
+   "damat",
+   "damā"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "damadamā"
+  ],
+  "sutras": [
+   "6.1.100"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.100",
+   "locator": "Kāśikā on 6.1.100",
+   "quote": "दमदमा करोति"
+  },
+  "confidence": "probable",
+  "notes": "Same as paṭapaṭā. Kasika prints damadamā; the earlier member is written damat here as the imitation base.",
+  "flags": {
+   "0": [
+    "avyakta"
+   ],
+   "1": [
+    "amredita",
+    "dac"
+   ]
+  },
+  "flags_added": [
+   "amredita",
+   "avyakta",
+   "dac"
+  ]
+ },
+ {
+  "id": "ac_ekadesa-161",
+  "family": "ac_ekadesa",
+  "input": [
+   "dadhi",
+   "indraḥ"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "dadhīndraḥ"
+  ],
+  "sutras": [
+   "6.1.101"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.101",
+   "locator": "Kāśikā on 6.1.101",
+   "quote": "दधीन्द्रः"
+  },
+  "confidence": "probable",
+  "notes": "i + i -> ī."
+ },
+ {
+  "id": "ac_ekadesa-162",
+  "family": "ac_ekadesa",
+  "input": [
+   "madhu",
+   "udake"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "madhūdake"
+  ],
+  "sutras": [
+   "6.1.101"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.101",
+   "locator": "Kāśikā on 6.1.101",
+   "quote": "मधूदके"
+  },
+  "confidence": "probable",
+  "notes": "u + u -> ū."
+ },
+ {
+  "id": "ac_ekadesa-163",
+  "family": "ac_ekadesa",
+  "input": [
+   "daitya",
+   "ariḥ"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "daityāriḥ"
+  ],
+  "sutras": [
+   "6.1.101"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi",
+   "sutra": "6.1.101",
+   "locator": "Laghusiddhāntakaumudī on 6.1.101",
+   "quote": "दैत्यारिः। श्रीशः। विष्णूदयः"
+  },
+  "confidence": "probable",
+  "notes": "Laghu (Devanagari). The GRETIL Laghu text prints 'daityāraḥ / śrīśiḥ', a transliteration error."
+ },
+ {
+  "id": "ac_ekadesa-164",
+  "family": "ac_ekadesa",
+  "input": [
+   "śrī",
+   "īśaḥ"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "śrīśaḥ"
+  ],
+  "sutras": [
+   "6.1.101"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi",
+   "sutra": "6.1.101",
+   "locator": "Laghusiddhāntakaumudī on 6.1.101",
+   "quote": "दैत्यारिः। श्रीशः। विष्णूदयः"
+  },
+  "confidence": "probable",
+  "notes": "ī + ī -> ī."
+ },
+ {
+  "id": "ac_ekadesa-165",
+  "family": "ac_ekadesa",
+  "input": [
+   "viṣṇu",
+   "udayaḥ"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "viṣṇūdayaḥ"
+  ],
+  "sutras": [
+   "6.1.101"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi",
+   "sutra": "6.1.101",
+   "locator": "Laghusiddhāntakaumudī on 6.1.101",
+   "quote": "दैत्यारिः। श्रीशः। विष्णूदयः"
+  },
+  "confidence": "probable",
+  "notes": "u + u -> ū."
+ },
+ {
+  "id": "ac_ekadesa-166",
+  "family": "ac_ekadesa",
+  "input": [
+   "agne",
+   "e"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "agnaye"
+  ],
+  "sutras": [
+   "6.1.78"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.101",
+   "locator": "Kāśikā on 6.1.101",
+   "quote": "अक इति किम् ? अग्नये"
+  },
+  "confidence": "probable",
+  "notes": "COUNTER-EXAMPLE 'akah kim': e + e are savarna but e is not an ak, so no dirgha; the e becomes ay (6.1.78). Input is the guna-ed stem agne + the ending e of ṅe; my reading."
+ },
+ {
+  "id": "ac_ekadesa-167",
+  "family": "ac_ekadesa",
+  "input": [
+   "dadhi",
+   "atra"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "dadhyatra"
+  ],
+  "sutras": [
+   "6.1.77"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.101",
+   "locator": "Kāśikā on 6.1.101",
+   "quote": "सवर्ण इति किम् ? दध्यत्र"
+  },
+  "confidence": "certain",
+  "notes": "COUNTER-EXAMPLE 'savarna iti kim': i + a are not savarna, so yaṇ. Kasika cites the same word under 6.1.109 ('eṅ iti kim') to show that i is not an eṅ."
+ },
+ {
+  "id": "ac_ekadesa-168",
+  "family": "ac_ekadesa",
+  "input": [
+   "kumārī",
+   "śete"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "kumārīśete"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.101",
+   "locator": "Kāśikā on 6.1.101",
+   "quote": "अचीत्येव — कुमारी शेते"
+  },
+  "confidence": "certain",
+  "notes": "COUNTER-EXAMPLE (Kasika: 'acīty eva — kumārī śete'): ī and ś are homorganic but ś is not an ac (Kasika: 'savarṇatvam īkāraśakārayor apratiṣiddham', the sāvarṇya of long ī and ś is not prevented by 1.1.10), so 'aci' is needed. No sandhi."
+ },
+ {
+  "id": "ac_ekadesa-169",
+  "family": "ac_ekadesa",
+  "input": [
+   "hotṛ",
+   "ṛkāraḥ"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "hotṛkāraḥ",
+   "hotṝkāraḥ"
+  ],
+  "sutras": [
+   "6.1.101"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.101",
+   "locator": "Siddhāntakaumudī on 6.1.101",
+   "quote": "होतृकारः । होतॄकारः"
+  },
+  "confidence": "certain",
+  "notes": "Vartika 'ṛti savarṇe ṛ vā': optional two-more (dvimātra) ṛ with a double r in the middle (Kaumudi), otherwise ordinary dirgha ṝ. Laghu lists hotṝkāraḥ only."
+ },
+ {
+  "id": "ac_ekadesa-170",
+  "family": "ac_ekadesa",
+  "input": [
+   "hotṛ",
+   "ḷkāraḥ"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "hotḷkāraḥ",
+   "hotṝkāraḥ"
+  ],
+  "sutras": [
+   "6.1.101"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.101",
+   "locator": "Siddhāntakaumudī on 6.1.101",
+   "quote": "होत्ऌकारः । होतॄकारः"
+  },
+  "confidence": "certain",
+  "notes": "Vartika 'ḷti savarṇe ḷ vā': a special double-l vowel or, in the other option, ṝ by savarnya (ḷ has no long)."
+ },
+ {
+  "id": "ac_ekadesa-171",
+  "family": "ac_ekadesa",
+  "input": [
+   "vṛkṣa",
+   "as"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "1": [
+    "stem:jas"
+   ]
+  },
+  "outputs": [
+   "vṛkṣāḥ"
+  ],
+  "sutras": [
+   "6.1.102"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.102",
+   "locator": "Kāśikā on 6.1.102",
+   "quote": "वृक्षाः। प्लक्षाः"
+  },
+  "confidence": "probable",
+  "notes": "a + a of nominative plural (jas): purvasavarnadirgha ā. Split by me; input 'as' = s of jas. Flag stem:jas. 6.1.97 (pararupa) does not apply here (purastadapavada)."
+ },
+ {
+  "id": "ac_ekadesa-172",
+  "family": "ac_ekadesa",
+  "input": [
+   "plakṣa",
+   "as"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "1": [
+    "stem:jas"
+   ]
+  },
+  "outputs": [
+   "plakṣāḥ"
+  ],
+  "sutras": [
+   "6.1.102"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.102",
+   "locator": "Kāśikā on 6.1.102",
+   "quote": "वृक्षाः। प्लक्षाः"
+  },
+  "confidence": "probable",
+  "notes": "Same."
+ },
+ {
+  "id": "ac_ekadesa-173",
+  "family": "ac_ekadesa",
+  "input": [
+   "agni",
+   "au"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "agnī"
+  ],
+  "sutras": [
+   "6.1.102"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.102",
+   "locator": "Kāśikā on 6.1.102",
+   "quote": "अग्नी। वायू"
+  },
+  "confidence": "probable",
+  "notes": "Dual nom./acc. of agni: i + au -> ī. 6.1.102 makes the substitute the PURVA-savarna long vowel even though au is not savarna to i (Kasika: 'agnī ityatra pakṣe parasavarṇo mā bhūt' explains why purva is stated). Nādici (6.1.104) does not block it because i is not an avarna (Kasika 6.1.104: 'āditi kim? agnī'). Split by me."
+ },
+ {
+  "id": "ac_ekadesa-174",
+  "family": "ac_ekadesa",
+  "input": [
+   "vṛkṣa",
+   "śas"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "1": [
+    "stem:śas"
+   ]
+  },
+  "outputs": [
+   "vṛkṣān"
+  ],
+  "sutras": [
+   "6.1.102",
+   "6.1.103"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.102",
+   "locator": "Kāśikā on 6.1.102",
+   "quote": "वृक्षान्। प्लक्षान्"
+  },
+  "confidence": "probable",
+  "notes": "Acc. pl.: a + a (s of śas) -> ā, then the s becomes n (6.1.103) because the ā is a purvasavarnadirgha of a masculine. Input as = s of śas; flag stem:śas."
+ },
+ {
+  "id": "ac_ekadesa-175",
+  "family": "ac_ekadesa",
+  "input": [
+   "vṛkṣa",
+   "s"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "vṛkṣaḥ"
+  ],
+  "sutras": [],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.102",
+   "locator": "Kāśikā on 6.1.102",
+   "quote": "अचीत्येव — वृक्षः"
+  },
+  "confidence": "probable",
+  "notes": "COUNTER-EXAMPLE (Kasika: 'acīty eva — vṛkṣaḥ'): the s of su is not an ac; no ekādeśa."
+ },
+ {
+  "id": "ac_ekadesa-176",
+  "family": "ac_ekadesa",
+  "input": [
+   "nau",
+   "au"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "nāvau"
+  ],
+  "sutras": [
+   "6.1.78"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.102",
+   "locator": "Kāśikā on 6.1.102",
+   "quote": "अक इत्येव — नावौ"
+  },
+  "confidence": "probable",
+  "notes": "COUNTER-EXAMPLE 'akah kim': o is not an ak (guna letter), so no purvasavarnadirgha; o + au -> āv (6.1.78)."
+ },
+ {
+  "id": "ac_ekadesa-177",
+  "family": "ac_ekadesa",
+  "input": [
+   "vṛkṣa",
+   "i"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "vṛkṣe"
+  ],
+  "sutras": [
+   "6.1.87"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "tattvabodhini",
+   "sutra": "6.1.102",
+   "locator": "Tattvabodhinī on 6.1.102",
+   "quote": "प्रथमयोः किम् । वृक्षे, प्लक्षे"
+  },
+  "confidence": "probable",
+  "notes": "COUNTER-EXAMPLE 'prathamayoh kim': the ending is the locative ṅi (i), not nominative/accusative, so guna e, not purvasavarna."
+ },
+ {
+  "id": "ac_ekadesa-178",
+  "family": "ac_ekadesa",
+  "input": [
+   "agni",
+   "as"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "1": [
+    "stem:śas"
+   ]
+  },
+  "outputs": [
+   "agnīn"
+  ],
+  "sutras": [
+   "6.1.102",
+   "6.1.103"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.103",
+   "locator": "Kāśikā on 6.1.103",
+   "quote": "अग्नीन्"
+  },
+  "confidence": "probable",
+  "notes": "Acc. pl. masculine: i + i (of s of śas): ī, then s -> n."
+ },
+ {
+  "id": "ac_ekadesa-179",
+  "family": "ac_ekadesa",
+  "input": [
+   "vāyu",
+   "as"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "1": [
+    "stem:śas"
+   ]
+  },
+  "outputs": [
+   "vāyūn"
+  ],
+  "sutras": [
+   "6.1.102",
+   "6.1.103"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.103",
+   "locator": "Kāśikā on 6.1.103",
+   "quote": "वायून्"
+  },
+  "confidence": "probable",
+  "notes": "Same."
+ },
+ {
+  "id": "ac_ekadesa-180",
+  "family": "ac_ekadesa",
+  "input": [
+   "go",
+   "as"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "1": [
+    "stem:śas"
+   ]
+  },
+  "outputs": [
+   "gāḥ"
+  ],
+  "sutras": [
+   "6.1.93"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.103",
+   "locator": "Kāśikā on 6.1.103",
+   "quote": "एतांश्चरतो गाः पश्य"
+  },
+  "confidence": "probable",
+  "notes": "COUNTER-EXAMPLE 'tasmad iti kim': the ā of gāḥ is from 6.1.93, not a purvasavarnadirgha, so no n (Balamanorama: 'gā ityatra ca autoṃśasor ityākāra ekādeśaḥ, na tu pūrvasavarṇadīrghaḥ')."
+ },
+ {
+  "id": "ac_ekadesa-181",
+  "family": "ac_ekadesa",
+  "input": [
+   "dhenu",
+   "as"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "1": [
+    "stem:śas"
+   ]
+  },
+  "outputs": [
+   "dhenūḥ"
+  ],
+  "sutras": [
+   "6.1.102"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.103",
+   "locator": "Kāśikā on 6.1.103",
+   "quote": "धेनूः। बह्वीः। कुमारीः"
+  },
+  "confidence": "probable",
+  "notes": "COUNTER-EXAMPLE 'pumsiti kim': feminine stem, so no n."
+ },
+ {
+  "id": "ac_ekadesa-182",
+  "family": "ac_ekadesa",
+  "input": [
+   "kumārī",
+   "as"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "1": [
+    "stem:śas"
+   ]
+  },
+  "outputs": [
+   "kumārīḥ"
+  ],
+  "sutras": [
+   "6.1.102"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.103",
+   "locator": "Kāśikā on 6.1.103",
+   "quote": "धेनूः। बह्वीः। कुमारीः"
+  },
+  "confidence": "probable",
+  "notes": "COUNTER-EXAMPLE, same."
+ },
+ {
+  "id": "ac_ekadesa-183",
+  "family": "ac_ekadesa",
+  "input": [
+   "cañcā",
+   "as"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "1": [
+    "stem:śas"
+   ]
+  },
+  "outputs": [
+   "cañcāḥ"
+  ],
+  "sutras": [
+   "6.1.102"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.103",
+   "locator": "Kāśikā on 6.1.103",
+   "quote": "चञ्चाःपश्य, वध्रिकाः पश्य"
+  },
+  "confidence": "probable",
+  "notes": "COUNTER-EXAMPLE: cañcā (a straw man, a masculine in sense) takes the feminine gender after the luk of the taddhita ka (1.2.51), so no n: cañcāḥ."
+ },
+ {
+  "id": "ac_ekadesa-184",
+  "family": "ac_ekadesa",
+  "input": [
+   "vṛkṣa",
+   "au"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "vṛkṣau"
+  ],
+  "sutras": [
+   "6.1.104",
+   "6.1.88"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.104",
+   "locator": "Kāśikā on 6.1.104",
+   "quote": "वृक्षौ। प्लक्षौ"
+  },
+  "confidence": "probable",
+  "notes": "a + au: 6.1.102 (purvasavarnadirgha, would give ā) is blocked by 6.1.104 and vrddhi returns (Balamanorama: 'bādhake nivṛtte guṇaḥ punar unmiṣati')."
+ },
+ {
+  "id": "ac_ekadesa-185",
+  "family": "ac_ekadesa",
+  "input": [
+   "plakṣa",
+   "au"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "plakṣau"
+  ],
+  "sutras": [
+   "6.1.104",
+   "6.1.88"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.104",
+   "locator": "Kāśikā on 6.1.104",
+   "quote": "वृक्षौ। प्लक्षौ"
+  },
+  "confidence": "probable",
+  "notes": "Same."
+ },
+ {
+  "id": "ac_ekadesa-186",
+  "family": "ac_ekadesa",
+  "input": [
+   "khaṭvā",
+   "ī"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "khaṭve"
+  ],
+  "sutras": [
+   "6.1.104",
+   "6.1.87"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.104",
+   "locator": "Kāśikā on 6.1.104",
+   "quote": "खट्वे। कुण्डे"
+  },
+  "confidence": "probable",
+  "notes": "Dual of a feminine ā-stem: au -> śī (7.1.18); ā + ī -> e (guna); purvasavarnadirgha is blocked by 6.1.104. Input ī = śī; my reading."
+ },
+ {
+  "id": "ac_ekadesa-187",
+  "family": "ac_ekadesa",
+  "input": [
+   "kuṇḍa",
+   "ī"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "kuṇḍe"
+  ],
+  "sutras": [
+   "6.1.104",
+   "6.1.87"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.104",
+   "locator": "Kāśikā on 6.1.104",
+   "quote": "खट्वे। कुण्डे"
+  },
+  "confidence": "probable",
+  "notes": "Neuter dual: au -> śī (7.1.19); a + ī -> e. Without 6.1.104 the purvasavarnadirgha would give kuṇḍā."
+ },
+ {
+  "id": "ac_ekadesa-188",
+  "family": "ac_ekadesa",
+  "input": [
+   "śiva",
+   "u",
+   "arcyaḥ"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "1": [
+    "nipata"
+   ]
+  },
+  "outputs": [
+   "śivo'rcyaḥ"
+  ],
+  "sutras": [
+   "6.1.104",
+   "6.1.87",
+   "6.1.109"
+  ],
+  "derivation": [
+   {
+    "sutra": "6.1.104",
+    "after": "śiva u arcyaḥ",
+    "note": "blocks purvasavarnadirgha 6.1.102"
+   },
+   {
+    "sutra": "6.1.87",
+    "after": "śivo arcyaḥ",
+    "note": "a + u -> o"
+   },
+   {
+    "sutra": "6.1.109",
+    "after": "śivo'rcyaḥ",
+    "note": "o + a -> o with avagraha"
+   }
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.104",
+   "locator": "Siddhāntakaumudī on 6.1.104",
+   "quote": "शिवोऽर्च्यः"
+  },
+  "confidence": "probable",
+  "notes": "Kaumudi: after 6.1.104 blocks 6.1.102, guna ādguṇaḥ and then eṅaḥ padāntād ati give śivo'rcyaḥ. Balamanorama on 6.1.102 starts from the stage 'śiva u arcya' (the particle u). Flag nipata on u."
+ },
+ {
+  "id": "ac_ekadesa-189",
+  "family": "ac_ekadesa",
+  "input": [
+   "rāma",
+   "au"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "rāmau"
+  ],
+  "sutras": [
+   "6.1.104",
+   "6.1.88"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi",
+   "sutra": "6.1.104",
+   "locator": "Laghusiddhāntakaumudī on 6.1.104",
+   "quote": "रामौ"
+  },
+  "confidence": "probable",
+  "notes": "Laghu example."
+ },
+ {
+  "id": "ac_ekadesa-190",
+  "family": "ac_ekadesa",
+  "input": [
+   "kumārī",
+   "au"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "kumāryau"
+  ],
+  "sutras": [
+   "6.1.105",
+   "6.1.77"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.105",
+   "locator": "Kāśikā on 6.1.105",
+   "quote": "कुमार्यौ, कुमार्यः"
+  },
+  "confidence": "probable",
+  "notes": "ī + au: purvasavarnadirgha (ī) is blocked after a long vowel before an ic; yaṇ gives kumāryau."
+ },
+ {
+  "id": "ac_ekadesa-191",
+  "family": "ac_ekadesa",
+  "input": [
+   "kumārī",
+   "as"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "1": [
+    "stem:jas"
+   ]
+  },
+  "outputs": [
+   "kumāryaḥ"
+  ],
+  "sutras": [
+   "6.1.105",
+   "6.1.77"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.105",
+   "locator": "Kāśikā on 6.1.105",
+   "quote": "कुमार्यौ, कुमार्यः"
+  },
+  "confidence": "probable",
+  "notes": "ī + s of jas: blocked before jas after a long vowel; yaṇ gives kumāryaḥ. Flag stem:jas."
+ },
+ {
+  "id": "ac_ekadesa-192",
+  "family": "ac_ekadesa",
+  "input": [
+   "brahmabandhū",
+   "au"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "brahmabandhvau"
+  ],
+  "sutras": [
+   "6.1.105",
+   "6.1.77"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.105",
+   "locator": "Kāśikā on 6.1.105",
+   "quote": "ब्रह्मबन्ध्वौ, ब्रह्मबन्ध्वः"
+  },
+  "confidence": "probable",
+  "notes": "Same, ū."
+ },
+ {
+  "id": "ac_ekadesa-193",
+  "family": "ac_ekadesa",
+  "input": [
+   "brahmabandhū",
+   "as"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "1": [
+    "stem:jas"
+   ]
+  },
+  "outputs": [
+   "brahmabandhvaḥ"
+  ],
+  "sutras": [
+   "6.1.105",
+   "6.1.77"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.105",
+   "locator": "Kāśikā on 6.1.105",
+   "quote": "ब्रह्मबन्ध्वौ, ब्रह्मबन्ध्वः"
+  },
+  "confidence": "probable",
+  "notes": "Same, ū."
+ },
+ {
+  "id": "ac_ekadesa-194",
+  "family": "ac_ekadesa",
+  "input": [
+   "viśvapā",
+   "au"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "viśvapau"
+  ],
+  "sutras": [
+   "6.1.105",
+   "6.1.88"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi",
+   "sutra": "6.1.105",
+   "locator": "Laghusiddhāntakaumudī on 6.1.105",
+   "quote": "विश्वपौ । विश्वपाः"
+  },
+  "confidence": "probable",
+  "notes": "ā + au: no purvasavarnadirgha; vrddhi (6.1.88)."
+ },
+ {
+  "id": "ac_ekadesa-195",
+  "family": "ac_ekadesa",
+  "input": [
+   "viśvapā",
+   "as"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "1": [
+    "stem:jas"
+   ]
+  },
+  "outputs": [
+   "viśvapāḥ"
+  ],
+  "sutras": [
+   "6.1.105",
+   "6.1.101"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi",
+   "sutra": "6.1.105",
+   "locator": "Laghusiddhāntakaumudī on 6.1.105",
+   "quote": "विश्वपौ । विश्वपाः"
+  },
+  "confidence": "probable",
+  "notes": "ā + a of jas: the prohibition holds, and 6.1.101 (savarnadirgha) gives the same ā. Kaumudi: even if purvasavarnadirgha applied the result would be viśvapāḥ, so the sutra is placed here for gauryau etc."
+ },
+ {
+  "id": "ac_ekadesa-196",
+  "family": "ac_ekadesa",
+  "input": [
+   "gaurī",
+   "au"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "gauryau"
+  ],
+  "sutras": [
+   "6.1.105",
+   "6.1.77"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.105",
+   "locator": "Siddhāntakaumudī on 6.1.105",
+   "quote": "गौर्यौ गौर्य इत्याद्यर्थं"
+  },
+  "confidence": "probable",
+  "notes": "Kaumudi: 'gauryau gaurya' are the reason for the sutra (long ī before an ic)."
+ },
+ {
+  "id": "ac_ekadesa-197",
+  "family": "ac_ekadesa",
+  "input": [
+   "mārutī",
+   "as"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "1": [
+    "stem:jas"
+   ]
+  },
+  "veda": true,
+  "outputs": [
+   "mārutīḥ",
+   "mārutyaḥ"
+  ],
+  "sutras": [
+   "6.1.106",
+   "6.1.102"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.106",
+   "locator": "Kāśikā on 6.1.106",
+   "quote": "मारुत्यश्चतस्रः पिण्ड्यः"
+  },
+  "confidence": "probable",
+  "notes": "Vedic: after a long vowel before jas the prohibition of 6.1.105 is optional, so either ī (purvasavarnadirgha) or yaṇ. Kasika: mārutīś catasraḥ piṇḍīḥ / mārutyaś catasraḥ piṇḍyaḥ. Flag stem:jas."
+ },
+ {
+  "id": "ac_ekadesa-198",
+  "family": "ac_ekadesa",
+  "input": [
+   "vārāhī",
+   "au"
+  ],
+  "boundary": "anga",
+  "veda": true,
+  "outputs": [
+   "vārāhī",
+   "vārāhyau"
+  ],
+  "sutras": [
+   "6.1.106",
+   "6.1.102"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.106",
+   "locator": "Siddhāntakaumudī on 6.1.106",
+   "quote": "वाराही । वाराह्यौ"
+  },
+  "confidence": "probable",
+  "notes": "Vedic dual: purvasavarnadirgha (vārāhī) or yaṇ (vārāhyau); both listed by Kaumudi/Kasika."
+ },
+ {
+  "id": "ac_ekadesa-199",
+  "family": "ac_ekadesa",
+  "input": [
+   "śamī",
+   "am"
+  ],
+  "boundary": "anga",
+  "veda": true,
+  "outputs": [
+   "śamīm",
+   "śamyam"
+  ],
+  "sutras": [
+   "6.1.106",
+   "6.1.107"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.106",
+   "locator": "Siddhāntakaumudī on 6.1.106",
+   "quote": "शमीं च शम्यं च"
+  },
+  "confidence": "probable",
+  "notes": "Vedic: Kaumudi says 6.1.106's option is carried forward to 6.1.107 and 6.1.108 'vakyabhedena': so purvarupa (śamīm) or yaṇ (śamyam) before am."
+ },
+ {
+  "id": "ac_ekadesa-200",
+  "family": "ac_ekadesa",
+  "input": [
+   "vṛkṣa",
+   "am"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "vṛkṣam"
+  ],
+  "sutras": [
+   "6.1.107"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.107",
+   "locator": "Kāśikā on 6.1.107",
+   "quote": "वृक्षम्। प्लक्षम्"
+  },
+  "confidence": "probable",
+  "notes": "a + a of am (acc. sg.): purvarupa a (short), displacing 6.1.102."
+ },
+ {
+  "id": "ac_ekadesa-201",
+  "family": "ac_ekadesa",
+  "input": [
+   "agni",
+   "am"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "agnim"
+  ],
+  "sutras": [
+   "6.1.107"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.107",
+   "locator": "Kāśikā on 6.1.107",
+   "quote": "अग्निम्। वायुम्"
+  },
+  "confidence": "probable",
+  "notes": "i + a of am: purvarupa i."
+ },
+ {
+  "id": "ac_ekadesa-202",
+  "family": "ac_ekadesa",
+  "input": [
+   "vāyu",
+   "am"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "vāyum"
+  ],
+  "sutras": [
+   "6.1.107"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.107",
+   "locator": "Kāśikā on 6.1.107",
+   "quote": "अग्निम्। वायुम्"
+  },
+  "confidence": "probable",
+  "notes": "u + a of am: purvarupa u."
+ },
+ {
+  "id": "ac_ekadesa-203",
+  "family": "ac_ekadesa",
+  "input": [
+   "rāma",
+   "am"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "rāmam"
+  ],
+  "sutras": [
+   "6.1.107"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi",
+   "sutra": "6.1.107",
+   "locator": "Laghusiddhāntakaumudī on 6.1.107",
+   "quote": "रामम्"
+  },
+  "confidence": "probable",
+  "notes": "Balamanorama: 6.1.101 (dirgha) is displaced by 6.1.97 (pararupa), which is displaced by 6.1.102 (purvasavarnadirgha), which is displaced by 6.1.107."
+ },
+ {
+  "id": "ac_ekadesa-204",
+  "family": "ac_ekadesa",
+  "input": [
+   "kumārī",
+   "am"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "kumārīm"
+  ],
+  "sutras": [
+   "6.1.107"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.107",
+   "locator": "Kāśikā on 6.1.107",
+   "quote": "कुमारीमित्यत्र हि त्रिमात्रः स्यात्"
+  },
+  "confidence": "probable",
+  "notes": "Kasika: 'purvagrahanam kim: purva eva yatha syat, purvasavarno 'ntaratamo ma bhut' - the long ī stays long; a purvasavarna would give a three-mora vowel."
+ },
+ {
+  "id": "ac_ekadesa-205",
+  "family": "ac_ekadesa",
+  "input": [
+   "yaj",
+   "tam"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "iṣṭam"
+  ],
+  "sutras": [
+   "6.1.108"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.108",
+   "locator": "Kāśikā on 6.1.108",
+   "quote": "यजि — इष्टम्"
+  },
+  "confidence": "probable",
+  "notes": "yaj + kta (nom. sg. neuter am): samprasarana y -> i (6.1.15), then i + a -> i (purvarupa, 6.1.108) instead of yaṇ; then ṣ and ṭ by 8.3.59/8.4.41. The source states only the form; the intermediate steps are the standard ones. Input is my reading."
+ },
+ {
+  "id": "ac_ekadesa-206",
+  "family": "ac_ekadesa",
+  "input": [
+   "vap",
+   "tam"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "uptam"
+  ],
+  "sutras": [
+   "6.1.108"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.108",
+   "locator": "Kāśikā on 6.1.108",
+   "quote": "वपि — उप्तम्"
+  },
+  "confidence": "probable",
+  "notes": "vap + kta: v -> u (samprasarana), u + a -> u (purvarupa 6.1.108)."
+ },
+ {
+  "id": "ac_ekadesa-207",
+  "family": "ac_ekadesa",
+  "input": [
+   "viśva",
+   "ū",
+   "āhas"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "1": [
+    "stem:ūṭh"
+   ]
+  },
+  "outputs": [
+   "viśvauhaḥ"
+  ],
+  "sutras": [
+   "6.1.108",
+   "6.1.89"
+  ],
+  "derivation": [
+   {
+    "sutra": "6.1.108",
+    "after": "viśva ūhas",
+    "note": "ū + ā -> ū (purvarupa)"
+   },
+   {
+    "sutra": "6.1.89",
+    "after": "viśvauhaḥ",
+    "note": "a + ū -> au (vrddhi) instead of guna"
+   }
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "balamanorama",
+   "sutra": "6.1.108",
+   "locator": "Bālamanoramā on 6.1.108",
+   "quote": "विश्व ऊ आह् असिति स्थिते"
+  },
+  "confidence": "certain",
+  "notes": "viśvavāh + śas: the samprasarana ū (ūṭh) and the ā of āh join by purvarupa (6.1.108) giving ū; then a + ū -> au (6.1.89). Balamanorama: 'viśva ū āh asiti sthite' (for 6.1.108), then 'viśva ūh asiti sthite ādguṇam āśaṅkyāha — etyedhatyūṭhsviti'. The final visarga is from s."
+ },
+ {
+  "id": "ac_ekadesa-208",
+  "family": "ac_ekadesa",
+  "input": [
+   "hare",
+   "ava"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "hare'va"
+  ],
+  "sutras": [
+   "6.1.109"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi",
+   "sutra": "6.1.109",
+   "locator": "Laghusiddhāntakaumudī on 6.1.109",
+   "quote": "हरेऽव"
+  },
+  "confidence": "certain",
+  "notes": "Pada-final e + a -> e, the a is elided (avagraha). Apavada of ayadi (6.1.78)."
+ },
+ {
+  "id": "ac_ekadesa-209",
+  "family": "ac_ekadesa",
+  "input": [
+   "viṣṇo",
+   "ava"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "viṣṇo'va"
+  ],
+  "sutras": [
+   "6.1.109"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi",
+   "sutra": "6.1.109",
+   "locator": "Laghusiddhāntakaumudī on 6.1.109",
+   "quote": "विष्णोऽव"
+  },
+  "confidence": "certain",
+  "notes": "Same with o."
+ },
+ {
+  "id": "ac_ekadesa-210",
+  "family": "ac_ekadesa",
+  "input": [
+   "agne",
+   "atra"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "agne'tra"
+  ],
+  "sutras": [
+   "6.1.109"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.109",
+   "locator": "Kāśikā on 6.1.109",
+   "quote": "अग्नेऽत्र। वायोऽत्र"
+  },
+  "confidence": "certain",
+  "notes": "Same."
+ },
+ {
+  "id": "ac_ekadesa-211",
+  "family": "ac_ekadesa",
+  "input": [
+   "vāyo",
+   "atra"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "vāyo'tra"
+  ],
+  "sutras": [
+   "6.1.109"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.109",
+   "locator": "Kāśikā on 6.1.109",
+   "quote": "अग्नेऽत्र। वायोऽत्र"
+  },
+  "confidence": "certain",
+  "notes": "Same."
+ },
+ {
+  "id": "ac_ekadesa-212",
+  "family": "ac_ekadesa",
+  "input": [
+   "madhu",
+   "atra"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "madhvatra"
+  ],
+  "sutras": [
+   "6.1.77"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.109",
+   "locator": "Kāśikā on 6.1.109",
+   "quote": "मध्वत्र"
+  },
+  "confidence": "certain",
+  "notes": "COUNTER-EXAMPLE, same."
+ },
+ {
+  "id": "ac_ekadesa-213",
+  "family": "ac_ekadesa",
+  "input": [
+   "ce",
+   "anam"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "cayanam"
+  ],
+  "sutras": [
+   "6.1.78"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.109",
+   "locator": "Kāśikā on 6.1.109",
+   "quote": "पदान्तादिति किम् ? चयनम्"
+  },
+  "confidence": "probable",
+  "notes": "COUNTER-EXAMPLE 'padantad iti kim': in cayanam (also lavanam) the e (guna of ci) is not pada-final, so 6.1.109 does not apply and ayādi 6.1.78 gives cay-anam. Input is the guna-ed root ce + the affix ana (+ am); my reading."
+ },
+ {
+  "id": "ac_ekadesa-214",
+  "family": "ac_ekadesa",
+  "input": [
+   "hare",
+   "iha"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "harayiha",
+   "hara iha"
+  ],
+  "sutras": [
+   "6.1.78",
+   "8.3.19"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "tattvabodhini",
+   "sutra": "6.1.109",
+   "locator": "Tattvabodhinī on 6.1.109",
+   "quote": "हरयिह । विष्णविह"
+  },
+  "confidence": "probable",
+  "notes": "COUNTER-EXAMPLE 'ati kim': iha is not a-initial, so 6.1.109 does not apply; ayādeśa gives harayiha and with lopaḥ śākalyasya hara iha (Laghu vlk_31)."
+ },
+ {
+  "id": "ac_ekadesa-215",
+  "family": "ac_ekadesa",
+  "input": [
+   "vāyo",
+   "āyāhi"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "sambuddhi"
+   ]
+  },
+  "outputs": [
+   "vāyavāyāhi"
+  ],
+  "sutras": [
+   "6.1.78"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.109",
+   "locator": "Kāśikā on 6.1.109",
+   "quote": "तपरकरणं किम् ? वायवायाहि"
+  },
+  "confidence": "probable",
+  "notes": "COUNTER-EXAMPLE 'taparakaraṇaṃ kim': āyāhi begins with long ā, so 6.1.109 does not apply; vāyav ā yāhi (vāyavāyāhi)."
+ },
+ {
+  "id": "ac_ekadesa-216",
+  "family": "ac_ekadesa",
+  "input": [
+   "vāyo",
+   "iti"
+  ],
+  "boundary": "pada",
+  "flags": {
+   "0": [
+    "sambuddhi"
+   ]
+  },
+  "outputs": [
+   "vāyoiti",
+   "vāyaviti"
+  ],
+  "sutras": [
+   "1.1.16"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.109",
+   "locator": "Kāśikā on 6.1.109",
+   "quote": "अतीति किम् ? वायो इति। भानो इति। वायविति। भानविति"
+  },
+  "confidence": "probable",
+  "notes": "COUNTER-EXAMPLE 'atīti kim': before iti the vocative o is optionally a pragrhya (1.1.16 sambuddhau śākalyasyetāvanārṣe: vāyo iti) or becomes av (vāyaviti)."
+ },
+ {
+  "id": "ac_ekadesa-217",
+  "family": "ac_ekadesa",
+  "input": [
+   "agne",
+   "as"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "1": [
+    "stem:ṅas"
+   ]
+  },
+  "outputs": [
+   "agneḥ"
+  ],
+  "sutras": [
+   "6.1.110"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.110",
+   "locator": "Kāśikā on 6.1.110",
+   "quote": "अग्नेरागच्छति"
+  },
+  "confidence": "certain",
+  "notes": "ṅasi/ṅas after guna e: e + a of as -> e (purvarupa), then s -> ru -> r before a vowel (agner āgacchati) and visarga in pause/before s (agneḥ svam). Apadanta case (the e is not pada-final), which is why 6.1.109 cannot cover it."
+ },
+ {
+  "id": "ac_ekadesa-218",
+  "family": "ac_ekadesa",
+  "input": [
+   "vāyo",
+   "as"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "1": [
+    "stem:ṅas"
+   ]
+  },
+  "outputs": [
+   "vāyoḥ"
+  ],
+  "sutras": [
+   "6.1.110"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.110",
+   "locator": "Kāśikā on 6.1.110",
+   "quote": "वायोरागच्छति"
+  },
+  "confidence": "certain",
+  "notes": "Same with o."
+ },
+ {
+  "id": "ac_ekadesa-219",
+  "family": "ac_ekadesa",
+  "input": [
+   "hare",
+   "as"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "1": [
+    "stem:ṅas"
+   ]
+  },
+  "outputs": [
+   "hareḥ"
+  ],
+  "sutras": [
+   "6.1.110"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi",
+   "sutra": "6.1.110",
+   "locator": "Laghusiddhāntakaumudī on 6.1.110",
+   "quote": "हरेः हरेः"
+  },
+  "confidence": "certain",
+  "notes": "Laghu paradigm (abl./gen. sg. of hari)."
+ },
+ {
+  "id": "ac_ekadesa-220",
+  "family": "ac_ekadesa",
+  "input": [
+   "hotṛ",
+   "as"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "1": [
+    "stem:ṅas"
+   ]
+  },
+  "outputs": [
+   "hotuḥ"
+  ],
+  "sutras": [
+   "6.1.111",
+   "1.1.51",
+   "8.2.24"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.111",
+   "locator": "Kāśikā on 6.1.111",
+   "quote": "होतुरागच्छति। होतुः स्वम्"
+  },
+  "confidence": "probable",
+  "notes": "Kasika: ṛ + a of ṅas/ṅasi -> u, with raparatva by 1.1.51 (the sthanin is shared: 'dvayoh sasthinirdistayoh sthane yah sa labhate 'nyataravyapadesam'), then 8.2.24 (rat sasya) drops the s after the r: hotur āgacchati / hotuḥ svam. The rule itself is not restricted to hotṛ: also pitṛ, kartṛ, dātṛ. Flag stem:ṅas."
+ },
+ {
+  "id": "ac_ekadesa-221",
+  "family": "ac_ekadesa",
+  "input": [
+   "sakhy",
+   "as"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "1": [
+    "stem:ṅas"
+   ]
+  },
+  "outputs": [
+   "sakhyuḥ"
+  ],
+  "sutras": [
+   "6.1.112"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.112",
+   "locator": "Kāśikā on 6.1.112",
+   "quote": "सख्युरागच्छति। सख्युः स्वम्"
+  },
+  "confidence": "probable",
+  "notes": "sakhi + ṅas: after the yaṇ (sakhy), the a of ṅas becomes u (not the pair): sakhyuḥ. The input sakhy is the stem with the yaṇ already made ('krtayanadesa'). Flag stem:ṅas."
+ },
+ {
+  "id": "ac_ekadesa-222",
+  "family": "ac_ekadesa",
+  "input": [
+   "paty",
+   "as"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "1": [
+    "stem:ṅas"
+   ]
+  },
+  "outputs": [
+   "patyuḥ"
+  ],
+  "sutras": [
+   "6.1.112"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.112",
+   "locator": "Kāśikā on 6.1.112",
+   "quote": "पत्युरागच्छति। पत्युः स्वम्"
+  },
+  "confidence": "probable",
+  "notes": "Same, pati."
+ },
+ {
+  "id": "ac_ekadesa-223",
+  "family": "ac_ekadesa",
+  "input": [
+   "atisakhe",
+   "as"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "1": [
+    "stem:ṅas"
+   ]
+  },
+  "outputs": [
+   "atisakheḥ"
+  ],
+  "sutras": [
+   "6.1.110"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.112",
+   "locator": "Kāśikā on 6.1.112",
+   "quote": "अतिसखेरागच्छति, सेनापतेरागच्छतीति"
+  },
+  "confidence": "probable",
+  "notes": "COUNTER-EXAMPLE: 'vikrtanirdesadeveha na bhavati' - when the stem is not exactly khi/khī/ti/tī with yaṇ made (atisakhi, senāpati), 6.1.112 does not apply, and the ṅasi/ṅas is handled by guna + 6.1.110."
+ },
+ {
+  "id": "ac_ekadesa-224",
+  "family": "ac_ekadesa",
+  "input": [
+   "senāpate",
+   "as"
+  ],
+  "boundary": "anga",
+  "flags": {
+   "1": [
+    "stem:ṅas"
+   ]
+  },
+  "outputs": [
+   "senāpateḥ"
+  ],
+  "sutras": [
+   "6.1.110"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.112",
+   "locator": "Kāśikā on 6.1.112",
+   "quote": "अतिसखेरागच्छति, सेनापतेरागच्छतीति"
+  },
+  "confidence": "probable",
+  "notes": "COUNTER-EXAMPLE, same."
+ },
+ {
+  "id": "ac_ekadesa-225",
+  "family": "ac_ekadesa",
+  "input": [
+   "mātṛ",
+   "pitṛ",
+   "au"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "mātāpitarau"
+  ],
+  "sutras": [
+   "6.3.25",
+   "1.1.53"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.53",
+   "locator": "Kāśikā on 1.1.53",
+   "quote": "मातापितरौ"
+  },
+  "confidence": "probable",
+  "notes": "ānaṅ replaces the ṛ (the LAST sound) of mātṛ only, because the substitute is ṅit (ṅicca 1.1.53), not the whole stem (which 1.1.55 anekāl would give). Kasika also lists hotāpotārau. The third word is the dual au; split by me."
+ },
+ {
+  "id": "ac_ekadesa-226",
+  "family": "ac_ekadesa",
+  "input": [
+   "ās",
+   "āna"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "āsīna"
+  ],
+  "sutras": [
+   "7.2.83",
+   "1.1.54"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.54",
+   "locator": "Kāśikā on 1.1.54",
+   "quote": "आसीनो यजते"
+  },
+  "confidence": "probable",
+  "notes": "īdāsaḥ (7.2.83): ī is substituted for the FIRST sound of the following ā-na (ādeḥ parasya), because the rule is worded with the ablative. Kasika gives āsīno yajate. Also dvīpam, antarīpam, pratīpam, samīpam (6.3.97)."
+ },
+ {
+  "id": "ac_ekadesa-227",
+  "family": "ac_ekadesa",
+  "input": [
+   "rāma",
+   "ṅe"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "rāmāya"
+  ],
+  "sutras": [
+   "7.1.13",
+   "1.1.56",
+   "7.3.102"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi",
+   "sutra": "1.1.56",
+   "locator": "Laghusiddhāntakaumudī on 1.1.56",
+   "quote": "इति स्थानिवत्त्वात् सुपि चेति दीर्घः। रामाय"
+  },
+  "confidence": "probable",
+  "notes": "The substitute ya for ṅe counts as a Sup (sthanivat, 1.1.56), so 7.3.102 (supi ca) lengthens the a. The rule 1.1.56 is limited to non-al-vidhi (analvidhau). The sutras field puts 7.1.13 (ṅeryaḥ) first as the adesa."
+ },
+ {
+  "id": "ac_ekadesa-228",
+  "family": "ac_ekadesa",
+  "input": [
+   "dadhi",
+   "atra"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "daddhyatra",
+   "dadhyatra"
+  ],
+  "sutras": [
+   "6.1.77",
+   "1.1.58",
+   "8.4.47"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.58",
+   "locator": "Kāśikā on 1.1.58",
+   "quote": "दद्ध्यत्र। मद्ध्वत्र"
+  },
+  "confidence": "probable",
+  "notes": "1.1.58 (na padantadvirvacana...) forbids sthanivadbhava for dvitva: the yaṇ y is not treated as a vowel, so the optional doubling of dh (8.4.47 anaci ca) can happen. If y were a vowel (sthanivat) dh would not double. Both forms are accepted (doubling is optional)."
+ },
+ {
+  "id": "ac_ekadesa-229",
+  "family": "ac_ekadesa",
+  "input": [
+   "kṛ",
+   "atus"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "cakratuḥ"
+  ],
+  "sutras": [
+   "6.1.77",
+   "1.1.59"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "1.1.59",
+   "locator": "Kāśikā on 1.1.59",
+   "quote": "चक्रतुः, चक्रुः"
+  },
+  "confidence": "uncertain",
+  "notes": "1.1.59 (dvirvacane 'ci): the yaṇ substituted before the vowel-initial atus (tus of perfect dual) is treated as the vowel r for the purpose of the dvitva (reduplication), otherwise anackatvāt the reduplication would not happen. Split by me; reduplication vowel/consonant changes not shown."
+ }
+]

@@ -1,0 +1,242 @@
+{
+ "ac_ekadesa-014": {
+  "kind": "engine-gap",
+  "reason": "The gold lists kṛṣṇardhiḥ, which differs from what the engine produces only in gemination: the engine does not offer this variant of the optional doubling (8.4.46–47) at this junction."
+ },
+ "ac_ekadesa-017": {
+  "kind": "engine-gap",
+  "reason": "The gold has kṣīrapeṇa where the engine leaves n or s: the only difference is the missing ṇatva (8.4.1–39), which the natva/satva families (unmerged drafts) are to supply."
+ },
+ "ac_ekadesa-025": {
+  "kind": "engine-gap",
+  "reason": "The gold has brahmahūṣu where the engine leaves n or s: the only difference is the missing ṣatva (8.3.55–119), which the natva/satva families (unmerged drafts) are to supply."
+ },
+ "ac_ekadesa-047": {
+  "kind": "underspecified",
+  "reason": "The gold lists one form and the engine also offers predidhad, which differs from a listed form only in the last letter voiced or voiceless (pausal, 8.2.39 / 8.4.56); the row does not say whether that variant is allowed."
+ },
+ "ac_ekadesa-050": {
+  "kind": "engine-gap",
+  "reason": "The gold has akṣauhiṇī where the engine leaves n or s: the only difference is the missing ṇatva (8.4.1–39), which the natva/satva families (unmerged drafts) are to supply."
+ },
+ "ac_ekadesa-137": {
+  "kind": "underspecified",
+  "reason": "The gold lists one form and the engine also offers cakkruḥ: each differs from a listed form only in gemination (optional doubling, 8.4.46–47); the row does not say whether the doubled forms are allowed."
+ },
+ "ac_ekadesa-167": {
+  "kind": "underspecified",
+  "reason": "The gold lists one form and the engine also offers daddhyatra, daddhyyatra, dadhyyatra: each differs from a listed form only in gemination (optional doubling, 8.4.46–47); the row does not say whether the doubled forms are allowed."
+ },
+ "ac_ekadesa-212": {
+  "kind": "underspecified",
+  "reason": "The gold lists one form and the engine also offers maddhvatra, maddhvvatra, madhvvatra: each differs from a listed form only in gemination (optional doubling, 8.4.46–47); the row does not say whether the doubled forms are allowed."
+ },
+ "ac_yan_ayadi-064": {
+  "kind": "scope",
+  "reason": "The gold lists arkkaḥ, which differs from what the engine derives only in gemination; the row is a single word and the engine acts at junctions, not inside a finished word (optional doubling, 8.4.46–47)."
+ },
+ "ac_yan_ayadi-065": {
+  "kind": "scope",
+  "reason": "The gold lists markkaḥ, which differs from what the engine derives only in gemination; the row is a single word and the engine acts at junctions, not inside a finished word (optional doubling, 8.4.46–47)."
+ },
+ "ac_yan_ayadi-066": {
+  "kind": "scope",
+  "reason": "The gold lists brahmmā, which differs from what the engine derives only in gemination; the row is a single word and the engine acts at junctions, not inside a finished word (optional doubling, 8.4.46–47)."
+ },
+ "ac_yan_ayadi-067": {
+  "kind": "engine-gap",
+  "reason": "The gold lists apahnnute, which differs from what the engine produces only in gemination: the engine does not offer this variant of the optional doubling (8.4.46–47) at this junction."
+ },
+ "ac_yan_ayadi-076": {
+  "kind": "scope",
+  "reason": "The gold lists ulkkā, which differs from what the engine derives only in gemination; the row is a single word and the engine acts at junctions, not inside a finished word (optional doubling, 8.4.46–47)."
+ },
+ "ac_yan_ayadi-077": {
+  "kind": "scope",
+  "reason": "The gold lists valmmīka, which differs from what the engine derives only in gemination; the row is a single word and the engine acts at junctions, not inside a finished word (optional doubling, 8.4.46–47)."
+ },
+ "ac_yan_ayadi-081": {
+  "kind": "scope",
+  "reason": "The gold lists ikṣṣuḥ, which differs from what the engine derives only in gemination; the row is a single word and the engine acts at junctions, not inside a finished word (optional doubling, 8.4.46–47)."
+ },
+ "ac_yan_ayadi-084": {
+  "kind": "scope",
+  "reason": "The gold lists vākk, which differs from what the engine derives only in gemination; the row is a single word and the engine acts at junctions, not inside a finished word (optional doubling, 8.4.46–47)."
+ },
+ "ac_yan_ayadi-085": {
+  "kind": "scope",
+  "reason": "The gold lists tvakk, which differs from what the engine derives only in gemination; the row is a single word and the engine acts at junctions, not inside a finished word (optional doubling, 8.4.46–47)."
+ },
+ "ac_yan_ayadi-086": {
+  "kind": "scope",
+  "reason": "The gold lists ṣaṭṭ, which differs from what the engine derives only in gemination; the row is a single word and the engine acts at junctions, not inside a finished word (optional doubling, 8.4.46–47)."
+ },
+ "ac_yan_ayadi-087": {
+  "kind": "scope",
+  "reason": "The gold lists tatt, which differs from what the engine derives only in gemination; the row is a single word and the engine acts at junctions, not inside a finished word (optional doubling, 8.4.46–47)."
+ },
+ "ac_yan_ayadi-092": {
+  "kind": "engine-gap",
+  "reason": "The gold lists puttrādinī, which differs from what the engine produces only in gemination: the engine does not offer this variant of the optional doubling (8.4.46–47) at this junction."
+ },
+ "ac_yan_ayadi-094": {
+  "kind": "engine-gap",
+  "reason": "The gold lists puttrahatī, which differs from what the engine produces only in gemination: the engine does not offer this variant of the optional doubling (8.4.46–47) at this junction."
+ },
+ "ac_yan_ayadi-095": {
+  "kind": "engine-gap",
+  "reason": "The gold lists puttrajagdhī, which differs from what the engine produces only in gemination: the engine does not offer this variant of the optional doubling (8.4.46–47) at this junction."
+ },
+ "ac_yan_ayadi-103": {
+  "kind": "scope",
+  "reason": "The gold lists darśśyate, which differs from what the engine derives only in gemination; the row is a single word and the engine acts at junctions, not inside a finished word (optional doubling, 8.4.46–47)."
+ },
+ "ac_yan_ayadi-104": {
+  "kind": "engine-gap",
+  "reason": "The gold has caturṣu where the engine leaves n or s: the only difference is the missing ṣatva (8.3.55–119), which the natva/satva families (unmerged drafts) are to supply."
+ },
+ "ac_yan_ayadi-105": {
+  "kind": "scope",
+  "reason": "The gold lists inndraḥ, which differs from what the engine derives only in gemination; the row is a single word and the engine acts at junctions, not inside a finished word (optional doubling, 8.4.46–47)."
+ },
+ "ac_yan_ayadi-106": {
+  "kind": "scope",
+  "reason": "The gold lists canndraḥ, which differs from what the engine derives only in gemination; the row is a single word and the engine acts at junctions, not inside a finished word (optional doubling, 8.4.46–47)."
+ },
+ "ac_yan_ayadi-107": {
+  "kind": "scope",
+  "reason": "The gold lists manndraḥ, which differs from what the engine derives only in gemination; the row is a single word and the engine acts at junctions, not inside a finished word (optional doubling, 8.4.46–47)."
+ },
+ "ac_yan_ayadi-108": {
+  "kind": "scope",
+  "reason": "The gold lists rāṣṣṭram, which differs from what the engine derives only in gemination; the row is a single word and the engine acts at junctions, not inside a finished word (optional doubling, 8.4.46–47)."
+ },
+ "ac_yan_ayadi-109": {
+  "kind": "scope",
+  "reason": "The gold lists bhrāṣṣṭram, which differs from what the engine derives only in gemination; the row is a single word and the engine acts at junctions, not inside a finished word (optional doubling, 8.4.46–47)."
+ },
+ "ac_yan_ayadi-110": {
+  "kind": "scope",
+  "reason": "The gold lists arkkaḥ, which differs from what the engine derives only in gemination; the row is a single word and the engine acts at junctions, not inside a finished word (optional doubling, 8.4.46–47)."
+ },
+ "ac_yan_ayadi-111": {
+  "kind": "scope",
+  "reason": "The gold lists brahmmā, which differs from what the engine derives only in gemination; the row is a single word and the engine acts at junctions, not inside a finished word (optional doubling, 8.4.46–47)."
+ },
+ "ac_yan_ayadi-112": {
+  "kind": "scope",
+  "reason": "The gold lists dāttram, which differs from what the engine derives only in gemination; the row is a single word and the engine acts at junctions, not inside a finished word (optional doubling, 8.4.46–47)."
+ },
+ "ac_yan_ayadi-113": {
+  "kind": "scope",
+  "reason": "The gold lists pāttram, which differs from what the engine derives only in gemination; the row is a single word and the engine acts at junctions, not inside a finished word (optional doubling, 8.4.46–47)."
+ },
+ "ac_yan_ayadi-114": {
+  "kind": "scope",
+  "reason": "The gold lists mūttram, which differs from what the engine derives only in gemination; the row is a single word and the engine acts at junctions, not inside a finished word (optional doubling, 8.4.46–47)."
+ },
+ "ac_yan_ayadi-115": {
+  "kind": "scope",
+  "reason": "The gold lists sūttram, which differs from what the engine derives only in gemination; the row is a single word and the engine acts at junctions, not inside a finished word (optional doubling, 8.4.46–47)."
+ },
+ "ac_yan_ayadi-144": {
+  "kind": "engine-gap",
+  "reason": "The gold lists śayyyā, which differs from what the engine produces only in gemination: the engine does not offer this variant of the optional doubling (8.4.46–47) at this junction."
+ },
+ "ac_yan_ayadi-145": {
+  "kind": "engine-gap",
+  "reason": "The gold lists ādityaḥ, ādityyyaḥ, which differs from what the engine produces only in gemination: the engine does not offer this variant of the optional doubling (8.4.46–47) at this junction."
+ },
+ "ac_yan_ayadi-147": {
+  "kind": "engine-gap",
+  "reason": "The gold lists prājāpatyyaḥ, which differs from what the engine produces only in gemination: the engine does not offer this variant of the optional doubling (8.4.46–47) at this junction."
+ },
+ "ac_yan_ayadi-148": {
+  "kind": "engine-gap",
+  "reason": "The gold lists durllabhaḥ, which differs from what the engine produces only in gemination: the engine does not offer this variant of the optional doubling (8.4.46–47) at this junction."
+ },
+ "ac_yan_ayadi-149": {
+  "kind": "engine-gap",
+  "reason": "The gold lists kurmmaḥ, which differs from what the engine produces only in gemination: the engine does not offer this variant of the optional doubling (8.4.46–47) at this junction."
+ },
+ "prakrtibhava-013": {
+  "kind": "underspecified",
+  "reason": "The gold lists one form and the engine also offers akurvahyyatra: each differs from a listed form only in gemination (optional doubling, 8.4.46–47); the row does not say whether the doubled forms are allowed."
+ },
+ "prakrtibhava-014": {
+  "kind": "underspecified",
+  "reason": "The gold lists one form and the engine also offers kumāryyagāram: each differs from a listed form only in gemination (optional doubling, 8.4.46–47); the row does not say whether the doubled forms are allowed."
+ },
+ "prakrtibhava-015": {
+  "kind": "underspecified",
+  "reason": "The gold lists one form and the engine also offers vaddhvagāram, vaddhvvagāram, vadhvvagāram: each differs from a listed form only in gemination (optional doubling, 8.4.46–47); the row does not say whether the doubled forms are allowed."
+ },
+ "prakrtibhava-025": {
+  "kind": "underspecified",
+  "reason": "The gold lists one form and the engine also offers śammyatra, śammyyatra, śamyyatra: each differs from a listed form only in gemination (optional doubling, 8.4.46–47); the row does not say whether the doubled forms are allowed."
+ },
+ "prakrtibhava-026": {
+  "kind": "underspecified",
+  "reason": "The gold lists one form and the engine also offers dāḍimmyatra, dāḍimmyyatra, dāḍimyyatra: each differs from a listed form only in gemination (optional doubling, 8.4.46–47); the row does not say whether the doubled forms are allowed."
+ },
+ "prakrtibhava-039": {
+  "kind": "underspecified",
+  "reason": "The gold lists one form and the engine also offers odakāntād, which differs from a listed form only in the last letter voiced or voiceless (pausal, 8.2.39 / 8.4.56); the row does not say whether that variant is allowed."
+ },
+ "prakrtibhava-043": {
+  "kind": "underspecified",
+  "reason": "The gold lists one form and the engine also offers predambrahma, which differs from a listed form only in m against ṃ at one place (cf. 8.4.59 vā padāntasya); the row does not say whether that variant is allowed."
+ },
+ "prakrtibhava-047": {
+  "kind": "underspecified",
+  "reason": "The gold lists one form and the engine also offers ado'bhavad, which differs from a listed form only in the last letter voiced or voiceless (pausal, 8.2.39 / 8.4.56); the row does not say whether that variant is allowed."
+ },
+ "prakrtibhava-058": {
+  "kind": "underspecified",
+  "reason": "The gold lists one form and the engine also offers vāppyaśvaḥ, vāppyyaśvaḥ, vāpyyaśvaḥ: each differs from a listed form only in gemination (optional doubling, 8.4.46–47); the row does not say whether the doubled forms are allowed."
+ },
+ "prakrtibhava-059": {
+  "kind": "underspecified",
+  "reason": "The gold lists one form and the engine also offers naddyyātiḥ, naddyātiḥ, nadyyātiḥ: each differs from a listed form only in gemination (optional doubling, 8.4.46–47); the row does not say whether the doubled forms are allowed."
+ },
+ "prakrtibhava-060": {
+  "kind": "engine-gap",
+  "reason": "The gold has praṇayati where the engine leaves n or s: the only difference is the missing ṇatva (8.4.1–39), which the natva/satva families (unmerged drafts) are to supply."
+ },
+ "prakrtibhava-061": {
+  "kind": "engine-gap",
+  "reason": "The gold has pariṇayati where the engine leaves n or s: the only difference is the missing ṇatva (8.4.1–39), which the natva/satva families (unmerged drafts) are to supply."
+ },
+ "prakrtibhava-062": {
+  "kind": "engine-gap",
+  "reason": "The gold has praṇāyakaḥ where the engine leaves n or s: the only difference is the missing ṇatva (8.4.1–39), which the natva/satva families (unmerged drafts) are to supply."
+ },
+ "prakrtibhava-064": {
+  "kind": "engine-gap",
+  "reason": "The gold has praṇītam where the engine leaves n or s: the only difference is the missing ṇatva (8.4.1–39), which the natva/satva families (unmerged drafts) are to supply."
+ },
+ "prakrtibhava-065": {
+  "kind": "engine-gap",
+  "reason": "The gold has abhiṣiktam where the engine leaves n or s: the only difference is the missing ṣatva (8.3.55–119), which the natva/satva families (unmerged drafts) are to supply."
+ },
+ "prakrtibhava-073": {
+  "kind": "underspecified",
+  "reason": "The gold lists one form and the engine also offers annvagniḥ, annvvagniḥ, anvvagniḥ: each differs from a listed form only in gemination (optional doubling, 8.4.46–47); the row does not say whether the doubled forms are allowed."
+ },
+ "prakrtibhava-100": {
+  "kind": "underspecified",
+  "reason": "The gold lists one form and the engine also offers citraggvagram, citraggvvagram, citragvvagram: each differs from a listed form only in gemination (optional doubling, 8.4.46–47); the row does not say whether the doubled forms are allowed."
+ },
+ "prakrtibhava-117": {
+  "kind": "underspecified",
+  "reason": "The gold lists one form and the engine also offers gauryyau: each differs from a listed form only in gemination (optional doubling, 8.4.46–47); the row does not say whether the doubled forms are allowed."
+ },
+ "prakrtibhava-118": {
+  "kind": "underspecified",
+  "reason": "The gold lists one form and the engine also offers vāppyaśvaḥ, vāppyyaśvaḥ, vāpyyaśvaḥ: each differs from a listed form only in gemination (optional doubling, 8.4.46–47); the row does not say whether the doubled forms are allowed."
+ },
+ "prakrtibhava-121": {
+  "kind": "underspecified",
+  "reason": "The gold lists one form and the engine also offers kumāryyartham: each differs from a listed form only in gemination (optional doubling, 8.4.46–47); the row does not say whether the doubled forms are allowed."
+ }
+}
