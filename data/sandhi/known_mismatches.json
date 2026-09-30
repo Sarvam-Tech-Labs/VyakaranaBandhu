@@ -3,10 +3,6 @@
   "kind": "engine-gap",
   "reason": "The gold lists kṛṣṇardhiḥ, which differs from what the engine produces only in gemination: the engine does not offer this variant of the optional doubling (8.4.46–47) at this junction."
  },
- "ac_ekadesa-017": {
-  "kind": "engine-gap",
-  "reason": "The gold has kṣīrapeṇa where the engine leaves n or s: the only difference is the missing ṇatva (8.4.1–39), which the natva/satva families (unmerged drafts) are to supply."
- },
  "ac_ekadesa-018": {
   "kind": "scope",
   "reason": "The dropping of nominative singular affix s after feminine āp by 6.1.68 (halṅyābbhyo dīrghāt) belongs to subanta morphology rather than vowel sandhi."
@@ -26,10 +22,6 @@
  "ac_ekadesa-047": {
   "kind": "underspecified",
   "reason": "The gold lists one form and the engine also offers predidhad, which differs from a listed form only in the last letter voiced or voiceless (pausal, 8.2.39 / 8.4.56); the row does not say whether that variant is allowed."
- },
- "ac_ekadesa-050": {
-  "kind": "engine-gap",
-  "reason": "The gold has akṣauhiṇī where the engine leaves n or s: the only difference is the missing ṇatva (8.4.1–39), which the natva/satva families (unmerged drafts) are to supply."
  },
  "ac_ekadesa-060": {
   "kind": "gold-error",
@@ -498,26 +490,6 @@
  "prakrtibhava-059": {
   "kind": "underspecified",
   "reason": "The gold lists one form and the engine also offers naddyyātiḥ, naddyātiḥ, nadyyātiḥ: each differs from a listed form only in gemination (optional doubling, 8.4.46–47); the row does not say whether the doubled forms are allowed."
- },
- "prakrtibhava-060": {
-  "kind": "engine-gap",
-  "reason": "The gold has praṇayati where the engine leaves n or s: the only difference is the missing ṇatva (8.4.1–39), which the natva/satva families (unmerged drafts) are to supply."
- },
- "prakrtibhava-061": {
-  "kind": "engine-gap",
-  "reason": "The gold has pariṇayati where the engine leaves n or s: the only difference is the missing ṇatva (8.4.1–39), which the natva/satva families (unmerged drafts) are to supply."
- },
- "prakrtibhava-062": {
-  "kind": "engine-gap",
-  "reason": "The gold has praṇāyakaḥ where the engine leaves n or s: the only difference is the missing ṇatva (8.4.1–39), which the natva/satva families (unmerged drafts) are to supply."
- },
- "prakrtibhava-064": {
-  "kind": "engine-gap",
-  "reason": "The gold has praṇītam where the engine leaves n or s: the only difference is the missing ṇatva (8.4.1–39), which the natva/satva families (unmerged drafts) are to supply."
- },
- "prakrtibhava-065": {
-  "kind": "engine-gap",
-  "reason": "The gold has abhiṣiktam where the engine leaves n or s: the only difference is the missing ṣatva (8.3.55–119), which the natva/satva families (unmerged drafts) are to supply."
  },
  "prakrtibhava-066": {
   "kind": "scope",

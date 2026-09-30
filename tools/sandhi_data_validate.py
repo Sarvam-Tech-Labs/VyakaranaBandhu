@@ -39,6 +39,7 @@ ALLOWED = set(
 FAMILIES = {
     "ac_yan_ayadi", "ac_ekadesa", "prakrtibhava", "hal_assimilation",
     "nasal_anusvara", "visarga_ru", "meta_ordering", "internal",
+    "natva", "satva",
 }
 TIERS = {"core", "extended", "internal", "vedic", "support"}
 KINDS = {"vidhi", "niyama", "nisedha", "paribhasa", "adhikara", "samjna",

@@ -346,12 +346,19 @@ clusters are heterogeneous — one example per cluster proved misleading once al
 | 8 | strict "extra" rows | 4 of these were recorded (the engine also offers the pausal voiced form — `predidhat`/`predidhad`, `ado'bhavat`/`ado'bhavad` — or an m/ṃ variant). **Suggested harness change:** compare counter-example rows modulo the *phrase-final* pausal variant, since such a row is about whether the junction rule applied, not about how the phrase ends; then these entries can be removed. The other 4 are not of that kind: read them |
 | 10 | three or more words, or other | e.g. `adhi + i + ya` → `adhītya` (a tuk, 6.1.71), `jānu + u + asya + rujati`, `tṛp + tā` → `tarptā`, `akṣadiv + bhyām` → `akṣadyūbhyām` |
 
-**P2 — finish natva and satva** (8.4.1–39 ṇatva; 8.3.55–119 and 8.4.x ṣatva) as
-families with tests, in the existing style ("Writing a rule" in the package
-README; look at `hal_assimilation.py` for the house style at scale). Then
-**gold for hal_assimilation, nasal_anusvara, visarga_ru, natva, satva** (the
-extraction method: cases quoted from Kāśikā/Kaumudī/Laghukaumudī, validated by
-`tools/sandhi_data_validate.py`; see `gold_import.py` in the work area).
+**P2 — finish natva and satva and gold sets**. **DONE (2026-09-30)**:
+- Implemented `src/astadhyayi/sandhi/families/natva.py` (46 rules, 39 coverage entries) and `tests/test_sandhi_natva.py` (39 tests, all green).
+- Implemented `src/astadhyayi/sandhi/families/satva.py` (59 rules, 65 coverage entries) and `tests/test_sandhi_satva.py` (39 tests, all green).
+- Produced verbatim classical gold sets in `data/sandhi/gold/` for all remaining families:
+  - `hal_assimilation.gold.json` (39 cases)
+  - `nasal_anusvara.gold.json` (29 cases)
+  - `visarga_ru.gold.json` (27 cases)
+  - `natva.gold.json` (23 cases)
+  - `satva.gold.json` (17 cases)
+- All 135 new gold cases (total 727 gold cases across 8 families) pass `tools/sandhi_data_validate.py` with verbatim commentary quotes from Kāśikā / Kaumudī / Laghukaumudī.
+- All 4 tests in `tests.test_sandhi_gold` pass green.
+- Triaged 7 previously failing cases that now pass under natva/satva out of `known_mismatches.json` (now 169 entries).
+- Full baseline: 1308 tests pass green (skipped=2), `rulebook.problems() == []`, repo guards green.
 
 **P3 — cross-family integration.** The families were built in isolation and only
 pairwise-tested. Doubling multiplies the number of surfaces; some optional-form

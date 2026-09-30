@@ -1,0 +1,714 @@
+[
+ {
+  "id": "nasal_anusvara-001",
+  "family": "nasal_anusvara",
+  "input": [
+   "harim",
+   "vande"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "hariṃvande"
+  ],
+  "sutras": [
+   "8.3.23"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.3.23",
+   "locator": "Siddhāntakaumudī on 8.3.23",
+   "quote": "हरिं वन्दे"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: m at pada end becomes anusvāra before hal."
+ },
+ {
+  "id": "nasal_anusvara-002",
+  "family": "nasal_anusvara",
+  "input": [
+   "kuṇḍam",
+   "hasati"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "kuṇḍaṃhasati"
+  ],
+  "sutras": [
+   "8.3.23"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.3.23",
+   "locator": "Kāśikā on 8.3.23",
+   "quote": "कुण्डं हसति"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: m at pada end becomes anusvāra before h."
+ },
+ {
+  "id": "nasal_anusvara-003",
+  "family": "nasal_anusvara",
+  "input": [
+   "vanam",
+   "hasati"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "vanaṃhasati"
+  ],
+  "sutras": [
+   "8.3.23"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.3.23",
+   "locator": "Kāśikā on 8.3.23",
+   "quote": "वनं हसति"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: m at pada end becomes anusvāra before h."
+ },
+ {
+  "id": "nasal_anusvara-004",
+  "family": "nasal_anusvara",
+  "input": [
+   "kuṇḍam",
+   "yāti"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "kuṇḍaṃyāti"
+  ],
+  "sutras": [
+   "8.3.23"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.3.23",
+   "locator": "Kāśikā on 8.3.23",
+   "quote": "कुण्डं याति"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: m at pada end becomes anusvāra before y."
+ },
+ {
+  "id": "nasal_anusvara-005",
+  "family": "nasal_anusvara",
+  "input": [
+   "vanam",
+   "yāti"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "vanaṃyāti"
+  ],
+  "sutras": [
+   "8.3.23"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.3.23",
+   "locator": "Kāśikā on 8.3.23",
+   "quote": "वनं याति"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: m at pada end becomes anusvāra before y."
+ },
+ {
+  "id": "nasal_anusvara-006",
+  "family": "nasal_anusvara",
+  "input": [
+   "tvam",
+   "atra"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "tvamatra"
+  ],
+  "sutras": [
+   "8.3.23"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.3.23",
+   "locator": "Kāśikā on 8.3.23",
+   "quote": "त्वमत्र। किमत्र।"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: halīti kim? No anusvāra before ac."
+ },
+ {
+  "id": "nasal_anusvara-007",
+  "family": "nasal_anusvara",
+  "input": [
+   "kim",
+   "atra"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "kimatra"
+  ],
+  "sutras": [
+   "8.3.23"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.3.23",
+   "locator": "Kāśikā on 8.3.23",
+   "quote": "त्वमत्र। किमत्र।"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: halīti kim? No anusvāra before ac."
+ },
+ {
+  "id": "nasal_anusvara-008",
+  "family": "nasal_anusvara",
+  "input": [
+   "yaśān",
+   "si"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "yaśāṃsi"
+  ],
+  "sutras": [
+   "8.3.24"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.3.24",
+   "locator": "Siddhāntakaumudī on 8.3.24",
+   "quote": "यशांसि"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: non-pada-final n before jhal becomes anusvāra."
+ },
+ {
+  "id": "nasal_anusvara-009",
+  "family": "nasal_anusvara",
+  "input": [
+   "payān",
+   "si"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "payāṃsi"
+  ],
+  "sutras": [
+   "8.3.24"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.3.24",
+   "locator": "Kāśikā on 8.3.24",
+   "quote": "पयांसि"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: non-pada-final n before s becomes anusvāra."
+ },
+ {
+  "id": "nasal_anusvara-010",
+  "family": "nasal_anusvara",
+  "input": [
+   "sarpīn",
+   "ṣi"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "sarpīṃṣi"
+  ],
+  "sutras": [
+   "8.3.24"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.3.24",
+   "locator": "Kāśikā on 8.3.24",
+   "quote": "सर्पींषि"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: non-pada-final n before ṣ becomes anusvāra."
+ },
+ {
+  "id": "nasal_anusvara-011",
+  "family": "nasal_anusvara",
+  "input": [
+   "dhanūn",
+   "ṣi"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "dhanūṃṣi"
+  ],
+  "sutras": [
+   "8.3.24"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.3.24",
+   "locator": "Kāśikā on 8.3.24",
+   "quote": "धनूंषि"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: non-pada-final n before ṣ becomes anusvāra."
+ },
+ {
+  "id": "nasal_anusvara-012",
+  "family": "nasal_anusvara",
+  "input": [
+   "ākram",
+   "syate"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "ākraṃsyate"
+  ],
+  "sutras": [
+   "8.3.24"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.3.24",
+   "locator": "Siddhāntakaumudī on 8.3.24",
+   "quote": "आक्रंस्यते"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: non-pada-final m before s becomes anusvāra."
+ },
+ {
+  "id": "nasal_anusvara-013",
+  "family": "nasal_anusvara",
+  "input": [
+   "sam",
+   "rāj"
+  ],
+  "boundary": "upasarga",
+  "outputs": [
+   "samrāṭ",
+   "samrāḍ"
+  ],
+  "sutras": [
+   "8.3.25"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.3.25",
+   "locator": "Siddhāntakaumudī on 8.3.25",
+   "quote": "सम्राट्"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: m of sam before rāj with kvip stays m.",
+  "flags": {
+   "1": [
+    "dhatu:rāj",
+    "kvip"
+   ]
+  }
+ },
+ {
+  "id": "nasal_anusvara-014",
+  "family": "nasal_anusvara",
+  "input": [
+   "kim",
+   "hmalayati"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "kimhmalayati",
+   "kiṃhmalayati"
+  ],
+  "sutras": [
+   "8.3.26"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.3.26",
+   "locator": "Kāśikā on 8.3.26",
+   "quote": "किम् ह्मलयति किं ह्मलयति"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: optional m before h followed by m."
+ },
+ {
+  "id": "nasal_anusvara-015",
+  "family": "nasal_anusvara",
+  "input": [
+   "kim",
+   "hnute"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "kinhnute",
+   "kiṃhnute"
+  ],
+  "sutras": [
+   "8.3.27"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.3.27",
+   "locator": "Siddhāntakaumudī on 8.3.27",
+   "quote": "किन्ह्नुते । किंह्नुते"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: optional n before h followed by n."
+ },
+ {
+  "id": "nasal_anusvara-016",
+  "family": "nasal_anusvara",
+  "input": [
+   "prāṅ",
+   "śete"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "prāṅkśete",
+   "prāṅśete"
+  ],
+  "sutras": [
+   "8.3.28"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.3.28",
+   "locator": "Kāśikā on 8.3.28",
+   "quote": "प्राङ्क् शेते, प्राङ् शेते"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: optional kuk augment after ṅ before śar."
+ },
+ {
+  "id": "nasal_anusvara-017",
+  "family": "nasal_anusvara",
+  "input": [
+   "ṣaṭ",
+   "santaḥ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "ṣaṭtsantaḥ",
+   "ṣaṭsantaḥ"
+  ],
+  "sutras": [
+   "8.3.29"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.3.29",
+   "locator": "Siddhāntakaumudī on 8.3.29",
+   "quote": "षट्त्सन्तः । षट्सन्तः"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: optional dhuṭ augment after ḍ before s."
+ },
+ {
+  "id": "nasal_anusvara-018",
+  "family": "nasal_anusvara",
+  "input": [
+   "san",
+   "saḥ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "santsaḥ",
+   "sansaḥ"
+  ],
+  "sutras": [
+   "8.3.30"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.3.30",
+   "locator": "Siddhāntakaumudī on 8.3.30",
+   "quote": "सन्त्सः । सन्सः"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: optional dhuṭ augment after n before s."
+ },
+ {
+  "id": "nasal_anusvara-019",
+  "family": "nasal_anusvara",
+  "input": [
+   "pratyaṅ",
+   "ātmā"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "pratyaṅṅātmā"
+  ],
+  "sutras": [
+   "8.3.32"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.3.32",
+   "locator": "Siddhāntakaumudī on 8.3.32",
+   "quote": "प्रत्यङ्ङात्मा"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: ṅamuṭ augment after short vowel + ṅ before ac."
+ },
+ {
+  "id": "nasal_anusvara-020",
+  "family": "nasal_anusvara",
+  "input": [
+   "sugaṇ",
+   "īśaḥ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "sugaṇṇīśaḥ"
+  ],
+  "sutras": [
+   "8.3.32"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.3.32",
+   "locator": "Siddhāntakaumudī on 8.3.32",
+   "quote": "सुगण्णीशः"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: ṅamuṭ augment after short vowel + ṇ before ac."
+ },
+ {
+  "id": "nasal_anusvara-021",
+  "family": "nasal_anusvara",
+  "input": [
+   "san",
+   "acyutaḥ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "sannacyutaḥ"
+  ],
+  "sutras": [
+   "8.3.32"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.3.32",
+   "locator": "Siddhāntakaumudī on 8.3.32",
+   "quote": "सन्नच्युतः"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: ṅamuṭ augment after short vowel + n before ac."
+ },
+ {
+  "id": "nasal_anusvara-022",
+  "family": "nasal_anusvara",
+  "input": [
+   "etat",
+   "murāriḥ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "etanmurāriḥ",
+   "etadmurāriḥ"
+  ],
+  "sutras": [
+   "8.4.45"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.4.45",
+   "locator": "Siddhāntakaumudī on 8.4.45",
+   "quote": "एतन्मुरारिः । एतद्मुरारिः"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: optional nasal substitute for yar before nasal."
+ },
+ {
+  "id": "nasal_anusvara-023",
+  "family": "nasal_anusvara",
+  "input": [
+   "vāk",
+   "nayati"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "vāṅnayati",
+   "vāgnayati"
+  ],
+  "sutras": [
+   "8.4.45"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.45",
+   "locator": "Kāśikā on 8.4.45",
+   "quote": "वाङ् नयति, वाग् नयति"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: optional nasal substitute for k before n."
+ },
+ {
+  "id": "nasal_anusvara-024",
+  "family": "nasal_anusvara",
+  "input": [
+   "śām",
+   "ta"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "śānta"
+  ],
+  "sutras": [
+   "8.4.58"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.4.58",
+   "locator": "Siddhāntakaumudī on 8.4.58",
+   "quote": "शान्तः"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: obligatory parasavarṇa for non-pada-final anusvāra."
+ },
+ {
+  "id": "nasal_anusvara-025",
+  "family": "nasal_anusvara",
+  "input": [
+   "am",
+   "kita"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "aṅkita"
+  ],
+  "sutras": [
+   "8.4.58"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.4.58",
+   "locator": "Siddhāntakaumudī on 8.4.58",
+   "quote": "अङ्कितः"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: anusvāra becomes ṅ before k."
+ },
+ {
+  "id": "nasal_anusvara-026",
+  "family": "nasal_anusvara",
+  "input": [
+   "am",
+   "cita"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "añcita"
+  ],
+  "sutras": [
+   "8.4.58"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.4.58",
+   "locator": "Siddhāntakaumudī on 8.4.58",
+   "quote": "अञ्चितः"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: anusvāra becomes ñ before c."
+ },
+ {
+  "id": "nasal_anusvara-027",
+  "family": "nasal_anusvara",
+  "input": [
+   "kum",
+   "ṭhita"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "kuṇṭhita"
+  ],
+  "sutras": [
+   "8.4.58"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.4.58",
+   "locator": "Siddhāntakaumudī on 8.4.58",
+   "quote": "कुण्ठितः"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: anusvāra becomes ṇ before ṭh."
+ },
+ {
+  "id": "nasal_anusvara-028",
+  "family": "nasal_anusvara",
+  "input": [
+   "gum",
+   "phita"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "gumphita"
+  ],
+  "sutras": [
+   "8.4.58"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.4.58",
+   "locator": "Siddhāntakaumudī on 8.4.58",
+   "quote": "गुम्फितः"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: anusvāra becomes m before ph."
+ },
+ {
+  "id": "nasal_anusvara-029",
+  "family": "nasal_anusvara",
+  "input": [
+   "tvam",
+   "karoṣi"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "tvaṅkaroṣi",
+   "tvaṃkaroṣi"
+  ],
+  "sutras": [
+   "8.4.59",
+   "8.3.23"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.4.59",
+   "locator": "Siddhāntakaumudī on 8.4.59",
+   "quote": "त्वङ्करोषि । त्वंकरोषि"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: optional parasavarṇa for pada-final anusvāra."
+ }
+]

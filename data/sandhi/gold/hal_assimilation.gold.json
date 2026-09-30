@@ -1,0 +1,960 @@
+[
+ {
+  "id": "hal_assimilation-001",
+  "family": "hal_assimilation",
+  "input": [
+   "sat",
+   "cit"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "saccit"
+  ],
+  "sutras": [
+   "8.4.40",
+   "8.2.39",
+   "8.4.55"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.4.40",
+   "locator": "Siddhāntakaumudī on 8.4.40",
+   "quote": "सच्चित्"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi example for ścutva: t -> d -> j -> c."
+ },
+ {
+  "id": "hal_assimilation-002",
+  "family": "hal_assimilation",
+  "input": [
+   "śārṅgin",
+   "jaya"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "śārṅgiñjaya"
+  ],
+  "sutras": [
+   "8.4.40"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.4.40",
+   "locator": "Siddhāntakaumudī on 8.4.40",
+   "quote": "शार्ङ्गिञ्जय"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi example for ścutva: n -> ñ before j."
+ },
+ {
+  "id": "hal_assimilation-003",
+  "family": "hal_assimilation",
+  "input": [
+   "yaj",
+   "na"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "yajña"
+  ],
+  "sutras": [
+   "8.4.40"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.40",
+   "locator": "Kāśikā on 8.4.40",
+   "quote": "यज्ञः"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: j + n -> jñ (cause stands before)."
+ },
+ {
+  "id": "hal_assimilation-004",
+  "family": "hal_assimilation",
+  "input": [
+   "yāc",
+   "nā"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "yācñā"
+  ],
+  "sutras": [
+   "8.4.40"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.40",
+   "locator": "Kāśikā on 8.4.40",
+   "quote": "याच्ञा"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: c + n -> cñ (cause stands before)."
+ },
+ {
+  "id": "hal_assimilation-005",
+  "family": "hal_assimilation",
+  "input": [
+   "agnicit",
+   "cinoti"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "agniciccinoti"
+  ],
+  "sutras": [
+   "8.4.40",
+   "8.2.39",
+   "8.4.55"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.40",
+   "locator": "Kāśikā on 8.4.40",
+   "quote": "अग्निचिच्चिनोति"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: t + c -> cc."
+ },
+ {
+  "id": "hal_assimilation-006",
+  "family": "hal_assimilation",
+  "input": [
+   "tat",
+   "ṭīkā"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "taṭṭīkā"
+  ],
+  "sutras": [
+   "8.4.41",
+   "8.2.39",
+   "8.4.55"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.4.41",
+   "locator": "Siddhāntakaumudī on 8.4.41",
+   "quote": "तट्टीका"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: t + ṭ -> ṭṭ."
+ },
+ {
+  "id": "hal_assimilation-007",
+  "family": "hal_assimilation",
+  "input": [
+   "peṣ",
+   "tā"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "peṣṭā"
+  ],
+  "sutras": [
+   "8.4.41"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.4.41",
+   "locator": "Siddhāntakaumudī on 8.4.41",
+   "quote": "पेष्टा"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: ṣ + t -> ṣṭ."
+ },
+ {
+  "id": "hal_assimilation-008",
+  "family": "hal_assimilation",
+  "input": [
+   "cakrin",
+   "ḍhaukase"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "cakriṇḍhaukase"
+  ],
+  "sutras": [
+   "8.4.41"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.4.41",
+   "locator": "Siddhāntakaumudī on 8.4.41",
+   "quote": "चक्रिण्ढौकसे"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: n + ḍh -> ṇḍh."
+ },
+ {
+  "id": "hal_assimilation-009",
+  "family": "hal_assimilation",
+  "input": [
+   "ṣaṭ",
+   "santaḥ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "ṣaṭsantaḥ"
+  ],
+  "sutras": [
+   "8.4.42"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.4.42",
+   "locator": "Siddhāntakaumudī on 8.4.42",
+   "quote": "षट् सन्तः"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: no ṣṭutva after padānta ṭavarga."
+ },
+ {
+  "id": "hal_assimilation-010",
+  "family": "hal_assimilation",
+  "input": [
+   "ṣaṭ",
+   "te"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "ṣaṭte"
+  ],
+  "sutras": [
+   "8.4.42"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.4.42",
+   "locator": "Siddhāntakaumudī on 8.4.42",
+   "quote": "षट् ते"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: no ṣṭutva of te after ṣaṭ."
+ },
+ {
+  "id": "hal_assimilation-011",
+  "family": "hal_assimilation",
+  "input": [
+   "īṭ",
+   "te"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "īṭṭe"
+  ],
+  "sutras": [
+   "8.4.41"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.4.42",
+   "locator": "Siddhāntakaumudī on 8.4.42",
+   "quote": "ईट्टे"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: padāntāt kim? īṭte is not padānta, so ṣṭutva applies."
+ },
+ {
+  "id": "hal_assimilation-012",
+  "family": "hal_assimilation",
+  "input": [
+   "sarpiṣ",
+   "tamam"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "sarpiṣṭamam"
+  ],
+  "sutras": [
+   "8.4.41"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.4.42",
+   "locator": "Siddhāntakaumudī on 8.4.42",
+   "quote": "सर्पिष्टमम्"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: ṭoḥ kim? sarpiṣ ends in ṣ, not ṭ, so ṣṭutva applies."
+ },
+ {
+  "id": "hal_assimilation-013",
+  "family": "hal_assimilation",
+  "input": [
+   "san",
+   "ṣaṣṭhaḥ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "sanṣaṣṭhaḥ"
+  ],
+  "sutras": [
+   "8.4.43"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.4.43",
+   "locator": "Siddhāntakaumudī on 8.4.43",
+   "quote": "सन्षष्ठः"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: tavarga before ṣ does not undergo ṣṭutva."
+ },
+ {
+  "id": "hal_assimilation-014",
+  "family": "hal_assimilation",
+  "input": [
+   "viś",
+   "na"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "viśna"
+  ],
+  "sutras": [
+   "8.4.44"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.4.44",
+   "locator": "Siddhāntakaumudī on 8.4.44",
+   "quote": "विश्नः"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: tavarga after ś does not undergo ścutva."
+ },
+ {
+  "id": "hal_assimilation-015",
+  "family": "hal_assimilation",
+  "input": [
+   "praś",
+   "na"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "praśna"
+  ],
+  "sutras": [
+   "8.4.44"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.4.44",
+   "locator": "Siddhāntakaumudī on 8.4.44",
+   "quote": "प्रश्नः"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: tavarga after ś does not undergo ścutva."
+ },
+ {
+  "id": "hal_assimilation-016",
+  "family": "hal_assimilation",
+  "input": [
+   "agnicit",
+   "atra"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "agnicidatra"
+  ],
+  "sutras": [
+   "8.2.39"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.2.39",
+   "locator": "Kāśikā on 8.2.39",
+   "quote": "अग्निचिदत्र"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: padānta t -> d before vowel."
+ },
+ {
+  "id": "hal_assimilation-017",
+  "family": "hal_assimilation",
+  "input": [
+   "vāk",
+   "atra"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "vāgatra"
+  ],
+  "sutras": [
+   "8.2.39"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.2.39",
+   "locator": "Kāśikā on 8.2.39",
+   "quote": "वागत्र"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: padānta k -> g before vowel."
+ },
+ {
+  "id": "hal_assimilation-018",
+  "family": "hal_assimilation",
+  "input": [
+   "triṣṭup",
+   "atra"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "triṣṭubatra"
+  ],
+  "sutras": [
+   "8.2.39"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.2.39",
+   "locator": "Kāśikā on 8.2.39",
+   "quote": "त्रिष्टुबत्र"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: padānta p -> b before vowel."
+ },
+ {
+  "id": "hal_assimilation-019",
+  "family": "hal_assimilation",
+  "input": [
+   "labh",
+   "dhā"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "labdhā"
+  ],
+  "sutras": [
+   "8.4.53"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.53",
+   "locator": "Kāśikā on 8.4.53",
+   "quote": "लब्धा"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: bh -> b before dh."
+ },
+ {
+  "id": "hal_assimilation-020",
+  "family": "hal_assimilation",
+  "input": [
+   "labh",
+   "dhum"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "labdhum"
+  ],
+  "sutras": [
+   "8.4.53"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.53",
+   "locator": "Kāśikā on 8.4.53",
+   "quote": "लब्धुम्"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: bh -> b before dh."
+ },
+ {
+  "id": "hal_assimilation-021",
+  "family": "hal_assimilation",
+  "input": [
+   "bodh",
+   "dhā"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "boddhā"
+  ],
+  "sutras": [
+   "8.4.53"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.53",
+   "locator": "Kāśikā on 8.4.53",
+   "quote": "बोद्धा"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: dh -> d before dh."
+ },
+ {
+  "id": "hal_assimilation-022",
+  "family": "hal_assimilation",
+  "input": [
+   "bodh",
+   "dhum"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "boddhum"
+  ],
+  "sutras": [
+   "8.4.53"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.53",
+   "locator": "Kāśikā on 8.4.53",
+   "quote": "बोद्धुम्"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: dh -> d before dh."
+ },
+ {
+  "id": "hal_assimilation-023",
+  "family": "hal_assimilation",
+  "input": [
+   "bhed",
+   "tā"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "bhettā"
+  ],
+  "sutras": [
+   "8.4.55"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.55",
+   "locator": "Kāśikā on 8.4.55",
+   "quote": "भेत्ता"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: d -> t before t."
+ },
+ {
+  "id": "hal_assimilation-024",
+  "family": "hal_assimilation",
+  "input": [
+   "bhed",
+   "tum"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "bhettum"
+  ],
+  "sutras": [
+   "8.4.55"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.55",
+   "locator": "Kāśikā on 8.4.55",
+   "quote": "भेत्तुम्"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: d -> t before t."
+ },
+ {
+  "id": "hal_assimilation-025",
+  "family": "hal_assimilation",
+  "input": [
+   "sat",
+   "pat"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "satpat"
+  ],
+  "sutras": [
+   "8.4.55"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.55",
+   "locator": "Kāśikā on 8.4.55",
+   "quote": "भेत्ता। भेत्तुम्। भेत्तव्यम्"
+  },
+  "confidence": "certain",
+  "notes": "Kasika 8.4.55: cartva before khar."
+ },
+ {
+  "id": "hal_assimilation-026",
+  "family": "hal_assimilation",
+  "input": [
+   "vāk"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "vāk",
+   "vāg"
+  ],
+  "sutras": [
+   "8.4.56"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.56",
+   "locator": "Kāśikā on 8.4.56",
+   "quote": "वाक् ,वाग्"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: optional cartva at pause."
+ },
+ {
+  "id": "hal_assimilation-027",
+  "family": "hal_assimilation",
+  "input": [
+   "tvak"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "tvak",
+   "tvag"
+  ],
+  "sutras": [
+   "8.4.56"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.56",
+   "locator": "Kāśikā on 8.4.56",
+   "quote": "त्वक्, त्वग्"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: optional cartva at pause."
+ },
+ {
+  "id": "hal_assimilation-028",
+  "family": "hal_assimilation",
+  "input": [
+   "triṣṭup"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "triṣṭup",
+   "triṣṭub"
+  ],
+  "sutras": [
+   "8.4.56"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.56",
+   "locator": "Kāśikā on 8.4.56",
+   "quote": "त्रिष्टुप्, त्रिष्टुब्"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: optional cartva at pause."
+ },
+ {
+  "id": "hal_assimilation-029",
+  "family": "hal_assimilation",
+  "input": [
+   "tat",
+   "layaḥ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "tallayaḥ"
+  ],
+  "sutras": [
+   "8.4.60"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.4.60",
+   "locator": "Siddhāntakaumudī on 8.4.60",
+   "quote": "तल्लयः"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: tavarga before l becomes l."
+ },
+ {
+  "id": "hal_assimilation-030",
+  "family": "hal_assimilation",
+  "input": [
+   "agnicit",
+   "lunāti"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "agnicillunāti"
+  ],
+  "sutras": [
+   "8.4.60"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.60",
+   "locator": "Kāśikā on 8.4.60",
+   "quote": "अग्निचिल्लुनाति"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: t + l -> ll."
+ },
+ {
+  "id": "hal_assimilation-031",
+  "family": "hal_assimilation",
+  "input": [
+   "vāk",
+   "hariḥ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "vāgghariḥ",
+   "vāghariḥ"
+  ],
+  "sutras": [
+   "8.4.62",
+   "8.2.39"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.4.62",
+   "locator": "Siddhāntakaumudī on 8.4.62",
+   "quote": "वाग्घरिः"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: optional pūrvasavarṇa of h after jhay."
+ },
+ {
+  "id": "hal_assimilation-032",
+  "family": "hal_assimilation",
+  "input": [
+   "vāk",
+   "śete"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "vākchete",
+   "vākśete"
+  ],
+  "sutras": [
+   "8.4.63"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.63",
+   "locator": "Kāśikā on 8.4.63",
+   "quote": "वाक्छेते, वाक् शेते"
+  },
+  "confidence": "certain",
+  "notes": "Kasika 8.4.63: optional ch-ādeśa for ś after jhay."
+ },
+ {
+  "id": "hal_assimilation-033",
+  "family": "hal_assimilation",
+  "input": [
+   "śiva",
+   "chāyā"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "śivacchāyā"
+  ],
+  "sutras": [
+   "6.1.73"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.73",
+   "locator": "Siddhāntakaumudī on 6.1.73",
+   "quote": "शिवच्छाया"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: tuk augment after short vowel before ch."
+ },
+ {
+  "id": "hal_assimilation-034",
+  "family": "hal_assimilation",
+  "input": [
+   "ā",
+   "chādayati"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "ācchādayati"
+  ],
+  "sutras": [
+   "6.1.74"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.74",
+   "locator": "Siddhāntakaumudī on 6.1.74",
+   "quote": "आच्छादयति"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: obligatory tuk after āṅ before ch.",
+  "flags": {
+   "0": [
+    "ang"
+   ]
+  }
+ },
+ {
+  "id": "hal_assimilation-035",
+  "family": "hal_assimilation",
+  "input": [
+   "mā",
+   "chidat"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "mācchidat"
+  ],
+  "sutras": [
+   "6.1.74"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.74",
+   "locator": "Siddhāntakaumudī on 6.1.74",
+   "quote": "माच्छिदत्"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: obligatory tuk after māṅ before ch.",
+  "flags": {
+   "0": [
+    "mang"
+   ]
+  }
+ },
+ {
+  "id": "hal_assimilation-036",
+  "family": "hal_assimilation",
+  "input": [
+   "hrī",
+   "chati"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "hrīcchati"
+  ],
+  "sutras": [
+   "6.1.75"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.75",
+   "locator": "Kāśikā on 6.1.75",
+   "quote": "ह्रीच्छति"
+  },
+  "confidence": "certain",
+  "notes": "Kasika 6.1.75: tuk after long vowel in non-pada-final."
+ },
+ {
+  "id": "hal_assimilation-037",
+  "family": "hal_assimilation",
+  "input": [
+   "lakṣmī",
+   "chāyā"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "lakṣmīcchāyā",
+   "lakṣmīchāyā"
+  ],
+  "sutras": [
+   "6.1.76"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.76",
+   "locator": "Siddhāntakaumudī on 6.1.76",
+   "quote": "लक्ष्मीच्छाया । लक्ष्मीछाया"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: optional tuk after long pada-final vowel before ch."
+ },
+ {
+  "id": "hal_assimilation-038",
+  "family": "hal_assimilation",
+  "input": [
+   "pac",
+   "tā"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "paktā"
+  ],
+  "sutras": [
+   "8.2.30",
+   "8.4.55"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.2.30",
+   "locator": "Kāśikā on 8.2.30",
+   "quote": "पक्ता"
+  },
+  "confidence": "certain",
+  "notes": "Kasika 8.2.30: c-varga to k-varga before jhal."
+ },
+ {
+  "id": "hal_assimilation-039",
+  "family": "hal_assimilation",
+  "input": [
+   "sraṣ",
+   "tum"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "sraṣṭum"
+  ],
+  "sutras": [
+   "8.2.36",
+   "8.4.41"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.2.36",
+   "locator": "Kāśikā on 8.2.36",
+   "quote": "स्रष्टा। स्रष्टुम्। स्रष्टव्यम्"
+  },
+  "confidence": "certain",
+  "notes": "Kasika 8.2.36: sṛj -> sraṣ before tum."
+ }
+]

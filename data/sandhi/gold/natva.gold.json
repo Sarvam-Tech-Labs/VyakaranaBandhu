@@ -1,0 +1,605 @@
+[
+ {
+  "id": "natva-001",
+  "family": "natva",
+  "input": [
+   "āstīr",
+   "nam"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "āstīrṇam"
+  ],
+  "sutras": [
+   "8.4.1"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.1",
+   "locator": "Kāśikā on 8.4.1",
+   "quote": "आस्तीर्णम्"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: n immediately after r in same pada becomes ṇ."
+ },
+ {
+  "id": "natva-002",
+  "family": "natva",
+  "input": [
+   "kuṣ",
+   "nāti"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "kuṣṇāti"
+  ],
+  "sutras": [
+   "8.4.1"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.1",
+   "locator": "Kāśikā on 8.4.1",
+   "quote": "कुष्णाति"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: n immediately after ṣ in same pada becomes ṇ."
+ },
+ {
+  "id": "natva-003",
+  "family": "natva",
+  "input": [
+   "mātṝ",
+   "nām"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "mātṝṇām"
+  ],
+  "sutras": [
+   "8.4.1"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.1",
+   "locator": "Kāśikā on 8.4.1",
+   "quote": "मातृृणाम्। पितृृणाम्"
+  },
+  "confidence": "certain",
+  "notes": "Kasika vārttika: natva after ṛ-varna."
+ },
+ {
+  "id": "natva-004",
+  "family": "natva",
+  "input": [
+   "pitṝ",
+   "nām"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "pitṝṇām"
+  ],
+  "sutras": [
+   "8.4.1"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.1",
+   "locator": "Kāśikā on 8.4.1",
+   "quote": "मातृृणाम्। पितृृणाम्"
+  },
+  "confidence": "certain",
+  "notes": "Kasika vārttika: natva after ṛ-varna."
+ },
+ {
+  "id": "natva-005",
+  "family": "natva",
+  "input": [
+   "kara",
+   "anam"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "karaṇam"
+  ],
+  "sutras": [
+   "8.4.2"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.2",
+   "locator": "Kāśikā on 8.4.2",
+   "quote": "करणम्। हरणम्"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: reach across aṭ intervener."
+ },
+ {
+  "id": "natva-006",
+  "family": "natva",
+  "input": [
+   "hara",
+   "anam"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "haraṇam"
+  ],
+  "sutras": [
+   "8.4.2"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.2",
+   "locator": "Kāśikā on 8.4.2",
+   "quote": "करणम्। हरणम्"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: reach across aṭ intervener."
+ },
+ {
+  "id": "natva-007",
+  "family": "natva",
+  "input": [
+   "śūrpa",
+   "nakhā"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "śūrpaṇakhā"
+  ],
+  "sutras": [
+   "8.4.3"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.3",
+   "locator": "Kāśikā on 8.4.3",
+   "quote": "द्रुणसः"
+  },
+  "confidence": "certain",
+  "notes": "Kasika 8.4.3: natva across compound seam in a proper name.",
+  "flags": {
+   "1": [
+    "samjna"
+   ]
+  }
+ },
+ {
+  "id": "natva-008",
+  "family": "natva",
+  "input": [
+   "pra",
+   "vana"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "pravaṇa"
+  ],
+  "sutras": [
+   "8.4.5"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.4.5",
+   "locator": "Siddhāntakaumudī on 8.4.5",
+   "quote": "प्रवणम्"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: vana after pra becomes vaṇa."
+ },
+ {
+  "id": "natva-009",
+  "family": "natva",
+  "input": [
+   "śara",
+   "vana"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "śaravaṇa"
+  ],
+  "sutras": [
+   "8.4.5"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.5",
+   "locator": "Kāśikā on 8.4.5",
+   "quote": "शरवणम्"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: vana after śara becomes vaṇa."
+ },
+ {
+  "id": "natva-010",
+  "family": "natva",
+  "input": [
+   "āmra",
+   "vana"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "āmravaṇa"
+  ],
+  "sutras": [
+   "8.4.5"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.5",
+   "locator": "Kāśikā on 8.4.5",
+   "quote": "आम्रवणम्"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: vana after āmra becomes vaṇa."
+ },
+ {
+  "id": "natva-011",
+  "family": "natva",
+  "input": [
+   "nir",
+   "vana"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "nirvaṇa"
+  ],
+  "sutras": [
+   "8.4.5"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.4.5",
+   "locator": "Siddhāntakaumudī on 8.4.5",
+   "quote": "प्रवणम्"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: vana after nir becomes vaṇa."
+ },
+ {
+  "id": "natva-012",
+  "family": "natva",
+  "input": [
+   "śara",
+   "vāhana"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "śaravāhaṇa"
+  ],
+  "sutras": [
+   "8.4.8"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.8",
+   "locator": "Kāśikā on 8.4.8",
+   "quote": "शरवाहणम्"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: vāhana after loaded item gets natva.",
+  "flags": {
+   "0": [
+    "ahita"
+   ]
+  }
+ },
+ {
+  "id": "natva-013",
+  "family": "natva",
+  "input": [
+   "kṣīra",
+   "pāna"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "kṣīrapāṇa"
+  ],
+  "sutras": [
+   "8.4.9"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.9",
+   "locator": "Kāśikā on 8.4.9",
+   "quote": "क्षीरपाणा उशीनराः"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: pāna in country name gets natva.",
+  "flags": {
+   "1": [
+    "desa"
+   ]
+  }
+ },
+ {
+  "id": "natva-014",
+  "family": "natva",
+  "input": [
+   "vṛtra",
+   "hanau"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "vṛtrahaṇau"
+  ],
+  "sutras": [
+   "8.4.12"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.12",
+   "locator": "Kāśikā on 8.4.12",
+   "quote": "वृत्रहणौ"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: ekāc uttarapada han gets natva before vowel case ending.",
+  "flags": {
+   "1": [
+    "vibhakti"
+   ]
+  }
+ },
+ {
+  "id": "natva-015",
+  "family": "natva",
+  "input": [
+   "vastra",
+   "yuginau"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "vastrayugiṇau"
+  ],
+  "sutras": [
+   "8.4.13"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.13",
+   "locator": "Kāśikā on 8.4.13",
+   "quote": "वस्त्रयुगिणौ"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: pratipadika with k-varga gets natva.",
+  "flags": {
+   "1": [
+    "vibhakti"
+   ]
+  }
+ },
+ {
+  "id": "natva-016",
+  "family": "natva",
+  "input": [
+   "pra",
+   "namati"
+  ],
+  "boundary": "upasarga",
+  "outputs": [
+   "praṇamati"
+  ],
+  "sutras": [
+   "8.4.14"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.14",
+   "locator": "Kāśikā on 8.4.14",
+   "quote": "प्रणमति। परिणमति। प्रणायकः। परिणायकः"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: ṇopadeśa root nam after pra gets natva.",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "dhatu:nam"
+   ]
+  }
+ },
+ {
+  "id": "natva-017",
+  "family": "natva",
+  "input": [
+   "pari",
+   "namati"
+  ],
+  "boundary": "upasarga",
+  "outputs": [
+   "pariṇamati"
+  ],
+  "sutras": [
+   "8.4.14"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.14",
+   "locator": "Kāśikā on 8.4.14",
+   "quote": "प्रणमति। परिणमति। प्रणायकः। परिणायकः"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: ṇopadeśa root nam after pari gets natva.",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "dhatu:nam"
+   ]
+  }
+ },
+ {
+  "id": "natva-018",
+  "family": "natva",
+  "input": [
+   "pra",
+   "nadati"
+  ],
+  "boundary": "upasarga",
+  "outputs": [
+   "praṇadati"
+  ],
+  "sutras": [
+   "8.4.14"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.4.14",
+   "locator": "Siddhāntakaumudī on 8.4.14",
+   "quote": "प्रणदति"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: ṇopadeśa root nad after pra gets natva.",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "dhatu:nad"
+   ]
+  }
+ },
+ {
+  "id": "natva-019",
+  "family": "natva",
+  "input": [
+   "pra",
+   "nardati"
+  ],
+  "boundary": "upasarga",
+  "outputs": [
+   "pranardati"
+  ],
+  "sutras": [
+   "8.4.14"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.14",
+   "locator": "Kāśikā on 8.4.14",
+   "quote": "प्रनर्दति"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: non-ṇopadeśa root nard does not get natva.",
+  "flags": {
+   "0": [
+    "upasarga"
+   ]
+  }
+ },
+ {
+  "id": "natva-020",
+  "family": "natva",
+  "input": [
+   "rāmān"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "rāmān"
+  ],
+  "sutras": [
+   "8.4.37"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.4.37",
+   "locator": "Siddhāntakaumudī on 8.4.37",
+   "quote": "रामान्"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: pada-final n does not get natva."
+ },
+ {
+  "id": "natva-021",
+  "family": "natva",
+  "input": [
+   "vṛkṣān"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "vṛkṣān"
+  ],
+  "sutras": [
+   "8.4.37"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.37",
+   "locator": "Kāśikā on 8.4.37",
+   "quote": "वृक्षान्। प्लक्षान्। अरीन्। गिरीन्"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: pada-final n does not get natva."
+ },
+ {
+  "id": "natva-022",
+  "family": "natva",
+  "input": [
+   "girīn"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "girīn"
+  ],
+  "sutras": [
+   "8.4.37"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.37",
+   "locator": "Kāśikā on 8.4.37",
+   "quote": "वृक्षान्। प्लक्षान्। अरीन्। गिरीन्"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: pada-final n does not get natva."
+ },
+ {
+  "id": "natva-023",
+  "family": "natva",
+  "input": [
+   "kṣubh",
+   "nāti"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "kṣubhnāti"
+  ],
+  "sutras": [
+   "8.4.39"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.4.39",
+   "locator": "Kāśikā on 8.4.39",
+   "quote": "क्षुभ्नाति"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: kṣubhnādi class roots do not get natva (refusal)."
+ }
+]

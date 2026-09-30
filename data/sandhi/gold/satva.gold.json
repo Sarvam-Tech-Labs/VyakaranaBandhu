@@ -1,0 +1,503 @@
+[
+ {
+  "id": "satva-001",
+  "family": "satva",
+  "input": [
+   "dā",
+   "syati"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "dāsyati"
+  ],
+  "sutras": [
+   "8.3.57"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.3.57",
+   "locator": "Kāśikā on 8.3.57",
+   "quote": "दास्यति। असौ॥"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: iṇkoḥ kim? dā ends in long ā, so no satva.",
+  "flags": {
+   "1": [
+    "pratyaya"
+   ]
+  }
+ },
+ {
+  "id": "satva-002",
+  "family": "satva",
+  "input": [
+   "sarpīn",
+   "ṣi"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "sarpīṃṣi"
+  ],
+  "sutras": [
+   "8.3.58",
+   "8.3.24"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.3.58",
+   "locator": "Kāśikā on 8.3.58",
+   "quote": "सर्पींषि। यजूंषि। हवींषि"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: satva across num-vyavāya."
+ },
+ {
+  "id": "satva-003",
+  "family": "satva",
+  "input": [
+   "yajūn",
+   "ṣi"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "yajūṃṣi"
+  ],
+  "sutras": [
+   "8.3.58",
+   "8.3.24"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.3.58",
+   "locator": "Kāśikā on 8.3.58",
+   "quote": "सर्पींषि। यजूंषि। हवींषि"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: satva across num-vyavāya."
+ },
+ {
+  "id": "satva-004",
+  "family": "satva",
+  "input": [
+   "agni",
+   "su"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "agniṣu"
+  ],
+  "sutras": [
+   "8.3.59"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.3.59",
+   "locator": "Kāśikā on 8.3.59",
+   "quote": "सिषेव। सुष्वाप। प्रत्ययस्य — अग्निषु"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: pratyaya s after in becomes ṣ.",
+  "flags": {
+   "1": [
+    "pratyaya"
+   ]
+  }
+ },
+ {
+  "id": "satva-005",
+  "family": "satva",
+  "input": [
+   "rāme",
+   "su"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "rāmeṣu"
+  ],
+  "sutras": [
+   "8.3.59"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.3.59",
+   "locator": "Kāśikā on 8.3.59",
+   "quote": "सिषेव। सुष्वाप। प्रत्ययस्य — अग्निषु"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: pratyaya s after in becomes ṣ.",
+  "flags": {
+   "1": [
+    "pratyaya"
+   ]
+  }
+ },
+ {
+  "id": "satva-006",
+  "family": "satva",
+  "input": [
+   "abhi",
+   "siñcati"
+  ],
+  "boundary": "upasarga",
+  "outputs": [
+   "abhiṣiñcati"
+  ],
+  "sutras": [
+   "8.3.65"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.3.65",
+   "locator": "Kāśikā on 8.3.65",
+   "quote": "अभिषिञ्चति। परिषिञ्चति"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: root sic after abhi gets satva.",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "dhatu:sic"
+   ]
+  }
+ },
+ {
+  "id": "satva-007",
+  "family": "satva",
+  "input": [
+   "pari",
+   "siñcati"
+  ],
+  "boundary": "upasarga",
+  "outputs": [
+   "pariṣiñcati"
+  ],
+  "sutras": [
+   "8.3.65"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.3.65",
+   "locator": "Kāśikā on 8.3.65",
+   "quote": "अभिषिञ्चति। परिषिञ्चति"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: root sic after pari gets satva.",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "dhatu:sic"
+   ]
+  }
+ },
+ {
+  "id": "satva-008",
+  "family": "satva",
+  "input": [
+   "ni",
+   "sīdati"
+  ],
+  "boundary": "upasarga",
+  "outputs": [
+   "niṣīdati"
+  ],
+  "sutras": [
+   "8.3.66"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.3.66",
+   "locator": "Kāśikā on 8.3.66",
+   "quote": "निषीदति"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: root sad after ni gets satva.",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "dhatu:sad"
+   ]
+  }
+ },
+ {
+  "id": "satva-009",
+  "family": "satva",
+  "input": [
+   "pari",
+   "sevate"
+  ],
+  "boundary": "upasarga",
+  "outputs": [
+   "pariṣevate"
+  ],
+  "sutras": [
+   "8.3.70"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.3.70",
+   "locator": "Kāśikā on 8.3.70",
+   "quote": "परिषेवते"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: root sev after pari gets satva.",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "dhatu:sev"
+   ]
+  }
+ },
+ {
+  "id": "satva-010",
+  "family": "satva",
+  "input": [
+   "pari",
+   "sīvyati"
+  ],
+  "boundary": "upasarga",
+  "outputs": [
+   "pariṣīvyati"
+  ],
+  "sutras": [
+   "8.3.70"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.3.70",
+   "locator": "Kāśikā on 8.3.70",
+   "quote": "परिषेवते"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: root siv after pari gets satva.",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "dhatu:siv"
+   ]
+  }
+ },
+ {
+  "id": "satva-011",
+  "family": "satva",
+  "input": [
+   "agni",
+   "stoma"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "agniṣṭoma"
+  ],
+  "sutras": [
+   "8.3.82"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.3.82",
+   "locator": "Kāśikā on 8.3.82",
+   "quote": "अग्निष्टोमः"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: stoma after agni gets satva."
+ },
+ {
+  "id": "satva-012",
+  "family": "satva",
+  "input": [
+   "su",
+   "sāmā"
+  ],
+  "boundary": "samasa",
+  "outputs": [
+   "suṣāmā"
+  ],
+  "sutras": [
+   "8.3.98"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.3.98",
+   "locator": "Kāśikā on 8.3.98",
+   "quote": "सुषामा"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: suṣāmādi class nipātana."
+ },
+ {
+  "id": "satva-013",
+  "family": "satva",
+  "input": [
+   "agni",
+   "sāt"
+  ],
+  "boundary": "anga",
+  "outputs": [
+   "agnisāt",
+   "agnisād"
+  ],
+  "sutras": [
+   "8.3.111"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.3.111",
+   "locator": "Kāśikā on 8.3.111",
+   "quote": "अग्निसात्"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: affix sāt does not get satva (refusal).",
+  "flags": {
+   "1": [
+    "pratyaya"
+   ]
+  }
+ },
+ {
+  "id": "satva-014",
+  "family": "satva",
+  "input": [
+   "dadhi",
+   "siñcati"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "dadhisiñcati"
+  ],
+  "sutras": [
+   "8.3.111"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.3.111",
+   "locator": "Kāśikā on 8.3.111",
+   "quote": "दधि सिञ्चति"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: padādi s does not get satva (refusal).",
+  "flags": {
+   "1": [
+    "adesa"
+   ]
+  }
+ },
+ {
+  "id": "satva-015",
+  "family": "satva",
+  "input": [
+   "abhi",
+   "sedhayati"
+  ],
+  "boundary": "upasarga",
+  "outputs": [
+   "abhisedhayati"
+  ],
+  "sutras": [
+   "8.3.113"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.3.113",
+   "locator": "Kāśikā on 8.3.113",
+   "quote": "अभिसेधयति गाः"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: sedha in motion sense does not get satva.",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "dhatu:sedha",
+    "sense:gati"
+   ]
+  }
+ },
+ {
+  "id": "satva-016",
+  "family": "satva",
+  "input": [
+   "prati",
+   "stabdha"
+  ],
+  "boundary": "upasarga",
+  "outputs": [
+   "pratistabdha"
+  ],
+  "sutras": [
+   "8.3.114"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.3.114",
+   "locator": "Kāśikā on 8.3.114",
+   "quote": "प्रतिस्तब्धः"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: nipātana in pratistabdha (refusal).",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "dhatu:stambh"
+   ]
+  }
+ },
+ {
+  "id": "satva-017",
+  "family": "satva",
+  "input": [
+   "pari",
+   "soḍhā"
+  ],
+  "boundary": "upasarga",
+  "outputs": [
+   "parisoḍhā"
+  ],
+  "sutras": [
+   "8.3.115"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.3.115",
+   "locator": "Kāśikā on 8.3.115",
+   "quote": "परिसोढा"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: soḍh does not get satva (refusal).",
+  "flags": {
+   "0": [
+    "upasarga"
+   ],
+   "1": [
+    "dhatu:sah"
+   ]
+  }
+ }
+]

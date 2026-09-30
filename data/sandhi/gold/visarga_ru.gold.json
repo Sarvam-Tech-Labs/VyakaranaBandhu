@@ -1,0 +1,689 @@
+[
+ {
+  "id": "visarga_ru-001",
+  "family": "visarga_ru",
+  "input": [
+   "rāmas",
+   "ca"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "rāmaśca"
+  ],
+  "sutras": [
+   "8.2.66",
+   "8.3.15",
+   "8.3.34",
+   "8.4.40"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.2.66",
+   "locator": "Siddhāntakaumudī on 8.2.66",
+   "quote": "पदान्तस्य सस्य सजुष्शब्दस्य च रुः स्यात्"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: padānta s becomes ru."
+ },
+ {
+  "id": "visarga_ru-002",
+  "family": "visarga_ru",
+  "input": [
+   "rāmas"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "rāmaḥ"
+  ],
+  "sutras": [
+   "8.2.66",
+   "8.3.15"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.3.15",
+   "locator": "Siddhāntakaumudī on 8.3.15",
+   "quote": "खरि अवसाने च परे रेफस्य विसर्जनीयः स्यात्पदान्ते"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: ru becomes visarga at pause."
+ },
+ {
+  "id": "visarga_ru-003",
+  "family": "visarga_ru",
+  "input": [
+   "vṛkṣas",
+   "tarati"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "vṛkṣastarati"
+  ],
+  "sutras": [
+   "8.2.66",
+   "8.3.15",
+   "8.3.34"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.3.34",
+   "locator": "Kāśikā on 8.3.34",
+   "quote": "वृक्षस्तरति। प्लक्षस्तरति"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: visarga becomes s before khar (t)."
+ },
+ {
+  "id": "visarga_ru-004",
+  "family": "visarga_ru",
+  "input": [
+   "plakṣas",
+   "tarati"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "plakṣastarati"
+  ],
+  "sutras": [
+   "8.2.66",
+   "8.3.15",
+   "8.3.34"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.3.34",
+   "locator": "Kāśikā on 8.3.34",
+   "quote": "वृक्षस्तरति। प्लक्षस्तरति"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: visarga becomes s before khar (t)."
+ },
+ {
+  "id": "visarga_ru-005",
+  "family": "visarga_ru",
+  "input": [
+   "viṣṇus",
+   "trātā"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "viṣṇustrātā"
+  ],
+  "sutras": [
+   "8.2.66",
+   "8.3.15",
+   "8.3.34"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": "8.3.34",
+   "locator": "Laghusiddhāntakaumudī (GRETIL text)",
+   "quote": "khari / viṣṇustrātā"
+  },
+  "confidence": "certain",
+  "notes": "Laghu: visarga becomes s before trātā."
+ },
+ {
+  "id": "visarga_ru-006",
+  "family": "visarga_ru",
+  "input": [
+   "haris",
+   "śete"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "hariḥśete",
+   "hariśśete"
+  ],
+  "sutras": [
+   "8.2.66",
+   "8.3.15",
+   "8.3.36"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.3.36",
+   "locator": "Siddhāntakaumudī on 8.3.36",
+   "quote": "हरिः शेते । हरिश्शेते"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: optional visarga retention before śar."
+ },
+ {
+  "id": "visarga_ru-007",
+  "family": "visarga_ru",
+  "input": [
+   "devās",
+   "iha"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "devāiha",
+   "devāyiha"
+  ],
+  "sutras": [
+   "8.2.66",
+   "8.3.17",
+   "8.3.19"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.3.17",
+   "locator": "Siddhāntakaumudī on 8.3.17",
+   "quote": "देवा इह । देवायिह"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: ru preceded by a/ā becomes y before aś, then optionally elided by 8.3.19."
+ },
+ {
+  "id": "visarga_ru-008",
+  "family": "visarga_ru",
+  "input": [
+   "bhos",
+   "devāḥ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "bhodevāḥ"
+  ],
+  "sutras": [
+   "8.2.66",
+   "8.3.17",
+   "8.3.22"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.3.22",
+   "locator": "Siddhāntakaumudī on 8.3.22",
+   "quote": "भो देवाः"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: elision of y after bho/bhago/agho before hal."
+ },
+ {
+  "id": "visarga_ru-009",
+  "family": "visarga_ru",
+  "input": [
+   "bhagos",
+   "namaste"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "bhagonamaste"
+  ],
+  "sutras": [
+   "8.2.66",
+   "8.3.17",
+   "8.3.22"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": "8.3.22",
+   "locator": "Laghusiddhāntakaumudī (GRETIL text)",
+   "quote": "bho devāḥ / bhago namaste / agho yāhi"
+  },
+  "confidence": "certain",
+  "notes": "Laghu: elision of y after bhagos before hal."
+ },
+ {
+  "id": "visarga_ru-010",
+  "family": "visarga_ru",
+  "input": [
+   "aghos",
+   "yāhi"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "aghoyāhi"
+  ],
+  "sutras": [
+   "8.2.66",
+   "8.3.17",
+   "8.3.22"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": "8.3.22",
+   "locator": "Laghusiddhāntakaumudī (GRETIL text)",
+   "quote": "bho devāḥ / bhago namaste / agho yāhi"
+  },
+  "confidence": "certain",
+  "notes": "Laghu: elision of y after aghos before hal."
+ },
+ {
+  "id": "visarga_ru-011",
+  "family": "visarga_ru",
+  "input": [
+   "punar",
+   "ramate"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "punāramate"
+  ],
+  "sutras": [
+   "8.3.14",
+   "6.3.111"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": "8.3.14",
+   "locator": "Laghusiddhāntakaumudī (GRETIL text)",
+   "quote": "punā ramate / harī ramyaḥ / śambhū rājate"
+  },
+  "confidence": "certain",
+  "notes": "Laghu: r elided before r, preceding a lengthened."
+ },
+ {
+  "id": "visarga_ru-012",
+  "family": "visarga_ru",
+  "input": [
+   "haris",
+   "ramyaḥ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "harīramyaḥ"
+  ],
+  "sutras": [
+   "8.2.66",
+   "8.3.14",
+   "6.3.111"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": "8.3.14",
+   "locator": "Laghusiddhāntakaumudī (GRETIL text)",
+   "quote": "punā ramate / harī ramyaḥ / śambhū rājate"
+  },
+  "confidence": "certain",
+  "notes": "Laghu: ru elided before r, preceding i lengthened."
+ },
+ {
+  "id": "visarga_ru-013",
+  "family": "visarga_ru",
+  "input": [
+   "śambhus",
+   "rājate"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "śambhūrājate"
+  ],
+  "sutras": [
+   "8.2.66",
+   "8.3.14",
+   "6.3.111"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": "8.3.14",
+   "locator": "Laghusiddhāntakaumudī (GRETIL text)",
+   "quote": "punā ramate / harī ramyaḥ / śambhū rājate"
+  },
+  "confidence": "certain",
+  "notes": "Laghu: ru elided before r, preceding u lengthened."
+ },
+ {
+  "id": "visarga_ru-014",
+  "family": "visarga_ru",
+  "input": [
+   "agnis",
+   "rathaḥ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "agnīrathaḥ"
+  ],
+  "sutras": [
+   "8.2.66",
+   "8.3.14",
+   "6.3.111"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "8.3.14",
+   "locator": "Kāśikā on 8.3.14",
+   "quote": "अग्नी रथः। इन्दू रथः"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: ru elided before r, preceding i lengthened."
+ },
+ {
+  "id": "visarga_ru-015",
+  "family": "visarga_ru",
+  "input": [
+   "vṛkṣas",
+   "atra"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "vṛkṣo'tra"
+  ],
+  "sutras": [
+   "8.2.66",
+   "6.1.113",
+   "6.1.87",
+   "6.1.109"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.113",
+   "locator": "Kāśikā on 6.1.113",
+   "quote": "वृक्षोऽत्र। प्लक्षोऽत्र"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: ru becomes u after short a before short a."
+ },
+ {
+  "id": "visarga_ru-016",
+  "family": "visarga_ru",
+  "input": [
+   "plakṣas",
+   "atra"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "plakṣo'tra"
+  ],
+  "sutras": [
+   "8.2.66",
+   "6.1.113",
+   "6.1.87",
+   "6.1.109"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.113",
+   "locator": "Kāśikā on 6.1.113",
+   "quote": "वृक्षोऽत्र। प्लक्षोऽत्र"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: ru becomes u after short a before short a."
+ },
+ {
+  "id": "visarga_ru-017",
+  "family": "visarga_ru",
+  "input": [
+   "agnis",
+   "atra"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "agniratra"
+  ],
+  "sutras": [
+   "8.2.66"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.113",
+   "locator": "Kāśikā on 6.1.113",
+   "quote": "अग्निरत्र"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: ataḥ kim? agni ends in i, so no utva."
+ },
+ {
+  "id": "visarga_ru-018",
+  "family": "visarga_ru",
+  "input": [
+   "vṛkṣās",
+   "atra"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "vṛkṣāatra",
+   "vṛkṣāyatra"
+  ],
+  "sutras": [
+   "8.2.66",
+   "8.3.17",
+   "8.3.19"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.113",
+   "locator": "Kāśikā on 6.1.113",
+   "quote": "वृक्षा अत्र"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: taparakaraṇaṃ kim? Long ā does not get utva."
+ },
+ {
+  "id": "visarga_ru-019",
+  "family": "visarga_ru",
+  "input": [
+   "prātar",
+   "atra"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "prātaratra"
+  ],
+  "sutras": [
+   "8.2.66"
+  ],
+  "counter_example": true,
+  "source": {
+   "work": "kashika",
+   "sutra": "6.1.113",
+   "locator": "Kāśikā on 6.1.113",
+   "quote": "प्रातरत्र"
+  },
+  "confidence": "certain",
+  "notes": "Kasika: sānubandhagrahaṇaṃ kim? Innate r does not get utva."
+ },
+ {
+  "id": "visarga_ru-020",
+  "family": "visarga_ru",
+  "input": [
+   "śivas",
+   "vandyaḥ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "śivovandyaḥ"
+  ],
+  "sutras": [
+   "8.2.66",
+   "6.1.114",
+   "6.1.87"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.114",
+   "locator": "Siddhāntakaumudī on 6.1.114",
+   "quote": "शिवो वन्द्यः"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: ru becomes u after short a before haś."
+ },
+ {
+  "id": "visarga_ru-021",
+  "family": "visarga_ru",
+  "input": [
+   "manas",
+   "rathaḥ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "manorathaḥ"
+  ],
+  "sutras": [
+   "8.2.66",
+   "6.1.114",
+   "6.1.87"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "laghukaumudi_text",
+   "sutra": "6.1.114",
+   "locator": "Laghusiddhāntakaumudī (GRETIL text)",
+   "quote": "manorathaḥ"
+  },
+  "confidence": "certain",
+  "notes": "Laghu: ru becomes u before ratha."
+ },
+ {
+  "id": "visarga_ru-022",
+  "family": "visarga_ru",
+  "input": [
+   "eṣas",
+   "viṣṇuḥ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "eṣaviṣṇuḥ"
+  ],
+  "sutras": [
+   "6.1.132"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.132",
+   "locator": "Siddhāntakaumudī on 6.1.132",
+   "quote": "एष विष्णुः । स शंभुः"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: elision of su of etad before hal."
+ },
+ {
+  "id": "visarga_ru-023",
+  "family": "visarga_ru",
+  "input": [
+   "sas",
+   "śambhuḥ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "saśambhuḥ"
+  ],
+  "sutras": [
+   "6.1.132"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "6.1.132",
+   "locator": "Siddhāntakaumudī on 6.1.132",
+   "quote": "एष विष्णुः । स शंभुः"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: elision of su of tad before hal."
+ },
+ {
+  "id": "visarga_ru-024",
+  "family": "visarga_ru",
+  "input": [
+   "ahan",
+   "ahan"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "aharahaḥ"
+  ],
+  "sutras": [
+   "8.2.69"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.2.69",
+   "locator": "Siddhāntakaumudī on 8.2.69",
+   "quote": "अहरहः । अहर्गणः"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: n of ahan becomes r before non-sup."
+ },
+ {
+  "id": "visarga_ru-025",
+  "family": "visarga_ru",
+  "input": [
+   "ahan",
+   "gaṇaḥ"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "ahargaṇaḥ"
+  ],
+  "sutras": [
+   "8.2.69"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.2.69",
+   "locator": "Siddhāntakaumudī on 8.2.69",
+   "quote": "अहरहः । अहर्गणः"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi: n of ahan becomes r in ahargaṇaḥ."
+ },
+ {
+  "id": "visarga_ru-026",
+  "family": "visarga_ru",
+  "input": [
+   "kaskas"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "kaskaḥ"
+  ],
+  "sutras": [
+   "8.3.48"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.3.48",
+   "locator": "Siddhāntakaumudī on 8.3.48",
+   "quote": "कस्कः"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi 8.3.48: nipātana of s in kaskaḥ."
+ },
+ {
+  "id": "visarga_ru-027",
+  "family": "visarga_ru",
+  "input": [
+   "kautaḥskutas"
+  ],
+  "boundary": "pada",
+  "outputs": [
+   "kautaḥskutaḥ"
+  ],
+  "sutras": [
+   "8.3.48"
+  ],
+  "counter_example": false,
+  "source": {
+   "work": "kaumudi",
+   "sutra": "8.3.48",
+   "locator": "Siddhāntakaumudī on 8.3.48",
+   "quote": "कौतस्कुतः"
+  },
+  "confidence": "certain",
+  "notes": "Kaumudi 8.3.48: nipātana in kautaskutaḥ."
+ }
+]
