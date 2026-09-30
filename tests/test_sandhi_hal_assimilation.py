@@ -420,13 +420,15 @@ class StohScunaScuh(unittest.TestCase):
 
     def test_the_kasika_and_kaumudi_examples(self):
         """Kaumudī: रामश्शेते (हरिश्शेते), रामश्चिनोति, सच्चित्, शार्ङ्गिञ्जय.
-        (The visarga family supplies the स् of रामस्.)"""
+        (The visarga family supplies the स् of रामस्; 8.3.36 gives the optional
+        visarga form as well.)"""
         for text, expected in (
-                ("rāmas śete", "rāmaśśete"), ("rāmas cinoti", "rāmaścinoti"),
-                ("haris śete", "hariśśete")):
+                ("rāmas śete", {"rāmaśśete", "rāmaḥśete"}),
+                ("rāmas cinoti", {"rāmaścinoti"}),
+                ("haris śete", {"hariśśete", "hariḥśete"})):
             r = mine(text, "visarga_ru")
-            self.assertEqual(r.surfaces, (expected,), text)
-            self.assertIn("8.4.40", steps(r), text)
+            self.assertEqual(set(r.surfaces), expected, text)
+            self.assertTrue(any("8.4.40" in steps(r, i) for i in range(len(r.outcomes))), text)
         self.assertIn("saccit", surfaces("sat cit"))
         self.assertEqual(surfaces("śārṅgin jaya"), {"śārṅgiñjaya"})
 
@@ -450,7 +452,8 @@ class StohScunaScuh(unittest.TestCase):
 
     def test_the_uncrossed_pairing_does_not_call_on_the_refusal_of_yathasamkhya(self):
         r = mine("rāmas śete", "visarga_ru")
-        step = next(s for s in r.outcomes[0].steps if s.sutra == "8.4.40")
+        out = next(o for o in r.outcomes if any(s.sutra == "8.4.40" for s in o.steps))
+        step = next(s for s in out.steps if s.sutra == "8.4.40")
         self.assertNotIn("1.3.10", [v.sutra for v in step.detail.via])
 
     def test_a_cause_that_stands_before_Kasika_and_Nyasa(self):
@@ -492,13 +495,13 @@ class StohStunaStuh(unittest.TestCase):
     def test_the_kaumudi_examples(self):
         """Kaumudī: रामष्षष्ठः, रामष्टीकते, पेष्टा, तट्टीका, चक्रिण्ढौकसे."""
         for text, expected in (
-                ("rāmas ṣaṣṭhaḥ", "rāmaṣṣaṣṭhaḥ"),
-                ("rāmas ṭīkate", "rāmaṣṭīkate"),
-                ("peṣ~tā", "peṣṭā"), ("tat ṭīkā", "taṭṭīkā"),
-                ("cakrin ḍhaukase", "cakriṇḍhaukase")):
+                ("rāmas ṣaṣṭhaḥ", {"rāmaṣṣaṣṭhaḥ", "rāmaḥṣaṣṭhaḥ"}),
+                ("rāmas ṭīkate", {"rāmaṣṭīkate"}),
+                ("peṣ~tā", {"peṣṭā"}), ("tat ṭīkā", {"taṭṭīkā"}),
+                ("cakrin ḍhaukase", {"cakriṇḍhaukase"})):
             r = mine(text, "visarga_ru")
-            self.assertEqual(r.surfaces, (expected,), text)
-            self.assertIn("8.4.41", steps(r), text)
+            self.assertEqual(set(r.surfaces), expected, text)
+            self.assertTrue(any("8.4.41" in steps(r, i) for i in range(len(r.outcomes))), text)
 
     def test_the_kasika_ist_examples_the_cause_before_and_after(self):
         """Kāśikā: पेष्टा (ष् before त्), अग्निचिट्टीकते (ट-वर्ग after a
@@ -1977,11 +1980,11 @@ class TheWholeRulebook(unittest.TestCase):
         विद्वाँल्लिखति, वाग्घरिः, तच्छिवः, तच्शिवः, शिवच्छाया,
         लक्ष्मीच्छाया, लक्ष्मी छाया."""
         cases = (
-            ("rāmas śete", {"rāmaśśete"}), ("rāmas cinoti", {"rāmaścinoti"}),
+            ("rāmas śete", {"rāmaśśete", "rāmaḥśete"}), ("rāmas cinoti", {"rāmaścinoti"}),
             ("sat cit", {"saccit", "saccid"}),
             ("śārṅgin jaya", {"śārṅgiñjaya"}),
             ("viś~na", {"viśna"}), ("praś~na", {"praśna"}),
-            ("rāmas ṣaṣṭhaḥ", {"rāmaṣṣaṣṭhaḥ"}),
+            ("rāmas ṣaṣṭhaḥ", {"rāmaṣṣaṣṭhaḥ", "rāmaḥṣaṣṭhaḥ"}),
             ("rāmas ṭīkate", {"rāmaṣṭīkate"}),
             ("peṣ~tā", {"peṣṭā"}), ("tat ṭīkā", {"taṭṭīkā"}),
             ("cakrin ḍhaukase", {"cakriṇḍhaukase"}),
@@ -2024,7 +2027,8 @@ class TheWholeRulebook(unittest.TestCase):
         """ramas sete: the visarga family's 8.2.66, 8.3.15, 8.3.34 and this
         family's 8.4.40, in that order — the rulebook interlocks."""
         r = whole("rāmas śete")
-        self.assertEqual([s.sutra for s in r.outcomes[0].steps],
+        out = next(o for o in r.outcomes if o.surface == "rāmaśśete")
+        self.assertEqual([s.sutra for s in out.steps if not s.declined],
                          ["8.2.66", "8.3.15", "8.3.34", "8.4.40"])
 
 

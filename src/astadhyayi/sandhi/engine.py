@@ -228,8 +228,26 @@ def settle(group: List[Tuple[Rule, Application]]
             if i in standing or i in fallen:
                 continue
             if all(j in fallen for j in attackers[i]):
-                standing.add(i)
-                changed = True
+                # A defeated rule defeats nothing; but if an attacker was defeated by
+                # a standing rule with active edits (an apavādāpavāda), the original
+                # utsarga does not revive to contest the conqueror.
+                conqueror = None
+                for j in attackers[i]:
+                    killer = fallen.get(j)
+                    if (killer is not None and killer in standing
+                            and group[killer][1].edits):
+                        conqueror = killer
+                        break
+                if conqueror is not None:
+                    fallen[i] = conqueror
+                    reasons[(i, conqueror)] = (
+                        f"{group[conqueror][0].label} defeats {group[j][0].label}, "
+                        f"which defeats it"
+                    )
+                    changed = True
+                else:
+                    standing.add(i)
+                    changed = True
             else:
                 winner = next((j for j in attackers[i] if j in standing), None)
                 if winner is not None:

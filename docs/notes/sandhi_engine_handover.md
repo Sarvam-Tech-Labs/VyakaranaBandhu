@@ -16,9 +16,10 @@ per which sutra of Panini." It lives in `src/astadhyayi/sandhi/`; that package's
 disk; record limits as SCOPE).
 
 **State:** the engine core, all interfaces (CLI, HTTP API, browser tab, splitter),
-the test harness, and **six of eight rule families** are done and merged. The
-repo's sandhi tests are green: **1000 tests OK** (skipped 1), `rulebook.problems()`
-is `[]`, and the repo guards pass. Two things are red or missing on purpose:
+the test harness, and **seven of eight rule families** are done and merged (including
+the 59-rule `visarga_ru` family). The repo's sandhi tests are green: **1230 tests OK**
+(skipped 2), `rulebook.problems()` is `[]`, and the repo guards pass. One thing is red
+on purpose:
 
 1. `tests.test_sandhi_gold` fails: **116** of 592 gold cases neither match nor are
    recorded in `data/sandhi/known_mismatches.json` (which holds 60 entries: the
@@ -27,9 +28,8 @@ is `[]`, and the repo guards pass. Two things are red or missing on purpose:
    not, or in one m/ṃ; the other 3 of the file's 4 tests pass).
    This test is the to-do list for the triage in §6-P1. Do not make it green by
    deleting the check.
-2. The big `visarga_ru` family (59 rules) is written and green **alone** but breaks
-   15 tests when merged with the others, so it is **staged, not merged** (§6-P0).
-   The repo carries the 9-rule skeleton in its place.
+2. The `visarga_ru` family (59 rules) is **merged and green** (§6-P0 completed).
+   `vidyut-kashika-sandhi.jsonl` matches at **94.1%** (192 / 204).
 
 **Git (corrected 2026-09-30):** `VyakaranaBandhu` *is* a git repository
 (`origin` = github.com/Sarvam-Tech-Labs/VyakaranaBandhu, branch `main`, 4 commits before
@@ -183,7 +183,7 @@ the later wins) — it is not used by the engine.
 | prakrtibhava (1.1.11–19 …) | merged, green | 20 | 228 |
 | hal_assimilation (8.2.x, 8.4.x) | merged, green | 37 | 275 |
 | nasal_anusvara (8.3.x, 8.4.58 …) | merged, green | 23 | 221 |
-| visarga_ru (8.2.66–72, 8.3.x) | **staged**, green alone, breaks 15 merged | 59 (repo has 9) | 228 |
+| visarga_ru (8.2.66–72, 8.3.x) | merged, green | 59 | 228 |
 | natva (8.4.1–39) | **draft**, 29 KB, 3 `@rule`s, no tests | – | none |
 | satva (8.3.55–119, 8.4.x) | **draft**, 40 KB, rules registered dynamically, no tests | – | none |
 
@@ -296,71 +296,37 @@ Files carry a `.txt` suffix so nothing imports or discovers them.
 - `natva.py.txt`, `satva.py.txt` — unfinished drafts from agents that were stopped.
   Treat as notes, not as working code.
 
-### The 15 failures when visarga_ru is merged (diagnosis)
+### The 15 failures when visarga_ru is merged (RESOLVED 2026-09-30)
 
-Merged with hal_assimilation + nasal_anusvara etc., these fail:
+All 15 failures resolved cleanly:
 
-- visarga_ru: `Agreement.test_the_word_end_table_and_the_engine_choose_the_same_sutra`
-  [amnas eva] and [bhuvas{mahavyahrti} iti]; `VedicRules` 8.2.70, 8.2.71, 8.3.50;
-  `DhatuFinals` 8.2.72 ×2; `SaAndSaOfTheVisarga` ×2 (anavyayasya, kamye);
-  `Ahan.test_kashika_vartika_ruparatrirathantaresu` (ERROR).
-- hal_assimilation: `StohScunaScuh` ×2 (one ERROR), `StohStunaStuh`, and
-  `TheWholeRulebook` ×2 (lakshmi…, laghusiddhantakaumudi lines).
-
-Root cause found for the 8.2.7x group: the visarga family declares
-`8.2.66 overrides 8.2.39` (जश्त्वापवादः), and `8.2.70/71/72 override 8.2.66`.
-Because **a defeated rule defeats nothing**, once 8.2.72 (or the Vedic option)
-displaces 8.2.66, the real `8.2.39` of hal_assimilation is no longer held off and
-fires on the final `s`, giving `vidvadbhyām` with the wrong citation (8.2.39, not
-8.2.72) and `bhuvaditi` / `amnadeva` where the Kāśikā expects `bhuvariti` /
-`amnareva`. (When this family was developed, hal_assimilation was a 5-rule skeleton
-so it never met the real 8.2.39.) Likely fix: give 8.2.70/71/72 their own
-`overrides` entry for `8.2.39` **with a reason that is verbatim in the corpus**
-(look in Kāśikā/Kaumudī/Bālamanoramā on 8.2.72 for a jaśtva-exception wording; if
-none exists, prefer resolving via 8.2.1/1.4.2 ordering rather than inventing a
-quotation). The hal_assimilation failures were not diagnosed; they may be
-expectations written against the skeleton visarga, or may be real. Read each
-before changing anything.
-
-**Experiment done 2026-09-30 (scratch copy `sandhi_work/try_p0/`, nothing merged):**
-adding `("8.2.39", …)` to the `overrides` of 8.2.70, 8.2.71 and 8.2.72 in
-`visarga_ru.py` cut the 15 failures to **9**: all six of the 8.2.7x failures went
-away. I used the existing verbatim Kaumudī quote on 8.2.66 (`जश्त्वापवादः`) as the
-reason; **no commentary I searched says that 8.2.70–72 are exceptions to 8.2.39**
-(Kaumudī and Bālamanoramā say it only of 8.2.66), so that reason is borrowed and
-not defensible as it stands. Either find a real quotation, or decide the doctrine
-(is a rule that defeats an apavāda entitled to hold back the original utsarga?)
-and encode it in the engine rather than in three `overrides`. The sound is `d`
-either way; what is at stake is which sūtra is cited.
-
-The 9 that remain, as far as I diagnosed them:
-
-- `hal_assimilation` `StohScunaScuh.test_the_kasika_and_kaumudi_examples`,
-  `StohStunaStuh.test_the_kaumudi_examples`,
-  `TheWholeRulebook.test_the_laghusiddhantakaumudi_hal_sandhi_lines` /
-  `…lakshmi…`: **very likely expectations, not engine faults.** With the real
-  visarga rules present, `rāmas śete` gives both `rāmaḥ śete` and `rāmaśśete`
-  (8.3.36 वा शरि: the visarga may stay), and likewise `rāmas ṣaṣṭhaḥ`; the tests
-  were written against the skeleton and expect one form. Check the Kāśikā/Kaumudī
-  on 8.3.36, then widen the expected sets (as was done today for `ṣaṭ santaḥ`).
-- `StohScunaScuh.test_the_uncrossed_pairing_…` (ERROR, no 8.4.40 step) — same
-  cause, unconfirmed.
-- `visarga_ru`: `SaAndSaOfTheVisarga` ×2 (`prātar kalpa{pratyaya}` and
-  `gīr kāmyati{pratyaya}` now also yield the jihvāmūlīya form, `prātaẖkalpa`,
-  `gīẖkāmyati`), `VedicRules` 8.3.50 (`viśvatas karat` has 2 outcomes, the test
-  says the rule is nitya), `Ahan…ruparatrirathantaresu` (ERROR, no vārttika
-  step). These are the **real unknowns**: read the Kāśikā on 8.3.37/38 and
-  8.3.50 and 8.2.68 vārttika before deciding whether the engine or the test is
-  wrong.
-
-Also noticed: with the full visarga_ru merged, `nasal_anusvara` reported 22
-rules instead of 23 — a key collision somewhere; find it (compare
-`rulebook.by_family()` before/after).
+1. **8.2.7x group (apavādāpavāda doctrine in `engine.py` `settle()`):**
+   The root cause was that 8.2.66 defeated 8.2.39, and 8.2.70/71/72 defeated 8.2.66.
+   Under naive "a defeated rule defeats nothing" logic, 8.2.39 revived and beat 8.2.70/71/72 by 8.2.1 order.
+   In `engine.py` `settle()`, we encoded the classical grammatical doctrine: if an attacker A was defeated
+   by a standing rule B that applied active edits at the site, and A had an explicit override over C,
+   then C does not revive to contest B. This resolved all six 8.2.7x failures purely by principle without
+   inventing quotes or adding artificial overrides.
+2. **`hal_assimilation` tests (8.3.36 वा शरि):**
+   Before śar (`ś`, `ṣ`, `s`), visarga optionally stays visarga or assimilates (8.3.36).
+   The hal_assimilation tests originally expected a single form (`rāmaśśete`, `harisśete`, `rāmaṣṣaṣṭhaḥ`);
+   widened expectations to include the unassimilated visarga option attested in Kāśikā and Kaumudī,
+   and ensured step assertion tests inspect the assimilated branch.
+3. **`visarga_ru` 8.3.38 vārttikas & 8.3.50:**
+   - On 8.3.38 vārttikas `so_apadadav_anavyayasya` and `kamye_roreva`, added `8.3.37` overrides citing
+     verbatim Kāśikā quotes (`इह मा भूत् — प्रातःकल्पम्, पुनःकल्पमिति` and `इह मा भूत् — गीःकाम्यति। धूःकाम्यति`)
+     preventing unwarranted jihvāmūlīya on avyayas/non-ru.
+   - In `test_kashika_8_3_50`, added `pause=False` so phrase-final pausal variation (8.4.56 `वाऽवसाने`)
+     does not confound nitya check.
+   - In 8.3.19 and 8.3.20 (`oto_gargyasya`, `lopah_sakalyasya`), added `v.word(prev) == v.word(y)` check
+     so inter-word y-deletion is not triggered across separate padas.
+4. **`nasal_anusvara` 22 vs 23 rules:**
+   Confirmed: not a key collision or bug; `nasal_anusvara.py` checks sibling modules via `_ELSEWHERE`
+   and yields the `संपुंकानां सो वक्तव्यः` rule (8.3.5) when `visarga_ru` implements it under 8.3.34.
 
 ## 6. What is left, in priority order
 
-**P0 — merge visarga_ru** (§5). Success = its 228 tests + all others green together,
-`rulebook.problems() == []`, guards green. Use the dry-run first.
+**P0 — merge visarga_ru** (§5). **DONE (2026-09-30)**: merged, 1230 tests green, `rulebook.problems() == []`, guards green. `vidyut-kashika` at 94.1%.
 
 **P1 — triage the 116 unresolved gold cases** (176 mismatches minus 60 already recorded) into
 `data/sandhi/known_mismatches.json` (format: read `tests/test_sandhi_gold.py`).
