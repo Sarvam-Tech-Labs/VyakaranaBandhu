@@ -72,7 +72,8 @@ def source_text(work, sutra_id):
     """The on-disk text a quote must be found in, or None if the work is unknown."""
     if work == "laghukaumudi_text":
         if "t" not in _laghu_cache:
-            _laghu_cache["t"] = norm_ws(open(LAGHU_TXT, encoding="utf-8").read())
+            with open(LAGHU_TXT, encoding="utf-8") as f:
+                _laghu_cache["t"] = norm_ws(f.read())
         return _laghu_cache["t"]
     if work in {"tests_cases", "dataset", "paribhashendushekhara"}:
         return None  # checked by hand by the auditor
@@ -207,7 +208,8 @@ def validate_paths(paths, quiet=True):
     errors = []
     for path in paths:
         try:
-            data = json.load(open(path, encoding="utf-8"))
+            with open(path, encoding="utf-8") as f:
+                data = json.load(f)
         except Exception as exc:  # noqa: BLE001
             errors.append(f"{path}: cannot read as JSON: {exc}")
             continue

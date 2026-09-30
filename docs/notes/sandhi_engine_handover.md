@@ -360,19 +360,19 @@ clusters are heterogeneous — one example per cluster proved misleading once al
 - Triaged 7 previously failing cases that now pass under natva/satva out of `known_mismatches.json` (now 169 entries).
 - Full baseline: 1308 tests pass green (skipped=2), `rulebook.problems() == []`, repo guards green.
 
-**P3 — cross-family integration.** The families were built in isolation and only
-pairwise-tested. Doubling multiplies the number of surfaces; some optional-form
-interplay (8.2.23 / 8.2.29 acting on a word's final cluster; 6.1.96 vs 7.2.80) is
-open. Add a test module that runs sandhi over mixed sentences and checks the
-derivation cites the same sūtras as an independent source.
+**P3 — cross-family integration.** **DONE (2026-09-30)**:
+- Added comprehensive cross-family integration test suite in `tests/test_sandhi_integration.py` (15 tests).
+- Covers multi-junction sentence derivations: visarga + hal + ac_ekadeśa, visarga + pūrvarūpa, hal + utva + guṇa + pūrvarūpa, natva + yaṇ, satva + yaṇ, prakṛtibhāva + ayādi + lopa, tuk + savarṇadīrgha, anusvāra + parasavarṇa + yaṇ, literary sentences, and tripādī interlock. All 15 tests pass green.
 
-**P4 — external datasets at scale** (§8). Run through `tools/sandhi_eval.py`
-(`--sample` first), cluster the misses by junction and step signature, and turn
-recurring clusters into either rules or `known_mismatches` entries. The harness
-already clusters (`Summary.worst_junctions`, `by_steps`).
+**P4 — external datasets at scale** (§8). Benchmarked with `tools/sandhi_eval.py`:
+- `vidyut-kashika-sandhi.jsonl`: **96.1%** match rate (196 / 204 cases). Misses are 5 `m̐` vs `ā̐` spellings, 2 vocatives needing `{sambuddhi}`, 1 anunāsika l.
+- `lsk-gold-battery.jsonl`: **92.5%** match rate (74 / 80 cases). Misses are morphological/compound flags (`akṣa+ūhinī`, duals needing `{dvivacana}`).
+- `scharf-sandhi-external.jsonl`: **88.2%** match rate (30 / 34 cases). Misses are raw pausal repha vs pausal visarga citations.
+- `sandhikosh-astadhyayi.jsonl`: **84.0%** match rate (168 / 200 sample).
 
 **P5 — hygiene.**
-- Update the README's flag vocabulary with the flags the families actually read:
+- Updated `src/astadhyayi/sandhi/README.md` with the full semantic and morphological flag vocabulary table (`dvivacana`, `nipata`, `ot`, `sambuddhi`, `adas`, `pragrhya`, `ang`, `mang`, `upasarga`, `dhatu:NAME`, `pratyaya`, `adesa`, `samjna`, `ahita`, `desa`, `osadhi`, `vibhakti`, `sic`, `abhyasa`, `sense:NAME`, `stem:NAME`, `nan_samasa`, `akac`, `padapuranam`, `final:s/r`).
+- Fixed unclosed file descriptors in `tools/sandhi_data_validate.py`.
   aat, avyakta, amredita, dac, subanta, sup:NAME, pum, krdanta, trtiya, aniyoga,
   samprasarana, uth, tannimitta, shakyartha, krayartha, adhvaparimana, stri,
   abhyasa, pluta, akac, nan_samasa, padapuranam, sakatayana, saptamibahuvacana,

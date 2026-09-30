@@ -161,6 +161,38 @@ def vrddhir_eci(v: View):
 * **Semantic and lexical conditions are flags**, read as `v.flags(sight)` /
   `v.word(sight).has("nipata")`, and `SCOPE`-noted where they cannot be computed.
 
+### Flag vocabulary
+
+Semantic, morphological, and lexical conditions that cannot be determined from sounds alone are passed as flags in brace syntax `{flag}` or `{key:val}`:
+
+| Flag | Meaning | Example sūtras |
+|---|---|---|
+| `dvivacana` | Dual number (pragṛhya marker) | 1.1.11 |
+| `nipata` | Particle | 1.1.14 |
+| `ot` | Vocative in o | 1.1.15 |
+| `sambuddhi` | Vocative singular | 1.1.16, 8.3.1 |
+| `adas` | Declension of pronoun adas | 1.1.12 |
+| `pragrhya` | Explicit pragṛhya designation | 1.1.11–19 |
+| `ang` | Preverb āṅ (आङ्) | 6.1.74, 6.1.95 |
+| `mang` | Prohibitive particle māṅ (माङ्) | 6.1.74 |
+| `upasarga` | Preverb status | 6.1.91, 8.4.14 |
+| `dhatu:NAME` | Verbal root identifier (e.g. `dhatu:nam`, `dhatu:sunoti`, `dhatu:sad`) | 8.4.14, 8.3.65 |
+| `pratyaya` | Affix | 6.1.79, 8.3.59 |
+| `adesa` | Substitute sound | 8.3.59, 8.3.111 |
+| `samjna` | Proper name | 8.4.3 |
+| `ahita` | Loaded item | 8.4.8 |
+| `desa` | Country / regional name | 8.4.9 |
+| `osadhi` | Herb or tree | 8.4.6 |
+| `vibhakti` | Case inflection | 8.4.12, 8.4.13 |
+| `sic` | Aorist affix sic | 8.2.24–28 |
+| `abhyasa` | Reduplicated syllable | 8.3.61, 8.3.118 |
+| `sense:NAME` | Specific contextual sense (e.g. `sense:gati`, `sense:sūtra`) | 8.3.90, 8.3.113 |
+| `stem:NAME` | Pronoun or nominal stem (e.g. `stem:etad`, `stem:tad`) | 6.1.132 |
+| `nan_samasa` | Negative compound (nañ-samāsa) | 6.1.132 |
+| `akac` | Presence of infix akac | 6.1.132 |
+| `padapuranam` | Metrical verse-filler (pāda-pūraṇa) | 6.1.134 |
+| `final:s` / `final:r` | Underlying final sibilant vs innate repha at pause | 8.2.66 |
+
 A family module owns its file. It exports `RULES`; `rulebook.py` collects it and
 `rulebook.problems()` must stay empty (every cited id must be a sūtra in the
 corpus). Each family has `tests/test_sandhi_<family>.py` whose expectations are
