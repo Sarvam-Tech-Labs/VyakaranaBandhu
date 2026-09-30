@@ -34,15 +34,18 @@ is `[]`, and the repo guards pass. Two things are red or missing on purpose:
 **Git (corrected 2026-09-30):** `VyakaranaBandhu` *is* a git repository
 (`origin` = github.com/Sarvam-Tech-Labs/VyakaranaBandhu, branch `main`, 4 commits before
 this work). An earlier version of this handover wrongly said it was not — the warning
-came from the parent folder. The sandhi work is committed on the local branch
-**`sandhi-engine`** (one commit on top of `main`), **but the push to `origin` was
-refused with HTTP 403** on 2026-09-30: git here authenticates with the Codespaces
-`GITHUB_TOKEN`, which is not allowed to write to `Sarvam-Tech-Labs/VyakaranaBandhu`
-even though the account has push rights on it (a second login sits inactive in
-`~/.config/gh/hosts.yml`; it was not used). **Until someone pushes, the work exists
-only in this Codespace** plus `sandhi_work/sandhi-engine.bundle` (same disk). To
-push: `git push -u origin sandhi-engine` from a session with a credential that can
-write to that repo, then review and merge from there. `sandhi_work/backup_pre_merge2/` and `backup_pre_merge3/` are older local
+came from the parent folder. The sandhi work is on the branch
+**`sandhi-engine`**, **pushed to `origin` on 2026-09-30** (`main` was left untouched at
+`86a3d7f`); open the pull request at
+https://github.com/Sarvam-Tech-Labs/VyakaranaBandhu/pull/new/sandhi-engine, review and
+merge from there. Push note: the first attempt, with the Codespaces `GITHUB_TOKEN` that
+git uses by default, was refused with HTTP 403 (that token may not write to this repo
+although the account may). With the user's OK it was pushed with the stored `gh` login
+for that one command, changing no config:
+`env -u GITHUB_TOKEN -u GH_TOKEN git -c credential.helper= -c
+credential.helper='!gh auth git-credential' push origin sandhi-engine` — use the same
+form for later pushes from a Codespace. `sandhi_work/sandhi-engine.bundle` is a
+same-disk fallback copy of the first commit. `sandhi_work/backup_pre_merge2/` and `backup_pre_merge3/` are older local
 copies, no longer needed for history.
 
 ## 1. How to run and verify (copy-paste)
@@ -483,7 +486,7 @@ SandhiSplitter, …); `qc/` holds checks.
 
 ## 10. Suggested first hour for the next person
 
-1. Push `sandhi-engine` if it has not been pushed yet (§0); everything below is on that branch.
+1. `git fetch && git checkout sandhi-engine` (§0); everything below is on that branch.
 2. Run the verification block in §1; confirm 1000 OK and the single gold failure.
 3. Try P0: put `visarga_ru` back from `docs/notes/sandhi_staged/`, run
    `python3 -m unittest tests.test_sandhi_visarga_ru` and the combined run, and
